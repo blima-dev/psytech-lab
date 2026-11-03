@@ -1,0 +1,16 @@
+{
+  "name": "psytech-lab",
+  "owner": {
+    "name": "Bruno"
+  },
+  "plugins": [
+    {
+      "name": "psytech-lab",
+      "source": "./",
+      "version": "0.1.0",
+      "description": "Lab de produção psytech/minimal progressivo a 128 BPM: réguas destiladas, casos medidos e acervo de pesquisa — grave e kick, mix, arranjo, sound design e referências.",
+      "icon": "https://raw.githubusercontent.com/blima-dev/psytech-lab/main/icon.png"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/blima-dev/psytech-lab/main/icon.png"
+}

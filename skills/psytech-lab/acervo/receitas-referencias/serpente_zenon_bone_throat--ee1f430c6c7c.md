@@ -1,0 +1,51 @@
+# Receita — serpente_zenon_bone_throat.wav
+
+Medição automática por script em 2026-10-26. **Medição automática**, sem escuta.
+
+Arquivo de referência analisado: `serpente_zenon_bone_throat.wav`
+
+## 1. Identidade (medido)
+
+| Campo | Valor |
+|---|---|
+| Duração | 8.31 s |
+| Taxa / canais | 44100 Hz / medido em mono para análise |
+| BPM (regressão) | 129.99 |
+| BPM (estimativa librosa) | 129.2 |
+| Batidas detectadas | 16 |
+| Densidade de onsets | 3.85/s |
+| Pico | -11.1 dBFS |
+
+## 2. Tom (candidatos)
+
+| Correlação | Tom |
+|---|---:|
+| 0.24 | D menor |
+| 0.22 | C# menor |
+| 0.18 | D maior |
+
+Classe de altura no grave (CQT 40–200 Hz): **D** 0.12 · **C#** 0.114 · **F#** 0.095 · **G#** 0.089
+
+## 3. Arco de energia (RMS por 8 compassos)
+
+| Compassos | RMS dB |
+|---|---:|
+| 1–8 | -28.3 |
+
+## 4. Grade de 16avos no pico
+
+Compasso de pico: **None** · swing do hat medido: **None%** (valor suspeito se negativo/extremo — conferir antes de usar)
+
+`NÃO MEDIDO` — faixa curta demais para a janela do detector.
+
+## 5. Receita musical
+
+> **A PREENCHER NA ESCUTA.** O script não lê estética. O executor deve ouvir 3 trechos (início / pico / saída) e escrever aqui: (a) traço que interessa — peso, rebote, acelero, timbre, ambiente, dramaturgia; (b) mecanismo provável; (c) o que **não** se copia (melodia/hook/composição); (d) adaptação à tonalidade e ao BPM-alvo do próprio projeto; (e) limite da medição.
+
+## 6. Pendências desta faixa
+
+- [ ] Stems Demucs (drums/bass/other/vocals) — pendentes de extração.
+
+- [ ] Escuta A/B com trecho de função equivalente no projeto de referência.
+
+- [ ] Preencher §5 após a escuta.

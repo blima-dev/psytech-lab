@@ -1,0 +1,14 @@
+{
+  "versao": "0.1.2",
+  "data": "2026-11-03",
+  "arquivos": 352,
+  "sha256": {
+    "consolidado-PSYTECH-LAB.md": "db5394e7699f1a42dcbaa7cf503e80312385523221964a7ae3f1b015138680c1",
+    "consolidado-diagnosticos.md": "a9ab4fa8efd039dfb645faa11c042164760ba7422887ef16b46f4df3dc6413a7",
+    "consolidado-genre-dna.md": "00a757212de1758e1bcb957ca2d2ac0d2970e10723636a1b5404660db8a16eba",
+    "consolidado-knowledge-base.md": "f892c9e8f0df37581b876f2ed7ef29f74c3276700eb38401ba1b864cbc03ec3f",
+    "consolidado-pesquisas.md": "40fd7201e090cb01780b880451c0d3bc495d5106c712f572d214907424bd323e",
+    "consolidado-raiz.md": "b4701bbd84565e52119c69e770cdd72798f8026b019868bc0d452f707929b1d5",
+    "consolidado-receitas-referencias.md": "00bacffac846148fcac8eaa57c83d5760607a39ec2ea710a640f794f938bc5ae"
+  }
+}
