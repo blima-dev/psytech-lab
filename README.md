@@ -1,8 +1,8 @@
 # Psytech Lab
 
-v0.2.0 · 03/11/2026
+v0.2.1 · 03/11/2026
 
-Plugin de produção **psytech / minimal progressivo a 128 BPM**: réguas destiladas com número e fonte, casos medidos por sintoma e acervo de pesquisa por domínio — grave e kick, mix, arranjo, sound design e referências por artista.
+Plugin de produção **psytech, techno e minimal progressivo — multi-tempo**: réguas destiladas com número e fonte, casos medidos por sintoma e acervo de pesquisa por domínio — grave e kick, mix, arranjo, sound design e referências por artista.
 
 **Pra quem:** uso pessoal do Bruno e dos agentes que trabalham com ele (ZCode, Claude Code, ChatGPT/claude.ai) na produção desse gênero. Não é pacote genérico de tutorial — é o lab destilado de um projeto real.
 

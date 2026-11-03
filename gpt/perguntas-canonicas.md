@@ -1,4 +1,4 @@
-# Perguntas canônicas — psytech / minimal progressivo @ 128 BPM
+# Perguntas canônicas — psytech, techno e minimal progressivo (multi-tempo)
 
 > As 10 perguntas que um produtor do gênero faz de verdade numa sessão, e o arquivo do pacote psytech-lab
 > que responde cada uma. Caminhos relativos à pasta da skill (`plugins/psytech-lab/skills/psytech-lab/`).
@@ -10,7 +10,7 @@
 > - **Casos** (`casos/`) = porta de entrada por sintoma, quando algo quebrou ou o número briga com o ouvido.
 > - **EM DISPUTA** dentro das réguas = conflito aberto do mapa de 30/10 (`acervo/raiz/MAPA-DE-LACUNAS-E-CONFLITOS-20261030.md`)
 >   — a régua registra as leituras, não decide; decidir é do ouvido do produtor.
-> - Contexto fixo do gênero aqui: 128 BPM (semicolcheia = 117,19 ms), C# frígio, low-end mono ≤ 120 Hz.
+> - Contexto dos estudos de origem: maioria medida a 128 BPM (semicolcheia = 117,19 ms); o DNA do gênero aponta 130–134 — leia as duas leituras em `reguas/regua-baixo-kick.md` §8.2. C# frígio é do set de referência, não lei do gênero. Low-end mono ≤ 120 Hz.
 
 ---
 
@@ -24,7 +24,7 @@
 
 **Aprofunda:** `acervo/knowledge-base/anti-mascaramento-kick-bass.md` (08/09) · `acervo/pesquisas/ESTUDO-BATERIA-E-BAIXO-20261017.md` (17/10)
 
-## 2. "Como desenho o baixo rolling a 128 BPM — duração da nota, envelope, filtro, saturação, velocity?"
+## 2. "Como desenho o baixo rolling — duração da nota, envelope, filtro, saturação, velocity — e como calculo as células no MEU BPM?"
 
 **Responde:** `reguas/regua-baixo-kick.md` §3
 - Célula de 16 avos = 117,19 ms @128; duração de nota em 64–94 ms (55–80% de um 16º).
