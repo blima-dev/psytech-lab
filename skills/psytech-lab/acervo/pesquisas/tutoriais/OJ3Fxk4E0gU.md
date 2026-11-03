@@ -125,38 +125,15 @@ frente/trás nem altura. Serve como a passada de organização espacial que ante
 
 **1. O modelo do relógio e o objetivo do posicionamento (00:00:20.750–00:00:56.270):**
 
-> 00:00:20.750 just by moving things a few clicks
-> 00:00:23.110 around and uh the best way to look at it
-> 00:00:25.110 is to imagine a sort of semi-circle like
-> 00:00:26.590 half a clock
-> 00:00:28.670 with 9:00 on the left-hand side and 3:00
-> 00:00:30.590 on the right-hand side. That's kind of
-> […]
-> 00:00:47.110 each track is basically finding a place
-> 00:00:49.270 on that semi-circle where it can sort of
-> 00:00:51.030 shine through without being sort of over
-> 00:00:52.830 overtaken overlapped by some other kind
-> 00:00:56.270 of sound. […]
+> Modelo do relógio (Jaytech/Sonic Academy): o campo estéreo é um semicírculo — 9:00 à esquerda, 3:00 à direita — e cada pista acha seu lugar para brilhar sem ser sobreposta — 00:00:20.750–00:00:56.270
 
 **2. O que não se paneia (00:01:01.830–00:01:09.270):**
 
-> 00:01:01.830 Obviously some tracks are not going to
-> 00:01:03.630 need to be panned such as like the kick
-> 00:01:06.430 drum, the sub, probably the snares are
-> 00:01:08.230 not going to need much kind of panning
-> 00:01:09.270 at all.
+> O que não se paneia: kick, sub e provavelmente snare (Jaytech/Sonic Academy) — 00:01:01.830–00:01:09.270
 
 **3. A doutrina Prydz: música no mono, estéreo para efeitos (00:02:11.190–00:02:29.070):**
 
-> 00:02:11.190 Eric Prydz's tracks for example he tends
-> 00:02:12.990 to put all of the clubby stuff all of
-> 00:02:14.630 the actual kind of music right in the
-> 00:02:17.750 mono and then saves the the stereo field
-> 00:02:20.270 for uh kind of ethereal trippy effects
-> 00:02:22.790 for echoes uh for reverbs stuff like
-> […]
-> 00:02:26.630 the tracks will translate well to a club
-> 00:02:29.070 system where everything is mono. […]
+> Doutrina Prydz (citada por Jaytech/Sonic Academy): a música "clubby" no mono, campo estéreo reservado a efeitos etéreos (echo, reverb) — é o que faz o mix traduzir em sistema de clube, mono — 00:02:11.190–00:02:29.070
 
 ---
 

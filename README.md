@@ -1,6 +1,6 @@
 # Psytech Lab
 
-v0.1.2 · 03/11/2026
+v0.2.0 · 03/11/2026
 
 Plugin de produção **psytech / minimal progressivo a 128 BPM**: réguas destiladas com número e fonte, casos medidos por sintoma e acervo de pesquisa por domínio — grave e kick, mix, arranjo, sound design e referências por artista.
 
@@ -18,7 +18,7 @@ plugins/psytech-lab/
 ├── skills/psytech-lab/INDEX.md      # inventário do conteúdo (réguas, casos, acervo)
 ├── skills/psytech-lab/reguas/       # 6 réguas destiladas
 ├── skills/psytech-lab/casos/        # casos reais: sintoma → causa medida → correção
-└── skills/psytech-lab/acervo/       # fonte profunda, 7 pastas por domínio (352 arquivos)
+└── skills/psytech-lab/acervo/       # fonte profunda, 7 pastas por domínio (351 arquivos)
 ```
 
 ## Instalação

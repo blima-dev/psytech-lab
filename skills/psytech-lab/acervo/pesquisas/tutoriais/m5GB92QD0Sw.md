@@ -31,7 +31,7 @@ No topo percussivo: 2–3 camadas de shaker com caráter distinto, 16avos, veloc
 ## Trechos de prova (legenda)
 
 1. "the simple trick of adding swing and groove to the Shakers and there's two ways… first way is using the velocity so if I actually follow this pattern low medium high medium" — linhas 246–257
-2. "the second way to do this is actually by using side chain compression from the kick drum… it feels to get glues to the track a bit more by flowing with the kick I like to do a little bit of both" — linhas 301–324
+2. Segundo jeito: sidechain do kick "colando" o shaker no groove — ele usa os dois (velocity + sidechain) — linhas 301–324 (Dowden Production Academy)
 3. "now I have two layers I can actually pan one left and one right just a little bit to give a little bit of width and stereo dimension" — linhas 354–362
 
 ## Limites do estudo

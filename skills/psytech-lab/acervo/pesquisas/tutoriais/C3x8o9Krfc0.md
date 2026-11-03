@@ -86,9 +86,9 @@ O vídeo **não depende** de plugins específicos — é uma sessão Ableton com
 - **Prioridade: alta** para quem quer preencher o miolo 300–1.200 Hz com um timbre novo sobre uma grade rítmica já fechada: o low shelf de 300 Hz mais o band pass deslocado atacam exatamente essa faixa sem tocar no sub.
 - **Esforço: médio.** São várias etapas (synth → filtro/env → unison → Amp → EQ → delay → reverb → Drum Buss → Utility), mas todas stock e com valores dados pelo vídeo; o trabalho real é o A/B do centro do band pass (100 Hz do vídeo × 250–400 Hz do contexto), o controle de mono abaixo de 120 Hz e a dose de topo.
 
-## Trechos de prova: 3 citações literais da legenda com timestamp
+## Trechos de prova da legenda com timestamp
 
-> "second important things is to use a band pass heater because this band pass filter are gonna just select a certain frequency range and when you're gonna modulate this filter with envelope quite fastly it's gonna create these scrolling effects" — **00:47.820–00:58.860** *(ASR: "band pass heater" = bandpass filter)*
+> Segunda dica do Audioreakt: bandpass + envelope rápido no filtro cria o efeito "scrolling" — **00:47.820–00:58.860** *(ASR: "band pass heater" = bandpass filter)*
 
 > "the Soto's waveform that we're gonna play at a lower note so here we're gonna play with d0 and that's gonna give this log rolling not already" — **00:34.320–00:39.960** *(ASR: "Soto's" = sawtooth; "log rolling" = growling)*
 

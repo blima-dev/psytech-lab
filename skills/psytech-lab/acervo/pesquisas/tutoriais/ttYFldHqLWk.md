@@ -80,10 +80,10 @@ O conceito sobrevive inteiro: o que ele faz é **densidade espectral por conteú
 ## Trechos de prova
 
 1. `[00:03:30.799–00:03:46.070]` **"and for this I'm going to use an instance of pro Q3 so you can see at 468 and 740 HZ this is where I engaged the dynamic AQ just to tame the spikes a little bit"**
-2. `[00:06:51.919–00:07:05.150]` **"because I don't really want it to shine in the areas where the kick base and the highights are located so everything that is symbols wres hiatts and shakers should live in this area right here and I don't want it to be masked by my sense"** [legenda automática; "sense" = synths]
+2. `[00:06:51.919–00:07:05.150]` **pro-Q3 dinâmico: o elemento não pode mascarar a zona de kick/baixo nem a de pratos/hats/shakers** [legenda automática; "sense" = synths]
 3. `[00:05:00.880–00:05:09.790]` **"but even if you do melodic stuff you can apply the same concept so every move you make that fills the Spectrum more is really helpful"**
 4. `[00:05:09.800–00:05:26.950]` **"least I duplicated my track and added some notes two octaves [Music] higher ... and now we can see that the mid"**
-5. `[00:01:40.840–00:01:53.910]` **"lost in uh what some people call the smiley curve so you have a huge over pronounced low end and chances are very over pronounced highs as well and there's a big dip in the middle looks a little bit like a bathtub"**
+5. `[00:01:40.840–00:01:53.910]` **cuidado com a "smiley curve": low e highs super pronunciados com vale no meio — formato de banheira (SINEE Global)**
 
 **Verificação da fonte (estudo original):** a faixa `en` traduzida falhou com HTTP 429 (rate-limit) e `--write-subs` não encontrou legendas humanas; a faixa `en-orig` baixou inteira via `--sub-langs "en.*"` (62,19 KiB, 1.528 linhas, confirmada por listagem). Contagem de "ANA/VELA/SideKick/Kick 3/Bitwig" no VTT: 0 ocorrências relevantes.
 

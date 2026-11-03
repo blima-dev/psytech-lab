@@ -5,7 +5,7 @@ description: Roteador do Psytech Lab — abra para qualquer dúvida de produçã
 
 # Psytech Lab — roteador
 
-v0.1.2 · 03/11/2026
+v0.2.0 · 03/11/2026
 
 **Presupõe Ableton Live:** as réguas citam devices por nome (Utility, Multiband Dynamics, Glue Compressor, Serum 2, Kickstart 2). Em outro DAW, aplique a função descrita, não o nome do device.
 
@@ -38,7 +38,7 @@ v0.1.2 · 03/11/2026
 
 ## acervo/ — fonte profunda, pastas por domínio (7 pastas)
 
-Catálogo completo com contagem por pasta (352 arquivos medidos em 03/11/2026): `acervo/INDEX.md`.
+Catálogo completo com contagem por pasta (351 arquivos medidos em 03/11/2026): `acervo/INDEX.md`.
 
 | Pasta | O que tem |
 |---|---|

@@ -16,9 +16,7 @@
   sem filtro.
 - **FM no Operator** (configuração default: cada osc modula o anterior): a taxa do modulador = a própria
   nota (D ≈ 38 Hz modulando a 38 Hz) gera harmônicos harmoniosos. **Cuidado nº 1: o sub some** —
-  *"as we increase this frequency modulation, there's a point here where the sub starts to drop away… if
-  we're designing this as a sub, we don't want to lose too much of that sub energy… choose somewhere around
-  here where the sub's still nice and strong, but we've got these higher frequencies"*. EQ aberto o tempo
+  *"as we increase this frequency modulation, there's a point here where the sub starts to drop away"* — parar no ponto em que o sub ainda é forte com os harmônicos em cima*. EQ aberto o tempo
   todo como analyzer. Método: primeiro osc até aparecer "a couple of these", depois engatar o segundo
   (*"add some more frequencies without the sub dropping away"*).
 - **Wobble com pitch estável:** envelope POR OSCILADOR do Operator (no lugar do filtro) — *"deep wobbing

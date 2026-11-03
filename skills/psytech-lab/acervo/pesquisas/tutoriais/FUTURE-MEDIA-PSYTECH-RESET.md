@@ -150,7 +150,7 @@ Onde a técnica do curso entra em conflito com práticas de minimal psytech, a c
 
 Citações literais da ASR; erros de reconhecimento preservados. Onde a palavra é incerta, indicado entre colchetes.
 
-1. `[00:09:07–00:09:32]` **"So, this is actually, it's a kick actually made with operator. … It's just a sine wave with a pitch envelope, uh, decreasing, uh, depending on the time. … And then there is a layer of noise, which basically creates a little transient."**
+1. `[00:09:07–00:09:32]` **kick do Operator: sine com pitch envelope decrescente no tempo + camada de ruído criando o transiente (Future Media Academy)**
 2. `[00:10:15–00:10:27]` **"I would like to tune, of course, my kick in F, and, uh, in F, and this is super important. I know already that will be, like, 43.7."**
 3. `[00:12:56–00:13:47]` **"how I like to do subs, normally I do, like, with a bit of fm synthesis, so modulating the … first operator … with the operator B, creating some harmonics … a sub base that is also hearable in … small speakers"**
 4. `[00:28:26–00:28:44]` **"sometimes the effect is much more important than the sound itself."**

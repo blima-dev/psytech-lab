@@ -49,14 +49,8 @@ A tradução é direta: o grupo é o contêiner portátil; os sintetizadores sã
 
 ## Trechos de prova: citações literais da legenda com timestamp
 
-> "…to take this whole effects group and I can drag it into my project where it says drag or drop files and devices here and it'll place all of those in. It'll place all the tracks in with all the clips placed exactly where I had them." — **00:01:37.320–00:01:48.350**
->
-> Em português: "…pegar este grupo de efeitos inteiro e arrastá-lo para o meu projeto, onde diz 'arraste ou solte arquivos e devices aqui', e ele colocará tudo isso dentro. Ele coloca todas as pistas com todos os clipes exatamente onde eu os tinha."
+> "…take this whole effects group and I can drag it into my project" — arrastar o grupo de efeitos recria as pistas com os clipes exatamente onde estavam (Sonic Academy) — **00:01:37.320–00:01:48.350**
 
-> "And this had a side chain compressor on it. It's getting side chained from the crash cymbal and it's still remembering that routing, so that's pretty cool, too." — **00:04:47.560–00:04:53.350**
->
-> Em português: "E isto tinha um compressor com sidechain. Ele está sendo sidechainado pelo crash e ainda se lembra desse roteamento, o que é bem legal também."
+> Sidechain vindo do crash cymbal sobrevive à cópia — "it's still remembering that routing" (Sonic Academy) — **00:04:47.560–00:04:53.350**
 
-> "If you've done it once and you like the way it sounded, just grab it from another project and pull it right into your existing one." — **00:06:11.440–00:06:16.470**
->
-> Em português: "Se você já fez uma vez e gostou de como soou, basta pegá-lo de outro projeto e puxá-lo direto para o seu projeto atual."
+> "If you've done it once and you like the way it sounded, just grab it from another project" (Sonic Academy) — **00:06:11.440–00:06:16.470**

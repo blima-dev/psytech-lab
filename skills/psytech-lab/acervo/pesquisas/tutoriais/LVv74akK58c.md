@@ -34,9 +34,9 @@ Direta. Pontos de encaixe:
 
 ## Trechos de prova (legenda)
 
-1. "So, yeah, if you have the the carrier wave as being a really high frequency, but then you FM it with a low frequency. So, you see there's actually five octaves between these. That's how you get this like really classic bubbly FM sound." — janela 730–780
+1. FM "bubbly" clássico: portadora aguda + moduladora ~5 oitavas abaixo (Scionaugh) — janela 730–780.
 2. "Now, when you're doing unison on these sorts of sounds, I recommend have using only the odd numbers, so three, five, or seven." — janela 660–670
-3. "I want this to go in the opposite direction of my filter. That's the main sort of thing that makes something squelch. So, my filter's going up in the positive direction, so I want my coarse pitch to actually go down." — janela 1893–1907
+3. Coarse pitch na direção oposta do filtro = o que faz o som "squelch" (Scionaugh) — janela 1893–1907.
 
 ## Limites
 

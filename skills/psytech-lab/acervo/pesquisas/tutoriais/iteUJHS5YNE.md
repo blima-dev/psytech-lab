@@ -63,8 +63,8 @@ O vídeo é quase todo subtrativo (EQ que tira o que não precisa), então ele *
 Todas as citações são literais da transcrição ASR do áudio.
 
 1. **[18:25]** — `"So with my processing, I have a bit of like a glue compression on the bus, which was grouping the low end. So you see long attack, short release, just to tame stuff that the kick through."`
-2. **[16:47–17:15]** — `"I really like using sequencers for that, but just be aware of like, avoiding placing the notes on one. It can work in some ways, but really, we want the kick to cut through. So while we're on the kick, kick, short kick, and thumbs up, this will work together if we have long kick with long tail and you want to add subby rumble thing, that's not gonna work that well."`
-3. **[06:59]** — `"And this is what I like about this technique and using sine wave. It has really steady tone, fairly even, more even than all the reverb washes and so on. So it gives you really nice consistent results and allows you to achieve really strong, powerful low end that has weight."`
+2. **[16:47–17:15]** — sequencers são bem-vindos, mas evite notas no tempo 1: com kick curto funciona; kick longo com cauda + rumble sub não funciona bem (Sonic Academy).
+3. **[06:59]** — a onda sine dá tom estável e uniforme (mais que as washes de reverb), resultado consistente e low end com peso (Sonic Academy).
 
 Citações de apoio usadas nas seções (mesma fonte): `"I actually did everything with the plug-ins from Ableton."` **[19:30]**; `"LFO 100% synced to one six"` **[09:21]**; `"here I can go like 5/16, 1/38, 3/16"` **[11:33]**; `"I think people really in those tutorials overdone their processing."` **[17:51]**.
 

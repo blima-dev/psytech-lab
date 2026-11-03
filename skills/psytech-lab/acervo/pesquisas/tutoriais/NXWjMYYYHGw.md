@@ -141,13 +141,7 @@ para "sino metálico", que é o oposto da estética orgânica de madeira.
 
 **1. O modo Parallel é a base de tudo (00:01:28.080–00:01:47.430):**
 
-> 00:01:28.080 I'm going to change the mode or the
-> 00:01:32.520 yeah, the mode that the operator works
-> 00:01:34.400 to the parallel. So we have in parallel
-> 00:01:38.080 a few different operators working
-> 00:01:39.920 together rather than stacking them on
-> 00:01:41.680 top and having them modulating each
-> 00:01:43.800 other.
+> Modo Parallel do Operator (Hypnotic Techno Production): vários Operators em paralelo trabalhando juntos, em vez de empilhar e modular uns aos outros — 00:01:28.080–00:01:47.430
 
 **2. Detune é o que cria a inarmonia (00:03:00.519–00:03:10.550):**
 

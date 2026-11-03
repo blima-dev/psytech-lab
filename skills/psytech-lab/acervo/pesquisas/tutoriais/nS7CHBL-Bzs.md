@@ -101,6 +101,6 @@ Duas grandezas diferentes que o vídeo trata como uma só:
 
 1. `00:16:10.897` — "So now Sonic Academy has added a phase detection and phase alignment tool here."
 2. `00:17:41.565` — "it needs to get the phase information from your drum coming through the sidechain, and then it will use that to equalize your bass."
-3. `00:20:28.449` — "the results are almost perfect for me. It's less of an issue in the tail end of the bass, but it seems to really hit that rich bit at the beginning where you want the bass to be leveled out, or the phases to be leveled out between the drum and that bass sound."
+3. `00:20:28.449` — resultado "almost perfect": o efeito maior está no ataque do baixo, onde as fases de bateria e baixo precisam se alinhar (Sonic Academy).
 
 *Citações literais da legenda automática (blocos rolantes reunidos; o texto aparece palavra por palavra nos blocos a partir do timestamp indicado).*

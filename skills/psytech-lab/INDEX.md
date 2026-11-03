@@ -29,7 +29,7 @@ Mapa do conteúdo desta skill. Para rotear por pergunta, use o `SKILL.md`; este 
 | `acervo/diagnosticos/` | 16 | Auditorias e medições do set |
 | `acervo/genre-dna/` | 1 | DNA do gênero (`psytech-dark-prog.md`) |
 | `acervo/knowledge-base/` | 39 | Aulas e manuais — Serum, bass bible, método de mix |
-| `acervo/pesquisas/` | 175 | Estudos e mapeamentos — cursos, dossiês, refs-artistas, tutoriais |
+| `acervo/pesquisas/` | 174 | Estudos e mapeamentos — cursos, dossiês, refs-artistas, tutoriais (o censo de canais Sonic Academy saiu na higienização v0.1.0) |
 | `acervo/receitas-referencias/` | 112 | Uma receita por faixa de referência (comece por `INDEX.md`) |
 | `acervo/raiz/` | 2 | `CICATRIZES-20261030.md` (corpus dos casos) e `MAPA-DE-LACUNAS-E-CONFLITOS-20261030.md` (conflitos abertos) |
 

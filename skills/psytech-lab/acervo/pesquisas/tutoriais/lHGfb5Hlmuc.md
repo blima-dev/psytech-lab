@@ -111,11 +111,11 @@ A ordem segue a fala do autor: *"I started with a bit of side chaining"* `[00:03
 - **Risco: médio.** Três riscos concretos: (1) mascarar hats/percussão de resposta; (2) virar "cola cinza" se ficar contínua e igual; (3) reacender 2–4 kHz. Todos mitigáveis com LP, HP, sidechain e entrada/saída por seção.
 - **Reversibilidade: alta.** Um bus, dois volumes — mutar devolve o estado anterior sem tocar no groove.
 
-## Trechos de prova: 3 citações literais da legenda com timestamp
+## Trechos de prova da legenda com timestamp
 
 1. `[00:00:48.000–00:00:56.960]` **"so this module is a noise generator and it has 30 different algorithms you can switch between them with this dial"**
 2. `[00:04:06.400–00:04:15.480]` **"then I used a little bit of EQ to place everything in the area of the mix where it belongs which in our case is the high mid area"**
-3. `[00:04:46.880–00:05:01.400]` **"you can see the same thing going on here just with a slightly different LFO rate and I did this to let them weave in and out of each other so sometimes the noise is more audible than than the Drone and vice versa"**
+3. `[00:04:46.880–00:05:01.400]` **LFOs em taxas levemente diferentes fazem ruído e drone se entrelaçarem — ora um, ora outro mais audível (SINEE Global)**
 
 **Citações de apoio usadas acima (mesma legenda):** sidechain/respiração `[00:03:33.159–00:03:37.920]`; EQ high-mid `[00:04:14.480]`; reverb+delay no fundo `[00:04:16.759–00:04:21.949]`; LFO no Utility `[00:04:30.400]`; desligar o LFO `[00:06:19.800–00:06:24.000]`; tensão por volume `[00:06:36.400–00:06:40.800]` e `[00:07:15.560]`; VCV Rack gratuito `[00:07:42.400]`; Noise Plethora como plugin grátis `[00:07:56.759]`.
 

@@ -133,10 +133,10 @@ Como o vídeo é todo stock, a tradução é quase 1:1. O que falta em um arsena
 
 ## Trechos de prova: 3 citações literais da legenda com timestamp
 
-1. **[00:02:22.260–00:02:36.470]** "so this is my kick verb rack I'll put it in the description more about it it's just a rack that allowed me to quickly make a rumble here I used a delay to make the rumble and you can see the volume is pretty low for now because we're gonna have another base element"
+1. **[00:02:22.260–00:02:36.470]** — rack de reverb do kick: um delay faz o rumble, em volume baixo porque há outro elemento de baixo vindo (Audioreakt).
    *Glossa:* o rumble é deliberadamente baixo porque existe outro elemento de baixo — a regra de "um dono do sub" que um motor minimal precisa.
 
-2. **[00:11:25.620–00:11:44.760]** "the idea was to have like a kind of a richer signal but that you're still gonna low pass obviously because you don't want something too in the high I use a Sawtooth waveform you see with the Unison it's great because it has some harmonics add some stereo is has some kind of a chorus Vibe"
+2. **[00:11:25.620–00:11:44.760]** — camada mid do baixo: saw + unison (harmônicos, estéreo tipo chorus), sempre com low-pass (Audioreakt).
    *Glossa:* a camada mid do baixo ganha corpo e estéreo pelo saw + unison, mas é low-passed — não é uma camada brilhante nem um segundo sub.
 
 3. **[00:23:50.700–00:24:00.350]** "basically you can take any sound and you just need to make it short very sharp with some transient and then it can be a stop more in the low it can be like more in the high"

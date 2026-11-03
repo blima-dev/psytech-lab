@@ -110,7 +110,7 @@ Os nomes de parâmetro do Granulator III acima vêm de conhecimento geral e **n�
 
 ## Trechos de prova
 
-> *"but I'm not what I'm not going to do this time is I'm not going to mess around with a pitch too much because we want to keep this at the same same pitch on each note so we don't want it wavering in pitch because we can use this melodically"* — **00:00:59.570**
+> *"I'm not going to mess around with the pitch too much"* — pitch estável por nota, porque a intenção é usar a variação de forma melódica (Sonic Academy, Bluffmunkey) — **00:00:59.570**
 
 > *"probably about 50/50 and then definitely some LFO on the panning so let's bring that down"* — **00:02:38.450**
 

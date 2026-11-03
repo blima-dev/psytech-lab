@@ -113,4 +113,4 @@ Compassos 1–16 kick + rumble + ghost · 17–32 percussão grave e média · 3
 
 > "the velocities is where the fun comes in because the velocities are responsible for the swing and the overall feel of my higher track" — [00:06:46–00:06:55]
 
-> "a very overlooked feature in Ableton simpler is that you have the ability to internally modulate your samples … I have the LFO engaged here it's relatively slow and for destinations I chose the volume and the panning" — [00:08:31–00:08:49]
+> Recurso esquecido do Simpler: LFO interno lento modulando volume e pan (SINEE Global) — [00:08:31–00:08:49]

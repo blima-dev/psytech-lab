@@ -158,34 +158,19 @@ brilhante. Tudo reversível por mute/undo de MIDI.
 
 **1. As três dissonâncias úteis: 2ª menor, 7ª maior e trítono (00:03:16.560–00:03:39.400):**
 
-> 00:03:16.560 defined our most interesting dissonant
-> 00:03:20.040 intervals to be uh the minor 2 which is
-> 00:03:23.799 just one semitone also the major 7th
-> 00:03:27.920 which is 11 semitones or one semitone
-> 00:03:31.280 downwards and the other one is the trone
-> 00:03:33.630 the most dissonant of them all because
-> 00:03:35.640 it doesn't really fit anywhere and that
-> 00:03:39.400 is all plus six or minus six semitone steps
+> As dissonâncias mais interessantes (SINEE Global): 2ª menor (1 semitom), 7ª maior (11 semitons) e o trítono — o mais dissonante, porque não encaixa em lugar nenhum — 00:03:16.560–00:03:39.400
 
 *(“trone” = tritone na legenda automática.)*
 
 **2. O centro tonal é a nota que mais aparece (00:06:37.350–00:06:52.240):**
 
-> 00:06:37.350 what we have in here is a few notes
-> 00:06:37.360 that happen more often and that plus
-> 00:06:39.840 three or the plus two might become our
-> 00:06:44.280 root note because we hear them the most
-> 00:06:46.560 often and we get primed on
+> O centro tonal são as notas que mais aparecem: +3 ou +2 podem virar a tônica porque o ouvido fica "primed" nelas (SINEE Global) — 00:06:37.350–00:06:52.240
 
 *(A frase continua em "them" no cue seguinte.)*
 
 **3. Empilhar 2ªs menores é a receita para dissonância demais (00:07:21.280–00:07:40.510):**
 
-> 00:07:21.280 because we had the plus three + 4 + 5
-> 00:07:25.680 and the plus six in there those are all
-> 00:07:28.560 uh minor second steps and that is quite
-> 00:07:31.759 the recipe to become too disent in
-> 00:07:34.840 somewhat
+> Empilhar +3, +4, +5 e +6 (todos 2ªs menores) é receita para dissonância demais (SINEE Global) — 00:07:21.280–00:07:40.510
 
 *(“disent” = dissonant na legenda automática.)*
 

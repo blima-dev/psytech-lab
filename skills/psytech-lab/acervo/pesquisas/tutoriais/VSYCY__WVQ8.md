@@ -149,7 +149,7 @@ Antes de escrever, montar o **mapa de 64 compassos** com uma linha por função 
 ## Trechos de prova: 3 citações literais
 
 > **1) O salto iniciante→pro é a quantidade de efeitos de transição** — [00:08:23.280 → 00:08:59.600]
-> "and this is what I see like the biggest leap from beginners to pro or intermediate like the amount of effects yeah beginners just have one noise or something pro producers have like as you can see six eight different effects to help with transitions we have variations some basic thing"
+> "beginners just have one noise … pro producers have like … six, eight different effects to help with transitions" (00:08:23.280–00:08:59.600)
 
 > **2) O arranjo mínimo só se sustenta porque há um gancho** — [00:06:33.840 → 00:06:46.000]
 > "why he can get away with having such a minimal arrangement right now because there is sound that like hooks us in and some small variations again I believe in here"

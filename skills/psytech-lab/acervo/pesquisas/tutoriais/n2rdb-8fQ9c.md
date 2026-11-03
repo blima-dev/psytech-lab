@@ -82,7 +82,7 @@ O núcleo do vídeo é **Serum + Live**. Nada depende de ANA 2, VELA, SideKick, 
 > "Kick is also actually straightforward. Um it's just this BT 808 kick sample. Just shortening that decay so it doesn't ring out super long."
 > — 00:02:33.840–00:02:37.830
 
-> "...but what I'm doing is after 50 milliseconds, I'm tailing this off a little bit. So, what that's going to do is going to make the kick a bit more punchy, also save me some headroom in my mix cuz the kick's not going to be as loud for so long."
+> "...after 50 milliseconds, I'm tailing this off a little bit" — encurtar a cauda deixa o kick mais punchy e poupa headroom (Durosai)
 > — 00:03:09.440–00:03:25.830
 
 > "So, I have it at 21 and then it's a pretty short decay, 98 milliseconds. So, that's what's making it sound very plucky."
@@ -91,7 +91,7 @@ O núcleo do vídeo é **Serum + Live**. Nada depende de ANA 2, VELA, SideKick, 
 > "This plugin, because it's adding like drive and saturation, it's going to bring in again some of those more lows. So, that's why I have the second high pass right here."
 > — 00:06:44.080–00:06:55.550
 
-> "...this pattern is just one long note. So, I want this to keep looping. So, I have it set to 1/16. So, this envelope's going to repeat um every 16th note, and that's what that arp is playing."
+> "...this pattern is just one long note... I have it set to 1/16" — o envelope repete a cada 16avos e é isso que o arp toca (Durosai)
 > — 00:12:48.240–00:12:59.510
 
 > "And they're playing off each other. This is like a call and response thing. So, this is calling, this is responding."

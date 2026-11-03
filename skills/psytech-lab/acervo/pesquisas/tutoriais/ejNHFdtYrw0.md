@@ -77,10 +77,10 @@ Contexto de auditoria (set de referência contra a média de 6 referências do e
 
 ---
 
-## Trechos de prova (3 citações literais da legenda com timestamp)
+## Trechos de prova (da legenda, com timestamp)
 
 1. **00:01:05.000–00:01:07.720** — "using micro delays to loosen up the feel of a track."
-2. **00:02:11.640–00:02:22.880** — "if you delay after the kick, you're going to create a sort more of a dragged uh sort of relaxed feel to your grooves. Uh if you push them in front of the kick, you're going to tend to create a slightly more rushed and up-tight kind of feel to your drum grooves as well."
-3. **00:09:11.800–00:09:20.400** — "by adding uneven layers to this, this will give you kind of a nice sort of almost polyrhythmic s- kind of feel to it. Uh by adding an even numbers, it'll reset itself on the beats if you're working in 4/4"
+2. **00:02:11.640–00:02:22.880** — "delay after the kick" = sensação dragged/relaxed; na frente do kick = rushed e apertado (Sonic Academy).
+3. **00:09:11.800–00:09:20.400** — camadas desiguais dão quase polirritmia; quantidades pares se reencaixam nos tempos do 4/4 (Sonic Academy).
 
-*(Citações literais da legenda automática; erros de transcrição como "a sort more" e "an even numbers" foram preservados de propósito.)*
+  *(Fragmentos entre aspas são literais da legenda automática; o resto é paráfrase nossa.)*

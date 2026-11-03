@@ -130,7 +130,7 @@ Contexto medido do set de referência (**diagnóstico prévio, não re-medido**)
 
 > *"I'm going to tell it to preserve Let's try eighth notes. So, it's ignoring the transient markers, and then what it's doing is just going through the sample and every eighth note"* — **00:07:38.840–00:07:45.240**
 
-> *"These are both granular time stretch modes. And the cool thing about this is when we time stretch the audio, it's going to chop the audio up into tiny little grains or just tiny little chunks of the sample."* — **00:12:58.960–00:13:08.040**
+> *"These are both granular time stretch modes"* — no time stretch granular o áudio é cortado em grãos/chunks minúsculos do sample — **00:12:58.960–00:13:08.040**
 
 > *"Flux is kind of like a random LFO that's randomizing the grain slices or the grain sizes, I should say."* — **00:13:26.320–00:13:31.120**
 

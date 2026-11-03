@@ -25,10 +25,10 @@ Pista de resposta/stab: Operator com 2 senoides (carrier C#4–C#5, B −1/−2 
 - Random de envelope por nota é o mesmo mecanismo que outra análise do gênero desaconselha **no grave** — aqui liberado porque é resposta ≥250 Hz, não baixo.
 - Phaser/reverb/echo: retorno filtrado, dry predominante — sem serial 100% wet em elemento de transiente.
 
-## Trechos de prova (transcrição, sem timestamp — ordem literal)
+## Trechos de prova (transcrição, sem timestamp)
 
 1. "the trick with these bubbly sounds or anything bubbly really is to start with a carrier wave with a high frequency and a modulating wave so that oscillator B with a lower one"
-2. "grab an expression control. Now, this is a Max for Live plugin… we're just going to modulate it with random all of the things that we think sounds quite interesting… on the volume envelope I'm going to do a bit of decay… Release as well… map that to my release… map that to the decay here of the FM… put this on the course pitch"
+2. Expression Control (Max for Live) modulando vários parâmetros com random; mapear decay e release do envelope, o decay da FM e o coarse pitch (Scionaugh)
 3. "I'll grab my rhythmizer. So I can just play one long note… give it a bit of compression… maybe a bit of phaser… a bit of reverb. And a bit of echo"
 
 ## Limites

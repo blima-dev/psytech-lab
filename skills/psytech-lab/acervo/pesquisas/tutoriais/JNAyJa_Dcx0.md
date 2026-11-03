@@ -104,39 +104,15 @@ camada (atmosfera e resposta), não um ajuste de minutos.
 
 **1. Definição e o que o granular produz (00:00:26.800–00:00:35.600):**
 
-> 00:00:26.800 so what is granular synthesis well it's
-> 00:00:28.560 using tiny tiny snippets of sound
-> 00:00:30.960 to create sort of streams or clouds of
-> 00:00:33.440 textures and tones it creates sounds
-> 00:00:35.040 that
-> 00:00:35.600 don't really occur otherwise that's why
+> Definição de Sonic Academy: granular = snippets minúsculos de som criando streams/nuvens de texturas e tons que não ocorreriam de outro modo — 00:00:26.800–00:00:35.600
 
 **2. Conceito fundamental, grão e independência pitch/velocidade (00:11:27.040–00:12:17.600):**
 
-> 00:11:27.040 so the fundamental concept of granular
-> 00:11:29.200 synthesis is to build up a tone
-> 00:11:31.600 from tiny short snippets of sound and
-> 00:11:34.160 these snippets are called grains
-> [...]
-> 00:12:14.720 right then there's pitch and speed and
-> 00:12:16.160 they're independent unlike when you play
-> 00:12:17.600 a sample back
+> Conceito fundamental (Sonic Academy): granular constrói um tom a partir de grãos; pitch e velocidade são independentes, ao contrário de tocar o sample — 00:11:27.040–00:12:17.600
 
 **3. O salto é a sobreposição de muitos grãos (00:13:04.720–00:13:25.519):**
 
-> 00:13:04.720 well where granular steps beyond this
-> 00:13:07.279 is in the use of multiple grains at once
-> 00:13:09.360 you know dozens or hundreds of them
-> 00:13:10.800 overlapping each other
-> 00:13:12.639 depending on the software each one of
-> 00:13:14.000 those grains can have its own volume its
-> 00:13:15.600 own pitch and so on
-> 00:13:16.880 and they can be drawn from different
-> 00:13:18.240 parts of the sample
-> 00:13:20.079 now once there's several dozen grains
-> 00:13:21.839 firing at once you get new and complex
-> 00:13:23.680 sounds arising and that's granular
-> 00:13:25.519 synthesis
+> O salto do granular (Sonic Academy): dezenas/centenos de grãos sobrepostos, cada um com volume, pitch e origem próprios no sample, geram sons novos e complexos — 00:13:04.720–00:13:25.519
 
 ---
 

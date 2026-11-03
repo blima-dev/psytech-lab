@@ -43,7 +43,7 @@ Track de progressive house "das antigas" com **beat contínuo e automação lent
 2. "for the base I'm going to be using Diva... making like quite a sustained kind of sounding base" — 00:13:07
 3. "I'm going to add in a square wave and that square wave I'm going to pitch down and octave... that just gives it a little bit of growl" — 00:13:30
 4. "setting this to Mono so the nodes don't overlap" — 00:14:44
-5. "the Bas it kind of just disappears because that envelope is too short and so I think we just need to bring up the sustain... adding one or two base shots to kind of keep the low end feeling nice and full and also might improve the groove" — 01:59:16
+5. "the Bas it kind of just disappears because that envelope is too short" — subir o sustain e somar 1–2 "bass shots" para o low end ficar cheio e o groove melhorar (PML) — 01:59:16
 6. "instead of doing like really short exciting drop with a euphoric breakdown and then another 16 Bar drop I'd rather have kind of a beat that goes all the way through the track" — 00:25:44
 7. "it's just going to be maybe dropping out the kick or taking out just the base from the kick and the tum" — 00:51:14
 8. "yeah here we starting on the four the e I'm going up to the five and then down to the three... and it's actually such a nice sound... relieving" — 00:18:42

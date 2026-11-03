@@ -98,9 +98,9 @@ O vídeo é 100% stock Ableton, então a rota principal é **1:1 no Live 12**. P
 
 > "And now we need to add unison. We have two two modes here, shimmer and noise, which give us this nice effect. I'm going to use shimmer." — 00:04:40.5–00:04:48.7
 
-> "Yeah, and now we need, of course, the reverb. As it's um like we need to put the sound in space, so we can actually use the combination of two, have a bit of echo." — 00:05:40.1–00:05:53.2
+> Reverb combinado com um pouco de echo para colocar o som no espaço — 00:05:40.1–00:05:53.2
 
-> "This is pretty much the basics how this sound is created. You can take it so in so many directions, experiment with different wavetables, with different modulations, with different LFO shapes, with different LFO rates, and so on." — 00:07:24.7–00:07:40.8
+> Receita básica do pad; a partir dela, explorar wavetables, modulações, formas e rates de LFO variados (Hypnotic Techno Production) — 00:07:24.7–00:07:40.8
 
 ## Lacunas (o que a legenda não diz)
 

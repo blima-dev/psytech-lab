@@ -69,7 +69,7 @@ O clipper fixa um teto (ceiling) e corta a forma de onda que passa dele; diferen
 6. **00:06:37.520–00:06:43.470** — "You can actually do something like this where you combine some clipping with some transient shaping."
 7. **00:08:58.710–00:09:01.750** — "So, say the bass, we didn't want to distort the bass, you'd probably reach for a limiter."
 8. **00:09:27.120–00:09:37.720** — "But a little bit of hard clipping subtly is often pretty much inaudible, but you're just you're just managing your transients a little bit."
-9. **00:10:45.080–00:10:54.440** — "Hard clipping is going to introduce more high-frequency elements. Soft saturation is going to be a little bit warmer sounding, but both of them are going to add a bit more of an aggressive tone to whatever it is you're clipping."
+9. **00:10:45.080–00:10:54.440** — hard clipping adiciona conteúdo agudo; soft saturation soa mais "warm"; ambos tornam o tom mais agressivo (Sonic Academy).
 10. **00:11:03.720–00:11:16.520** — "Whereas, for musical elements like, you know, you're not going to clip a a a felt piano necessarily unless that's the sound you're going for because it will be out of keeping with the the source sound."
 
 ## Limites e o que não foi verificado

@@ -79,9 +79,9 @@ Kick 3 e SideKick seriam ferramentas de desenho de kick e de ducking; o vídeo n
 - **Prioridade: ALTA.** É a narrativa do motor dos dois minutos e confirma o jogo de ausência de kick; o vídeo dá o desenho temporal e a lógica de resolução que faltavam para transformar "tirar o kick" em arco.
 - **Esforço: MÉDIO.** A automação do kick, o corte de hats e os sends são baratos (baixo). O que puxa para médio é o par nota sustentada + atmosfera band-pass, mais a checagem de mid/brilho e a proteção do duck do sub durante o kick fora.
 
-## Trechos de prova: 3 citações literais da legenda com timestamp
+## Trechos de prova da legenda com timestamp
 
-1. `00:02:42 → 00:02:59` — "with that first transition when the kick is taken down and that's always in techno brings a lot of tension because kick being the foundation of the track and low end, when we take it down, it it creates that feeling of emptiness and we want that to resolve."
+1. `00:02:42 → 00:02:59` — tirar o kick (fundação do low end) cria tensão pela sensação de vazio, que pede resolução.
 2. `00:05:23 → 00:05:30` — "So, again, tension. We had hats, we have no hats. So, energy went down, but the tension is still rising." (na sequência, `00:05:32 → 00:05:36` — "Because of the noise, modulation of the noise.")
 3. `00:07:51 → 00:07:59` — "back to we are getting back to the groove, which gives us this foundation, so it's the resolution of the tension."
 

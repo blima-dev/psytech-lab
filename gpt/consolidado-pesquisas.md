@@ -1,7 +1,7 @@
 # Consolidado pesquisas
-Psytech Lab v0.1.1 · 03/11/2026
+Psytech Lab v0.2.0 · 03/11/2026
 
-## ANALISE-MUSICAL-STEMS-M4A-20261015.md
+## pesquisas/ANALISE-MUSICAL-STEMS-M4A-20261015.md
 
 # ANÁLISE MUSICAL — STEMS Music4Aliens "Complete these tracks" (15/10/2026)
 
@@ -56,10 +56,9 @@ Os 18 stems são **128 BPM exatos, alinhados** — podem entrar como camadas de 
 3. Stems como material: resample por trecho (o "square" e o "Reaktor 6" são stabs/texturas prontos em Em — Em é relativo de G; para levar a C# frígio, pitch de ±5 semitons e audição para escolher a direção).
 4. Provas: medição por envelope RMS (250 ms) sobre os arquivos do pack.
 
-
 ---
 
-## AUDITORIA-PACKS-ORGANICOS-20261029.md
+## pesquisas/AUDITORIA-PACKS-ORGANICOS-20261029.md
 
 # Auditoria de acervo — packs orgânicos (timbres orgânicos de madeira)
 
@@ -142,10 +141,9 @@ Qualidade/timbre de qualquer arquivo (sem escuta) · conteúdo real dos áudios 
 
 **Provas:** `find` por pasta (contagens acima) · `afinfo` amostras: Perc High 0,496 s · ShakerShot 1,000 s · PercTexture 1,563 s · Flute 6,606 s · totais: 1.039/1.095/456 wavs.
 
-
 ---
 
-## CURSO-DIVA-PML-DISSECACAO-20261025.md
+## pesquisas/CURSO-DIVA-PML-DISSECACAO-20261025.md
 
 # CURSO PML — u-he Diva Sound Design (dissecação completa)
 
@@ -266,10 +264,9 @@ O curso é **techno melódico / progressive house** de 2020: Lane 8, Ben Böhmer
 - O mapeamento código→nome de modelo (oscilador/filtro) é inferência do manual.
 - O zip **não traz o projeto Ableton** citado na introdução; se o curso promete um projeto, ele não veio neste pacote.
 
-
 ---
 
-## DOSSIE-DINAMICA-MUSICAL-20261013.md
+## pesquisas/DOSSIE-DINAMICA-MUSICAL-20261013.md
 
 # Dossiê de dinâmica musical (estudo de referência)
 
@@ -494,10 +491,9 @@ Há também um **erro de escala de tempo** no detector de tensão (`round(22050/
 
 ---
 
-
 ---
 
-## ESTUDO-ARRANJO-FX-DESENHO-20261025.md
+## pesquisas/ESTUDO-ARRANJO-FX-DESENHO-20261025.md
 
 # ESTUDO — Arranjo · FX · Desenho das referências (25/10/2026)
 
@@ -583,10 +579,9 @@ Miles-CallToTheWild · Yao-Limbo · Yao-Demons.
 - **Acervo amplo (266 do Psy4 + Tech Psy SC) NÃO rodou nesta rodada** (falhas de infra na sessão: bug de path, segfault do beat_track em py3.13 → fallback autocorrelação, pyin lento em GPU e quedas de VM). Playbook pronto para sessão nova.
 - BPM por fallback de autocorrelação tem desvio ~1,2% vs beat_track (127,7 vs 129,2 no Slippery).
 
-
 ---
 
-## ESTUDO-BATERIA-E-BAIXO-20261017.md
+## pesquisas/ESTUDO-BATERIA-E-BAIXO-20261017.md
 
 # Bateria + graves psytech — especificação de cena, vetos e auditoria técnica
 
@@ -833,10 +828,9 @@ A pesquisa externa privilegiou **fontes primárias da cena**, documentação/fab
 
 **Internet consultada:** sim. As conclusões externas se apoiam principalmente em **Zenon Records/Zenon Education, AlpaKa MuziK, Beatport, Spotify for Artists, FabFilter, iZotope e pesquisa perceptual de 2025**. Os números específicos do caso e de Slippery/Kaled/Gazolla/ISMAIL foram tratados como **medições fornecidas pelo projeto de origem**, não como dados inventados ou extrapolados da web.
 
-
 ---
 
-## ESTUDO-BUILDS-NOTEBOOKS-20261012.md
+## pesquisas/ESTUDO-BUILDS-NOTEBOOKS-20261012.md
 
 # Builds e transições — hipóteses de composição (síntese de consultas a notebooks de IA)
 
@@ -869,10 +863,9 @@ Começar pela **conversa de motivos (arco A)**, combinando depois uma **trajetó
 
 A descrição oficial do curso Zenon apresenta transformação de dois hooks para a transição e depois um riser rítmico de apoio. É evidência curricular, não escuta das aulas. Os tempos exibidos no catálogo são durações de aulas; não usar como timestamps de excertos. O artigo TenseMusic sustenta tensão com múltiplos eixos, mas foi avaliado principalmente em música clássica e não valida uma receita psytech.
 
-
 ---
 
-## ESTUDO-SET-REF-POS-2MIN-E-CENA-20261015.md
+## pesquisas/ESTUDO-SET-REF-POS-2MIN-E-CENA-20261015.md
 
 # ESTUDO — pós-2:00 de uma faixa psytech, gênero e cena (15/10/2026)
 
@@ -1037,510 +1030,54 @@ CARIMBOS: MEDIDO = DSP local (ffmpeg ebur128 + scipy) · OUVIDO = escuta assisti
 
 **Limites declarados:** swing dos hats por DSP = NÃO VERIFICADO (escuta qualitativa "leve") · escuta = 8 segmentos, não a faixa contínua (4:40–5:05 e 5:40–6:45 só DSP).
 
-
 ---
 
-## Estudo Synth e Atmos e FX.md
-
-# Pesquisa aprofundada de SYNTH/GLITCH, FX, vozes e atmosferas
-
-## Sumário executivo
-
-**Veredito:** o caso medido (uma faixa psytech de referência) **já tem vocabulário suficiente e, em vários aspectos, mais recursos do que precisa**. A oportunidade não é adicionar synths, plugins, camadas ou FX. É **transformar os canais existentes em uma hierarquia mais radical**, onde glitch, voz, atmosfera e transições aparecem como informação rara e deliberada. Isso está muito mais próximo do denominador comum Zenon/psytech atual: som profundo e hipnótico, detalhes digitais complexos, contraste orgânico–futurista e textura minuciosa, não preenchimento permanente. A própria Zenon, em material de 2026, associa sua estética a síntese glitch, paisagens imersivas, complexidade de design e à tensão entre orgânico e eletrônico; lançamentos recentes da AlpaKa descrevem bushtech/psytech em termos semelhantes, com "texturas psicodélicas", grooves rolantes e detalhe controlado.
-
-O caso medido mostra uma faixa conceitualmente madura — **128 BPM, C# frígio, vocabulário completo de glitch/FX, voz narrativa, madeiras, granular, FM, formant e atmosfera** — mas com quatro desvios mensuráveis: energia de 8 kHz+ abaixo das referências, presença excessiva, banda média espacialmente estreita e densidade de transientes acima do teto. O render registra **8 kHz+ = −25,6 dB, ar = −20,1 dB, centroide = 217, presença = 0,64, correlação média L/R = 0,80 e 7,57 picos/s**, contra referências do corpus: 8 kHz+ ≈ −22,1 a −20,1 dB, centroide 266–287, presença ≈0,51, correlação 0,32–0,44 e teto interno de 6,99 picos/s.
-
-| Descoberta | Veredito | Consequência |
-|---|---|---|
-| **O problema não é falta de conteúdo** | **Verificado** | Formant, FM, granular, stutter, reverse, tape stop, riser, downer, voz, foley, drones e camas já existem. Adicionar famílias aumenta o problema de densidade. |
-| **A assinatura mais promissora é orgânico → digital → orgânico** | **Fortemente sustentado** | Madeira, voz e foley devem alimentar resampling, granular, spectral e physical modelling; isso diferencia o projeto sem trocar identidade. Zenon Education ensina justamente sampling, FM, granular, resampling, micro-edit e pads a partir de amostras. |
-| **"Abrir" não significa simplesmente subir agudo** | **Verificado** | +3 dB nas fontes entregaram só ~+0,8 dB em 8–16 kHz na janela medida; o master absorveu parte. O caminho é **redistribuir**: menos 2–4 kHz simultâneo, mais informação curta e lateral em 8–16 kHz. |
-| **AutoPan não resolveu a largura** | **Verificado pelo resultado** | Correlação 0,80 significa que a energia dominante continua muito correlacionada. Pan de material mono e Utility Width não substituem criação real de conteúdo Side. Ableton confirma que Utility só manipula a largura do sinal que já existe e que Bass Mono protege os graves na soma mono. |
-| **A próxima melhoria é principalmente subtrativa** | **Recomendação** | Reduzir colisões de FX de transição, abrir espaço lateral e transformar alguns eventos sobreviventes em "objetos" de maior valor. Meta imediata: ≤6,99 picos/s sem perder narrativa. |
-
-Há ainda **uma inconsistência de dados que merece gate antes de decisões finas**: a forma descrita tem 960 beats = **7:30 a 128 BPM**, enquanto um render também foi citado com **12:59**. Antes de perseguir diferenças de 1–2 dB, a janela usada para LUFS, espectro, centroide, presença e densidade deve ser confirmada como exatamente a região musical comparável às referências. Isso não invalida as medições existentes; apenas determina se elas descrevem os mesmos 7:30.
-
-**Premissas.** O tempo é o declarado (128 BPM). As propostas abaixo assumem Live 12 + Max for Live e Serum 2 já presente; nenhum plugin pago é requisito.
-
-## O que o bloco precisa ter
-
-Não existe norma formal dizendo que minimal psytech/zenonesque "precisa" de voz, riser, tape stop ou uma porcentagem específica de reverb. As fontes primárias da cena descrevem **propriedades estéticas**, não especificações de engenharia. Zenon enfatiza minimalismo profundo, musicalidade, design futurista, síntese glitch, atmosferas orgânicas e detalhe; AlpaKa enfatiza grooves rolantes, hipnose, texturas psicodélicas e detalhe controlado. Portanto, "obrigatório" abaixo significa **denominador recorrente da estética**, e não uma regra universal.
-
-| Família | Papel que realmente importa | Faixa operacional de partida | Espaço/FX — ponto de partida | Comportamento temporal | Evidência |
-|---|---|---:|---|---|---|
-| **Synth / stab** | Motivo reconhecível, pergunta/resposta, tensão | HP geralmente **120–180 Hz**; identidade em ~300 Hz–4 kHz; brilho seletivo 6–12 kHz | Seco ou **5–20% serial**; tails em paralelo | Poucos eventos; repetição + microvariação | Wavetable, FM, sampler e resampling aparecem explicitamente na pedagogia Zenon. |
-| **Glitch / micro-edit** | "Fala" digital, quebra de expectativa, detalhe psicodélico | Preferir **>150 Hz**; evitar acumular 2–4 kHz | 0–15% ambiente no evento; tails independentes podem ser 100% wet em retorno | 1/32–1/4 nota para micro-evento; clusters pontuais, não fluxo constante | Beat Repeat trabalha de 1/32 a 4 bars e grids pequenos deliberadamente viram artefato sonoro. |
-| **Voz principal/falada** | Evento semântico e narrativo | Voz humana ocupa aproximadamente 100 Hz–12 kHz; para mix, graves indesejados frequentemente ficam abaixo de 100–250 Hz; inteligibilidade 1,5–5 kHz; sibilância ~5–10 kHz | Centro relativamente seco; delay/reverb em envio | Rara e inteligível antes de ser "bonita" | Shure e iZotope destacam relação sinal/ruído, presença e sibilância; reverberação elevada reduz inteligibilidade. |
-| **Voz processada / chop** | Ponte humano↔máquina | HP **150–250 Hz**; formantes/médios como assinatura; 8–12 kHz só se controlado | 10–40% transformação ou 100% wet em pista derivada | Fragmentos curtos, não cama | Vocoder combina envelope espectral do modulador com portadora harmônica; Serum 2 oferece granular e resíntese espectral. |
-| **Atmosfera / drone** | Profundidade, lugar, memória, tensão | **HP 120–300 Hz conforme fonte**; corpo 300 Hz–4 kHz; ar eventual 8–16 kHz | Reverb/delay podem ser altos porque não são solistas; filtrar retorno | Deve **respirar**: intensidade, espectro ou presença mudam; silêncio faz parte | Zenon 2026 enfatiza atmosferas orgânicas e imersivas; Granulator III é explicitamente indicado para pads/texturas. |
-| **Foley / field recording** | Evidência física do lugar | Cortar apenas o que disputa grave; preservar transiente útil | Espaço paralelo curto ou resíntese | Eventos contextualizadores | Zenon contemporânea valoriza contraste orgânico–eletrônico; seu curso trata samples como matéria-prima para processamento e resampling. |
-| **Transição** | Anunciar, negar ou distorcer fronteira | Tipicamente HP de **150–250 Hz** quando o FX não deve ocupar o motor de grave | Pode ser 100% processado | Micro: <1 beat; pequena: 1–2 bars; grande: 4–8 bars são **faixas propostas**, não norma de gênero | Ableton fornece stutter, spectral freeze/delay, pitch/frequency shifting e convolution como mecanismos adequados. |
-
-### Arquitetura de síntese recomendada
-
-Não se ganha muito ao escolher entre "analógico ou digital". A combinação mais coerente com o corpus Zenon atual é **híbrida**: fonte humana/acústica → transformação digital → retenção de algum vestígio físico. A própria Zenon Education ensina sampler, FM, granular, time-stretch, resampling e micro-edits; a Zenon de 2026 descreve explicitamente artistas em termos de síntese glitch e encontro entre orgânico e mecânico.
-
-| Método | Melhor uso | Prioridade |
-|---|---|---|
-| **Wavetable** | Formant, squelch, "corneta": movimento controlado de espectro e "vogais" | **Alta** |
-| **FM** | Stabs metálicos, sinos curtos, ataques inarmônicos | **Alta** |
-| **Granular** | Chuva digital, voz destruída, atmosferas, tails derivados de foley/madeira | **Alta** |
-| **Spectral** | Congelar um transiente, separar tempo/pitch, ecos metálicos, morph de voz/FX | **Alta e pontual** |
-| **Physical modelling** | Fazer material acústico "ressonar" como madeira, tubo ou metal sem acrescentar outro synth | **Alta como detalhe** |
-| **Virtual-analog** | Corpo, calor e contraste com digital extremo | Média |
-| **Analógico puro** | Cor estética, não requisito | Baixa |
-| **Híbrido amostra+sintetizador** | Converter madeira, voz e campo em material alienígena ainda reconhecível | **Prioridade máxima** |
-
-Serum 2 já cobre wavetable, sample, multisample, granular e spectral; portanto, **não existe lacuna de motor de síntese que justifique comprar outro sintetizador agora**. O fabricante documenta FM, phase distortion, ring modulation, sample slicing, tape-stop, granular e resíntese espectral em um único instrumento.
-
-### Espaço, "ar" e dinâmica
-
-Não há fonte primária da cena que publique algo equivalente a "voz = 17% wet", "glitch = 12% wet" ou "8–16 kHz deve estar ativo em 53% da música". **Esses números não devem ser inventados.** Para o caso, a régua robusta é o próprio corpus de referência.
-
-O objetivo de 8–16 kHz deve ser tratado como **envelope temporal**, não apenas média espectral. Em cada seção, meça o envelope RMS de 8–16 kHz em janelas de 250–500 ms e compare: mediana, percentil 90 e porcentagem de janelas acima de um limiar relativo ao full-band. O alvo útil é aproximar a referência **por seção**, por exemplo dentro de ±1–1,5 dB na mediana, em vez de alcançar uma média global por shelf. Isso testa "quanto tempo existe ar" de fato.
-
-A régua proposta (caso medido → corpus de referência):
-
-| Métrica | Caso medido | Gate intermediário | Referência/limite final |
-|---|---:|---:|---:|
-| 8 kHz+ | −25,6 dB | **−24 a −23 dB** | corpus: −22,1 a −20,1 |
-| "Ar" | −20,1 dB | **−19 a −18 dB** | corpus: −17,2 a −16,1 |
-| Centroide | 217 | **240–260** | corpus: 266–287 |
-| Presença | 0,64 | **≤0,58** | corpus ≈0,51 |
-| Correlação média | 0,80 | **0,55–0,65** | corpus 0,32–0,44 |
-| Densidade | 7,57/s | **≤6,99/s** | ≤6,99/s interno |
-| LRA | 5,6 LU | **manter** | gate interno 4–7 LU |
-
-Esses valores de referência são medições do corpus do projeto de origem, **não standards da indústria**.
-
-## O que não pode ter
-
-Os principais vetos não são "gosto". Alguns são riscos físicos/de distribuição; outros são leis estéticas do estilo.
-
-| Gravidade | Veto | Limiar / teste | Por que é ruim |
-|---|---|---|---|
-| **Crítico** | Conteúdo lateral relevante abaixo de 120 Hz | Régua do estilo: mono ≤120 Hz | Baixas frequências fora de fase podem sofrer mudança de timbre/cancelamento na soma mono. Ableton oferece Bass Mono exatamente para evitar coloração dos graves na reprodução mono. |
-| **Crítico para streaming** | `−0,6 dBTP` em master de `−10,2 LUFS-I` | Para masters acima de −14 LUFS, Spotify recomenda **<−2 dBTP** | Falta ~1,4 dB de margem numa entrega Spotify equivalente. Não exige mudar a master de clube. |
-| **Alto** | Aumentar 8 kHz+ com shelf global | Já testado: +3 dB nas fontes → só ~+0,8 dB em 8–16 kHz na janela | O limiter/master absorve parte e você corre o risco de elevar 4–10 kHz antes de gerar contraste real. |
-| **Alto** | Plateau agressivo de 5–10 kHz | Não há dBFS universal; usar delta contra referência e de-essing | Sibilância vocal costuma residir nessa região; processamento/saturação pode acentuá-la. |
-| **Alto** | "Cola cinza": textura quase invariável | Cama contínua de ruído reprova na estética minimal | Reduz contraste e transforma detalhe psicodélico em piso de ruído perceptual. |
-| **Alto** | Mais transientes para criar brilho | 7,57/s > 6,99/s | Resolver ar adicionando objetos pioraria um problema já medido. |
-| **Alto** | 2–4 kHz como solução para "faixa fechada" | Presença já 0,64 vs ~0,51 | É justamente a região em excesso no índice usado. |
-| **Médio-alto** | Reverb pesado sobre fala antes da inteligibilidade | Preferir dry/early + tail separado | Estudos recentes de fala confirmam que reverberação pode reduzir inteligibilidade; a informação semântica deve sobreviver primeiro. |
-| **Médio** | Abrir estéreo com microdelay indiscriminado | Sempre testar mono/null | Diferenças temporais pequenas criam comb filtering na soma; o side deve vir preferencialmente de modulação/decorrelação acima de 120 Hz. |
-| **Médio** | Transformar todo FX em acontecimento | Teste: fronteira continua legível sem ele? | A estética Zenon atual é detalhada, mas também é profunda, hipnótica e minimal; "detalhe" não implica evento permanente. |
-
-Uma correção importante: **voz não é obrigatória para ler como gênero**, nem riser, tape stop, stutter ou granular individualmente. O que converge é a existência de **design próprio, textura, hipnose, programação detalhada e relação orgânico/futurista**. Tornar cada subtipo obrigatório seria solução procurando problema.
-
-## O que converge na cena
-
-A caracterização de 2026 é excepcionalmente coerente entre Zenon e AlpaKa. Zenon descreve lançamentos recentes como síntese glitch, soundscapes imersivos, atmosfera orgânica, minimalismo, design de alto detalhe e tensão orgânico–mecânico; AlpaKa fala em dark minimal/psytech baseado em textura profunda, grooves rolantes, estruturas hipnóticas, detalhe e "controlled chaos".
-
-| Elemento | Consenso técnico/estético forte | O que varia |
-|---|---|---|
-| **Hierarquia** | Groove profundo + poucos objetos de alta identidade | Quantos objetos e quão agressivos |
-| **Synth** | Timbres próprios, modulados, difíceis de reduzir a "preset" | FM, wavetable, sample, analog/híbrido |
-| **Glitch** | Detalhe digital/microedição faz parte da linguagem | Pode ser protagonista ou apenas pontuação |
-| **Orgânico** | Forte presença de texturas/instrumentos/ambientes físicos | De bush/tribal a cinematográfico |
-| **Atmosfera** | Profundidade e imersão | Swampy, industrial, desértica, etérea |
-| **Melodia** | Pode existir, mas submetida à hipnose | De quase ausente a emotiva |
-| **Voz** | Opcional | Falada, chop, fonema, textura ou nenhuma |
-| **Espaço** | Texturas podem ser amplas enquanto o motor continua focado | Grau de largura e técnicas |
-| **Detalhe** | Alto refinamento de programação | Densidade absoluta não é consenso publicado |
-
-**Minimal psytech / dark minimal:** tende à economia de objetos, transiente definido e silêncio estrutural. **Psytech:** tende a ser mais frontal, preciso e "forward-driving"; a Zenon descreveu seu álbum *Fragmented Frequencies* de 2026 por produção nítida, baixo profundo, groove oscilante e design avançado. **Bushtech/bush prog:** puxa mais para material orgânico, grooves rolantes/chunky e textura psicodélica. **Zenonesque/dark prog:** enfatiza profundidade, atmosfera, complexidade e uma estranheza orgânico-digital mais ampla. Essas fronteiras são **inferências estéticas**, não taxonomia científica; lançamentos atuais cruzam esses rótulos deliberadamente.
-
-Para um projeto psytech, a consequência é clara: **madeira + glitch falante + foley + voz rara + espacialidade lateral** já formam uma identidade muito mais forte do que comprar outra coleção de synths.
-
-Ambisonics, por outro lado, deve ser tratado como uma entrega separada, não como solução de mix estéreo. Pesquisas de 2024–2025 mostram que ordem e decoder alteram a precisão de localização; em Ambisonics de terceira ordem, por exemplo, o decoder influenciou a resolução angular mensurada. Portanto, **não vale introduzir uma cadeia Ambisonics no master estéreo sem requisito explícito de reprodução imersiva**. Para o objetivo club/stereo, é complexidade prematura.
-
-## Por que a banda média continua quase mono mesmo com AutoPan
-
-O resultado de **0,80** diz que o problema não é ausência de automação de pan; é **a natureza da energia dominante**.
-
-Fontes centrais (horn/voz/synth/madeira) geram MID dominante; AutoPan e pan empurram esse MID de lado, mas ele continua correlacionado. Só reverb/granular/spectral com L/R realmente diferentes criam SIDE real. A mix deve somar: mono ≤120 Hz, largura >120 Hz.
-
-Utility pode aumentar ou diminuir a largura **de conteúdo estéreo já presente**, mas não cria informação Side significativa a partir de duas cópias perfeitamente idênticas. Ableton também deixa claro que 100% Mid produz mono e que o modo Side isola os componentes fora de fase.
-
-Portanto, o piloto correto é gerar **diferença L/R real apenas acima de ~150–250 Hz** em camas, atmosferas, drones, tails de voz e de FX: granularização com posições independentes, delays/reverbs estéreo decorrelacionados, modulações distintas por canal e Spectral Time. Não é "Width +150% em tudo".
-
-## Teste de duplicação entre instâncias (risco de fase)
-
-**Só o fato de cadeia e automação serem idênticas não prova problema de fase.** O risco existe quando duas instâncias produzem simultaneamente áudio fortemente correlacionado — especialmente mesmo pitch, mesma fase inicial, mesma envolvente e mesma modulação.
-
-Teste objetivo proposto:
-
-1. Renderizar isoladamente os canais em questão **apenas nos trechos de sobreposição**.
-2. Medir correlação e coerência por banda em `120–500`, `500–2k`, `2–8k`.
-3. Somar cada par e comparar RMS/pico com uma única instância. Duplicatas quase idênticas e em fase tenderão teoricamente a aproximadamente **+6 dB** de amplitude somada.
-4. Inverter a polaridade de uma pista com Utility. Se o null eliminar quase todo o sinal, você tem duplicação efetiva.
-5. Se a correlação for >0,95 nos eventos simultâneos **e** o ganho somado estiver próximo de +6 dB, tratar como dobra de mesmo objeto, não como largura.
-6. Se as pistas nunca coincidirem, **não há problema a resolver**.
-
-Não recomendo "desafinar para criar estéreo" preventivamente; isso poderia destruir um desenho de chamada/resposta que talvez esteja perfeitamente correto.
-
-## As lacunas mais caras (para qualquer projeto nesse estágio)
-
-**Primeira — largura estrutural.** Levar a correlação média para **0,55–0,65 como primeiro gate**, preservando ≤120 Hz mono. Só depois avaliar se aproximar 0,32–0,44 melhora a música ou começa a soar artificial. A ferramenta prioritária é conteúdo Side real em camas/tails, não pan extra.
-
-**Segunda — redistribuição presença → ar.** Buscar inicialmente algo como **+2 dB de 8–16 kHz no mix e −1 a −2 dB de competição em 2–4 kHz nos eventos selecionados**, sem shelf master. Fontes candidatas: shimmers, echorolls, certos reverses, foley metálico e tails granulares. Após cada A/B, medir presença e 5–10 kHz; se "abrir" o ar também elevar muito essa região, rejeitar.
-
-**Terceira — densidade/hierarquia.** Chegar a **≤6,99 picos/s antes de criar um único novo evento**. Os canais de FX de transição mais abundantes são os primeiros candidatos ao mapa de colisão, não porque sejam ruins, mas porque são os mais frequentes. A redução de 7,57 para 6,99 equivale a ~8% na métrica de picos, mas **não** a cortar 8% dos clipes: um clipe pode produzir muitos ou nenhum onset detectado.
-
-**Quarta — contribuição não identificada em 55–75 Hz.** Renderizar os blocos de clima/voz e repetir com atmos/drone/fx individualmente fora. O gate sugerido é simples: em trechos com kick+bass, desligar cada bloco de cor não deveria alterar significativamente o 55–75 Hz se ele não tiver função de low-end. Sem essa medição, qualquer HP adicional seria palpite.
-
-**Quinta — integridade da régua.** Confirmar que a janela de medição é exatamente a região musical comparável às referências antes de fechar decisões por décimos de dB. É o principal risco de evidência: uma janela global diferente pode fabricar uma diferença espectral que parece artística.
-
-## Recomendações práticas de sound design e implementação
-
-### Ferramentas: o que vale usar e o que não vale comprar agora
-
-Preços são preços de lista observados em **17 de outubro de 2026**, normalmente em USD e antes de impostos/descontos locais.
-
-| Ferramenta | Categoria | Plataforma | Faixa de preço | Destaque | Recomendação |
-|---|---|---|---:|---|---|
-| **Ableton Live 12 nativo + Max for Live** | Glitch, spectral, reverb, modelling, granular | macOS / Windows | Já incluído conforme edição | Beat Repeat, Spectral Time, Roar, Shifter, Corpus, Hybrid Reverb, LFO/Shaper | **Primeira escolha. Não comprar substituto antes de esgotar isso.** |
-| **Serum 2** | Synth híbrido | VST3/AU/AAX; macOS/Windows | **US$249** | Wavetable, sample, granular, spectral, FM/PD/RM | **Já resolve quase todo o synth/glitch requerido.** |
-| **Output Portal** | Granular FX | Plugin desktop | **US$149** | Granular em tempo real sobre qualquer entrada | Opcional para velocidade de workflow, não capacidade nova essencial. |
-| **Sugar Bytes Graindad** | Granular FX | Plugin | **US$99** | Granular em tempo real | Alternativa mais barata ao Portal. |
-| **Sugar Bytes Effectrix2** | Sequenciador multi-FX | Plugin | **US$129** | Glitch/loop FX sequenciados | Só vale se edição manual/Beat Repeat estiver lenta. |
-| **iZotope Stutter Edit 2** | Glitch/stutter | Plugin | **US$199** | Gestures, slices, transições complexas | **Não necessário** com Beat Repeat já funcionando. |
-| **iZotope VocalSynth 2** | Voz criativa | Plugin | **US$199** | Vocoder, Compuvox, Polyvox, Talkbox, Biovox | Opcional se o plugin atual de voz não fizer formant/vocoder facilmente. |
-| **Valhalla Delay** | Delay/pitch/frequency shift | macOS / Windows | **US$50** | Tape, BBD, digital, pitch, Ghost frequency shift, diffusion | Excelente custo; avaliar se já há delays suficientes. |
-| **Valhalla Supermassive / Freq Echo** | Atmosfera / frequency shift | macOS / Windows | **Grátis** | Reverbs/echo espaciais e frequency shift | Boa opção gratuita para laboratório, não requisito. |
-| **FabFilter Pro-Q 4 / Pro-MB** | EQ/dinâmica | VST/VST3/AU/CLAP/AAX | **US$199 cada** | EQ e dinâmica multibanda/M/S precisos | Úteis para diagnóstico fino; não mudam a composição. |
-
-**Decisão de compra:** **US$0 adicionais por enquanto.** Serum 2 + Live 12 já cobrem o problema. Comprar Portal/Stutter Edit/VocalSynth antes de provar uma limitação real seria complexidade sem evidência.
-
-### Cadeias sugeridas
-
-Os números abaixo são **pontos de partida para A/B**, não "receita oficial Zenon".
-
-| Uso | Cadeia | Faixa inicial |
-|---|---|---|
-| **Glitch falante** | Serum 2 → HP → Auto Filter/BP → Beat Repeat → EQ → duck → tail paralelo | HP **150–220 Hz**; BP móvel ~700 Hz–3 kHz; Beat Repeat 1/16→1/32, Gate 1–3/16, Chance 10–35%; tail 5–15% |
-| **Metallic digital** | FM/Serum → Shifter/Corpus → HP → Roar paralelo → Hybrid Reverb return | HP 180–300 Hz; frequency shift ~±10–80 Hz; distorção paralela 5–20%; reverb 100% no retorno |
-| **Pad orgânico metálico** | Foley/material orgânico resampled → Granulator III → Corpus → EQ → reverb | grains ~30–120 ms como exploração; HP 180–300; ressonância afinada na tônica do projeto; cauda 2–6 s |
-| **Fala inteligível** | HP → EQ/dinâmica → de-esser → saturação leve → delays/reverb por send | HP 100–200; de-ess 5–10 kHz, ~2–5 dB GR como início; predelay 15–25 ms; core seco |
-| **Vocal alienígena** | Tail de voz → formant/pitch → Vocoder/Spectral → granular → stereo return | deslocamentos pequenos primeiro; grains 30–100 ms; cortar grave <200; Side somente >200 |
-| **Atmosfera viva** | Fonte de campo/forest → Granulator III Cloud → filter → spectral delay → reverb | HP 180–300; modulação lenta 2–8 bars; inserir **silêncios**, não apenas automação |
-| **FX rítmico** | Stutter → Beat Repeat → Spectral Time → filter → reverb/delay | Grid 1/16→1/32; concentrar aceleração no último 1/2–1 beat; Spectral Freeze no onset |
-| **Ar sem harshness** | Fonte sobrevivente → HP/BP → saturação suave → EQ dinâmico 5–10k → side return | retirar 2–4 kHz quando possível; adicionar 8–16 apenas no objeto; rejeitar se sibilância crescer |
-
-Hybrid Reverb combina convolution e algoritmo e pode importar áudio como impulse response; Spectral Time congela e resintetiza material com delays espectrais e frequency shift; Roar oferece até três estágios não lineares; Corpus simula objetos ressonantes via physical modelling. São exatamente as ferramentas necessárias para transformar madeira/foley/voz em híbridos sem adicionar outra família de synth.
-
-### Sons assinatura
-
-**Glitch lead "fala do deserto".** Use uma fonte formant. Primeiro mantenha duas ou três notas frígias e envelope curto. Depois mova um band-pass aproximadamente entre 700 Hz e 3 kHz por LFO/automation para simular mudanças de vogal. Em seguida, Beat Repeat em 1/16 e 1/32, Gate de 1–3 semicolcheias e Chance baixo/moderado; grids menores são documentados pela Ableton como capazes de gerar artefatos sonoros, exatamente o uso desejado. Por fim, envie apenas o final de algumas frases para Spectral Time ou reverb. **Prova:** continua reconhecível em mono, não aumenta presença global e substitui um evento existente em vez de se somar a ele.
-
-**Pad metálico de madeira.** Não começar em um pad genérico. Capture uma batida orgânica, alimente Granulator III e deixe o fragmento original ainda reconhecível. Granulator III é desenhado para repetir/modular pequenos fragmentos e seus modos ampliam a aplicação para pads/texturas. Passe uma cópia paralela por Corpus para criar ressonância física e afine o centro tonal às notas do modo frígio do projeto. HP por volta de 180–300 Hz e envie a cópia, não o solista original, para reverb longo. **Prova:** desligando o processado, a origem orgânica é evidente; ligando, nasce metal/espaço sem alterar 55–75 Hz.
-
-**Textura vocal "humano virando máquina".** Começar em um tail de voz ou cópia processada, **não criar uma fala narrativa nova**. Remover grave abaixo de aproximadamente 150–250 Hz; controlar sibilância 5–10 kHz; deslocar pitch/formant moderadamente; passar por Vocoder ou resíntese espectral e finalmente granularizar o tail. A voz original permanece seca/inteligível e a textura é lateral. O vocoder, por definição, transfere envelopes espectrais de um modulador para uma portadora; Serum 2 também oferece resíntese granular/espectral para outra leitura. **Prova:** as palavras da fala original continuam inteligíveis sem depender da textura; a textura desaparece ao somar abaixo de 120 Hz porque ali não deve existir energia significativa.
-
-**Atmosfera granular "miragem".** Escolher um único fone/foley/campo e criar várias regiões granuladas da mesma fonte em vez de empilhar três beds independentes. Usar posição do grain lentamente modulada e mudar o espectro a cada 2–8 bars; inserir buracos reais. Zenon Education ensina granular + resampling + corte de áudio para criar micro-edits únicos, e Granulator III é explicitamente direcionado a pads e texturas. **Prova:** comparar o duty cycle de 8–16 kHz e o RMS da atmosfera por bloco de 8 bars; nenhum deve formar uma linha quase constante do início ao fim.
-
-**FX rítmico "quebra e recomposição".** Não fazer outro sweep. Capture o último 1/4–1 beat de um evento já relevante, passe por Beat Repeat 1/16 → 1/32, depois Spectral Time Freeze acionado pelo onset, com pequeno frequency shift crescente; finalize abruptamente na fronteira. Spectral Time pode congelar em transientes, espalhar frequências e gerar ecos metálicos. **Prova:** deve permitir remover um reverse ou riser convencional naquele ponto; se precisa dos dois simultaneamente, provavelmente não ganhou hierarquia.
-
-**Bônus — percussão física impossível.** Copiar uma foley de raspagem por retorno e usar Corpus com ressonância curta para transformar raspagem em "metal/madeira afinado"; depois retirar a fonte seca desse retorno. Isso explora physical modelling sem criar novo canal melódico. **Prova:** funciona como percussão e como identidade tímbrica ao mesmo tempo, reduzindo necessidade de outro glitch.
-
-### Ideias novas para a música
-
-| Ideia | Intenção | Como fazer com o que já existe | Evidência de sucesso |
-|---|---|---|---|
-| **Glitch aprende a falar** | A fonte formant começa abstrata e chega perto da voz humana antes do pico da marcha | Formant responde ao chop vocal com envelope/filtro cada vez mais "vocal" | Ouve-se arco A→B mesmo sem olhar a sessão; não aumenta nº de eventos |
-| **Digitalização da madeira** | Cada ato transforma um pouco mais o material orgânico em glitch | Resample o mesmo gesto via granular/resposta/FM, sem nova melodia | Timbres parecem parentes; identidade maior com menos fontes |
-| **Memória da fala no Drop 2** | O evento único de fala deixa consequência sem repetir a fala | Usar apenas tail/processamento derivado depois, nunca o diálogo bruto | Reconhece-se "fantasma" da voz sem segundo evento semântico |
-| **Formant ↔ whisper** | Humano e máquina parecem conversar | Espaços alternados; um ocupa quando o outro para | Número total de onsets cai, sensação narrativa sobe |
-| **FX ↔ kick por ausência** | Transição prepara impacto por retirada, não riser | Nos últimos 1–2 beats, reduzir FX de transição e deixar um micro-stutter único | Drop parece maior com menos energia prévia |
-| **Shimmer substitui presença** | Ar como flash, não shelf | Escolher poucos eventos de shimmer/echoroll e remover 2–4 kHz desses eventos enquanto preserva 8–12 | 8k+ sobe, presença não sobe |
-| **Deletar para abrir estéreo** | Lateralidade ser percebida porque o centro fica vazio | Quando a atmos granular entra, retirar outro synth central | Correlação cai e densidade também |
-| **Anti-obviedade: riser descendente** | Tensão cresce enquanto pitch desce | Downlifter sobe em intensidade/espectro e cai em pitch | Fronteira continua clara sem "uplifter padrão" |
-| **Anti-obviedade: transição silenciosa** | Uma grande porta é marcada por 0,5–1 beat de nada | Cortar FX antes de uma fronteira já forte; não usar sucção fora das portas principais | Impacto subjetivo cresce enquanto densidade cai |
-
-A ideia central dessas propostas é **troca, não soma**. O Zenon Education enfatiza resampling, edição e criação de persona sônica própria, e a estética recente da própria gravadora continua valorizando detalhe, síntese complexa e identidade; isso favorece reaproveitar os próprios objetos em vez de importar "ear candy" genérico.
-
-## Roadmap de validação — gates de aceite
-
-A ordem é deliberada: primeiro provar o diagnóstico, depois sound design. Não vale polir assinatura enquanto as métricas podem estar sendo calculadas sobre uma janela inconsistente.
-
-Os **gates de aceite**:
-
-1. **Evidência válida:** métricas calculadas sobre janela explicitamente igualada às referências.
-2. **Densidade:** ≤6,99 picos/s sem reduzir a legibilidade dos três momentos narrativos principais.
-3. **Imagem:** correlação média cai de 0,80 para ≤0,65 no primeiro piloto, enquanto ≤120 Hz continua mono e a soma mono não perde objetos importantes.
-4. **Espectro:** 8 kHz+ melhora pelo menos ~2 dB no piloto **sem elevar presença acima de 0,64**; idealmente presença começa a cair.
-5. **Grave:** identificar ou excluir contribuição dos blocos de atmos/voz/fx para 55–75 Hz.
-6. **Sound design:** qualquer novo processamento deve **substituir** ou enriquecer uma função existente, não criar uma quinta camada simultânea de informação.
-7. **Master:** clube pode continuar próximo do loudness escolhido; para Spotify, se mantido acima de −14 LUFS-I, criar margem de True Peak compatível com a recomendação oficial de **<−2 dBTP**.
-
-### Fontes, tutoriais, papers e exemplos para ouvir
-
-A pesquisa privilegiou fontes oficiais, fabricantes e trabalhos acadêmicos. Abaixo estão links diretamente úteis, incluindo recursos em português.
-
-| Recurso | Para quê | Trecho curto da fonte |
-|---|---|---|
-| [Zenon Records — site oficial](https://www.zenonrecords.com/) | Referência estética e releases/áudio atuais de 2026 | "**glitched-out synthesis, intricate sound design and dreamy, haunting melodies**" |
-| [Zenon Education — curso em pt-BR](https://www.zenon-education.com/pt-br/zenon-records-music-production-suite) | Tutorial diretamente da escola Zenon: FM, stretch, sampler, granular, edição | "**Time Stretching, síntese Fm e modulação +automação do sampler**" |
-| [AlpaKa — NVU, *Hourglass EP*](https://alpakamuzik.bandcamp.com/album/nvu-hourglass-ep) | Demo de áudio 2026 de bushtech/psytech/glitch | "**twisted psychedelic textures**" |
-| [Ableton — Beat Repeat / efeitos do Live](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/) | Stutter e buffer manipulation | "**controlled or randomized repetitions of an incoming signal**" |
-| [Ableton — Granulator III](https://www.ableton.com/en/packs/granulator-iii/) | Granular, pads, drones, textura; inclui vídeo/demo | "**looping and modulating short snippets of sound**" |
-| [Ableton — vídeos oficiais Learn Live 12](https://help.ableton.com/hc/en-us/articles/12934450470812-Learn-Live-12-Videos) | Tutoriais oficiais de Roar, Granulator III e workflow | A página lista vídeos específicos para **Roar** e **Granulator III**. |
-| [Xfer — Serum 2](https://xferrecords.com/products/serum-2) | Wavetable, FM, sample, granular e spectral | "**breathing new life into sample material**" |
-| [DAFx — Röbel, transient processing in phase vocoder](https://www.dafx.de/paper-archive/details/svqqbE0vLRFuz4BsmGhoDg) | Base técnica para entender artifacts de stretch/spectral e transientes | "**reduce phase vocoder artifacts during attack transients**" |
-| [Applied Sciences — Ambisonics localization, 2024](https://www.mdpi.com/2076-3417/14/17/7986) | Fundamento de espacialização 3D e localização | O estudo avalia localização com **higher-order Ambisonics**. |
-| [Applied Sciences — Ambisonics 3ª ordem, 2025](https://www.mdpi.com/2076-3417/15/12/6815) | Evidência de que decoder/order importam | "**decoder type influences spatial resolution**" |
-| [Spotify — normalização e masterização, pt-BR](https://support.spotify.com/br-pt/artists/article/loudness-normalization/) | Loudness e True Peak para entrega | "**mantenha o True Peak abaixo de -2 dB**" |
-| [iZotope — EQ vocal](https://www.izotope.com/community/blog/how-to-eq-vocals) | Mapa prático de presença, sibilância e ar | Documenta 1,5–5 kHz para presença e 5–8 kHz para sibilância. |
-| [Speech intelligibility versus congruency, 2024](https://www.mdpi.com/2813-2084/3/1/3) | Por que o núcleo da fala não deve depender de reverb pesado | O estudo testa o trade-off entre reverberação realista e inteligibilidade de fala. |
-
-**Síntese final:** o projeto não precisa de "mais sound design". Precisa fazer o sound design que já existe **ganhar escassez, parentesco e consequência narrativa**. A melhor tese de produção é: **madeira/voz/foley geram a matéria; Serum/granular/FM/spectral a deformam; silêncio e centro seco mostram a transformação; tails e atmosferas ocupam as bordas; abaixo de 120 Hz nada interfere no motor**. Esse desenho é compatível tanto com decisões de estilo minimal orgânico quanto com o eixo orgânico–futurista, glitch e hipnótico explicitamente presente na produção Zenon/AlpaKa de 2026.
-
-**Internet consultada:** sim, em 17 de outubro de 2026. As fontes que mais sustentam o veredito são **Zenon Records e Zenon Education** para a linguagem específica da cena; **AlpaKa MuziK** para bushtech/psytech contemporâneo; **Ableton e Xfer** para implementação DSP; **Spotify** para entrega de loudness/True Peak; e estudos de **DAFx, Applied Sciences e pesquisa de inteligibilidade de fala** para transient processing, Ambisonics e reverberação. Os números específicos do caso e das referências locais vieram do briefing técnico do projeto de origem.
+## pesquisas/Estudo
 
 
 ---
 
-## Estudo de Orquestra.md
-
-# Deep Research — Bloco ORQUESTRA (solistas acústicos/étnicos sobre motor psytech)
-
-## Sumário executivo
-
-**Veredito:** o desenho conceitual do bloco orquestral do caso de referência está mais próximo da cena do que os números hoje conseguem provar. O núcleo correto não é "usar instrumentos étnicos", mas combinar **poucas ideias reconhecíveis, espaço perceptivo, transformação tímbrica e tensão/relaxamento** sobre um motor rítmico profundo. Fontes atuais de Zenon Records, Digital Structures e AlpaKa descrevem justamente síntese complexa, melodias assombradas, organicidade, minimalismo, grooves hipnóticos e tensão/relaxamento como elementos recorrentes.
-
-Há, porém, uma distinção crítica entre **o que a pesquisa externa comprova** e **as leis artísticas do projeto de origem**. Não há fonte primária de 2024–2026 que estabeleça como norma do gênero "2–3 notas por frase", "oitavas 3–4", "wet ≤25%", uma determinada distância em compassos entre chamada e resposta ou um registro fixo para kanun/kamancheh/duduk. Esses números são uma **especificação artística válida do caso**, não um consenso publicado da cena. O corpus medido pelo projeto de origem é hoje a evidência quantitativa mais forte para densidade, espectro e forma.
-
-As cinco conclusões de maior impacto são:
-
-| prioridade | conclusão | decisão |
-|---|---|---|
-| **Crítica** | **Não há prova externa de que a cena exija 2–3 notas ou wet ≤25%.** Há, sim, evidência atual de minimalismo, espaço, hipnose, musicalidade e mistura orgânico-eletrônica. | Manter 2–3 notas e ≤25% wet como **DNA do projeto**, não como "regra Zenon". |
-| **Crítica** | O maior ponto cego do bloco é mensuração: há contagem de clipes e dispositivos, mas faltam **nota-a-nota, duração, repouso, simultaneidade, wet real e latência chamada→resposta** por seção. | Extrair essas seis métricas antes de redesenhar melodias. |
-| **Alta** | O princípio **"dry sagrado"** é tecnicamente sólido: fabricantes recomendam preservar/separar o sinal direto; 100% wet é explicitamente apropriado em **Return**, não como única passagem serial de um solista. Pré-delay e ducking ajudam a evitar mascaramento. | Não alterar a régua ≤25%; usar retornos/caudas paralelas para profundidade maior. |
-| **Alta** | Synth que soa acústico **não desqualifica** o bloco. A estética Zenon atual fala explicitamente em fronteira orgânico/sintético; Serum 2 foi desenhado inclusive para multisamples de instrumentos reais, samples, granular e ressíntese espectral. | Kanuns/kamanchehs/flautas sintéticos são defensáveis; o teste é perceptivo, não a origem do som. |
-| **Alta** | Pelos últimos números efetivamente medidos, o caso ainda está **denso demais nos drops** e **escuro demais no topo/ar**. | Não adicionar notas para "resolver" o bloco; a próxima evolução deve vir principalmente de diálogo, contraste e subtração. |
-
-Há ainda um risco fora do bloco, mas objetivo: com **−10,2 LUFS e −0,6 dBTP**, o master não atende à recomendação oficial do Spotify para material mais alto que −14 LUFS, que é manter True Peak abaixo de −2 dBTP para reduzir risco de distorção na codificação.
-
-## Premissas, método e força da evidência
-
-A auditoria usa o briefing congelado do projeto de origem como verdade sobre o caso: 128 BPM, C# frígio, 74 pistas, 10 canais no bloco orquestral, arquitetura das cadeias, contagem de clipes, render e métricas espectrais/densidade fornecidas. Não se presume audição que não ocorreu e não se usa estado de mute como evidência de intenção.
-
-A pesquisa externa cobriu fontes oficiais de **Zenon Records, AlpaKa MuziK, Digital Structures, Xfer Records, Ableton, Spotify, FabFilter e iZotope**, além de literatura experimental sobre segregação auditiva. O retrato 2024–2026 confirma que a família Zenon/psytech atual continua sendo descrita pelos próprios selos como profunda, hipnótica, minimalista, orgânica/eletrônica, com síntese e design sonoro elaborados. Zenon descreve Molecc em 2026 pela combinação de "glitched-out synthesis", design intrincado e melodias assombradas; Evolve por baixo profundo, swing e sound design; Digital Structures descreve Rainbird pela simplicidade e pelo espaço dado a cada ideia; e AlpaKa descreve Luis M em 2026 em termos de groove, tensão, escuridão e movimento.
-
-Três graus de evidência:
-
-| grau | significa | exemplo |
-|---|---|---|
-| **A — verificado** | medição fornecida do caso, documentação oficial ou evidência experimental direta | 8,4–8,6 onsets/s; Spotify <−2 dBTP; Return 100% wet |
-| **B — inferência forte** | convergência entre fontes atuais e princípios perceptivos, mas sem estatística específica da cena | "um solista precisa de espaço"; timbres diferentes facilitam segregação |
-| **C — alvo operacional** | número útil para o projeto, derivado de suas leis, mas **não comprovado como norma da cena** | 2–3 notas, O3–O4, wet ≤25%, frase ≤2 compassos |
-
-Essa separação é importante porque a literatura perceptiva mostra que diferenças de **pitch e timbre** alteram significativamente a percepção de agrupamento e segregação; diferenças de apenas um semitom em F0 já mudaram substancialmente a faixa de agrupamento no experimento citado. Isso sustenta o princípio de diferenciar os interlocutores, mas não fornece uma receita de "1 compasso de resposta" para psytech.
-
-Também há uma validação harmônica do desenho: Phrygian é caracterizado pela segunda abaixada; em C# frígio isso é **D**, exatamente o bII usado como gesto de tensão no caso. Berklee identifica a segunda abaixada como uma das notas que distinguem o caráter do modo frígio.
-
-## Parte A — O que precisa ter
-
-**Resultado da pesquisa:** não existe uma "ISO do solo Zenon". Portanto a tabela abaixo não falsifica precisão. Onde há norma técnica ou corpus medido, o número aparece como verificado; onde não há levantamento nota-a-nota das referências, aparece como **alvo operacional a validar**.
-
-A métrica temporal base a 128 BPM: **1/16 = 117 ms; 1/8 = 234 ms; 1/4 = 469 ms; 1/2 = 938 ms; 1 compasso = 1,875 s**.
-
-| família / função | métrica | alvo quantitativo de partida | tolerância / leitura | força |
-|---|---|---|---|---|
-| **Braam / chamada** | nº de notas simultâneas | **1** voz principal; sem dobra sistemática | acorde/dobra apenas como evento excepcional, não linha | C — lei do projeto |
-|  | vocabulário | pitches restritos e fixos (no caso: 37/38/44/49/50/61) | nenhum pitch novo | A — projeto |
-|  | tamanho da chamada | **1–4 note-ons** | mais que isso começa a virar frase temática, não sinal | C |
-|  | registro | C#1–D2 como corpo; C#3 como extremo | não transformar em brass "heroico" agudo | A/C |
-| **Kanun / cordas dedilhadas** | pitch classes por frase | **2–3** | 4 somente se uma for passagem ornamental clara | C — lei do projeto |
-|  | duração | **117–469 ms** por ataque principal | holds são exceção; ataque deve continuar legível | C |
-|  | registro | **O3–O4** | separar segundo kanun por função e não só por oitava | C |
-| **Kamancheh / corda friccionada** | simultaneidade | **1 nota por vez** | 0 dobras de oitava na linha solista | A — lei do projeto |
-|  | frase | **2–3 alturas**, arco de 0,5–2 compassos | 0,94–3,75 s por gesto é faixa de trabalho, não norma publicada | C |
-|  | registro | **O3–O4** | arco ascendente preferencial | C |
-| **Flauta / duduk** | pitch classes | **2–3** | prioridade a resposta, não linha contínua | C |
-|  | duração | **234 ms–1,875 s** | frase longa exige silêncio posterior | C |
-| **Voz (throat) / voz** | evento | **1–3 ataques por frase** | frase vocal não deve competir semanticamente com o solista | C |
-|  | wet | sinal direto sempre presente; **≤25% serial** | cauda maior deve ir para retorno/paralelo | A/C |
-| **Lead** | pitch classes | **2–3** | não preencher o que o bloco deixou livre | C |
-|  | duração | **234–938 ms** como ponto de partida | hold longo só como evento estrutural | C |
-| **Todos os solistas** | nº de streams de frente | **1 principal por vez** | resposta pode entrar depois; evitar duas linhas sustentadas no mesmo registro | B — percepção |
-| **Todos os solistas** | wet insert | **0–25%** | 100% só em Return/aux; 100% serial como único caminho é veto | A/C |
-| **Todos os solistas** | pré-delay | **20–60 ms como janela de teste**, 50 ms como ponto explícito de referência técnica | não é "valor típico Zenon"; serve para separar ataque e cauda | B/C |
-| **Todos os solistas** | pausa mínima perceptível | **≥1/8 = 234 ms** entre gestos quando a intenção é diálogo | abaixo disso tende a ser percebido como linha contínua | C |
-| **Drop** | densidade global | **5,3–6,7 onsets/s** no corpus de referência; gate ≤**6,99/s** | atenção: isso é densidade do mix, não só melodia | A — corpus |
-| **Breakdown** | streams independentes | **1: o solista principal** | nenhum interlocutor melódico independente no breakdown | A — lei do projeto |
-| **Outro** | retirada | reduzir progressivamente foreground e/ou topo | sem número de cena verificável; em Slippery Slope o topo é retirado cedo | A no corpus, não universal |
-
-**Sobre wet:** a régua "≤25%" permanece boa, mas pelo motivo correto. Ableton orienta colocar o Dry/Wet em **100% quando o efeito está em uma Return track**; logo 100% wet não é errado em si — é errado quando colocado serialmente no único caminho do instrumento cuja presença direta precisa ser preservada. FabFilter e iZotope documentam que o pré-delay separa o som direto da reverberação e reduz mascaramento; iZotope também descreve ducking da cauda enquanto a fonte seca toca.
-
-**Sobre síntese acústica:** não há obrigação de usar gravação real. O material oficial do Serum 2 inclui um oscilador multisample criado para reproduzir instrumentos reais, biblioteca de instrumentos gravados, sample playback, granular e ressíntese espectral. Paralelamente, a própria Zenon descreve trabalhos recentes como exploração da fronteira entre "organic and synthetic". Portanto, **a origem sintética de kanun/kamancheh/flauta não é uma anomalia técnica nem estética**.
-
-**Sobre o espaço do solista:** a exigência mais defensável é **um único objeto auditivo de frente**. Estudos de segregação auditiva mostram que diferenças de pitch, timbre e timing ajudam o cérebro a separar streams; inversamente, sobreposição de fontes semelhantes torna a identidade individual menos clara. Isso apoia retirar ou afastar elementos concorrentes quando o solista entra.
-
-**Comportamento por seção (mapa do caso):**
-
-| seção | especificação recomendada |
-|---|---|
-| **Intro — comp. 1–56 / 0:00–1:45** | apresentar **vocabulário**, não todas as combinações. Braam pode estabelecer tônica↔bII; apenas 1 família de resposta por vez. |
-| **Drop 1 — comp. 57 / 1:45** | reduzir duração das frases; usar motivo reconhecível e muito silêncio entre respostas. Não transformar o drop em "melodia principal contínua". |
-| **Desenvolvimento — comp. 89–144 / 2:45–4:30** | aumentar tensão por **encurtamento da distância chamada→resposta, troca tímbrica e retirada**, não por multiplicar pitch classes. |
-| **Breakdown — comp. 145–168 / 4:30–5:13** | **o solista sozinho como único agente melódico.** Um segundo timbre só é compatível com a lei se funcionar como halo/cauda, sem linha independente. |
-| **Drop 2 — comp. 169 / 5:15** | resposta curta ao material do breakdown; evitar que todas as famílias respondam ao mesmo tempo. |
-| **Outro — comp. 193 / 6:00 → 7:30** | decompor o vocabulário; chamadas mais isoladas, menos resolução explícita. |
-
-Essa forma é coerente com a linguagem atual dos selos: Zenon destaca estruturas de construção lenta e intensidade paciente em Sumiruna & Ambler, enquanto Digital Structures destaca em Rainbird a "power of simplicity" e espaço para cada ideia respirar.
-
-## Parte B — O que não pode ter
-
-A ordem abaixo separa **falha técnica verificável**, **violação do contrato do projeto** e **risco estético**. Nem tudo que é veto do projeto é veto universal do psytech.
-
-| gravidade | veto | limiar operacional | por quê |
-|---|---|---|---|
-| **CRÍTICO** | solista 100% wet como único caminho serial | **100% wet insert + nenhum dry paralelo = FAIL** | remove a relação direta/cauda; 100% é configuração apropriada para Return, não prova de bom insert. |
-| **CRÍTICO** | quebrar o solo do breakdown | **>1 linha melódica independente** no breakdown | viola assinatura congelada da faixa. |
-| **CRÍTICO** | densidade global acima do gate | **>6,99 onsets/s** nos drops | o caso medido está em 8,4–8,6, enquanto referências ficam em 5,3–6,7. |
-| **CRÍTICO para distribuição** | True Peak excessivo | a −10,2 LUFS, **−0,6 dBTP > −2 dBTP recomendado** | Spotify recomenda <−2 dBTP para masters mais altos que −14 LUFS. |
-| **ALTO** | dobra sistemática em oitava no solista | **qualquer linha 1:1 contínua** quando a intenção declarada é "solo" | é veto do projeto; não há fonte que prove ser regra geral da cena. |
-| **ALTO** | frase "explicando" demais | **>3 pitch classes** por frase | ultrapassa o vocabulário aprovado de 2–3 notas. |
-| **ALTO** | instrumento orgânico virando pad | **duty cycle >75% em 8 compassos** sem pausa significativa = revisar | número operacional, não norma da cena; contradiz a função de interlocutor. |
-| **ALTO** | competidor sustentado no mesmo espaço | **>1 segunda linha sustentada cobrindo >50% da frase** no mesmo registro | aumenta fusão/máscara e reduz identidade do foreground. |
-| **MÉDIO** | frase sem respiro | **>2 compassos = 3,75 s** contínuos sem pausa ≥234 ms | limite de trabalho do projeto; precisa ser validado contra stems das referências. |
-| **MÉDIO** | excesso de reverb sem separação | wet próximo do teto + **pré-delay ~0 ms** + cauda longa durante frase densa | reverb pode mascarar ataque; pré-delay e ducking são mecanismos documentados para recuperar clareza. |
-| **MÉDIO** | vibrato/LFO usado só para "movimentar" | modulação contínua rápida sem papel de frase | não há Hz universal de veto; medir rate, depth e duração antes de condenar. |
-| **MÉDIO** | abrir "ar" por shelf global | qualquer correção global que empurre 4–10 kHz sem necessidade | o caso já definiu "sem chiado"; a correção deve vir de fonte e contraste, não plateau. |
-| **TOLERÁVEL** | evento isolado dobrado/ornamentado | 1 evento estrutural, não frase inteira | pode ser assinatura; não transforma necessariamente toda a voz em coro. |
-
-**Correção importante à hipótese "codec = 4–10 kHz":** a recomendação oficial do Spotify verificável é sobre **True Peak e loudness**, não um limiar de energia em 4–10 kHz. Portanto não é defensável dizer que "passou de X dB em 6 kHz, o codec estoura". O que é defensável é: sibilância/harshness em alta frequência pode exigir controle espectral, enquanto **o risco formal de transcodificação documentado é −2 dBTP para masters altos**.
-
-No caso, o diagnóstico atual não é de 8 kHz excessivo: é o contrário. O render tinha **8k+ = −25,6**, contra **−20…−22** nas referências; ar = **−20,1**, contra **−16…−17**. Portanto, o perigo seria tentar fechar esses 3–5 dB usando uma camada contínua ou shelf e acabar criando aspereza onde hoje há déficit de extensão.
-
-O veto ao registro cheio também tem suporte perceptivo indireto. Em estudo experimental, aumentar diferenças de pitch e timbre tornou streams mais distinguíveis; logo empilhar materiais semelhantes em registro/timbre reduz precisamente a segregação que um solo necessita.
-
-## Parte C — O que a cena tem em comum
-
-O denominador comum encontrado **não é um instrumento, uma escala ou um número fixo de notas**. É um sistema de relações:
-
-**groove profundo + repetição hipnótica + poucos focos perceptivos + sound design muito trabalhado + transformação gradual + contraste entre orgânico e eletrônico.**
-
-A Zenon atual descreve Extrapolated como arquitetura de techno psicodélico profundo com paisagens hipnóticas que se desenvolvem com intensidade paciente; Molecc une síntese glitchada, design complexo e melodias oníricas; Evolve combina baixo profundo, swing e sound design; o próprio site da gravadora fala repetidamente em "organic-meets-mechanical", atmosferas orgânicas e grooves hipnóticos.
-
-Digital Structures converge pelo outro lado: Breger é descrito por beats ásperos e atmosferas surreais; Rainbird por inspiração orgânica, rituais tribais, simplicidade e espaço; Bongani usa explicitamente "haunting cello overtones" misturando orgânico e eletrônico; Dark Design mantém a música minimalista, terrena e imersiva.
-
-AlpaKa, mais orientada ao psytech de pista, enfatiza groove, peso, tensão, release, escuridão e movimento em Luis M, e define seu escopo como o lado underground do techno, indo de progressive/psychedelic a minimal e groove de baixo.
-
-| dimensão | consenso técnico/estético forte | o que varia |
-|---|---|---|
-| **densidade** | espaço e legibilidade continuam importantes | artistas mais dark/glitch podem ter microdetalhe muito alto sem virar "melodia densa" |
-| **melodia** | foreground reconhecível, contraste e transformação | pode ser haunting, orgânica, abstrata, quase ausente ou mais emotiva |
-| **orgânico** | mistura orgânico-eletrônico é plenamente compatível | não é obrigatório haver oud, duduk, kanun etc. |
-| **síntese** | sound design é central | origem pode ser sample, synth, multisample, gravação ou híbrido |
-| **estrutura** | desenvolvimento gradual e tensão/relaxamento | escala de tempo e quantidade de breaks variam por artista |
-| **diálogo** | separação de papéis/timbres favorece legibilidade | não há intervalo em compassos publicado como regra |
-| **low-end** | profundo/central é recorrente nas descrições | fórmula exata de sidechain ou mono cutoff não é publicada pelos selos |
-| **identidade** | som não deve parecer template | assinatura individual é explicitamente valorizada pelos próprios labels |
-
-**Subgêneros.** As fronteiras são porosas, inclusive porque os próprios lançamentos recebem simultaneamente tags `darkprog`, `psytech`, `psytechno`, `techno` e `zenonesque`.
-
-| território | tendência observada |
-|---|---|
-| **minimal psytech / AlpaKa** | mais foco em pressão de pista, groove, grit, minimalismo e construção direta; Luis M 2026 é descrito em termos de groove/tensão/escuridão/movimento. |
-| **dark zenon / darkprog** | mais atmosfera escura, glitch, design de timbre, paisagens longas e melodias "haunting". |
-| **bush tech / bush prog** | maior ênfase declarada em natureza, organicidade, earthy grooves e sensação de espaço aberto/dusty floor. |
-| **zenonesque** | guarda-chuva estético: minimal/electronica profunda, musicalidade e design futurista; não uma receita única de instrumentação. |
-
-**Instrumentos acústicos/étnicos:** a resposta rigorosa é **sample, VST/synth e híbridos são todos compatíveis; não há evidência de predominância mensurada de um método na cena**. O próprio Serum 2 pode usar multisamples gravados, sample único, granular, wavetable e ressíntese espectral; logo "é Serum" não informa por si só se o resultado é acusticamente derivado ou puramente sintetizado.
-
-Isso produz um veredito importante: **não troque synth por sample real só para parecer "mais legítimo".** O ponto de aceite deve ser ataque, dinâmica, articulação, presença do dry e ausência de repetição sintética óbvia.
-
-**Chamada e resposta:** a pesquisa perceptiva favorece interlocutores com diferenças suficientes de timbre/pitch para terem identidades separadas. Isso é exatamente o caminho correto para braam→flauta, lead→voz ou kanun→kamancheh. Porém não há corpus publicado que sustente "responder depois de 1, 2 ou 4 compassos" como norma psytech. Essa distância precisa ser medida nas referências.
-
-**A régua global:** mono até 120 Hz é tecnicamente defensável — Ableton fornece inclusive Bass Mono com cutoff ajustável entre 50–500 Hz —, mas **120 Hz não é uma lei da cena**.
-
-Já **LRA 4–7 LU, centroide 266–287, correlação 0,32–0,55, densidade ≤6,99 e LUFS ~−10** devem ser tratados como **régua empírica do corpus do projeto de origem**, não consenso publicado 2024–2026.
-
-O item que tem validação externa direta é o True Peak: a −10 LUFS, **<−2 dBTP** é coerente com a recomendação Spotify.
-
-## Parte D — As medições que fecham um bloco orquestral
-
-As cinco lacunas de medição mais caras, em ordem:
-
-| prioridade | lacuna | por que custa caro | medição que fecha |
-|---|---|---|---|
-| **1** | fraseado ainda não quantificado | é impossível provar 2–3 notas, "arco longo" ou excesso de discurso | por canal/seção: note-ons, pitch classes, p10/p50/p90 de pitch, duração mediana/p90, intervalo entre eventos, % de silêncio |
-| **2** | wet real desconhecido | não se sabe se o "dry sagrado" está realmente cumprido | Dry/Wet min/med/max, send dB, pré-delay ms, decay e 100% wet em cada Return |
-| **3** | chamadas/respostas não medidas | canais chamados "Resposta" não provam diálogo audível | matriz de pares com `call_onset`, `response_onset`, latência em beats/s, timbre A/B e ocorrência por seção |
-| **4** | automações clonadas | automação de ganho idêntica ponto a ponto em canais distintos é evidência mais compatível com duplicação técnica do que com performances independentes | hash dos pontos + parameter ID + bounce A/B de um trecho com a automação, sem alterar o projeto |
-| **5** | correções de topo/densidade sem render medido | não se sabe se +3 dB nas fontes e notas suavizadas resolveram os desvios | repetir o medidor completo: 8k+, ar, 3–8k, centroide e onsets/s por drop |
-
-O relatório não recomenda acrescentar uma única camada antes dessas medições. O risco de **solução procurando problema** é alto quando já há ~10 canais, ~292 clipes no grupo, múltiplos interlocutores potenciais e uma densidade global acima do teto.
-
-## Parte E — Ideias
-
-As propostas mantêm o modo frígio, não alteram o vocabulário do braam, não quebram o solo do breakdown e priorizam **diálogo em vez de acréscimo de conteúdo**.
-
-| tipo | ideia | como fazer com o que existe | como provar |
-|---|---|---|---|
-| **muda a música** | **bII como pergunta, tônica como resposta:** transformar a segunda grau em pontuação formal, não nota decorativa. | Antes de cada grande mudança, o braam faz bII/tônica ou bII→quinta dentro do seu vocabulário; outra família responde **uma vez**, com 2–3 notas. | contar chamadas; ≥80% das chamadas estruturais devem ser reconhecíveis sem aumentar pitch classes por frase |
-| **muda a música** | **Comprimir a latência do diálogo até o pico:** a tensão vem de as respostas chegarem mais perto, não de mais notas. | No desenvolvimento, testar chamada→resposta em 2 compassos, depois 1, depois 1/2 compasso; parar no breakdown. | curva de latência decrescente, mantendo onsets globais ≤6,99/s |
-| **muda a música** | **Breakdown como arco de uma única respiração:** não "compor mais"; transformar articulação, altura e sala de uma linha única. | No breakdown: o solista 1 nota por vez, 2–3 alturas por frase; aumentar comprimento/expressão enquanto bateria e graves seguem mudos. | simultaneidade melódica = 1; pitch classes por frase ≤3; aumento de tensão sem aumento de note-ons |
-| **canais existentes** | **Kanun pergunta; segundo timbre responde alto e raro.** | O kanun fica com ataques de madeira; o segundo aparece apenas depois de lacunas, sem tocar simultaneamente a mesma função. | overlap temporal entre os dois cair; o segundo continuar com baixa densidade e reconhecimento maior |
-| **canais existentes** | **Uma única resposta fantasma no Drop 2.** | A/B isolado de um único timbre de resposta (nunca dois), logo após o impacto do drop. | versão A sem resposta vs B com uma resposta; B só passa se densidade continuar ≤6,99/s e a chamada ficar mais clara |
-| **diálogo** | **Braam → Flauta sem dueto.** | Braam faz chamada curta; deixa ≥1/2–1 compasso vazio; flauta responde em O3–O4 com 2 notas, sem braam sustentado por baixo. | 0 sobreposição entre partes principais; resposta identificável mesmo em mono |
-| **diálogo** | **Lead → Voz na mesma nota.** | Responder ao lead com a tônica ou nota já em uso, mudando **timbre**, não conteúdo melódico; manter a resposta curta. | pitch-class count não aumenta; ouvintes/teste A/B ainda percebem dois interlocutores — diferença tímbrica favorece segregação. |
-| **topo/ar** | **Gerar extensão por ataque, não shelf.** | Nos kanuns, usar somente o transitório da palheta/ataque ou um send filtrado curto; nada de ruído contínuo ou shelf global. | 8k+ melhora **~1–2 dB por iteração**, enquanto 3–8k não cresce >0,5 dB e TP não piora |
-| **densidade** | **Cada fala compra silêncio.** | Quando lead, flauta ou kamancheh inicia frase, o kanun deixa 1/2–1 compasso vazio; não substituir nota removida. | drops retornarem para 5,3–6,7 onsets/s sem perda do motivo principal |
-| **anti-obviedade** | **A resposta pode ser ausência.** | Depois de um braam forte, em vez de outro instrumento, remover por 1/2 ou 1 compasso a família que o ouvinte esperava ouvir. | tensão percebida aumenta enquanto número de eventos cai |
-| **anti-obviedade** | **Uma nota, três identidades.** | A tônica pode migrar braam→lead→voz em seções distintas, sem nova melodia; nunca dentro do solo do breakdown. | vocabulário de pitch permanece constante, mas classificação tímbrica/forma fica mais clara |
-
-A última ideia tem fundamento perceptivo particularmente adequado ao gênero: diferenças tímbricas podem separar perceptualmente sons mesmo quando o conteúdo de pitch permanece próximo. Logo **"diálogo por timbre" é uma maneira de aumentar narrativa sem aumentar complexidade harmônica**.
-
-A proposta para o topo é deliberadamente conservadora em energia, não em criatividade. FabFilter observa que reverb de conteúdo sibilante pode requerer filtragem bastante baixa para impedir "S" agressivo na cauda; portanto usar caudas brilhantes como solução para o déficit de ar poderia aumentar mascaramento/aspereza sem restaurar ataque.
-
-A proposta de **subtração como resposta** também converge com a estética descrita pela Digital Structures em Rainbird: simplicidade e espaço para cada som/ideia respirar, e com a construção paciente/hipnótica descrita por Zenon em Sumiruna & Ambler.
-
-**Gate proposto para o próximo render, sem transformar hipótese em dogma:**
-
-| métrica | passa | falha |
-|---|---:|---:|
-| drop global | **5,3–6,7 onsets/s** | >6,99/s |
-| simultaneidade no breakdown | **1 linha melódica** | ≥2 linhas independentes |
-| pitch classes por frase solista | **2–3** | >3 recorrente |
-| wet serial do solista | **≤25%** | 100% sem dry paralelo |
-| 8k+ | caminhar em direção a **−22…−20 dB** | resolver via plateau/chiado |
-| ar | caminhar em direção a **−17…−16 dB** | aumento acompanhado de harshness |
-| 3–8k | permanecer próximo da faixa de referência **−22…−17 dB** | aumento indiscriminado |
-| centroide | mover-se em direção a **266–287** apenas se o espectro soar natural | perseguir o número com shelf |
-| TP de distribuição | **<−2 dBTP** no master alto | TP próximo de 0 |
-
-## Fontes, trechos e notas de evidência
-
-A pesquisa consultou a internet em **17 de outubro de 2026**. Os trechos são deliberadamente curtos e literais; descrições de selo/artista são tratadas como **evidência estética**, enquanto documentação técnica e literatura experimental sustentam afirmações técnicas.
-
-| fonte | classe | trecho literal curto | URL |
-|---|---|---|---|
-| **Zenon Records — site oficial** | estética atual 2026 | "organic-meets-mechanical tension that defines the Zenon aesthetic" | `https://www.zenonrecords.com/` |
-| **Molecc — Imperfektionismus, Zenon, 2026** | estética / melodia | "glitched-out synthesis, intricate sound design, and dreamy, haunting melodies" | `https://zenonrecords.bandcamp.com/album/imperfektionismus` |
-| **Sumiruna & Ambler — Extrapolated, 2025** | estrutura / hipnose | "hypnotic soundscapes that unfold with patient intensity" | `https://zenonrecords.bandcamp.com/album/extrapolated` |
-| **Evolve — Fragmented Frequencies, 2026** | psytech atual | "crisp production, deep bass, swinging grooves, and next-level sound design" | `https://zenonrecords.bandcamp.com/album/fragmented-frequencies` |
-| **Digital Structures — Rainbird, 2025** | espaço / organicidade | "explores the power of simplicity, allowing each sound and idea space to breathe" | `https://digitalstructures.bandcamp.com/album/breaking-the-illusion` |
-| **Digital Structures — Bongani, 2024** | orgânico + eletrônico | "haunting cello overtones, blending organic and electronic elements" | `https://digitalstructures.bandcamp.com/album/over-the-horizon` |
-| **Digital Structures — Breger, 2025** | dark/psytech | "gritty beats, surreal atmospheres, and an unapologetically edgy vibe" | `https://digitalstructures.bandcamp.com/album/seduction` |
-| **AlpaKa — Luis M, Aikyam, 2026** | minimal psytech | "unity between groove and grit, tension and release, darkness and forward-driving motion" | `https://alpakamuzik.bandcamp.com/album/luis-m-aikyam-ep` |
-| **Xfer Records — Serum 2** | implementação | "Enables replication of real instruments and sounds found elsewhere." | `https://www.xferrecords.com/products/serum-2` |
-| **FabFilter — reverb** | DSP | "pre-delay… allows you to create some separation between the direct and reverberated sound" | `https://www.fabfilter.com/learn/reverb/basic-reverb-controls` |
-| **iZotope — pre-delay** | DSP | "Pre-delay prevents the reverb from masking the initial attack of the sound" | `https://www.izotope.com/community/blog/reverb-pre-delay` |
-| **Ableton — Echo** | DSP / routing | "Ducking reduces the wet signal while the input is active" | `https://www.ableton.com/fr/packs/echo/` |
-| **Spotify for Artists** | distribuição | "If your master is louder than -14dB… keep True Peak below -2dB" | `https://support.spotify.com/cv-pt/artists/article/loudness-normalization/` |
-| **Oh et al., Frontiers in Neuroscience** | psicoacústica | "increased differences in either F0 or spectral slope allowed listeners to more easily distinguish" | `https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.725093/full` |
-| **Briefing ORQUESTRA do projeto de origem** | dados internos | fonte dos parâmetros, métricas, decisões congeladas e corpus já medido | — |
-
-**Conclusão final:** o bloco não está pedindo "mais orquestra". Está pedindo **prova de fraseado e engenharia de diálogo**. O projeto já tem variedade tímbrica suficiente — braam, dois kanuns, três papéis de kamancheh, flauta, voz de garganta e dois leads/respostas. A questão decisiva é descobrir se esses dez canais estão se comportando como **personagens que se alternam** ou como **camadas que se acumulam**. A primeira opção converge com a evidência estética e perceptiva; a segunda agravaria justamente o maior desvio medido, a densidade.
+## Synth
 
 
 ---
 
-## INTERACAO-KANUN-KICK-BAIXO-20261024.md
+## e
+
+
+---
+
+## Atmos
+
+
+---
+
+## e
+
+
+---
+
+## FX.md
+
+
+---
+
+## pesquisas/Estudo
+
+
+---
+
+## de
+
+
+---
+
+## Orquestra.md
+
+
+---
+
+## pesquisas/INTERACAO-KANUN-KICK-BAIXO-20261024.md
 
 # INTERAÇÃO KANUN × KICK × BAIXO — 24/10/2026
 
@@ -1677,10 +1214,9 @@ Status: **PESQUISA CONCLUÍDA** (a aplicação no projeto de origem está regist
 
 **NÃO VERIFICADO:** fonte externa nova (web indisponível nesta sessão); separação fina lead/pads no stem `other`; duração real das notas da referência (só onsets).
 
-
 ---
 
-## MAPEAMENTO-CANAIS-PROG-ORGANIC-20261029.md
+## pesquisas/MAPEAMENTO-CANAIS-PROG-ORGANIC-20261029.md
 
 # Mapeamento de Fontes — Pernas PROG e ORGANIC + lacunas PSYTECH
 
@@ -1815,10 +1351,9 @@ Critério: aderência direta ao estilo de referência (motor de grave + ausênci
 - https://www.youtube.com/playlist?list=PL8OP9pfK9QpMmy7JDBXbTyjmk5foaDar6 · PLa9ASr8n5idBBiYy5DEZ5m3IHKr7dqx84 · PL2tZfdG9aSxzup6Idj1sdFCtvtVLZqajz (títulos via metadado)
 - Via busca apenas (não abertas): sonicacademy.com (403), zenon-education.com (403), cosm.co.nz (vazio), canais YouTube de Julien Earle, E-Clip, Sadowick, Tom Cosm, Dowden, Point Blank.
 
-
 ---
 
-## PESQUISA-CENTRALIZAR-ABLETON-IA-MCP-20261013.md
+## pesquisas/PESQUISA-CENTRALIZAR-ABLETON-IA-MCP-20261013.md
 
 # Pesquisa — automação do Ableton Live: o que a API oficial (LOM) cobre e como operar com segurança
 
@@ -1870,10 +1405,9 @@ Critério: aderência direta ao estilo de referência (motor de grave + ausênci
 
 **Status desta pesquisa:** fontes oficiais e código local consultados; nenhuma alteração em código, Set ou documentação; nenhum teste ou operação Live executada. As validações ponta a ponta permanecem pendentes de uma sessão com Live disponível.
 
-
 ---
 
-## PESQUISA-FAIXA-INTEIRA-LUNA6-MAX-20261012.md
+## pesquisas/PESQUISA-FAIXA-INTEIRA-LUNA6-MAX-20261012.md
 
 # Pesquisa independente — movimento e continuidade na faixa inteira
 
@@ -1969,10 +1503,9 @@ São ligações possíveis. Quando a continuidade pede um corte limpo ou um pers
 - Ableton, 2015: [Perspectives from Loop: Repetition, variation and sampling](https://www.ableton.com/en/blog/repetition-variation-and-sampling/).
 - Zenon Education: [Zenon Records Music Production Suite](https://www.zenon-education.com/pt-br/zenon-records-music-production-suite). Os números entre parênteses na página são durações de aulas, sem timestamps de trechos confirmados.
 
-
 ---
 
-## PESQUISA-INDEPENDENTE-BUILDS-LUNA-20261012.md
+## pesquisas/PESQUISA-INDEPENDENTE-BUILDS-LUNA-20261012.md
 
 # Pesquisa independente — builds, movimento e costura em faixa minimal psytech
 
@@ -2099,10 +1632,9 @@ O melhor da contribuição é a forma por blocos, a transformação de personage
 - Notas de estudo de 07/09 a partir de material de curso (Dharana; "Workshop: transições criativas") — trechos sem timestamp reproduzível nesta rodada.
 - Um plano interno de 11/10 sobre o manto do Bar 73 e os registros de estado do projeto de referência — usados como história documental, não como estado atual comprovado nem evidência de som.
 
-
 ---
 
-## PESQUISA-LANES-ARRANJO-20261014.md
+## pesquisas/PESQUISA-LANES-ARRANJO-20261014.md
 
 # PESQUISA — Automação de Arranjo (lanes de Volume) no Live 12.4.6 (14/10/2026)
 
@@ -2174,10 +1706,9 @@ provado. O patch offline é o único caminho de escrita; a API nem lê.
   não lineares num lane FloatEvent já existente): interno OK (receita de 26/09 + 51 testes), externo
   N/D. Coberto pelo protocolo: patch → auditoria → abrir no Live → A/B.
 
-
 ---
 
-## PML-BASS-PATTERNS-APERITIVO-20261031.md
+## pesquisas/PML-BASS-PATTERNS-APERITIVO-20261031.md
 
 # PML Bass Patterns + Aperitivo — o que serve ao projeto de referência (31/10/2026)
 
@@ -2241,10 +1772,9 @@ Tônica do projeto de referência é C#, frígio, 128 BPM — transpor e esticar
 
 - Medição própria: 26 MIDIs via `mido` + durações WAV (31/10/2026). Nenhuma outra fonte externa consultada neste recorte; os estudos internos citados na versão de origem pertencem ao acervo do projeto original e não são reproduzidos aqui.
 
-
 ---
 
-## PROG-ORGANIC-MAPEAMENTO-20261029.md
+## pesquisas/PROG-ORGANIC-MAPEAMENTO-20261029.md
 
 # Prog & Organic — dossiê da primeira leva (Tier A + C0)
 
@@ -2355,415 +1885,9 @@ Tônica do projeto de referência é C#, frígio, 128 BPM — transpor e esticar
 
 **A/B novo sugerido pela onda (fila, não aplicado):** tom/bongo afinado em C# (tônica) na região do kick, mono, testado contra a lei do low-end — e "1–2 bass shots" nos `.27/.77` como enchedor de grave sem camada contínua.
 
-
 ---
 
-## SONIC-ACADEMY-E-CANAIS-MAPEAMENTO-20261027.md
-
-# Sonic Academy e canais — mapeamento para o motor dos 2 minutos
-
-**Data:** 27/10/2026 · **fontes:** 62 mapas de vídeo (um `.md` por vídeo, com ID de YouTube) · **régua declarada:** um comparativo espectral prévio contra 6 faixas de referência externas (26/10/2026).
-
-**Natureza:** pesquisa. Nada foi aplicado em nenhum DAW nem em nenhum arquivo; nenhum áudio dos vídeos foi escutado como fonte musical — os 62 mapas são leitura de legenda automática, ASR local ou descrição, e isso está marcado caso a caso. Todo número de aplicação abaixo é **ponto de partida de design (`HIPÓTESE`/`INFERÊNCIA`)**; só vira afirmação de som depois de A/B.
-
-**Como ler os rótulos:** `VERIFICADO` = está na legenda/descrição/arquivo citado; `INFERÊNCIA` = leitura para o arsenal do estilo; `HIPÓTESE` = valor de partida não testado; `NÃO VERIFICADO` = não foi possível confirmar.
-
-**Termos do set de referência usados abaixo** (características do projeto de origem, não valores universais): pocket off-grid `.27/.77` (adiantamentos de ~0,27/0,77 do beat, ≈9,4 ms); SUB em C# (Operator) e BAIXO (Serum 2) como canais de grave; "MEIO/RUIDO/CHINELADA" = canais utilitários/de diagnóstico do set de referência.
-
----
-
-## 0. A régua numérica (não re-medida nesta pesquisa)
-
-Fonte: comparativo espectral de 26/10 contra 6 faixas de referência externas, seção "Frequências — dB relativos a 60–120 Hz".
-
-| Banda | Média 6 refs | Set de referência | Diferença |
-|---|---:|---:|---:|
-| 20–60 Hz | +1,34 | +0,27 | −1,07 |
-| 120–300 Hz | −5,36 | −5,89 | −0,53 |
-| 300–1.200 Hz | −7,22 | −12,05 | **−4,83** |
-| 1.200–4.000 Hz | −13,39 | −19,15 | **−5,76** |
-| 5.000–12.000 Hz | −14,67 | −23,53 | −8,86 |
-
-- Grave 30–120 Hz: side/mid **−59,52 dB**, correlação sub/bass **1,00** (mono, sem cancelamento relevante). Meio 400 Hz–2 kHz: side/mid **−21,90 dB** contra média **−3,52 dB** — o meio está baixo **e** muito fechado.
-- O set de referência tem **mais agudo relativo que as faixas Demons e Limbo** (−24,79/−25,71 dB na mesma banda de 5–12 kHz). Subir shaker para perseguir a média contraria o alvo (mesmo relatório).
-- Restrições do set de referência: SUB = Operator + Saturator, MIDI 25, ataque em **.27** de cada tempo, notas de **.68 beat** (.46 no quarto), release **27,1 ms**; BAIXO = Serum 2 + EQ Eight, notas 37/38/44/49/50, alternando **.50/.77**. Groove de referência aprovado: trecho 1:30–3:00 de "Shadows"; não aplicar grade reta por cima. Low-end mono é lei; 2:00 é o início do compasso 65 (bars 1–64 dentro dos dois minutos).
-- Um aviso que vale para todo o dossiê: o EQ estático já foi testado. O bell de 300 Hz do BAIXO foi de −6 para −2,5 dB e rendeu **+0,38 dB** em 300–1.200 Hz ("alterações reais" do comparativo). O que os 62 vídeos oferecem, quando se sustentam, é **conteúdo e movimento**, não mais gain.
-- **Tensão de régua, declarada e não resolvida:** a régua homologada do projeto fixa "Higiene de Médios: 400 Hz–2,5 kHz mantida em depressão suave relativo ao RMS", enquanto o comparativo mede **déficit** de 300–1.200 e 1.200–4.000 Hz contra 6 referências. As duas réguas não se contradizem automaticamente, mas não foram conciliadas em documento. Neste dossiê, "preencher" = adicionar conteúdo articulado e **medir o RMS do meio**; se o RMS subir acima do que a régua de depressão permite, a decisão é do produtor. Nenhuma aplicação abaixo autoriza boost estático no master.
-
----
-
-## 1. Sumário executivo
-
-1. **O buraco não se fecha com EQ nem com volume.** Os mapas que tratam do gap convergem para três rotas que atacam 300–4.000 Hz sem tocar no sub: cama/resposta **granular acima de 250 Hz**; **camada média do baixo com a fundamental em uma camada só**; e **duplicação +12 de resposta/madeira** com HP/LP.
-2. **A rota de menor custo aparente e mais alinhada ao estilo é a duplicata +12** (ttYFldHqLWk): mesma frase, mesmos offsets, HP 200–250 Hz, LP 4–5 kHz, velocity abaixo do original. O vídeo diz **duas oitavas (+24)**; **+12 é downgrade conservador do mapa**, não do autor. Não cria ataque novo nem mexe no `.27/.77`.
-3. **A rota mais direta no grave é separar fundamental e harmônicos** (kGfIx2d4oEI): Sub uma oitava abaixo carrega a fundamental; o saw tem o 1º harmônico cortado e, com o LFO abrindo o filtro, gera harmônicos de 2ª a 8ª ordem em **69–277 Hz** — não "300–1.200 Hz" por si. O corpo em 300–1.200 vem do LFO, do shelf de ~600 Hz e do transiente, não do fundamental do saw. **Nunca somar** as duas fundamentais.
-4. **Pressão sem volume tem três mecanismos descritos nos vídeos:** kick+baixo como grupo com drive **band-limited 150 Hz–1,8 kHz** e clipper antes do limiter (I__tWZTk5-Q); rumble em **retorno** HP 120/LP 300–500, sidechainado e mono (xuHSPaCHjvo); rampas de **8 compassos** em poucos parâmetros (bOEc9c3pGi8).
-5. **O que não muda:** SUB C# mono em `.27`, BAIXO em `.50/.77`, low-end mono abaixo de 120–150 Hz, shaker em −28 dB, canais utilitários mudos, sem kick 4/4 reto além de 32 compassos, nada depois de 2:00.
-6. **Textura não é cama permanente.** Todos os mapas de textura que mediram o vício do projeto apontam o mesmo erro: preencher o tempo todo. As "3–4 camadas" do li-Oed1DWck são **camadas de uma única cama**, não três camas independentes; a cama precisa de buracos e automação por seção (QLPV1Wk5hoE, lHGfb5Hlmuc, sTizY7Qln78).
-7. **Granular e rolling não têm canal no set atual.** O arquivo lido em 27/10 tem 16 MIDI + 2 returns, **nenhum canal granular e nenhum canal de rolling dedicado**; "rolling" é o BAIXO (Serum 2). Os canais de granulador citados por dois vídeos vêm de um estudo anterior e **não estão no arquivo atual** — a camada precisa nascer em canal novo ou reaproveitar madeira/percussão de madeira.
-8. **P0 = 19 vídeos, P1 = 35, P2 = 8.** A ordem de A/B recomendada está no fim do §3.8: segurança/mono → fundamental do baixo → resposta/meio → textura → tensão/arranjo → transições → melodia, sempre 8–16 compassos por vez e em volume casado. **Nenhum A/B foi executado nesta pesquisa**; as receitas são hipóteses de design, não resultados.
-
----
-
-## 2. Tabela de prioridade
-
-Legenda de canal: **SA** = Sonic Academy · **AR** = Audioreakt · **SG** = SINEE Global · **VS** = Vision Serpent · **HTP** = Hypnotic Techno Production · **AV** = avulso.
-
-**Nota de contagem:** o plano de pesquisa escrevia "P0 (16)" mas lista 19 IDs; a curva machine-readable também tem **19 P0**. Adota-se 19 — a contagem escrita do plano está errada; a lista e o JSON não.
-
-### P0 — núcleo (19)
-
-| ID | Canal | Frente | Técnica (uma linha) | Aplicação no motor 2min |
-|---|---|---|---|---|
-| JNAyJa_Dcx0 | SA | textura-atmosfera | Granular = sobrepor dezenas de grãos com pitch/posição/direção/volume próprios; o motor granular vira o oscilador de um synth subtrativo | Cama e resposta granular ≥180–250 Hz; nunca kick/sub/baixo; usar Serum 2 GranularOsc |
-| li-Oed1DWck | SA | textura-atmosfera | 3–4 playheads deslocados, grão longo/densidade alta, pan/pitch/random por voz | 3 camadas na GUI ou 2–3 instâncias (o SCAN/playhead não está exposto no gerador): grão 80–200 ms, offset 30–50%, pan 35–50%, HP 250–300, sem −1 oitava |
-| vREN7ACIcFc | SA | textura-atmosfera | Drone granular com pitch travado, reverse ~50/50, LFOs pequenos e HP antes do reverb | Drone 150–300 ms, random pitch 0, HP 120–150, LP 3–5 kHz, −18 a −24 dB |
-| QLPV1Wk5hoE | SA | textura-atmosfera | Cama granular de fonte orgânica, até 8 vozes, loop fwd/back, usada como ferramenta de arranjo | Uma cama, corpo 1,2–4 kHz, HP 250–300 depois do granular, com silêncios e automação por seção |
-| iWOPUHKbJjI | SA | groove | Síncope macro (3/16, tercinas) e LFO fora do beat, sem adicionar camada | Grade 3/16 só em madeira/resposta; LFO 1/8D/1/8T em via HP ≥300 do baixo; `.27/.77` intacto |
-| bOEc9c3pGi8 | SA | pressao-grave | Curvas de 8/16/32 compassos em poucos parâmetros, unipolares e com reset | Rampa de 8 no low-cut paralelo do kick, no cutoff 300 Hz–1,2 kHz do rolling e no send da atmosfera; pontuar 9/17/25/33/41/49 |
-| dSXz_MFS5ks | SA | meio-espaco | Reverb 100% wet somada em mono, posicionada como fonte contra o dry no centro | Retorno MONO ROOM: Hybrid 100% wet → HP 280–320/LP 4–5 kHz → Width 0 → pan oposto; só resposta/madeira |
-| w1WsSkRLyrU | SA | pressao-grave | Mono na fonte ou low-cut só no Side, deixando o Mid intacto | Width 0 em kick/sub; EQ8 M/S com low-cut 120 Hz só no S no bus de bateria e no master |
-| Mix6rW9AHgE | AR | pressao-grave | O grave sai do baixo psy; ele é reconstruído como articulação de médio | Camada psy em C#2/C#3, Env2 sustain 0, saturação/multibanda/EQ 1 kHz; HP 50–60 Hz em C#2 ou 100–120 Hz em C#3 (não 80–100, que come o C#2); não somar sub |
-| xuHSPaCHjvo | AR | groove | Peso por rumble filtrado + baixo square médio, não por volume | Camada média Env2 0,08–0,12 s (a parte segura); rumble em retorno HP 120/LP 300–500 é **opcional** — o mapa lembra que rumble é base hard techno e o motor do set é rolling |
-| ttYFldHqLWk | SG | meio-espaco | Preencher médio por arranjo: duplicata duas oitavas acima, camadas, saturação/OTT; EQ só para domar picos | Duplicar resposta/madeira **+12** (o vídeo diz **+24**; +12 é downgrade do mapa), HP 200–250/LP 4–5 kHz, velocity menor; +24 só se 1,2–4 kHz continuar vazio |
-| I__tWZTk5-Q | SG | pressao-grave | Kick+baixo como grupo único com cadeia fixa e clipper antes do limiter | Bus kick+baixo: EQ → drive paralelo 150 Hz–1,8 kHz → EQ → Glue → clipper 1–3 dB → limiter; sem low extender |
-| h39gdHGGo-c | SG | pressao-grave | Noise sem grave deslocado para baixo com Shifter e envelope espelhado ao kick | Eventos mono 60–200 Hz nos `.27/.77`, HP 45–60/LP 200–300, sem Echo no núcleo; só resposta, não cama |
-| _W_mwJVDhqA | SG | pressao-grave | Rolling em 16º com o 1º 16º de cada tempo vazio, saw mono LP ~200 Hz, Env2 sustain 0 decay 1/16 | Decay **117 ms** a 128 BPM, preservar `.27/.77`, duck pelo kick; **não** copiar o corte de 300–4 kHz |
-| iteUJHS5YNE | HTP | pressao-grave | Meta-análise: fonte vence processamento; kick curto + sine sequenciado e LFO em rates ímpares | Kick ≤130 ms, sub sine mono C#, LFO só como modulação (sem onsets novos), glue + compressor de retorno |
-| NCY0r4q-QcM | HTP | pressao-grave | Tensão por subtração; o retorno do groove é a resolução | Kick fora 53–56 com duck do sub congelado, hats caem em 49, resolve em 57; sem delay no shaker/rolling |
-| f4tdX3LsKj0 | HTP | textura-atmosfera | Granular percussivo em loop, disparado em 16avos, nos buracos como pergunta-resposta | Camada ≥250 Hz: grão 60–120 ms na resposta e 100–160 ms na madeira; 1 pergunta + 1 resposta a cada 2 compassos nos buracos `.27/.77` |
-| CixBgwVAAYg | HTP | meio-espaco | Designar cada elemento ao campo mono/mid ou ao estéreo; largura só onde é decoração | Centro: kick/sub/rolling/hat principal; largura: ghost notes, resposta e atmosfera; auditar returns |
-| kGfIx2d4oEI | AV | pressao-grave | Sub carrega a fundamental; saw sem 1º harmônico; LFO envelope no corte | Serum 2 em `.27/.77`, sub **substitui** (não soma), release curto; splitter 210 Hz e random phase 0 são ajuste de UI — **NÃO VERIFICADOS** no gerador |
-
-### P1 — expansão (35)
-
-| ID | Canal | Frente | Técnica | Aplicação no motor 2min |
-|---|---|---|---|---|
-| nS7CHBL-Bzs | SA | pressao-grave | Alinhamento de fase automático no SideKick | Sem SideKick: Utility `Ph` A/B + `Phase` do oscilador, sem mover tempo |
-| R6xwYFH5SSY | SA | pressao-grave | Clipper corta pico e gera HF; soft clip para corpo, hard clip para transiente | Clip só no ramo de click/resposta, HP antes e LP depois; sub vai de limiter |
-| yZ-q1H6KaME | SA | pressao-grave | 4 camadas de baixo com funções separadas; apagar notas que caem no kick | Sub mono, corpo sine+saw, dois saws no médio, acentos com reverb; HP na camada média |
-| Kt22wEkGx-Y | SA | meio-espaco | OTT é upward compression e desfaz EQ anterior; entra cedo e em paralelo | Só resposta/madeira: Multiband Dynamics em paralelo, crossovers 300 Hz/4 kHz, Below só no meio, release ≥150 ms |
-| ZSvJlc3LRqo | SA | textura-atmosfera | Warp Texture/Tones vira sustain; estiramento extremo, grain e clip envelope | Grain ~65, flux baixo, clip envelope de 16 compassos no grain size, HP 120–300 |
-| ejNHFdtYrw0 | SA | groove | Micro-delays e randomização sutil de posição/velocity/pitch/round robin | Só hats/shaker/resposta/madeira: 1–8 ms, velocity ±10–15, pitch sutil; kick/sub/rolling fora |
-| qvJqxGrAtCc | SA | transicoes | Grupo portátil de FX reequilibrado no destino | Grupo de FX de transição sem snare roll duplicado, só nos respiros 0:44–0:45 e 0:59,5–1:00 |
-| OJ3Fxk4E0gU | SA | meio-espaco | Semicírculo de pan com +6 dB temporário para achar espaço | Pans pequenos e opostos: madeira 8–12 L, resposta 16–20 L, hats 4–8 R, stab 14–18 R |
-| 4q6GrRSEfhI | SA | textura-atmosfera | Warp Texture grain 226, esticar, resamplear e empilhar cópias transpostas | Cama 300–1.200 Hz com HP 180–300/LP ~6 kHz, fora de kick/sub/baixo |
-| nU3udPVlJGg | SA | textura-atmosfera | Drone 7(b5) sem a nota de baixo, HP, duck lento e dois panners | Oitava 4 (C#4–B4), HP 280–320, sidechain 2–4 dB do kick, sem sub |
-| 90VpsmIaPuk | AR | textura-atmosfera | Operator parallel em ratios inteiros, macros escalonadas e feedback ~50% | Cama C# em 1×/2×/3×/4×, HP (160 Hz no parecer de FX; 90 Hz na trilha 33 — divergência a decidir), largura só acima do corte |
-| S0DRqIEXW_4 | AR | motor-completo | Template peak time 100% stock: kick com transiente, baixo em 3 camadas, 4 hats, stab FM | Transiente ~1 kHz, mono <130; um dono de sub; mid do baixo 200–800; stab 400–900; sem Shimmer |
-| TdNE8oEb2Lk | AR | arranjo-mix | Camadas com automação de filtro/volume/sends, sidechain e master mono <120 | Build 49–57 com low-cut no kick, filtro, riser, stop e reverse; Drop em 57 com rolling −10→0 dB |
-| v-mjY-Vlgv0 | AR | textura-atmosfera | Wavetable mono POS 100, filtro MS-20 pluck, chorus/flanger/Echo/Shimmer | Stab-resposta em C# frígio, 2–3 eventos/compasso nos `.27/.77`, shimmer só em retorno filtrado |
-| C3x8o9Krfc0 | AR | groove | Stab band-pass OSR com drive e Env2 curto | Centro do band pass em 250–400 Hz, res ~50, Env2 25, release 600 ms, Bass Mono 120 |
-| lHGfb5Hlmuc | SG | textura-atmosfera | Duas camadas, noise + drone, LFOs de rates diferentes | Bus HP 280–300/LP 4–5 kHz; LFOs ~0,045/0,071 Hz; entrar em 17 e subir até 57 |
-| sTizY7Qln78 | SG | textura-atmosfera | Atmosfera só no retorno, alimentada por pulsos de send; LFO lento + reverb 100% + AutoPan | Throw nas respostas/fim de seção; sem enviar kick/sub/baixo; cauda em 1,2–4 kHz |
-| oO2gdXg1-nE | SG | melodia | Três ganchos por repetição + microvariação: granular gated, FM 2-op, 5 pads | FM como stab curto e os 5 pads na resposta, HP 180–300, sem swing extra |
-| VqPpTk3gp78 | SG | melodia | 2ª menor, 7ª maior e trítono como tensão; podar 2ªs empilhadas | Célula C#–D e trítono D–G# como acentos, C# repetido como centro, tudo acima de ~200 Hz |
-| A6XjjwGUkA8 | SG | groove | Frações mínimas de ruído viram hat/resposta; Corpus tube devolve corpo | HP ≥1 kHz, pico ressonante 700–900 Hz, LFO no attack só na resposta; **substituir** eventos |
-| G4Tsj5or6A8 | SG | groove | Kick em 3 camadas, ghost/rumble, hats por velocity/swing/LFO | Kick 3 camadas, ghost filtrado, resposta em `.27/.77`, hats com velocity+swing; saturação em vez de agudo |
-| xZW3lTHRCxs | SG | pressao-grave | Cinco passos de encaixe do kick: tuning, cauda, EQ antes da distorção, Roar multibanda, compressão | Confirmar G#0 52,41 Hz e cauda ~0,5 s; Roar low clean + tube no mid do rolling; sem click de filtro |
-| GyhA92cfQgE | VS | motor-completo | Sine segura a fundamental, saw sem fundamental dá harmônicos; fase fixa no sub | Testar no BAIXO em A/B de 8–16 compassos; sub intocado; hat-transiente no kick só se 8k+ subir sem 2–4k |
-| TwZk8Gcyl1E | VS | motor-completo | Low end em 4 camadas; kick afinado; fase testada; sidechain só nos graves | SUB como camada low e BAIXO como high; cortar graves do BAIXO; duck só <150 Hz |
-| Wmr4dnvhVkc | VS | textura-atmosfera | Saw + camada de caráter, dois filtros em série, Env2 plucky, sync no filtro | Molde para madeira/stab em 300–1.200 Hz; guardar sync + abertura para as subidas |
-| Fx3jM4xdw4M | VS | motor-completo | Kick mono + EQ + transiente; baixo saw FM leve, mono, duck 20–200 Hz | Cadeia do kick, patch de baixo Serum 2 e bus GRAVES com Bass Mono 178 Hz; presença no baixo em 300–1,2 kHz |
-| 5XUULOEJ2tI | HTP | arranjo-mix | Curva de energia em degraus por camadas; base constante | 4 cenas de 16 compassos: hats/echo/16tos sobem a energia; kick/sub/baixo constantes; reset em 1:45 |
-| VSYCY__WVQ8 | HTP | groove | Hipnose por troca/omissão de UM elemento por fronteira de 8; 6–8 FX curtos | Portas em c33/c41/c49: sair com open hat, voltar trocado, acento em `.27/.77`; falso release c33–c40 |
-| Dcs7r1b6RwI | HTP | pressao-grave | Três basslines stock: saw transient no sine, LFO→wavetable, pitch envelope em loop | Sub mono; BAIXO-MID com LFO→WT e HPF; loop de 3 tempos só na resposta/madeira |
-| Hzszjbt_c9I | HTP | textura-atmosfera | Pad dark com dois osciladores a +6 st, ataque longo, LFOs e shimmer | Cama 1–56, HP 180–220/LP 5–6 kHz; recuar/duckar no Drop 1 |
-| BjDkkB8ElnY | HTP | textura-atmosfera | Dobra do baixo com grave cortado + saturação e LFO; cama de field/vinil; splashes | Dobra em bar 17 com HP 250/LP 5–6 kHz, sem gate; resposta 1 a cada 2 compassos |
-| cVtnGIFGYss | HTP | groove | Groove Pool: swing de 8ª/16ª, timing e velocity separados, Random pequeno | Só hats/shaker/resposta, Amount 10–20%, printar 2–3 variações; kick/sub/rolling fora |
-| NXWjMYYYHGw | HTP | pressao-grave | Operator parallel + detune + Shifter ring + LFO → lead/sino inarmônico | Usar como resposta/stab de meio (HP 200–300), loop 5/16 ou 7/16; não é técnica de grave |
-| ORj8Vgu2vNs | AV | motor-completo | Repetição em camadas (1/4 + 8/16/32/64); célula de 1 beat; colocação de sample | Célula de 1 beat com `.27/.77` intacto; intro filtrada em 17; side cut ~300 só em atmos/hats |
-| n2rdb-8fQ9c | AV | motor-completo | Kick curto/afinado, sub + camada estéreo HPF, LFO envelope, Q&A de dois patches | HPF antes/depois do drive no SUB/BAIXO, pluck por LFO, sidechain por colisão, resposta call/response |
-
-### P2 — banco de ideias (8)
-
-| ID | Canal | Frente | Técnica | Aplicação no motor 2min |
-|---|---|---|---|---|
-| 44m_K42KtX8 | SA | transicoes | Sweep de ruído com EQ ressonante automatizado; riser tonal de 2→24 st em 8 compassos | Riser 1:30–1:45 terminando seco em 57; sweep de 1 compasso em 0:30 e 1:00; HP ≥120 |
-| rSorLiUr6xI | SA | melodia | Ritmo antes das notas; pergunta-resposta; rests como parte da frase | Lead C#4–C#5, 3–4 acentos do shaker, 2 compassos sobe/2 desce/1 cala; sem sub nem detune |
-| 4TOQ-5mGpUY | SA | textura-atmosfera | Resample → sample osc → loop curto → LFO no loop start/end (granular falso) | Conceito já resolvido pelo GranularOsc; usar só como cauda/atmosfera, +1 oitava antes do scan |
-| IbeXMrvWAew | AR | pressao-grave | Kick 909 com LP24 ressonante aberto por envelope, duas saturações fora do rack, reverb curto paralelo | Só no kick existente: LP24 varrendo 380–550 Hz, res 40–55, duas saturações, reverb curto com HPF |
-| DeRUOw8T98Y | SG | arranjo-mix | Pré-mixar, mapear stems em faders com teto = premix e gravar o arranjo em um take | 8 faders + 2 sends + 3 botões via Utility Output; gravar bars 1–64; só ganho/filtro/send |
-| ed5ODapIIBc | VS | motor-completo | Camadas por banda com cadeias paralelas: topo do kick, reverb mid-only, sub, rolling, sample 70–240 | Ghost kick só de médio (300 Hz–2 kHz) como resposta; reverb só no médio; sem camada nova de sub |
-| 6x1_XZDcI8I | HTP | arranjo-mix | Arranjar trocando fonte/sequência sobre a mesma grade; contraste do drop por subtração do agudo | Fade de 1–2 compassos na entrada; mutar topo/hats 1–2 compassos antes do drop; sem camada nova |
-| aK2tKYe8yCI | HTP | groove | Camadas curtas afinadas em Q&A, ghost notes, 5 semicolcheias, LFO/scan e automação | Ghost notes e 5/16 no hat fechado; resposta/madeira em C#; rolling de uma nota por pitch envelope |
-
----
-
-## 3. Receitas por frente
-
-> **Regra comum a todas as frentes:** nenhuma receita abaixo escreve abaixo de 120–150 Hz, mexe em `.27/.77`, sobe o shaker ou religa os canais utilitários do set. "Preservar" é parte da receita, não aviso de rodapé.
-
-### 3.1 pressao-grave (16 vídeos)
-
-**O que os mapas sustentam.** O grave do set de referência já tem pressão: `sub−kick` dentro do envelope e correlação 1,00 (estudo de 17/10). O que falta é **corpo harmônico no meio** e **encaixe**, não mais sub. As receitas úteis são as que separam a fundamental dos harmônicos, ou que criam pressão por camada filtrada.
-
-| ID | Receita concreta | Onde / valor de partida |
-|---|---|---|
-| kGfIx2d4oEI | Serum 2 com **Sub uma oitava abaixo** + saw com 1º harmônico removido (`custom_harmonics` índice 0 = 0); LFO1 em modo envelope no cutoff; release do Env 1 curto | Tocar nas subdivisões `.27/.77`; o saw filtrado fica quase inaudível sozinho — é o LFO que o traz. Sub **substitui** o existente, nunca soma. Splitter 210 Hz, Hyper Dimension e random phase 0: **NÃO VERIFICADOS** no gerador; ajustar na UI |
-| _W_mwJVDhqA | Wavetable/Serum 2 mono, saw, LP ~200 Hz, Env2 +55% sustain 0, **decay 117 ms** (=1/16 a 128 BPM), release 10 ms; Saturator ~40%; compressor paralelo; Auto Filter; duck pelo kick | Preservar `.27/.77`; **não** cortar 300–4 kHz (já −4,83/−5,76 no set); cortar só acima de 6–8 kHz se necessário |
-| Mix6rW9AHgE | Uma camada de articulação psy em C#2/C#3 com Env2 sustain 0; cadeia saw → LPF → Saturator → Multibanda (só médios) → EQ 1 kHz → soft clip → reverb curto | **Decidir a nota antes do HP:** em C#2 (69,3 Hz), HP **50–60 Hz** remove o C#1 (34,65) e preserva o fundamental; HP 80–100 comeria o C#2. Em C#3 (138,6), HP 100–120. Não somar o "add a bit of sub"; máximo **dois** estágios de cor |
-| I__tWZTk5-Q | Grupo KICK+BAIXO: EQ8 corretivo → **drive paralelo HP 150 Hz/LP 1,8 kHz** (20–35% wet) → EQ8 pós-drive → Glue 1–2 dB → clipper 1–3 dB → limiter | Hats, resposta, madeira, stab, subida e atmosfera **fora** do bus; **não** usar Bass Low Extender; medir 55–75 Hz antes/depois |
-| iteUJHS5YNE | Kick curto (≤117–130 ms de corpo), afinado em C#; sub sine mono em C#1/C#2, fora do beat 1; LFO só como modulação de amplitude/posição; glue de ataque longo/release curto + compressor de pico no retorno | O LFO **não** pode criar onsets novos; sem reverb no sub; "pouco processamento" é a tese do vídeo |
-| bOEc9c3pGi8 | Rampas de **8 compassos**: low-cut de um ramo paralelo do kick (150–300 Hz); cutoff do rolling **300 Hz–1,2 kHz**; send da atmosfera subindo em 16–32 compassos | Pontuar a cada 8 nos pontos 9/17/25/33/41/49; não descer o cutoff abaixo de 250 Hz; não modular o fundamental do sub. O **±1–2 dB é adaptação [I]**, não valor demonstrado; o Shepard/Falcon/ANA 2 do vídeo fica fora (§4) |
-| NCY0r4q-QcM | Kick fora em **53–56** (rampa de 1/16, não mute seco); congelar o duck do sub nesse trecho; hats caem em 49–52; nota sustentada na 5ª/6ª resolve em C# no 57 | Nada de delay no shaker/rolling; nada de ganho de compensação no retorno do kick; o vazio é o efeito |
-| h39gdHGGo-c | Noise loop sem grave → **Shifter para baixo** → HP 45–60/LP 200–300 → envelope espelhado ao kick → sidechain; eventos curtos, mono | Só nos `.27/.77`, não em cama; **fora** do canal de sub; sem Echo no núcleo seco; não usar ring mod |
-| xuHSPaCHjvo | **Parte segura:** camada média de baixo (Env2 0,08–0,12 s, valor do estudo interno, não do vídeo). **Opcional:** rumble em retorno: send do kick → Hybrid Reverb 100% wet (decay 150–300 ms) → HP 120 → LP 300–500 Q≤1,2 → Compressor sidechain → −18/−24 dB | Retorno mono <150 Hz; delay 3/16 feedback 50% **não** entra (cai 9,4 ms antes do BAIXO). **Cautela de gênero:** o próprio mapa cita que rumble é base de hard techno e o motor do set é rolling; se o A/B fizer o motor soar tech house, descartar o rumble e manter só a camada média |
-| Dcs7r1b6RwI | SUB: Operator sine + segunda oscilação saw com sustain 0/decay curtíssimo; harmônicos só 2ª–4ª; drive 140–250 Hz com compensação. BAIXO-MID: LFO→WT Pos e Env2→cutoff | SUB e camada média separados; Echo/reverb só no médio; loop de 3 tempos só na resposta/madeira |
-| xZW3lTHRCxs | No kick: EQ subtrativo **antes** da distorção; Roar com low "soft and clean"; compressor 4:1/attack 100 ms/release mínimo | Confirmar G#0 52,41 Hz e cauda ~0,5 s; **tube só no mid**; evitar click de filtro e boost 55–75 Hz; a novidade é usar o mesmo Roar no **mid do rolling** |
-| yZ-q1H6KaME | Quatro camadas: SUB sine mono sem saturação; corpo sine+saw; dois saws no médio com LP 2,5–3,5 kHz; acentos esparsos com reverb | Width 0 no sub; HP ~100–120 na camada principal; apagar da camada as notas cujo onset coincide com o kick |
-| IbeXMrvWAew | Só no kick existente: LP24 com envelope rápido varrendo **380–550 Hz**, ressonância 40–55%; duas saturações **fora** do instrumento; reverb curtíssimo em paralelo com HPF | Sem camada de rumble nova; ressonância larga (Q baixo) para não brigar com o formante da madeira; pico em 485 Hz ≈ B4, não briga com C# |
-| nS7CHBL-Bzs | Protocolo: kick sozinho → kick+sub com Utility `Ph` e depois `Phase` do oscilador em passos de 45–90° → kick+sub+baixo por nota | Sem SideKick: não há detecção automática; **não mover tempo**; nivelar para baixo se o alinhamento aumentar o grave; nos trechos sem kick não há fase a resolver |
-| NXWjMYYYHGw | Operator parallel com osciladores na mesma nota e detune curto; Shifter em ring mod baixo; LFO no filtro; loops 5/16 ou 7/16 | É **resposta/stab de meio**, não grave: HP 200–300; decay curto; ring mod baixo para não virar sino |
-
-**Preservar nesta frente**
-- SUB em C#, mono, `.27`, durações `.68/.46`, release 27,1 ms — não trocar a fonte nem alongar para "sustentar".
-- BAIXO alternando `.50/.77`, com D no quarto tempo; nada de quantizar para 16º reto.
-- Um único dono da fundamental. Toda receita que adiciona sub (kGf, yZ, Mix6, TwZk8Gcyl1E) só entra **substituindo** uma camada existente.
-- 55–75 Hz não pode subir: já está +4,0 dB acima de 40–55 Hz contra −1,2…+1,4 dB das referências (estudo de 17/10).
-
-### 3.2 meio-espaco (5 vídeos)
-
-**O que os mapas sustentam.** Quatro dessas técnicas **desmascaram** o meio e devolvem clareza ao centro; elas não sobem a banda sozinhas. A quinta (ttYFldHqLWk) é a exceção: **adiciona conteúdo** e pode subir 300–1.200/1.200–4.000. O erro a evitar é tratar pan/largura como correção de déficit espectral.
-
-| ID | Receita concreta | Onde / valor de partida |
-|---|---|---|
-| dSXz_MFS5ks | Retorno **MONO ROOM**: Hybrid Reverb 100% wet → EQ8 HP 280–320/LP 4–5 kHz → Utility Width 0% → pan oposto ao dry | Melhor candidato: percussão de resposta (send −12/−18 dB); madeira (send médio); kick/sub/rolling **zero** |
-| CixBgwVAAYg | Designar campo: kick/sub/rolling/hat principal em **Width 0%**; ghost notes e resposta com pan L/R; atmosfera larga | A largura vem de ghost notes e camadas de HF, não de widener no bus; auditar returns que recebem kick |
-| OJ3Fxk4E0gU | Varredura de pan com Utility +6 dB temporário, ouvindo a música inteira, até achar espaço próprio; devolver o gain a 0 | Madeira 8–12 L; resposta 16–20 L; hats 4–8 R; stab 14–18 R; **pan estático, sem Haas** |
-| w1WsSkRLyrU | Mono na fonte (kick/sub) + EQ8 em M/S com low-cut **só no Side a 120 Hz** no bus de bateria e no master | Auditar subindo até 150 Hz; se soar diferente, voltar; **não** cortar o Mid nem usar 200 Hz como meta |
-| ttYFldHqLWk | Preencher por conteúdo: duplicar a resposta/madeira com **+24** (o vídeo diz "two octaves higher"); o mapa propõe **+12 primeiro** como downgrade para não invadir 1,2–4 kHz. HP 200–250/LP 4–5 kHz, velocity abaixo; EQ só para domar picos | Hats protegidos; nada de boost estático no master; OTT só na camada de médio e em mix baixo; o vídeo resolve densidade, **não** a largura do meio (side/mid −21,90). **+12 é decisão do mapa, não do autor do vídeo** |
-
-**Preservar nesta frente**
-- Nada abaixo de 120 Hz sai do centro; correlação ≥0,98 abaixo de 120 Hz continua gate.
-- Pan estático não muda ataque: `.27/.77` ficam intactos por construção. Widener/chorus/Haas no bus é caminho de brilho metálico.
-- O meio 400 Hz–2 kHz está **muito fechado** (−21,90 dB side/mid). Pan não abre conteúdo lateral; abrir L/R só acima de ~150–250 Hz, e com fonte real, não com Utility Width.
-
-### 3.3 textura-atmosfera (16 vídeos)
-
-**O que os mapas sustentam.** Granular e drone são as rotas mais diretas ao vale de 300–4.000 Hz **desde que** entrem high-passed, com pitch estável, densidade não percussiva e buracos. A fonte escura (madeira, voz, foley, guitarra) vence fonte brilhante. Textura não substitui o motor.
-
-| ID | Receita concreta | Onde / valor de partida |
-|---|---|---|
-| JNAyJa_Dcx0 | Fundamento: grão = fatia curta com pitch/velocidade/direção/volume próprios; sobrepor dezenas/centenas; passar por filtro/envelope/LFO | Cama/resposta ≥180–250 Hz; nunca kick/sub/baixo; o granular pode ser o oscilador, não o motor rítmico |
-| li-Oed1DWck | **Uma** cama com 3 camadas (não três camas): A corpo (grão 120–200 ms, density 12–18, offset 15–30%, pan centro); B/C (80–150 ms, offset 30–50%, pan 35–50%); D +1 oitava (60–100 ms, HP 400–500). O offset por playhead exige **GUI ou 2–3 instâncias** — o gerador não escreve o SCAN | HP 250–300 em todas; LP 7–9 kHz; random pitch ≤0,5 st; **sem** camada −1 oitava; sem LFO tempo-sync. Arranjo: 1–16 só A; 17–32 entra B; 33–48 entra C; 49–56 entra D e abre o reverb; buracos e automação por seção |
-| vREN7ACIcFc | Drone granular: fonte afinada em C#, grão 150–300 ms, density alta, `random_pitch = 0`; duas camadas normal + reverse (~50/50); LFO lento no LP | HP 120–150 antes do reverb; LP 3–5 kHz; −18/−24 dB; nada de gate/retrigger em 1/16 |
-| QLPV1Wk5hoE | Uma cama granular de fonte orgânica; até 8 vozes com entradas/spreads diferentes; automação de filtro por seção | Corpo em **1,2–4 kHz** (primário) e 300–800 secundário; HP 250–300 **depois** do granular; silêncios, não colchão |
-| f4tdX3LsKj0 | Granular percussivo num **canal percussivo de madeira (sampler)** ou no canal de madeira (sintetizador): printar 1–2 compassos, loop on, grão **60–120 ms na resposta** e **100–160 ms na madeira**, offset 20–40%, pitch ±1–2, pan ±20%, max grains 8–16; 16avos com gate curto | **1 pergunta + 1 resposta a cada 2 compassos**, só nos buracos `.27/.77`; um hit por buraco, **sem sobrepor as duas camadas** (o mapa não manda substituir evento; a regra de densidade é do projeto, §3.4). HP ~276; nível 3–6 dB abaixo dos hats; 2–3 samples |
-| 4q6GrRSEfhI | Uma nota longa de madeira/guitarra → warp Texture, flux 0, grain 226, esticar ao máximo, resamplear; empilhar cópias −5/−8 st e lavar com delay/reverb | Cama 300–1.200 Hz; HP 180–300/LP ~6 kHz; reafinar as cópias ao C#; dry na frente se precisar soar madeira |
-| ZSvJlc3LRqo | Warp **Texture/Tones** em sample de 1–4 s com sustain; estirar 2–4×; grain ~65, flux baixo; clip envelope de 16 compassos no grain size | HP 120–300; L/R só acima de 150–250 Hz; **não** usar o gate 1/8 do vídeo em quem carrega `.27/.77`; preservar os vazios de 0:44–0:45 e 0:59,5–1:00 |
-| 4TOQ-5mGpUY | Resample de uma nota → SampleOsc → loop curto → LFO lento no loop start/end (granular falso); subir +1 oitava antes do scan | Conceito **já resolvido** pelo GranularOsc; se usar, só cauda/atmosfera, grão longo, HP 180–250; nunca em kick/sub/baixo |
-| nU3udPVlJGg | Drone 7(b5) sem a nota de baixo; fonte madeira/loop orgânico; HP; sidechain 2–4 dB do kick; dois AutoPan em rates diferentes | Oitava 4 (C#4–B4); HP 280–320; Bass Mono; LP 5,5–6 kHz; sem Sub osc; −12 a −18 dB sob o elemento principal |
-| 90VpsmIaPuk | Operator parallel, 3–4 osciladores em ratios 1×/2×/3×/4× sobre C#; macros de shape/detune/volume; feedback ~50% com LFO lento; filtro + delay/reverb em send | Largura só acima do HP; detune pequeno (3–8, não 26/34); notch 320 Hz/1,2 kHz se colidir com madeira; decidir a divergência 90 vs 160 Hz |
-| v-mjY-Vlgv0 | Wavetable mono POS 100, filtro MS-20 com Env2 (A0, D~200 ms, amount ~68), chorus Classic, flanger lento, Echo HP 1,5/LP 11 kHz, Shimmer em retorno | Stab-resposta em C# frígio, 2–3 eventos/compasso nos `.27/.77`; HP 200–250; BassMono no retorno; +6 do vídeo trocar por +7 (G#) ou +1 (D) |
-| lHGfb5Hlmuc | **Um** bus com **duas** camadas: NOISE (HP 300/LP 4,5 kHz) e DRONE (madeira granular em C#/D/G#), LFOs ~0,045 e 0,071 Hz; reverb/delay no retorno | Entrar em 17 (só noise) e 25 (drone); 49–57 desligar LFO e subir o noise por volume; depois de 57 manter só o drone baixo; EQ em 300–1.200 |
-| sTizY7Qln78 | Atmosfera só no **retorno**: LFO muito lento + reverb 100% wet de decay longo + Drum Buss/Overdrive leve + duas AutoPan (uma polimétrica); send em pulsos | Throw nas respostas e no fim de seção; não enviar kick/sub/baixo; HPF do bus de atmosfera ≤40 Hz; a cauda substitui o corte seco (vício de 1,33 gaps/min medido no set) |
-| Hzszjbt_c9I | Pad dark: dois osciladores a **+6 st (trítono)**, ataque longo, LFO2→pitch, LFO1→filtro, FM/warp e unison; echo de feedback longo + reverb longo | Cama bars 1–56; HP 180–220/LP 5–6 kHz; trítono só acima do grave; recuar/duckar em 57 |
-| BjDkkB8ElnY | Duplicar o clip do baixo com HP ~250/LP 5–6 kHz, saturação leve e LFO lento (a dobra herda `.27/.77`); cama de field recording/vinil; splashes de 1/16 em Q&A | Nível bem abaixo do original; sem gate/sidechain na cópia; splash só substituindo evento; pre-delay 20–40 ms nos retornos |
-| Wmr4dnvhVkc | Saw rica + camada de caráter, Filter 1→Filter 2 em série, Env 2 plucky, macro no decay; sync + abertura de filtro | Molde para madeira/stab em 300–1.200 Hz; sem LPF ressonante de trance; sync só nas subidas; nada de pan no que toca o grave |
-
-**Preservar nesta frente**
-- HP obrigatório em toda camada (120–300 Hz conforme a fonte), **antes** do reverb; retorno também com HP.
-- `random_pitch` ≤0,5–2 st e `random_pitch = 0` em drone; a variação vem de posição/offset, não de afinação.
-- Nada de LFO tempo-sync, gate 1/16 ou retrigger na camada que carrega o groove; os vazios de 0:44–0:45, 0:59,5–1:00, 1:29,5, 1:44,1–1:45 e 1:59,5 continuam vazios.
-- Uma cama com camadas, não três camas independentes; a textura precisa de buracos e automação por seção.
-
-### 3.4 groove (9 vídeos)
-
-**O que os mapas sustentam.** A hipnose vem de **troca, omissão, microtiming e modulação**, não de mais eventos. A densidade de transientes já está em 7,57 picos/s contra teto interno de 6,99 (estudo de 17/10). Portanto: toda receita aqui **substitui** eventos ou varia timbre; nada soma camada contínua.
-
-| ID | Receita concreta | Onde / valor de partida |
-|---|---|---|
-| iWOPUHKbJjI | Grade macro só nas respostas: madeira/percussão em 3/16 ou tercina; LFO 1/8D/1/8T no filtro de uma via **paralela HP ≥300** do baixo; polimetria 7/16 ou 13/16 no shaker | Não mover kick, não sincopar o SUB; shaker sem subir nível; testar em 8 compassos |
-| xuHSPaCHjvo | Camada média de baixo com Env2 0,08–0,12 s; rumble filtrado em retorno só como opção | Ver §3.1; o "heavy" vem do mid, não do sub; rumble é base hard techno no próprio mapa — descartar se virar tech house |
-| ejNHFdtYrw0 | Micro-delay de claps (+15/−10 ms), random position 1–8 ms, velocity ±10–15, pitch sutil, round robin de 3; fatiar loop de madeira no Simpler | Só hats/shaker/resposta/madeira; kick/sub/rolling intactos; uma direção por bloco (nunca atrasado e adiantado juntos) |
-| C3x8o9Krfc0 | Stab band-pass OSR, drive 5–6 dB, centro **250–400 Hz**, res ~50, Env2 amount 25, amp sem sustain, release 600 ms; Bass Mono 120; LP para domar | No riff 3/16; se o centro ficar em 100 Hz vira baixo, não resposta; sem high shelf amplo |
-| A6XjjwGUkA8 | One-shots de ruído: clique do início = hat fechado; Corpus tube ~800 Hz para corpo; LFO no attack/decay só na resposta; HP ≥1 kHz, LP 7–8 kHz | **Substituir** um evento existente; pico ressonante 700–900 Hz, não 2–4 kHz; ataque idêntico onde há `.27/.77` |
-| G4Tsj5or6A8 | Kick em 3 camadas (transiente/corpo/cauda), ghost kick encurtado, rumble filtrado; hats com velocity+swing+LFO lento em volume/pan; saturação em vez de agudo | Bump na fundamental de C#, não em 55 Hz; corte de low-mid; bus com tone escurecido e level match |
-| VSYCY__WVQ8 | Portas de 8: sair com open hat em c33; voltar **trocado** em c41; acento de open hat em `.27/.77` em c49; falso release c33–c40; 4–6 eventos de transição band-limited 300 Hz–6 kHz | Não copiar 16avos contínuos; não subir shaker; o release real fica em 57 |
-| cVtnGIFGYss | Groove Pool: swing de 16ª, Amount 10–20%, Random pequeno, timing e velocity separados; printar 2–3 variações | Só hats/shaker/resposta; kick/sub/rolling fora; nada de EQ/saturação "para combinar" |
-| aK2tKYe8yCI | Ghost notes, hat em 5 semicolcheias com curva de dinâmica, Q&A entre samples, madeira em loops de 2–4 compassos, Shifter/notch lento | Resposta afinada em C#, nos buracos; hat não preenche 1,2–4 kHz (isso é madeira/shaker com corpo); sem stab/subida (não cobertos) |
-
-**Preservar nesta frente**
-- O pocket `.27/.77` é microtiming (+0,02 beat ≈ 9,4 ms), não grade macro. Nada de swing extra de 15% por cima (o projeto já corrigiu flam).
-- Kick 4x4 com os vácuos já escritos; sem ghost kick novo que crie colisão com SUB `.27` e BAIXO `.50/.77`.
-- Teto de densidade: trocar, não somar.
-
-### 3.5 transicoes (2 vídeos)
-
-**O que os mapas sustentam.** O projeto tem **excesso de corte seco** (1,33 gaps/min contra máximo 0,80 da família) e não falta reverb. A tradução é substituir o corte por cauda/transformação, com **um dono por fronteira**.
-
-| ID | Receita concreta | Onde / valor de partida |
-|---|---|---|
-| qvJqxGrAtCc | Grupo de **FX de transição** com crash, reverse-crash, noise-up, noise-down; dois clipes-âncora em 0:44 e 0:59,5; HP em cada pista; sidechain do crash só no noise do grupo | Terminar no downbeat de 0:45 e 1:00; sem snare roll duplicado; reequilibrar no destino (−4 dB → 0 é exemplo, não meta); um evento por respiro |
-| 44m_K42KtX8 | Riser tonal: fonte em C# → pitch 2→24 st em **8 compassos**; unison crescendo; LP; reverb **100→0** exponencial; terminar seco. Sweep: noise + banda de EQ ressonante automatizada de baixo para cima | Riser de **1:30 (49) a 1:45 (57)**, aterrissando no Drop 1; sweep de 1 compasso em 0:30 e 1:00; HP ≥120, pink/brown, LP ~8 kHz, Q moderado |
-
-**Preservar nesta frente**
-- Nada de sub no FX de transição; retorno com HP 200–300.
-- Não repetir o salto agudo do compasso 32, já rejeitado no plano do motor.
-- Um dono por fronteira: se já existe reverse/riser, **substituir**, não somar.
-
-### 3.6 melodia (3 vídeos)
-
-**O que os mapas sustentam.** A melodia do estilo é sóbria e curta. O que falta não é nota: é **ritmo, silêncio e uma dissonância por frase**. As três receitas cabem sem tocar no grave.
-
-| ID | Receita concreta | Onde / valor de partida |
-|---|---|---|
-| rSorLiUr6xI | Ritmo antes da nota: 3–4 acentos por compasso tirados do shaker; 2 compassos de pergunta ascendente, 2 de resposta descendente, 1 de silêncio em que a resposta percussiva fala | Lead em **C#4–C#5** (277–554 Hz), HP 180–220; unison 1, detune 0; sem camada de sub; sem FM/comb/ressonância alta |
-| oO2gdXg1-nE | Três ganchos: granular gated + EQ desenhado; FM 2-op com LFO minúsculo; 5 pads do mesmo sample com ataque/pitch diferentes | FM como **stab curto**; pads na resposta; HP 180–300; não copiar swing 15%; não cortar 700 Hz–1 kHz largo |
-| VqPpTk3gp78 | Célula C#–D (2ª menor), G#–A (2ª menor), trítono D–G#; usar **uma** dissonância por frase; acento agudo G#–A em 49–56 e retirar uma nota em 57 | Tudo acima de ~200 Hz; +6 só em D/G#; +13 só em C#/G#; nada de sino/prato/exciter; não mover posição/duração/velocity |
-
-**Preservar nesta frente**
-- C# como centro; frígio estrito C#–D–E–F#–G#–A–B; notas fora liberadas **em teste**, não como nova tonalidade.
-- Nada abaixo de 200 Hz na camada melódica; sem camada de sub no patch.
-- A conversa é sobreposição, não espera: a resposta atrasada é minoria nas referências (estudo de arranjo/FX de 25/10, §3).
-
-### 3.7 arranjo-mix (4 vídeos)
-
-**O que os mapas sustentam.** O segundo minuto precisa de **história**, não de mais camadas. As receitas são de curva, troca e performance; nenhuma corrige espectro.
-
-| ID | Receita concreta | Onde / valor de partida |
-|---|---|---|
-| 5XUULOEJ2tI | Quatro cenas de 16 compassos: A=L1, B=L2, C=L3, D=L4→L1. Hats escuros com echo/16tos/open-hat sobem a energia; kick/sub/baixo **constantes**; reset em 1:45 | 0:00–0:30 base; 0:30–1:00 hat "t-t"+echo; 1:00–1:30 16 hats; 1:30–2:00 pico e reset; LPF 10–12 kHz nos hats |
-| TdNE8oEb2Lk | Build 1:30–1:45: reintroduzir o kick com low-cut, abrir filtro, riser, parar tudo, deixar o lead sozinho e um silêncio, resample-reverse e cortar o último kick | Drop em 57 com rolling **−10→0 dB**, sem lead; **não** copiar o corte global de 200–500 Hz nem o boost de 3 kHz no master |
-| DeRUOw8T98Y | Mapear 8 faders + 2 sends + 3 botões; Utility `Output` com teto = premix; gravar bars 1–64 em um take | F1 kick, F2 sub, F3 rolling, F4 hats, F5 resposta, F6 madeira, F7 stab, F8 atmosfera; K1 lowpass na madeira; B1 HP no mid/high; B2 mute bateria; B3 mute graves |
-| 6x1_XZDcI8I | Arranjar trocando a fonte/sequência sobre a **mesma** grade; entrada com fade de 1–2 compassos; contraste do drop por **subtração** do agudo | Mutar topo/hats 1–2 compassos antes do drop; mesma sequência em outro device; sem camada nova |
-
-**Preservar nesta frente**
-- A performance/automação só escreve ganho, filtro e send; nada de Beat Repeat, delay 100% wet ou granular que mova `.27/.77`.
-- O teto do take é o premix: nenhum fader acima dele; o drop é retorno ao teto, não boost.
-- Correção de 300–4.000 Hz é estática, feita antes, no premix.
-
-### 3.8 motor-completo (7 vídeos)
-
-**O que os mapas sustentam.** Os walkthroughs confirmam a arquitetura: **um dono de sub**, camada média separada, sidechain por banda, kick curto e afinado, hats por camada. O que varia é o timbre; o princípio é estável.
-
-| ID | Receita concreta | Onde / valor de partida |
-|---|---|---|
-| S0DRqIEXW_4 | Kick: Overdrive/transiente ~1 kHz, mono <130; baixo em 3 camadas; hats em 4; stab FM+band-pass+Env | Um dono de sub; camada mid 200–800 mono <200; stab 400–900; sem Shimmer; sem EQ em 2–4 kHz |
-| GyhA92cfQgE | Sine + saw **sem fundamental** (fundamental em uma camada só); phase randomization **off** no sub; camada estéreo duplicada acima do crossover; pump de filtro | Testar no BAIXO em A/B de 8–16 compassos; sub Operator intocado; hat-transiente dentro do kick só se 8k+ subir sem 2–4k e sem evento novo |
-| TwZk8Gcyl1E | Low end em 4 camadas: kick 2×, baixo low impresso + high MIDI; kick afinado na escala; A/B de polaridade; sidechain só nos graves | SUB = low, BAIXO = high; cortar graves do BAIXO; duck <150 Hz; não duplicar sub |
-| Fx3jM4xdw4M | Kick Utility mono, EQ cortando as duas pontas, +4 dB de transiente, limiter; baixo saw FM leve, LP12, drive, legato ~25%, duck 20–200 Hz | Bus de graves com Glue + Bass Mono **178 Hz** + rack que ducka 20–200; reforço de presença no próprio baixo em 300–1,2 kHz; sem Boom |
-| ed5ODapIIBc | Kick com cadeia paralela de topo e reverb **só no médio**; sub sine; rolling com mais médio e stereo acima de 150; rhythm kick filtrado como resposta | Ghost kick 300 Hz–2 kHz nos `.27/.77`; sub sem reverb/width/Redux; sem camada nova de grave |
-| ORj8Vgu2vNs | Repetição em camadas: loops de 1/4 compassos para o corpo + 8/16/32/64 para a mente; célula kick+baixo de 1 beat; colocação de sample; reverse+fade antes do acento | Intro filtrada em 17; side cut ~300 Hz só em atmos/hats/retornos; resposta rara (1 por 8 compassos); `.27/.77` intacto |
-| n2rdb-8fQ9c | Kick sample curto/afinado, compressor após 50 ms; sub + camada estéreo HPF; LFO envelope no cutoff; Q&A de dois patches; hats complementares | HPF **antes e depois** do drive no SUB/BAIXO; pluck por LFO; sidechain por colisão de frequência; cortar 6 kHz nos hats |
-
-**Preservar nesta frente**
-- Kick: fonte e afinação homologadas (G#0 52,41 Hz, cauda ~0,5 s), sem click de filtro, sem boost 55–75 Hz.
-- Sub: um dono, mono, sem saturação/width/reverb; sidechain só <150 Hz.
-- BAIXO: `.50/.77`, sem 16º reto por cima, sem camada nova de sub; harmônicos no médio, não no fundamental.
-
-### Onde cada aplicação costuma morar no set de referência (16 MIDI + 2 returns; não há canal granular nem de rolling dedicado)
-
-| Aplicação | Canal/return típico | Observação |
-|---|---|---|
-| Cama granular (li-O, vREN, QLPV, 4q6, ZSv) | **Canal novo** ou canal de madeira; return próprio com HP | Não existe canal granular no arquivo; os antigos canais de granulador citados por dois vídeos não estão no arquivo. Se usar Granulator, Max for Live/Suite **NÃO VERIFICADO** |
-| Resposta granular (f4td) | Canal percussivo de madeira (sampler) ou canal de madeira (sintetizador) | Printar o próprio material do canal; um hit por buraco |
-| Duplicata +12 (ttYF) | Mesmo canal da resposta/madeira, como **layer separado** | Não é canal novo obrigatório; precisa de filtro e nível próprios |
-| Fundamental + harmônicos (kGf) | **BAIXO** (Serum 2 + EQ Eight); **SUB** (Operator + Saturator) fica como dono do C#1 | O Sub do patch substitui o SUB ou fica mudo; nunca soma |
-| Camada média psy / rolling (Mix6, _W, Dcs) | **BAIXO** (Serum 2) | Não existe canal de rolling dedicado; se precisar de outra instância, criar canal novo e nomear |
-| Rumble (xuH, opcional) | **Return novo** (não há return de rumble; existem retorno de reverb e retorno de delay) | Retorno mono <150 Hz; sidechain do KICK |
-| Rampas de 8 (bOE) | Ramo paralelo dentro do **KICK** ou return novo; cutoff no **BAIXO**; send no retorno de reverb | A rampa de low-cut no kick inteiro é o que o mapa proíbe |
-| Mono/width (w1W, Cix) | Master e bus de bateria (EQ8 M/S); Utility nos canais de kick/sub | Não há grupo de graves nomeado no arquivo compacto; confirmar antes de inserir |
-| OTT (Kt22) | Insert no canal de resposta ou madeira, **antes** do EQ subtrativo | Nunca no master, nunca depois do reverb |
-
-### Ordem de A/B recomendada (8–16 compassos por vez, volume casado)
-
-1. **Segurança/mono:** w1WsSkRLyrU + CixBgwVAAYg + retorno mono de dSXz_MFS5ks. Medir 20–120 Hz e correlação antes/depois; nada deve mudar abaixo de 120.
-2. **Fundamental e corpo do baixo:** kGfIx2d4oEI (A/B de 8–16 compassos), _W_mwJVDhqA (decay 117 ms), TwZk8Gcyl1E (HPF antes/depois do drive). Medir 55–75 Hz, 300–1.200 e mono.
-3. **Resposta e meio:** f4tdX3LsKj0 (granular nos buracos), ttYFldHqLWk (duplicata +24, com +12 como primeiro teste), camada média de xuHSPaCHjvo. Medir 300–1.200/1.200–4.000, 5–12 kHz e o **RMS do meio** (régua de depressão).
-4. **Textura:** li-Oed1DWck/QLPV1Wk5hoE (cama) e vREN7ACIcFc (drone). Mute A/B; conferir 20–120 Hz idêntico e 5–10 kHz sem salto.
-5. **Tensão/arranjo:** bOEc9c3pGi8 (rampas de 8), NCY0r4q-QcM (kick fora 53–56), 5XUULOEJ2tI (4 cenas), VSYCY__WVQ8 (portas de 8).
-6. **Transições:** qvJqxGrAtCc nos respiros e 44m_K42KtX8 em 49→57. Um dono por fronteira.
-7. **Melodia:** VqPpTk3gp78 (célula), oO2gdXg1-nE (ganchos), rSorLiUr6xI (ritmo/silêncio).
-
-**Critério de parada:** se o A/B não mostrar ganho em 300–1.200/1.200–4.000 **sem** subir 5–12 kHz, **sem** mexer em 20–120 Hz e **sem** apagar `.27/.77`, a receita é descartada — não se compensa com EQ.
-
-### Top 8 para a primeira rodada (revisado, na ordem de A/B)
-
-| # | ID | Aplicação | Gate de aceitação |
-|---|---|---|---|
-| 1 | w1WsSkRLyrU | Width 0 em kick/sub + EQ8 M/S com low-cut 120 Hz só no Side, no bus de bateria e no master | 20–120 Hz idêntico; correlação ≥0,98; nada acima de 150 Hz muda |
-| 2 | CixBgwVAAYg | Centro para kick/sub/rolling/hat principal; largura só em ghost notes, resposta e atmosfera; auditar returns | Soma mono não perde elemento; 300–1.200/1.200–4.000 não caem |
-| 3 | kGfIx2d4oEI | BAIXO com Sub uma oitava abaixo + saw sem 1º harmônico; sub **substitui**; splitter/phase na UI | 20–60 Hz não sobe; 69–277 Hz ganha corpo; `.27/.77` intacto |
-| 4 | _W_mwJVDhqA | Rolling no BAIXO com Env2 sustain 0, decay 117 ms, LP ~200 Hz, duck pelo kick | 55–75 Hz não sobe; 300–4 kHz não é cortado; onsets `.50/.77` idênticos |
-| 5 | ttYFldHqLWk | Duplicata da resposta/madeira **+24** (teste inicial +12), HP 200–250/LP 4–5 kHz, velocity menor | 300–1.200/1.200–4.000 sobem; 5–12 kHz não salta; ataque original preservado |
-| 6 | Mix6rW9AHgE | Camada média psy no BAIXO, C#3 com HP 100–120 (ou C#2 com HP 50–60), Env2 sustain 0 | Fundamental preservada; 120–300 não engorda; 300–1.200 sobe |
-| 7 | bOEc9c3pGi8 | Rampas de 8 compassos no low-cut paralelo do kick, cutoff do rolling 300 Hz–1,2 kHz e send da atmosfera | 20–120 Hz igual; movimento espectral sem novo onset; pontuação em 9/17/25/33/41/49 |
-| 8 | f4tdX3LsKj0 | Resposta granular no canal de madeira, grão 60–120/100–160 ms, HP ~276, um hit por buraco | 1 pergunta + 1 resposta a cada 2 compassos; sem sobreposição; 20–120 Hz igual |
-
----
-
-## 4. O que não é traduzível
-
-Nenhum dos 62 vídeos depende de plugin pago fora do arsenal do estilo; as dependências reais e as rotas possíveis:
-
-| Vídeo | Dependência ausente | Por que não é literal | Rota possível | Limite declarado |
-|---|---|---|---|---|
-| nS7CHBL-Bzs | **SideKick** (detecção/alinhamento de fase) + Bitwig | A detecção automática e a rotação de fase por correlação são o núcleo do plugin | Utility `Ph` para A/B de polaridade + `Phase` do oscilador em passos de 45–90°; `Rand=0`/retrigger no sub | Sem detecção automática; a escolha do ponto é de ouvido/medidor, não do plugin |
-| yZ-q1H6KaME | **4× ANA 2** + Bitwig step modulator | As quatro camadas e o step mod são o instrumento do vídeo | 4 camadas em Serum 2/tracks separadas; MIDI lanes no lugar do step mod | Sem step modulator nativo; a arquitetura de camadas sobrevive, o timbre não é copiável |
-| 4TOQ-5mGpUY | **ANA 2** (sem oscilador granular) | O vídeo existe para **burlar** a ausência de granular; Serum 2 tem GranularOsc | Serum 2 GranularOsc direto; o "fake granular" só como cauda | Prioridade P2: o problema que o vídeo resolve não é o deste estilo |
-| bOEc9c3pGi8 | **Bitwig global modulators + script Shepherd do UVI Falcon + patches de rise da ANA 2** | O mapa lista as três dependências: modulação global, Shepard pronto e rises prontos | Automação de clip/envelope por lane; Macro de Rack para mover vários alvos; Shepard construído em Vital/Serum 2 e resampleado | Sem modulador global; sem Shepard pronto; sem os patches ANA 2 — o desenho sobrevive, o custo sobe |
-| dSXz_MFS5ks | **Bitwig Reverb** + effects bus | O retorno mono e o width são o mecanismo; o device é intercambiável | Hybrid Reverb no retorno + EQ8 + Utility Width 0 | O algoritmo não é o mesmo; o conceito de cauda mono é |
-| li-Oed1DWck | **Bitwig Fragments** (device granular) | O empilhamento de vozes/playheads é do device | Serum 2 GranularOsc com 3–4 instâncias/camadas | O SCAN/playhead do GranularOsc real não está todo exposto no gerador de presets; ajuste na GUI |
-| QLPV1Wk5hoE | **Bitwig sampler** (modos granulares) | O gesto é sample → grãos → vozes → FX | Serum 2 GranularOsc ou Granulator (Max for Live) | Max for Live/Suite não foi verificado nesta pesquisa |
-| Kt22wEkGx-Y | **Bitwig Dynamics** (só demo visual) + clone "VOTT" | O Bitwig é usado para visualizar a curva; o clone substitui o OTT | Multiband Dynamics do Live em paralelo (Below só no meio) | Não é o mesmo algoritmo do OTT; a regra de ordem (antes do EQ) é o que vale |
-| I__tWZTk5-Q | **Weiss EQ, Virtual Mix Rack, Soothe 2, Bass Low Extender** | Quatro dos nove estágios não existem no arsenal nativo; Soothe 2 não tem equivalente exato | EQ8 + Multiband Dynamics + Glue + Saturator/clipper; **não** usar low extender | A ordem dos capítulos não prova a ordem do sinal; a cadeia é proposta, não transcrição |
-| ed5ODapIIBc | **OTT** de terceiro | O OTT é citado duas vezes; não é plugin nativo | Multiband Dynamics em paralelo, se necessário | Sem upward compression idêntica; o vídeo é P2 e o OTT não é o núcleo |
-| n2rdb-8fQ9c | RComp, Hyperdimension e outros avulsos | Plugins de terceiros citados de passagem; o núcleo é Serum + Live | Compressor/EQ8/Utility/Serum 2 | O timbre dos plugins avulsos não é reproduzível; a arquitetura é |
-| G4Tsj5or6A8 | **Cableguys Sidechain** | O ducking da percussão grave é feito por plugin | Compressor do Live com sidechain externo | Sem a curva do plugin; a função é a mesma |
-| 6x1_XZDcI8I | **u-he Frequency Shifter** | O shift de frequência é do plugin | Shifter do Live (modo Frequency Shifter, desvio pequeno) | Sidebands diferentes; manter LP e wet baixo |
-| ejNHFdtYrw0 | **ANA 2** | Aparece só como fonte do acorde de preenchimento | Qualquer pad do Serum 2/Kontakt | A técnica de bateria não depende do ANA 2 |
-| kGfIx2d4oEI | **Splitter de 3 bandas, Hyper Dimension e random phase 0** no gerador de presets | O patch depende desses ajustes; o mapa confirma o parâmetro `kParamRandomPhase`, mas não há campo amigável no `OscillatorSpec` | Ajustar na UI do Serum 2; splitter pode ser reproduzido com Rack + EQ Eight (≈210 Hz/≈1 kHz) | **NÃO VERIFICADO** no gerador; sem a UI, o patch não fica fiel |
-| ORj8Vgu2vNs | **Bitwig** como DAW de costume | O autor usa Bitwig, mas o método é de colocação/loop | Live 12 + Simpler/Sampler | Nada do método depende do Bitwig |
-
-**Fora de escopo por decisão de projeto, não por falta de plugin:** `Kickstart 2` (demo/licença) e qualquer sample criado sob demanda ou recorte das referências.
-
----
-
-## 5. Vídeos sem legenda / NÃO VERIFICADOS
-
-| ID | Estado da legenda | O que foi usado | O que fica NÃO VERIFICADO |
-|---|---|---|---|
-| I__tWZTk5-Q | **Sem legenda** — `yt-dlp` confirma "no automatic captions"; só `live_chat` | Descrição oficial + capítulos/metadados | Todos os valores de parâmetro e a **ordem do sinal**: a cadeia é a ordem dos capítulos, não uma demonstração; não há fala transcrita |
-| VSYCY__WVQ8 | **Legenda bloqueada** — HTTP 429 em 4 tentativas; faixa `en` existe, entrega bloqueada | ASR local (`whisper-cli`, `ggml-small.bin`) sobre o áudio; 269 linhas | Grafia exata de termos; posições/nomes de camada são reconstrução de quem mapeou, não dados do projeto de Rene Wise; o próprio mapeador diz que fez o mapa de ouvido |
-| iteUJHS5YNE | **Legenda bloqueada** — HTTP 429 em 5 tentativas; faixa `en` listada | ASR local (`whisper-cli`, `ggml-small.en.bin`); 719 linhas, 21:02 de fala | Palavras técnicas corrompidas pelo ASR ("roar"=Roar, "9-on-nine"=909, "one six"=1/16); números citados são da fala, não de demonstração |
-| 5XUULOEJ2tI | **Legenda bloqueada** — HTTP 429 em 6 tentativas | ASR local (`whisper.cpp`, `ggml-small.bin`); VTT com 374 linhas | Citações são da transcrição ASR, com erros preservados; a análise é de uma track de Valentino Mora, não demonstração de parâmetros |
-
-**Limites herdados que valem para o dossiê inteiro**
-- **Nenhum áudio de vídeo foi ouvido como fonte musical** na produção dos 62 mapas; todos são leitura de legenda/ASR/descrição. Nos três vídeos transcritos por ASR (VSYCY__WVQ8, iteUJHS5YNE, 5XUULOEJ2tI), o áudio foi transcrito localmente, não escutado; em I__tWZTk5-Q não há fala transcrita. "O vídeo diz" não é "o som funciona".
-- **Nenhuma medição nova** foi feita nesta pesquisa; os números de 300–4.000 Hz vêm do comparativo de 26/10 e foram apenas citados.
-- Valores marcados como `HIPÓTESE` nos mapas (ex.: tempo "7" do Echo em v-mjY-Vlgv0; ressonância 80% do kick em IbeXMrvWAew; arquitetura do kick em TwZk8Gcyl1E não inspecionada) continuam não verificados.
-- O arquivo do set lido em 27/10 não tem canal granular; os canais de granulador citados por dois vídeos vêm de estudo de 25/10 — **conflito declarado, não resolvido**.
-- 90VpsmIaPuk registra **divergência real** entre HPF 160 Hz (parecer de FX/Atmos) e 90 Hz (trilha 33); decidir no set.
-
----
-
-## 6. Perguntas prováveis do produtor
-
-Respostas curtas com o material disponível; o que não tem base está marcado `NÃO VERIFICADO`. Não são decisões de produto.
-
-1. **Isso vira tech house?** O próprio mapa do xuH cita a fonte de gênero: "tiraram o Rumble base do hard techno e colocaram um rolling base" (opinião transcrita de fonte externa, não medição). Por isso o rumble **saiu do top-8** e ficou opcional no §3.1: a parte segura é a camada média; o rolling já é o BAIXO. Se o A/B com rumble fizer o motor soar hard techno, descarta. **NÃO VERIFICADO** no áudio.
-2. **Engorda o sub?** Nenhum A/B foi rodado; **NÃO VERIFICADO**. As receitas têm gate escrito: 20–120 Hz idêntico (±0,2 dB), correlação 1,00, retorno mono <150 Hz. A camada do kGf troca a fundamental de camada; a do Mix6 decide o HP pela nota; o rumble opcional do xuH tem HP 120. Nenhuma prova até render.
-3. **A camada em C#2 com HP "acima do sub" sobrevive?** Não com HP 80–100: C#2 = 69,3 Hz, e o mapa do `_W` diz que 80–100 "comeria o fundamental". Duas saídas: tocar em **C#3 (138,6 Hz)** com HP 100–120, ou tocar em **C#2** com HP **50–60 Hz** (remove o C#1 de 34,65 e preserva o C#2). A segunda não é "acima do sub", é "acima do C#1". Qual soa melhor: **NÃO VERIFICADO**.
-4. **Qual canal?** Não existe canal de rolling dedicado no arquivo; BAIXO = Serum 2 com notas 37/38/44/49/50 (C#2–C#3); SUB = Operator MIDI 25 (C#1). Uma "camada psy em C#2" dentro do BAIXO duplica as notas existentes; tem de ser layer interno ou canal novo, com A/B contra o BAIXO. O mapa não resolve; **NÃO VERIFICADO**.
-5. **O Sub do kGf cai no C#1 do Operator. Substituo, deixo mudo ou somo?** O mapa é explícito: "nunca somar o Sub do patch ao sub que já existe" — ou o Sub do Serum vira o sub da faixa, ou fica mudo e o Operator carrega. Qual preserva o sub aprovado: **NÃO VERIFICADO**. O `random phase = 0` existe como `kParamRandomPhase`, mas não tem campo amigável no `OscillatorSpec`; ajustar na UI.
-6. **3–4 camadas contra "uma cama, não três"?** São camadas de **uma** cama, não três camas independentes. O arranjo está no §3.3: 1–16 só A; 17–32 entra B; 33–48 entra C; 49–56 entra D e abre o reverb; com buracos e automação. O playhead deslocado — coração do vídeo — só sai na GUI ou em 2–3 instâncias; o gerador não escreve o SCAN. **NÃO VERIFICADO** no gerador.
-7. **Qual régua vale: perfil contra 6 refs ou higiene de médios?** As duas estão declaradas e **não foram conciliadas**: o comparativo mede déficit de −4,83/−5,76 dB; a régua homologada fixa 400 Hz–2,5 kHz em depressão relativa ao RMS. Se o RMS do meio subir acima do que a segunda permite, a decisão é do produtor. As 8 aplicações são hipóteses; nenhum A/B.
-8. **+24 ou +12?** O vídeo diz "two octaves higher" (+24); +12 é downgrade do mapa, para não invadir 1,2–4 kHz. O primeiro A/B deve ser a **segurança/mono** (w1W), com tolerância de 20–120 Hz ±0,2 dB e correlação 1,00; só depois a duplicata. **NÃO VERIFICADO**.
-
----
-
-## 7. Fontes consultadas
-
-**Mapas (62, lidos integralmente nesta consolidação):** um mapa por ID listado no §2; legendas e curva machine-readable (62 vídeos, `canal`, `frente`, `prioridade`, `porque`) ficaram no acervo de origem. Os estudos internos citados pelos mapas (estudo de bateria/baixo de 17/10; comparativo de motor de 26/10; gates e réguas do projeto; dossiê homologado) pertencem ao projeto original e não são reproduzidos aqui — os números citados destes estudos estão embutidos no texto acima com a marcação de origem.
-
-**O que não foi consultado nesta consolidação:** os áudios dos vídeos; o DAW aberto; nenhum render; nenhuma nova medição de áudio. **Nenhum A/B foi executado.**
-
-
----
-
-## TPS-ODYSSEY-DIVA-20261031.md
+## pesquisas/TPS-ODYSSEY-DIVA-20261031.md
 
 # TPS Odyssey — banco Diva (31/10/2026)
 
@@ -2787,10 +1911,9 @@ Categorias restantes: ARP, ATMO, LD (leads), PL (plucks), SY — por garimpar. P
 
 - Medição própria: 25 MIDIs `BS` via `mido` (31/10/2026). Nenhuma outra fonte externa consultada neste recorte; os estudos internos citados na versão de origem pertencem ao acervo do projeto original.
 
-
 ---
 
-## auditoria_devices_20261017.md
+## pesquisas/auditoria_devices_20261017.md
 
 # Catálogo de armadilhas — auditoria de devices, plugins, samples e lanes em um Set de Live 12.4.6 (17/10/2026)
 
@@ -2842,10 +1965,9 @@ Auditoria completa de um set real de minimal psytech: **73 canais** (70 pistas [
 * **Existência física no disco dos 18 samples externos:** apenas o `.als` foi inspecionado — caminhos verificados no XML (`Path`, `RelativePath`, `OriginalFileSize > 0`), sem testar o SSD local.
 * **Parâmetros internos pós-header binário do Serum 2:** os cabeçalhos JSON (`XferJson`) foram 100% decodificados (`presetName`, `presetAuthor`, `presetDescription`, `hash`), mas os knobs de DSP dentro do blob binário só são acessíveis com o engine do plugin carregado no host.
 
-
 ---
 
-## cursos/CERCLE-VOL4-20261025.md
+## pesquisas/cursos/CERCLE-VOL4-20261025.md
 
 # CERCLE SOUNDS VOL. 4 (PML340) — dissecação completa
 
@@ -3049,10 +2171,9 @@ Um `.wav` por preset, mesmo nome, gravado pelo fabricante. Isso permite duas coi
 - A correspondência código→nome de modelo (oscilador e filtro) é `INFERÊNCIA` pela ordem do manual.
 - `Modo` (VCC) foi lido como código bruto; poly/mono/legato não foi confirmado no plugin.
 
-
 ---
 
-## cursos/DRIFT-8-FAIXAS-20261025.md
+## pesquisas/cursos/DRIFT-8-FAIXAS-20261025.md
 
 # DRIFT (PML Tech House) — as 8 faixas dissecadas
 
@@ -3304,10 +2425,9 @@ Comparação com os outros packs (mesma medição):
 - O rack `Ducking` é um device Max for Live: o XML mostra o wrapper, não os parâmetros internos. O que ele faz é `INFERÊNCIA`.
 - Os 527 WAV foram classificados por **nome de arquivo**, não por áudio.
 
-
 ---
 
-## cursos/DRIFT-TECH-HOUSE-20261025.md
+## pesquisas/cursos/DRIFT-TECH-HOUSE-20261025.md
 
 # PML — TECH HOUSE "DRIFT" (TH3) — dissecação
 
@@ -3394,10 +2514,9 @@ Funções no nome: **BS** = bass, **LD** = lead, **PL** = pluck, **PD** = pad, *
 - Os 112 `.fxp` não são carregáveis sem o Serum 1.
 - O gênero é tech house, não psytech: o valor está na **técnica de Serum**, não no groove.
 
-
 ---
 
-## cursos/GIANTS-PROJETO-PROGRESSAO-20261025.md
+## pesquisas/cursos/GIANTS-PROJETO-PROGRESSAO-20261025.md
 
 # MELODIC TECHNO GIANTS (PML) — o projeto por dentro, estágio por estágio
 
@@ -3633,10 +2752,9 @@ Nenhum send é reverb puro. **A** tem compressor e filtro; **B** tem plugin de t
 - `Toraverb` (send B) é plugin de terceiro; sem ele instalado, esse send abre sem o efeito.
 - A contagem de devices inclui os que estão desligados.
 
-
 ---
 
-## cursos/MIXING-A-TRACK-PROJETO-20261026.md
+## pesquisas/cursos/MIXING-A-TRACK-PROJETO-20261026.md
 
 # PML Mixing A Track — curso completo e o A/B de projeto (Before/After)
 
@@ -3714,10 +2832,9 @@ Antes e depois são o **mesmo arranjo** (119 BPM · 128 compassos · 718 → 766
 - Os 4 FLV (`27`, `28`, `42`, `45`) são vídeo antigo; o curso tem 46 aulas somando ~5h23.
 - A reconfirmação é por leitura de XML (gzip) dos dois `.als`.
 
-
 ---
 
-## cursos/MOOG-SUB37-PML-20261026.md
+## pesquisas/cursos/MOOG-SUB37-PML-20261026.md
 
 # PML — Creative Sound Design with the Moog Sub37 (Yannek Maunz)
 
@@ -3771,10 +2888,9 @@ Pelo título e pela duração, os dois blocos com maior densidade técnica são:
 - **Sub37 é hardware**; sem o instrumento (ou um clone), não há destino para os presets mesmo se baixarem.
 - Não existe arquivo leve no pacote além dos próprios vídeos.
 
-
 ---
 
-## cursos/OMAR-MEHO-SOUND-DESIGN-20261025.md
+## pesquisas/cursos/OMAR-MEHO-SOUND-DESIGN-20261025.md
 
 # OMAR MEHO — Music Production & Sound Design In Ableton Live (Udemy, 2022)
 
@@ -4053,10 +3169,9 @@ A última linha é o desenho psystyle do motor de grave: **kick no 1, bass nos c
 | Mapa de mixdown | cap. 6 | leitura integral | kick+bass mono/centro; strings 50L/50R mais baixas; hat 10–20 kHz 40–45 |
 | Build 1/4→1/8→8 kicks→1/16 4 compassos | cap. 8 | leitura integral | "goes on for about eight kick drums... then 16. For like four bars" |
 
-
 ---
 
-## cursos/PRESETS-SERUM-20261025.md
+## pesquisas/cursos/PRESETS-SERUM-20261025.md
 
 # OS 152 PRESETS DE SERUM DO DRIFT — e um contraste com patches de referência
 
@@ -4171,10 +3286,9 @@ Dos 32 nomes de patch em uso, **7 não existem como `.SerumPreset`** — só com
 - 7 dos 32 nomes não puderam ser lidos (`.fxp`) — as médias do set de referência excluem esses 7. As 39 instâncias VST3 apontam para 32 nomes porque há repetição (o `Cinematic Drone` aparece em 4 pistas, o `GLIDE BASS 03` em 2, o `ARYTMO_ODYSSEY` em 2).
 - Nada foi ouvido. "Densidade de patch" é contagem de estrutura, não julgamento de timbre.
 
-
 ---
 
-## cursos/TIM-ENGELHARDT-20261025.md
+## pesquisas/cursos/TIM-ENGELHARDT-20261025.md
 
 # PML — TIM ENGELHARDT PRODUCTION PACK (Melodic Techno) — dissecação
 
@@ -4276,10 +3390,9 @@ Nomenclatura: `PML_ENGELHARDT_BASS_01` a `_20+`, e equivalentes por função. Ao
 - Os `.als` são de 2020 (era Live 10). Podem abrir com avisos de versão e mídia faltante.
 - A contagem de plugins vem do XML; se um device estiver desativado, ele ainda é contado.
 
-
 ---
 
-## cursos/TIM-ENGELHARDT-TRAJETORIA-20261025.md
+## pesquisas/cursos/TIM-ENGELHARDT-TRAJETORIA-20261025.md
 
 # TIM ENGELHARDT (PML) — a trajetória de construção de 3 faixas
 
@@ -4472,10 +3585,9 @@ O que é automatizado, em ordem de frequência:
 - O `GlueCompressor` tem escala de attack/release própria; os valores 2/3/6 estão **crus**, sem conversão para ms.
 - O rack `FINISH` (DRUMS do Project C) é um rack de rack — a leitura para no segundo nível.
 
-
 ---
 
-## dossies-deep-research/RETORNO-ARGON-BALANCO-MISTICO-E-VOZ-3D-20261017.md
+## pesquisas/dossies-deep-research/RETORNO-ARGON-BALANCO-MISTICO-E-VOZ-3D-20261017.md
 
 ---
 title: "Deep Research — Balanço Místico e Voz 3D"
@@ -4634,10 +3746,9 @@ A superação imediata do bloqueio criativo no caso de referência não requer a
 13. AUDITORY PERCEPTION AND COGNITIVE PERFORMANCE, https://usaarl.health.mil/assets/docs/hmds/Section-19-Chapter-11-Auditory-Perception-and-Cognitive-Performance.pdf
 14. Training of Listeners for the Evaluation of Spatial Sound Reproduction, https://openresearch.surrey.ac.uk/view/pdfCoverPage?instCode=44SUR_INST&filePid=13140287030002346&download=true
 
-
 ---
 
-## dossies-deep-research/RETORNO-DEEP-RESEARCH-BALANCO-MISTICO-20261017.md
+## pesquisas/dossies-deep-research/RETORNO-DEEP-RESEARCH-BALANCO-MISTICO-20261017.md
 
 ---
 title: "Deep Research — O balanço místico"
@@ -4761,10 +3872,9 @@ Isso também é coerente com o eixo atual das referências: Luis M aparece hoje 
 
 **Internet consultada: sim.** Fontes principais: pesquisas de Danielsen et al. sobre timing + som em gêneros de groove; Senn et al. sobre microtiming e densidade; Sioros/Witek sobre síncope e groove; estudo PLOS sobre movimento espacial; Beatport/AlpaKa para verificar o contexto atual das referências.
 
-
 ---
 
-## dossies-deep-research/RETORNO-DEEP-RESEARCH-ORQUESTRA-20261017.md
+## pesquisas/dossies-deep-research/RETORNO-DEEP-RESEARCH-ORQUESTRA-20261017.md
 
 ---
 title: "Deep Research — Bloco ORQUESTRA"
@@ -5060,10 +4170,9 @@ A pesquisa consultou a internet em **17 de outubro de 2026**. As fontes abaixo s
 
 **Conclusão final:** o bloco não está pedindo "mais orquestra". Está pedindo **prova de fraseado e engenharia de diálogo**. O projeto já tem variedade tímbrica suficiente — braam, dois kanuns, três papéis de kamancheh, flauta, voz de garganta e dois leads/respostas. A questão decisiva é descobrir se esses dez canais estão se comportando como **personagens que se alternam** ou como **camadas que se acumulam**. A primeira opção converge com a evidência estética e perceptiva; a segunda agravaria justamente o maior desvio medido do projeto de referência, a densidade.
 
-
 ---
 
-## dossies-notebooklm/DOSSIE-NOTEBOOKLM-ISMAILM-VS-SET-REF.md
+## pesquisas/dossies-notebooklm/DOSSIE-NOTEBOOKLM-ISMAILM-VS-SET-REF.md
 
 # DOSSIÊ FORENSE COMPARATIVO DE GROOVE & BATERIA: ISMAIL.M (*ORTAHISAR*) vs. FAIXA DE REFERÊNCIA
 
@@ -5248,10 +4357,9 @@ O estudo comparativo com *Ortahisar* de Ismail.M demonstrou que a sofisticação
 
 Com as correções aplicadas, a faixa de referência atinge 100% de conformidade com os princípios da escola e abre caminho para uma masterização final cristalina e devastadora.
 
-
 ---
 
-## dossies-notebooklm/DOSSIE-NOTEBOOKLM-PARTITURA-E-MUSICA-SET-REF.md
+## pesquisas/dossies-notebooklm/DOSSIE-NOTEBOOKLM-PARTITURA-E-MUSICA-SET-REF.md
 
 # DOSSIÊ DE ENGENHARIA MUSICAL, HARMONIA E PARTITURA (PIANO ROLL): FAIXA DE REFERÊNCIA
 
@@ -5437,10 +4545,9 @@ Copie e cole estas perguntas no NotebookLM após carregar este dossiê:
 4. *"Como foi resolvida a abertura estéreo de 360° da bateria nos drops sem causar cancelamento de fase mono no grave?"*
 5. *"Descreva a arquitetura do 'Falso Break em 2 Atos' (Bars 105 a 120) e por que ele mantém a pista dançando sem quebrar a hipnose."*
 
-
 ---
 
-## dossies-notebooklm/DOSSIE-NOTEBOOKLM-SET-REF-EXTENDED-240.md
+## pesquisas/dossies-notebooklm/DOSSIE-NOTEBOOKLM-SET-REF-EXTENDED-240.md
 
 # DOSSIÊ DE ENGENHARIA FORENSE, ARRANJO E ACÚSTICA: FAIXA DE REFERÊNCIA "EXTENDED DJ CUT" (240 COMPASSOS / 07:30)
 
@@ -5649,10 +4756,9 @@ Ao carregar este dossiê no NotebookLM, utilize as diretrizes e prompts de estre
 ### Pergunta 5: A Auditoria Numérica do Gate da Escola — Fim da Subjetividade
 > *"Por que a substituição de regras inventadas por uma régua empírica baseada nas 32 faixas de referência do gênero transformou o processo de mixagem e masterização? Qual é a importância de medir a correlação estéreo do midrange (0.456) e a ausência do sub (30.4%) em vez de confiar apenas na escuta subjetiva em monitores de estúdio?"*
 
-
 ---
 
-## dossies-notebooklm/DOSSIE-NOTEBOOKLM-VOZES-20261015.md
+## pesquisas/dossies-notebooklm/DOSSIE-NOTEBOOKLM-VOZES-20261015.md
 
 # DOSSIE NOTEBOOKLM — VOZES (retorno das 3 rodadas, 15/10/2026)
 
@@ -6155,11 +5261,9 @@ As fontes documentadas no acervo sustentam as técnicas, métodos e comportament
 ---
 
 As diretrizes da **RODADA 2** e da **RODADA 3** são aplicáveis diretamente em uma sessão do Ableton Live 12.
-
-
 ---
 
-## dossies-notebooklm/GEMINI_NOTEBOOK_SOUND_DESIGN_FULL.md
+## pesquisas/dossies-notebooklm/GEMINI_NOTEBOOK_SOUND_DESIGN_FULL.md
 
 # GEMINI NOTEBOOK — SOUND DESIGN COMPLETO (FAIXA DE REFERÊNCIA)
 
@@ -6272,10 +5376,9 @@ Para garantir que toda essa densidade de Sound Design chegue ao master com extre
 
 Com essas técnicas integradas ao Ableton Live 12.4, a faixa de referência ganha um nível de acabamento, textura e psicodelia digno dos maiores lançamentos da AlpaKa MuziK e Zenon Records! 🚀
 
-
 ---
 
-## dossies-notebooklm/PESQUISA-NOTEBOOKLM-DINAMICA-FX-20260924.md
+## pesquisas/dossies-notebooklm/PESQUISA-NOTEBOOKLM-DINAMICA-FX-20260924.md
 
 # PESQUISA NOTEBOOKLM — DINÂMICA, FX E ABERTURA
 
@@ -6379,10 +5482,9 @@ Com essas técnicas integradas ao Ableton Live 12.4, a faixa de referência ganh
 6. **Sub Deprivation** nas fronteiras + os 3 cortes pré-Drop 2.
 7. **Mastering:** ceiling −0,5 dBTP, HPF 20 Hz, mono <120 Hz, LUFS −8…−9,5.
 
-
 ---
 
-## dossies-notebooklm/RETORNO-NOTEBOOKLM-BRAAM-PORTADOR-20261016.md
+## pesquisas/dossies-notebooklm/RETORNO-NOTEBOOKLM-BRAAM-PORTADOR-20261016.md
 
 A consulta cruzada aos três cadernos do projeto no Gemini Notebook — 🎛️ Building a PSYTECH Track, 🎛️ Generative Forest Psytrance Atmosphere Techniques e 🎧 PME Experts — juntamente com as auditorias dos grupos de **EFEITOS** e de **SYNTHS E MADEIRAS** do set de referência consolida os parâmetros exatos para transformar o canal do braam (preset *Braam Aberto Peak Time em C#*) no **portador estrutural** da faixa de referência (128 BPM, 4/4, C# Frígio).
 
@@ -6953,11 +6055,9 @@ Em cumprimento estrito ao protocolo obrigatório para consultas com anexos e tex
 9. **Tabela de Frequências de Notas Musicais (C#4 = 277,18 Hz):** [https://pianotuner.io/piano-note-frequencies](https://pianotuner.io/piano-note-frequencies) e [https://www.tonal.fm/guides/frequency-chart](https://www.tonal.fm/guides/frequency-chart)
 
 Para ouvir na prática como a dupla sul-africana citada nas suas referências constrói sustentação de médio-grave, chamadas metálicas de *peak time* e controle de espaço negativo em pista, confira a apresentação completa [Miles From Mars no Boom Festival 2025](https://www.youtube.com/watch?v=4kVjiF3bYGs), que ilustra exatamente a estética de *psychedelic peak-time techno* buscada para o portador da **faixa de referência**.
-
-
 ---
 
-## estudo_master_20261017.md
+## pesquisas/estudo_master_20261017.md
 
 # Estudo de Masterização — caso real em faixa minimal psytech (Ableton Live 12.4.6, 17/10/2026)
 
@@ -7199,10 +6299,9 @@ PY
 * **Medição DSP direta em `.wav` renderizado (LUFS-I, True Peak, LRA, Crest, correlação por banda, espectro FFT):** apenas o arquivo `.als` foi enviado ao ambiente de inspeção (sem os `.wav` locais), então as métricas acústicas não puderam ser medidas diretamente nesta sessão; ficaram propostas com script pronto na Seção 6.
 * **Resposta interna exata dos módulos de FX dentro dos blobs binários do Serum 2 FX:** os cabeçalhos JSON (`XferJson`) de todas as 32 instâncias foram decodificados (preset, autor, descrição, hash), mas os knobs de DSP proprietários do Xfer são serializados em binário opaco após o cabeçalho.
 
-
 ---
 
-## estudo_mix_20261017.md
+## pesquisas/estudo_mix_20261017.md
 
 # Estudo Completo de Mixagem — caso real em faixa minimal psytech (Ableton Live 12.4.6, 17/10/2026)
 
@@ -7373,10 +6472,9 @@ PY
 * **Medição acústica em áudio renderizado (`.wav`) de stems e master:** todas as grandezas de faders, ganhos, EQs, compressores, presets de Serum 2, roteamentos de sidechain, envelopes e notas MIDI foram **100% medidas no XML do `.als`**, mas o cálculo direto de LUFS/correlação/espectro sobre ondas de áudio depende da execução do render no Live local.
 * **Alinhamento de fase amostra-a-amostra entre kick e sub/rolling:** como o Serum 2 sintetiza em tempo real, a verificação visual de fase requer osciloscópio ou renderização das pistas em WAV após transpor o sub para MIDI 25.
 
-
 ---
 
-## pesquisa-ponte-m4l-runtime-serum2.md
+## pesquisas/pesquisa-ponte-m4l-runtime-serum2.md
 
 # Pesquisa: Ponte Max for Live e rota runtime de troca de preset do Serum 2 (sem GUI, sem salvar Set)
 
@@ -7538,10 +6636,9 @@ Configurar (com Serum fechado) o número do CC 0–127 no lugar de -1 → cada C
 
 Fontes principais: [thread Xfer PC Serum 2](https://xferrecords.com/forums/general/please-consider-bringing-back-program-change-to-serum-2) · [Live 12 release notes](https://www.ableton.com/en/release-notes/live-12/) · [ableton-live-mcp](https://github.com/bschoepke/ableton-live-mcp) · [Serum 2 manual (PDF)](https://www.xferrecords.com/manual/serum-2/docs) · [thread Xfer "CC for serum"](https://xferrecords.com/forums/general/cc-for-serum) · [vst3_public_sdk validator](https://github.com/steinbergmedia/vst3_public_sdk) · [LOM docs](https://docs.cycling74.com/max8/vignettes/live_object_model)
 
-
 ---
 
-## refs-artistas/ANALISE-130-D-20261016.md
+## pesquisas/refs-artistas/ANALISE-130-D-20261016.md
 
 # ANÁLISE — `130 D` (referência externa, 16/10/2026)
 
@@ -7605,10 +6702,9 @@ Fontes principais: [thread Xfer PC Serum 2](https://xferrecords.com/forums/gener
   (`Illusion`, `Shifting Reality`, `Late Phase` c/ Sabura/Clap Codex) e catálogos techno peak-time.
 - Pendente: análise por STEMS para cravar kick, baixo e camadas de topo além do mix.
 
-
 ---
 
-## refs-artistas/ANALISE-COMPARATIVA-REFS-2026-09-08.md
+## pesquisas/refs-artistas/ANALISE-COMPARATIVA-REFS-2026-09-08.md
 
 # ANÁLISE COMPARATIVA — REFERÊNCIAS PSY-TECHNO: Akari System, André Gazolla, Yao Ofosu, Kaled Nasser
 **Data:** 2026-09-08 · **Método:** medições de áudio (ffmpeg/FFT, bandas 20–120/120–300/300–1k/1–5k Hz) + 4 pesquisas web profundas.
@@ -7696,10 +6792,9 @@ O IBI ~455–470 ms confirma 128–132 BPM. A cauda do kick é a diferença tát
 - Pesquisas web: VERIFICADO nas fontes dos dossiês de pesquisa; INFERÊNCIAS marcadas; BPM/key de várias faixas dos artistas: NÃO ENCONTRADO (Beatport/Spotify bloqueiam).
 - Nenhuma escuta humana automatizada: tudo aguarda validação por escuta.
 
-
 ---
 
-## refs-artistas/ANALISE-SLIPPERY-SLOPE-LUISM-20261016.md
+## pesquisas/refs-artistas/ANALISE-SLIPPERY-SLOPE-LUISM-20261016.md
 
 # ANÁLISE — `Slippery Slope (Luis M Remix)` · Akari System (16/10/2026)
 
@@ -7783,10 +6878,9 @@ O IBI ~455–470 ms confirma 128–132 BPM. A cauda do kick é a diferença tát
 - **O vácuo de verdade existe e é curto** (15 s sem nenhum transiente) — coerente com a estética de menos bateria.
 - **O outro apaga o topo primeiro, o sub depois** — ideia de desenho raramente explorada.
 
-
 ---
 
-## refs-artistas/ANALISE-V4-COMPARATIVA-2026-09-08.md
+## pesquisas/refs-artistas/ANALISE-V4-COMPARATIVA-2026-09-08.md
 
 # RÉGUA PADRÃO PSYTECH — Mayuri (Gazolla) × AIO "Illusion" × Akari "Segments": valores de referência
 
@@ -7929,10 +7023,9 @@ As três referências foram medidas com a mesma régua, número a número. O que
 - Régua aplicada identicamente às três referências (ffmpeg/numpy, STFT 1024/256 @22,05 kHz mono).
 - Limitações: janelas de drift e de fase usam 60–300 s; o detector de pausas não captura vácuos >3 s como "pausa"; "kick rate" conta eventos LF (kick + re-trigger de bass na mesma banda); níveis são internos a cada faixa (não comparar absolutos entre masters diferentes).
 
-
 ---
 
-## refs-artistas/AUDIOMETRIA-FISICA-PSYTECH-2026-09-09.md
+## pesquisas/refs-artistas/AUDIOMETRIA-FISICA-PSYTECH-2026-09-09.md
 
 # AUDIOMETRIA FÍSICA COMPARATIVA: PSYTECH & BUSH TECH
 ## Reanálise Empírica com Áudio Real: Fox (Artemis AR Remix), Subterranean Frequency, Star System (73 Stems)
@@ -8119,10 +7212,9 @@ Banda / Métrica          |  Alvo das Referências
 ========================================================================================
 ```
 
-
 ---
 
-## refs-artistas/COMO-OS-ARTISTAS-FAZEM-2026-09-08.md
+## pesquisas/refs-artistas/COMO-OS-ARTISTAS-FAZEM-2026-09-08.md
 
 # Como os artistas fazem — Akari × Yao × Kaled × Gazolla (régua única)
 
@@ -8155,10 +7247,9 @@ Leitura do detector: "kick rate" conta eventos LF (kick + re-trigger de bass na 
 
 Detector LF não separa kick de sub (conta eventos); MP3s das refs (masters diferentes); janela 0–300 s (finais não analisados); pausas detectadas podem incluir seções de construção com kicks esparsos. A comparação de níveis de dB é interna a cada faixa.
 
-
 ---
 
-## refs-artistas/CORTES-GAZOLLA-20261021.md
+## pesquisas/refs-artistas/CORTES-GAZOLLA-20261021.md
 
 # A malandragem dos cortes — André Gazolla / Petrix (medido, 21/10/2026)
 
@@ -8200,10 +7291,9 @@ Detector LF não separa kick de sub (conta eventos); MP3s das refs (masters dife
 - Mede a **ausência**, não o gesto que a cerca (filtro, reverse, eco). O "como" do corte (cortar seco vs. fade)
   precisa de escuta.
 
-
 ---
 
-## refs-artistas/DISSECCAO-KALED-NASSER-ORION-REMIX-20261012.md
+## pesquisas/refs-artistas/DISSECCAO-KALED-NASSER-ORION-REMIX-20261012.md
 
 # Dissecação Forense e Musical: Antonio Farhy - Orion (Kaled Nasser Remix)
 **Data:** 12/10/2026  
@@ -8274,10 +7364,9 @@ Ao analisar segundo a segundo a faixa (timeline forense), esta é a matemática 
 3. **Tração contínua de topo nos drops:**
    - Open hats e shakers como esteira ininterrupta em 16avos nos blocos de marcha, sem buracos acidentais no meio do ciclo — o corte só nos últimos 2 tempos de transição (o vácuo sagrado).
 
-
 ---
 
-## refs-artistas/DISSECCAO-MUSIC4ALIENS-STEMS-PACK-20261012.md
+## pesquisas/refs-artistas/DISSECCAO-MUSIC4ALIENS-STEMS-PACK-20261012.md
 
 # Dissecação Forense e Mapeamento Completo: Music4Aliens Stems Pack
 **Data:** 12/10/2026  
@@ -8375,10 +7464,9 @@ Esta pasta está **cravada em 128 BPM**, o andamento típico do minimal psytech.
 3. **Escuta A/B por Resampling:**
    - Carregar trechos dos stems em pistas de teste temporárias no Live (resampling / input de áudio) para comparar de ouvido o peso do grave, a pressão do sub e o ar de cada stem com o projeto em andamento.
 
-
 ---
 
-## refs-artistas/DISSECCAO-REMAKES-TOP-MUSIC-ARTS-20261025.md
+## pesquisas/refs-artistas/DISSECCAO-REMAKES-TOP-MUSIC-ARTS-20261025.md
 
 # DISSECÇÃO — TOP MUSIC ARTS: ARTBAT "Atlas" + Boris Brejcha "Never Look Back"
 
@@ -8598,10 +7686,9 @@ Fonte: mesmo pacote de remakes (`.als` + presets + cfg + imagens; **sem os WAV/A
 
 **Limite:** mídia faltante e **nada foi ouvido**. O que é `VERIFICADO` é a estrutura do `.als`, não o som.
 
-
 ---
 
-## refs-artistas/LIB-VINTAGE-ORGANS-20261026.md
+## pesquisas/refs-artistas/LIB-VINTAGE-ORGANS-20261026.md
 
 # LIB — NI Vintage Organs 1.5.3 (Kontakt) — pesquisa de referência (26/10/2026)
 
@@ -8660,10 +7747,9 @@ e **`.previews/*.ogg` para cada patch** — os 100 timbres são **audíveis sem 
 `NÃO VERIFICADO`: comportamento do scan de plugins varia por máquina; som renderizado (nenhum .nki
 foi aberto — a escuta possível é pelos .previews).
 
-
 ---
 
-## refs-artistas/MAPA-DESERT-NOMADS-ISMAIL-PROGHOUSE-2026-09-09.md
+## pesquisas/refs-artistas/MAPA-DESERT-NOMADS-ISMAIL-PROGHOUSE-2026-09-09.md
 
 # MAPA — Desert Nomads × Gazolla × ISMAIL.M (prog house) — 2026-09-09
 
@@ -8728,10 +7814,9 @@ Blueprint ajustado: o baixo de uma faixa no estilo = **intercalado com rajadas o
 - Blind cross-check do atlas (sessão irmã): rótulos "rolling psy" eram artefato de prompt; fenômeno hipnótico sobreviveu cego → este mapa usa só descritores medidos
 - ISMAIL.M mapeado: Visionary (Cerato Rmx) 121,6 D min · Cyber Attack 121,6 C maj · Sunrise in Odessa 121,6 F maj · Hypnosis 121,6 C# maj · Sacred Lotus 125,3 C maj · Udja 118,8 C maj. Turkish Miracles (álbum): não analisado.
 
-
 ---
 
-## refs-artistas/MAPEAMENTO-COMPLETO-KALED-NASSER-ORION-REMIX-20261012.md
+## pesquisas/refs-artistas/MAPEAMENTO-COMPLETO-KALED-NASSER-ORION-REMIX-20261012.md
 
 # Mapeamento Completo e Raio-X 360°: Antonio Farhy - Orion (Kaled Nasser Remix)
 **Data:** 12/10/2026  
@@ -8840,10 +7925,9 @@ Blueprint ajustado: o baixo de uma faixa no estilo = **intercalado com rajadas o
 | **Drop 2 Clímax** | Abertura máxima com saturação | Clímax abrindo em **~750 Hz** com uníssono orquestral. |
 | **Fundo Preto** | Topo representa só 1,7% da energia | **Anti-chiado rígido**: pratos aveludados, hats binaurais e madeiras orgânicas. |
 
-
 ---
 
-## refs-artistas/PROFESSOR-ARRANJO-UNDERTOW-2026-09-08.md
+## pesquisas/refs-artistas/PROFESSOR-ARRANJO-UNDERTOW-2026-09-08.md
 
 # PROFESSOR DE ARRANJO — UNDERTOW (Artefakt): a gramática de arranjo de uma referência
 
@@ -9008,10 +8092,9 @@ Princípio geral extraído: **manter o material, multiplicar as versões.** Cada
 - NÃO VERIFICADO: disponibilidade exata das operações LOM citadas na versão do Live em uso (`duplicate_clip_to_arrangement`, propriedades de clipe) — checar a doc do LOM instalada antes de implementar.
 - Nenhum arquivo do Set de referência foi modificado.
 
-
 ---
 
-## refs-artistas/STAR-SYSTEM-CAMADAS-2026-09-09.md
+## pesquisas/refs-artistas/STAR-SYSTEM-CAMADAS-2026-09-09.md
 
 # STAR SYSTEM 140 F — densidade de eventos por stem e tabela de camadas do psy progressivo
 
@@ -9211,10 +8294,9 @@ Camadas funcionais (resumo):
 - NÃO VERIFICADO: fase/swing dos hats do Star (requer R-scan por stem — fora do escopo de densidade); causa dos 64 'pausas' do SEQ_GRID (provável gate rítmico intencional, dado que o stem volta a 8/s no clímax).
 - Limite: taxa de eventos conta transientes banda-larga (não é contagem de kicks); comparação de dB entre stems usa energia média 0–360 s incluindo trechos mudos — ver matriz de presença para leitura por seção.
 
-
 ---
 
-## refs-artistas/rolling_music_forensic_comparative_study.md
+## pesquisas/refs-artistas/rolling_music_forensic_comparative_study.md
 
 # Rolling Music — Estudo Forense Comparativo (12/09/2026)
 
@@ -9258,10 +8340,9 @@ Camadas funcionais (resumo):
 - Caminho B (o inverso): construir uma faixa de tech house nova com a linguagem psy importada (motor kick/sub psytech numa faixa do estilo Rolling).
 - Ambos os caminhos documentados; os grooves medidos servem aos dois.
 
-
 ---
 
-## tutoriais/ARRANJO-MIX.md
+## pesquisas/tutoriais/ARRANJO-MIX.md
 
 # Arranjo e mix — tutoriais traduzidos
 
@@ -9331,10 +8412,9 @@ Os mapas completos por vídeo (um por ID, com timestamps e trechos de prova) nã
 - **`5XUULOEJ2tI`:** o quinto nível de energia não é nomeado na transcrição e não foi inventado. Onde o reset em 1:45 cabe (fim dos 2 min ou seção posterior) é decisão do produtor.
 - **Decisões estéticas em aberto no projeto de referência** condicionam a camada de hats da escada de energia e a régua do médio (ver seção de conflitos).
 
-
 ---
 
-## tutoriais/C3x8o9Krfc0.md
+## pesquisas/tutoriais/C3x8o9Krfc0.md
 
 # How to Make POWERFUL Techno Stab (free preset)
 
@@ -9424,9 +8504,9 @@ O vídeo **não depende** de plugins específicos — é uma sessão Ableton com
 - **Prioridade: alta** para quem quer preencher o miolo 300–1.200 Hz com um timbre novo sobre uma grade rítmica já fechada: o low shelf de 300 Hz mais o band pass deslocado atacam exatamente essa faixa sem tocar no sub.
 - **Esforço: médio.** São várias etapas (synth → filtro/env → unison → Amp → EQ → delay → reverb → Drum Buss → Utility), mas todas stock e com valores dados pelo vídeo; o trabalho real é o A/B do centro do band pass (100 Hz do vídeo × 250–400 Hz do contexto), o controle de mono abaixo de 120 Hz e a dose de topo.
 
-## Trechos de prova: 3 citações literais da legenda com timestamp
+## Trechos de prova da legenda com timestamp
 
-> "second important things is to use a band pass heater because this band pass filter are gonna just select a certain frequency range and when you're gonna modulate this filter with envelope quite fastly it's gonna create these scrolling effects" — **00:47.820–00:58.860** *(ASR: "band pass heater" = bandpass filter)*
+> Segunda dica do Audioreakt: bandpass + envelope rápido no filtro cria o efeito "scrolling" — **00:47.820–00:58.860** *(ASR: "band pass heater" = bandpass filter)*
 
 > "the Soto's waveform that we're gonna play at a lower note so here we're gonna play with d0 and that's gonna give this log rolling not already" — **00:34.320–00:39.960** *(ASR: "Soto's" = sawtooth; "log rolling" = growling)*
 
@@ -9436,10 +8516,9 @@ O vídeo **não depende** de plugins específicos — é uma sessão Ableton com
 
 **Fonte:** legenda automática EN do vídeo (ASR), obtida com `yt-dlp --skip-download --write-auto-subs --sub-langs en --convert-subs vtt`; citações com timestamps das cues. Nenhuma informação tirada da descrição do YouTube.
 
-
 ---
 
-## tutoriais/C6KBqtmfnY8.md
+## pesquisas/tutoriais/C6KBqtmfnY8.md
 
 # Sciotech & Mezzle - Crab Soup [Alpaka Muzik]
 
@@ -9462,10 +8541,9 @@ Release de referência para escuta comparativa do estilo.
 
 Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (verificados no info.json).
 
-
 ---
 
-## tutoriais/CO8hndhKbg8.md
+## pesquisas/tutoriais/CO8hndhKbg8.md
 
 # Ableton Live Beginners Course: Lesson 3.0 - Synthesizer Overview
 
@@ -9525,10 +8603,9 @@ design do vídeo `tfncDL3iIeI`).
 
 Aula de fundação; sem valores numéricos além dos conceituais. Áudio não escutado.
 
-
 ---
 
-## tutoriais/CURSOS-LOCAIS.md
+## pesquisas/tutoriais/CURSOS-LOCAIS.md
 
 # Cursos — o que cada um acrescenta
 
@@ -9571,10 +8648,9 @@ Aula de fundação; sem valores numéricos além dos conceituais. Áudio não es
 
 **Regra de uso:** curso é **fonte**, não lei. Antes de aplicar, passar pela seção de conflitos/cautelas do documento da frente correspondente.
 
-
 ---
 
-## tutoriais/CixBgwVAAYg.md
+## pesquisas/tutoriais/CixBgwVAAYg.md
 
 # Mono vs. Stereo: How to Create a Wide Club-Ready Techno Mix
 
@@ -9744,10 +8820,9 @@ separation. It will have that punch" (05:16.358–05:33.670).
 legenda automática — não fica claro a que ele se refere. **Não usar como especificação.** O que está claro e
 citável é a conclusão logo depois: "because it has that separation. It will have that punch."
 
-
 ---
 
-## tutoriais/Dcs7r1b6RwI.md
+## pesquisas/tutoriais/Dcs7r1b6RwI.md
 
 # 3 Hypnotic Techno Basslines EVERY Producer MUST Know
 
@@ -9856,10 +8931,9 @@ O vídeo só usa reverb/echo no retorno do baixo [11:12–11:20]. Aplicar a ambi
 
 **Fonte:** legenda automática do vídeo (ASR), lida integralmente; citações com timestamps.
 
-
 ---
 
-## tutoriais/DeRUOw8T98Y.md
+## pesquisas/tutoriais/DeRUOw8T98Y.md
 
 # Raw / Hypnotic Techno Arrangement - Live Record Your Tracks For Organic Flow
 
@@ -9995,10 +9069,9 @@ A descrição anuncia plugins do canal **Chop Suey Kick Drum Designer** e **Kikz
 - Os valores −7,6 dB e −4,7 dB são do vídeo e **não** devem ser usados como teto de outro premix; o teto tem de ser medido no próprio set.
 - A legenda automática tem erros de transcrição; as citações preservam o texto literal e os erros estão anotados.
 
-
 ---
 
-## tutoriais/FUTURE-MEDIA-PSYTECH-RESET.md
+## pesquisas/tutoriais/FUTURE-MEDIA-PSYTECH-RESET.md
 
 # Psychedelic Techno Production with Re:Set — Future Media Academy (curso completo, 3h12)
 
@@ -10152,7 +9225,7 @@ Onde a técnica do curso entra em conflito com práticas de minimal psytech, a c
 
 Citações literais da ASR; erros de reconhecimento preservados. Onde a palavra é incerta, indicado entre colchetes.
 
-1. `[00:09:07–00:09:32]` **"So, this is actually, it's a kick actually made with operator. … It's just a sine wave with a pitch envelope, uh, decreasing, uh, depending on the time. … And then there is a layer of noise, which basically creates a little transient."**
+1. `[00:09:07–00:09:32]` **kick do Operator: sine com pitch envelope decrescente no tempo + camada de ruído criando o transiente (Future Media Academy)**
 2. `[00:10:15–00:10:27]` **"I would like to tune, of course, my kick in F, and, uh, in F, and this is super important. I know already that will be, like, 43.7."**
 3. `[00:12:56–00:13:47]` **"how I like to do subs, normally I do, like, with a bit of fm synthesis, so modulating the … first operator … with the operator B, creating some harmonics … a sub base that is also hearable in … small speakers"**
 4. `[00:28:26–00:28:44]` **"sometimes the effect is much more important than the sound itself."**
@@ -10182,10 +9255,9 @@ Citações literais da ASR; erros de reconhecimento preservados. Onde a palavra 
 
 **Fonte:** transcrição ASR do vídeo do curso (fonte primária). **Nenhum áudio foi escutado, medido ou carregado em DAW na elaboração deste estudo.**
 
-
 ---
 
-## tutoriais/Fx3jM4xdw4M.md
+## pesquisas/tutoriais/Fx3jM4xdw4M.md
 
 # HOW TO MAKE MINIMAL TECHNO By SLUG [Project Walkthrough]
 
@@ -10360,10 +9432,9 @@ Tudo o que o vídeo faz para abrir espaço é **subtrativo ou dinâmico** — co
 
 **Fonte:** legenda automática EN do vídeo (2.344 linhas, lida inteira; parse de cues com remoção de tags e duplicatas rolantes) + descrição do vídeo (usada só para confirmar o nome da faixa "Estranged", o canal e o corte de 1 h no Patreon). Conferência das 3 citações executada contra o texto contínuo da legenda; onsets falados medidos em 00:05:34.479, 00:09:01.279 e 00:12:24.800.
 
-
 ---
 
-## tutoriais/Fzv5YGRKK1w.md
+## pesquisas/tutoriais/Fzv5YGRKK1w.md
 
 # Ableton Live Beginners Course: Lesson 6 - Structure, Mixing and Using Reference Tracks
 
@@ -10386,10 +9457,9 @@ Estrutura/mix/referências — tema promissor para o estilo, pendente de extraç
 
 Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (verificados no info.json).
 
-
 ---
 
-## tutoriais/G4Tsj5or6A8.md
+## pesquisas/tutoriais/G4Tsj5or6A8.md
 
 # Building Solid Raw / Hypnotic Techno Drums In Ableton Live
 
@@ -10506,12 +9576,11 @@ Compassos 1–16 kick + rumble + ghost · 17–32 percussão grave e média · 3
 
 > "the velocities is where the fun comes in because the velocities are responsible for the swing and the overall feel of my higher track" — [00:06:46–00:06:55]
 
-> "a very overlooked feature in Ableton simpler is that you have the ability to internally modulate your samples … I have the LFO engaged here it's relatively slow and for destinations I chose the volume and the panning" — [00:08:31–00:08:49]
-
+> Recurso esquecido do Simpler: LFO interno lento modulando volume e pan (SINEE Global) — [00:08:31–00:08:49]
 
 ---
 
-## tutoriais/GROOVE.md
+## pesquisas/tutoriais/GROOVE.md
 
 # Groove — tutoriais traduzidos
 
@@ -10586,10 +9655,9 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **`aK2tKYe8yCI` e `G4Tsj5or6A8`** — BPM (135), tonalidade (F#/G/C#) e valores de kick/tom são do vídeo e não se traduzem; só a regra vale.
 - **Nível de bolso** — o quanto o 3/16 ou o Amount de swing "cola" no bolso de referência não foi medido; só A/B de ouvido resolve.
 
-
 ---
 
-## tutoriais/GyhA92cfQgE.md
+## pesquisas/tutoriais/GyhA92cfQgE.md
 
 # HOW TO MAKE PSYTECH By Verschallt [Project Walkthrough]
 
@@ -10713,10 +9781,9 @@ hats, percussão, madeira, stab, subida ou arranjo — essas funções continuam
 - **O mapeamento phase randomization → controle de fase do oscilador do Serum 2 e OTT → preset do Multiband Dynamics é inferência** de conceito, não verificação de UI.
 - **O áudio do vídeo não foi analisado.** O estudo é baseado só na legenda; a balança de bandas da faixa dele não foi medida.
 
-
 ---
 
-## tutoriais/Hzszjbt_c9I.md
+## pesquisas/tutoriais/Hzszjbt_c9I.md
 
 # Dark Hypnotic Techno Pads Tutorial in Ableton Live
 
@@ -10818,9 +9885,9 @@ O vídeo é 100% stock Ableton, então a rota principal é **1:1 no Live 12**. P
 
 > "And now we need to add unison. We have two two modes here, shimmer and noise, which give us this nice effect. I'm going to use shimmer." — 00:04:40.5–00:04:48.7
 
-> "Yeah, and now we need, of course, the reverb. As it's um like we need to put the sound in space, so we can actually use the combination of two, have a bit of echo." — 00:05:40.1–00:05:53.2
+> Reverb combinado com um pouco de echo para colocar o som no espaço — 00:05:40.1–00:05:53.2
 
-> "This is pretty much the basics how this sound is created. You can take it so in so many directions, experiment with different wavetables, with different modulations, with different LFO shapes, with different LFO rates, and so on." — 00:07:24.7–00:07:40.8
+> Receita básica do pad; a partir dela, explorar wavetables, modulações, formas e rates de LFO variados (Hypnotic Techno Production) — 00:07:24.7–00:07:40.8
 
 ## Lacunas (o que a legenda não diz)
 
@@ -10833,10 +9900,9 @@ O vídeo é 100% stock Ableton, então a rota principal é **1:1 no Live 12**. P
 - Se os LFOs são tempo-sincronizados ou livres: **não dito**.
 - Se o pad é 100% wet ou tem sinal dry paralelo: **não dito**.
 
-
 ---
 
-## tutoriais/INDEX-TUTORIAIS.md
+## pesquisas/tutoriais/INDEX-TUTORIAIS.md
 
 # Tutoriais — índice de consulta
 
@@ -10862,10 +9928,9 @@ O vídeo é 100% stock Ableton, então a rota principal é **1:1 no Live 12**. P
 
 Os demais mapas citados nos documentos acima (um por vídeo, com timestamps e trechos de prova) não acompanham o pacote; os IDs citados nos textos identificam cada fonte no YouTube.
 
-
 ---
 
-## tutoriais/I__tWZTk5-Q.md
+## pesquisas/tutoriais/I__tWZTk5-Q.md
 
 # Mixing Techno Kick and Bass - Your Guide to the Perfect Low-End
 
@@ -11063,10 +10128,9 @@ capítulo correspondente:
 - As metas de "não subir 55–75 Hz" e "correlação ≥0,98 abaixo de 120 Hz" são metas de engenharia do contexto
   psytech, não resultados medidos aqui.
 
-
 ---
 
-## tutoriais/IbeXMrvWAew.md
+## pesquisas/tutoriais/IbeXMrvWAew.md
 
 # How to Make Techno Kick Like Charlotte de Witte, UMEK and Joyhauser
 
@@ -11250,10 +10314,9 @@ use distortion saturation a lot without getting crazy" (00:13:43–00:13:51) ·
 (00:20:33–00:20:43) · "then I'm just gonna boost around 3 4 kilo" (00:22:25–00:22:29) ·
 "a good way to do that is phryges the decay" (00:24:36–00:24:37, "phryges" = reduce).
 
-
 ---
 
-## tutoriais/JNAyJa_Dcx0.md
+## pesquisas/tutoriais/JNAyJa_Dcx0.md
 
 # Understanding Granular Synthesis - Introduction & History
 
@@ -11361,48 +10424,23 @@ camada (atmosfera e resposta), não um ajuste de minutos.
 
 **1. Definição e o que o granular produz (00:00:26.800–00:00:35.600):**
 
-> 00:00:26.800 so what is granular synthesis well it's
-> 00:00:28.560 using tiny tiny snippets of sound
-> 00:00:30.960 to create sort of streams or clouds of
-> 00:00:33.440 textures and tones it creates sounds
-> 00:00:35.040 that
-> 00:00:35.600 don't really occur otherwise that's why
+> Definição de Sonic Academy: granular = snippets minúsculos de som criando streams/nuvens de texturas e tons que não ocorreriam de outro modo — 00:00:26.800–00:00:35.600
 
 **2. Conceito fundamental, grão e independência pitch/velocidade (00:11:27.040–00:12:17.600):**
 
-> 00:11:27.040 so the fundamental concept of granular
-> 00:11:29.200 synthesis is to build up a tone
-> 00:11:31.600 from tiny short snippets of sound and
-> 00:11:34.160 these snippets are called grains
-> [...]
-> 00:12:14.720 right then there's pitch and speed and
-> 00:12:16.160 they're independent unlike when you play
-> 00:12:17.600 a sample back
+> Conceito fundamental (Sonic Academy): granular constrói um tom a partir de grãos; pitch e velocidade são independentes, ao contrário de tocar o sample — 00:11:27.040–00:12:17.600
 
 **3. O salto é a sobreposição de muitos grãos (00:13:04.720–00:13:25.519):**
 
-> 00:13:04.720 well where granular steps beyond this
-> 00:13:07.279 is in the use of multiple grains at once
-> 00:13:09.360 you know dozens or hundreds of them
-> 00:13:10.800 overlapping each other
-> 00:13:12.639 depending on the software each one of
-> 00:13:14.000 those grains can have its own volume its
-> 00:13:15.600 own pitch and so on
-> 00:13:16.880 and they can be drawn from different
-> 00:13:18.240 parts of the sample
-> 00:13:20.079 now once there's several dozen grains
-> 00:13:21.839 firing at once you get new and complex
-> 00:13:23.680 sounds arising and that's granular
-> 00:13:25.519 synthesis
+> O salto do granular (Sonic Academy): dezenas/centenos de grãos sobrepostos, cada um com volume, pitch e origem próprios no sample, geram sons novos e complexos — 00:13:04.720–00:13:25.519
 
 ---
 
 **Fonte:** legenda automática EN do vídeo (Sonic Academy), lida integralmente. Nomes de parâmetro do GranularOsc conforme o plugin Serum 2; valores de aplicação são pontos de partida de design, não do vídeo.
 
-
 ---
 
-## tutoriais/JZFpPYXLDoU.md
+## pesquisas/tutoriais/JZFpPYXLDoU.md
 
 # Ableton Live Tutorial - Easy Unique Risers
 
@@ -11456,10 +10494,9 @@ Consolidar um pluck/textura do próprio material, gerar 2 variantes de riser (sw
 
 Legenda automática ASR; áudio não escutado. "go up to -12" (02:16) é provável erro de ASR — para ser riser o destino final deveria subir (ex. +12), mas não é possível confirmar sem assistir; valor final do sweep NÃO VERIFICADO. "An eighth of the course" (03:27) ambíguo — 0.125 provavelmente se refere a 1/8 da fonte/loop, sem certeza do parâmetro exato. Nenhum valor numérico de crossfade, spread, FM amount ou rate do arpeggiator na legenda.
 
-
 ---
 
-## tutoriais/Kt22wEkGx-Y.md
+## pesquisas/tutoriais/Kt22wEkGx-Y.md
 
 # OTT Explained: How to Use It (And When Not To!)
 
@@ -11554,10 +10591,9 @@ O OTT não gera largura estéreo, então não quebra o mono por si. O risco é d
 2. **06:43.816–06:50.237** — *"And when you / submit this to an / OTT-type plugin, you're essentially / just undoing what you / did here."* — "submit" é artefato da ASR do YouTube; a transcrição local diz "running that into an OTT style plugin, you're essentially just negating what you've done here".
 3. **12:13.833–12:18.681** — *"Make sure it's / before other / effects, before / the equalizer, so you / can properly / cut out the excess"*.
 
-
 ---
 
-## tutoriais/Kxhh8ni4GVU.md
+## pesquisas/tutoriais/Kxhh8ni4GVU.md
 
 # How to Make Organic Deep House Like: Kora & Gab Rhome (All Day I Dream/Anjunadeep)
 
@@ -11615,10 +10651,9 @@ Direta (Wavetable/Serum 2 + Live nativo). Encaixes:
 
 Transcrição via web reader sem timestamps por frase — os chapters da descrição (VERIFICADOS) dão o mapa de navegação. Presets citados: Wanderer (M4L), Valhalla RYM, Pigments, Kontakt clavinet — os que não estiverem disponíveis traduzem para Live nativo/Serum 2/Diva. Áudio não escutado.
 
-
 ---
 
-## tutoriais/LVv74akK58c.md
+## pesquisas/tutoriais/LVv74akK58c.md
 
 # Ableton Live — FM Lead Sound Design and Arrangement — Psytech Call and Response Tutorial
 
@@ -11656,18 +10691,17 @@ Direta. Pontos de encaixe:
 
 ## Trechos de prova (legenda)
 
-1. "So, yeah, if you have the the carrier wave as being a really high frequency, but then you FM it with a low frequency. So, you see there's actually five octaves between these. That's how you get this like really classic bubbly FM sound." — janela 730–780
+1. FM "bubbly" clássico: portadora aguda + moduladora ~5 oitavas abaixo (Scionaugh) — janela 730–780.
 2. "Now, when you're doing unison on these sorts of sounds, I recommend have using only the odd numbers, so three, five, or seven." — janela 660–670
-3. "I want this to go in the opposite direction of my filter. That's the main sort of thing that makes something squelch. So, my filter's going up in the positive direction, so I want my coarse pitch to actually go down." — janela 1893–1907
+3. Coarse pitch na direção oposta do filtro = o que faz o som "squelch" (Scionaugh) — janela 1893–1907.
 
 ## Limites
 
 Leitura por janelas (declarada acima) — o meio do vídeo (mix, sidechain, master, ~linhas 1300–1880) não foi lido; sem valores numéricos de Hz/dB na legenda; timestamps do VTT não acompanharam as janelas (prova por texto limpo, não por tempo exato). Áudio não escutado. Apresentador é o Scionaugh (mesmo canal dos vídeos curtos).
 
-
 ---
 
-## tutoriais/M7VkTw3IMlA.md
+## pesquisas/tutoriais/M7VkTw3IMlA.md
 
 # Ableton Live Beginners Course: Lesson 1 - Orientation
 
@@ -11706,10 +10740,9 @@ Nenhum.
 Varredura amostral (~10% lido); aula de fundação com pouco material técnico avançado. Sem timestamps. Áudio
 não escutado.
 
-
 ---
 
-## tutoriais/MEIO-ESPACO.md
+## pesquisas/tutoriais/MEIO-ESPACO.md
 
 # Meio e espaço — tutoriais traduzidos
 
@@ -11794,10 +10827,9 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - Crossovers ~300/4 kHz do OTT e release ≥150 ms são proposta do estudo `(H)`, não fala do vídeo.
 - O algoritmo de reverb do vídeo é Bitwig; só o conceito (return mono, cauda posicionável) transfere — o timbre não.
 
-
 ---
 
-## tutoriais/MELODIA.md
+## pesquisas/tutoriais/MELODIA.md
 
 # Melodia — tutoriais traduzidos
 
@@ -11853,10 +10885,9 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **Granulator/M4L** (método 1 do `oO2g`) pode não estar disponível; a rota sem M4L é o GranularOsc, e o playhead/SCAN exige GUI — `NÃO VERIFICADO`.
 - **Régua do médio** pesa nesta frente: a melodia é uma rota para preencher o vale do médio medido, mas a régua do projeto de referência não está conciliada com esse déficit.
 
-
 ---
 
-## tutoriais/MOTOR-COMPLETO.md
+## pesquisas/tutoriais/MOTOR-COMPLETO.md
 
 # Motor completo — tutoriais traduzidos
 
@@ -11927,10 +10958,9 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **OTT não é device nativo do Live** (citado pelo ed5O); Multiband Dynamics reproduz o conceito, não o algoritmo.
 - **Os números de banda citados vêm da medição de referência da data do levantamento**, referentes àquela versão do projeto; não foram re-medidos nesta consulta.
 
-
 ---
 
-## tutoriais/MgWlvH3n4EU.md
+## pesquisas/tutoriais/MgWlvH3n4EU.md
 
 # Quick Intricate Lead Conversations with Serum 2 and Ableton Live
 
@@ -11969,10 +10999,9 @@ Gerar 2–3 takes do stab/resposta com POS random por nota + FM from B, dispor n
 
 Vídeo curto; nenhum valor de parâmetro (posição inicial de wavetable, índice FM, mix) na legenda; "discrete note on random" é o nome falado do modo — a grafia exata na UI pode diferir. Áudio não escutado.
 
-
 ---
 
-## tutoriais/Mix6rW9AHgE.md
+## pesquisas/tutoriais/Mix6rW9AHgE.md
 
 # Psytrance Bassline for Techno (free project)
 
@@ -12029,7 +11058,7 @@ ANA 2, VELA, SideKick, Kick 3 ou Bitwig aparece.
 | **Operator** | Baixo offbeat em onda quadrada | "we're gonna use operator ... we just need a square waveform because they are usually the one richer and very nice for bass or sub bass" (00:04:08–00:04:16) |
 | **Wavetable** | Baixo psy: sawtooth + LPF + Env 2 | "we're going to use a wavetable and we need a sawtooth" (00:05:28–00:05:33); "you take a sawtooth you put it through a low pass filter and modulate the fitter very fast" (00:06:56–00:07:04) |
 | **Saturator** | Medium curve, dry/wet ~60; segundo estágio soft clip | "add a saturator and i'm just going to put a medium curve ... i'm gonna reduce the dry wet around 60" (00:09:14–00:09:22); "change the medium curve and we're going to put soft sign" (00:12:47–00:12:50) |
-| **Multiband Dynamics / "multiband compression"** (Live) / **FabFilter Saturn** (recomendado, não usado) | Split de bandas; EQ por banda + output, sem compressão | "using multi-band compression or even multiband distortion i recommend to use multi-band distortion uh we don't have in ableton live but if you have the five liter saturn it's really nice but you can do with the classic multiband compression" (00:09:35–00:09:46); "i'm not gonna use the compression side of the tool i'm just gonna use the frequency cuts ... and the output" (00:10:04–00:10:12) |
+| **Multiband Dynamics / "multiband compression"** (Live) / **FabFilter Saturn** (recomendado, não usado) | Split de bandas; EQ por banda + output, sem compressão | "using multi-band compression or even multiband distortion i recommend to use multi-band distortion" (00:09:35–00:09:46) — Live não tem multiband distortion; com Saturn fica melhor; "i'm not gonna use the compression side of the tool i'm just gonna use the frequency cuts ... and the output" (00:10:04–00:10:12) |
 | **EQ** (Live) | Boost ~1 kHz e ~3 kHz; banda ressonante antes de um harmônico | "the first one i will usually boost around one kilo ... maybe another band around three kilo just to boost the top end" (00:11:20–00:11:42); "use the locket ... cut right before one of the harmonics ... crank up the resonance" (00:11:44–00:12:01) |
 | **Redux** (Live) | Downsampling, click/resonância de alta | "use down sampling so we're going to use redux from a button" (00:13:08–00:13:12) |
 | **Reverb** (Live) | Espaço curto, sem diffuse, input filtrado | "not to have like a big room reverb it's just to have like something tight just to give a little bit of the base a space just don't be too dry" (00:13:51–00:13:57); "short decay ... no diffuse filter the input" (00:14:01–00:14:06) |
@@ -12185,10 +11214,9 @@ design + uma de A/B; não é um preset de 10 minutos.
 3. **[00:08:02–00:08:05]** "bring down the sustain to zero because we want something very sharp and pluckier" —
    a articulação que dá o caráter do baixo.
 
-
 ---
 
-## tutoriais/MmsgjvL4SmE.md
+## pesquisas/tutoriais/MmsgjvL4SmE.md
 
 # Making Dub Chord Synth Stabs for Psytrance/Psytech with Serum 2
 
@@ -12251,10 +11279,9 @@ design + uma de A/B; não é um preset de 10 minutos.
 
 Sem timestamps; demo em Fm7 (traduzir voicing para a tônica do próprio material). Áudio não escutado.
 
-
 ---
 
-## tutoriais/NCY0r4q-QcM.md
+## pesquisas/tutoriais/NCY0r4q-QcM.md
 
 # The ART of Building & Releasing TENSION in Hypnotic Techno (Setaoc Mass Example)
 
@@ -12337,9 +11364,9 @@ Kick 3 e SideKick seriam ferramentas de desenho de kick e de ducking; o vídeo n
 - **Prioridade: ALTA.** É a narrativa do motor dos dois minutos e confirma o jogo de ausência de kick; o vídeo dá o desenho temporal e a lógica de resolução que faltavam para transformar "tirar o kick" em arco.
 - **Esforço: MÉDIO.** A automação do kick, o corte de hats e os sends são baratos (baixo). O que puxa para médio é o par nota sustentada + atmosfera band-pass, mais a checagem de mid/brilho e a proteção do duck do sub durante o kick fora.
 
-## Trechos de prova: 3 citações literais da legenda com timestamp
+## Trechos de prova da legenda com timestamp
 
-1. `00:02:42 → 00:02:59` — "with that first transition when the kick is taken down and that's always in techno brings a lot of tension because kick being the foundation of the track and low end, when we take it down, it it creates that feeling of emptiness and we want that to resolve."
+1. `00:02:42 → 00:02:59` — tirar o kick (fundação do low end) cria tensão pela sensação de vazio, que pede resolução.
 2. `00:05:23 → 00:05:30` — "So, again, tension. We had hats, we have no hats. So, energy went down, but the tension is still rising." (na sequência, `00:05:32 → 00:05:36` — "Because of the noise, modulation of the noise.")
 3. `00:07:51 → 00:07:59` — "back to we are getting back to the groove, which gives us this foundation, so it's the resolution of the tension."
 
@@ -12350,10 +11377,9 @@ Kick 3 e SideKick seriam ferramentas de desenho de kick e de ducking; o vídeo n
 - Contraste medido do set de referência citado no levantamento original (meio −4,83 dB, agudo-médio −5,76 dB, low-end mono, subdivisões deslocadas). Não re-medido neste estudo.
 - Nenhum dossiê de artista consultado; esta análise é do vídeo.
 
-
 ---
 
-## tutoriais/NXWjMYYYHGw.md
+## pesquisas/tutoriais/NXWjMYYYHGw.md
 
 # Techno Sound Design w. Ableton Operator
 
@@ -12498,13 +11524,7 @@ para "sino metálico", que é o oposto da estética orgânica de madeira.
 
 **1. O modo Parallel é a base de tudo (00:01:28.080–00:01:47.430):**
 
-> 00:01:28.080 I'm going to change the mode or the
-> 00:01:32.520 yeah, the mode that the operator works
-> 00:01:34.400 to the parallel. So we have in parallel
-> 00:01:38.080 a few different operators working
-> 00:01:39.920 together rather than stacking them on
-> 00:01:41.680 top and having them modulating each
-> 00:01:43.800 other.
+> Modo Parallel do Operator (Hypnotic Techno Production): vários Operators em paralelo trabalhando juntos, em vez de empilhar e modular uns aos outros — 00:01:28.080–00:01:47.430
 
 **2. Detune é o que cria a inarmonia (00:03:00.519–00:03:10.550):**
 
@@ -12532,10 +11552,9 @@ para "sino metálico", que é o oposto da estética orgânica de madeira.
 - **Divergência declarada:** a fila original pediu pressão-grave (P1) por assumir "Operator = sub", mas o conteúdo é
   lead/sino. A prioridade original fica registrada; a aplicação recomendada é no meio (resposta/stab/lead), não no sub.
 
-
 ---
 
-## tutoriais/OJ3Fxk4E0gU.md
+## pesquisas/tutoriais/OJ3Fxk4E0gU.md
 
 # Jaytech's Panning Technique!
 
@@ -12664,47 +11683,23 @@ frente/trás nem altura. Serve como a passada de organização espacial que ante
 
 **1. O modelo do relógio e o objetivo do posicionamento (00:00:20.750–00:00:56.270):**
 
-> 00:00:20.750 just by moving things a few clicks
-> 00:00:23.110 around and uh the best way to look at it
-> 00:00:25.110 is to imagine a sort of semi-circle like
-> 00:00:26.590 half a clock
-> 00:00:28.670 with 9:00 on the left-hand side and 3:00
-> 00:00:30.590 on the right-hand side. That's kind of
-> […]
-> 00:00:47.110 each track is basically finding a place
-> 00:00:49.270 on that semi-circle where it can sort of
-> 00:00:51.030 shine through without being sort of over
-> 00:00:52.830 overtaken overlapped by some other kind
-> 00:00:56.270 of sound. […]
+> Modelo do relógio (Jaytech/Sonic Academy): o campo estéreo é um semicírculo — 9:00 à esquerda, 3:00 à direita — e cada pista acha seu lugar para brilhar sem ser sobreposta — 00:00:20.750–00:00:56.270
 
 **2. O que não se paneia (00:01:01.830–00:01:09.270):**
 
-> 00:01:01.830 Obviously some tracks are not going to
-> 00:01:03.630 need to be panned such as like the kick
-> 00:01:06.430 drum, the sub, probably the snares are
-> 00:01:08.230 not going to need much kind of panning
-> 00:01:09.270 at all.
+> O que não se paneia: kick, sub e provavelmente snare (Jaytech/Sonic Academy) — 00:01:01.830–00:01:09.270
 
 **3. A doutrina Prydz: música no mono, estéreo para efeitos (00:02:11.190–00:02:29.070):**
 
-> 00:02:11.190 Eric Prydz's tracks for example he tends
-> 00:02:12.990 to put all of the clubby stuff all of
-> 00:02:14.630 the actual kind of music right in the
-> 00:02:17.750 mono and then saves the the stereo field
-> 00:02:20.270 for uh kind of ethereal trippy effects
-> 00:02:22.790 for echoes uh for reverbs stuff like
-> […]
-> 00:02:26.630 the tracks will translate well to a club
-> 00:02:29.070 system where everything is mono. […]
+> Doutrina Prydz (citada por Jaytech/Sonic Academy): a música "clubby" no mono, campo estéreo reservado a efeitos etéreos (echo, reverb) — é o que faz o mix traduzir em sistema de clube, mono — 00:02:11.190–00:02:29.070
 
 ---
 
 **Referências consultadas (além da legenda):** estudos de mix e synth/atmos do levantamento original (17/10/2026) — correlação da banda média 0,80 no set de referência vs. referência 0,32–0,44, recomendação "Center: Kick, snare, bass…; 30-70% L/R: keys, percussion", ação de redistribuir pans, AutoPan não resolveu a largura, mono ≤120 Hz, microdelay gera comb filtering, gate de correlação 0,55–0,65 e "Side real em camas/tails, não pan extra". O contexto medido de 300–4.000 Hz e o groove deslocado vieram do briefing do levantamento original.
 
-
 ---
 
-## tutoriais/ORj8Vgu2vNs.md
+## pesquisas/tutoriais/ORj8Vgu2vNs.md
 
 # Pspiralife Tutorial - Zenonesque Sensient-Style Part 1
 
@@ -12786,10 +11781,9 @@ Justificativa curta: não exige plugin novo, nem sound design, nem sample novo �
 
 *Citações adicionais usadas no corpo, todas literais da mesma legenda: [00:04:20] "there should be a kick in there that is designed to go with that"; [00:25:48] "I'm not too worried about specific sounds. It's more about placement."; [00:28:40] "created like a reverse into that just to make it smoother and cooler"; [00:44:43] "just a slower release"; [00:44:47] "and a higher threshold"; [00:44:51] "and a gentler ratio."; [00:54:12] "I'll do an offbeat eye hat. Something more repetitive."*
 
-
 ---
 
-## tutoriais/PRESSAO-GRAVE.md
+## pesquisas/tutoriais/PRESSAO-GRAVE.md
 
 # Pressão de grave — tutoriais traduzidos
 
@@ -12917,10 +11911,9 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 
 **Decisões em aberto no projeto de referência** (fundamental do kick, alvo de relação sub×kick, régua de medição, registro agudo, cauda em return e corte de 8 compassos) não vêm aqui como critério fechado: meça no projeto de destino e decida com o produtor.
 
-
 ---
 
-## tutoriais/Q3A8HmCrURc.md
+## pesquisas/tutoriais/Q3A8HmCrURc.md
 
 # How to Make Organic Deep House Like Nora En Pure & Lee Burridge — Live Electronic Music #373
 
@@ -12958,10 +11951,9 @@ Critério de mix para o topo orgânico: shaker/percussão de fundo no limiar do 
 
 ~76% da legenda não lida (construção detalhada do baixo/elementos); sem valores técnicos nas janelas lidas. Áudio não escutado.
 
-
 ---
 
-## tutoriais/QLPV1Wk5hoE.md
+## pesquisas/tutoriais/QLPV1Wk5hoE.md
 
 # Designing Custom Background Atmos for Progressive and Minimal Tracks
 
@@ -13118,10 +12110,9 @@ Fonte: schema do gerador de presets do Serum 2 (campos `granular_*`, `unison`, `
 - A legenda automática tem ruídos: em 00:03:53.7 aparece "add in a different stack spread jerkily" — não se interpreta "jerkily" e não se afirma o que significa. Em 00:03:25.1 "naught to plus one" — leitura como a forma falada de "nought to plus one" (0 a +1), mas a unidade exata não é dita.
 - O canal não nomeia o apresentador na legenda; nenhum nome foi inventado.
 
-
 ---
 
-## tutoriais/R6xwYFH5SSY.md
+## pesquisas/tutoriais/R6xwYFH5SSY.md
 
 # How to Use Clipping for Louder, Punchier Mixes
 
@@ -13194,7 +12185,7 @@ O clipper fixa um teto (ceiling) e corta a forma de onda que passa dele; diferen
 6. **00:06:37.520–00:06:43.470** — "You can actually do something like this where you combine some clipping with some transient shaping."
 7. **00:08:58.710–00:09:01.750** — "So, say the bass, we didn't want to distort the bass, you'd probably reach for a limiter."
 8. **00:09:27.120–00:09:37.720** — "But a little bit of hard clipping subtly is often pretty much inaudible, but you're just you're just managing your transients a little bit."
-9. **00:10:45.080–00:10:54.440** — "Hard clipping is going to introduce more high-frequency elements. Soft saturation is going to be a little bit warmer sounding, but both of them are going to add a bit more of an aggressive tone to whatever it is you're clipping."
+9. **00:10:45.080–00:10:54.440** — hard clipping adiciona conteúdo agudo; soft saturation soa mais "warm"; ambos tornam o tom mais agressivo (Sonic Academy).
 10. **00:11:03.720–00:11:16.520** — "Whereas, for musical elements like, you know, you're not going to clip a a a felt piano necessarily unless that's the sound you're going for because it will be out of keeping with the the source sound."
 
 ## Limites e o que não foi verificado
@@ -13204,10 +12195,9 @@ O clipper fixa um teto (ceiling) e corta a forma de onda que passa dele; diferen
 - **O vídeo não cobre** baixo rolling minimal, riser, atmosfera, tônica frígia em C#, 128 BPM nem nenhum dos plugins listados. As aplicações nessas funções são `INFERÊNCIA` a partir do princípio (clipper sem envelope; hard clip brilha; limiter quando não se quer distorcer), não receita demonstrada.
 - **Faixas de blend, high-pass e low-pass** sugeridas acima são pontos de partida de engenharia (`INFERÊNCIA`), não números do vídeo. O vídeo só quantifica a comparação de pico: −16.9 dB clipado vs. −13.3 dB bypass (00:00:54–00:01:03).
 
-
 ---
 
-## tutoriais/S0DRqIEXW_4.md
+## pesquisas/tutoriais/S0DRqIEXW_4.md
 
 # How to Make Peak Time Techno Part 1 (Sound Design & Composition)
 
@@ -13344,19 +12334,18 @@ Como o vídeo é todo stock, a tradução é quase 1:1. O que falta em um arsena
 
 ## Trechos de prova: 3 citações literais da legenda com timestamp
 
-1. **[00:02:22.260–00:02:36.470]** "so this is my kick verb rack I'll put it in the description more about it it's just a rack that allowed me to quickly make a rumble here I used a delay to make the rumble and you can see the volume is pretty low for now because we're gonna have another base element"
+1. **[00:02:22.260–00:02:36.470]** — rack de reverb do kick: um delay faz o rumble, em volume baixo porque há outro elemento de baixo vindo (Audioreakt).
    *Glossa:* o rumble é deliberadamente baixo porque existe outro elemento de baixo — a regra de "um dono do sub" que um motor minimal precisa.
 
-2. **[00:11:25.620–00:11:44.760]** "the idea was to have like a kind of a richer signal but that you're still gonna low pass obviously because you don't want something too in the high I use a Sawtooth waveform you see with the Unison it's great because it has some harmonics add some stereo is has some kind of a chorus Vibe"
+2. **[00:11:25.620–00:11:44.760]** — camada mid do baixo: saw + unison (harmônicos, estéreo tipo chorus), sempre com low-pass (Audioreakt).
    *Glossa:* a camada mid do baixo ganha corpo e estéreo pelo saw + unison, mas é low-passed — não é uma camada brilhante nem um segundo sub.
 
 3. **[00:23:50.700–00:24:00.350]** "basically you can take any sound and you just need to make it short very sharp with some transient and then it can be a stop more in the low it can be like more in the high"
    *Glossa:* a receita de stab/articulação do vídeo é forma de envelope e transiente, não um preset específico; é o que permite criar stabs a partir de qualquer fonte.
 
-
 ---
 
-## tutoriais/T4e-UWE1Axo.md
+## pesquisas/tutoriais/T4e-UWE1Axo.md
 
 # Why This Drop Hits Harder With LESS Sound — Arrangement Contrast in Ableton
 
@@ -13393,10 +12382,9 @@ Nenhum direto — o vídeo descreve a premissa do material ("jogo de ausência" 
 
 Vídeo curto e demonstrativo; nenhum número (dB, compassos) na legenda. O trecho final é divulgação de EP ("Digitaletic", collab com Klipson — dado factual da legenda). Áudio não escutado.
 
-
 ---
 
-## tutoriais/TEXTURA-ATMOSFERA.md
+## pesquisas/tutoriais/TEXTURA-ATMOSFERA.md
 
 # Textura e atmosfera — tutoriais traduzidos
 
@@ -13491,10 +12479,9 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **LFOs não travam fase:** dois renders do mesmo estado não saem iguais. Para A/B, congelar em automação de volume ou comparar dentro do mesmo render.
 - **O projeto de destino pode ter mudado** depois da leitura de 27/10. Reconferir antes de criar qualquer canal.
 
-
 ---
 
-## tutoriais/TRANSICOES.md
+## pesquisas/tutoriais/TRANSICOES.md
 
 # Transições — tutoriais traduzidos
 
@@ -13570,10 +12557,9 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **Diretrizes provisórias** do projeto de referência foram usadas como critério de projeto, não como lei homologada. Se não forem homologadas, a regra anterior (topo percussivo contínuo) prevalece.
 - **`44m_K42KtX8` não dá valores** de Q, ganho, HP, decay nem attack; onde há número de aplicação, é hipótese do mapa, não fala do autor. `VSYCY__WVQ8` não tem legenda oficial (ASR) e as contagens de efeitos são reconstrução (00:00:50–00:01:15) — não usar como número.
 
-
 ---
 
-## tutoriais/TTIon9_pRHQ.md
+## pesquisas/tutoriais/TTIon9_pRHQ.md
 
 # How to Make Organic House Bass Warm & Wide (All Day I Dream style)
 
@@ -13612,10 +12598,9 @@ Teste no baixo (Serum 2) em A/B de 8–16 compassos: camada de harmônicos do sa
 
 Fim do vídeo (após linha 600: detalhes do LFO da wavetable, mix final) não lido. Sem dB/threshold numéricos; "amount 25" do uníssono e "10 or 15" do LFO são valores da UI dele. Áudio não escutado.
 
-
 ---
 
-## tutoriais/TdNE8oEb2Lk.md
+## pesquisas/tutoriais/TdNE8oEb2Lk.md
 
 # How to Make Peak Time Techno Part 2 (Arrangement, Mixing & Mastering)
 
@@ -13790,10 +12775,9 @@ citados (30 Hz, 120 Hz, 200–500 Hz, 3 kHz, 16–18 kHz, 30 ms, −10/0 dB) e "
 > Vídeo correlato da mesma fonte para a parte de subida/riser: `44m_K42KtX8` (Sweeps and Risers, Sonic Academy,
 > incluído no acervo) — usado só como rota de síntese; a técnica de arranjo/mix acima é toda deste vídeo.
 
-
 ---
 
-## tutoriais/TwZk8Gcyl1E.md
+## pesquisas/tutoriais/TwZk8Gcyl1E.md
 
 # HOW TO MAKE PSYTECH By Wachter & Böhm [Project Walkthrough]
 
@@ -14091,10 +13075,9 @@ Demais citações usadas neste mapa estão ancoradas por timestamp nas seções 
 - **Os números de referência vêm do render da versão de 26/10.** O próprio diagnóstico avisa que não se deve declarar o
   estado atual por captura antiga sem novo render.
 
-
 ---
 
-## tutoriais/UTWOTQTew7c.md
+## pesquisas/tutoriais/UTWOTQTew7c.md
 
 # Make Interesting Psytech Lead Variations
 
@@ -14133,10 +13116,9 @@ Quando o lead/resposta aprovado "sentar demais" na repetição: duplicar o MIDI 
 
 Sem timestamps na rota web reader; nenhum parâmetro numérico (tudo gestual/auditivo); áudio não escutado; Razor não verificado no arsenal listado (não consta — irrelevante, rota Serum 2).
 
-
 ---
 
-## tutoriais/VSYCY__WVQ8.md
+## pesquisas/tutoriais/VSYCY__WVQ8.md
 
 # How Rene Wise Makes His Tracks So Hypnotic
 
@@ -14289,7 +13271,7 @@ Antes de escrever, montar o **mapa de 64 compassos** com uma linha por função 
 ## Trechos de prova: 3 citações literais
 
 > **1) O salto iniciante→pro é a quantidade de efeitos de transição** — [00:08:23.280 → 00:08:59.600]
-> "and this is what I see like the biggest leap from beginners to pro or intermediate like the amount of effects yeah beginners just have one noise or something pro producers have like as you can see six eight different effects to help with transitions we have variations some basic thing"
+> "beginners just have one noise … pro producers have like … six, eight different effects to help with transitions" (00:08:23.280–00:08:59.600)
 
 > **2) O arranjo mínimo só se sustenta porque há um gancho** — [00:06:33.840 → 00:06:46.000]
 > "why he can get away with having such a minimal arrangement right now because there is sound that like hooks us in and some small variations again I believe in here"
@@ -14311,10 +13293,9 @@ Antes de escrever, montar o **mapa de 64 compassos** com uma linha por função 
 
 **NÃO VERIFICADO:** som real de qualquer uma das propostas; banda espectral exata de voz/grain; disponibilidade/licença de Ethereal Earth e LOOP GARDEN; se o Drum Rack/Utility/EQ/Compressor/Echo visíveis são a cadeia de Rene Wise ou só a do canal de anotação do autor. Nenhuma mutação foi feita em nenhum set durante o estudo.
 
-
 ---
 
-## tutoriais/VqPpTk3gp78.md
+## pesquisas/tutoriais/VqPpTk3gp78.md
 
 # Dissonance and Tension for hypnotic Techno Sequences - intervals & music theory
 
@@ -14476,34 +13457,19 @@ brilhante. Tudo reversível por mute/undo de MIDI.
 
 **1. As três dissonâncias úteis: 2ª menor, 7ª maior e trítono (00:03:16.560–00:03:39.400):**
 
-> 00:03:16.560 defined our most interesting dissonant
-> 00:03:20.040 intervals to be uh the minor 2 which is
-> 00:03:23.799 just one semitone also the major 7th
-> 00:03:27.920 which is 11 semitones or one semitone
-> 00:03:31.280 downwards and the other one is the trone
-> 00:03:33.630 the most dissonant of them all because
-> 00:03:35.640 it doesn't really fit anywhere and that
-> 00:03:39.400 is all plus six or minus six semitone steps
+> As dissonâncias mais interessantes (SINEE Global): 2ª menor (1 semitom), 7ª maior (11 semitons) e o trítono — o mais dissonante, porque não encaixa em lugar nenhum — 00:03:16.560–00:03:39.400
 
 *(“trone” = tritone na legenda automática.)*
 
 **2. O centro tonal é a nota que mais aparece (00:06:37.350–00:06:52.240):**
 
-> 00:06:37.350 what we have in here is a few notes
-> 00:06:37.360 that happen more often and that plus
-> 00:06:39.840 three or the plus two might become our
-> 00:06:44.280 root note because we hear them the most
-> 00:06:46.560 often and we get primed on
+> O centro tonal são as notas que mais aparecem: +3 ou +2 podem virar a tônica porque o ouvido fica "primed" nelas (SINEE Global) — 00:06:37.350–00:06:52.240
 
 *(A frase continua em "them" no cue seguinte.)*
 
 **3. Empilhar 2ªs menores é a receita para dissonância demais (00:07:21.280–00:07:40.510):**
 
-> 00:07:21.280 because we had the plus three + 4 + 5
-> 00:07:25.680 and the plus six in there those are all
-> 00:07:28.560 uh minor second steps and that is quite
-> 00:07:31.759 the recipe to become too disent in
-> 00:07:34.840 somewhat
+> Empilhar +3, +4, +5 e +6 (todos 2ªs menores) é receita para dissonância demais (SINEE Global) — 00:07:21.280–00:07:40.510
 
 *(“disent” = dissonant na legenda automática.)*
 
@@ -14529,10 +13495,9 @@ brilhante. Tudo reversível por mute/undo de MIDI.
 - Não há legenda manual; a automática erra "trone" (tritone), "disent" (dissonant) e "qu generator" (chord
   generator). As citações acima preservam o erro literal.
 
-
 ---
 
-## tutoriais/WbT9tMCDmh8.md
+## pesquisas/tutoriais/WbT9tMCDmh8.md
 
 # How I make bubbly Psytrance FM Plucks
 
@@ -14561,20 +13526,19 @@ Pista de resposta/stab: Operator com 2 senoides (carrier C#4–C#5, B −1/−2 
 - Random de envelope por nota é o mesmo mecanismo que outra análise do gênero desaconselha **no grave** — aqui liberado porque é resposta ≥250 Hz, não baixo.
 - Phaser/reverb/echo: retorno filtrado, dry predominante — sem serial 100% wet em elemento de transiente.
 
-## Trechos de prova (transcrição, sem timestamp — ordem literal)
+## Trechos de prova (transcrição, sem timestamp)
 
 1. "the trick with these bubbly sounds or anything bubbly really is to start with a carrier wave with a high frequency and a modulating wave so that oscillator B with a lower one"
-2. "grab an expression control. Now, this is a Max for Live plugin… we're just going to modulate it with random all of the things that we think sounds quite interesting… on the volume envelope I'm going to do a bit of decay… Release as well… map that to my release… map that to the decay here of the FM… put this on the course pitch"
+2. Expression Control (Max for Live) modulando vários parâmetros com random; mapear decay e release do envelope, o decay da FM e o coarse pitch (Scionaugh)
 3. "I'll grab my rhythmizer. So I can just play one long note… give it a bit of compression… maybe a bit of phaser… a bit of reverb. And a bit of echo"
 
 ## Limites
 
 Transcrição via web reader **sem timestamps** (a legenda via yt-dlp seguiu indisponível); nenhum valor numérico de amount/level na fala ("tune these babies" é de ouvido); áudio não escutado; "rhythmizer" não é nome de device stock — provavelmente apelido/ferramenta própria, `NÃO VERIFICADO`.
 
-
 ---
 
-## tutoriais/Wmr4dnvhVkc.md
+## pesquisas/tutoriais/Wmr4dnvhVkc.md
 
 # PSYTECH SOUND DESIGN By MVND
 
@@ -14671,10 +13635,9 @@ O vídeo **não fala de kick, sub, hats nem percussão**. Tudo abaixo é ou trad
 2. **00:07:46.800** — "these are all sweet spots. It's not like there is a recipe for how to do this."
 3. **00:09:56.280** — "as the filter opens up we're also going to get more sync." (resultado em 00:10:05.600: "we're getting more texture and more grit.")
 
-
 ---
 
-## tutoriais/ZSvJlc3LRqo.md
+## pesquisas/tutoriais/ZSvJlc3LRqo.md
 
 # How to Clean Up Vocals and Create Custom Textures with Ableton Live Warp Modes
 
@@ -14808,7 +13771,7 @@ Contexto medido do set de referência (**diagnóstico prévio, não re-medido**)
 
 > *"I'm going to tell it to preserve Let's try eighth notes. So, it's ignoring the transient markers, and then what it's doing is just going through the sample and every eighth note"* — **00:07:38.840–00:07:45.240**
 
-> *"These are both granular time stretch modes. And the cool thing about this is when we time stretch the audio, it's going to chop the audio up into tiny little grains or just tiny little chunks of the sample."* — **00:12:58.960–00:13:08.040**
+> *"These are both granular time stretch modes"* — no time stretch granular o áudio é cortado em grãos/chunks minúsculos do sample — **00:12:58.960–00:13:08.040**
 
 > *"Flux is kind of like a random LFO that's randomizing the grain slices or the grain sizes, I should say."* — **00:13:26.320–00:13:31.120**
 
@@ -14827,10 +13790,9 @@ Contexto medido do set de referência (**diagnóstico prévio, não re-medido**)
 - *"we could also try unlinking the envelope"* — 00:16:31.839; *"now we have a 16-bar long rise-fall"* — 00:16:54.680
 - *"the values we see here are a percentage. You see it says 100%"* — 00:17:06.720
 
-
 ---
 
-## tutoriais/_W_mwJVDhqA.md
+## pesquisas/tutoriais/_W_mwJVDhqA.md
 
 # 3 Levels of Rolling Bassline for Peak Time Techno
 
@@ -15043,10 +14005,9 @@ dez minutos.
    can use whatever you like. Use a compressor, use some gain automation, or use tools like LFO tool to take
    care of that." — o ducking é conceito, não plugin; há rota nativa.
 
-
 ---
 
-## tutoriais/aK2tKYe8yCI.md
+## pesquisas/tutoriais/aK2tKYe8yCI.md
 
 # Hypnotic Techno Drums from Scratch (Stock Ableton Effects Only)
 
@@ -15211,10 +14172,9 @@ do projeto.
 6. **[00:42:56]** "Groove has to engage the body. That's the basics of dance music. That's the basics of
    techno." — critério final declarado.
 
-
 ---
 
-## tutoriais/bOEc9c3pGi8.md
+## pesquisas/tutoriais/bOEc9c3pGi8.md
 
 # Building Tension in Tracks
 
@@ -15331,10 +14291,9 @@ O ponto decisivo: **toda modulação deste vídeo é de timbre/tempo-de-ciclo, n
 
 > Erros de ASR preservados nas citações: `"shaper tone"` = Shepard tone · `"shepher tones"` = Shepard tones · `"alfos"` = LFOs · `"flanges"` = flangers · `"Ana 2"/"an 2"` = ANA 2 · `"ATT track"` = the track. Nenhuma citação foi corrigida.
 
-
 ---
 
-## tutoriais/cAxR-CRSe_c.md
+## pesquisas/tutoriais/cAxR-CRSe_c.md
 
 # Full Psytech Breakdown Pt 2: Leads, Oneshots, and Glitches
 
@@ -15434,10 +14393,9 @@ Sem timestamps; demo em D# (comb 38 Hz) — adaptar à tônica do projeto. Plugi
 Hyperdimension) têm equivalentes em Utility/width no Live. Áudio não escutado; CPU crackles no vídeo são do
 ambiente dele, não da técnica.
 
-
 ---
 
-## tutoriais/cVtnGIFGYss.md
+## pesquisas/tutoriais/cVtnGIFGYss.md
 
 # How To Make Your TECHNO Drums Groove Better
 
@@ -15531,10 +14489,9 @@ Justificativa curta: é recurso **nativo do Live 12**, já disponível; não exi
 
 Citações de apoio usadas acima: 00:01:55.360 (*"an eighth note swing will be pushing second and fourth eighth note back"*), 00:02:31.760 (*"it will push syncopated notes back"*), 00:03:11.840 (*"pulling the groove on the uh the MIDI clip"*), 00:04:58.400 (*"I also recommend adding a bit of randomness because when you add a bit of randomness, it adds the randomness to the timings"*), 00:05:46.160 (*"I disable uh the 16th note note pattern and try to listen to the groove itself"*), 00:08:15.120 (*"They will all move when I print the groove. So I'm printing the groove."*), 00:09:11.040 (*"I think in Ableton 12 it's called the groove files now"*).
 
-
 ---
 
-## tutoriais/dSXz_MFS5ks.md
+## pesquisas/tutoriais/dSXz_MFS5ks.md
 
 # How Default Stereo Reverb Ruins Mix Space (And Why Mono Can Better)
 
@@ -15611,10 +14568,9 @@ Ressalva geral do device: no **Utility** do Live, o parâmetro Stereo Width não
 
 **Limites do estudo:** análise só da legenda automática (ASR); áudio não escutado; o vídeo não cita modelo de reverb nem valores — tudo que tem número aqui é proposta, não receita do autor.
 
-
 ---
 
-## tutoriais/ed5ODapIIBc.md
+## pesquisas/tutoriais/ed5ODapIIBc.md
 
 # HOW TO MAKE TECHNO By Michael Nox & Robin Mind [Project Walkthrough]
 
@@ -15794,10 +14750,9 @@ Não traz um conceito novo de motor, mas traz **exatamente** o tipo de processam
 2. **00:03:59.680 → 00:04:04.720** — *"um reverb on the mid part of the kick to / put it in a room."*
 3. **00:05:16.160 → 00:05:20.080** — *"it's only the low frequency / and more or less a sine wave."*
 
-
 ---
 
-## tutoriais/ejNHFdtYrw0.md
+## pesquisas/tutoriais/ejNHFdtYrw0.md
 
 # Top 5 Tips For Creating Organic Drums
 
@@ -15878,18 +14833,17 @@ Contexto de auditoria (set de referência contra a média de 6 referências do e
 
 ---
 
-## Trechos de prova (3 citações literais da legenda com timestamp)
+## Trechos de prova (da legenda, com timestamp)
 
 1. **00:01:05.000–00:01:07.720** — "using micro delays to loosen up the feel of a track."
-2. **00:02:11.640–00:02:22.880** — "if you delay after the kick, you're going to create a sort more of a dragged uh sort of relaxed feel to your grooves. Uh if you push them in front of the kick, you're going to tend to create a slightly more rushed and up-tight kind of feel to your drum grooves as well."
-3. **00:09:11.800–00:09:20.400** — "by adding uneven layers to this, this will give you kind of a nice sort of almost polyrhythmic s- kind of feel to it. Uh by adding an even numbers, it'll reset itself on the beats if you're working in 4/4"
+2. **00:02:11.640–00:02:22.880** — "delay after the kick" = sensação dragged/relaxed; na frente do kick = rushed e apertado (Sonic Academy).
+3. **00:09:11.800–00:09:20.400** — camadas desiguais dão quase polirritmia; quantidades pares se reencaixam nos tempos do 4/4 (Sonic Academy).
 
-*(Citações literais da legenda automática; erros de transcrição como "a sort more" e "an even numbers" foram preservados de propósito.)*
-
+  *(Fragmentos entre aspas são literais da legenda automática; o resto é paráfrase nossa.)*
 
 ---
 
-## tutoriais/etRN4sAiCbI.md
+## pesquisas/tutoriais/etRN4sAiCbI.md
 
 # How to make a Full On Psy bassline (Ableton Live)
 
@@ -15960,10 +14914,9 @@ No canal de grave: separar sub (sine puro, mono, pitch-env de punch) da camada a
 
 Legenda automática ASR; áudio não escutado. Valores exibidos na tela (decay final do filtro, freq de sustain, res, corte do HPF, tempos finais do delay) não são todos verbalizados — só 600 ms (decay inicial), 100% (peak), +36 st, 1 ms/10 ms, Timing 50 e −2 st aparecem falados. BPM do projeto dele: 145 (07:49–07:52 "Tempo back up to 145 BPM") — distante do 128 típico do minimal; nenhum valor de EQ é dado. Título/lógica "full-on" é deliberadamente bouncy/funky, fronteira estética do dark minimal — vale pelos gestos de síntese/arranjo do grave, não pelo idioma rítmico.
 
-
 ---
 
-## tutoriais/f4tdX3LsKj0.md
+## pesquisas/tutoriais/f4tdX3LsKj0.md
 
 # Granulator 3: The Game-Changer for Hypnotic Groove
 
@@ -16163,2346 +15116,536 @@ design + uma de A/B; não é preset de 10 minutos.
 3. **[00:10:04.240]** "remember about gaps, about uh having one sound asking another one answering" — o princípio
    de arranjo: os hits granulados vivem nos buracos e se respondem, não empilham.
 
-
 ---
 
-## tutoriais/fontes/2YgKSex63Wg.md
+## pesquisas/tutoriais/fontes/2YgKSex63Wg.md
 
 # How to Make Gnarly Bass Rips in Serum (Psytech Tutorial)
 
-**Canal:** Scionaugh · **ID:** `2YgKSex63Wg` · **Duração:** 2:59 (179 s) · **Frente:** pressao-grave / stab-resposta · **Perna:** BUSH PROG
-**Fonte:** transcrição completa via web reader, 29/10 — yt-dlp bloqueado (HTTP 429). **Não ouvi o áudio.**
-**Contexto:** o som é o "bass rip" de **Crab Soup**, collab com Mezzle, lançado na **Alpaka Muzik** (Fault In The Formula Pt.2) — mesmo selo das referências do projeto de referência (AlpaKa).
+**Canal:** Scionaugh · **Vídeo:** https://www.youtube.com/watch?v=2YgKSex63Wg · **Duração:** 2:59
+**Estudo:** 29/10/2026 (transcrição via web reader; áudio não escutado). **Contexto:** bass rip de Crab Soup (collab com Mezzle, Alpaka Muzik).
 
-## Técnica ensinada
+## Técnicas-chave
 
-Bass rip psytech no Serum 2, construído em camadas de movimento e não de onsets novos: sawtooth com **unison 5** e detune para largura; wavetable "evolution" com **posição automatizada pelo LFO 1**; "a little bit of FM". FX: distortion, phaser, compressão ~5 dB, reverb mínimo. O truque central: **a automação não está no filtro, está no CO (cutoff)** — e o cutoff controla **três coisas ao mesmo tempo**: o cutoff em si, **a quantidade de FM** ("that's going to add a bit of extra grit") e **um segundo filtro no FIM da cadeia** (depois de reverb/compressão/distortion), ambos em 18. O segundo filtro existe para que, com o cutoff fechado, **não escape o buzz da distorção**: "we get all the texture from using the distortion, but none of the buzz".
+- **Saw com unison 5 + detune** — base do rip em Serum 2; o detune abre a largura estéreo e o unison ímpar (5) é o padrão que o canal usa em outros vídeos.
+- **Wavetable evolution com posição no LFO 1** — segunda fonte de movimento, somada a uma FM leve; o movimento de timbre vem de modulação, não de onsets novos.
+- **Um macro (CO/cutoff) com três destinos** — o ponto central: a automação fica no CO e ele controla ao mesmo tempo o cutoff, a quantidade de FM (grit extra) e um segundo filtro no fim da cadeia.
+- **Filtro final depois da distorção/reverb/compressão** — com o cutoff fechado morre o buzz da saturação e sobra só a textura; no vídeo, ambos os filtros em 18.
+- **FX curtos** — distortion, phaser, compressão ~5 dB e reverb mínimo (VintageVerb externo; equivalente nativo: Hybrid Reverb em retorno).
 
-## Ferramenta usada no vídeo
+## Notas de aplicação
 
-Serum 2 + Valhalla VintageVerb (externo). Tradução para o Live: usar o retorno de reverb nativo (Hybrid Reverb) no lugar do VintageVerb.
-
-## Tradução para o Live/Serum 2
-
-Direta (Serum 2). Encaixes no fluxo de referência:
-- **Um macro (cutoff) modulando FM + filtro principal + filtro final** = movimento sem onsets novos — a mesma filosofia de macros/automação embutidos no som.
-- **Filtro DEPOIS da distorção** para tirar o buzz: converge com a receita de clipper/saturator (clip gera HF; filtrar depois) e com a regra de não deixar a saturação comer o kick (EQ antes da distorção no kick; aqui a tarefa é outra: a distorção é desejada e o filtro final é o limpador).
-- **Unison 5 = ímpar**, confirma a regra do mesmo canal citada em outro vídeo ("only the odd numbers, three, five, or seven").
-- É um **rip** (registro de lead/baixo-médio), não baixo de fundamentais — casa no stab/resposta, não no sub/baixo de fundamental.
-
-## Aplicação de referência
-
-1. Camada de stab/resposta em Serum 2: saw + unison 5, FM leve, e **CO macro** → cutoff + FM amount + filtro final em série depois da distorção.
-2. Automatir o CO em rampa de 8 compassos na subida de seção (pontuação 9/17/25/33…).
-3. HP ≥250 Hz na camada (não é dona de grave); largura do detune fica acima do low-end mono.
-
-## Cautelas
-
-- Distorção + filtros em stab/resposta: OK; **no sub nunca** — a mesma distorção no sub engordaria o grave (sub limpo).
-- Buzz de distorção tem de morrer no filtro final — não resolver no master (nenhuma receita desta leva autoriza boost/filtro no master).
-- BPM/tonalidade não citados no vídeo — definir pela tonalidade do projeto de destino (a referência trabalha em C# frígio).
-
-## Trechos de prova (transcrição)
-
-1. "the automation is not on the filter, it's on this thing called CO, which is cutoff. So… we can see cutoff is controlling the FM amount, so that's going to add a bit of extra grit."
-2. "why would I have a filter at the end of the chain when we've already got one filter? … when I've got that cutoff right down, we don't hear any of the buzz. So, we get all the texture from using the distortion, but none of the buzz."
-3. "we've got a sawtooth here. Uh we've got the unison on five. Increase that detune to give it some width."
-
-## Limites
-
-Transcrição via web reader não traz timestamps por frase (só o fluxo); duração curta (2:59) minimiza perda. Valores de UI não citados além do unison 5, compressão ~5 dB e filtros "both on 18". Áudio não escutado.
-
+- Registro de lead/baixo-médio (rip de resposta), não sub: HP ≥250 Hz na camada; a distorção é desejada e o filtro final é o limpador — no sub, nunca.
+- Movimento por um macro só (cutoff → FM + filtro final) = evolução sem automatizar várias lanes.
+- BPM e tonalidade não são citados; valores do vídeo: unison 5, ~5 dB de compressão, filtros em 18.
 
 ---
 
-## tutoriais/fontes/3Z41KdsBdDU.md
+## pesquisas/tutoriais/fontes/3Z41KdsBdDU.md
 
 # Deep Dub Stabs in Serum 2
 
-**Canal:** Scionaugh · **ID:** `3Z41KdsBdDU` · **Duração:** 1:55 (115 s) · **Frente:** textura-atmosfera / stab-resposta · **Perna:** BUSH PROG
-**Fonte:** transcrição completa via web reader, 29/10 — yt-dlp bloqueado (HTTP 429). **Não ouvi o áudio.**
-**Contexto:** os stabs de "Distorted Fantasy" (collab com Platypus, EP Tamagotchi Pipe Dreams).
+**Canal:** Scionaugh · **Vídeo:** https://www.youtube.com/watch?v=3Z41KdsBdDU · **Duração:** 1:55
+**Estudo:** 29/10/2026 (transcrição via web reader; áudio não escutado). **Contexto:** stabs de Distorted Fantasy (collab com Platypus).
 
-## Técnica ensinada
+## Técnicas-chave
 
-Stab dub profundo no Serum 2 com **variação por hit sem automatizar nada**: sine com **SYNC** modulado por **LFO random em free mode** — "every time it hits, sync moves a little bit differently". Segundo sine com **unison** = largura. Os dois passam por filtro controlado pelo LFO 1. Depois: delay e reverb. O "dubby touch" final: **mais um filtro (band-pass) movido por um LFO 3 com período de 8 COMPASSOS** — "we just move that band pass filter around" no longo prazo.
+- **Sine com SYNC + LFO random em free mode** — o núcleo do stab: a cada hit o sync muda de posição sozinho, o que dá variação de timbre por disparo sem nenhuma automação desenhada.
+- **Segundo sine com unison** — camada de largura estéreo por cima do sine principal.
+- **Filtro do timbre no LFO 1** — os dois sines passam por um filtro movido por LFO, que molda a cauda do stab.
+- **Band-pass final com LFO 3 em 8 compassos** — o toque dubby: um LFO de período longo (8 bars) varre lentamente um band-pass no fim da cadeia — movimento de longo prazo em um único knob.
+- **Delay + reverb para fechar** — cauda curta; no Live, dosar em retorno filtrado em vez de serial no canal.
 
-## Ferramenta usada no vídeo
+## Notas de aplicação
 
-Serum 2 puro (sine, sync, unison, 2 filtros, 3 LFOs) + delay/reverb do Live. Tradução direta para o Live/Serum 2.
-
-## Tradução para o Live/Serum 2
-
-Direta. Encaixes no fluxo de referência:
-- **Random em free mode no timbre (sync/POS)** = a mesma família de hipnose por repetição COM variação microscópica (POS random por nota). Liberado em resposta/stab; proibido no baixo/sub.
-- **LFO de 8 compassos no band-pass** = a rampa longa (curvas de 8/16/32 compassos em poucos parâmetros) aplicada a um filtro — um só knob de longo prazo, sem macro nova.
-- Stab dub com trítono b2–5 como acento (na tonalidade de referência: D–G#) é candidato direto ao miolo 300–1.200 Hz: conteúdo tocado com cauda, não pad permanente.
-- Delay + reverb no stab: via **retorno filtrado** (HP 250–300 / LP 4–5 kHz) — não serial no canal.
-
-## Aplicação de referência
-
-1. Stab dub em Serum 2: sine+sync (random free, profundidade pequena) + sine unison 2–3; band-pass com LFO de 8 compassos varrendo o corpo 400 Hz–2 kHz.
-2. Mandar para o retorno de atmosfera filtrado; 2–3 eventos a cada 2 compassos nos buracos do bolso `.27/.77` (junto com a resposta de madeira).
-3. Medir RMS do meio antes/depois: o alvo é conteúdo no gap, não gain.
-
-## Cautelas
-
-- Random de timbre: só em stab/resposta/lead — jamais no grave (trava os offsets do bolso).
-- Reverb/delay como parte do timbre: em retorno com filtro, wet limitado — a cauda não pode virar cama permanente.
-- Nenhuma tonalidade citada no vídeo — definir pela tonalidade do projeto de destino (a referência trabalha em C#).
-
-## Trechos de prova (transcrição)
-
-1. "we've got a sine wave and I've got sync. And I've got this random LFO here on free mode. And that means that every time it hits, sync moves a little bit differently."
-2. "add a second sine wave in here. This one adds a little bit of width with the unison."
-3. "the dubby touch is we add this filter here. And on this filter, we just have LFO 3 here set to eight bars. And we just move that band pass filter around."
-
-## Limites
-
-Sem timestamps por frase (web reader). Sem valores numéricos de rate/amount na fala (são visuais na UI dele). Áudio não escutado.
-
+- Random de timbre (sync/posição) vale em stab/resposta/lead; jamais no grave — trava os offsets do bolso rítmico.
+- LFO de 8 compassos em filtro é o gesto de rampa longa: evolução contínua sem macro nova nem automação multiponto.
+- Sem valores numéricos de rate/amount na fala (são ajustes visuais); tonalidade não citada — definir pela tonalidade do projeto.
 
 ---
 
-## tutoriais/fontes/44m_K42KtX8.md
+## pesquisas/tutoriais/fontes/44m_K42KtX8.md
 
 # Sweeps and Risers
 
-> id `44m_K42KtX8` · Sonic Academy · apresentador **Noah / Haterade** · 7:39 · publicado 16/02/2023 ·
-> capítulos da descrição: 00:00 Introduction · 00:28 Sweep Design · 03:47 Riser Design.
-> Fonte: legenda automática EN do vídeo (176 entradas após remover cabeçalhos, tags e duplicatas consecutivas).
-> **temLegenda=true**. Descrição oficial (lida): *"Starting with a synth white noise, we quickly build an evolving
-> and shifting sweep before moving on to a tonal riser that uses reverb and automation to create an illusion of
-> coming towards you."* A mesma descrição afirma que, seguindo as técnicas, *"there's no need for sample packs"* —
-> o valor é ter o sweep/riser sob controle, não depender de biblioteca.
->
-> **Escopo real do vídeo:** duas receitas curtas, ambas com devices stock do Ableton Live — um **sweep de ruído**
-> (00:28) e um **riser tonal** (03:47). O vídeo não fala de arranjo, mix ou tonalidade; só cita "EDM or any type of
-> dance music" de passagem (00:00:13.080). Tudo que não estiver ancorado em timestamp abaixo é tradução/leitura
-> do estudo, marcada como `INFERÊNCIA` ou `HIPÓTESE`.
+**Canal:** Sonic Academy · **Vídeo:** https://www.youtube.com/watch?v=44m_K42KtX8 · **Duração:** 7:39 · **Publicado:** 16/02/2023
+**Apresentador:** Noah (Haterade). **Fonte:** legenda automática EN + descrição oficial. Capítulos: Sweep Design 00:28 · Riser Design 03:47.
 
-## Técnica ensinada (2-4 frases)
+## Técnicas-chave
 
-O **sweep** nasce de ruído branco (Operator em Noise White), com release curto e o efeito MIDI **Pitch** levado a
-+128 semitons; um EQ com uma banda de **Q alto** tem a frequência automatizada de baixo para cima — ele diz que
-"that sweeping motion ... is going to be way more prominent if we bump that cue [Q] up" (00:01:44.759) — e, perto do
-fim, entram um high-pass que sobe exponencialmente, Auto Pan com rate acelerando e Shifter como toque final
-(00:00:29.279–00:03:42.599). O **riser** troca ruído por tom (Sawtooth no Wavetable), abre os envelopes e sobe o
-pitch bend de **2 para 24 semitons** — duas oitavas — ao longo de **oito compassos** (00:04:07.860–00:04:24.240);
-o Unison entra com amount e vozes crescendo (00:04:46.919–00:05:05.280), um low-pass *filtra* o som sem muito Q
-porque ele já é tonal (00:05:31.020–00:05:40.500), um pequeno attack evita o aparecimento abrupto
-(00:06:03.360–00:06:08.580). O fecho é reverb de **100 para 0 exponencialmente**, criando "the illusion that the
-Riser is far away and it's approaching us as the build up progresses" (00:06:17.699–00:06:39.600). Nos dois casos,
-o movimento é uma **rampa desenhada em automação** — nada é um preset estático — e o caráter vem de filtro
-ressonante + movimento.
+- **Sweep = ruído branco + Pitch +128 semitons** — Operator em Noise White com release curto; o efeito MIDI Pitch sobe o ruído ao máximo (em noise não há afinação a preservar).
+- **EQ com banda de Q alto varrendo de baixo para cima** — é o Q alto que torna a varredura perceptível; frequency automatizada do grave ao agudo, roll-off de lows no início e high-pass subindo exponencialmente perto do fim.
+- **Auto Pan com rate acelerando + Shifter** — o rate do Auto Pan cresce ao longo do sweep; Shifter como toque final, com ele citando 2.000 Hz (extremo, gera sidebands inarmônicos).
+- **Riser tonal: Wavetable saw + pitch bend 2 → 24 semitons em 8 compassos** — duas oitavas desenhadas em automação; envelopes abertos para a nota sobreviver aos 8 bars; unison (amount e vozes) crescendo; low-pass com pouco Q porque o som já é tonal; attack curto para não aparecer abrupto.
+- **Reverb 100 → 0 exponencial** — o wet DIMINUI conforme o build sobe, criando a ilusão de que o riser vem de longe e se aproxima; termina seco no downbeat.
 
-## Ferramenta usada no vídeo (plugin/stock)
+## Notas de aplicação
 
-| Device | Papel no vídeo | Prova |
-|---|---|---|
-| **Operator** (Live) | Fonte de ruído: oscilador em **Noise White**, release reduzido | "all you're going to need for this is" (00:00:29.279) ... "operator if you have or any sort of noise generator too if you use a different Daw" (00:00:33.239); "we're gonna switch it to Noise White" (00:00:41.100) |
-| **Pitch** (efeito MIDI do Live) | Sobe o ruído em +128 semitons | "we're going to add the midi pitch effect and" (00:00:49.559) ... "we're going to bring it up all the way to plus 128" (00:00:51.420) |
-| **EQ** (no Live; a legenda diz "EQ" e "the eight node" — `INFERÊNCIA`: EQ Eight) | Roll-off dos graves; banda com Q; frequency automatizada de baixo para cima; high-pass exponencial no fim | "we are going to put an EQ on this" (00:01:02.280) ... "we are going to roll off some of those lows" (00:01:02.280–00:01:04.500); "bring the the eight node down here ... give it a little bit of Q" (00:01:12.900–00:01:17.220); "grab the frequency knob so it automates from here all the way up" (00:01:39.600); "bring up this high pass filter as well" (00:02:13.260) |
-| **Auto Pan** (Live) | Rate acelerando até o fim ("faster and faster") | "we wanted to add in an auto pan we could bring the rate down ... bring this up as it progresses" (00:02:32.580–00:02:45.900) |
-| **Shifter** (Live) | Deslocamento de frequência como "Final Touch"; ele cita 2.000 Hz (`INFERÊNCIA`: modo Frequency, pelo uso de Hz) | "grab our shifter ... make two points here and bring this up" (00:03:05.580–00:03:12.060); "2 000 Hertz is quite a bit" (00:03:14.760) |
-| **Wavetable** (Live) | Synth do riser: Sawtooth, Unison "classic", low-pass, attack no amp, MIDI pitch bend | "we're going to be using tone instead of noise so here I'm going to go with a Sawtooth" (00:03:52.560); "Unison options in wavetable" (00:04:50.820); "go to our midi section ... hit 24 semitones" (00:04:20.280–00:04:22.500) |
-| **Reverb** (Live) | Wet de 100 → 0 exponencial para a ilusão de aproximação | "take it from 100 and bring it down to zero ... exponentially" (00:06:17.699–00:06:24.660); "create the illusion that the Riser is far away and it's approaching us" (00:06:33.300–00:06:37.199) |
-
-**Nenhum plugin de terceiros é usado.** O vídeo **não menciona** ANA 2, VELA, SideKick, Kick 3 nem Bitwig — não há
-dependência dessas ferramentas e nada precisa de equivalente. O próprio autor abre a porta para outra DAW: "any sort
-of noise generator too if you use a different Daw" (00:00:33.239).
-
-**Ressalvas de legenda automática (não inventar a partir do erro):** "sign" = *sine* (00:00:41.100); "cue" = *Q*
-(00:01:44.759); "Lopez filter" = *low-pass filter* (00:05:37.500); "the eight node" é o nó/banda do EQ, provavelmente
-"8k"/EQ Eight (00:01:12.900); em "turn this down a little bit" (00:04:29.340) a legenda **não diz o que** é reduzido.
-
-## Rotas equivalentes em synths comuns: Serum 2, Diva, Vital, Massive X, Surge XT, Kontakt 8 e Live 12 nativo
-
-A rota do vídeo é **100% nativa do Live 12**: Operator, Pitch, EQ Eight, Auto Pan, Shifter, Wavetable e Reverb.
-Operator e Wavetable existem no Live 12 Suite de fábrica. Um limite geral de geradores de preset (ex.: o
-gerador de presets do Serum 2): eles escrevem valores, LFOs e mod routes, mas **não lanes de automação
-multiponto** — o patch nasce estático e o movimento (pitch, filtro, wet de reverb) é desenhado como automação de
-clip/arrangement na DAW. Isso vale para qualquer synth da lista.
-
-### Sweep — de ruído branco a varredura ressonante
-
-| Etapa no vídeo (timestamp) | Rota no Live 12 | Alternativa / outro synth | Observação |
-|---|---|---|---|
-| Fonte de ruído branco (00:00:41.100) | **Operator**: oscilador Noise White; release curto | **Serum 2**: slot Noise (índice 3), `noise_type` White/Pink/Brown; Vital/Surge XT: oscilador de ruído | Em psytech minimal, **Pink ou Brown** tende a soar menos agressivo que White (proposta do estudo, não do vídeo) |
-| Pitch +128 semitons (00:00:49.559) | **Pitch** (MIDI effect) a +128 | Serum 2: automatizar o pitch do oscilador na DAW ou usar pitch bend com range alto; Vital/Massive X/Surge XT: automação de pitch na DAW | Em noise o pitch não é tonal; não há risco de desafinar |
-| Banda de EQ com Q varrendo de baixo para cima (00:01:12.900–00:01:44.759) | **EQ Eight**: banda com Q alto (o vídeo não nomeia o tipo de banda); automatizar **Frequency** de baixo para cima | **Auto Filter** (band-pass + resonance) ou **Serum 2** com `bandpass_12/24`/`lowpass_24` e `resonance`, cutoff automatizado pela DAW | O vídeo não diz o **ganho em dB** da banda nem o Q numérico — ver "Limites" |
-| Roll-off dos graves (00:01:02.280) | **EQ Eight**: high-pass | Auto Filter HP; Serum 2 `highpass_12/24` | É o que mantém o sweep fora do sub |
-| High-pass exponencial no fim (00:02:13.260–00:02:26.819) | **EQ Eight**: automatizar o HP com curva exponencial (Option + arrastar no Live) | Auto Filter HP com a mesma automação | "so it only comes up really there at the end" (00:02:24.239); a automação pode ser desenhada ou gravada com controlador MIDI (00:01:25.200–00:01:33.299) |
-| Auto Pan com rate crescendo (00:02:32.580–00:02:45.900) | **Auto Pan**: Rate automatizado de lento para rápido | Serum 2: LFO → pan (mas o rate do LFO não é automação multiponto no gerador); preferir Auto Pan | Só faz sentido acima de ~300 Hz; conferir compatibilidade mono |
-| Shifter como toque final (00:03:05.580–00:03:19.080) | **Shifter** (modo Frequency) | **Serum 2**: FX **Bode** (frequency shifter) com amount pequeno, em paralelo | 2.000 Hz é extremo e gera sidebands inarmônicos; em perfil escuro de psytech, ±10–80 Hz ou desligado (`HIPÓTESE` do estudo, baseada no cuidado com brilho metálico) |
-
-### Riser — de sawtooth a aproximação por reverb
-
-| Etapa no vídeo (timestamp) | Rota no Live 12 | Alternativa / outro synth | Observação |
-|---|---|---|---|
-| Tom em vez de ruído; Sawtooth (00:03:52.560) | **Wavetable**: oscilador Sawtooth | **Serum 2**: wavetable `analog_basic`/`analog_warm`/`saw`; **Vital**, **Surge XT**, **Diva**, **Massive X**: saw | A base é um subtrativo comum; não depende de wavetable específica |
-| Abrir os envelopes (00:03:58.980) | Envelope de amp com sustain alto e release longo | Serum 2: Env0 com `sustain=1`, decay/release longos | O objetivo é a nota sobreviver aos 8 compassos |
-| Pitch bend 2 → 24 semitons (00:04:07.860–00:04:24.240) | **Wavetable**: MIDI tab, pitch bend range = 24 | **Serum 2**: `global.bend_range_up = 24` (o schema registra 12 e 24 como valores reais); Vital/Massive X/Surge XT: setar o range no synth; ou automatizar o pitch do oscilador 0 → +24 st | 24 st = 2 oitavas; afinar o riser na tônica da track |
-| Rampa de 8 compassos (00:04:10.680) | Automação de clip/arrangement no Live | Qualquer synth: automação de pitch/DAW | O vídeo usa "over eight bars" como janela da subida |
-| Unison amount/vozes subindo (00:04:46.919–00:05:05.280) | **Wavetable** Unison "classic"; amount e vozes automatizados | **Serum 2**: `unison` 1–16 + `detune`, automatizados na DAW (unison não é destino de mod matrix no gerador); Vital/Massive X/Surge XT: unison | Se a automação de vozes não estiver exposta, usar detune ou uma segunda camada que entra por fader |
-| Low-pass sem muito Q (00:05:31.020–00:05:40.500) | **Wavetable** Low-pass; cutoff automatizado | **Serum 2**: `lowpass_24`; Vital/Surge XT/Massive X: low-pass | Ele reduz o Q porque o som já é tonal e já tem um pico ressonante |
-| Attack curto no amp (00:06:03.360–00:06:08.580) | Amp envelope attack pequeno | Serum 2 Env0 `attack` | O vídeo não dá valor em ms; 20–50 ms é ponto de partida (`HIPÓTESE` do estudo) |
-| Reverb 100 → 0 exponencial (00:06:17.699–00:06:39.600) | **Hybrid Reverb** (ou Reverb): automatizar Dry/Wet 100 → 0; se for send, automatizar o send 100 → 0 | Serum 2: FX Reverb com wet automatizado | O wet **diminui** para o som *chegar perto*; é o contrário do *mais reverb no clímax* |
-
-**Boa prática para fonte acústica:** se o riser tonal partir de uma fonte acústica (ex.: Kontakt 8 — Rubber Bridge
-Guitar, LOOP GARDEN, Ethereal Earth, Vintage Organs), vale manter o sinal seco em primeiro plano e dosar o
-processamento em ≤25% ou em paralelo, em vez de passar a fonte inteira por reverb em série. Nesse caso, o truque
-de reverb 100 → 0 do vídeo deve ir para uma **cópia paralela** ou para o retorno, não para o instrumento acústico
-inteiro. *(Nota de boa prática do estudo — o vídeo não trata de fonte acústica.)*
-
-**Não é preciso ANA 2/VELA/SideKick/Kick 3/Bitwig — o vídeo não usa nenhum deles.** A tradução é curta: os devices
-são nativos; quando o synth for outro, muda só o nome do parâmetro — a automação continua sendo desenhada na DAW. O
-synth pode ser Serum 2, Vital, Massive X, Surge XT, Diva ou Wavetable, porque a técnica é filtro + pitch + unison +
-reverb, não um preset de fábrica.
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-Contexto de referência citado no levantamento original: um set de trabalho medido mostrou o meio
-(300–1.200 Hz e 1.200–4.000 Hz) carente contra a média de 6 referências externas, low-end **mono** e groove com
-subdivisões deslocadas a preservar. O sweep/riser do vídeo é um **evento de transição**, não uma cama: ele deve
-viver acima do grave, preencher os vales de médio por passagem e desaparecer na fronteira.
-
-| Função | Usar? | Como aplicar | Cuidado |
-|---|---|---|---|
-| **Kick** | Não | Manter o kick fora do bus do sweep/riser; nenhuma automação de filtro no kick | O roll-off de graves do vídeo (00:01:02.280) é o lembrete: HP em todo FX de transição. Se houver camada de clique, HP ≥2 kHz e nível baixo |
-| **Sub** | **Não, nunca** | Não passar sub pelo Shifter, reverb ou Auto Pan; HP ≥120 Hz em todo o FX de transição | O sub é mono e é a âncora; o vídeo já tira os graves do sweep com EQ. Reverb com retorno HP 200–300 Hz |
-| **Baixo/rolling** | Não | Não automatizar o filtro do baixo para *construir* o riser; preservar o microdeslocamento do groove e a leitura mono | Um *rolling riser* seria camada separada, HP ≥120 Hz, sem interação com o sidechain — extensão não ensinada no vídeo |
-| **Hats/shaker** | Não como alvo | Manter hats secos; o Auto Pan acelerando é do sweep, não do hat | Aplicar rate crescente no hat cria clutter rítmico e brilho metálico; não vale |
-| **Percussão de resposta** | Não | O sweep é sustentado e mascararia a resposta; se usado, só no último beat e HP ≥300 Hz | O vídeo não ensina percussão; qualquer uso aqui é extensão do estudo |
-| **Madeira** | Extensão | Um riser tonal pode partir de madeira resampleada no Simpler/Sampler/Grain (kanun, balafon, Rubber Bridge Guitar/LOOP GARDEN) com pitch 0 → +24 st em 8 compassos, afinado na tônica | Fonte acústica pede dry preservado (wet ≤25% ou paralelo); não é o saw do vídeo e não deve competir com o lead |
-| **Stab** | Não no corpo | O stab continua seco e com ataque; no máximo automatizar o retorno de reverb dele para a ilusão de aproximação | O vídeo não trata de stab; não atribuir a ele |
-| **Subida** | **Sim — uso primário** | Ver as duas receitas acima | É a função que o vídeo ensina |
-| **Atmosfera** | Secundário (extensão) | Reverb 100 → 0 para uma atmosfera *aproximar*; Hybrid Reverb com retorno HP 200–300 Hz | Evitar cama de ruído contínua (*cola cinza*); a atmosfera não pode virar evento permanente |
-
-### Onde encaixar
-
-- **Riser tonal de 8 compassos** aterrissando no drop: é o encaixe exato do "over eight bars" do vídeo
-  (00:04:10.680). 8 compassos a 128 BPM = 15 s. Afinar de um registro grave (ex.: tônica uma oitava abaixo do alvo)
-  até o alvo (24 st); terminar **seco** na fronteira, sem cauda sobre o drop. O reverb 100 → 0 do vídeo ajuda
-  justamente a *chegar perto* e sumir no downbeat (`INFERÊNCIA` do estudo).
-- **Sweeps de 1 compasso** (≈2 s a 128 BPM) nas fronteiras de seção, se a fronteira precisar de transformação.
-  Um por fronteira.
-- **O drop é o destino; não empilhar outro riser/sweep junto.** Um protagonista por corte — FX de transição **ou** o outro
-  protagonista do corte, nunca os dois.
-- Se a fronteira já tiver reverse riser/sample, **substituir**, não somar (o estudo de arranjo mostra riser +
-  downlifter em par; a regra de não empilhar dois risers no mesmo corte é leitura do estudo, coerente com *um protagonista
-  por corte*).
-
-### Regras para não engordar o sub nem criar brilho metálico
-
-1. **HP ≥120 Hz em todo FX de transição** (e 200–300 Hz no retorno de reverb). O vídeo já mostra o gesto
-   equivalente ao "roll off some of those lows" (00:01:02.280).
-2. **A combinação que tende a produzir brilho metálico é white noise + Q alto + Shifter em 2 kHz** (`INFERÊNCIA`
-   do estudo). Em perfil escuro: Pink/Brown noise, Q moderado, low-pass ~8 kHz, Shifter desligado ou ±10–80 Hz.
-   Subir 2–4 kHz agrava presença quando o set de referência já está acima da régua nessa banda — não "abre" a faixa.
-3. **Mirar a ressonância nos vales medidos:** o pico móvel deve atravessar **300–1.200 Hz** e **1.200–4.000 Hz**,
-   não estacionar em 2–4 kHz. É um preenchimento temporário de vale, não um brilho permanente.
-4. **Mono abaixo de 120 Hz.** Auto Pan e Shifter só acima de ~300 Hz; conferir a soma mono; nada de reverb no sub.
-5. **Não criar ataques novos no groove deslocado.** Attack suave, sem gate rítmico e sem pumping de sidechain no
-   riser; ele é rampa sustentada, não percussão.
-6. **Um protagonista por fronteira e nível abaixo do drop.** O riser deve ser legível, mas não o elemento mais alto;
-   validar por mute A/B e, se necessário, por medição de pico/LUFS.
-
-## Prioridade e esforço
-
-**Prioridade: baixa a média.** O vídeo entrega exatamente uma rampa contínua de 8 compassos (00:04:10.680), sem
-degrau — o que serve ao critério de subida sem salto agudo. Mas transição raramente é o gargalo de um motor
-minimalista que já tem biblioteca de sweep/riser; o ganho aqui é **controle/afinação**, não uma capacidade
-ausente. Vale quando uma fronteira específica precisa de subida sob medida, não como camada fixa.
-
-**Esforço: baixo para a receita, médio para a integração.** Os devices são nativos e o tutorial tem 7:39; a parte
-curta é montar o patch. O que consome tempo é desenhar a automação de 8 compassos, capar o topo, conferir mono,
-escolher o protagonista do corte e fazer A/B contra o sample existente. Riscos: brilho metálico (white noise + Q +
-Shifter), sub engordado (HP mal feito/retorno de reverb), excesso de FX em toda fronteira e colapso mono pelo
-Auto Pan.
-
-## Trechos de prova (legenda literal, timestamps do VTT)
-
-**1. O Q é o que faz a varredura existir (00:01:39.600–00:01:44.759):**
-
-> 00:01:39.600 here is we're going to grab the frequency knob so it automates from here
-> 00:01:44.759 all the way up just like that and it's important to have that cue up
-> because that sweeping motion that we want in our sweep is going to be way
-> more prominent if we bump that cue up
-
-*(“cue” = Q na legenda automática.)*
-
-**2. O riser é 2 → 24 semitons ao longo de 8 compassos (00:04:07.860–00:04:24.240):**
-
-> 00:04:07.860 here like that and by default the pitch Bend setting is
-> 00:04:10.680 set to two semitones so over eight bars
-> that's not really a whole lot it's not really going to create that tension that
-> you want in your Riser
-> 00:04:20.280 going to do is we're going to go to our midi section here and right where it
-> 00:04:22.500 says pitch I'm going to click and hit 24
-> 00:04:24.240 semitones that's two octaves
-
-**3. Reverb invertido: 100 → 0 para *aproximar* o riser (00:06:17.699–00:06:39.600):**
-
-> 00:06:17.699 is Reverb so I'm going to take it from 100 and
-> 00:06:21.060 bring it down to zero
-> 00:06:24.660 except I'm going to do this exponentially like this and I'm holding
-> option and clicking and dragging to make the line curve like that
-> 00:06:33.300 so what this is going to do is it's going to create the illusion that the
-> 00:06:37.199 Riser is far away and it's approaching us as the build up progresses
-
-## Fontes
-
-- Legenda automática EN do vídeo (VTT) e descrição oficial do canal — conteúdo do vídeo.
-- Contexto de mix citado (meio carente em 300–1.200 e 1.200–4.000 Hz, low-end mono, groove deslocado) veio do
-  levantamento original que contratou a dissecação; é dado do set de referência, não do vídeo.
-
-## Limites e o que NÃO foi verificado
-
-- O vídeo **não dá valores** de ganho/Q do EQ, frequência do HP, tempo/decay do reverb, attack em ms, número de
-  vozes do unison ou valor final do Shifter — ele só cita 2.000 Hz de passagem. Nada disso foi inventado; onde
-  há número sugerido, está marcado `HIPÓTESE`.
-- Em "turn this down a little bit" (00:04:29.340) a legenda não identifica **o que** é reduzido; não atribuir.
-- O vídeo não define tonalidade; qualquer mapeamento de nota é escolha do estudo/produtor.
-- Não houve render, escuta, A/B nem medição de áudio na sessão original; o mapa é leitura de legenda + tradução.
-
+- 100% stock do Live (Operator, Pitch, EQ Eight, Auto Pan, Shifter, Wavetable, Reverb); o vídeo defende construir sweep/riser em vez de depender de sample packs.
+- 8 compassos a 128 BPM = 15 s: riser tonal aterrissando no drop; sweeps de ~2 s (1 bar) nas fronteiras de seção.
+- HP em todo FX de transição (o vídeo já tira os lows do sweep); ruído branco + Q alto + Shifter alto é a combinação clássica de brilho metálico — em perfil escuro, pink/brown e Q moderado.
+- O vídeo não dá valores de Q, dB, decay, attack ou vozes — só +128 st, 2 → 24 st, 8 compassos e o 2.000 Hz do Shifter.
 
 ---
 
-## tutoriais/fontes/4TOQ-5mGpUY.md
+## pesquisas/tutoriais/fontes/4TOQ-5mGpUY.md
 
 # ANA 2 Resampling and Granular Hack
 
-**ID:** 4TOQ-5mGpUY · **Canal:** Sonic Academy (Tech Tips Vol. 68 com Protoculture) · **Duração:** 7:26 · **Publicado:** 2021-12-17
-**Legenda:** automática em inglês. **temLegenda:** true
-**Descrição oficial (lida):** "From unique playable bass patches in Kick 2 to granular effects, resampled pads, and randomised arps in ANA 2" · capítulo único: "00:38 Fake Granular FX in ANA2".
+**Canal:** Sonic Academy (Tech Tips Vol. 68, Protoculture) · **Vídeo:** https://www.youtube.com/watch?v=4TOQ-5mGpUY · **Duração:** 7:26 · **Publicado:** 2021-12-17
+**Fonte:** legenda automática EN (capítulo único: Fake Granular FX in ANA2).
 
-> Legenda automática tem erros: "anna 2" = ANA 2; "the sample last letter" (~00:07:06) = provavelmente "sample oscillator". Nada abaixo depende dessas palavras.
-> **Convenção:** `VERIFICADO (vídeo)` = está na legenda; `TRADUÇÃO/INFERÊNCIA` = leitura do estudo para rotas equivalentes, não é conteúdo do vídeo.
+## Técnicas-chave
 
----
+- **Granular falso (a ANA 2 não tem oscilador granular)** — toca UMA nota só (C3) do patch, faz bounce/resample, normaliza o WAV logo abaixo de 0 dB (−0,3) e carrega no sample oscillator do synth.
+- **Loop mínimo + LFO1 lento em loop start/end** — encolhe o loop a um trecho mínimo e modula start e end com o LFO1 em taxa bem baixa: o ponto de leitura rasteja pelo áudio, imitando o scan de um granular real. Limite declarado: um loop por vez.
+- **Variações demonstradas** — reverse do sample inteiro; +1 oitava antes do scan (acelera a leitura e tira o conteúdo do low-mid); LFO ainda mais lento muda a textura por completo; alongar o material até virar pad com shimmer.
+- **Bônus do resample** — gravar um patch inteiro numa nota e recarregá-lo permite empilhar uma versão "congelada" de qualquer som sobre outros sons e transformá-lo por completo.
+- **Tradução nativa** — o gesto (loop curto varrido) é o que o GranularOsc do Serum 2 e o Grain do Live 12 fazem de fábrica; a parte transferível universal é o resample como fonte.
 
-## Técnica ensinada (2-4 frases)
+## Notas de aplicação
 
-A ANA 2 não tem oscilador granular (*"it's obviously doesn't support granular oscillators"*, 00:00:25.599–00:00:28.550), então Protoculture constrói um **granular falso**: toca **uma nota só (C3)** do patch, dá bounce/resample, normaliza o WAV para logo abaixo de 0 dB, e arrasta esse arquivo para o **sample oscillator** da ANA 2 (*"record that and bring that back into a sample oscillator inside of the synth"*, 00:01:42.389). Depois encolhe o loop para um **trecho mínimo** e modula **loop start e loop end** com o **LFO1**, com a taxa bem baixa, para o ponto de leitura "rastejar" pelo áudio — é isso que imita o scan de um granular de verdade (*"granular oscillators essentially are just a section that is looped and then the start points of those loops... sort of move through a selection of audio"*, 00:00:59.039); o limite declarado é um loop por vez (*"we cannot generate more than one or one loop at a time"*, 00:01:10.400). As variações demonstradas são reverse do sample (00:02:54.480), **+1 oitava** para apertar/acelerar a leitura (00:03:16.560), LFO ainda mais lento para mudar a textura por completo (00:05:59.360) e alongamento até virar pad com shimmer (00:04:57.600 / 00:05:43.759). O bônus declarado é mais amplo que o granular: o resample permite empilhar uma "versão salva" de qualquer patch sobre outros sons (*"record an entire patch down to c3 bring that in and then completely change the sound up"*, 00:06:52.800).
-
-## Ferramenta usada no vídeo (plugin/stock)
-
-- **ANA 2** (Sonic Academy) — sintetizador; é o plugin inteiro do vídeo. Preset de fábrica de partida: **"Angel Hop"** (*"it's called angel hop"*, 00:00:44.879).
-- **Sample oscillator da ANA 2** — recebe o WAV resampleado (00:01:44.159, 00:02:31.589); é onde ele mexe no loop em seguida (00:03:33.750) — inferência direta do fluxo, a legenda não nomeia o painel nesse ponto.
-- **LFO1 da ANA 2** — única fonte de modulação citada: *"we're just going to go with lfo1"* (00:03:55.120), *"bring the rate right down on lfo1"* (00:04:04.000).
-- **DAW: Cubase** — o bounce e a normalização acontecem nela, não na ANA 2: *"for some reason i can't drag directly from cubase"* (00:02:18.879–00:02:23.990). O vídeo não nomeia o editor de sample usado para normalizar.
-- **Nada além disso é citado na legenda**: nenhum plugin de granular dedicado, nenhum stock do Live. (Não se afirma o que aparece na tela além do que a legenda menciona.) "Kick 2" só aparece no gancho da série (00:00:08.720), fora da técnica demonstrada.
-
-## Rotas equivalentes: Serum 2 (tem GranularOsc nativo), Live 12 nativo (Simpler/Sampler/Grain), outros synths
-
-**O ponto central:** o vídeo ensina um *workaround* para a falta de um motor granular — e synths como Serum 2 têm o motor granular nativo. A técnica se divide em duas coisas aproveitáveis: (a) o **gesto** (loop curto varrido) e (b) o **resample como fonte**, que vale em qualquer sintetizador.
-
-### Serum 2 — caminho 1: GranularOsc (o que a ANA 2 finge ser)
-
-| Conceito do vídeo (VERIFICADO) | Equivalente no Serum 2 | Observação |
-|---|---|---|
-| WAV resampleado de UMA nota, normalizado | `oscillators[].granular_source` (WAV) no slot 0–2 | mesmo fluxo: bounce → normalizar → carregar |
-| "Small little snippet" + scan pelos start points (00:03:33.750) | `granular_random_offset` (%) — offset de leitura por grão | não é idêntico ao scan determinístico do vídeo; o sistema SCAN real do GranularOsc não é exposto pelo gerador de presets |
-| Textura contínua/suave vs. picotada | `granular_density` (0–30, mais alto = mais contínuo), `granular_grain_length` (ms lineares), `granular_max_grains` | calibração por ouvido: grão longo = cama, grão curto = textura |
-| Loop contínuo (não morrer) | `granular_loop` | manter ligado para pad/cama |
-| Reverse do sample (00:02:54.480) | `granular_reverse` **ou** reverter o WAV na fonte | no vídeo é o sample inteiro invertido, não 50/50 |
-| +1 oitava (00:03:16.560) | `octave: 1` / `semitone: 12` no oscilador | usar **antes** do scan para tirar energia do low-mid |
-| Variação por nota | `granular_random_offset`, `granular_random_window_amount/skew` | manter `granular_random_pitch` em 0 (no máximo ±2 st) para não desafinar a fonte |
-
-### Serum 2 — caminho 2: SampleOsc (reprodução fiel do workaround)
-
-- `sample_loop` = `forward` (ou `ping_pong`/`tailed`), `sample_loop_start` / `sample_loop_end` = trecho curto, `sample_loop_crossfade` > 0 para evitar clique na emenda.
-- **Limite do gerador de presets:** a matriz de modulação que o gerador escreve só endereça volume/pan/pitch/octave/fine de oscilador, cutoff/resonance/drive de filtro e envelopes — não há rota para loop start/end. Ou seja: **LFO → loop start/end só se faz na GUI do Serum, à mão**; pelo gerador, use o GranularOsc.
-- **Armadilha do resample:** o SampleOsc toca o arquivo na afinação original quando se aperta **C5** (nota de referência fixa do engine). Se o patch está em outra nota e o WAV foi bounceado nela, tocar essa nota o reproduz **duas oitavas abaixo** — para manter o tom, tocar em C5 ou compensar com `octave`/`semitone`. O vídeo não trata de mapeamento de nota; esta é regra do instrumento (documentada no schema do engine).
-
-### Live 12 nativo (rota sem plugin, para o resample)
-
-- **Resample:** track de áudio com input **Resampling**, tocar a nota no patch original, gravar. **Normalizar** o clip (o vídeo pede pico "just underneath there", −0,3 dB — 00:02:02.320).
-- **Grain** (Live 12 Suite): é o equivalente direto de granular de verdade — grain size / spray / position. **INFERÊNCIA**: nomes de parâmetro conferidos por memória de interface, não abertos na GUI na sessão original.
-- **Simpler / Sampler:** loop curto com Start/Length pequenos e automação (clip envelope ou LFO de Max) nos pontos de loop = o mesmo gesto do vídeo. O Simpler não tem um "scan" interno; a varredura tem de vir de automação/modulação externa. `HIPÓTESE` de execução, não testada na sessão original.
-- **Shifter:** atalho para a +1 oitava do vídeo numa cópia paralela, antes de granularizar.
-- **Hybrid Reverb:** o "shimmer effect" final (00:05:43.759), em paralelo e com low cut no retorno.
-- **Echo / AutoPan / Operator:** não são necessários para esta técnica; Echo pode empanar a cauda, AutoPan pode dar movimento lento no lugar do LFO1.
-
-### Kontakt 8 (fonte, não motor)
-
-Rubber Bridge Guitar, LOOP GARDEN, Ethereal Earth e Vintage Organs servem como **material a resamplear** — tocar uma nota, bouncear, carregar no GranularOsc/Grain. O vídeo não usa Kontakt; a alocação é **INFERÊNCIA** pelo papel de cada biblioteca.
-
-### Diva, Vital, Massive X, Surge XT
-
-Não são o caminho aqui: o vídeo não os usa e o papel granular já está coberto. Servem, no máximo, como **fonte tonal** para o resample (ex.: Diva fazendo o pad base que depois vira WAV). Não se confirma na sessão original se algum deles tem motor granular próprio — **não verificado**.
-
-### Sobre ANA 2
-
-O vídeo **depende da ANA 2** (sample oscillator + LFO1), mas o conceito "loop curto + ponto de leitura se movendo" é exatamente o que o **GranularOsc do Serum 2** e o **Grain do Live 12** fazem nativamente — não há dependência a contornar. `traduzivel = true`.
-
-## Onde usar (por função: kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-**Regra-mãe:** esta técnica produz **sustain com movimento**, não ataque. Ela entra onde a faixa precisa de corpo médio/cauda — nunca no transiente, nunca abaixo do HP, nunca travada no grid rítmico.
-
-| Função | Usar? | Como (ponto de partida — `HIPÓTESE`) | Por que / cuidado |
-|---|---|---|---|
-| **kick** | Não | — | Loop curto + scan destrói o transiente e cria sidebands em 100–300 Hz; o kick carrega a pressão e o mono. |
-| **sub** | Não, nunca | — | Qualquer varredura de loop modula o fundamental e desfaz o mono. Nenhum bus granular abaixo de 120 Hz. |
-| **baixo/rolling** | Não no corpo | No máximo a **cauda** da nota, HP ≥300 Hz, como camada de movimento | O groove do rolling vive da leitura rítmica seca; grão aleatório borra a subdivisão. |
-| **hats/shaker** | Evitar | Se usar: só em paralelo, HP ≥2 kHz, nível baixíssimo | Loop curtíssimo em prato = **ring metálico**. O vídeo chama o resultado de "shimmer" (00:05:43.759) — shimmer é o risco, não o objetivo. |
-| **percussão de resposta** | Sim, como **cauda**, não como ataque | Resamplear uma madeira, granular a cauda, disparar junto do evento de resposta mantendo o ataque original intacto | A resposta continua sendo madeira seca; o granular só prolonga/abre o timbre depois do transiente. LFO **livre** (não tempo-sync) para não sugerir grade. |
-| **madeira** | **Sim — fonte principal** | Bounce de uma nota na tônica de kanun/balafon/Rubber Bridge Guitar → GranularOsc; grãos longos, `random_offset` médio | Madeira tem transiente e ruído orgânico; é a fonte que menos soa "digital" granulada. |
-| **stab** | Só a **cauda** | Copiar o stab, granular com grãos longos, HP ≥300 Hz; o stab seco continua na frente | Granular no ataque apaga a definição do stab. |
-| **subida** | Extensão (o vídeo não mostra riser) | Scan acelerando (LFO mais rápido ou automação de posição) num reverse; subir o LPF devagar | Se fizer, segurar o topo com LPF suave e HP 200–300 Hz para não chover sideband. |
-| **atmosfera** | **Sim — casa principal** | Bounce de madeira/voz na tônica → GranularOsc com grão longo (200 ms–2 s), densidade baixa/média, `random_pan` real, HP 180–250 Hz, camada estéreo **acima** de ~200 Hz | É a camada que preenche o vale de médios sem tocar no low-end. Boa prática geral: largura estéreo real só acima de ~150–250 Hz. |
-
-### O truque do vídeo que vale como receita: subir 1 oitava antes do scan
-
-O vídeo mostra *"raise an octave up it's essentially going to speed up the waveform as well"* (00:03:16.560). Se a madeira está num registro grave e você a sobe uma oitava **antes** de granularizar, o conteúdo granular sobe de registro — **sai do low-mid que engorda o sub e cai dentro do vale de médios (300–1.200 Hz)** que o set de referência mede carente. Depois, HP em 180–250 Hz como cinto de segurança.
-
-### Receita mínima (por camada)
-
-1. Tocar **uma nota** (na tônica da track) da fonte — madeira, voz, guitarra, stab — e **resamplear** (no vídeo: C3, 00:49.439).
-2. **Normalizar** o WAV; o vídeo deixa o pico logo abaixo de 0 dB (−0,3) — 00:01:55.439 / 00:02:02.320.
-3. Carregar em **GranularOsc** (Serum 2) com `granular_grain_length` longo o bastante para não "pipocar" e `granular_random_offset` médio; `random_pitch = 0`.
-4. Subir **+1 oitava** no oscilador (o movimento do vídeo) e **HP 180–250 Hz** na camada.
-5. LFO **livre** e lento no movimento (densidade/posição/pan), longe de 1/16 — a textura não pode espelhar nem mascarar o groove.
-6. A/B: mute a camada. Se o sub "encher" ou o topo ficar metálico, o problema é fonte/HP/grão — não é para corrigir com EQ depois.
-
-### Regras anti-engorda-sub e anti-brilho-metálico
-
-- **Nada de granular abaixo de ~180 Hz.** HP em toda camada; não mandar para o bus de sub nem para o lado mono do grave.
-- **Pitch estável** (`random_pitch = 0`; no máximo ±2 st). A variação vem de **posição** (offset/scan), não de afinação.
-- **Brilho metálico ≠ agudos.** O que soa "metálico" é **inarmonicidade**: loop curtíssimo + grão curto + pitch instável. Use grão longo, fonte escura e emenda com crossfade. Não use LPF como muleta — se o set de referência já está **abaixo** das referências em 8 kHz+, cortar topo por reflexo piora o balanço.
-- **Nada de tempo-sync** no LFO desta camada: a textura tem de flutuar livre sobre o groove.
-
-## Prioridade e esforço
-
-- **Prioridade: baixa a média.** O conceito já está resolvido em synths com GranularOsc nativo (Serum 2, Vital, Grain do Live): o vídeo ensina a burlar a ausência de um oscilador granular. O que resta de novo e útil é o **resample como fonte** (bounce de uma nota + normalização) e o **+1 oitava antes do scan** — duas ideias boas, mas periféricas a um motor minimalista centrado em kick/sub/baixo/groove.
-- **Esforço: baixo a médio.** Baixo para o resample (uma ida ao bounce + normalizar). Médio para achar o ponto em que a textura preenche o vale de médios sem soar metálica nem inflar o low-end — isso é calibração de ouvido, não receita fechada.
-
-## Trechos de prova: 3 citações literais da legenda com timestamp
-
-> "so granular oscillators essentially are just a section that is looped and then the start points of those loops um sort of move through a selection of audio" — **00:00:59.039–00:01:10.390**
-
-> "can take what the output of ana is and actually record that and bring that back into a sample oscillator inside of the synth" — **00:01:40.240–00:01:49.429**
-
-> "so the granular we want to kind of just get a small little snippet so we're going to set the loop start" — **00:03:32.000–00:03:37.400**
-
-### Provas adicionais citadas no corpo
-
-- *"going to show you how you can do sort of fake granular effect inside of anna 2"* — 00:00:21.119
-- *"it's obviously doesn't support granular oscillators"* — 00:00:25.599
-- *"we cannot generate more than one or one loop at a time"* — 00:01:10.400–00:01:15.429
-- *"are going to re-sample this so this is another cool trick that you can do"* — 00:01:31.040
-- *"just normalize this waveform just so we have the peak level at zero"* — 00:01:55.439; *"negative zero point three"* — 00:02:02.320
-- *"let's say if we wanted to reverse this"* — 00:02:54.480
-- *"raise an octave up it's essentially going to speed up the waveform as well"* — 00:03:16.560
-- *"assign some modulation to our loop start and end points so we're just going to go with lfo1"* — 00:03:55.120
-- *"we're just going to bring the rate right down on lfo1"* — 00:04:04.000
-- *"turn this into like a pad sound now as well"* — 00:04:57.600
-- *"yeah really nice shimmer effect that we're getting now"* — 00:05:43.759
-- *"it'll totally change the texture of the sound"* — 00:05:59.360
-- *"record an entire patch down to c3 bring that in and then completely change the sound up"* — 00:06:52.800
+- Subir +1 oitava ANTES de granularizar move a textura do low-mid para o vale de médios — e um HP 180–250 Hz fecha a porta do grave.
+- Random só de posição/offset; manter pitch estável (±2 st no máximo) para não desafinar a fonte; LFO livre, sem tempo-sync, para a textura não espelhar o groove.
+- Loop curto + grão curto + pitch instável é a receita de brilho metálico: grão longo e fonte escura evitam.
 
 ---
 
-**Limites:** as regras de pitch estável (±2 st), HP 180–250 Hz e calibração de grão em ms são recomendações do estudo, não do vídeo. O contexto de mix (vale de médios 300–1.200 Hz, low-end mono, groove deslocado) citado no corpo é do set de referência do levantamento original — não foi re-medido. A leitura do schema do gerador de presets (limitação de rota de modulação para loop start/end) foi feita na sessão original de dissecação.
-
-
----
-
-## tutoriais/fontes/4q6GrRSEfhI.md
+## pesquisas/tutoriais/fontes/4q6GrRSEfhI.md
 
 # Tech Tip - Granular Guitar in Ableton
 
-**Vídeo:** https://www.youtube.com/watch?v=4q6GrRSEfhI · **Canal:** Sonic Academy (Tech Tips Vol. 38 com WNTER)
-**Legenda:** automática EN — **temLegenda = true**. Descrição confirmada via `yt-dlp --skip-download --print "%(description)s"`: *"In this Tech Tip WNTER uses the texture mode in Ableton on a time stretched guitar sample to create a granular style effect."*
+**Canal:** Sonic Academy (Tech Tips Vol. 38, WNTER) · **Vídeo:** https://www.youtube.com/watch?v=4q6GrRSEfhI
+**Fonte:** legenda automática EN + descrição oficial (textura granular sobre sample de guitarra time-stretched). 100% stock do Live.
 
-> **Nota de ASR (INFERÊNCIA):** a legenda automática grafa `reap itch mode` (00:02:05.509) onde o contexto é o warp mode **Repitch**; `gray at 226` (00:03:40.540) por **grain at 226**; `hit our` (00:05:14.830, 00:05:50.539) por **hit R** (reverse); `time searching` (00:06:33.200) por **time-stretching**; `grand in their style mode` (00:08:57.280) por **granular style mode**; `PAC's library` (00:01:35.360) por **Packs library**. Cito literalmente e sinalizo `[ASR: …]` quando a palavra crua não faz sentido.
+## Técnicas-chave
 
----
+- **Warp mode Texture** — o clipe é cortado em grãos reproduzidos em sequência; é o motor granular nativo do Live aplicado a UMA nota longa de guitarra (fonte com evento sustentado, não loop inteiro nem hit curto).
+- **Flux 0 + Grain Size 226** — grãos longos e zero aleatoriedade produzem um tom sustentado estável; com Repitch (o modo anterior), a nota pulava de altura — o Texture elimina esse pulo.
+- **Esticamento extremo + resample + reverse ×2** — estica o clipe ao máximo, resampleia para uma track nova, reverte, estica duas vezes, reverte de novo e corta o início (ali o tom ainda não se sustenta); depois aplica Texture outra vez.
+- **Duas cópias transpostas, −5 e −8 semitons** — o empilhamento do material granulado em dois intervalos forma o padrão melódico; delay (feedback ~35%, wet ~30%) e reverb (wet ~65%) lavam os transientes.
+- **Artefato como feature** — o vídeo trata a distorção de time-stretch no topo como textura desejada; o mesmo warp mode existe no Simpler/Sampler para patch tocável por MIDI.
 
-## Técnica ensinada (2-4 frases)
+## Notas de aplicação
 
-O vídeo ensina a transformar **uma única nota longa de guitarra** em pad granular sustentado usando só o **warp mode "Texture"** do Ableton: recorta-se um trecho com ataque e fim definidos (00:03:21.650 "so we'll slice our audio so that we have just our start and end points there"), muda-se de Repitch para Texture (00:02:05.509 "change this from reap itch mode [ASR: Repitch] to texture mode"), **zera-se o Flux** e sobe-se o **Grain Size até 226** (00:03:38.140 "turn the flux all the way down and put the gray [ASR: grain] at 226"; 00:06:14.389 "put the grain size all the way up so we have really nice long grains and put the flux all the way down"), e então **estica-se o clipe ao máximo** (00:04:02.770 "to time stretch this all the way so just slow that down as much as possible"). O resultado é um tom contínuo, sem o "pulo" de altura que o Repitch fazia (00:06:30.380 "so it gives us a nice sustained tone"; 00:06:38.120 "when it was just set to the standard reach mode [ASR: Repitch] I didn't actually play one sustained note it kind of jumped around"). Em seguida o áudio é **resampleado** para uma track nova (00:04:31.700 "we're going to go ahead and resample this into a new audio channel"), **revertido** (00:05:13.270 "go ahead and reverse that"), **esticado duas vezes** (00:05:23.680 "time stretch it twice so slow down once and then once more"), revertido de novo, tem o **início cortado** porque ali ainda não há tom sustentado (00:05:52.759–00:05:59.870 "because it's just gonna sound a little bit strange because it's not going to give us a sustained tone") e recebe Texture outra vez. Por fim, **duas cópias transpostas — −5 e −8 semitons — formam o padrão melódico** (00:06:50.150 "turn this down five semitones"; 00:07:00.950 "we're gonna pitch this down negative eight semitones"; 00:07:06.789 "that just gives us a nice melodic pattern") e o som é lavado com delay e reverb (00:07:31.840 "add a little bit of reverb and delay to kind of wash out the sound").
-
-O ponto mecânico que sustenta tudo é explicado no início: o Texture "cuts your audio into small little slices or grains that have been played backed in sequence" (00:01:12.500–00:01:16.399) e "gives us really nice glitchy texture audio upon playback" (00:01:18.049). O vídeo trata o artefato de esticamento como **feature**, não defeito: 00:07:21.900 "you can also hear some nice audio artifacts in the top end of that signal as well some sort of time stretching distortion".
-
-**O que o vídeo NÃO ensina:** não há EQ, não há high-pass, não há sidechain, não há receita de arranjo; e o trecho musical do vídeo não está em nenhuma tonalidade específica (a transposição −5/−8 é só para criar intervalo, não para afinar em tonalidade). A frase final sobre o Simpler (00:09:04.870 "it's also available in the simpler instruments device as well") é mencionada de passagem, sem demonstração.
-
----
-
-## Ferramenta usada no vídeo (plugin/stock)
-
-**100% stock do Ableton Live — nenhum plugin de terceiro.**
-
-- **Warp mode "Texture"** do clipe de áudio (o núcleo). Parâmetros expostos usados: **Grain Size** (levado a 226) e **Flux** (zerado). 00:01:07.729 "texture time stretching mode or the warp mode in Ableton Live".
-- **Repitch** como modo de comparação/controle (00:02:05.509; 00:06:38.120).
-- **Resampling** via "external in" para uma track de áudio nova (00:04:33.200 "change the external in to the guitar loop"; 00:04:51.480 "make sure to record enabled out").
-- **Reverse** do clipe, tecla R (00:05:13.270).
-- **Simple Delay** — 00:07:41.240 "go over to the simple delay"; ajustes: delay time "three … three and three so it's the same" (00:07:46.639), feedback "about 35%" (00:07:52.039), dry/wet "just over 30" (00:07:54.560). **A unidade do tempo de delay não é dita no vídeo** — o texto só registra "three and three"; não se inventa ms nem divisão.
-- **Reverb** stock, ajustes default com dry/wet "up slightly to about 65" (00:08:13.720).
-- Material: **guitar loop da Core Library** do Live (00:02:52.680–00:02:58.980 "this is just a guitar loop from the core library in Ableton Live"). O demo didático usa um drum loop da Packs library (00:01:35.360).
-- Menção final: o mesmo warp mode estaria disponível no **Simpler** (00:09:04.870–00:09:12.070) e no sampler (00:09:15.970–00:09:20.680 "you could always do it in the sampler"), para patch tocável por MIDI.
-
-**Nota de versão (INFERÊNCIA, não é fala do vídeo):** o vídeo usa **Simple Delay**, device que não é o device de delay da interface atual do Live 12 (o par do Live 12 é **Echo**/**Delay**). Isso não muda a técnica: o papel dele é lavar transiente.
+- Camada granular pede HP 180–300 Hz (nada de grão no low-end mono) e LP ~6 kHz (acima disso o artefato vira brilho metálico).
+- Flux alto = resultado "pulando" como o Repitch; zero randomização é o que dá cama estável.
+- Alvo natural: atmosfera e madeira esticada — conteúdo sustentado no vale de médios, sem competir com o groove; mudar o ponto de entrada do sample varia a textura sem refazer o patch.
+- O vídeo não trata EQ, sidechain nem tonalidade — a transposição −5/−8 é intervalo de movimento, não afinação.
 
 ---
 
-## Tradução e receita
-
-### O núcleo traduzível, em 5 operações
-
-A técnica não depende de um plugin — depende de uma cadeia de 5 decisões:
-
-1. **Fonte com evento longo e sustentado** (não um loop inteiro, não um hit curto): 00:03:15.780 "grab this individual long guitar note that's right in this section".
-2. **Motor de grãos com grão grande** (Grain Size 226).
-3. **Zero aleatoriedade/variação de leitura dos grãos** (Flux 0) — é isso que produz o tom estável em vez de "pular".
-4. **Esticamento extremo** do material = leitura muito lenta do grão, que vira cama.
-5. **Empilhamento transposto de 2 cópias** (−5 / −8) + **delay/reverb** para colar transientes.
-
-Todas as 5 existem no Live 12 nativo. **Nada aqui usa ANA 2, VELA, SideKick, Kick 3 ou Bitwig.**
-
-### Live 12 nativo — o caminho idêntico (primeira escolha)
-
-Não há tradução a fazer: é o mesmo device. No Live 12, o clipe de áudio tem **Warp → Texture** com **Grain Size** e **Flux**. Receita literal do vídeo:
-
-| Passo | Ação no vídeo | Como fazer no Live 12 |
-|---|---|---|
-| 1 | recortar uma nota longa | Warp on, recortar start/end no clipe |
-| 2 | trocar Repitch → Texture | dropdown de warp mode |
-| 3 | Flux 0, Grain Size 226 | os dois knobs do Texture |
-| 4 | esticar ao máximo | arrastar a borda do clipe / mudar o tempo do clipe |
-| 5 | resamplear | track nova, input = **Resampling** (o vídeo usa "external in" para a track de origem — mesmo efeito) |
-| 6 | reverse → stretch ×2 → reverse | tecla **R** duas vezes, esticando no meio |
-| 7 | cortar o início instável | trim no início até o tom estabilizar |
-| 8 | Texture de novo, Grain Size máximo, Flux 0 | mesmos knobs |
-| 9 | duas cópias −5 e −8 semitons | campo **Transpose** do clipe (depois reafinar para a tonalidade da track) |
-| 10 | delay + reverb | **Echo** (no lugar do Simple Delay) + **Hybrid Reverb** |
-
-### Serum 2 — GranularOsc
-
-O GranularOsc é um motor de grãos de verdade (aceita `.wav` e reprocessa por grãos), então ele cobre os passos 2–3 melhor que o Texture, mas **não expõe controle de "scan rate"/tempo de leitura** — ou seja, o **esticamento extremo (passo 4) não tem equivalente direto** nos parâmetros expostos pelo gerador de presets. Tradução correta: fazer o esticamento no clipe do Live primeiro (Texture), congelar/resamplear para `.wav` e só então alimentar o GranularOsc.
-
-Mapeamento dos parâmetros que **existem**:
-
-| Vídeo | Função | GranularOsc |
-|---|---|---|
-| Grain Size 226 (grande) | grãos longos = tom sustentado | `granular_grain_length` alto (o default documentado é 100 ms; referência real de fábrica usa 124 ms para textura rica — para "cama sustentada" ir bem acima disso) |
-| Flux 0 | nenhuma variação de leitura | `granular_random_offset = 0`, `granular_random_grain_length = 0`, `granular_random_pitch = 0`, `granular_random_window_amount/skew = 0` |
-| loop do grão (implícito no sustentado) | grão se repete dentro da janela | `granular_loop = true` (já é o default) |
-| densidade do tecido | quanto de grão sobreposto | `granular_density` (escala 0–30; mais alto = mais contínuo, mais baixo = grãos audíveis) |
-| esticar ao máximo | leitura lenta | **sem equivalente exposto** → pré-esticar no Live (acima) |
-
-### Kontakt 8 — de onde vem a fonte, não o motor
-
-Os instrumentos (Rubber Bridge Guitar, LOOP GARDEN, Ethereal Earth, Vintage Organs) **não são engines granulares**. O valor deles aqui é o **passo 1**: o **Rubber Bridge Guitar** entrega exatamente o tipo de nota longa e morta que o vídeo usa como matéria-prima (guitarra). Ethereal Earth e LOOP GARDEN servem como fonte alternativa de nota sustentada para granularizar. O processamento granular continua sendo Live ou Serum.
-
-### Diva / Vital / Massive X / Surge XT
-
-- **Diva**: não é granular — é modelagem analógica. Serve para a **camada tonal** (o par −5/−8 pode ser feito com dois Diva em uníssono desafinado), não para o grão.
-- **Surge XT**: tem oscilador granular; o princípio (grão longo + zero randomização + leitura lenta) se aplica igual.
-- **Vital / Massive X**: o vídeo não mostra nenhum deles, e não se confirma aqui qual modo granular cada versão instalada expõe — tratar como **NÃO VERIFICADO** e usar Live/Serum como rota primária.
-- Em qualquer um deles, o que **não** deve ser reproduzido é o "Flux alto": sem zerar a randomização, o resultado "pula" como o Repitch do vídeo (00:06:43.400 "it kind of jumped around a little bit").
-
-**Conclusão de traduzibilidade:** `traduzivel = true`. A técnica é stock, determinística, e a parte que falta no Serum (esticamento extremo) resolve-se antes dele, no próprio Live.
-
----
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-**Contexto de referência citado no levantamento original:** um set de trabalho medido mostrou o meio carente (300–1.200 Hz e 1.200–4.000 Hz abaixo da média de 6 referências externas), low-end **mono** e groove com subdivisões deslocadas a preservar.
-
-O ponto central: **a camada granular é excelente exatamente onde o set de referência é carente (médios) e perigosa exatamente onde há problema típico (topo metálico e grave mono).** Por isso ela entra com high-pass e low-pass obrigatórios.
-
-| Função | Veredito | Como aplicar / por que não |
-|---|---|---|
-| **kick** | **NÃO** | A técnica destrói transiente e o próprio vídeo assume artefato de topo (00:07:21.900). O kick é o motor do groove — nada de grão nele. |
-| **sub** | **NÃO** | Low-end é mono. Grão cria decorrelação e ruído de janela. Se qualquer camada granular existir, **high-pass 180–300 Hz** obrigatório antes de somar. |
-| **baixo / rolling** | **NÃO** | O rolling vive de articulação por nota e do microdeslocamento do groove; grão borra ataque e desalinha a subdivisão. |
-| **hats / shaker** | **NÃO** | São eventos curtos, e a técnica exige fonte longa e sustentada (passo 1). Além disso, o groove deslocado precisa ficar nítido — grão transforma grade em nuvem. |
-| **percussão de resposta** | **uso restrito** | Só como **cauda** de uma resposta no fim de frase, e só depois de alongar a fonte. Risco: apagar o "call-response". Default = fora. |
-| **madeira** | **USAR — melhor alvo com atmosfera** | Pegar **uma** nota longa de madeira/marimba (Rubber Bridge Guitar, marimba do Kontakt), Texture + Flux 0 + Grain Size alto, esticar. É a tradução direta do "guitar → pad" (orgânico → digital → orgânico). Preenche 300–1.200 Hz sem sintetizar brilho. |
-| **stab** | **NÃO no ataque / SIM na cauda** | Stab precisa de transiente; a técnica remove justamente isso. Usar o material granulado como camada **sustentada por baixo** do stab, com low-pass. |
-| **subida** | **USAR** (derivação) | O par reverse → stretch ×2 mantido reverso é matéria-prima de riser lento; o vídeo usa o mesmo gesto para sustain (00:05:23.680), não para riser — marcado como **INFERÊNCIA**, não como fala do vídeo. |
-| **atmosfera** | **USAR — alvo principal** | É literalmente o propósito declarado: 00:00:15.809 "can use as ambiences for our songs". Cama contínua, não rítmica → não compete com o groove. |
-
-### Como não engordar o sub nem criar brilho metálico
-
-1. **High-pass 180–300 Hz em toda camada granular** — boa prática medida em estudos de atmosfera. Isso mantém o low-end mono intocado.
-2. **Low-pass em ~6 kHz** (ou shelf suave acima de 6 kHz). O artefato que o vídeo elogia mora no topo (00:07:21.900 "audio artifacts in the top end … time stretching distortion"); na faixa de 1,2–4 kHz ele até ajuda, mas acima de ~6 kHz vira o "brilho metálico" a evitar em perfil escuro.
-3. **Diferença L/R só acima de ~150–250 Hz** — boa prática geral: gerar diferença estéreo real só acima dessa faixa; abaixo, mono.
-4. **Delay com 35% de feedback acumula energia nos médios** — como 300–1.200 Hz é justamente a banda carente do set de referência, algum acúmulo é bem-vindo, mas medir antes de subir o wet.
-5. **Reverb a 65% de wet (como no vídeo) não é solista acústico** — aqui a fonte já está transformada, então 65% é defensável. Mas se a madeira precisar soar como madeira, separar: dry na frente, wet em paralelo ≤25% (boa prática para fontes acústicas).
-6. **A cópia −5/−8 semitons precisa ser reafinada** para a tonalidade da track; o intervalo do vídeo é para criar movimento, não para dar a tonalidade.
-
-### Onde encaixar no arranjo
-
-Cama de **atmosfera/madeira** entrando **antes do primeiro kick** (para dar chão sem competir) e permanecendo sob o motor, com **buracos reais** a cada 2–8 bars — o método "atmosfera granular 'miragem'" pede uma única fonte, várias regiões granuladas, posição de grão modulada devagar e cortes reais, em vez de empilhar três beds. O vídeo dá a variação barata: 00:08:43.200 "you could always start a little bit earlier on in the sample" — mudar o ponto de entrada muda a textura sem mudar o patch.
-
----
-
-## Prioridade e esforço
-
-**Prioridade: ALTA.** Ataca diretamente o déficit típico de médios (300–1.200 Hz e 1.200–4.000 Hz medidos no set de referência), entrega a camada de atmosfera que a frente de textura pede, e não exige nenhum plugin novo — é stock do Live 12 inteiro.
-
-**Esforço: BAIXO–MÉDIO.** A receita é determinística e curta (10 passos), mas tem duas parcelas de trabalho real: (a) escolher uma fonte com **uma** nota longa e estável — o passo que o vídeo resolve com um loop de biblioteca; (b) fazer o resample/bounce e a afinação das duas cópias na tonalidade da track. Não há automação de detecção, não há dependência de plugin pago, não há risco de quebrar o Set se for feito em canal separado.
-
-**Risco de execução:** baixo, desde que a camada entre com high-pass e fora do caminho do sub/kick.
-
-**Fontes consultadas na sessão original:**
-- Transcrição: legenda automática EN do vídeo (221 cues, lida inteira).
-- Descrição: `yt-dlp --skip-download --print "%(description)s"`.
-- Números de banda (300–1.200 / 1.200–4.000 Hz), low-end mono e groove deslocado: dados do set de referência fornecidos no levantamento original, **não re-medidos**.
-
----
-
-## Trechos de prova
-
-1. **00:01:07.729–00:01:18.049** — "texture time stretching mode or the warp mode in Ableton Live what this does is it essentially cuts your audio into small little slices or grains that have been played backed in sequence this gives us really nice glitchy texture audio upon playback of the sample"
-
-2. **00:06:14.389–00:06:22.939** — "and make sure that that's also set to texture mode again and put the grain size all the way up so we have really nice long grains and put the flux all the way down so now it sounds like this"
-
-3. **00:06:50.150–00:07:08.589** — "we're gonna do for the sound is turn this down five semitones so we'll pitch it down a little bit gives us a little bit deeper of a tone I'm gonna copy that over and then we're gonna pitch this down negative eight semitones that just gives us a nice melodic pattern"
-
-*Provas adicionais usadas acima:* 00:03:38.140–00:03:41.020 ("turn the flux all the way down and put the gray [ASR: grain] at 226"); 00:06:30.380 ("so it gives us a nice sustained tone"); 00:06:38.120–00:06:46.310 ("when it was just set to the standard reach mode [ASR: Repitch] I didn't actually play one sustained note it kind of jumped around a little bit"); 00:07:21.900–00:07:29.740 ("audio artifacts in the top end … time stretching distortion"); 00:07:46.639–00:07:58.340 ("set that to the delay time of three … feed back up to something about 35% and the dry/wet down to just over 30"); 00:08:13.720 ("bring that dry/wet up slightly to about 65"); 00:08:43.200–00:08:47.830 ("you could always start a little bit earlier on in the sample"); 00:09:04.870–00:09:12.070 ("it's also available in the simpler instruments device as well").
-
-
----
-
-## tutoriais/fontes/5Wb107f_c8E.md
+## pesquisas/tutoriais/fontes/5Wb107f_c8E.md
 
 # Sciotech @ Bush Techno Esoteric 2024
 
-**Canal:** Scionaugh · **ID:** `5Wb107f_c8E` · **Duração:** 90s · **Escopo:** card de contexto/DNA de live-set
-**Fonte:** metadados (info.json) + tentativa de transcrição via yt-dlp, consulta 2026-10-29 — **NÃO ENCONTRADA** (vídeo sem legenda). **Áudio não ouvido.**
+**Canal:** Scionaugh · **Vídeo:** https://www.youtube.com/watch?v=5Wb107f_c8E · **Duração:** 90 s · **Escopo:** card de contexto/DNA de live-set
+**Estudo:** consulta 2026-10-29 (metadados/info.json; transcrição NÃO ENCONTRADA — vídeo sem legenda; áudio não ouvido).
 
 ## Contexto
-Debut do projeto-paralelo **Sciotech** no palco Bush Techno do Esoteric Festival 2024 (3 anos no palco Ascension como Scionaugh). Track ID: "Domestic Dinosaur" — scionaugh.bandcamp.com/track/domestic-dinosaur-original-mix.
+
+Debut do projeto-paralelo **Sciotech** no palco Bush Techno do Esoteric Festival 2024 (3 anos no palco Ascension como Scionaugh). Track ID: Domestic Dinosaur — scionaugh.bandcamp.com/track/domestic-dinosaur-original-mix.
 
 ## Técnica ensinada
-`NÃO ENCONTRADO` — sem transcrição de fala; card de contexto/DNA do artista, não de técnica.
+
+NÃO ENCONTRADO — sem transcrição de fala; card de contexto/DNA do artista, não de técnica.
 
 ## Valor para o acervo
-live-set DNA / projeto Sciotech (referência de artista).
+
+Live-set DNA / projeto Sciotech (referência de artista).
 
 ## Limites
-Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (VERIFICADO no info.json).
 
+Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (verificados no info.json).
 
 ---
 
-## tutoriais/fontes/5XUULOEJ2tI.md
+## pesquisas/tutoriais/fontes/5XUULOEJ2tI.md
 
 # The Energy Curve Behind Every Hypnotic Techno Track
 
-> **id:** `5XUULOEJ2tI` · **canal:** Hypnotic Techno Production · **publicado:** 27/08/2026 · **duração:** 8:02 ·
-> **frente:** arranjo-mix.
->
-> **Capítulos da metadata (lidos via `yt-dlp -J`):** 00:00 Introduction to energy levels · 00:46 Analyzing
-> energy progression · 03:47 Building and dropping tension · 06:50 Applying energy fluctuations · 07:23 Workshop
-> announcement.
->
-> **Fonte da fala — proveniência:** a legenda automática do YouTube **não foi obtida** (o endpoint de legendas
-> respondeu HTTP 429 em várias tentativas). Para não trabalhar só com a descrição, o áudio foi baixado e
-> transcrito localmente com ASR (`whisper.cpp`, modelo small, 16 kHz mono) na sessão original de dissecação.
-> **temLegenda=true** significa "há transcrição automática com timestamps", **não** "legenda oficial do YouTube".
-> As citações abaixo são literais dessa transcrição; erros óbvios do ASR estão marcados. A descrição oficial
-> (lida) diz: *"Master energy levels in your tracks by breaking down the arrangement techniques used in
-> professional electronic music production"* e *"five distinct energy levels"*.
->
-> **Escopo real:** é uma **análise de arranjo** de uma track de Valentino Mora, não um tutorial de sound
-> design. Nenhum plugin e nenhuma DAW são nomeados **na transcrição**; o único dispositivo citado nela é um
-> **EQ**, usado como leitura visual. Tudo que não estiver ancorado em timestamp é tradução do estudo, marcada
-> `INFERÊNCIA` ou `HIPÓTESE`.
+**Canal:** Hypnotic Techno Production · **Vídeo:** https://www.youtube.com/watch?v=5XUULOEJ2tI · **Duração:** 8:02 · **Publicado:** 27/08/2026
+**Fonte:** transcrição local (whisper.cpp, 16 kHz mono; legenda do YouTube indisponível por HTTP 429). Análise de arranjo de uma track de Valentino Mora — nenhum plugin é nomeado.
 
-## Técnica ensinada (2-4 frases)
+## Técnicas-chave
 
-O vídeo decompõe uma track de Valentino Mora em **cinco níveis de energia** (00:00:12.600–00:00:17.600): o
-nível 1 é a base com bassline, drone e toms "with some modulations on them" (00:00:46.600–00:00:57.080), que
-ficam "fairly at the same level" (00:00:59.680–00:01:01.600); o nível 2 acrescenta "two elements" — um hi-hat
-"t-t, t-t" e uma percussão "whoop, whoop, whoop" — e é "mostly this is driven by hat, t-t with some echo on it"
-(00:01:20.880–00:01:43.760); o nível 3 acrescenta "those 16 hi-hat" (00:02:20.800–00:02:26.700); o nível 4
-acrescenta "some additional layer" e "some noisy backgroundy thing" (00:02:48.440–00:03:17.940). A subida é
-feita "mostly through additional layers of percussion, mostly hi-hats, plus some additional synth sounds"
-(00:03:54.840–00:04:05.400), e o retorno ao nível 1 — "where we almost have no hi-hats"
-(00:03:47.520–00:03:53.880) — é o gesto hipnótico. A lição é **arranjo em degraus**: cada nível é uma camada
-discreta que entra/sai; o baixo, o drone e os toms ficam "fairly at the same level", com uma subida leve que
-ele atribui à modulação de tom (00:01:03.280–00:01:09.060), não a uma nova camada de grave; e o autor diz que
-a maioria das tracks usa uma variação dessa curva, às vezes com menos níveis (00:06:58.600–00:07:20.080).
+- **Cinco níveis de energia** — a track é decomposta em degraus discretos de camadas; a maioria das tracks, segundo o autor, usa uma variação dessa curva, às vezes com menos níveis.
+- **Nível 1 = base invariante** — bassline, drone e toms com modulações ficam praticamente no mesmo nível; a leve subida de energia vem da modulação de timbre, não de camada nova de grave.
+- **Nível 2 = hat fechado com echo + percussão de resposta** — um hi-hat curto com eco e uma percussão repetida entram como segundo degrau.
+- **Nível 3 = 16th hats; nível 4 = camadas extras + noise de fundo** — a subida é feita quase toda por camadas percussivas adicionais (majoritariamente hats) e alguns synths a mais, nunca por volume.
+- **O retorno ao nível 1 é o gesto hipnótico** — voltar para a versão quase sem hats; contraste por subtração, não por acúmulo.
+- **EQ só como leitura visual** — o autor usa um EQ para mostrar que as cenas batem em torno de zero; não é meta de loudness.
 
-## Ferramenta usada no vídeo (plugin/stock)
+## Notas de aplicação
 
-**Nenhum plugin é nomeado na transcrição.** `INFERÊNCIA`: a análise acontece numa sessão cuja DAW a
-transcrição não identifica. O único elemento de interface citado nela é um **EQ**, usado como referência
-visual: "we can see that on the EQ" (00:02:52.920–00:02:57.920) e "we are hitting roughly zero"
-(00:03:02.360–00:03:04.580). `INFERÊNCIA`: a ferramenta real é o **mute/unmute de camadas** e a comparação
-A/B; não há receita de synth, sample ou cadeia de mix.
-
-| Item | O que o vídeo diz | Limite |
-|---|---|---|
-| DAW | não nomeada | não inferir Ableton, Bitwig ou outra |
-| EQ | "we can see that on the EQ" (02:52); "hitting roughly zero" (03:02) | é leitura visual; não é meta de loudness |
-| Camadas | hi-hat, percussão, 16 hats, open-hat, noise, synth | nomes genéricos; sem preset, sample ou dB |
-| ANA 2 / VELA / SideKick / Kick 3 / Bitwig | **não são mencionados** na transcrição | não há dependência a contornar |
-
-**Ressalvas de ASR (não virar técnica):** "level A to A" (00:04:35.920) e "in my titty, titty"
-(00:06:02.600) são erros do `whisper-small`; não são nomes de nível nem de plugin. "t-t, t-t" é a
-verbalização do ritmo do hat, não um dispositivo.
-
-## Tradução: como aplicar a curva com Serum 2, Diva, Vital, Massive X, Surge XT, Kontakt 8 e Live 12 nativo
-
-O vídeo **não depende** de nenhum plugin; a tradução é 100% de arranjo. A regra central:
-**o grave fica invariante; a energia sobe pelo topo percussivo e por camadas orgânicas no meio.** Com low-end
-mono e groove com microdeslocamento definido, nenhuma camada nova pode mexer em kick/sub/baixo nem
-re-quantizar a levada.
-
-| Conceito no vídeo (timestamp) | Rota | Como fazer | Limite / cuidado |
-|---|---|---|---|
-| **Nível 1:** bassline, drone, toms "with some modulations" (00:46–01:01) | Kick/sub/baixo constantes; drone em **Diva**, **Vital**, **Surge XT** ou **Kontakt Ethereal Earth**; toms em **Sampler/Simpler** ou **Surge XT** | Manter a base constante durante as seções; modular o drone por LFO/filtro, não por volume | Não criar nova camada de sub; não trocar o groove definido |
-| **Hi-hat "t-t" com echo** (01:38–01:43) | **Live 12:** Simpler/Sampler com hat fechado escuro → **Echo** (1/16 ou 1/8 pontuado) → **AutoPan** leve | Echo com wet baixo e feedback curto; o vídeo diz "with some echo on it", não um delay longo | HPF 300–400 Hz; LPF 10–12 kHz; sem 909/clap brilhante |
-| **16 hi-hats** (02:20–02:26) | **Drum Rack/Simpler:** padrão de 16tos, velocity variada, sample alternado; shaker de corpo por baixo | Usar o hat como informação rítmica; variação por omissão/acento, não por ganho | Se o set de referência já tem mais agudo relativo que as referências, **não aumentar o shaker** para "perseguir agudo" |
-| **Percussão "whoop, whoop, whoop"** (01:29–01:33) | **Kontakt LOOP GARDEN / Ethereal Earth**, ou **Sampler** com woodblock/tom; **Rubber Bridge Guitar** só como pluck orgânico | Envelope curto; 1–2 respostas por compasso; corpo em 300–1.200 Hz | Evitar rim/click metálico; reverb curto, não wash |
-| **Camada adicional / noisy background** (02:48–03:17) | **Serum 2 GranularOsc** (grains curtos, densidade baixa, random offset pequeno) ou **Surge XT** noise; envio a **Hybrid Reverb** | Manter sob a mix; granular como textura, não como novo protagonista | Granular pode apagar transiente e criar artefato metálico; grain curto, LPF 8–10 kHz, HPF 300 Hz, mono abaixo de 150 Hz |
-| **Open-hat / decay mais longo** (04:30–04:46; 05:19–05:26) | **Sampler** com open-hat; decay médio; filtro; automação de nível | Alternativa de nível 2 sem repetir o hat fechado; o decay mais longo é uma variação, não um prato de ruído | Não abrir 8 kHz+; não usar como wash contínuo |
-| **Acento em uma nota** (06:06–06:11) | Automação de velocity/volume em um hit específico; ou acento de **madeira/stab** | Acento pontual para marcar a virada | Não transformar em layer contínuo; não deslocar o groove |
-| **Noise helps transition** (02:12–02:16) | **Operator** noise ou **Sampler** noise → **EQ Eight/AutoFilter** (band-pass 300–4.000 Hz) → **Hybrid Reverb** | 2–4 compassos antes da fronteira; um protagonista por transição | Sem sweep de sub; sem hiss contínuo; não repetir o salto agudo rejeitado |
-| **EQ como leitura visual** (02:52–03:04) | **EQ Eight/Spectrum** no master só para comparar cenas; **Utility** para mono abaixo de 120 Hz | Medir 20–120 Hz, 300–1.200 Hz e 1.200–4.000 Hz antes/depois | "Roughly zero" do vídeo não é meta de loudness; não equalizar o master para copiar o número |
-| **Additional synth sounds** (04:01–04:05) | **Serum 2 / Vital / Massive X** para stab curto; **Diva/Surge XT** para drone; **Kontakt** para madeira | Stab filtrado, atrás da madeira; timbre redondo | Evitar serra brilhante (perfil de meio rejeitado como metálico); LPF 2–4 kHz |
-
-**Nenhum valor de EQ, filtro, delay ou dB é dado no vídeo.** As escolhas de 1/16, 1/8, HPF 300–400 Hz,
-LPF 10–12 kHz, grain curto e "2–4 compassos" são `INFERÊNCIA` do estudo, não citações
-do autor. O que o vídeo dá é a **ordem das camadas** e o princípio de manter o grave no mesmo nível.
-
-**Sobre ANA 2, VELA, SideKick, Kick 3 e Bitwig:** o vídeo não os usa nem os menciona. Não há conceito
-equivalente a explicar porque não há dependência: a técnica é ligar/desligar camadas e escolher samples. Se
-fosse necessário traduzir uma ferramenta de movimento, o que já existe cobre: **Echo/AutoPan/Shifter** no
-Live 12, **GranularOsc** no Serum 2, **LFO/filtro** em Diva/Vital/Surge XT.
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-O vídeo não fala em compassos. A tradução usa a grade de 128 BPM (1 compasso = 1,875 s; 2:00 = 64 compassos) e
-organiza **quatro cenas de 16 compassos / 30 s**. O mapa abaixo é **proposta de sobreposição da curva do vídeo a
-uma estrutura de 2 minutos**, não o estado de nenhum set.
-
-| Cena | Compassos | Nível do vídeo | Tradução |
-|---|---:|---|---|
-| **A** 0:00–0:30 | 1–16 | **L1** | Base reconhecível: kick/sub/baixo, drone, chamadas iniciais e percussão; madeira responde na segunda metade da cena e a subida fecha a primeira frase. Sem hat extra; manter o mínimo de hats/shaker do groove definido. |
-| **B** 0:30–1:00 | 17–32 | **L2** | Entra o hat fechado "t-t" com **Echo** e a percussão de resposta ("whoop"); resposta à primeira cena, mais atividade percussiva e subida mais longa fechando a cena; preservar respirações de kick planejadas. |
-| **C** 1:00–1:30 | 33–48 | **L3** | Entram os **16 hats** e o shaker de corpo; renovar uma articulação do baixo ou uma resposta de madeira; não introduzir outro conjunto de timbres. |
-| **D** 1:30–2:00 | 49–64 | **L4 → L1** | 1:30–1:45: maior presença (hat 16 + open-hat/decay + textura granular + stab/madeira), **sem novo sub**. 1:45–2:00: reset para o groove esparso (quase sem hats), subida em diálogo e respiração curta. O reset longo é opção a A/B, não obrigação. |
-
-### Por função
-
-| Função | Onde entra | Como aplicar | O que evitar |
-|---|---|---|---|
-| **Kick** | A–D, constante | Mesma fonte, mesmo tuning, mesma posição; não layered | Segundo kick, click metálico para "subir", sub extra |
-| **Sub** | A–D, constante | Tônica; mono; nenhuma camada nova abaixo de 150 Hz; HPF em tudo que não é grave | Tapete de sub, sidechain exagerado, sub estéreo |
-| **Baixo/rolling** | A–D, constante | Preservar as articulações e o deslocamento do groove definido; não abrir filtro no L4 | Mais notas, mais gain, mais sub para "compensar" o topo |
-| **Hats/shaker** | B: hat "t-t" + echo; C: 16tos; D: open-hat/decay longo | Samples escuros, velocity variada; shaker de corpo, não de brilho; LPF 10–12 kHz | Shaker mais alto/brilhante quando o set já tem agudo relativo acima das referências; 909, clap, prato |
-| **Percussão de resposta** | B: "whoop"; C/D: variação | 1–2 hits por compasso; corpo 300–1.200 Hz; LOOP GARDEN/Ethereal Earth ou Sampler | Rim/click metálico, reverb longo, resposta em todo compasso |
-| **Madeira** | B–D | Corpo 300–1.200 Hz; responder à chamada; LOOP GARDEN/Rubber Bridge ou Sampler | Wash de reverb, EQ boost, timbre brilhante |
-| **Stab** | D | Curto, 400–2.000 Hz, atrás da madeira; Serum 2/Vital/Massive X | Serra brilhante, competir com o baixo |
-| **Subida** | Fronteiras de cena (fim de A, B, D) | Noise 300–4.000 Hz, 2–4 compassos, Hybrid Reverb; um protagonista por fronteira | Sweep de sub, hiss contínuo, salto agudo |
-| **Atmosfera** | A–D, constante | Drone Diva/Vital/Surge XT ou Ethereal Earth; LPF 2–4 kHz; mono abaixo de 150 Hz; sidechain leve | Encher 300–1.200 Hz demais (deixar espaço para madeira), reverb infinito, sub |
-
-### Sem engordar o sub, sem brilho metálico
-
-1. **Grave invariante.** O próprio vídeo mostra a base "fairly at the same level" (00:59) enquanto o topo
-   sobe. Aqui: kick, sub e baixo não mudam entre A–D; nenhuma camada nova abaixo de 150 Hz; sub mono. A
-   comparação de 20–120 Hz antes/depois é o teste — se subir, a camada está no lugar errado.
-2. **Topo escuro, não mais topo.** O buraco medido no set de referência é 1.200–4.000 Hz, mas a faixa
-   5.000–12.000 Hz já estava em −8,86 dB e o set tinha mais agudo relativo que as referências de hypnotic
-   techno. Ou seja: o hat pode preencher 1,2–4 kHz, mas **não** deve empurrar 5–12 kHz. LPF 10–12 kHz, samples
-   escuros, velocity/decay em vez de ganho; não subir o shaker.
-3. **Meio por corpo, não por EQ.** O déficit de 300–1.200 Hz pede **madeira/percussão
-   com corpo**, não shelf/boost no master. A camada de madeira e a percussão de resposta são as candidatas;
-   medir a banda, não equalizar por número.
-4. **Groove preservado.** Não quantizar nem deslocar o microtiming definido. Hats novos podem seguir a
-   subdivisão existente ou ficar em 16tos retos, mas o kick/sub/baixo e as chamadas definidas não se movem.
-5. **Estéreo com limite.** O grave é mono; quando o meio está estreito (lado/mid muito abaixo da média), hats/percussão podem ser panoramizados/AutoPan para abrir o
-   meio, mas **nada de alargar sub** nem usar atraso lateral no grave.
-6. **Loudness não é a curva.** O "roughly zero" do EQ do vídeo (03:02) é leitura visual; não copiar como meta
-   de master nem empurrar o Limiter. A energia percebida deve vir das camadas, não do nível geral.
-
-## Prioridade e esforço
-
-**Prioridade: alta (P1).** A curva marca esta frente como P1, e a técnica é a espinha de um arranjo minimalista:
-ela organiza **quando** cada camada entra/sai e evita a sensação de track estática. Também ataca o buraco
-medido de 300–1.200 e 1.200–4.000 Hz por arranjo, sem tocar no sub e sem depender de plugin novo. É mais
-valiosa que uma receita de sound design isolada porque vale para as quatro cenas e para a virada de 1:45.
-
-**Esforço: médio.** Entender é barato (ligar/desligar camadas); executar consome curadoria e escuta: escolher
-4–6 samples escuros, programar 16tos, montar as automações de cena, preservar o groove definido e fazer A/B.
-Não há licença, instalação nem preset a comprar. O risco é justamente o excesso: hats/shaker demais criam
-brilho metálico quando o set já tem agudo relativo acima das referências; o freio é sample escuro + LPF +
-velocity, não EQ corretivo.
-
-## Trechos de prova: 3 citações literais da transcrição com timestamp
-
-**Proveniência:** como a legenda do YouTube não estava disponível (HTTP 429), as citações são da **transcrição
-automática local** (`whisper.cpp` small) feita na sessão original, não da faixa oficial. São literais ao VTT;
-erros de ASR estão apontados.
-
-**1. O nível 2 é o hat com echo (00:01:38.760–00:01:43.760):**
-
-> 00:01:38.760 But mostly this is driven by hat, t-t with some echo on it.
-
-**2. O nível 3 são os 16 hats (00:02:20.800–00:02:26.700):**
-
-> 00:02:20.800 And now we have those 16 hi-hat
-> 00:02:23.400 that definitely raise the energy.
-
-**3. O retorno ao nível 1 é o gesto hipnótico (00:03:47.520–00:03:53.880):**
-
-> 00:03:47.520 And we drop it to level one.
-> 00:03:51.900 Where we almost have no hi-hats.
-
-**Complementares (a mesma tese, para conferência):**
-
-> 00:03:54.840 Yeah, you see, so there is this curve of energy rising
-> 00:03:57.680 mostly through additional layers of percussion,
-> 00:04:01.400 mostly hi-hats, plus some additional synth sounds,
-
-> 00:00:59.680 We are fairly at the same level.
-
-**Nota de ASR:** "level A to A" (04:35) e "in my titty, titty" (06:02) são erros do modelo; não são nomes
-de técnica. "T-t" é a onomatopeia do hat.
-
-## Fontes
-
-- Metadata do vídeo lida via `yt-dlp -J` na sessão original (título, canal, duração, capítulos, descrição).
-- Transcrição local via whisper.cpp (gerada na sessão original).
-- Números do set de referência (bandas 300–1.200 / 1.200–4.000 Hz, side/mid, shaker em −28 dB, groove
-  deslocado): dados do levantamento original que contratou a dissecação, não do vídeo.
-
-**Nenhum outro estudo consultado.** Não houve leitura de set ao vivo nem render na missão original.
-
-## Limites e o que não foi verificado
-
-- **Legenda oficial:** não obtida (HTTP 429 em várias tentativas). A transcrição local small pode errar
-  palavras; as citações são fiéis ao VTT, não necessariamente ao áudio palavra por palavra.
-- **Ferramentas:** o vídeo não nomeia DAW nem plugin; não há preset, sample, dB ou ajuste de EQ a copiar.
-- **Números do vídeo:** os cinco níveis vêm de uma track (Valentino Mora); o vídeo não dá compassos, dB,
-  faixas de frequência nem nomes de samples. A sobreposição dos cinco níveis às 4 cenas de 30 s é tradução do
-  estudo.
-- **Quinto nível:** a descrição e o vídeo anunciam "five distinct energy levels", mas a transcrição só nomeia
-  explicitamente os níveis 1, 2, 3 e 4; "level A to A" (04:35) e "3.1 / 3A to B" (05:09) são variantes que o
-  ASR deturpou. Não se inventou um quinto nível separado.
-- **Estado:** os mapas de aplicação são propostas, não estado de nenhum set. Os resultados sonoros são
-  `INFERÊNCIA` ou `HIPÓTESE` até A/B.
-
+- Regra central traduzida: o grave fica invariante ao longo de toda a curva; a energia sobe pelo topo percussivo e por camadas no médio.
+- Mapear os degraus em cenas de 16 compassos (a 128 BPM) organiza quando cada camada entra e sai sem tocar em kick/sub/baixo.
+- O vídeo não dá compassos, dB, frequências nem nomes de samples; só o 5º nível não é nomeado explicitamente na fala.
 
 ---
 
-## tutoriais/fontes/5eYJKwQFc70.md
+## pesquisas/tutoriais/fontes/5eYJKwQFc70.md
 
 # Ableton Live Beginners Course: Lesson 2 - Samples
 
-**Canal:** Scionaugh · **ID:** `5eYJKwQFc70` · **Duração:** ~2:04:00 · **Escopo:** bateria/percussão e fundação · **Prioridade:** P2
-**Fonte:** varredura técnica por amostragem (grep + leitura parcial), consulta 2026-10-29 — **NÃO é dissecção integral**. **Áudio não ouvido.**
+**Canal:** Scionaugh · **Vídeo:** https://www.youtube.com/watch?v=5eYJKwQFc70 · **Duração:** ~2:04 · **Escopo:** bateria/percussão e fundação · **Prioridade:** P2
+**Estudo:** consulta 29/10/2026 — varredura técnica por amostragem (~15% do texto lido; NÃO é dissecção integral; áudio não ouvido).
 
-## Técnica ensinada (o que a varredura pegou)
+## Técnicas-chave
 
-- **Sample rate:** CD 44,1 kHz; *"not all samples are made equally"* — sample sem conteúdo abaixo de 50 Hz
-  não produz sub; escolher tom considerando o espectro que se consegue ouvir/reproduzir.
-- **Hábito de track:** **EQ8 com low cut ~150 Hz + corte de agudo alto (18 kHz, pode baixar para 16) salvo
-  como DEFAULT preset** e Utility + EQ8 em toda track MIDI nova — o low cut de 150 Hz no default dele é o
-  hábito anti-lama em NÃO-graves.
-- **Sidechain (introdução):** compressor no baixo com sidechain do kick; para OUVIR o que está disparando,
-  ligar o EQ do sidechain e filtrar ~500–600 Hz — diágnóstico por escuta do trigger.
-- Warp/sync de samples, transposition em clip, sincronização de samples com o groove.
+- **Sample rate e espectro** — CD a 44,1 kHz; nem todo sample serve: um sample sem conteúdo abaixo de 50 Hz não produz sub — escolher o tom considerando o espectro que se consegue ouvir e reproduzir.
+- **Default de track nova** — EQ8 com low cut em ~150 Hz + corte do agudo alto (18 kHz, podendo baixar para 16) salvo como preset default, mais Utility + EQ8 em toda track MIDI nova: hábito anti-lama nos NÃO-graves.
+- **Sidechain auditivo** — compressor no baixo com sidechain do kick; para ouvir o que está disparando o compressor, ligar o EQ do sidechain e filtrar ~500–600 Hz: diagnóstico por escuta do trigger.
+- **Warp/sync de samples** — sincronização de samples com o groove e transposition direto no clip.
 
-## Aplicação prática
+## Notas de aplicação
 
-- O default dele (low cut 150 em track nova) explica por que orgânicos dele nunca emporcalham o grave — a
-  prática equivalente em psytech minimal é HP nos não-graves e low-end mono ≤120; o número 150 Hz é
-  referência para as pistas de TOPO de bateria.
-- Sidechain por escuta do trigger com EQ de sidechain = técnica de diagnóstico que serve para auditar o
-  sidechain dos subs (ouvir só o que dispara o compressor).
-
-## Limites de aplicação (o que NÃO copiar)
-
-- Low cut 150 Hz **NUNCA** em kick/sub/baixo/tom grave — cortar o fundamental do grave destrói o motor. O default
-  dele vale para não-graves.
-
-## Trechos de prova
-1. "put an EQ8 and on this on the band number one, put it to this… low cut and engage that at 150 Hz… 99% of
-   the time I drop an EQ onto something, it's going to be to cut the lows out."
-2. "we just engage this EQ and push that up to about 500 or 600." (EQ de sidechain para ouvir o trigger)
-
-## Limites
-Varredura amostral (~15% lido — a aula tem 18,8k palavras normalizadas); warping/estiramento detalhado não
-dissecado. Sem timestamps. Áudio não escutado.
-
+- O low cut de 150 Hz em track nova explica por que os orgânicos do autor não emporcalham o grave — referência para pistas de topo de bateria.
+- Sidechain com EQ no detector serve para auditar o sidechain dos subs: ouvir apenas o que dispara.
+- NUNCA copiar o low cut 150 Hz para kick/sub/baixo/tom grave — cortar o fundamental destrói o motor; o default vale só para não-graves.
 
 ---
 
-## tutoriais/fontes/6x1_XZDcI8I.md
+## pesquisas/tutoriais/fontes/6x1_XZDcI8I.md
 
 # How I Arranged Hypnotic Techno Track - Arrangement Breakdown
 
 **Canal:** Hypnotic Techno Production · **Vídeo:** https://www.youtube.com/watch?v=6x1_XZDcI8I
-**Fonte:** legenda automática em inglês (348 cues após dedupe). `temLegenda = true`.
-**Nota de leitura:** a legenda é automática; "high heads" = hi-hats, "aonal" = atonal, "cutff" = cutoff, "flounder/flander" = flanger, "Perks flash" = perc flash. Marcadores `[music]` foram removidos das citações; o texto das palavras é literal.
+**Fonte:** legenda automática EN (348 cues após dedupe). Breakdown de arranjo no Ableton Live (Arrangement View); único plugin externo citado: u-he Frequency Shifter.
 
-## Técnica ensinada (2-4 frases)
+## Técnicas-chave
 
-O arranjo é construído em camadas **frase a frase, sem trocar o groove**: a camada nova entra com uma **curva de volume** em vez de entrar "no tempo" — *"sometimes it's it's nice to add them a bit of like a curve, a volume curve"* [00:09:17], *"this way the sounds like blends uh rather than like starts"* [00:09:30]. O elemento central é um **drone com muitos LFOs**, no qual ele toca uma nota só e deixa o movimento vir da **filter automation gravada à mão** [00:06:42–00:07:09], somando 2–3 notas extra para criar dissonância em vez de harmonia [00:07:21–00:07:40]. A variação de energia vem de **trocar a sequência/instrumento mantendo a mesma grade rítmica** — *"we keep keep the groove going by but just swapping the instrument"* [00:18:35] — e de **contraste por subtração**: sobe cutoff + soma ruído para o clímax [00:11:50] e tira o agudo antes do drop, *"we need that contrast in highend. No highend"* [00:16:43–00:16:45]. Por fim, ele **remove camadas** que roubam atenção em vez de empilhar, porque o track vive em DJ set e precisa de espaço negativo [00:21:30–00:22:34].
+- **Camadas entram com curva de volume** — a camada nova ganha um fade de 1–2 compassos na entrada em vez de estampar no downbeat: o som mistura-se em vez de começar.
+- **Drone de 1 nota + filter automation à mão** — um drone com muitos LFOs toca uma nota só; o movimento vem de automação de filtro gravada durante o arranjo; 2–3 notas extras em intervalos dissonantes (G, D#, D, G#) criam tensão em vez de harmonia.
+- **Trocar o instrumento, manter a grade** — variação de energia trocando a sequência/instrumento sobre a mesma figura rítmica; o groove não se mexe, o timbre sim.
+- **Contraste por subtração antes do drop** — subir cutoff + somar ruído para o clímax e, nos últimos compassos, tirar o agudo inteiro (sem hi-hats): o impacto vem do que falta, não do que se soma.
+- **Efeitos por frase** — ride 909 com reverb passando por frequency shifter/flanger; splash de hat com feedback grande e perc flash de shaker, usados uma vez por frase.
+- **Remover o que rouba atenção** — em vez de empilhar camadas, automatizar para baixo o elemento que já cumpriu o papel; menos camadas = mais silêncio e mais dinâmica.
 
-## Ferramenta usada no vídeo (plugin/stock)
+## Notas de aplicação
 
-- **Ableton Live** (Arrangement View) — *"let's switch to Ableton and let's listen to the arrangement"* [00:00:29].
-- **u-he Frequency Shifter** (versão antiga) sobre um **ride 909 com reverb** — *"It's just a ride 909 ride with a bit of uh reverb on it. And I'm using the old edition of U frequency shifter"* [00:15:48–00:15:58]; ele mesmo pondera se o efeito é do frequency shifter ou de um flanger — *"or maybe flanger does it. Yeah, flounder does it"* [00:16:12–00:16:14].
-- **Filter automation de clip** (não é plugin) — *"not volume automation but filter automation which is again super rudimentary uh but it works"* [00:16:23–00:16:30].
-- Amostras: ride 909, hi-hats (camada "snappy" + camada de corpo) [00:08:31–00:08:37], shaker loop para o *perc flash* [00:20:30–00:20:32], ruído para o clímax [00:11:50].
-- **Nenhum** ANA 2, VELA, SideKick, Kick 3 ou Bitwig aparece ou é citado no vídeo. O único dependente externo é o u-he Frequency Shifter — conceito coberto nativamente pelo **Shifter** do Live 12.
-
-## Tradução para Live 12 nativo, Serum 2, Diva, Vital, Massive X, Surge XT e Kontakt 8
-
-O vídeo não depende de nenhum plugin que falte num arsenal típico de psytech. Tradução item a item:
-
-| O que o vídeo faz | Equivalente | Como |
-|---|---|---|
-| Drone de 1 nota com "a lot of LFOs" modulando o som [00:06:42] | **Serum 2** (2 LFOs → cutoff e posição de wavetable) ou **Diva/Vital**; **Kontakt Ethereal Earth** para o atmo por baixo | Nota longa, release alto; LFO lento/sincronizado no cutoff; gravar a automação de filtro como clip envelope no Live |
-| Filter automation gravada à mão + edições manuais no drone [00:06:54–00:07:06] | **Live 12 AutoFilter** (ou cutoff do Serum) com **clip envelope** desenhado/gravado | Automação de cutoff em 2–3 pontos por frase; nada de LFO no lugar da automação — o vídeo usa as duas coisas juntas |
-| Notas extras criando dissonância (G, D#, D, G#) [00:07:30] | Qualquer pad/drone (**Serum 2**, **Surge XT**, **Kontakt Ethereal Earth**) | Segurar 3–4 notas em intervalos de 2ª menor/3ª menor, sem resolver o acorde; transpôr para a tonalidade da track em produção |
-| Duas camadas de hi-hat (uma "snappy", uma de corpo) [00:08:22–00:08:37] | **Live 12 Simpler/Sampler** com dois one-shots; **AutoPan** para separar | Camada A curta/estalada, camada B mais escura com decay; mesma sequência nas duas |
-| Entrada de camada com curva de volume [00:09:17–00:09:33] | **Automação de volume de clip/track no Live** | Fade de 1–2 compassos subindo no ponto de entrada, em vez de nota "no downbeat" |
-| Ride 909 + reverb + frequency shifter/flanger [00:15:48–00:16:14] | **Live 12 Shifter** (modo Frequency Shifter) + **Echo** + **Hybrid Reverb** | Shifter com shift pequeno e LFO lento; Echo com filtro no feedback; reverb curto |
-| Trocar a sequência de instrumento mantendo o groove [00:17:43 / 00:18:35] | **Live 12**: mesmo clip MIDI roteado para outro instrumento (Simpler, Serum 2, Kontakt) | Duplicar o clip e trocar só o device; a grade rítmica fica intocada |
-| Efeitos por frase: hi-hat splash com feedback grande, perc flash de shaker loop [00:20:05–00:20:32] | **Live 12 Echo** (feedback alto + filtro) sobre 2–3 notas de hat; **Simpler** com trecho de shaker | Feedback ~60–70% com LP no caminho de feedback; usar uma vez por frase |
-| Contraste de agudo antes do drop [00:16:43–00:16:45] | **Automação de mute/filtro** (AutoFilter HP, ou mute da track de hats) | 1–2 compassos sem topo antes da subida/drop |
-| Ruído somado ao subir o cutoff para o clímax [00:11:50] | **Live 12 Grain** ou **Serum 2** (Noise/GranularOsc) + **Hybrid Reverb** | Ruído filtrado subindo junto com o cutoff; cortar no drop |
-| "Esconder" a camada que já tem automação própria [00:13:34–00:13:47] | **Automação de volume** na camada redundante | Abaixar o elemento antigo quando o novo já carrega o movimento |
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-Contexto de referência citado no levantamento original: um set de trabalho medido mostrou o meio carente (300–1.200 Hz e 1.200–4.000 Hz abaixo da média de 6 referências externas), low-end mono e groove com subdivisões deslocadas a preservar.
-
-Regra que atravessa tudo: o vídeo **não repete loops nem sequências** (*"I'm not repeating the same loops uh or the same sequences. You see, I'm playing with different sequences"* [00:15:23–00:15:27]) mas **mantém a grade** (*"I'm keeping the groove going. It's fairly the same"* [00:15:28–00:15:32]). Traduzido: **o groove deslocado não se mexe; muda só o timbre/sequência em cima dele**. Toda variação abaixo é automação ou troca de fonte — nenhuma acrescenta nota ao sub.
-
-| Função | O que o vídeo autoriza | Como aplicar | Cuidado (sub / brilho metálico) |
-|---|---|---|---|
-| **Kick** | O vídeo não trata kick. A técnica transferível é o contraste por subtração antes do drop [00:16:43] e a filter automation "rudimentar que funciona" [00:16:23]. | Antes da subida/drop: automar o **HP/mute do topo** (hats e perc) por 1–2 compassos. Não mexer no corpo do kick. | `INFERÊNCIA`: mexer no topo do kick aqui só cria pico em 1,2–4 kHz. Sub permanece mono e intocado. |
-| **Sub** | O vídeo não trata sub. O princípio aplicável é o de **remover** o que rouba atenção [00:21:30–00:21:53], não empilhar. | Manter **uma** fonte de sub. Se entrar drone/atmo, **high-pass em ~150–200 Hz** nele. | Não copiar a ideia de "duas camadas" para o grave: o vídeo só aplica duas camadas em hi-hat [00:08:22]. Low-end segue mono. |
-| **Baixo/rolling** | Trocar o instrumento sobre a **mesma** sequência [00:17:43 / 00:18:35]; variação de sequência usada **só naquele momento** [00:18:44–00:18:54]. | Duplicar o clip do rolling, manter as notas do groove idênticas e trocar só o device (Serum 2 → Diva, ou um take de Surge XT). Uma variação de sequência, uma vez, na virada de frase. | Troca de fonte muda o conteúdo harmônico — conferir que a fundamental não sobe para a faixa do sub. Sem saturação nova. |
-| **Hats/shaker** | **Duas camadas**: uma "really snappy" e uma de corpo [00:08:22–00:08:37]; entrar com **curva de volume**, não no downbeat [00:09:07–00:09:33]; efeito de splash por frase com feedback grande [00:20:05]. | Camada A curta e seca; camada B mais escura (decay maior). Entrada da camada B com fade de 1–2 compassos. Sequência alternativa por frase, mesma grade. Ride 909 + **Shifter** (modo Frequency Shifter, shift pequeno, LFO lento) + **Echo** com filtro no feedback. | Esta é a função de maior risco de **brilho metálico**: o frequency shifter gera conteúdo inarmônico. Shift pequeno, wet baixo, LP depois; o próprio autor reclama que os efeitos são *"kind of like harsh here and there"* [00:19:44] e que o ajuste seria para que *"they don't sound so splashy, so noisy"* [00:19:55]. |
-| **Percussão de resposta** | **Perc flash** feito a partir de um shaker loop [00:20:30–00:20:32]; efeitos "every kind of phrase" [00:19:23]. | Recortar 1 golpe de shaker, mandar em **Echo** com feedback alto e filtro no feedback; usar como resposta uma vez por frase, em volume baixo. | Feedback alto sem LP vira wash em 1,2–4 kHz — manter LP no loop de feedback. Não dobrar com o splash do hat no mesmo tempo. |
-| **Madeira** | Drone de nota única com LFOs + **filter automation** + notas extras dissonantes [00:06:42–00:07:40]; mantido 2–3 frases sem cansar *"because we have automation and we have the added notes"* [00:12:28–00:12:32]. | Uma nota longa de madeira (Kontakt Rubber Bridge / LOOP GARDEN, ou Serum 2) com LFO lento no filtro; automação de cutoff em 2–3 pontos; 2 notas extras em 2ª menor para tensão. | Notas extras só acima de ~200 Hz; se descerem para o sub, cortar. A dissonância é intencional, não é "acorde" a resolver. |
-| **Stab** | Trocar o instrumento na mesma sequência e usar aquela sequência **só ali** [00:18:35–00:18:54]. | Um stab com a mesma figura rítmica do groove, aparecendo uma vez por bloco; ao trocar de frase, troca o device em vez de somar um segundo stab. | Stab curto com LP; evitar camada de ruído junto (soma em 1,2–4 kHz). |
-| **Subida** | Subir o **cutoff** e **somar ruído** para criar intensidade, e então **tirar o agudo** (*"No highend"*) antes do drop [00:11:50 / 00:16:43–00:16:45]. | Riser = AutoFilter/Serum cutoff subindo + Grain/Noise entrando; nos 1–2 compassos anteriores ao drop, **mutar hats e perc** (contraste por ausência). | É a aplicação mais segura para um perfil escuro de médios: o drop ganha impacto **sem** adicionar brilho — o contraste é feito tirando, não pondo. |
-| **Atmosfera** | Miolo hipnótico com **só drone + atmo** [00:12:01–00:12:10]; variação por automação e notas extras; remover o som que rouba atenção [00:21:30–00:21:53]. | No trecho sem kick, deixar drone + atmo com automação de filtro e uma nota extra entrando por frase. Quando entrar o novo elemento rítmico, **abaixar** ("hide") a camada antiga [00:13:45]. | Atmo com HP em ~150–200 Hz. Nada de reverb longo no grave; reverb só no que já está acima da faixa do sub. |
-
-**Princípio de mix que o vídeo declara:** menos camadas = mais dinâmica — *"There is more dynamics, there is more um silent moment and filled moment"* [00:22:25–00:22:34], e tracks cheios de som *"wouldn't sound good"* [00:22:44–00:22:45]. Para um set com meio deficiente, isso indica: em vez de preencher 300–1.200 Hz e 1,2–4 kHz com camadas novas, o caminho do vídeo é **trocar** o que já está lá e criar silêncio antes do drop.
-
-## Prioridade e esforço
-
-Prioridade da frente: **média (P2)** — é breakdown de arranjo, não desenho de som do motor. Esforço: **baixo** — quase tudo é automação/roteamento no Live, sem sound design novo.
-
-| Item | Prioridade | Esforço | Justificativa |
-|---|---|---|---|
-| Contraste por subtração de agudo antes do drop [00:16:43] | **alta** | **baixo** | Uma automação de mute/filtro resolve; ataca exatamente o perfil escuro em 1,2–4 kHz sem somar brilho. |
-| Entradas de camada com curva de volume [00:09:07] | **alta** | **baixo** | Fade de 1–2 compassos no clip; muda a percepção de "blend" vs "start" sem tocar em timbre. |
-| Manter grade e trocar instrumento/sequência [00:18:35] | **alta** | **baixo** | Duplicar clip + trocar device; preserva o groove por construção. |
-| Duas camadas de hat + ride com Shifter/Echo [00:08:22 / 00:15:48] | **média** | **médio** | Exige escolher amostras e ajustar Shifter/Echo com cuidado para não gerar brilho metálico. |
-| Drone com filter automation + notas extras [00:06:42] | **média** | **médio** | Depende da frente de atmosfera; a automação é rápida, a escolha das notas dissonantes exige escuta. |
-| Efeitos por frase (splash, perc flash) [00:19:23–00:20:32] | **baixa** | **baixo** | O autor classifica os próprios efeitos como harsh/splashy [00:19:42]; risco alto de piorar o brilho. |
-| Remover camada redundante ("hide") [00:13:45 / 00:21:30] | **alta** | **baixo** | Só automatiza volume; é o que mais aproxima do "menos bateria, mais espaço" do minimalismo. |
-
-## Trechos de prova
-
-1. **[00:06:42]** — *"because there is a lot of LFOs going on that modulate this sound. I could play one note and just uh just just make it drone uh drawn with one note but um I have filter automation here that I recorded while I was doing the recording of this arrangement"*
-2. **[00:09:07]** — *"And what I did here was actually like to add layers, not the sometimes it it's nice that they start like bang on the new new beat, but sometimes it's it's nice to add them a bit of like a curve, a volume curve."*
-3. **[00:18:35]** — *"Yeah. So we keep keep the groove going by but just swapping the instrument. And this is one of the most effective way I always tell my students you can use that."*
-
+- Duas camadas de hi-hat (uma estalada, uma de corpo) com a mesma sequência; Auto Pan/Shifter só com desvio pequeno para não gerar metal.
+- O vídeo não trata kick/sub diretamente; o princípio aplicável ao grave é remover em vez de somar, e HP ~150–200 Hz em qualquer drone/atmo que acompanhe o baixo.
+- Prioridade das ideias para arranjo: contraste de agudo pré-drop e entradas com fade são as mais baratas; os efeitos por frase são os de maior risco de brilho.
 
 ---
 
-## tutoriais/fontes/90VpsmIaPuk.md
+## pesquisas/tutoriais/fontes/90VpsmIaPuk.md
 
 # How to Make Techno Ambient Drone Atmosphere
 
-**Canal:** Audioreakt · **Duração:** 23:28 · **Legenda:** automática em inglês (836 cues), obtida e lida na sessão original de dissecação.
-**Descrição (confirmatória):** "how to easily create drone ambience sound to put in the background… set the mood of you track and as well sometimes to glue together other element of your track and give cohesion." A descrição também lista **Padmaker Rack**, **Detune Fx Rack** e **Ultimate Fx Rack** como os racks usados.
+**Canal:** Audioreakt · **Vídeo:** https://www.youtube.com/watch?v=90VpsmIaPuk · **Duração:** 23:28
+**Fonte:** legenda automática EN (836 cues) + descrição oficial (racks do canal: Padmaker Rack, Detune Fx Rack, Ultimate Fx Rack).
+
+## Técnicas-chave
+
+- **Operator em parallel mode com 4 osciladores em múltiplos inteiros** — raiz, oitava acima, oitava + quinta e outro múltiplo, com volumes decrescentes; é a base harmônica do drone.
+- **Dois Operators em Instrument Rack com macros** — macros mapeadas para: pitch de cada Operator, shape de onda, coarse de todos os osciladores com faixas escalonadas 1/2/3/4 (o macro "space" abre a harmonia em degraus), volume dos harmônicos menos o A1, e detune com teto diferente por oscilador (14/3/26/34, sem passar de 40).
+- **Feedback de 50% modulado por LFO** — o movimento lento do timbre vem da síntese: o vídeo mostra o rack ainda sem efeito antes de aplicar filtro e a cadeia de delay/reverb.
+- **Filtro no fim + muito delay e reverb** — controlo da cauda pelos racks do canal (Padmaker/Detune Fx); no Live, Echo + Hybrid Reverb em retorno cobrem o mesmo papel.
+- **Cama em volume de fundo** — o drone serve para definir clima e preencher sem competir: volume baixo, contínuo, sem embolar com baixo e kick.
+
+## Notas de aplicação
+
+- Para perfil escuro, preferir shape sine/triangle e feedback moderado — square/saw + feedback alto cria brilho metálico.
+- HP ~90–160 Hz no drone e mono abaixo de ~120 Hz: o detune gera batimentos que viram wobble se descerem ao sub mono.
+- Macro "space" congelado (sem drift de pitch) enquanto um stab toca: desafinação contra a tônica soa errada, não hipnótica.
+- Nenhum plugin de terceiros: 100% Live/Operator + macros; os racks do autor são conveniência, não dependência.
 
 ---
 
-## Técnica ensinada (2-4 frases)
-
-O vídeo constrói um drone harmônico no **Operator em parallel mode**: quatro osciladores afinados em múltiplos inteiros — raiz, uma oitava acima, oitava + quinta e outro múltiplo — com volumes decrescentes (00:03:03–00:03:52). Depois duplica o Operator num rack e mapeia macros para **pitch de cada Operator, forma de onda (shape), coarse de todos os osciladores com faixas escalonadas 1/2/3/4 ("space"), volume de todos os harmônicos menos A1, detune com teto diferente por oscilador (14/3/26/34, sem passar de 40) e feedback a 50% modulado por LFO** (00:04:24–00:17:45). O movimento vem da síntese, não do efeito — ele mostra o rack "no effect yet" (00:10:27) antes de aplicar filtro e a cadeia de delay/reverb (00:14:25–00:14:50). O resultado é uma cama contínua que serve para "setting the mood or adding tension" (00:00:31.840), tocada em volume de fundo e que não deve embolar com baixo e kick (00:21:33).
-
----
-
-## Ferramenta usada no vídeo (plugin/stock)
-
-- **Ableton Live + Operator (stock)**, em **parallel mode**, com 4 osciladores e feedback por oscilador (00:03:03; 00:17:23).
-- **Instrument Rack + Macro Controls** (macros 4, 5, 6 e 7 citadas explicitamente: 00:05:27, 00:07:41, 00:10:59, 00:12:05).
-- **Spectrum** (stock) para visualizar os harmônicos que cada oscilador adiciona (00:03:15).
-- **Racks do próprio canal**: **Padmaker Rack** ("pile maker rack" na legenda automática, 00:14:48; nome correto confirmado na descrição) e **Detune Fx Rack** (00:19:44–00:19:52; descrição). A descrição lista ainda **Ultimate Fx Rack**.
-- **Nenhum sintetizador de terceiros.** O vídeo não usa ANA 2, VELA, SideKick, Kick 3 nem Bitwig.
-
----
-
-## Tradução para Serum 2, Diva, Vital, Massive X, Surge XT, Kontakt 8 e Live 12 nativo
-
-O vídeo usa **exatamente o Operator**, que já existe no Live 12 — a tradução é quase literal, não analógica. Nada no vídeo depende de ANA 2, VELA, SideKick, Kick 3 ou Bitwig (nenhum aparece), então não há conceito a substituir. O único item externo são os racks do autor, e o que eles fazem (delay + reverb longos; detune/width) existe nativo.
-
-| Elemento do vídeo | Equivalente |
-|---|---|
-| Operator em **parallel mode**, 4 osciladores (00:03:03) | **Operator (Live 12)** — mesmo device, mesmo modo. Alternativas: **Serum 2** (3 osciladores + sub, sem a mesma liberdade de ratio no sub → duas instâncias para 4 harmônicos independentes), **Diva** (3 osciladores, afinação por oscilador), **Vital** (3 osciladores), **Massive X**, **Surge XT**. |
-| Múltiplos inteiros: 1×, 2×, 3×, 4× (a legenda diz "one octave upper", "the fifth… plus seven", "go four", 00:03:22–00:03:52) | **Coarse** do Operator por oscilador. No Serum 2: `octave`/`semitone`/`fine` por oscilador; no Vital: semitone + fine; no Surge XT/Massive X: pitch por oscilador. A matemática 2× = +12, 3× = +19, 4× = +24 semitons é **INFERÊNCIA** (a legenda não nomeia o parâmetro; o próprio autor diz que "it's not like a multiplication… sometimes it's giving the fifth", 00:08:34). |
-| Dois Operators para deslocar um contra o outro (00:03:59; "so i'm still playing one note", 00:04:44) | **Instrument Rack com dois Operators** e macros do rack mapeadas nos parâmetros dos dois (o Live permite mapear uma macro a parâmetros de devices diferentes). |
-| Macro 4 = **shape** de todos os osciladores (00:05:27–00:05:44) | Waveform por oscilador do Operator, mapeada a uma macro. Serum 2: table position/warp; Vital: shape; Massive X: wavetable. |
-| Macro 5 = **coarse escalonado** (valores 1/2/3/4 mapeados um por oscilador, 00:08:04–00:08:11) | **Macro do Live com Min/Max independentes por parâmetro mapeado** — é isso que produz o escalonamento 1/2/3/4 → 2/3/4/5. No Serum 2: macro com `amount` diferente por rota. |
-| Macro 6 = **volume de todos menos A1** (00:10:56–00:10:59) | Níveis por oscilador do Operator. Serum 2: volume por oscilador; Vital/Massive X idem. |
-| Macro 7 = **detune** no fine de cada oscilador, com tetos 14/3/26/34 e limite 40 (00:12:14–00:12:53) | **Fine** por oscilador do Operator (mais o **Spread** global, que ele também mapeia ao detune, 00:13:47). Serum 2: `fine` por oscilador + unison detune; Vital: detune; largura extra com **AutoPan**. |
-| **Feedback 50% + LFO** no feedback do oscilador B (00:17:23–00:17:45) | **Feedback por oscilador do Operator**. O LFO pode ser o interno do Operator **se** a versão expuser Feedback como destino (não verificado na sessão original) ou, com segurança, um **LFO device mapeado ao parâmetro Feedback**; sem LFO, automação/envelope do parâmetro resolve. No Serum 2 esse mecanismo não existe igual — modular warp/FM ou ruído dá outra coisa, não o mesmo feedback. |
-| Filtro no fim "to have a bit more control" (00:14:25) | **Filter** do Operator ou **Auto Filter** no canal/rack. |
-| "A lot of delay and reverb" / Padmaker Rack (00:14:48) | **Echo + Hybrid Reverb** em send/retorno (ou em série dentro do rack). O Padmaker é só a receita dele; não é necessário. O **Detune Fx Rack** equivale a **Chorus-Ensemble / Shifter / AutoPan** nativos. |
-| Papel de Serum 2 GranularOsc, Grain/Simpler, Kontakt 8 etc. | Opcionais, **não** usados no vídeo: GranularOsc do Serum 2 ou **Grain** (gravando o drone e granulando) esfumaçam a cauda — textura, não afinação; Kontakt 8 (Ethereal Earth) pode servir de camada de fundo, mas isso já é composição, não a técnica ensinada. Simpler/Sampler não têm papel aqui: a fonte é síntese, não amostra. |
-
-**Conclusão de traduzibilidade:** sim, integralmente. A técnica é 100% Live/Operator + macro; os racks do autor são conveniência, não dependência.
-
----
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-Contexto de referência citado no levantamento original: um set de trabalho medido mostrou o meio carente (300–1.200 Hz e 1.200–4.000 Hz abaixo da média de 6 referências externas), low-end **mono** e groove com subdivisões deslocadas a preservar. Boas práticas de cama atmosférica: **HPF ~160 Hz no bus de FX/Atmos**, **notch ~320 Hz / ~1.2 kHz** na cama, e **corte de sub (<90 Hz)** num drone tonal âncora — há uma divergência real entre 90 Hz e 160 Hz nos trechos do levantamento; decidir por A/B no set. *(Valores de boa prática do estudo, não do vídeo.)*
-
-*Cuidados da coluna direita são **INFERÊNCIA** a partir do vídeo + boas práticas de psytech, não estão no vídeo.*
-
-| Função | O que aplicar (com base no vídeo) | Cuidado para não engordar sub nem criar brilho metálico |
-|---|---|---|
-| **Kick** | Nada do vídeo é dirigido ao kick. O drone deve ficar **contínuo e estável**, como ele descreve ("more like a steady drone", 00:21:06). | **Não** sidechainar o drone ao kick: ducking por kick cria pulso rítmico que o vídeo não tem e pode competir com o groove. Se mascarar, abaixe pelo macro de volume (00:10:56) ou por automação de arranjo. O próprio autor avisa para não embolar com baixo e kick (00:21:33). |
-| **Sub** | Intocado. O vídeo não trata sub; o drone é harmônico e contínuo. | HPF no drone (90–160 Hz, ver acima). Abaixo de 120 Hz, **mono**. O detune do vídeo gera batimento: se sobrar energia grave, o batimento vira wobble contra o sub mono. |
-| **Baixo/rolling** | Não coberto. A regra útil é de arranjo: o drone fica **fora do registro do rolling**. | Preservar o groove — **não** sincronizar o LFO do feedback ao grid (o vídeo usa LFO livre) e não aplicar delay rítmico no drone. Se houver máscara em 200–400 Hz, automação de volume no drone em vez de EQ cirúrgico no rolling. |
-| **Hats/shaker** | Não coberto. O macro de shape (00:05:27) permite escolher sine/triangle em vez de square/saw quando o topo está ocupado (00:06:10–00:06:36). | É aqui que o shape square/saw + feedback alto criam **brilho metálico**. Para perfil escuro, preferir triangle/sine, feedback moderado e low-pass no topo do drone. Não usar o drone para "levantar" 1.2–4 kHz: o déficit se corrige com presença tonal (harmônicos de 300–1.200), não com aspereza. |
-| **Percussão de resposta** | Não coberto. O princípio transferível é o drone como **fundo que não reage** a cada golpe. | Manter o drone estático durante a resposta; nada de reverb throw nem abertura de filtro no drone nesses tempos. Transiente de resposta tem de passar limpo. |
-| **Madeira** | Não coberto, mas o miolo harmônico do drone (raiz + oitava + quinta, 00:03:22–00:03:42) ocupa a mesma faixa do corpo de madeira (300–1.200 Hz). | Usar o notch de ~320 Hz e **alternar** drone/madeira no arranjo (ou dip de 1–2 dB no drone quando a madeira entra). Empilhar os dois "para engordar" mascara a madeira e não resolve o vale de médios. |
-| **Stab** | Não coberto. O drone é tonal; o vídeo o mantém em uma nota e move por macro. | Congelar o macro "space" (coarse) enquanto o stab toca — drift de pitch contra a tônica soa desafinado, não hipnótico. Detune pequeno no drone; nada de detune grande no momento do stab. |
-| **Subida** | A mecânica de macro (space, shape, feedback) serve de **automação lenta** de textura (00:22:00–00:22:05 lista filter/LFO/feedback/pitch envelope como formas de variar). | Preferir **abertura de filtro** a subir pitch: subir o coarse leva o drone para registro agudo e metálico. Automação em 4–8 compassos, sem repique (riser de corte rítmico é vetado em boas práticas de psytech). |
-| **Atmosfera** | **Alvo principal.** Operator parallel com 3–4 osciladores em ratios inteiros, macros de shape/detune/volume, feedback ~50% com LFO lento, filtro e **muito delay + reverb** (00:14:48). Volume de fundo, "they are not like in the front" (00:01:34–00:01:42). | Largura estéreo **só acima do HPF**; abaixo de 120 Hz mono. Reverb/delay em **send**, não 100% wet em série (a cauda longa ainda come o miolo). Notch ~1.2 kHz na cama atmosférica. |
-
-**Receita mínima (INFERÊNCIA de aplicação, não está no vídeo):** começar com **um** Operator (não dois) em parallel, osciladores em 1×/2×/3× sobre a tônica da track (0/+12/+19), volumes decrescentes como no vídeo; uma macro de shape, uma de detune (tetos pequenos: 3–8, bem abaixo dos 26/34 dele, para não virar coro metálico) e uma de volume dos harmônicos. Entrar no início do arranjo em volume de fundo e abrir a macro de volume ao longo dos primeiros 8–16 compassos; o LFO de feedback fica livre e lento. Só depois avaliar o segundo Operator para o batimento entre camadas. Como teto de referência, um levantamento anterior fixou **0.35 (−9 dB)** para a cama de atmosfera durante solos — usar como referência, não como valor obrigatório.
-
----
-
-## Prioridade e esforço
-
-**Prioridade: alta (P1).** É a frente de **textura-atmosfera**: ataca o miolo medido como carente (300–1.200 e 1.200–4.000 Hz) com material **tonal** em vez de brilho, e o tipo de projeto psytech minimal já tende a ter um slot documentado de drone tonal âncora.
-
-**Esforço: médio.** Um Operator com 3 osciladores + macros de shape/detune/volume é uma sessão curta (baixo). O que puxa para médio é o **mapeamento escalonado** do macro "space" (cada parâmetro com Min/Max próprio), o segundo Operator e o A/B de registro/EQ contra o sub mono e o groove deslocado. Não exige plugin novo nem download de rack.
-
----
-
-## Trechos de prova: 3 citações literais da legenda com timestamp
-
-1. **00:03:03.200–00:03:06.550** — "basically the idea was many so you get operator and i put in parallel mode"
-2. **00:08:06.560–00:08:09.029** — "starting at one second one starting at two third one starting at three" *(o quarto valor completa no cue seguinte, literal: "and fourth one starting at four and this way now", 00:08:11.840–00:08:12.710)*
-3. **00:12:39.120–00:12:41.670** — "i like to don't go more than 40. so basically what i will do is i"
-
-*(Citações literais da legenda automática; erros de transcrição foram preservados de propósito. Outras passagens usadas no corpo: "destination b oscillator feedback i put it insane" (00:17:41.919–00:17:45.190); "you get this nice evolving bad kind of sound" (00:18:08.320–00:18:12.710); "but obviously you don't want you don't to be too sexy and to me mix up with you" (00:21:33.919–00:21:36.950) + "baseline and kick" (00:21:41.200); "there is no effect yet" (00:10:27.040).)*
-
-**Limites desta dissecação:** a sessão original não abriu Live nem testou parâmetros. A lista de destinos do LFO interno do Operator não foi verificada (o manual não abriu: HTTP 404); por isso a tradução oferece o caminho seguro (LFO device/automação mapeado ao Feedback).
-
-
----
-
-## tutoriais/fontes/9jkbBQW11qA.md
+## pesquisas/tutoriais/fontes/9jkbBQW11qA.md
 
 # Understanding Reverb — fundamentos e controles
 
-> **Fonte:** [Sonic Academy — Understanding Reverb](https://www.youtube.com/watch?v=9jkbBQW11qA), publicado em 05/11/2021, duração 13:51. Consulta em 27/10/2026. Legenda automática em inglês obtida e lida na sessão original. Legendas podem transcrever termos incorretamente; não substituem a escuta ou a leitura da interface.
->
-> **Escopo:** a descrição do próprio vídeo anuncia um curso de nove vídeos e aponta para [Understanding Reverb, Graham Ginty e Protoculture](https://www.sonicacademy.com/courses/understanding-reverb-graham-ginty-protoculture). A página do curso retornou HTTP 403 na consulta original. O link fornecido não contém identificador de playlist. **NÃO VERIFICADO:** relação completa de aulas, acesso e conteúdo das outras oito; este mapa cobre apenas o vídeo indicado.
+**Fonte:** Sonic Academy — Understanding Reverb · **Vídeo:** https://www.youtube.com/watch?v=9jkbBQW11qA · **Duração:** 13:51 · **Publicado:** 05/11/2021 · **Consulta:** 27/10/2026 (legenda automática EN).
+**Escopo:** vídeo único de um curso de nove partes; relação completa das demais aulas NÃO VERIFICADA (página do curso retornou HTTP 403).
 
-## O que a aula ensina
+## Técnicas-chave
 
-Reverberação é o conjunto de reflexões que chegam depois do som direto; a absorção das superfícies altera sua duração e seu espectro (00:22–00:56). A aula apresenta room/hall, chamber, plate e spring; a seguir, distingue algoritmos que simulam espaços e convolução, que usa uma resposta ao impulso — registro da resposta acústica de um espaço ou outra fonte (01:10–05:22). Ela cita o Hybrid Reverb do Ableton como exemplo capaz de combinar convolução e algoritmo (05:15–05:22).
+- **O que é reverberação** — reflexões que chegam depois do som direto; a absorção das superfícies define duração e espectro. Tipos: room/hall, chamber, plate, spring; algoritmo simula o espaço, convolução usa resposta ao impulso (o Hybrid Reverb do Ableton combina os dois).
+- **Dry/wet e return** — em retorno, reverb 100% wet dosado nos sends; um retorno único compartilhado pode unificar os sons da mix.
+- **Decay e early/late reflections** — espaços maiores tendem a caudas maiores; as reflexões iniciais dão a sensação de sala, as tardias formam a cauda difusa.
+- **Diffusion/density e pre-delay** — menos difusão deixa ecos distinguíveis, mais difusão suaviza; pre-delay separa o ataque da cauda e aumenta clareza (o Reverb do Ableton chama o controle equivalente de Density; nomes variam por plugin).
+- **EQ e room size** — EQ modela as frequências da cauda (priorizar no retorno para não tocar no corpo seco); tamanho virtual e decay podem ser ajustados separadamente no Reverb do Live.
+- **Modulação** — movimento sutil na cauda, efeito semelhante a chorus; comparar ligada e desligada.
 
-| Controle ou técnica | Evidência da aula | Nota de experimentação (não receita pronta) |
-|---|---|---|
-| Dry/wet e return | Em return, usar reverb 100% wet e dosar nos sends; um retorno compartilhado pode unificar os sons (06:29–06:46). | Preservar o sinal seco na pista e dosar o retorno. Um retorno único é uma escolha possível; não é a única (retornos distintos por tipo de cauda também são prática comum). |
-| Decay | Tempo para a reverberação desaparecer; espaços maiores tendem a caudas maiores, dependendo da absorção (07:09–07:36). | Comparar caudas curtas e longas no contexto do groove; verificar se a cauda preenche pausas que deveriam respirar. |
-| Early e late reflections | Reflexões iniciais ajudam a perceber o espaço; as tardias formam a cauda mais difusa (07:42–08:12). | Comparar sensação de sala com e sem cauda pronunciada; a aula não determina valores. |
-| Diffusion/density | Menor difusão deixa ecos mais distinguíveis; maior difusão suaviza as reflexões (08:53–09:15). A aula alerta que nomes dos controles variam e chama `Density` o controle equivalente no Reverb do Ableton (09:32–09:45). | Conferir o device e a versão antes de equiparar parâmetros; não inferir que o controle homônimo de outro plugin seja idêntico. |
-| Pre-delay | Intervalo entre som original e efeito; pode separar o ataque da cauda e aumentar clareza (09:52–10:00). | A/B com e sem separação audível, sem assumir um valor universal; demais parâmetros constantes. |
-| EQ da reverb | Modela frequências do efeito (11:06–11:14). | Priorizar EQ da cauda no retorno para não alterar o corpo seco; frequências específicas dependem de contexto e teste. |
-| Room size e decay | O tamanho virtual afeta o intervalo entre reflexões; alguns plugins o ligam ao decay. Na demonstração, o Reverb do Ableton permite ajustá-los separadamente (11:43–12:26). | Testar tamanho e duração separadamente se o device concreto permitir; conferir a interface real. |
-| Modulação | Introduz movimento e pode suavizar ou adensar a cauda, frequentemente com efeito semelhante a chorus (13:00–13:09). | Comparar desligada e sutil na cauda; largura e compatibilidade mono não foram medidas nesta aula. |
+## Limites
 
-## Hipótese de aplicação e limites
-
-**HIPÓTESE:** para manter um motor minimalista definido e explorar sala em madeira ou resposta, um retorno paralelo dosado com comparação de pre-delay e decay pode ser um experimento útil. Não é decisão estética, alteração de Set ou recomendação de valor fixo. Fontes acústicas conservam o dry em primeiro plano (wet ≤25% ou paralelo); low-end permanece mono. A avaliação deve ocorrer na música inteira e com volume percebido equivalente.
-
-**NÃO VERIFICADO:** escuta direta do vídeo ou de seus exemplos, interface visual e parâmetros demonstrados, efeito em sets concretos, estado de returns, compatibilidade mono e aprovação auditiva de quem escuta. Nada foi aplicado a Live. A duração e os timestamps vêm dos metadados e da legenda; demonstrações sem fala não foram interpretadas.
-
-## Prova de extração (sessão original)
-
-- `yt-dlp --skip-download --no-playlist --print '%(title)s | %(channel)s | %(channel_url)s | %(duration_string)s | %(playlist_url)s' URL` → `Understanding Reverb | Sonic Academy | ... | 13:51 | NA`.
-- `yt-dlp --skip-download --write-auto-subs --sub-langs en-orig --sub-format vtt ... URL` → `Downloading subtitles: en-orig` (legenda gravada e lida).
-- Página oficial do curso: consulta direta retornou `HTTP 403 Forbidden`; não há prova de acesso às demais aulas.
-
+- Nenhum valor de ms/dB é dado como receita; tudo é demonstração por escuta.
+- Escuta direta do vídeo não foi feita; a leitura é da legenda automática.
 
 ---
 
-## tutoriais/fontes/A6XjjwGUkA8.md
+## pesquisas/tutoriais/fontes/A6XjjwGUkA8.md
 
 # Essential Noises - Create A Raw / Hypnotic Techno Groove With Noise Samples
 
-> id `A6XjjwGUkA8` · SINEE Global · 6:01 (361 s) · frente da curva **groove** · prioridade de curva **P1**.
-> Legenda automática EN obtida e lida na sessão original (176 cues). **temLegenda=true**. Automação de fala com
-> vários erros de ASR — as correções estão listadas no fim e nenhuma afirmação abaixo depende de palavra
-> corrigida. Descrição oficial lida (usada só para identificar o pack e a cadeia de origem):
-> *"Today we`re gonna look at a track structure that was entirely created with our newly released sample pack -
-> Essential Noises!"* · *"Eurorack: Noise Plethora, Rossum Electro-Music Evolution, ADDAC 603 VC Triple Bandpass
-> Filter, ... Basimilus Iteritas Alter"* · *"Outboard: Culture Vulture, Mackie1604, Tegeler Creme, SSL Fusion,
-> Dangerous Music Bax Eq, Dangerous Music Convert AD"* · *"Pack contains 359 One Shots & Loops"*.
->
-> **Escopo real do vídeo:** é um **demo de pack**, não uma aula de groove. Ele abre um projeto pronto e passa por
-> **6 trilhas** uma a uma, dando ~1 frase de decisão por trilha. O projeto inteiro usa **só amostras do pack +
-> efeitos do Ableton**, com duas exceções declaradas: *"except the kick drum and Rumble which is just a regular good
-> old 909 kick"* (00:48.480–00:54.359) e *"this track is made only with samples from the pack and some a button
-> effects"* (00:42.480–00:48.470; "a button" = *Ableton* na legenda automática). Não há valores numéricos além de
-> **1K** e **800 HZ**; taxa/profundidade de LFO, Q, ratio, tempo de delay e rate do phaser **não são ditos**.
+**Canal:** SINEE Global · **Vídeo:** https://www.youtube.com/watch?v=A6XjjwGUkA8 · **Duração:** 6:01 · **Frente:** groove · **Prioridade:** P1
+**Fonte:** legenda automática EN (176 cues) + descrição oficial. É um demo de pack (Essential Noises, 359 one-shots/loops), não uma aula: 6 trilhas abertas uma a uma, ~1 decisão por trilha.
 
-## Técnica ensinada (2-4 frases)
+## Técnicas-chave
 
-O groove é montado com **frações mínimas de amostras de ruído**, não com texturas inteiras: a trilha de textura usa
-"a small snippet" e é mantida **sem EQ**, porque ele queria "the complete frequency spectrum of this one"
-(01:24.600–01:43.749); e o hi-hat fechado é literalmente "just a little click from the very beginning of the sample"
-(04:29.680–04:35.479). Onde a amostra traz grave indesejado, ele **corta tudo até 1 kHz** e devolve corpo com
-**Corpus em modo tube** — o grave sai, a ressonância volta no médio (02:46.599–02:58.750). A variação que impede o
-loop de soar copiado vem de **LFO mapeado no attack (e no decay) do sampler**: "the LFO really gives us a nice variety
-on the attack phase" (04:15.639–04:21.880). O resto do caráter é stock e barato — **Auto Filter com pico ressonante
-em ~800 Hz**, Echo, Amp e Phaser (03:47.159–04:15.639), delay com **corte de graves** (04:40.440–04:47.550) e
-**Glue Compressor mapeado no kick** (02:19.640–02:26.250) para o ruído ceder lugar ao bumbo.
+- **Frações mínimas de amostras de ruído** — a trilha de textura usa um recorte pequeno e fica sem EQ de propósito (espectro completo); o hat fechado é literalmente o clique dos primeiros milissegundos de uma amostra.
+- **Cortar até 1 kHz e devolver corpo com Corpus tube** — onde a amostra trazia sub indesejado, tudo abaixo de 1 kHz sai e um Corpus (ressonador físico do Live) em modo tube devolve a ressonância no médio.
+- **LFO mapeado no attack (e decay) do sampler** — variação por nota: cada hit entra com ataque diferente, sem automação desenhada; é a operação central do vídeo.
+- **Auto Filter com pico ressonante em ~800 Hz + Echo + Amp + Phaser** — o pico ressonante dá caráter oco/madeira à percussão; o Amp dá bite; o Phaser é o adorno final.
+- **Delay só no hat aberto, com corte de graves; Glue Compressor duckado pelo kick** — o eco não desce ao sub e o ruído cede lugar ao bumbo.
+- **Origem das amostras (descrição)** — Eurorack (Noise Plethora, Rossum Evolution, ADDAC 603, Basimilus Iteritas Alter) processado em outboard (Culture Vulture, Mackie 1604, Tegeler Creme, SSL Fusion, Dangerous Bax EQ); kick = 909 comum.
 
-## Ferramenta usada no vídeo (plugin/stock)
+## Notas de aplicação
 
-| Device | Papel no vídeo | Prova (legenda literal) |
-|---|---|---|
-| **Sampler da track** (device **não nomeado** no vídeo) | Toca um recorte curto da amostra; **Attack e Decay mapeados num LFO**; "hidden menu" com a *attack phase* | "I m the attack and Decay to this LFO here this is the Decay and then in this little hidden menu the attack phase" (02:06.759–02:19.630) |
-| **Corpus** (resonador do Live) — `INFERÊNCIA` pelo ASR "corpus" + "tube mode" | Depois de cortar tudo até 1 kHz, devolve ressonância física; mudança "subtle" que ele manteve | "I filtered everything out up until 1K and then I put a corpus on the track in tube mode" (02:49.360–02:58.760) |
-| **Auto Filter** (ASR "autof filter") | Pico ressonante **em torno de 800 Hz** na percussão | "an autof filter with the frequency around 800 HZ and quite a resonant Peak" (03:47.159–03:54.200) |
-| **Echo** | Espaço na percussão | "some Echo" (03:54.200–03:56.639) |
-| **Amp** | "bite" — saturação/drive de amp no sampler | "an amp and of course a a phaser" (03:56.640–04:00.159); "just to give a little bit more bite" (02:30.640–02:32.640) |
-| **Phaser** | "extra ear candy" na percussão | "a phaser for extra ear candy" (03:59.200–04:15.639) |
-| **Delay** | Só no hi-hat aberto, **com corte de graves** | "just routed it to a little bit of delay and acute out the low end" (04:40.440–04:47.550) |
-| **Glue Compressor** | **Mapeado no kick** — ducking do ruído contra o bumbo | "of course a glue compressor mapped to the kick" (02:19.640–02:22.360) |
-| **Essential Noises** (sample pack, 359 one-shots/loops) | Fonte de todas as amostras; nasce de Noise Plethora + Rossum Evolution + ADDAC 603 + Desmodus Versio + Basimilus Iteritas Alter, processado em Culture Vulture / Mackie 1604 / Tegeler Creme / SSL Fusion / Dangerous Bax / Convert AD | Descrição oficial lida; **não** aparece na fala |
-
-**Nenhum plugin de terceiros é mencionado.** O vídeo **não cita** ANA 2, VELA, SideKick, Kick 3 nem Bitwig — não há
-dependência dessas ferramentas e nada precisa de equivalente. A dependência real é de **conteúdo**: o pack pago.
-Isso não sobrevive à tradução e precisa ser substituído (ver seção seguinte).
-
-## Rotas equivalentes sem o pack: Serum 2, Diva, Vital, Massive X, Surge XT, Kontakt 8 e Live 12 nativo
-
-O vídeo depende de **dois** insumos: amostras de ruído e devices stock do Live. Sem o pack, a técnica sobrevive
-porque ela é sobre **cortar, filtrar e modular ruído**, não sobre as amostras específicas. Rota: gerar/renderizar
-um banco próprio de one-shots de ruído e processá-los com o que já existe.
-
-| Etapa no vídeo (timestamp) | Rota exata | Alternativa | Observação |
-|---|---|---|---|
-| Recorte curto de uma amostra de ruído (01:24.600; 03:30.799) | **Simpler**: importar o one-shot, `Slicing/Trim` no primeiro 5–20 ms para o clique de hat; recorte maior (100–400 ms) para percussão | **Serum 2**: slot **Noise** (índice 3, `noise_type` White/Pink/Brown/Geiger) renderizado a áudio e reimportado; ou `sample_playback_source` (SampleOsc) com `sample_loop='off'` para one-shot | Fonte de ruído crua não falta: Serum 2, Vital e Surge XT têm oscilador de ruído; o custo é **curar** os recortes |
-| LFO → **Attack/Decay** do envelope (02:06.759–02:19.630; 03:34.640–03:39.000) | **Serum 2**: `mod_routes` com `source='lfo0'` e `destination='env0.attack'` / `'env0.decay'` — o schema do gerador lista *envelope attack/decay/sustain/release* como destinos válidos de modulação | **Sampler** do Live (LFO com destino em envelope auxiliar — **confirmar o destino na UI, NÃO VERIFICADO na sessão original**); ou gerar 3–4 takes com ataques diferentes e alternar por velocity | É a operação mais importante do vídeo e a única que **não** é automação de clip: a variação acontece **por nota**, sem desenhar nada |
-| Cortar tudo até 1 kHz (02:49.360) | **Auto Filter** high-pass em ~1 kHz, ou **EQ Eight** HP; no Serum 2: `filters` `highpass_24` com `cutoff` equivalente, ou `warp_mode='filter_hpf'` | Vital/Surge XT/Massive X: HP interno; Kontakt 8: filtro do instrumento | O vídeo diz **1K** para uma fonte que tinha muito sub. Referência de piso em psytech minimal: **≥300 Hz** (textura) e **≥1 kHz** (hats/percussão) |
-| Corpus **tube mode** (02:53.400–02:58.760) | **Corpus** (Live, stock) em modo Tube, ressonador afinado na tônica/graça da track (ex.: C#/G#/F#) | **Serum 2**: `filter type='comb'` com `var` ajustado (ressonância física), ou `warp_mode='filter_lpf'` com ressonância alta; **Surge XT**: comb filter | Corpus aparece em receitas de "pad metálico de madeira". Afinar a ressonância evita que o pico caia entre notas |
-| Auto Filter com pico ~800 Hz e Q alto (03:47.159–03:54.200) | **Auto Filter** band-pass, Frequency ~800 Hz, Resonance moderada | **Serum 2** `bandpass_12/24` + `resonance`; **Vital** band-pass | 800 Hz cai dentro do vale típico de médios (300–1.200 Hz) que o set de referência mede carente |
-| Echo + Amp + Phaser (03:54.200–04:15.639) | **Echo** (delay com filtro), **Amp** ou **Drive** do Auto Filter / `warp_mode='soft_clip'` no Serum 2, **Phaser** do Live | Vital/Surge XT phaser; Shifter do Live (mais extremo) | Phaser é o device de maior risco de brilho metálico — usar raso e lento |
-| Delay com corte de graves (04:40.440–04:47.550) | **Delay** do Live com **Low Cut** alto, ou **Echo** com filtro HP no retorno | Qualquer delay com filtro no feedback | O corte de graves no delay é o gesto que impede o eco de engordar o sub |
-| Glue Compressor **mapeado no kick** (02:19.640–02:22.360) | **Compressor** do Live com **sidechain** recebendo o canal do kick (o Glue Compressor do Live **não** tem entrada de sidechain externa — `INFERÊNCIA`, não verificado na UI na sessão original) | Ducking por envelope/volume shaper disparado pelo kick; no Serum 2 não há sidechain externo | O que importa é a **função**: o ruído abaixa quando o bumbo bate. É o que protege a pressão do sub |
-| "Click" do início da amostra como hat fechado (04:29.680–04:35.479) | **Simpler** com início no primeiro sample e `Length`/`Sustain` em ~5–15 ms; sem loop | **Serum 2** SampleOsc com envelope `decay` de 10–30 ms | É o truque mais barato do vídeo: um clique já existe dentro de qualquer amostra de ruído |
-| Trilha "FX / four bar thing" mais molhada que o original (04:47.560–05:01.590) | **Echo/Hybrid Reverb** em retorno, disparado a cada 4 compassos (16 beats @128 = 7,5 s) | Qualquer reverb/delay em send | O vídeo não diz qual efeito nem o wet; sabe-se só que o original era "a lot more more dry than this" |
-
-**Ressalva de honestidade sobre os devices:** Corpus, Auto Filter, Phaser, Glue Compressor, Compressor, Delay e Amp
-são **stock do Live 12** (Suite), mas não estavam na lista explícita de arsenal do levantamento original.
-**NÃO VERIFICADO na sessão original.**
-
-**Ressalva sobre o sampler:** o vídeo **nunca nomeia** o device que toca as amostras. Ele só diz "the track" e
-"this little hidden menu". Toda atribuição a Simpler/Sampler é do estudo, marcada `INFERÊNCIA`.
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-Contexto de referência citado no levantamento original: um set de trabalho medido mostrou o meio carente
-(300–1.200 Hz e 1.200–4.000 Hz abaixo da média de 6 referências externas), low-end **mono**, groove com
-subdivisões deslocadas (~+9,4 ms de deslocamento intencional) e **densidade de onsets já acima do teto interno**
-(7,57 contra 6,99 picos/s). Consequência dura: **o ruído entra substituindo eventos, não somando**.
-
-Aritmética útil do grid (a 128 BPM um beat = 468,75 ms; um deslocamento de 0,25→0,27 é +9,4 ms) — dentro da faixa
-segura de 5–20 ms e **abaixo** do limiar de percepção típico para hats (~19–24 ms). Qualquer ataque mais lento
-que isso empurra o onset percebido para perto do limiar e **desmancha a intenção** do groove.
-
-| Função | Usar? | Como aplicar | Cuidado |
-|---|---|---|---|
-| **Kick** | Não | O kick continua sendo o 909 + filtro do projeto; nada de ruído nele. Só a **função** do "glue compressor mapped to the kick" se aproveita: as trilhas de ruído são **duckadas pelo kick** | Não colocar o pico ressonante de 800 Hz no kick — ele já carrega o corpo |
-| **Sub** | **Nunca** | Todo one-shot de ruído entra com **HP ≥120 Hz** (ideal 1 kHz em hats/perc); nenhum ruído vai para o canal de sub | O vídeo mostra o risco na prática: a amostra "tonal high" tinha *"a lot of sub stuff going on I didn't want that"* (02:43.879–02:49.350). O pack é processado por Culture Vulture/SSL — pode trazer grave escondido. Auditar cada recorte antes de entrar |
-| **Baixo/rolling** | Não | Não somar ruído ao rolling; se precisar de "tick", ele é camada separada, HP ≥1 kHz, ducked pelo kick | Ruído de banda larga mascara o groove deslocado do rolling, que é a assinatura do motor |
-| **Hats/shaker** | **Sim — uso primário** | (a) Clique do início da amostra = hat fechado; (b) outra fração = hat aberto; (c) delay **com low cut** só no aberto; (d) Auto Filter ~800 Hz + Q moderado para o hat soar **oco/madeira**, não metálico | Limitar o topo: **LP ~7–8 kHz** no hat de ruído. Se o set de referência já está acima da régua de presença (2–4 kHz), o buraco é de **ar** (8 kHz+), não de 2–4 kHz; subir 2–4 kHz piora o índice |
-| **Percussão de resposta** | **Sim — o melhor encaixe** | Recorte de 100–400 ms + **LFO no attack/decay** para cada resposta entrar diferente. Posicionar no **último 16º antes do pulso** e nos vácuos de sub | A variação de attack **não pode** cair na camada que carrega o microdeslocamento do groove — ali o ataque deve ser idêntico nota a nota. Densidade: **substituir** um evento existente, nunca somar |
-| **Madeira** | Parcial | Corpus tube afinado na tônica por baixo de uma madeira já existente, para "resina" no médio | A madeira vem do Kontakt 8; o ruído é **verniz**, não substituto. HP ≥300 Hz |
-| **Stab** | Não | O stab mantém o ataque e a afinação; phaser nele borra o fundamental | Phaser é efeito de **percussão de ruído**, não de stab |
-| **Subida** | Não ensinado | O vídeo não tem riser nem build; o LFO-no-attack poderia fazer uma textura "respirar", mas isso é extensão do estudo | Não atribuir ao vídeo |
-| **Atmosfera** | Parcial, com correção obrigatória | A trilha "texture" é a única que ele deixa **sem EQ** — e é o gesto certo **só acima do piso**: HP 120–300 Hz e o resto intacto | Não copiar o "sem EQ" literalmente: boa prática manda HP 120–300 Hz em atmosfera. O que se preserva é o **espectro completo acima de 300 Hz**, não o grave |
-
-### Onde encaixar
-
-- **Hats**: manter os eventos do groove existente e apenas **trocar o timbre** pelo clique de ruído. Não
-  acrescentar um hat novo no mesmo 16º — a densidade já está no teto.
-- **Percussão de resposta**: último 16º do compasso e nos vácuos de sub — uma resposta seca por vácuo.
-- **Textura**: contínua, mas entra em pontos de arranjo (fim de frases/fronteiras); não precisa de grid, precisa
-  de HP.
-- **Ruído "four bar"**: a cada 4 compassos = **7,5 s** a 128 BPM; um evento por ciclo, em send, para não sujar o
-  groove.
-
-### Regras para não engordar o sub nem criar brilho metálico
-
-1. **HP antes de qualquer coisa.** O primeiro gesto do vídeo é cortar o grave até 1 kHz. Todo one-shot de ruído
-   passa por HP (120 Hz mínimo; 300 Hz textura; 1 kHz hats/percussão) **antes** de entrar no motor.
-2. **Nada de ruído branco no topo.** White noise + Q alto + phaser é a receita clássica de brilho metálico. Para
-   perfil escuro: **pink/brown**, Q moderado, **LP 7–8 kHz**, phaser raso e lento.
-3. **Mirar o vale certo:** o pico ressonante deve morar em **700–900 Hz** (dentro do vale de 300–1.200 Hz). Não
-   estacionar em 2–4 kHz, que já tende a estar acima da régua de presença.
-4. **Deixar o 1,2–4 kHz vir do timbre, não do nível.** A ressonância em 800 Hz e o Corpus tube geram harmônicos
-   que preenchem a banda sem subir fader — e sem criar pico metálico.
-5. **Mono abaixo de 120 Hz.** Ruído é estéreo por natureza: width só acima de ~300 Hz; conferir a soma mono. O
-   low-end não se negocia.
-6. **Ataque idêntico onde há microdeslocamento.** LFO no attack só na resposta e no hat; nunca na camada que
-   define o deslocamento do groove. O deslocamento de ~9,4 ms é a assinatura; um ataque mais lento o apaga.
-7. **Substituir, não somar.** Se a densidade de transientes já estiver no teto, cada ruído novo remove um evento
-   velho.
-
-## Prioridade e esforço
-
-**Prioridade: média** (a curva marca **P1**; a leitura abaixo explica por que não sobe para alta). O conceito é
-diretamente reaproveitável — o canal de ruído costuma estar mudo no motor e o vídeo ataca exatamente as duas
-bandas que faltam (300–1.200 e 1.200–4.000) sem tocar no sub —, mas o material é um **demo de pack**: 6 minutos,
-6 trilhas, uma frase de decisão cada, e **dois únicos números** em toda a legenda (1K e 800 Hz). Ele entrega
-vocabulário e um gesto, não um método fechado.
-
-**Esforço: médio.** O processamento é barato (devices stock, nada exótico) e o desenho de LFO→attack já é
-possível no schema do Serum 2. O que consome tempo é o insumo: **não há o pack**, então é preciso montar um
-pequeno banco de one-shots de ruído (render do oscilador de ruído do Serum 2/Vital/Surge XT, foley, vinyl) e
-**auditar grave** em cada um. Riscos: brilho metálico (white + Q + phaser), sub engordado (amostra de pack
-processada com grave escondido) e densidade estourada (somar em vez de substituir).
-
-## Trechos de prova (legenda literal, timestamps do VTT)
-
-**1. A textura fica sem EQ de propósito — espectro completo (00:01:35.320–00:01:43.749):**
-
-> 00:01:35.320 and there isn't even any EQ nothing I
-> 00:01:38.600 wanted the complete frequency spectrum
-> 00:01:41.320 of this one next up we have this tonal
-
-**2. O grave sai, a ressonância volta: corta até 1 kHz e põe Corpus em modo tube (00:02:46.599–00:02:58.760):**
-
-> 00:02:46.599 sub stuff going on I didn't want that so
-> 00:02:49.360 I filtered everything out up until 1K
-> 00:02:53.400 and then I put a corpus on the track in
-> 00:02:56.519 tube
-> 00:02:58.760 mode here is without it's a subtle
-
-**3. O núcleo percussivo: recorte minúsculo + LFO no attack + pico ressonante em ~800 Hz (00:03:30.799–00:04:15.639):**
-
-> 00:03:30.799 took a really really small portion of
-> 00:03:33.519 the
-> 00:03:34.640 sample and then an LFO mapped to the
-> 00:03:39.000 attack so we have a bit of variation
-> 00:03:41.200 going
-> 00:03:47.159 on after that an autof filter with the
-> 00:03:51.239 frequency around 800 HZ and quite a
-> 00:03:54.200 resonant Peak some Echo an amp and of
-> 00:03:59.200 course a a phaser for extra ear
-> 00:04:07.690 [Applause]
-> 00:04:15.639 candy and you can hear the LFO really
-
-*(O `[Applause]` entre "ear" e "candy" é ruído de legenda automática, não fala. "autof filter" = Auto Filter.)*
-
-## Limites: o que o vídeo NÃO diz
-
-- **Não dá valores** de LFO (rate/depth/forma), Q do filtro, ratio/attack do compressor, tempo/feedback do delay,
-  rate do phaser nem wet de nada. Só 1 kHz e 800 Hz.
-- **Não nomeia o sampler** nem explica como o LFO é roteado no attack/decay; "hidden menu" fica sem explicação.
-- **Não explica a programação rítmica**: só *"I just placed some notes where I found them fitting"* (03:25.280–03:30.799).
-  Não há grade, swing nem deslocamento declarado.
-- **Não fala de mono, ganho, fase ou soma** — nada de gestão de low-end. A parte de mono é boa prática do estudo,
-  não do vídeo.
-- **Não ensina a fabricar as amostras**: a cadeia de hardware está só na descrição, não na fala.
-- O vídeo é **promoção de pack pago**; o que ele entrega de técnica é o que se extrai das 6 passagens.
-
-## Correções de ASR (para não inventar a partir do erro)
-
-"a button effects" = *Ableton effects* (00:42.480) · "autof filter" = *Auto Filter* (03:47.159) · "corpus" = *Corpus*
-(02:53.400) · "acute out the low end" = *a cut out the low end* (04:43.680) · "Hiatt" = *hi-hat* (04:33.880) ·
-"perks" = *percs* (03:16.720) · "closed higher track" = *closed hi-hat track* (04:21.880) · "99 hats" = *909 hats*
-(05:19.720) · "CE oon" = nome de pessoa que a legenda não resolve (00:15.200) — **não identificado**.
-
-## Fontes
-
-- Legenda automática EN do vídeo e descrição oficial do canal.
-- Números do set de referência (densidade de onsets 7,57/6,99, microtiming 5–20 ms, JND de drums ~19–24 ms,
-  régua de topo 8k+, groove deslocado, vale 300–4.000 Hz): dados do levantamento original que contratou a
-  dissecação, não do vídeo e não re-medidos.
-
+- Os dois únicos números da fala são 1 kHz e 800 Hz — todo o resto (rate/Q/feedback/wet) não é dito no vídeo.
+- Piso de HP por função: ≥300 Hz em textura, ≥1 kHz em hats/percussão; ruído é estéreo — width só acima de ~300 Hz.
+- Onde a densidade de onsets já está no teto, o ruído entra SUBSTITUINDO eventos, nunca somando; LFO no attack só na resposta, nunca na camada que carrega o microdeslocamento do groove.
 
 ---
 
-## tutoriais/fontes/ADVANCED-SYNTHESIS-WILL-O-WISP.md
+## pesquisas/tutoriais/fontes/ADVANCED-SYNTHESIS-WILL-O-WISP.md
 
 # Advanced Synthesis with Will O Wisp — Future Media Academy (webinar, 3h11)
 
-## 1. Ficha
+**Instrutor:** apresenta-se como Gaston Willowisp (aliases Willowisp, Gizmo, Mysterion) · **Formato:** webinar Future Media Academy · **Duração:** 3h11
+**Estudo:** mapa de 27/10/2026 — transcrição ASR (3.812 linhas; 31% são loop de ASR e dois trechos, ~24 min no total, se perderam); áudio não escutado.
 
-- **Fonte:** transcrição ASR do webinar (3.812 linhas com timestamp; 182.561 bytes) e `.srt` (15.248 linhas), conferidos só para timestamp de citação.
-- **Duração:** 3h11 de fala; último trecho falado em `03:11:40`, o `.srt` termina em `03:12:10`.
-- **Natureza:** transcrição ASR de webinar, **não é áudio escutado nem medido**. Nenhum som do curso foi ouvido na sessão de dissecação.
-- **Instrutor:** apresenta-se como "Gaston Willowisp" `[00:01:06]`, aliases Willowisp, Gizmo e Mysterion; o título "Will O Wisp" está corroborado pela fala, não pelo arquivo.
-- **Data do mapa:** 27/10/2026. **O mapa é evidência, não lei.**
-- **Limite duro do ASR:** 1.197 das 3.812 linhas (31%) são repetição de loop; dois trechos são inutilizáveis — `00:12:35–00:28:25` (15min50, a montagem do patch subtrativo se perde) e `02:21:33–02:30:03` (8min30). Sobram ~2h47 de fala utilizável.
-- **Dicionário de erros recorrentes (não corrigidos na citação):** "sotus" = saw · "timber" = timbre · "affination" = afinação · "wait/white table" = wavetable · "VCB/BCB/PCB/BST" = VCV Rack · "Volpera octao" = volts por oitava · "Avaldoin" = Ableton · "high tech" = hi-tech · "blue ins" = devices · "three cents" = three sends · "grain freeze" escrito "brain freeze" uma vez.
+## Técnicas-chave
 
-## 2. O que o curso ensina em 5 linhas
+- **Categorizar antes de abrir o synth** — todo som se decide por três fatores: timbre (método/waveform), tuning (nota e registro) e amplitude (envelope/intensidade); a experimentação só vale guiada por um alvo declarado.
+- **Subtrativa e FM** — subtrativa (osc + filtro + envelope) para corpo; FM: carrier + modulator com ratio em oitavas mantém a nota, semitons criam inarmônicos; wavetable é bom modulador de FM; LFO só vira timbre acima de 20 Hz.
+- **Wavetable: posição é o parâmetro central** — mudar a posição altera só o timbre, a nota fica igual; trocar de wavetable a cada disparo (random por gate) gera percussão sempre diferente — a técnica mais barata para movimento sem mexer no groove.
+- **Modulação complexa** — depth (atenuação), polaridade (unipolar 0→+10 vs bipolar −5→+5) e offset; unipolar numa macro move só para cima, preservando o estado salvo; mixar dois moduladores no mesmo destino (LFO + random) cria movimento composto sem camada nova.
+- **Random MIDI + Scale no fim da cadeia** — o device Random escolhe entre N opções e o Scale, no FIM, restringe tudo ao modo/tonalidade; gravar o MIDI gerado transforma o aleatório em nota editável.
+- **Efeito como parte da síntese** — delay curto em kick+bass (assinatura hi-tech) exige cortar os lows; beat repeat duplo (um gera textura, outro corta); três sends (reverb longo, curto, outro); nunca dois sons empilhados; gravar áudio e salvar preset no mesmo instante. Teoria granular: grão de 1–50 ms; grain freeze no kick+bass serve a breaks.
 
-1. Som se decide **antes** do patch: timbre (que síntese/waveform), tuning (que nota e em que registro) e amplitude (envelope e intensidade) — a "categorização" é filtro de decisão, não teoria.
-2. Cada método entrega uma textura: subtrativa para corpo e filtro; FM para harmônicos e percussão; wavetable para **movimento de timbre sem mudar a nota**; granular para nuvem e partículas.
-3. O que faz o som vivo é a **modulação** — depth, polaridade, offset, clock, cross-modulation e random —, com a escala no fim da cadeia para o aleatório continuar musical.
-4. **Efeito é parte da síntese**: empilhar efeitos produz timbres que o oscilador não faz, mas delay/reverb no grave exige cortar o low end.
-5. Método de trabalho: alvo declarado → patch mínimo → movimento → gravar áudio e salvar preset no mesmo instante. "Experimentação só vale guiada" `[00:05:16]`.
+## Conflitos com minimal psytech (uso restrito)
 
-## 3. Blocos com timestamp
-
-### [00:00:57] Categorização do som
-**VERIFICADO:** timbre, tuning e amplitude como os três fatores de todo som; aplica ao baixo (saw + subtrativa + attack 0), ao hi-hat (noise + decay curto) e ao snare (mesmo noise, pitch diferente) `[00:06:16–00:07:44]`.
-**NOTA:** é um checklist útil antes de abrir o Serum 2 — serve para decidir madeira versus stab. Não pede plugin.
-
-### [00:08:24] Subtrativa em VCV Rack
-**VERIFICADO:** dois osciladores, quatro saídas somadas em mixer, VCF com envelope e VCA com envelope; recomendação de somar saw com um pouco de sine ("pumps the low end") `[00:28:42–00:29:18]`. O trecho de montagem do patch se perdeu no loop de ASR.
-**NOTA:** em Diva ou no Analog/Operator o mesmo esquema é direto. Cuidado em psytech minimal: no sub, saw soma o 2º harmônico (~69,3 Hz em C#) numa banda que a boa prática manda não ser a mais quente — no sub usar sine puro; a soma saw+sine vale no corpo do baixo com HP.
-
-### [00:30:04] FM: teoria e Serum
-**VERIFICADO:** carrier + modulator; mesmo ratio (oitavas) mantém a nota, semitons criam inarmônicos `[00:32:30–00:35:37]`; demonstra "FM from B" no Serum e mostra que oitava abaixo continua a mesma nota `[00:34:18–00:34:48]`.
-**NOTA:** no Serum 2 e no Operator o gesto é o mesmo. Para psytech minimal, FM como acento curto, nunca como corpo — o próprio curso lista o resultado "bell-like" como palette `[00:31:18]`, e o timbre "bell" é justamente o que escolas de psytech minimal eliminam como corpo.
-
-### [00:39:38] FM lead em VCV e Q&A
-**VERIFICADO:** lead = dois osciladores + polarizer (atenuação/inversão) + envelope no VCA; com EVEN VCO o ratio trava em oitavas `[00:41:06–00:43:24]`; wavetables são bons moduladores de FM `[00:49:29–00:49:53]`; LFO como modulador só vira timbre acima de 20 Hz `[00:50:30]`.
-**NOTA:** no Vital e no Serum 2 o "modulador wavetable" é a rota de madeira sintética com caráter; no Diva, FM fica limitada.
-
-### [00:51:04] Wavetables
-**VERIFICADO:** posição é o parâmetro central; step modulation pula ciclos em vez de varrer `[00:56:31–00:56:52]`; **muda só o timbre, a nota fica igual** `[00:56:54–00:57:06]`; trocar a wavetable a cada disparo gera percussão sempre diferente `[00:59:18–00:59:36]`, e no VCV o random a cada gate faz isso sozinho `[01:03:31–01:03:44]`; Braids (macro oscilador) troca de modo por sinal aleatório `[01:07:32–01:08:52]`.
-**NOTA:** é a técnica mais barata do curso para um motor minimalista. Serum 2 e Vital fazem igual; no Ableton stock, Wavetable + LFO/random na posição. Mantém a nota e o groove intactos.
-
-### [01:15:44] Chaining effects
-**VERIFICADO:** delay curto no kick+bass como efeito "que todo mundo usa em hi-tech" `[01:16:29–01:16:35]`; congelar e empilhar efeitos transforma kick+bass em lead `[01:17:14–01:18:05]`; beat repeat duplo (um faz textura, outro corta) `[01:19:04–01:20:26]`; VCV como processador de efeito externo `[01:21:36–01:25:23]`; delay no grave só com corte de lows `[01:28:23–01:28:34]`.
-**NOTA:** no Ableton stock o parente é Beat Repeat + Echo/Grain Delay em return. Para um motor minimalista, só na resposta/transição; nunca no sub nem durante os vácuos.
-
-### [01:33:37] Complex modulation
-**VERIFICADO:** unipolar (0→+10) versus bipolar (−5→+5), offset desloca a faixa, depth = atenuação `[01:34:12–01:39:21]`; Max LFO com ranges, clock e cross-modulation `[01:39:45–01:42:32]`; modo binário liga/desliga efeitos `[02:03:37–02:04:36]`.
-**NOTA:** depth/polaridade/offset é o que permite automatizar sem sair do estado salvo — unipolar numa macro move só para cima, nunca para um valor desconhecido. Clock em elemento de groove é risco: grade reta contra groove com microdeslocamento.
-
-### [01:58:05] Misturar moduladores
-**VERIFICADO:** no modular, mixa LFO + random + LFO no mixer antes de mandar ao destino `[01:58:31–02:01:00]`; no VST, "mandar a mesma modulação duas vezes ao mesmo parâmetro" e a mixagem acontece interna `[02:02:02–02:02:33]`.
-**NOTA:** no Serum 2/Vital isso é dois LFOs no mesmo alvo com amounts diferentes. Resolve movimento sem criar camada nem canal — custo quase zero.
-
-### [02:03:06] Random MIDI, Scale e gravar MIDI
-**VERIFICADO:** device Random com chance, número de escolhas e escala `[02:05:58–02:07:19]`; modo Alt cicla em ordem fixa `[02:07:36–02:08:03]`; Scale no **fim** da cadeia torna o aleatório musical `[02:08:56–02:15:29]`; gravar o MIDI gerado transforma aleatório em nota editável `[02:10:49–02:11:22]`.
-**NOTA:** é a rota barata para frases de 2–3 notas: Random → Scale (modo/tonalidade da track) → gravar MIDI → editar. Sem o Scale travado, o random sai do modo.
-
-### [02:17:08] Sequenciadores Max for Live
-**VERIFICADO:** Metropol randomiza melodia e aceita limite de registro — ele cita "C4 to C5, let's say C6" `[02:18:04–02:18:10]`; a resolução do sequenciador pode ser modulada por LFO `[02:19:06–02:20:05]`.
-**NOTA:** no stock, Arpeggiator + Random + Scale. Para psytech minimal com vocabulário de 2–3 notas, o teto C6 não serve — ajustar o registro ao material (oitavas 3–4).
-
-### [02:30:03] Max for Live, granular: teoria
-**VERIFICADO:** showcase de Reverse, Spectral Blur, Portals (nomes incertos no ASR); plugin que **destrói o undo** ("Beethoven mode") `[02:36:11–02:36:29]`; lê a definição de grão: 1–50 ms, camadas com velocidade/fase/volume/frequência próprios, nuvem em velocidade baixa e nota em velocidade alta `[02:39:24–02:40:47]`; cita Xenakis e o grão como partícula `[02:41:00–02:41:38]`.
-**NOTA:** a teoria justifica textura por partículas no terceiro plano. Em practice: Serum 2 GranularOsc ou Granulator; não é linguagem para corpo rítmico.
-
-### [02:41:53] Granular na prática
-**VERIFICADO:** micro-grão com LFO na posição, "spray" em vez de leitura linear, pitch e stereo `[02:42:03–02:44:33]`; Granulator (Robert Henke) disparado por sequenciador `[02:44:38–02:47:04]`; grain freeze no kick+bass "melhor para breaks" `[02:54:09–02:55:44]`.
-**NOTA:** serve para atmosfera e resposta acima de 250 Hz. O freeze de kick+bass sustenta o grave e apaga o vácuo — é o oposto do jogo de ausência do minimal; usar só em resposta/textura com HP.
-
-### [02:56:56] Q&A de arranjo, sends e gravação
-**VERIFICADO:** "não manter dois sons em cima um do outro", escolher **um** reverb longo e um curto, não empilhar reverb `[02:57:31–02:57:53]`; três sends (longo, curto, outro) `[03:00:07–03:00:18]`; gravar áudio e salvar preset de cada som `[03:01:05–03:01:30]`; kick+bass = saw + low-pass + envelope no filtro `[03:05:57–03:06:03]`.
-**NOTA:** a parte de sends e de "um som por vez" é prática sólida. A gravação de áudio como backup do patch é o princípio de preservar o estado salvo.
-
-### [03:03:39] Modular real e fechamento
-**VERIFICADO:** ordem de compra de Eurorack (oscilador, filtro, VCA, interface MIDI/CV, 2 envelopes, 2 LFOs, random) `[03:04:00–03:05:26]`; anuncia curso futuro só de VCV `[03:08:34–03:09:19]`.
-**NOTA:** é conselho de hardware, fora do escopo de motor. O valor é conceitual (cadeia oscilador→filtro→VCA→envelope), não de compra.
-
-## 4. Citações de prova
-
-1. `[00:05:16]` **"Experimentation is clue to success, but only when guided in the right path."** [sic: "clue" por "key"] — sustenta a tese de método antes de knob.
-2. `[00:07:48]` **"Then, please, go crazy, experiment, get into unknown territories, and move every node, modulate everything."** — sustenta que a experimentação vem depois do alvo, não no lugar dele.
-3. `[00:31:39]` **"So basically, the only thing we need is we modulate one oscillator with another."** — sustenta a definição operacional de FM que usei no bloco de FM.
-4. `[00:32:40]` **"because both are on the same note, the adding will be even, will be harmonical."** — sustenta a regra de ratio por oitava preservar a nota.
-5. `[00:56:54]` **"And the good thing about this is, there is change only in the timbre, if you realize."** + `[00:57:02]` **"The note is the same."** — sustenta a aplicação de wavetable como movimento sem mexer no pitch.
-6. `[01:16:30]` **"We are making a short, short delay on the kick and bass to make this typical effect that everybody uses."** + `[01:16:35]` **"In high tech."** — sustenta que a técnica vem da família psytrance/hi-tech: proximidade de gênero, não identidade com o minimal.
-7. `[01:28:23]` **"there is not there's not a problem using delay on low frequencies there is there is problem if you put"** + `[01:28:28]` **"that sound on top of the kick and bass as it is you destroy your mix so clearly you need equalization"** + `[01:28:34]` **"basically you just cut the lows"** — sustenta o HP obrigatório no delay de grave.
-8. `[01:50:03]` **"But here, the depth, like I said before, will control the attenuation of our LFO."** — sustenta depth como atenuação da modulação, não volume.
-9. `[01:58:05]` **"So, now something I want to show you, which is amazingly useful, is called mixing signals for LFO."** — sustenta a rota de dois moduladores no mesmo alvo.
-10. `[02:09:04]` **"Hey, from all this random craziness, we will just take the notes in the scale we select."** — sustenta Scale como filtro modal obrigatório do random.
-11. `[02:11:04]` **"What was random is not anymore random guys."** — sustenta a gravação de MIDI como forma de fixar a ideia.
-12. `[02:18:05]` **"Maybe I want it to go from C4 to C5."** + `[02:18:10]` **"Let's say C6."** — base do conflito de registro com escolas de oitavas 3–4.
-
-## 5. O que se aplica a um motor minimalista de psytech
-
-A coluna de técnica é VERIFICADA pelas citações; a de aplicação é INFERÊNCIA do estudo. Custo = execução + CPU/canais novos; risco = chance de violar as boas práticas da escola ou de piorar o motor.
-
-| Técnica do curso | Onde entra | Custo | Risco |
-|---|---|---|---|
-| Posição de wavetable por macro/step `[00:56:31–00:57:06]` | baixo e madeira; ao longo de todo o arranjo | baixo (1 macro) | baixo — nota travada, sem banda nova |
-| Troca de wavetable por hit, random só na posição `[00:59:18–00:59:36; 01:03:31–01:03:44]` | madeira / percussão de resposta | baixo | médio — soa metálico se a wavetable for metálica |
-| Depth + polaridade + offset `[01:34:12–01:39:21]` | qualquer macro do baixo/stab | baixo | baixo — unipolar preserva o estado salvo |
-| Clock no LFO `[01:40:43–01:41:20]` | filtro/posição de atmosfera e madeira, nunca no groove | baixo | médio — grade reta contra groove com microdeslocamento |
-| Scale no fim + random + gravar MIDI `[02:08:56–02:11:22]` | madeira/stab; frases de 2–3 notas no modo da track | baixo | médio — exige tonalidade travada e registro contido |
-| Delay curto no kick+bass com HP `[01:16:29; 01:28:34]` | transição e resposta; nunca no sub nem nos vácuos | baixo | alto — risco de bagunçar o bolso e os vácuos |
-| Granular spray sobre áudio gravado `[02:42:34–02:48:32]` | atmosfera ≥250 Hz, terceiro plano | médio (CPU/plugins bugados) | médio — virar cama contínua; brilho |
-| Gravar áudio + salvar preset `[03:01:05–03:01:30]` | baixo, madeira, stab antes de cada A/B | baixo | baixo — preserva o estado salvo |
-| Não empilhar dois sons; três sends `[02:57:31–02:57:53; 03:00:07]` | arranjo e returns | baixo | baixo — alinha com boas práticas |
-| FM percussivo curto `[00:47:25–00:48:43]` | hit de resposta, com LP e envelope curto | médio | alto — "bell" é exatamente o timbre a eliminar como corpo |
-
-**Sobre números:** o curso não dá valor de operação — threshold, ratio, mix, dB, profundidade de modulação, decay de kick. As poucas cifras que aparecem são definição ou exemplo (grão de 1–50 ms `[02:39:48]`, LFO acima de 20 Hz `[00:50:30]`, 1/16 e 1/32 `[02:20:01]`), não receita. Qualquer valor de parâmetro atribuído a ele seria invenção.
-
-## 6. Conflitos de aplicação com escolas de psytech minimal
-
-A técnica é VERIFICADA nas citações; a conciliação é **INFERÊNCIA operacional** — proposta de uso que não viola boas práticas.
-
-| # | Técnica do curso | Prática / pendência da escola | Conciliação |
-|---|---|---|---|
-| CF1 | FM inarmônico e "bell-like" como palette de timbre `[00:30:50; 00:31:18]` | escolas que eliminam FM metálica/lata e priorizam orgânico | FM só como acento curto com LP; madeira com ring off; bell nunca é corpo |
-| CF2 | Saw + sine para "pump the low end" `[00:29:01–00:29:18]` | regra de que 55–75 Hz não pode ser a banda mais quente | No SUB, sine puro: em C# o 2º harmônico do saw cai em **69,3 Hz**. Aplicar só no corpo do baixo com HP ≥80–100 Hz |
-| CF3 | Delay curto no kick+bass como efeito padrão de hi-tech `[01:16:29]` | regras de bolso rítmico e de vácuos | Só em resposta/transição, com HP ≥120 Hz, fora dos vácuos e do SUB; ele mesmo manda cortar os lows |
-| CF4 | Random no pitch e sequenciadores aleatórios `[01:44:21; 02:06:12]` | regra de nada fora do modo | Random só em posição/filtro/decay; se for pitch, Scale travado na tonalidade no fim da cadeia |
-| CF5 | Melodia gerada com limite C4–C6 `[02:18:04–02:18:10]` | escolas que proíbem oitavas 5–6 | Teto na 4ª oitava; 2–3 notas |
-| CF6 | Grain freeze de kick+bass para break `[02:54:09–02:55:44]` | regras de vácuo e de sub protagonista | Freeze só em resposta/textura, com HP; nunca no sub nem durante vácuo |
-
-**O que não conflita:** "não empilhar dois sons" e escolher um reverb longo + um curto `[02:57:31–02:57:53]`; três sends `[03:00:07]`; ataque lento como reverse `[01:01:25]`; gravar áudio e preset `[03:01:05]`; kick+bass = saw+LPF+env `[03:05:57]` (descreve o baixo, não manda retunar o kick).
-
-## 7. O que NÃO usar daqui
-
-1. **FM inarmônico/bell como corpo** — serve como acento, não como madeira.
-2. **Saw somado ao sine do SUB** — em C# joga energia em 69,3 Hz.
-3. **Delay curto no kick+bass como assinatura** — em loop, embaralha o bolso e suja os vácuos.
-4. **Random no pitch sem Scale** — sai do modo em um clique; e o Scale só vale no fim da cadeia.
-5. **Melodias geradas em C4–C6** — registro incompatível com escolas de oitavas 3–4; o vocabulário do minimal é 2–3 notas.
-6. **Sequenciadores M4L (Metropol, NoteLat) e resolução modulada** — custo de CPU e geração fora do vocabulário; o ganho é de ideação, não de motor.
-7. **Grain freeze no kick+bass** — sustenta grave e mata o vácuo; é o oposto do jogo de ausência.
-8. **Beat repeat duplo e "transformar kick+bass em lead"** — textura de glitch/IDM; risco de "top loop ruidoso" e de competir com a madeira.
-9. **Plugins que matam o undo e "CPU killers" (Portals, spectral blur, convolução)** — risco operacional alto para ganho estético de terceiro plano.
-10. **Comprar Eurorack / mergulhar em VCV** — o fecho do curso é conselho de hardware; não resolve um motor minimalista.
-
-## 8. Fontes
-
-- Transcrição completa do webinar (texto e `.srt` com timestamps), obtida na sessão original de dissecação — fonte primária.
-- As regras da escola psytech minimal citadas nas colunas de conciliação/conflito (banda 55–75 Hz, oitavas 3–4, vácuos medidos, caudas em returns) vêm do contexto original de estudo; os documentos de origem não acompanham este pacote.
-
-**Nenhum áudio foi escutado, medido, cortado ou carregado no Live na sessão original.**
-
+- FM "bell" e saw somado ao sine do SUB são vetados como corpo (em C#, o 2º harmônico do saw cai em ~69,3 Hz); FM só como acento curto com LP.
+- Random de pitch sem Scale sai do modo; registro de melodia gerada citado até C6 — em oitavas 3–4, teto na 4ª e vocabulário de 2–3 notas.
+- Grain freeze de kick+bass sustenta o grave e mata o vácuo — oposto do jogo de ausência; usar só em resposta/textura com HP.
+- Delay em kick+bass só em transição/resposta com HP ≥120 Hz, fora dos vácuos.
 
 ---
 
-## tutoriais/fontes/AMBIENT-BLUFFMUNKEY.md
+## pesquisas/tutoriais/fontes/AMBIENT-BLUFFMUNKEY.md
 
 # How To Make Ambient with Bluffmunkey — Sonic Academy (curso completo, 2h44)
 
-> **Fonte:** transcrição ASR local de 14 aulas, obtida na sessão original de dissecação (131.657 bytes). SRT por aula. **Nenhum áudio foi escutado, medido ou aberto no Live na sessão original** — tudo abaixo é leitura da transcrição.
-> **Data do mapa:** 27/10/2026. **Natureza:** pesquisa. O mapa é evidência, não lei.
+**Instrutor:** Bluffmunkey · **Formato:** curso Sonic Academy, 14 aulas (164 min) · **Estilo:** cinematic ambient
+**Estudo:** mapa de 27/10/2026 — transcrição ASR local das 14 aulas (22.355 palavras; trechos com loop de alucinação do ASR declarados); áudio não escutado.
 
-## 1. Ficha
+## Técnicas-chave
 
-| Campo | Valor |
-|---|---|
-| Curso | *How To Make Ambient with Bluffmunkey* (Sonic Academy) |
-| Instrutor | se apresenta como “Bluff Monkey”; sem nome civil na transcrição |
-| Estilo do curso | **cinematic ambient** — ele diz que o resultado “turns out I ended up making something rather cinematic” `[AULA 01 00:11]` |
-| Aulas | **14** (1: 4:37 · 2: 7:37 · 3: 17:30 · 4: 12:19 · 5: 2:17 · 6: 13:25 · 7: 6:55 · 8: 13:06 · 9: 24:02 · 10: 12:06 · 11: 7:28 · 12: 12:12 · 13: 15:59 · 14: 14:32) |
-| Duração total | **164,2 min = 2h44** (soma dos WAVs: 9.851,5 s) |
-| Extensão | **22.355 palavras** (`wc -w`); o briefing dizia 22.232 — divergência de contagem, vale a medida no arquivo |
-| Timestamps | 2.396 marcações; a última é `[AULA 14 23:57]` |
-| Natureza do texto | **ASR** (reconhecimento automático), não legenda oficial; caixa e pontuação variam por aula |
-| Áudio | **não escutado**; nenhuma conclusão sobre timbre real, loudness ou master |
-| Ferramentas do curso | Omnisphere, Kontakt, Best Service Engine, ANA 2, Blackhole (reverb), Spitfire Albion, Desert Winds |
+- **Ambient é pintar uma imagem com áudio** — ele parte de uma vista/sensação, não de uma progressão; a música decola quando três famílias se sobrepõem: elemento sintetizado + elemento amostrado + instrumento real.
+- **Paleta enxuta e movimento perpétuo lento** — 5 pads principais + 2 de contraste, 11 canais no total (talvez 15); uma camada entra em fade enquanto outra sai, para sempre haver algo em evolução.
+- **Reverb como instrumento — e um espaço só** — o reverb é quase uma textura própria; concentrar a maioria das caudas num único reverb comum evita reverbs brigando entre si (ele usa Blackhole como assinatura).
+- **Máscara se resolve subtraindo** — cortar o grave de strings/pads woofy, mono no low-end e no baixo, remover a fundamental de um patch que briga com outro; um sample é deixado 1 semitom fora de propósito, para o desconforto estético.
+- **Performance fora do grid + compensação de ataque** — frases tocadas ao vivo, sem quantizar (~100 BPM), e notas adiantadas para compensar o ataque lento das strings; automação de mod wheel por clipe com crescendo no fim de cada trecho.
+- **Filtro como profundidade e field samples crus** — band-pass afastando material para atrair a escuta (o muffled escondido puxa o ouvido); samples de campo (vinil, relógio, corvos, rádio) filtrados até quase ininteligíveis e SEM warp, que adicionaria artefatos. Master: limiter ~+5 dB, mix em volume baixo, notch na ressonância do duduk.
 
-**Limites do ASR (marcados, não corrigidos por conta própria):**
-- **Loops de alucinação** (frases repetidas sem conteúdo): AULA 01 `00:58–04:35` (“so”; “we're going to go to work with you”), AULA 08 `07:05–10:29` (“Line strike one, you're in” e “Line strike two, you're in”), AULA 09 `07:09–07:58` e `10:27–11:43` (“this is just like our foundation layer”), AULA 13 `06:26–07:00`, `09:04–09:27` e `12:38–15:00`, AULA 14 `02:46–05:28` e `07:30–10:50`. Nada foi completado por inferência nesses trechos.
-- **Nomes prováveis, não confirmados:** “Contact” = **Kontakt**; “Anna 2” = **ANA 2**; “Black Hole” = provavelmente **Eventide Blackhole** (marca NÃO VERIFICADA); “Engine” = **Best Service Engine**; “pro cue” = provavelmente **FabFilter Pro-Q** (INFERÊNCIA); “alpha” = compressor mid/side de marca **NÃO VERIFICADA**; “chicken wings” = preset de nome **NÃO VERIFICADO**; “Corgan 1” e “Alicia Alpha” são ruído de ASR.
-- **Buraco de fala:** AULA 01 é 90% playthrough sem narração útil; a técnica começa na AULA 02.
+## Limites para psytech com kick/sub
 
-## 2. A tese do curso em 5 linhas
-
-1. **Ambient é pintar uma imagem, não desenvolver uma progressão:** “I think of a view or a vista or a feeling or an emotion and I try and paint that with audio” `[AULA 02 06:08]`.
-2. **A música começa quando as texturas se sobrepõem:** elemento sintetizado + elemento amostrado + instrumento real, em camadas `[AULA 03 07:15–07:22]`.
-3. **Poucos canais, muita curadoria:** 11 canais, talvez 15; “get as much done with as little tracks as possible” `[AULA 12 09:44]`.
-4. **Movimento perpétuo e lento:** “fade one in, bring one in, take one out so there's always something going on” `[AULA 04 06:29]`, com mod wheel e filtro escondendo/afastando o material `[AULA 09 15:00]`.
-5. **Reverb é instrumento e o mix é fácil porque não há kick nem baixo:** “the reverb itself is almost a texture and instrument in its own right” `[AULA 03 14:54]`; “because there's no kick and bass, you don't need to go nuts with it” `[AULA 09 21:58]`.
-
-## 3. Mapa aula por aula
-
-| Aula | O que ele faz | Aproveitável? | Por quê |
-|---|---|---|---|
-| **AULA 01 — Introduction and Playthrough (4:37)** | Toca a faixa pronta e anuncia que virou “cinematic ambient”; o resto é loop de ASR. | **parcial** | Só o enquadramento (cinematic ambient) é verificável; não há técnica na aula. |
-| **AULA 02 — Inspiration (7:37)** | Mostra 3 canais: Space Wave (drone constante), State Azure (ambient rítmico), Elsie/Owen (orgânico e samples); conta a frase “paint a vista with audio”. | **sim** | Dá o critério de camada e evolução; o princípio de que ambient não é um preset segurado `[AULA 02 03:53]`. |
-| **AULA 03 — Tools Of The Trade (17:30)** | Omnisphere, Kontakt, Best Service Engine, ANA 2, Blackhole; sample como oscilador; reverb como textura; latência 178 ms do Wormhole vs. 0,17 ms do Blackhole. | **parcial** | As ferramentas não são obrigatórias; o princípio (sample-as-oscillator + um reverb de assinatura) traduz para Serum 2/Kontakt/Hybrid Reverb. |
-| **AULA 04 — Create Your Palette (12:19)** | Monta 5 pads Omnisphere + 2 ANA 2 de contraste; “fade one in, bring one in, take one out”; concentra quase tudo no mesmo reverb. | **sim** | É o modelo de paleta e de espaço único. |
-| **AULA 05 — What You Hear vs What You Feel (2:17)** | Dois clipes idênticos com footage diferente mudam a percepção; som carrega contexto. | **parcial** | Princípio de escolha de timbre por associação; nenhuma técnica de produção. |
-| **AULA 06 — The Intro (13:25)** | Começa com pad `Distant Memories`, volume automation por Utility, strings Omnisphere (Adagio Expressivo), toca ao vivo fora do grid, ~100 BPM; encontra a tônica de ouvido. | **sim** | Performance não quantizada, mic positions e ordem de entrada são aproveitáveis para camadas orgânicas/atmosfera. |
-| **AULA 07 — Rhythmic Elements (6:55)** | Diz que bateria EDM não é o normal; mostra ethnic drum baixo no mix “slow galloping gait”; acha um baixo Omnisphere com mod wheel. | **parcial** | O princípio ritmo como textura subordinada serve; não há groove de kick/hats. |
-| **AULA 08 — Using Random Samples (13:06)** | Samples achados: vinil, relógio, corvos, telefone, rádio policial, trovão; filtra até quase ininteligível; não warpa; indica FreeSound e field recorder. | **sim** | Fonte de atmosfera e regra “não warpar”; combina com camada de textura, não com corpo rítmico. |
-| **AULA 09 — Housekeeping Part 1 (24:02)** | Insere transição “Rise and Hit” (Kontakt); corta grave de strings/pads “woofy”; mono no low-end e no baixo; compressor antes do EQ; par de Auto Filters + Blackhole; fala do filtro que “esconde” para atrair. | **sim** | A melhor aula: máscara por subtração, mono, filtro como profundidade e liberdade de layout. |
-| **AULA 10 — Housekeeping Part 2 (12:06)** | Layout básico; não é progressão, é experiência; deixa sample 1 semitom abaixo de propósito (“uneasy”); corta fundamental que briga; 11 canais. | **sim** | Subtração para resolver máscara; o detune deliberado é o ponto mais delicado em material tonal. |
-| **AULA 11 — Keyswitching (7:28)** | Explica articulações e key switches no Kontakt e no Engine; legato vira mono com glide; toca notas primeiro e insere keyswitches depois. | **parcial** | Útil para Kontakt 8 (madeira/cordas), mas não é técnica de motor. |
-| **AULA 12 — Adding The Organic (12:12)** | Duduk (Desert Winds) tocado em loop por 15 min e keyswitches por 10; comprime dinâmica; EQ antes; recusa taiko para não virar trailer. | **sim** | Define o “orgânico” como instrumento real performado, não preset. |
-| **AULA 13 — Strings and Modulation (15:59)** | Albion Tundra long sustain tocado ao vivo; puxa todas as notas para frente por causa do ataque lento; automação de mod wheel por clipe com crescendo no fim; swell de baixo a cada 2 clipes. | **sim** | Automação lenta por clipe é o modelo de evolução sem camada nova. |
-| **AULA 14 — Mastering (14:32)** | Limiter no master para +5 dB e mixar em volume baixo; Glue Compressor; “alpha” mid/side; notch na ressonância do duduk; shelf de ar; “I don't care if it's hitting the ceiling” `[AULA 14 09:15]`. | **parcial** | O notch antes da compressão e o mid/side “space” são testáveis; a meta de nível e o teto são próprios do gênero dele e não se copiam cegamente. |
-
-## 4. Os blocos que realmente servem a um motor minimalista
-
-### Bloco 1 — Três famílias em camada, não mais uma camada de pad (AULA 03 `06:20–07:25`)
-
-> “ambient music takes off when you start including different kinds of textures. … You have this synth-based element. You have this sample-based element. Then you have these realistic instruments. When you start building those together, it can become quite magical.”
-
-**VERIFICADO:** ele descreve a sobreposição de synth, sample e instrumento real como o salto de qualidade do ambient.
-**APLICAÇÃO:** uma camada por família, não cinco pads: madeira (instrumento real) no corpo 300–1.200 Hz; atmosfera (granular) em 1,2–4 kHz, baixa; stab curto como resposta. O ganho é **conteúdo tocado no buraco de 300–4.000 Hz** (gap medido no set de referência: −4,83 / −5,76 dB), não gain de EQ. A presença das bibliotecas Desert Winds/Albion num parque qualquer é **NÃO VERIFICADA**.
-
-### Bloco 2 — Filtro e reverb como profundidade, não como preenchimento (AULA 09 `14:53–15:52`)
-
-> “the more muffled and hidden away they are, the more it draws you in to listen to them.”
-
-**VERIFICADO:** ele aplica Auto Filters em par e reverb “fairly wet” para afastar o material e gerar curiosidade; chama isso de “fight or flight”.
-**APLICAÇÃO:** usar isso como **terceiro plano**: band-pass na camada distante (ex.: 400 Hz–3 kHz, com automação), nunca LP fixo na madeira nem no stab. Em escolas que mantêm o topo vivo, o filtro serve para **profundidade**, e a medição de 1,2–4 kHz decide se a camada está ajudando ou só escondendo o buraco.
-
-### Bloco 3 — Um só espaço de reverb (AULA 04 `07:14–07:26`)
-
-> “it's probably a better idea especially when you're leaning on reverb so much to have most of it going through the same kind of reverb so you don't end up with all this wishy-washy reverb fighting going on.”
-
-**VERIFICADO:** ele prefere concentrar o wet em um reverb comum em vez de vários reverbs disputando.
-**APLICAÇÃO:** um return dedicado (Hybrid Reverb ou Valhalla Supermassive), 100% wet, HP 280–320 Hz e LP 4–5 kHz, enviado só pela cauda da frase. O dry continua em primeiro plano; o curso usa Blackhole também como insert `[AULA 09 07:21]`, e isso **não** se copia para solistas acústicos.
-
-### Bloco 4 — Máscara se resolve tirando, não somando (AULA 09 `03:54–05:15`; AULA 10 `06:17–06:57`)
-
-> “There's a load of low-end in this, which we just don't want.” · “I'm also going to use Utility here to mono the low-end.” · “this is this fundamental frequency here which is playing all the way through … I don't like it.” · “I'm going to take a little bit more of the low end out of this one.”
-
-**VERIFICADO:** ele corta grave de strings e pads “woofy”, mono o low-end e o baixo, e tira a fundamental de um patch que briga com outro.
-**APLICAÇÃO:** antes de acrescentar qualquer camada para “encher” o médio, HP 150–250 Hz nos pads/cordas, mono abaixo de 120–150 Hz e checagem de 55–75 Hz. O curso faz a parte barata; a parte que ele não faz é medir a janela.
-
-### Bloco 5 — Performance ao vivo, com compensação de ataque (AULA 06 `06:04–06:19`; AULA 13 `03:29–03:56`)
-
-> “Most of my ambient stuff that I made, I would say virtually all of it, was run outside of the actual tempo of the track itself. … I tended just to play it in live, irrespective of the tempo.” · “the attack of these strings is quite slow, it sounded a little bit too slurred. So I've pulled everything forward a little bit.”
-
-**VERIFICADO:** ele toca as frases ao vivo, sem quantizar, e depois adianta as notas para compensar o ataque lento das cordas.
-**APLICAÇÃO:** aplicar só em madeira, stab e atmosfera: frase tocada/humanizada, ataque compensado, deixando o groove rítmico (kick/sub) intacto. O valor é tirar o “grid robótico” das respostas sem tocar no chão rítmico.
-
-### Bloco 6 — Evolução por mod wheel/cutoff, um gesto por clipe (AULA 13 `04:58–05:14`, `07:11–08:33`)
-
-> “we have to do this mod wheel stuff on a clip level” · “I'm going to go through each clip and add some kind of movement and interest in there” · “maybe towards the end of each section or the end of each MIDI clip that I've put in. We'll create a crescendo kind of thing.”
-
-**VERIFICADO:** a automação é por clipe, com crescendo no fim de cada trecho, e ele a distribui em várias pistas.
-**APLICAÇÃO:** mapear cutoff/send/decay em macro e automatizar por bloco de 8 compassos na madeira/stab/atmosfera. A 128 BPM, 8 compassos = 15 s; é evolução lenta o suficiente para ~64 compassos e não exige canal novo. O curso não dá valores de automação — o desenho fica como `HIPÓTESE` até A/B.
-
-## 5. Citações de prova
-
-Literais da ASR (pontuação acrescentada onde o ASR não pontua; nenhuma palavra trocada).
-
-1. `[AULA 01 00:11]` “it turns out i ended up making something rather cinematic”
-2. `[AULA 02 03:53]` “I don't want you to think of ambient music as just this single texture, this single preset being held down that never really does anything.”
-3. `[AULA 02 06:08]` “when I make music, I think of a view or a vista or a feeling or an emotion and I try and paint that with audio.”
-4. `[AULA 03 07:04]` “ambient music takes off when you start including different kinds of textures.”
-5. `[AULA 03 14:54]` “the reverb itself is almost a texture and instrument in its own right.”
-6. `[AULA 04 06:29]` “I'm probably just going to fade one in, bring one in, take one out so there's always something going on.”
-7. `[AULA 04 07:14]` “it's probably a better idea especially when you're leaning on reverb so much to have most of it going through the same kind of reverb so you don't end up with all this wishy-washy reverb fighting going on.”
-8. `[AULA 06 04:51]` “What are we in G?”
-9. `[AULA 06 06:10]` “Most of my ambient stuff that I made, I would say virtually all of it, was run outside of the actual tempo of the track itself.”
-10. `[AULA 08 06:26]` “by warping it, you're just going to add artifacts that you don't need.”
-11. `[AULA 09 15:00]` “the more muffled and hidden away they are, the more it draws you in to listen to them.”
-12. `[AULA 09 21:58]` “These kinds of tracks, because there's no kick and bass, you don't need to go nuts with it.”
-13. `[AULA 09 23:28]` “This is not a progressive house track. We don't need to specifically bring these things in one at a time.”
-14. `[AULA 10 00:24]` “for me these ambient tracks they're not really about a musical progression or a journey … it's more like an experience”
-15. `[AULA 10 02:05]` “it's still a little bit off from texture one and I've left it that way deliberately … I kind of like this uneasy feeling”
-16. `[AULA 10 06:19]` “this is this fundamental frequency here which is playing all the way through … I don't like it.”
-17. `[AULA 12 09:44]` “The whole point of it was to try and be as mellow as possible and get as much done with as little tracks as possible.”
-18. `[AULA 12 11:28]` “But we then start to go away from this being ambient and it starts becoming more of a cinematic trailer”
-19. `[AULA 13 03:40]` “the attack of these strings is quite slow, it sounded a little bit too slurred. So I've pulled everything forward a little bit.”
-20. `[AULA 14 00:38]` “in the absence of several hundred channels, including loud bass lines and kicks, mixing becomes a lot easier.”
-21. `[AULA 14 08:07]` “when you turn this compressor on, it always adds this immense sense of space to my ears anyway.”
-22. `[AULA 14 09:15]` “I don't care if it's hitting the ceiling.”
-
-## 6. Onde o curso não serve para psytech com kick/sub
-
-Veredito do mapa: **PARCIAL — aproveitável como camada, inutilizável como motor.** O curso é o negativo do problema do minimal com kick: ele remove kick/baixo para o mix ficar fácil; um motor minimalista precisa manter o low-end e preencher 300–4.000 Hz sem gain.
-
-| Lei / prática de escola psytech | O que o curso faz | Veredito | Conciliação operacional |
-|---|---|---|---|
-| Tonalidade e modo travados | Encontra a tônica de ouvido (“What are we in G?”) e tem “chord changes” `[AULA 09 01:12–01:19]`; deixa um sample 1 semitom fora de propósito | **CONFLITA** | Não transpor. Testar tudo na tonalidade da track; usar graus de tensão; detune só em textura não tonal e fora do corpo. |
-| Oitavas 3–4 | Sobe o pluck “an octave up” `[AULA 09 14:17]` e nota que oitava acima “it's actually perceived as being a lot louder” `[AULA 14 07:04]` | **CONFLITA se copiado** | Material novo em oitava média; +12 só se a fonte for grave demais; registro alto apenas como pico pontual nomeado. |
-| Nunca riser EDM | Usa a biblioteca **Rise and Hit**, “a series of cinematic focused hits and rises” `[AULA 09 01:37–01:43]` | **CONFLITA** | Não usar o rise. Trocar por reverse tail do próprio som, sucção/gota ou sweep de 1–2 compassos com HP. |
-| Vácuos medidos | Pads e caudas contínuos; “there's always something going on”; nenhum mute planejado | **CONFLITA** | Nenhuma cama atravessa os vácuos; automatizar o send/volume para zero na janela e provar com medição. |
-| Um solista por oitava | Uma melodia principal por vez (duduk), mas sem regra de oitava nem de revezamento | **ALINHADO por acidente** | Manter a madeira/voz principal como voz única; não dobrar solista na mesma oitava. |
-| Kick vs. grave, impacto no beat 0.0 | **Sem objeto:** não há kick, sub nem drop; ele diz que a ausência de kick/baixo é o que facilita o mix `[AULA 14 00:38]` | **NÃO APLICA** | Não importar a estrutura sem kick. A parte útil é anterior ao gênero: cortar grave de pad e mono no low-end antes de mixar. |
-| True peak controlado no export | Limiter no master para +5 dB de gain; “I don't care if it's hitting the ceiling” `[AULA 14 09:15]` | **CONFLITA** | Master do curso não se copia em escola que mede; TP com margem e limiter com rédea curta. |
-| Transposição preserva pitch-class | Detune deliberado de 1 semitom “off” e tônica por ouvido | **CONFLITA em material tonal** | Nada fora do modo em material tonal. O “uneasy” fica como filtro/ruído, não como desafinação de nota. |
-| Corpo orquestral 140–280 Hz, HPF ~95 | Corta low-end de strings/pads e mono o low-end `[AULA 09 04:46–05:15]` | **ALINHADO no princípio** | Strings/pads com HP; uma fundamental; sem sub fake. O curso não dá valor de HPF — o número é do estudo. |
-| Um timbre por canal, orgânico/analógico | 5 canais de Omnisphere + 2 ANA 2, um patch por canal; prioriza instrumentos reais | **ALINHADO** | Um timbre por canal; preferir madeira/cordas reais a sample-synth digital; nada de FM metálica. |
-| Cama não atravessa pré-drop | “Always something going on”; a cama não é retirada antes de impacto | **CONFLITA** | Nos 4 compassos antes do drop, o material de impacto precisa estar extinto; a cama pode respirar, o impacto não. |
-| Médio: preencher com conteúdo tocado | O método é mascarar/afastar o médio com filtro e reverb | **CONFLITA com a régua do motor** | Este é o conflito central. Para motor minimal, preencher = conteúdo tocado e medido; o “muffled” só entra como terceiro plano e com A/B. |
-| Escala de medição | Não mede nada; tudo por ouvido | **NÃO APLICA** | O curso não fornece régua; medições do set de referência continuam sendo a referência. |
-
-## 7. O que NÃO usar
-
-- **Drone sem pulso como base.** “just a constant kind of tone” `[AULA 02 01:25]` é o oposto de um motor com kick/sub e vácuos medidos.
-- **Ausência de kick e baixo como premissa de mix.** O curso diz explicitamente que o mix é fácil “in the absence of several hundred channels, including loud bass lines and kicks” `[AULA 14 00:38]`. A dificuldade do minimal é exatamente o que ele removeu.
-- **Progressão/chord changes largas como centro.** Ele tem baixo e “chord changes” `[AULA 09 01:12–01:19]`; escolas com tonalidade travada não importam essa harmonia.
-- **Reverb como estrutura e como insert.** “the reverb itself is almost a texture and instrument in its own right” `[AULA 03 14:54]`; em psytech minimal reverb é return, com HP/LP e automação de cauda.
-- **“Sempre algo tocando”.** É a negação das regras de vácuo e de expectativa pré-drop.
-- **Rise and Hit / big drums / taiko.** O próprio autor recusa o taiko para não virar trailer `[AULA 12 11:28]`; o rise cinematográfico não entra em escola que o veta.
-- **Detune deliberado.** O “uneasy feeling” de 1 semitom fora `[AULA 10 02:05]` desafia o modo em material tonal.
-- **Master do curso.** Limiter para +5 dB e “I don't care if it's hitting the ceiling” `[AULA 14 09:15]` não se copiam; o “alpha” mid/side é marca NÃO VERIFICADA e não substitui a régua.
-- **Automação “ghastly”.** A reclamação sobre a automação do Live `[AULA 13 11:01]` é opinião; não muda o uso de lanes.
-- **Contagem de canais como meta.** “11 channels… maybe 15” é consequência do gênero; um motor minimalista tem sua própria estrutura e não precisa imitar o número.
-
-## 8. Fontes
-
-- Transcrição ASR completa do curso (14 aulas, com timestamps por aula) — fonte primária, obtida na sessão original.
-- Números do set de referência (bandas 300–1.200 / 1.200–4.000 Hz em −4,83 / −5,76 dB, side/mid 400–2.000 Hz −21,9 dB, 16 pistas + 2 returns): dados do levantamento original que contratou a dissecação; os documentos de origem não acompanham este pacote.
-
-**Limite final:** o curso não foi escutado; as 14 aulas foram lidas na ASR. Nenhum valor de parâmetro (cutoff, HPF, decay, threshold, ratio, send, tempo de reverb) foi inventado: quando o curso não diz, o mapa marca `NÃO VERIFICADO` ou `HIPÓTESE`. Nenhum arquivo do Live e nenhum áudio foi tocado na sessão original.
-
+- O curso remove kick/baixo como premissa — a facilidade de mix dele não se transfere; o aproveitável é o que vem antes: HP em pads, mono no low-end, um espaço de reverb, evolução por automação lenta.
+- Detune deliberado em material tonal, riser cinematográfico (Rise and Hit) e cama contínua atravessando vácuos: não importar.
 
 ---
 
-## tutoriais/fontes/Aw77CuXkN88.md
+## pesquisas/tutoriais/fontes/Aw77CuXkN88.md
 
 # Scionaugh @ Twisted Frequency NYE 2025
 
-**Canal:** Scionaugh · **ID:** `Aw77CuXkN88` · **Duração:** 2091s · **Escopo:** card de contexto/DNA de live-set
-**Fonte:** metadados (info.json) + tentativa de transcrição via yt-dlp, consulta 2026-10-29 — legenda automática de música (sem fala). **Áudio não ouvido.**
+**Canal:** Scionaugh · **Vídeo:** https://www.youtube.com/watch?v=Aw77CuXkN88 · **Duração:** 2091 s (~35 min) · **Escopo:** card de contexto/DNA de live-set
+**Estudo:** consulta 2026-10-29 (metadados/info.json; legenda automática = música, sem fala; áudio não ouvido).
 
 ## Contexto
-Performance NYE 2025 (35 min de vídeo; 2091 s). Set completo no SoundCloud: soundcloud.com/universaltribe-records/scionaugh-twisted-frequency-showcase-2526-1. Legenda = música.
+
+Performance NYE 2025. Set completo no SoundCloud: soundcloud.com/universaltribe-records/scionaugh-twisted-frequency-showcase-2526-1. Legenda = música.
 
 ## Técnica ensinada
-`NÃO ENCONTRADO` — sem transcrição de fala; card de contexto/DNA do artista, não de técnica.
+
+NÃO ENCONTRADO — sem transcrição de fala; card de contexto/DNA do artista, não de técnica.
 
 ## Valor para o acervo
-live-set DNA (referência de artista).
+
+Live-set DNA (referência de artista).
 
 ## Limites
-Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (VERIFICADO no info.json).
 
+Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (verificados no info.json).
 
 ---
 
-## tutoriais/fontes/BjDkkB8ElnY.md
+## pesquisas/tutoriais/fontes/BjDkkB8ElnY.md
 
 # How to Create Hypnotic Techno Textures (Pro-tips)
 
-> id `BjDkkB8ElnY` · canal **Hypnotic Techno Production** · apresentadora **Miho** ("I'm Miho", 00:40.079) ·
-> 16:26 · <https://www.youtube.com/watch?v=BjDkkB8ElnY>
->
-> Legenda automática EN obtida e lida na sessão original (**561 blocos** depois de remover cabeçalho WEBVTT,
-> tags `<c>`, marcações de tempo isoladas e duplicatas consecutivas). **temLegenda = true**. A descrição do
-> vídeo **não** foi lida — o protocolo do levantamento só manda usá-la quando não há legenda.
->
-> **Escopo real do vídeo:** não é sound design de um synth. É **como organizar texturas em três camadas/planos**
-> e como cada camada é construída no Ableton Live: dobra processada do baixo/motivo, cama de terceiro plano
-> (field recording + vinil regroovado) e splashes rítmicos em Q&A. É ~100% Live nativo + dois plugins de
-> terceiros (um bitcrusher e um delay). **Nada depende de ANA 2, VELA, SideKick, Kick 3 ou Bitwig.**
->
-> **Ressalva de legenda automática (não inventar a partir do erro):** a legenda trunca números e nomes próprios.
-> Onde se normaliza, escreve (norm.) e a base é `INFERÊNCIA`; onde não dá para saber, escreve **NÃO IDENTIFICADO**
-> em vez de adivinhar. Normalizações usadas: "116", "116th", "116th groove" = **1/16** (confirmado pelo próprio
-> texto em "16th gate", 00:10:11.600); "perk" = **perc** (00:15:39.440); "venal crackle" = **vinyl crackle**
-> (00:09:36.160); "decim from D16" = **Decimort (D16)** (00:05:14.960); "super bala super massive" =
-> **Valhalla Supermassive** (00:14:42.000, `INFERÊNCIA`); "roar" = **Roar, device do Live 12** (00:03:14.239,
-> `INFERÊNCIA`). **Não identificados:** "charades" (00:03:22.239), "ATP texture operator" (00:10:56.480 —
-> claramente um rack do pack do canal, mas a legenda não descreve o conteúdo) e o nome do pack
-> "Reman collection deep techno sample pack" (00:10:31.360).
+**Canal:** Hypnotic Techno Production · **Apresentadora:** Miho · **Vídeo:** https://www.youtube.com/watch?v=BjDkkB8ElnY · **Duração:** 16:26
+**Fonte:** legenda automática EN (561 blocos). Tese: textura é o que permite um loop rodar muito tempo — ela precisa ser viva, móvel e imprevisível. ~100% Live nativo + Decimort (bitcrusher) e Valhalla Supermassive (delay ruidoso).
 
-## Técnica ensinada (2-4 frases)
+## Técnicas-chave
 
-A tese do vídeo é que textura não é enfeite: é o que **permite um loop rodar muito tempo** — "we can go with some
-loop for a very long time if we have textures that are moving that are interesting that are sort of unpredictable"
-(00:16.800–00:21.520) — e a regra que ele repete é "textures we want them to be alive moving" (00:05:46.560).
-Miho organiza isso em **três camadas**: **(1) textura na dobra do motivo** — duplicar o baixo, cortar todo o grave,
-abrir o filtro, saturar/bitcrushar e mapear LFO para o som não ficar parado (00:02:57.040–00:06:56.960);
-**(2) cama de terceiro plano** — field recording comprimido, vinil regroovado no modo warp Beats em 1/16 e um
-groove de 1/16 amostrado, formando um "cushion for every sound" (00:08:34.080–00:11:11.040); **(3) splashes
-rítmicos** — groove de 1/16 em rim shots com Shifter + Auto Pan, loop de 8 compassos escrito como **Q&A** com os
-motivos, ghost notes de reverse hat com Echo e um delay ruidoso (00:11:24.959–00:15:17.040).
-A organização espacial é explícita: kick, hat aberto, baixo e lead na **frente**; percussões e motivos extras no
-**segundo plano**; textura sempre no **terceiro plano, bem no fundo** (00:07:41.199–00:08:15.759).
+- **Camada 1 — dobra do motivo:** duplicar o baixo/motivo, cortar todo o low end, abrir o filtro e saturar (Roar) + bitcrush (Decimort; equivalente nativo: Redux); LFO mapeado nos parâmetros para a textura nunca ficar parada. A cópia herda o groove — nenhum ataque novo.
+- **Camada 2 — cama de terceiro plano:** field recording de gravador de campo com compressor (que adiciona ritmo), vinil/crackle regroovado no warp Beats em 1/16 com preserve deslocado, e um groove de 1/16 amostrado — a cama (cushion) por trás de todo som; receita: 1 elemento rítmico + 1 sustentado + 1 whoosh.
+- **Camada 3 — splashes rítmicos:** groove de 1/16 em rim shots com Shifter + Auto Pan; loop de 8 compassos escrito como Q&A com os motivos; ghost notes de reverse hat com Echo e um delay ruidoso (Supermassive).
+- **Organização em três planos** — kick, hat aberto, baixo e lead na frente; percussões e motivos extras no segundo plano; textura sempre no terceiro plano, bem no fundo.
+- **Espaço e movimento** — abrir espaço com EQ para a camada de textura, processamento estéreo leve e automação de filtro por seção ao longo de 16–32 compassos.
 
-## Ferramenta usada no vídeo (plugin/stock)
+## Notas de aplicação
 
-Tudo é **Ableton Live** + um bitcrusher e um delay de terceiros. O vídeo **não menciona** ANA 2, VELA, SideKick,
-Kick 3 nem Bitwig — não há dependência dessas ferramentas.
-
-| Ferramenta | Papel no vídeo | Prova (legenda literal) |
-|---|---|---|
-| **Roar** (Live 12) | Saturação/distorção na dobra do baixo que teve o grave cortado | "And then I've added roar" (00:03:14.239); "I've added roar. And I'm processing mids and highs with noise and charades" (00:03:19.680–00:03:22.239) |
-| **Decimort** (D16) | Bitcrusher usado na camada de acordes | "this uh [music] decim from D16. Very cool plugin. It's basically a bitc crasher" (00:05:14.960–00:05:19.520) |
-| **Redux** (Live, nativo) | Bitcrusher nativo citado como equivalente do Decimort | "the uh built-in enable bitcrusher which is called redux. But I like the sound of decim" (00:05:26.160–00:05:29.039) |
-| **Erosion** (Live, nativo) | Alternativa de textura, demonstrada e recomendada pelo vídeo | "You could use uh also erosion" (00:06:56.960); "erosion is also really nice" (00:07:17.199) |
-| **LFO** (Live, nativo) | Mapeado para mover a textura (drive do crusher / parâmetros) | "I could add a bit of LFO to this. Why not?" (00:03:45.760–00:03:48.400); "what I do is I map LFO to this" (00:05:38.240); "So let's map this LFO here" (00:05:53.759) |
-| **EQ** (norm.: EQ Eight) | Abrir espaço na mix para a camada de textura | "processing it with effects and making space with EQ" (00:06:41.600–00:06:45.199) |
-| **Warp mode Beats, 1/16 + Preserve** (Live) | Regroova o vinil/crackle em gate de 1/16 | "I'm also using this beats warping mode 116 and 65" (00:09:40.800–00:09:44.480); "add this beat preserve 1/16th um dash to the right side" (00:10:01.600–00:10:06.000); "have a bit of more like 16th gate on the sample" (00:10:11.600) |
-| **Beat Repeat** (Live) | Variação rítmica na camada de groove de 1/16 | "I also added a bit of beat repeater. So, I get yeah, a bit of u variation in the rhythm" (00:10:37.200–00:10:43.200) |
-| **Drum Rack** (Live) | Fonte dos splashes — escolher sons rítmicos e montar 8 compassos | "I'm using eighth bar loop ... I do is take a drum rack and find some rhythmic sounds here" (00:12:34.000–00:12:42.800) |
-| **Shifter + Auto Pan** (Live) | Groove de 1/16 em rim shots, com movimento estéreo | "It's just basically 116th groove on some rim shots with shifter added and auto pan" (00:11:42.959–00:11:47.120) |
-| **Echo** (Live) | Reverse hat das ghost notes | "Yeah, it's like a reverse hat with some effects on it" (00:14:01.199); "the reverse with echo" (00:14:06.480) |
-| **Valhalla Supermassive** (norm.) | "Noisy delay" da última camada | "I'm using another effects super bala super massive to create this kind of kind of like a noisy delay" (00:14:42.000–00:14:49.920) |
-| **Compressor** (Live) | Dá ritmo às field recordings | "it's a bit of compressor on them which adds a rhythm" (00:09:26.959–00:09:31.440) |
-| **Gravador Zoom** (hardware) | Fonte das gravações de campo | "I think this this is a Zoom recording from the recorder where I've recorded some" (00:09:06.080–00:09:12.480) |
-| Pack/samples do canal | Groove de 1/16 de terceiros e o rack "ATP texture operator" | "Reman collection deep techno sample pack" (00:10:31.360); "ATP texture operator. It's available in the pack" (00:10:56.480–00:11:02.720) |
-
-## Tradução para Live 12 nativo, Serum 2, Diva, Vital, Massive X, Surge XT e Kontakt 8
-
-A rota do vídeo é quase toda **nativa do Live 12**, então a tradução é curta: não há conceito exótico a
-reconstruir. O que muda é que um projeto minimalista típico tem um **vale medido de médios** (300–1.200 Hz
-carente no set de referência) e um **teto de densidade de transientes** — as duas coisas mudam *onde* cada
-camada entra e *com que nível*. O vídeo não dá valores de HP, LP, ganho, rate de LFO, compressor ou nível (o
-único número é o "65" do warp); tudo que for número abaixo é **proposta do estudo (`HIPÓTESE`)**.
-
-### Camada 1 — dobra do motivo (a que mais rende)
-
-| Etapa no vídeo (timestamp) | Rota exata | Alternativa / outro synth | Observação |
-|---|---|---|---|
-| Duplicar o baixo (00:02:57.040) | **Live**: duplicar a pista MIDI do baixo inteira (o mesmo clip, não um novo desenho) | Qualquer DAW | A cópia **herda o groove** — nenhum ataque novo é criado |
-| "cut all the low end" (00:03:04.159) | **EQ Eight**: high-pass 24 dB/oct em ~250 Hz (proposta) | **Serum 2**: `filters[0].type = "highpass_24"`; Diva/Vital/Massive X/Surge XT: HP equivalente | É o gesto que protege o sub. Sem ele, a camada engorda o low-end |
-| "opened the filter … plays a bit more high frequencies" (00:03:09.040–00:03:11.599) | **EQ Eight**: low-pass ~5–6 kHz para o topo não ficar aberto e sibilante (proposta) | Serum 2: `filters[1].type = "lowpass_24"` | O vale a preencher é 300–1.200 Hz; acima de ~6 kHz só se quiser ar |
-| "I've added roar" (00:03:14.239) | **Roar** com drive baixo (proposta: 10–25%), tone sem subir topo | Serum 2: `drive` no filtro + `warp_mode = "soft_clip"` ou `"fold"` em amount baixo; Vital/Massive X/Surge XT: drive/saturação | Saturação gera harmônicos justamente em 300–1.200 Hz — é o que ataca o vale |
-| "processing mids and highs with noise" (00:03:22.239) | **Erosion** (modo noise, amount baixo) em paralelo, ou **Redux** com mix parcial | Serum 2: `warp_mode="quantize"` (reduz resolução) ou Erosion no Live | **"charades" da legenda é NÃO IDENTIFICADO**; não atribuir plugin |
-| Bitcrush (Decimort / Redux) (00:05:14.960–00:05:29.039) | **Redux** — o próprio vídeo diz que o Redux é o bitcrusher nativo equivalente | Serum 2: `warp_mode="quantize"` (downsample/bit) | Bitcrush em fonte já brilhante é a receita nº 1 de brilho metálico — ver regras |
-| LFO mapeado para mover (00:03:45.760–00:05:53.759) | **LFO** do Live → drive do Roar ou frequência de um Auto Filter (rate lento, 1/2 a 4 compassos) | Serum 2: `lfo0` + `mod_routes` para `filter0.cutoff` ou `warp_amount`; **`rate` é Hz quando `beat_sync=false`, e `rate=0` NÃO congela** (é omitido e cai no default sincronizado) — use 0.05–0.2 Hz com `mono=true` | Movimento lento = hipnose; movimento rápido = LFO audível, quebra o clima |
-| "added a bit of stereo processing" (00:04:37.520) | **Auto Pan** com amount baixo, só acima de ~300 Hz | Serum 2: `voice_unison.random_pan` ou LFO→pan | Conferir soma mono: o low-end do projeto é mono por lei |
-| Automação de filtro por seção (00:04:27.600–00:04:33.520) | Automação de clip/arrangement no Live (não existe automação multiponto dentro do preset) | Qualquer synth: automação na DAW | É o que faz a camada "respirar" ao longo de 16–32 compassos |
-
-### Camada 2 — cama de terceiro plano
-
-| Etapa no vídeo (timestamp) | Rota exata | Alternativa | Observação |
-|---|---|---|---|
-| Field recording de gravador (00:09:06.080) | **Simpler/Sampler** com o sample cru; **Grain** para esticar | Serum 2 `granular_source` (ver abaixo) | O vídeo não diz o que foi gravado ("I have no idea what that was", 00:09:12.480) |
-| Compressor "which adds a rhythm" (00:09:26.959) | **Compressor** com ataque/release rápidos criando pulsação | — | A legenda **não** diz que é sidechain; não afirmar isso |
-| Vinil/crackle (00:09:36.160) | Sample de vinil no **Simpler**, warp **Beats**, grid **1/16**, **Preserve** deslocado à direita (00:09:40.800–00:10:11.600) | **Beat Repeat** em 1/16 com mix baixo; **Auto Pan** com rate 1/16 (gate) | O vídeo compara com Complex: sem o warp ele "doesn't have that kind of rhythmic structure" (00:09:59.279) |
-| Groove de 1/16 de pack (00:10:25.279–00:10:34.399) | **Drum Rack** ou clip de áudio; qualquer pack de percussão | Slice no Simpler | O nome "Reman collection…" está **NÃO IDENTIFICADO**; usar material próprio |
-| Beat Repeat para variação (00:10:37.200) | **Beat Repeat** (grid 1/16, gate curto, mix baixo) | Echo curto com feedback alto | Evitar repetir em toda barra — vira tique |
-| Rack "ATP texture operator" (00:10:56.480) | **Conceito equivalente:** um rack macro-mapeado de textura, montado por conta própria: `Simpler/Grain → Erosion → Auto Filter → Echo → Hybrid Reverb`, 4–8 macros | Serum 2 como instrumento de textura (GranularOsc) | O vídeo **não descreve** o conteúdo do rack; não dá para reconstruir por dentro |
-| "something rhythmic and then something sustain and then maybe some whooshes" (00:11:04.480–00:11:11.040) | É a receita da cama: **1 elemento rítmico + 1 sustentado/tonal + 1 whoosh** | — | Três elementos, não trinta |
-| Tonal/sustentado da cama | **Kontakt 8**: `Ethereal Earth` (pad/textura) ou `LOOP GARDEN` (loop) ou `Rubber Bridge Guitar` (corda/madeira) como fonte, filtrado | Diva/Vital/Surge XT com pad simples; Serum 2 com `granular_source` | **Extensão do estudo** — o vídeo usa samples, não esses instrumentos |
-
-### Camada 3 — splashes e ghost notes
-
-| Etapa no vídeo (timestamp) | Rota exata | Alternativa | Observação |
-|---|---|---|---|
-| Groove de 1/16 em rim shots (00:11:42.959) | **Drum Rack** + **Shifter** (desvio pequeno) + **Auto Pan** | Vital/Massive X/Surge XT: chorus/phaser leve se faltar Shifter | Shifter grande = sidebands inarmônicos = metal. Ver regras |
-| Loop de 8 compassos com "Q&A pattern" (00:12:34.000–00:13:07.200) | Escrever no Arrangement: uma resposta a cada 2 compassos, nunca nos acentos do groove | — | É trabalho de arranjo, não de preset |
-| Ghost notes / reverse hat (00:13:50.000–00:14:06.480) | Sample de hat **revertido** (Simpler `Reverse` ou clip reverse) + **Echo** com filtro | O gerador de presets do Serum 2 não expõe reverse de sample; reverter no Live e importar o resultado | Nível bem baixo, largo, fora do centro |
-| "Noisy delay" (00:14:42.000–00:14:49.920) | **Echo** (feedback alto, filtro HP 500 / LP 6–8k) ou **Grain Delay** | **Hybrid Reverb** com decay longo e diffusion alto | Sem Supermassive, o conceito é cauda difusa ruidosa, não reverb de sala |
-
-### Onde o Serum 2 entra de verdade: GranularOsc
-
-O vídeo não usa granular. Mas a camada "sustentada/tonal" da cama é o encaixe natural do `granular_source` do
-Serum 2 — e o schema do gerador expõe os campos certos: `granular_grain_length` em **ms** (default
-100; mais longo = mini-loops sobrepostos, mais curto = grão/glitch), `granular_density` (0–30, mais alto = nuvem
-mais contínua), `granular_random_pan` (% por grão), `granular_random_offset` (% de posição inicial aleatória) e
-`granular_random_grain_length`. Para cama hipnótica: grão **80–200 ms**, densidade média, `random_pan` 30–60%,
-`random_offset` 30–70% — nuvem contínua e larga, sem transiente novo. **Isso é extensão do estudo (`INFERÊNCIA`)**,
-não está no vídeo.
-
-**Teste de aceitação da camada de textura:** mutar o bus e conferir que a faixa continua
-"certa" — se a textura só decorar, ela não está fazendo o suficiente; se sumir e a faixa desmontar, ela está
-carregando peso demais (teste citado no levantamento original).
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-Contexto de referência citado no levantamento original: um set de trabalho medido mostrou o meio carente
-(300–1.200 Hz e 1.200–4.000 Hz abaixo da média de 6 referências externas), low-end **mono** e groove com
-subdivisões deslocadas. O vídeo trabalha exatamente na
-faixa que falta — mas o jeito de preencher muda por função.
-
-| Função | Usar? | Como aplicar | Cuidado |
-|---|---|---|---|
-| **Kick** | **Não** | Nenhuma camada de textura no kick; kick fora de todos os buses de textura | O vídeo não processa o kick; reverb/echo no kick engorda o grave |
-| **Sub** | **Não, nunca** | Manter o sub intocado e mono; HP ≥250 Hz em todo bus de textura | O próprio vídeo tira os graves da dobra — é o gesto que garante isso (00:03:04.159) |
-| **Baixo/rolling** | **Sim — uso primário** | Duplicar o clip do baixo (mesmas notas, mesmo groove) → EQ Eight HP ~250 Hz e LP ~5–6 kHz → Roar leve → LFO lento → Auto Pan suave; nível bem abaixo do original | Herda o groove automaticamente; não aplicar gate/sidechain na cópia (recriaria acentos e mataria o microdeslocamento) |
-| **Hats/shaker** | **Sim, mas como fantasma** | Reverse hat + Echo, com filtro HP ~500 Hz, fora do centro e fora dos acentos principais | Se a densidade de transientes já estiver acima do teto do set de referência, cada ghost note precisa substituir outro evento, não somar |
-| **Percussão de resposta** | **Sim** | É a camada 3 do vídeo: loop de 8 compassos, 1 resposta a cada 2 compassos, Shifter ±pequeno + Auto Pan 20–35%, no segundo plano | Nunca no mesmo tempo dos acentos do groove; se a resposta cair em cima, o groove achata |
-| **Madeira** | **Sim (extensão)** | `Rubber Bridge Guitar` ou `LOOP GARDEN` como *tom sustentado* da cama (terceiro plano), filtrado e com Erosion leve | É o pilar de madeira orgânica preenchendo 300–1.200 Hz sem ataque novo — o vídeo não usa madeira, isso é leitura do estudo |
-| **Stab** | **Não no corpo** | Stab continua seco; no máximo um send pequeno para o retorno de textura | O vídeo não trata de stab; não atribuir a ele |
-| **Subida** | **Citado, pouco ensinado** | "whooshes" (00:11:11.040): reverse hat/prato + Echo + Hybrid Reverb, 1–2 compassos antes da fronteira | O vídeo só cita; a receita de subida é de outro estudo. Não empilhar com riser existente |
-| **Atmosfera** | **Sim — a cama** | Field recording + vinil regroovado em 1/16, nível baixo, LP 6–8 kHz, automação lenta de nível/filtro por 16–32 compassos | Veto a "cola cinza" (textura quase invariável); a cama tem que respirar |
-| **Articulação** | **Regra transversal** | Pre-delay 20–40 ms nos retornos; reverb/echo com HP 300–500 Hz; nada de gate que desloque o groove | A textura não pode borrar a borda das notas nem mascarar a resposta |
-
-### Onde encaixar no arranjo
-
-Proposta de distribuição — **`INFERÊNCIA` do estudo**, o vídeo não fala de arranjo:
-
-- **Abertura (bars 1–16):** só a cama de terceiro plano, LP baixo (~5–6 kHz), nível discreto. Nenhum splash. É o
-  "espaço negativo" típico do minimal.
-- **Bar 17:** entra a **dobra do baixo** (camada 1). É o maior ganho de 300–1.200 Hz e não cria um único ataque
-  novo, porque herda o MIDI do baixo.
-- **Bars 17–32:** automação lenta do bus de textura (LP 5k → 7k, nível +1 a +2 dB ao longo de 16 compassos) para
-  a cama "ficar viva" sem evento.
-- **Bar 33:** entram ghost notes e a primeira resposta de Q&A (1 a cada 2 compassos).
-- **Bar 49:** abre o LP e entra o whoosh/reverse de 1–2 compassos para o drop.
-- **No drop:** abaixar a cama ~2 dB por 4 compassos — o drop precisa de ar, e a textura que volta depois
-  vale mais que a que nunca saiu. Dobra + ghost notes ficam.
-- **Pós-drop:** cama volta e entra a segunda resposta; segurar o topo para não gastar o brilho antes do clímax.
-
-### Regras para não engordar o sub nem criar brilho metálico
-
-1. **HP ≥250 Hz (24 dB/oct) em todo bus de textura.** É literalmente o gesto do vídeo na dobra ("I cut all the
-   low end", 00:03:04.159). Nada de textura abaixo disso; o sub segue mono.
-2. **Low-pass depois de saturação/bitcrush (~6–8 kHz).** O lixo de alias do Redux/Decimort mora em 2–8 kHz e é o
-   principal suspeito de "brilho metálico". Medir 2–5 kHz antes/depois.
-3. **Shifter com desvio pequeno:** ±10–80 Hz. O vídeo usa Shifter nos rim shots mas **não diz o valor**
-   (00:11:42.959); a faixa ±10–80 Hz é a receita de "metal digital" dos estudos de synth/atmos, que também pede
-   HP 180–300 Hz. Desvio grande gera sidebands inarmônicos — o "metal" que o perfil escuro veta.
-4. **Não criar ataques novos.** Preferir a dobra (herda o groove) e a cama contínua; splash só trocando outro
-   evento quando a densidade de transientes já estiver acima do teto do set de referência.
-5. **Pre-delay 20–40 ms e HP 300–500 Hz nos retornos:** preserva a articulação e evita lama em 300 Hz.
-6. **Preencher o vale com harmônico, não com brilho.** Quando o set de referência está **abaixo** das referências
-   em 8 kHz+ (ex.: −25,6 dB contra −22,1 a −20,1), cauda/ar é bem-vindo; o que não entra é hash de crusher em
-   2–4 kHz, região em que o índice de presença do set já está acima da régua. A recomendação dos estudos é
-   redistribuir presença → ar (+2 dB em 8–16 kHz, −1 a −2 dB em 2–4 kHz em eventos selecionados) — não o contrário.
-7. **Um bus "TEXTURA" com HP fixo** (proposta): todas as camadas passam por um grupo/retorno com EQ Eight
-   HP 250 e LP 7k, e um único fader para A/B. Garante por construção que nenhuma camada vaza para o sub.
-
-## Prioridade e esforço
-
-**Prioridade: alta (P1).** A curva marca esta frente como P1 ("texturas hipnóticas"). O vídeo ataca exatamente o
-buraco medido: o conteúdo que ele adiciona é harmônico/ruidoso em **300–1.200 Hz**,
-que é o vale do set de referência. E a camada 1 é a mais barata de todas as ideias, porque **reaproveita o
-MIDI do baixo** — não muda nota, não muda groove, não muda densidade de transientes.
-
-**Esforço: médio no conjunto, baixo na camada que mais rende.**
-
-| Parte | Prioridade | Esforço | Justificativa |
-|---|---|---|---|
-| Dobra do baixo (camada 1) | **Alta** | **Baixo** | Duplicar pista + HP/LP + Roar/Erosion + LFO lento: ~15 min. Zero risco ao sub se o HP estiver certo; zero risco ao groove |
-| Cama de terceiro plano (camada 2) | **Alta** | **Médio** | É o que faz o loop "rodar muito tempo" (00:16.800). Consome curadoria de samples e automação de 16–32 compassos; risco de "cola cinza" se ficar estática |
-| Splashes + ghost notes (camada 3) | **Média** | **Médio** | Preenche 1.200–4.000 Hz com informação musical em vez de brilho estático, mas exige escrever Q&A e **substituir** eventos, porque a densidade de transientes do set de referência já está acima do teto |
-| Rack "ATP texture operator" | **Baixa** | **Médio** | Não há o rack e o vídeo não descreve o interior; reconstruir por fora é possível, mas o ganho não justifica antes das outras três |
-
-## Trechos de prova (legenda literal, timestamps do VTT)
-
-**1. A dobra do baixo é duplicação e o grave é cortado (00:02:57.040–00:03:04.159):**
-
-> 00:02:57.040 getting back was doubling the layer of
-> 00:03:00.772 the bass. Yeah.
-> 00:03:04.159 [music] And on that layer, I cut all the low end. So it's just this bit.
-
-**2. Textura é terceiro plano, bem no fundo (00:08:10.960–00:08:15.759):**
-
-> 00:08:10.960 we are have three planes. So the same in composition, we want to have those three
-> 00:08:12.639 planes and textures usually are my third
-> 00:08:15.759 plane thing really far in the back.
-
-**3. Os splashes existem para criar Q&A com os motivos (00:15:39.440–00:15:44.639):**
-
-> 00:15:39.440 uh a bit more like a second plane thing which is like those perk splashes that
-> 00:15:41.440 add a bit of groove interest create Q&A
-> 00:15:44.639 with motifs and within themselves and I
-
-*("perk" = perc na legenda automática. As legendas automáticas repetem a linha em blocos rolantes; os três
-blocos acima foram unidos tirando a repetição, sem alterar palavra alguma. No VTT o "&" vem escapado como
-`Q&amp;A`; aqui foi renderizado como `Q&A`.)*
-
-## Limites e o que NÃO foi verificado
-
-- **O vídeo não dá um único valor numérico** de HP, LP, ganho, rate de LFO, ataque/release de compressor, nível
-  ou mix de crusher. O único número dito é "65" no warp (00:09:44.480) e ele não nomeia a unidade/controle.
-  Todo número neste mapa é **proposta do estudo (`HIPÓTESE`)**.
-- **Trechos ambíguos da legenda:** "charades" (00:03:22.239) não foi identificado; "ATP texture operator"
-  (00:10:56.480) é um rack do pack do canal, sem descrição de conteúdo; o nome do pack "Reman collection"
-  (00:10:31.360) está truncado. Nada disso foi completado por dedução.
-- **Conflito de medição não resolvido:** o levantamento diz que 1.200–4.000 Hz está **−5,76 dB** contra 6
-  referências, mas o estudo interno mede **presença 0,64** (acima do teto 0,58 e do corpus ≈0,51). São
-  janelas/bases de referência diferentes. Até medir na **mesma janela**, não compensar esse vale com
-  distorção/crusher em 2–4 kHz; a aposta segura é o harmônico em 300–1.200 Hz.
-- **Roar:** é device do Live 12; sua existência na instalação de referência vem do levantamento (arsenal
-  declarado), não de leitura de máquina na sessão original. Os estudos de catálogo comprovam Erosion, Shifter,
-  Echo, Hybrid Reverb, Beat Repeat, Auto Pan e Grain Delay em racks, e registram que a compatibilidade de
-  versão do Live **não estava verificada**.
-- **Nenhum áudio foi renderizado, escutado ou medido na sessão original**, e nenhum Set do Live foi aberto ou
-  alterado. Este mapa é leitura de legenda + tradução.
-- A técnica de **madeira**, **subida** e a distribuição por compassos são extensões do estudo, marcadas no
-  texto; o vídeo não as ensina.
-
-## Fontes
-
-- Legenda automática EN do vídeo (VTT).
-- Números do set de referência (bandas de meio, low-end mono, groove deslocado, densidade/presença): dados do
-  levantamento original que contratou a dissecação; os documentos de origem não acompanham este pacote.
-- Leitura do schema do gerador de presets do Serum 2 feita na sessão original — campos de `granular_source` e a
-  pegadinha de `lfo.rate=0` / `beat_sync`.
-
+- Único número dito: o valor do warp do vinil (norm.: 1/16); todo o resto (HP, LP, ganho, rate de LFO) não é dado no vídeo.
+- HP ≥250 Hz em todo bus de textura é o gesto que protege o sub; LP ~6–8 kHz depois de saturação/bitcrush contém o lixo que vira brilho metálico.
+- Shifter só com desvio pequeno: desvio grande gera sidebands inarmônicos.
+- Teste de aceitação: mutar o bus de textura — a faixa deve continuar de pé, mas perceber-se a falta.
 
 ---
 
-## tutoriais/fontes/BuQ-gjYiMU8.md
+## pesquisas/tutoriais/fontes/BuQ-gjYiMU8.md
 
 # Making A Track From START TO FINISH — Organic Deep House (Diva) — mapa por janelas
 
-**Canal:** Production Music Live (PML) · **ID:** `BuQ-gjYiMU8` · **Duração:** 3:09:23 (11363 s) · **Frente:** organic-prog · **Prioridade:** P1
-**Fonte:** legenda automática ASR em inglês → comprimida em arquivo de leitura. **Método:** leitura por janelas na sessão original — 9 janelas declaradas. Trechos fora das janelas = `NÃO VERIFICADO`. **Áudio não escutado.**
+**Canal:** Production Music Live (PML) · **Vídeo:** https://www.youtube.com/watch?v=BuQ-gjYiMU8 · **Duração:** 3:09:23 · **Frente:** organic-prog · **Prioridade:** P1
+**Estudo:** legenda automática ASR comprimida, lida por 9 janelas declaradas (trechos fora delas = NÃO VERIFICADO; áudio não escutado). Track completa com o pack Organica 2.
 
-## Técnica ensinada
+## Técnicas-chave
 
-Track completa de organic deep house a partir do pack "Organica 2" (PML). Núcleo da técnica: **bass em Diva onde o comprimento da nota é controlado pelo NOTE LENGTH do MIDI, não por release/decay do envelope** ("mais subby, menos mid-rangey": resonance down, envelope amount down, sustain up, release down), com **sidechain ao kick afinado** — sobe a frequência do detector para "sharper point", look-ahead + attack para não clicar. Depois separa as **ghost notes do kick num canal "ghost kick" próprio para que o bass NÃO seja sidechainado por elas** (duck só no kick principal). O bass ganha progressão em 8 compassos (1→6, decide entre 6 e 5, e conclui que **oitavas soam mais fortes**). Percussão orgânica/foley é escolhida por **swing/interação com o groove** (não por timbre isolado); loops "subby" têm o **sub range cortado**; shaker offbeat é posicionado **entre o kick e o clap** com transient alinhado ao grid de 16ths. Arranjo: **cola o loop inteiro por ~6 min e trabalha por subtração**; DJ intro de 16 bars sem shakers/ghost kicks; auto-filter no drum bus tirando o grave por 16 bars; "drop" entre aspas = "primeira transição satisfatória"; breakdown **sem cortar os drums por completo** ("quero constantemente algum drum"); **o bass some na entrada da seção e volta depois**; pad com EQ tirando rumble e **delay ligado só na transição** (feedback alto / wet baixo, ping-pong, canais deslinkados). Checa efeitos de largura L/R **em mono**. Master rápido: saturação com a **banda de bass controlando quanto low end é distorcido** (baixa a banda = mais drive sem esmagar o grave); dip >10 kHz aplicado nos hats, não no master.
+- **Bass Diva controlado pelo NOTE LENGTH do MIDI** — o comprimento da nota vem do MIDI, não do release/decay do envelope; para ficar mais sub e menos mid: resonance down, envelope amount down, sustain up, release down.
+- **Sidechain afinado ao kick** — sobe a frequência do detector para um ponto mais agudo (sharper) e usa look-ahead + attack para duck preciso sem clicar.
+- **Ghost kick fora do sidechain** — as ghost notes do kick são duplicadas para um canal próprio e NÃO duckam o bass: só o kick principal comprime; pressão contínua de grave.
+- **Percussão orgânica por groove, sub range só do motor** — foley/madeira escolhidos por swing e interação com o groove (não por timbre isolado); loops com sub têm o sub range cortado; shaker offbeat entre kick e clap com transient alinhado ao grid de 16ths.
+- **Arranjo por subtração** — cola o loop por ~6 min e tira: DJ intro de 16 bars sem shakers/ghost kicks; auto-filter no drum bus por 16 bars; breakdown sem cortar os drums por completo; o bass SOME na entrada da seção e volta depois.
+- **Delay como evento de transição + master limpo** — delay (feedback alto, wet baixo, ping-pong, L/R deslinkados) ligado só na transição; largura checada em mono; saturação de master com a banda de bass reduzida (mais drive sem esmagar o grave); dip >10 kHz nos hats, não no master.
 
-## Ferramenta usada no vídeo
+## Notas de aplicação
 
-**Diva** (bass, pad, leads) + Ableton Live 12 nativo: auto filter, EQ Eight, delay (ping-pong, unlink L/R), sidechain/compensação, compressor (attack rápido/release longo, makeup ~3 dB), saturador com banda de bass. Tudo é ferramenta comum — zero tradução de ferramenta. Samples do pack Organica 2 (equivalente: foley/madeira própria ou Kontakt 8).
-
-## Tradução para produção psytech minimal
-
-- **Note-length gate no sub (Diva)**: envelopes abertos + comprimento no MIDI é o gesto do motor onde a nota curta É o groove; não se confia no release.
-- **Ghost kick fora do sidechain**: ghost notes de kick sem duck do sub = pressão contínua de grave (menos bateria, mais pressão de sub).
-- **Sub range só do motor**: HPF no sub de loops de madeira/foley — a camada orgânica serve o groove sem invadir o low-end mono.
-- **Sidechain com detector agudo + look-ahead**: duck preciso e curto, sem clicar — protege o kick de EQ/saturação agressiva.
-- **Ausência programada do bass**: bass que some na entrada da seção e volta é jogo de ausência, não corte total.
-- **Saturação de master protegendo o low**: banda bass baixa para distorcer menos grave.
-- **Delay como evento de transição** (não camada permanente): cola seções sem sujar o espaço negativo.
-
-## Aplicação
-
-1. No baixo/sub (Diva): sustain alto, release curto, comprimento das notas no MIDI — frases de groove com notas de curto note-length; A/B de 16 compassos na seção principal.
-2. Ghost notes de kick em canal separado SEM entrar no sidechain do sub (só o kick principal ducka) — teste de 8 bars no primeiro drop.
-3. HPF ~100–120 Hz em todo foley/madeira do grupo de timbres orgânicos.
-4. Na entrada do breakdown e do segundo drop: ausência curta do bass (4–8 bars) em vez de corte total de drums — espelha o que o vídeo faz no "climax".
-5. Saturação de master com banda de bass reduzida — verificar com o gate do projeto se o kick preserva corpo.
-
-## Limites de aplicação (o que NÃO copiar)
-
-- **Bateria deles NÃO é receita**: openhat, clap com variação A-B-A-C e topo percussivo ficam como contexto; do kit, só o gesto "alinhamento/transient entre kick e clap" é neutro.
-- Harmonia em G major (6, 5, oitavas): não copiar — transpôr para a tonalidade da track em produção; a ideia "oitava soa mais forte" vale como observação.
-- Estrutura DJ-intro/climax e BPM de organic house (~120): não copiar cegamente; o BPM e o macro-arranjo do projeto em produção permanecem.
-- Shakers em pan L/R + delay largo: só acima do corte do low-end mono; o vídeo checa mono e é o mesmo cuidado aqui (gate).
-
-## Trechos de prova (legenda, timestamps do VTT)
-
-1. "the next most important thing to the groove is the bass line and how that interacts with the kick drum" — 00:20:26
-2. "control the length of the notes not with the release and the Decay but rather with the actual node length" — 00:21:14
-3. "I also want it to be more subby in this mid-rangey let me bring down the resonance / bring down the envelope amount / just bring up the sustain / and bring down the release" — 00:21:21
-4. "I'm gonna bring up the frequency here so we get a sharper point / I'm gonna add some look ahead and some attack just to get rid of any clicking" — 00:22:54–00:22:58
-5. "I don't like how it's all these little kicks are being sidechained too so I'm going to actually duplicate this and call this uh ghost kick" — 00:23:21
-6. "it also sounds like it's pretty subby although it's very brief I'm gonna just take out that sub range" — 00:14:23
-7. "as we drop in here the bass disappears" — 02:31:36
-8. "it might be phasing so I just want to check it in mono" — 01:15:32
-
-## Limites
-
-Leitura por janelas (9 janelas declaradas na sessão original) — o meio (mix detalhada, mais leads, linhas intermediárias do arquivo comprimido) não foi lido; sem valores numéricos de Hz/BPM na legenda; nomes de preset Organica 2 não transcritos; harmonia inferida das notas citadas (G, "60123... four semitones down") — `INFERÊNCIA`, não análise completa. Áudio não escutado.
-
+- Note-length gate no sub (envelopes abertos, comprimento no MIDI) é o gesto do motor onde a nota curta É o groove.
+- Harmonia do vídeo (G major, graus 6/5, oitavas mais fortes) não se copia — transpôr para a tonalidade do projeto.
+- Estrutura DJ-intro/climax e BPM de organic house (~120) são contexto, não molde; o gesto transferível é a ausência programada do bass na entrada de seção.
 
 ---
 
-## tutoriais/fontes/vbtV-LK6u4c.md
+## pesquisas/tutoriais/fontes/vbtV-LK6u4c.md
 
 # The technique used by Progressive House Pros (GMJ, Alex O'Rion)
 
-**Canal:** Dowden Production Academy · **ID:** `vbtV-LK6u4c` · **Duração:** 14:45 (885 s) · **Frente:** textura-atmosfera / arranjo-mix · **Perna:** PROG · **Prioridade:** P1
-**Fonte:** legenda automática em inglês do vídeo (VTT). **Método:** leitura da legenda por janelas (início e miolo lidos; seção final só pelo índice). **Áudio não escutado.**
+**Canal:** Dowden Production Academy · **Vídeo:** https://www.youtube.com/watch?v=vbtV-LK6u4c · **Duração:** 14:45 · **Frente:** textura-atmosfera / arranjo-mix · **Prioridade:** P1
+**Estudo:** legenda automática EN, lida por janelas (início e miolo; seção final só pelo índice; áudio não escutado).
 
-## Técnica ensinada
+## Técnicas-chave
 
-"**Track gluing**" (nome do apresentador — sem termo oficial): camadas **texturais/rítmicas de apoio**, melódicas ou atonais, **com pitch mas sem ser lead/melodia** ("it has some Pitch to it… it'll fit in the key of your track but it's not really a lead it's not really a Melody"), postas **bem baixas no fundo da mix** ("just in the back of the mix… barely noticeable"), preenchendo espaço vazio de forma subconsciente — "when you take it away the track or The Loop just feels a little bit empty". Exemplos: bell loop percussivo (referência "mfir" de Zangi Gatti no Soundgarden — nome provavelmente deturpado pela legenda), deep pluck. Segue tutorial de construção (percussão → bell com pitch).
+- **Track gluing** — nome dado pelo apresentador: camadas texturais/rítmicas de apoio, com pitch mas sem ser lead/melodia; cabem no tom da track sem disputar frase com o motivo principal.
+- **Bem baixas e subconscientes** — as glue tracks vivem no fundo da mix, quase imperceptíveis; o teste é perceptual: quando tiradas, o loop fica vazio sem que ninguém saiba explicar por quê.
+- **Exemplos e construção** — bell loop percussivo (referência citada de Zangi Gatti no Soundgarden, nome provavelmente deturpado pela legenda) e deep pluck; o tutorial constrói de percussão para bell com pitch; tudo Ableton stock.
+- **Aplicação traduzida** — loop curto de madeira/bell tocando muito baixo nos microespaços das seções, com HP ~250–300 Hz e LP ~5–6 kHz; critério do molde: com pitch, mas não é melodia.
 
-## Ferramenta usada no vídeo
+## Conflitos com minimal psytech
 
-Ableton stock (samplers, filtros) + sons percussivos quaisquer. Zero plugin obrigatório.
-
-## Como mapeia num projeto psytech
-
-Direta. Em minimal psytech, o critério **"com pitch, mas não é melodia"** é o molde exato para camadas de resposta/madeira tonal: toca em nota relacionada à tônica, encaixa no modo do projeto e não disputa frase com o lead — a mesma lógica das técnicas de preencher o médio por arranjo e do ear candy em pads/respostas. A regra de casa correspondente: **textura de apoio não é cama permanente** — entra por seção, sai por automação.
-
-## Aplicação concreta
-
-Resposta/madeira extra como "glue": um loop curto de madeira ou bell (fonte: preset de marimba/bell de madeira de biblioteca de instrumentos, ou um pluck sintetizado) tocando **muito baixo** nos microespaços dentro do loop das seções de meio, com HP ~250–300 / LP ~5–6 kHz. Teste de qualidade: mutar e o trecho deve ficar "vazio" sem que ninguém saiba por quê.
-
-## Conflitos com o estilo minimal psytech
-
-- **Vácuo estrutural continua sagrado**: glue preenche micro-espaço DENTRO do loop; respiros estruturais de 4 compassos e o silêncio-como-arma não recebem glue.
-- "Filling up empty space" não autoriza cama permanente — automação por seção e por buracos.
-- Modo maior/tom das referências do vídeo não se copiam; o pitch do glue segue a tônica e o modo do projeto (ex.: frígio).
-
-## Trechos de prova (legenda)
-
-1. "basically what these glue tracks are are different types of textural or rhythmic sounds either melodic or a tonal that… just add a little bit of swing and ear candy and it helps glue all the tracks together by kind of filling up that empty space"
-2. "it has some Pitch to it which is really nice because then it has that tone that can carry through your track it'll fit in the key of your track but it's not really a lead it's not really a Melody"
-3. "notice how it feels empty when those sounds aren't there and when they are there they're barely noticeable"
+- Vácuo estrutural continua sagrado: glue preenche micro-espaço DENTRO do loop; respiros estruturais de 4 compassos e silêncio-como-arma não recebem glue.
+- Preencher espaço não autoriza cama permanente — entra por seção e sai por automação.
+- O pitch do glue segue a tônica e o modo do projeto (ex.: frígio); a tonalidade maior das referências do vídeo não se copia.
 
 ## Limites
 
-Seção de construção dos sons lida só pelo índice. Sem dB concretos ("push this down to about here" é gesto de fader). Áudio não escutado — estudo baseado apenas na legenda automática.
-
+- Seção de construção dos sons lida só pelo índice; sem valores de dB (os ajustes de nível são gesto de fader); áudio não escutado.
 
 ---
 
-## tutoriais/fontes/w1WsSkRLyrU.md
+## pesquisas/tutoriais/fontes/w1WsSkRLyrU.md
 
 # How And Why To Mono Your Low End
 
-**Canal:** Sonic Academy · **Apresentador:** Rory (Hyper Production) · **Fonte:** legenda automática em inglês do vídeo. **Natureza do vídeo:** técnica de mixagem em pista/aux, não sound design. Duração útil ~4:45.
+**Canal:** Sonic Academy · **Apresentador:** Rory (Hyper Production) · **Vídeo:** https://www.youtube.com/watch?v=w1WsSkRLyrU · **Duração útil:** ~4:45
+**Fonte:** legenda automática EN. Técnica de mixagem em pista/bus (Logic Pro + FabFilter Pro-Q 2); sem sound design.
 
-## Técnica ensinada (2-4 frases)
+## Técnicas-chave
 
-O vídeo parte do fato de que praticamente todo sistema de clube soma o grave em mono: um low end estéreo chega ao PA e, ao ser somado, sofre diferença de fase e pode cancelar — "you've got no bass" (00:00:46.910–00:00:49.160). A solução tem dois caminhos: (1) **mono na fonte**, colocando kick e baixo em mono na própria pista; ou (2) num canal/aux estéreo, abrir um **EQ em modo mid/side, selecionar só o canal Side e aplicar low-cut** — assim remove-se apenas a informação estéreo abaixo do corte, sem cortar o Mid. No exemplo ele sobe o corte até ~200 Hz e valida de ouvido: se não soar diferente, está seguro. Acima do corte, o topo pode continuar tão largo quanto se quiser.
+- **Por que monoar** — praticamente todo sistema de clube soma o grave em mono: um low end estéreo sofre mismatch de fase no PA e pode cancelar (o baixo some).
+- **Caminho 1: mono na fonte** — kick e baixo em mono na própria pista (no Logic, um clique; no Live, Utility Width 0% ou sample mono).
+- **Caminho 2: low-cut só no Side** — EQ em modo mid/side processando apenas o canal Side com low-cut: remove-se só a informação estéreo abaixo do corte; o Mid (o conteúdo real) fica intocado. No exemplo dele o corte sobe até ~200 Hz; critério de segurança: se não soar diferente, está seguro.
+- **Nunca cortar o Mid** — cortar o Mid removeria frequências de verdade; a operação correta é sempre no Side.
+- **Topo livre** — acima do corte, as frequências podem ficar tão largas quanto se quiser; o mono é essencial só no low end.
 
-## Ferramenta usada no vídeo (plugin/stock)
+## Notas de aplicação
 
-- **Mono da pista no Logic Pro 10** — "you switch them to mono like here on Logic Pro 10 you could just click that icon there and then it sets it to mono" (00:01:23.840–00:01:32.510).
-- **Channel EQ nativo do Logic 10.3.2 em dual mono** — "in dual mono mode you can process the mid and the side" (00:02:03.840–00:02:13.220). Ele avisa que em estéreo comum não funciona para esse fim: "because in stereo it won't work" (00:02:38.820–00:02:40.850).
-- **FabFilter Pro-Q 2**, preset "stereo cut low side" — "default setting stereo cut low side and then you just change how little or how much you want to put in mono" (00:04:19.530–00:04:28.450).
-- Não há sintetizador nem plugin de sound design no vídeo; toda a operação é EQ mid/side ou mono de pista.
-
-## Tradução para ferramentas comuns
-
-O vídeo **não depende** de ANA 2, VELA, SideKick, Kick 3 nem Bitwig — usa Logic + Pro-Q 2. Não há conceito a substituir desses; o equivalente é puramente EQ mid/side + mono de pista.
-
-| Ferramenta | Equivalente direto / o que fazer |
-|---|---|
-| **Live 12 nativo — EQ Eight** | Equivalente exato do dual-mono do Logic: ativar a edição **M/S**, selecionar **S (Side)** e aplicar low-cut. O Mid fica intocado. É o mesmo gesto do Pro-Q "stereo cut low side". [adaptação] |
-| **Live 12 nativo — Utility** | `Bass Mono` + frequência (prática comum: 120 Hz) ou `Width = 0%` para mono de pista. Cobre o caminho (1) do vídeo sem EQ. [adaptação] |
-| **Live 12 nativo — Simpler/Sampler/Grain, Operator, Echo, Hybrid Reverb, AutoPan, Shifter** | A técnica não muda esses devices: ela age depois deles (Utility na pista, EQ Eight no bus). AutoPan/Shifter/Echo/Hybrid Reverb podem gerar side abaixo do corte; o side-cut no bus resolve sem mexer no efeito. AutoPan no topo, acima do crossover, não é afetado. [adaptação] |
-| **Serum 2** | GranularOsc **não tem papel** aqui — a técnica é de barramento, não de síntese. O cuidado é na fonte: Sub/uníssono/efeitos de alargamento não devem criar side abaixo do crossover; se criarem, o EQ Eight em S corrige. [adaptação] |
-| **Diva** | Vozes sem alargamento estéreo por uníssono; o risco está em chorus/delay internos. Manter o grave seco ou deixar o side-cut do bus tratar. [adaptação] |
-| **Vital** | Uníssono e roteamento estéreo podem alargar o fundamental; mesma regra: mono abaixo do crossover, largura só acima. [adaptação] |
-| **Massive X** | Uníssono estéreo idem; não compensar o mono com mais width no sub. [adaptação] |
-| **Surge XT** | Uníssono/width idem; o side-cut no bus garante o resultado. [adaptação] |
-| **Kontakt 8 — Rubber Bridge Guitar, LOOP GARDEN, Ethereal Earth, Vintage Organs** | São patches estereofônicos; se tiverem corpo abaixo do crossover, aplicar o side-cut no canal do Kontakt ou no bus, nunca no Mid. Instrumentos de madeira/órgão têm corpo em 150–500 Hz: com o corte em 120–150 Hz o corpo permanece; com o corte de 200 Hz do exemplo, estreitaria essa faixa. [adaptação] |
-
-Regra de ouro da tradução: **cortar só o Side**. O vídeo é explícito que cortar o Mid removeria conteúdo de verdade — "you don't wanna cut it from the mid because then you will be cutting out the frequencies" (00:04:35.810–00:04:39.110).
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-**Leitura de contexto:** em um projeto em que o low-end já é mono, esta técnica entra como **garantia e auditoria**, não como conserto. O side-cut não altera o Mid — logo não mexe nos níveis de médio; ele não é ferramenta para corrigir déficits de corpo/presença e não deve ser usado como tal. Onde aplicar: **um EQ Eight em M/S com low-cut só no S a 120 Hz** no bus principal (último insert antes do limitador) e/ou no bus de bateria; **mono na fonte** no kick e no sub. Prática comum em psytech: Utility Bass Mono a 120 Hz e mono rígido <120 Hz — o vídeo confirma essa lei, não a substitui.
-
-| Função | O que fazer | Limite / por quê |
-|---|---|---|
-| **Kick** | Mono na fonte (Utility `Width 0%` / sample mono). Se houver sala/room estéreo por send, manter o send estéreo e aplicar o side-cut só no retorno abaixo de 120 Hz. | O vídeo manda "switch them to mono" kick e baixo (00:01:23.840–00:01:32.510). Não alargar o corpo do kick para "recuperar" largura. |
-| **Sub** | Mono rígido, sem uníssono/detune/width. | É o alvo central do vídeo: grave estéreo vira cancelamento no PA ("phase mismatch... cause phase cancellation", 00:00:35.370–00:00:42.410). Não há ganho a compensar: o side-cut preserva o Mid. |
-| **Baixo/rolling** | Fundamental mono; harmônicos superiores podem ficar largos. Se usar uníssono no Serum 2/Vital/Massive X/Surge XT, manter a largura só acima do crossover. | O próprio vídeo admite manter o baixo largo no topo: "keep the bass track quite wide at the top which is absolutely fine" (00:01:40.049–00:01:42.869). Não usar chorus no fundamental. |
-| **Hats/shaker** | **Não tocar.** Acima do crossover, seguem largos, com os offsets deslocados do groove intactos. | "By all means keep the upper frequencies as wide you like" (00:00:59.700–00:01:09.560). Mono summing não desloca tempo — [adaptação]; deslocamentos humanos de ~10 ms ficam preservados. |
-| **Percussão de resposta** | Sem mudança; se algum corpo tiver energia <120 Hz, o side-cut do bus resolve. | O side-cut não corta o Mid — só remove a diferença L−R abaixo do corte (00:02:53.160–00:03:05.720); preservar o transiente é [adaptação]. |
-| **Madeira** | Largo, sem side-cut de 200 Hz no bus de madeiras; usar no máximo 120–150 Hz. | O corpo de madeira vive em 150–500 Hz; o exemplo de 200 Hz do vídeo estreitaria essa faixa. [adaptação] |
-| **Stab** | Largo; side-cut só abaixo de 120–150 Hz. | Mesma lógica: preservar o Mid e a largura útil. |
-| **Subida** | Aplicar o side-cut no bus de FX/subidas em 120 Hz; manter o topo do riser largo. | Evita que o rumble estéreo da subida module/cancele contra o sub mono. [adaptação] |
-| **Atmosfera** | Manter estéreo; se houver drone com energia <120 Hz, high-pass ou side-cut nele. | O vídeo permite topo largo; o grave é que precisa ser mono. [adaptação] |
-
-**Como não engordar o sub:** o side-cut remove só a diferença lateral, não soma nível ao Mid. Se o A/B baixar o volume, o material era majoritariamente side/fora de fase — a resposta é checar fase, não subir ganho. Não usar EQ boost no sub para "compensar" o mono.
-
-**Como não criar brilho metálico:** esta técnica não abre nem excita o topo; só remove side no grave. Não acoplar widener/exciter/chorus no topo para compensar déficit de presença — isso é outro problema e outro mapa. O topo deve permanecer exatamente como está, com hats/shaker nos offsets deslocados do groove.
-
-**Onde inserir (ordem prática):**
-1. Fonte: Utility `Width 0%` no kick e no sub (ou sample mono).
-2. Bus de bateria: EQ Eight M/S → editar **S** → low-cut 120 Hz, 12 dB/oitava.
-3. Bus principal: repetir o EQ Eight M/S no S a 120 Hz, último insert antes do limitador.
-4. Auditoria: subir o corte até 150 Hz e alternar; se soar diferente, voltar. O critério é o do vídeo: "as long as it doesn't sound any different then there is no problems whatsoever" (00:03:43.470–00:03:47.330). O valor ~200 Hz citado no vídeo (00:03:41.040–00:03:43.460) é exemplo dele, não meta — prática comum em psytech mantém o mono <120–150 Hz.
-
-## Prioridade e esforço (alta/média/baixa e baixo/médio/alto, com justificativa curta)
-
-- **Prioridade: alta.** Protege a pressão de sub e a tradução do mix em sistema de clube. Quando o low-end já é mono, o custo de garantir é mínimo e o risco de regressão é alto se algum layer novo entrar estéreo.
-- **Esforço: baixo.** Dois pontos de insert (bus de bateria e bus principal) + mono na fonte; nenhum plugin novo, só EQ Eight e Utility. A auditoria de correlação por bus é média, mas é leitura, não redesign.
-
-## Trechos de prova: 3 citações literais da legenda com timestamp
-
-> "99% of club sound systems will automatically sum the low end to mono so if you've got a stereo low end it's going to have a phase mismatch as soon as that PA system their mono is it for you which then can cause phase cancellation" — **00:00:26.849–00:00:42.410**
-
-> "you go to mid/side processing and you're going to click on side at the top here so now you are just processing the side information so then if we do a low-cut here we're not doing a low-cut where we're cutting out all the frequencies we're purely cutting out these side information ie the stereo so from this red bit here all of this bit is now going to be in mono" — **00:02:44.520–00:03:05.720**
-
-> "mono your low-end by all means keep the upper frequencies as wide you like because it will sound great over a system but the mono and the low-end is pretty pretty essential" — **00:00:59.700–00:01:09.560**
-
+- No Live: EQ Eight em M/S editando o S com low-cut ~120 Hz no bus (último insert antes do limitador) e/ou no bus de bateria; Utility Bass Mono ~120 Hz na fonte.
+- Em projeto de low-end já mono, a técnica é garantia e auditoria, não conserto; o side-cut não corrige déficit de corpo e não soma nível ao Mid.
+- Corte em 200 Hz estreitaria o corpo de madeiras (150–500 Hz) — em psytech, manter o corte em 120–150 Hz.
+- Se o A/B baixar o volume, o material era majoritariamente side/fora de fase: checar fase, não compensar com ganho.
 
 ---
 
-## tutoriais/fontes/xZW3lTHRCxs.md
+## pesquisas/tutoriais/fontes/xZW3lTHRCxs.md
 
 # 5 Tips for the Perfect Fitting Techno Kick Drum
 
-> **Fonte:** legenda automática em inglês do vídeo (VTT, 62,4 KiB; 1576 linhas; vídeo ~9:26).
-> Canal: SINEE Global · Frente: pressao-grave · Prioridade: P1.
-> Apresentador: "I'm Le." `[00:00.160]`. Demo com stock devices da Ableton; nenhum plugin de terceiros aparece na legenda (Roar é device do Live — INFERÊNCIA a partir de "stock plugin... from Ableton" `[04:36.150]`).
+**Canal:** SINEE Global · **Apresentador:** Le · **Vídeo:** https://www.youtube.com/watch?v=xZW3lTHRCxs · **Duração:** ~9:26 · **Frente:** pressao-grave · **Prioridade:** P1
+**Fonte:** legenda automática EN. 100% stock da Ableton (Tuner, EQ, Roar, Compressor, Utility); sample de kick 909.
 
-## Técnica ensinada (2-4 frases)
+## Técnicas-chave
 
-O vídeo ensina um checklist de cinco passos para encaixar um kick de techno no projeto: (1) afinar o kick numa nota correlata ao sub — no caso, sub em C# e kick buscado em G# `[00:47.830]` `[01:02.640]`; (2) encurtar a cauda quando existe um sub grande, porque um kick "short and snappy" perfura melhor e não mascara o grave `[01:57.759]` — com a ressalva de que, sem tanto sub, "a longer tailed kick drum is great... especially if you go for the samples in the style of 808" `[02:57.910]`; (3) fazer EQ **só subtrativo**, antes da distorção, para não realçar faixas indesejadas `[03:20.790]` `[03:38.470]`; (4) distorcer em multibanda com o grave "soft and clean" e o mid/high no tube, usando Roar e o preset "drum second opinion" `[04:36.150]` `[04:51.680]`; (5) comprimir com ratio 4:1, attack de 100 ms e release mínimo, ajustando o threshold de ouvido e refazendo o gain staging `[05:51.759]` `[06:03.199]`. O bônus é explícito: se o kick não está punchy, não está passando na mix ou não está conduzindo a faixa, volte à fonte, troque o sample e afine até sentar `[08:29.120]` `[08:53.120]`.
+- **Afinar o kick numa nota correlata ao sub** — no exemplo, sub em C# e kick afinado em G# (a quinta abaixo; o 909 costuma vir em G por padrão); o Tuner acha a fundamental e sai da cadeia depois.
+- **Cauda curta quando o sub é grande** — um kick curto e snappy perfura melhor e não mascara o grave; com pouco sub, cauda longa (estilo 808) funciona.
+- **EQ só subtrativo, ANTES da distorção** — cortar o que não se quer antes de saturar, para não realçar faixas indesejadas pela distorção.
+- **Distorção multibanda com grave limpo** — Roar (multibanda) no preset drum second opinion: low band soft and clean, tube no mid/high; garantir que o punch do grave passa.
+- **Compressão 4:1 / attack 100 ms / release mínimo** — o attack de 100 ms preserva o punch; threshold de ouvido e refazer o gain staging depois.
+- **Bônus: voltar à fonte** — se o kick não está punchy, não passa na mix ou não conduz a faixa, trocar o sample e reafinar em vez de maquiar.
 
-**Nota de legenda:** no trecho da correlação a legenda erra ("Five semmitones apart which is this case or seven semmitones apart or one semmitone apart" `[01:34.310]`); o alvo concreto declarado é G# com sub em C# `[00:47.830]` `[01:02.640]`, que é a quinta abaixo (G#0 ≈ 52,41 Hz). Registra-se a coincidência com a prática comum de tuning kick/sub, sem corrigir a fala.
+## Notas de aplicação
 
-## Ferramenta usada no vídeo (plugin/stock)
-
-- **Ableton Live stock, sem terceiros.** O vídeo nomeia o Roar como "the stock plugin called Roar from Ableton" `[04:36.150]` e o preset "drum second opinion" `[04:40.150]`; a legenda também cita "the tuner" `[02:15.599]`, "an EQ" `[03:27.840]`, "compressor" `[05:49.919]`, "a gate gain staging utility" `[03:54.959]` e "the filter... on our sample" `[05:22.639]`.
-- **Roar (multibanda):** "This one has low, mid, and high. It's a multiband distortion." `[04:45.040]`; "Set the tube setting here on high and mid. Uh the low is soft and clean." `[04:48.080]` `[04:51.680]`; e "make sure to get some low punch through" `[04:58.320]`.
-- **Compressor:** "This one has a 4.00 ratio." `[05:51.759]`; "an attack of 100 milliseconds to make sure that a lot of our punch from the kick comes through." `[05:55.120]`; "The release is set to the shortest amount possible..." `[06:03.199]`; threshold ajustado de ouvido `[06:11.830]` `[06:42.819]`.
-- **Tuner:** usado para achar G# `[01:02.640]`; depois removido da cadeia `[02:15.599]`.
-- **EQ:** não nomeado; a legenda só diz "an EQ" `[03:27.840]`. Provável EQ Eight do Live (INFERÊNCIA), mas não confirmado.
-- **Sample:** kick 909 `[00:38.000]`, fora do tom (o 909 costuma vir em G por padrão `[00:51.190]`); sub do projeto em C# `[00:47.830]`.
-- **Não aparecem na legenda:** ANA 2, VELA, SideKick, Kick 3, Bitwig, Serum, Diva, Vital, Massive X, Surge XT, Kontakt (busca textual sem ocorrência). Nada a traduzir desses.
-
-## Tradução para ferramentas comuns: Live 12 nativo, Serum 2, Diva, Vital, Massive X, Surge XT, Kontakt 8
-
-**Rota direta — Live 12 nativo (quase 1:1):**
-`Tuner → Simpler/Sampler (sample 909) → EQ Eight (subtrativo) → Roar (multibanda, grave limpo) → Compressor (opcional) → Utility (gain staging)`.
-O vídeo usa exatamente essa arquitetura de stock. **Roar é stock do Live 12** (o vídeo o chama de stock da Ableton `[04:36.150]`); se a edição não o tiver, o fallback é **Saturator** (drive baixo, HQ) + **EQ Eight** dividindo as bandas, ou o drive do **Drum Buss** — mais trabalho, mesmo conceito. O **Tuner** do Live confere a fundamental; o **Simpler** encurta a cauda no envelope ou no fim do sample; o **Sampler** idem com mais controle. Um **Drum Buss** no fim da cadeia (damping no topo) é opcional para conter brilho — não vem do vídeo.
-
-**Serum 2:** não é necessário para o kick; o vídeo parte de um sample 909, e o caminho mais curto é Simpler/Sampler. Se quisermos o kick dentro do Serum 2, o **SampleOsc** (`sample_playback_source`) toca o one-shot e pitch/octave/fine ajustam a nota; o **GranularOsc** não tem função aqui (o vídeo não é granular — não force). Diva, Vital, Massive X e Surge XT não são usados pelo vídeo; servem para sub/rolling/stab, e a única lição transferível é afinar a fundamental contra a nota do sub (ver aplicação). Kontakt 8 não é rota para kick. **Grain, Operator, Echo e Hybrid Reverb** também não aparecem na técnica: o vídeo é um one-shot de kick processado por EQ, distorção e compressor; forçá-los só adicionaria cauda/brilho ao kick.
-
-**O que não temos no vídeo:** ANA 2, VELA, SideKick, Kick 3, Bitwig. O vídeo não usa nenhum deles, então não há conceito equivalente a improvisar — a tradução é stock do Live.
-
-**O que não usar (adaptando ao estilo psytech):** o **click do filtro** do passo 4 `[05:20.790]` é um estalo de Tech House — em um projeto que exige kick sem estalo agudo, vetar. O **corte amplo de mids** do passo 3 também é condicional: o vídeo chama o kick de "a little bit woody, a little bit too much mids" `[04:19.199]`, mas em um projeto em que madeira é elemento de identidade o corte não se transfere. E nada de **AutoPan/Shifter/alargamento** no kick ou sub — low-end mono (<150 Hz) é prática padrão.
-
-**O que é novo vs. o que é prática comum:**
-- **Prática comum (confirmação, não novidade):** tuning kick = quinta da nota do sub (ex.: G#0 ≈ 52,41 Hz sobre sub em C#); kick curto/aveludado com sub grande; low-end mono.
-- **Novo/adaptável:** EQ subtrativo antes da distorção `[03:38.470]`; Roar multibanda com low clean `[04:51.680]`; compressor 4:1 / 100 ms / release mínimo `[05:51.759]` `[06:03.199]`; gain staging sem clip `[07:06.720]`.
-- **Vetado (para o estilo):** click de filtro `[05:20.790]`.
-- **Invertido (condicional):** o corte de "a little bit woody, a little bit too much mids" `[04:19.199]` — se a madeira for identidade do projeto, é identidade, não defeito.
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-| Função | O que o vídeo oferece | Como aplicar (e o que evitar) |
-|---|---|---|
-| **Kick** | Tuning contra o sub `[00:47.830]`; cauda curta com sub grande `[01:57.759]`; EQ subtrativo antes da distorção `[03:38.470]`; Roar multibanda com grave limpo `[04:51.680]`; compressão 4:1/100 ms/release mínimo `[05:51.759]` `[06:03.199]`; gain staging `[07:06.720]` | **Aplicar:** afinar a fundamental contra a nota do sub (ex.: quinta — G# ≈ 52,41 Hz sob sub em C#); EQ Eight só cortando, Q alto, antes do Roar; Roar com low "soft and clean" e tube **só no mid** (o vídeo usa high+mid `[04:48.080]`, mas o high é o risco de brilho metálico); compressor opcional com A/B de ouvido. **Evitar:** click de filtro `[05:20.790]`; acumular energia em 55–75 Hz (engorda o sub); corte amplo de "woody mids" se madeira é identidade; estéreo no kick. |
-| **Sub** | Nenhuma lição direta de design; a lição é de divisão de trabalho: "If you have a big sub... short and snappy kick" `[01:57.759]` | Manter o sub mono; não passar o sub pelo high band do Roar; não alargar. A cauda curta do kick é o que dá espaço ao sub — não compensar engordando o kick em 55–75 Hz. |
-| **Baixo / rolling** | O **princípio** multibanda (grave limpo, mid/high com tube) `[04:45.040]` `[04:51.680]` e o EQ antes da distorção `[03:38.470]` | **Melhor uso novo do vídeo (INFERÊNCIA):** Roar no rolling com **low clean** (protege o sub), **tube no mid** para preencher o corpo de médio e **high contido** para não criar brilho metálico. EQ Eight antes do Roar. Compressão de release rápido é opcional; preservar os bolsos e offsets do groove — não mover onset. |
-| **Hats / shaker** | Não coberto | **Não aplicar** Roar/multibanda: o "bite and grit" `[05:14.960]` vira brilho metálico no topo. Só valem o gain staging sem clip `[07:06.720]` e o princípio de EQ subtrativo antes de qualquer saturação `[03:38.470]`. |
-| **Percussão de resposta** | O tuning por correlação `[01:29.840]` `[01:34.310]`, se a percussão for tonal | **Transferência leve (INFERÊNCIA):** afinar a fundamental da madeira/percussão para a tônica/quinta do projeto; manter o hit curto para responder sem mascarar o kick; EQ subtrativo. Não adicionar click. |
-| **Madeira** | O vídeo corta "a little bit woody, a little bit too much mids" do kick `[04:19.199]` | **Inverter a lição quando a madeira é identidade:** não cortar o mid da madeira; se saturar, EQ antes da distorção para não realçar ressonâncias `[03:38.470]`. |
-| **Stab** | EQ antes da distorção `[03:38.470]` e gain staging `[07:06.720]` | Aplicar só se o stab for distorcido; sem tube no high (metal). Não usar o tuning do kick no stab. |
-| **Subida** | Não coberto | Só gain staging/no red `[07:06.720]`. Não aplicar click/distorção do kick; a subida é transição. |
-| **Atmosfera** | Não coberto | Sem aplicação. Não rodar a cadeia do kick na atmosfera. |
-
-**Regra de segurança contra engordar o sub e contra brilho metálico:** o low band do Roar fica "soft and clean" `[04:51.680]`; o tube vai para o mid, nunca para o high do kick; o click de filtro `[05:20.790]` fica de fora em estilos que rejeitam estalo; a compressão não pode achatar a dinâmica de velocity nem deslocar os offsets do groove. Evitar EQ em modo linear-phase no kick (o pré-ringing pode borrar o transiente — INFERÊNCIA, não é fala do vídeo).
-
-**Por que serve a um projeto psytech:** o vídeo não é uma receita de timbre para copiar; é um procedimento de encaixe. O que acrescenta é a ordem (EQ antes da distorção) e a disciplina do grave limpo, que permitem usar o Roar no **mid do rolling** para preencher o corpo de médio sem tocar no sub mono nem no kick aveludado.
-
-## Prioridade e esforço
-
-- **Prioridade: alta (P1).** É o encaixe do kick, coração da pressão de grave; duas das cinco dicas confirmam práticas comuns (tuning da quinta e cauda curta), e a transferência do multibanda para o rolling preenche o corpo de médio sem boost no sub.
-- **Esforço: médio.** Tudo stock (Tuner, EQ Eight, Roar, Compressor, Utility), uma sessão de A/B; o custo real é ouvido (threshold, tuning, checar o bolso), não plugin.
-- **Risco: médio.** Três armadilhas: (a) o click do filtro pode ser proibido pelo estilo; (b) o corte de mids do vídeo piora o corpo se madeira é identidade; (c) compressão/ganho podem achatar a velocity e o groove. Mitigação: A/B bypass, medir o médio antes/depois, não tocar no timing.
-
-## Trechos de prova
-
-1. `[00:17.520–00:26.080]` **"Finding out what tune you need for your kick is essential, I would say, and it makes sure that everything yells together."**
-2. `[00:01:57.759–00:02:07.520]` **"If you have a big sub and so on, you would like to have kind of a short and snappy kick drum to make sure that it punches through, right? You don't want to have a longtailed kick drum."**
-3. `[00:03:38.470–00:03:44.550]` **"So, we want to EQ as much as possible before the distortion to make sure that we don't enhance any frequency ranges that we don't desire."**
-
+- Vetado para estilo sem estalo: o click do filtro do passo 4 (estalo típico de tech house).
+- O corte amplo de mids do vídeo é condicional: se madeira é identidade do projeto, o corte não se transfere.
+- Números do vídeo: ratio 4:1, attack 100 ms, G#/C#; todo o resto é de ouvido.
+- Multibanda transferível ao rolling baixo: low limpo protege o sub, tube no mid preenche o corpo, high contido evita brilho.
 
 ---
 
-## tutoriais/fontes/xuHSPaCHjvo.md
+## pesquisas/tutoriais/fontes/xuHSPaCHjvo.md
 
 # How to Make Heavy Pounding Techno Groove
 
-**Canal:** Audioreakt · **ID:** `xuHSPaCHjvo` · **Duração:** 6:48 (408 s) · **Frente:** groove · **Prioridade:** P0 ("peso do groove sem volume")
-**Fonte:** legenda automática em inglês do vídeo (VTT, 1.264 linhas, 315 cues). **Descrição (confirmatória):** "Today I show you how to make this heavy pounding techno groove in Ableton live just by using Ableton stock plugins." A descrição lista o **Solid Techno Kick Pack** e o **Kickverb V2 rack**, e disponibiliza o projeto para Live 10 e 11.
+**Canal:** Audioreakt · **Vídeo:** https://www.youtube.com/watch?v=xuHSPaCHjvo · **Duração:** 6:48 · **Frente:** groove · **Prioridade:** P0 (peso sem volume)
+**Fonte:** legenda automática EN (315 cues) + descrição oficial (Solid Techno Kick Pack e Kickverb V2 rack do canal; projeto para Live 10/11; "just by using Ableton stock plugins").
 
-## Técnica ensinada (2-4 frases)
+## Técnicas-chave
 
-O vídeo parte de uma ideia central: o kick "pesado" é apresentado como um composto — "it's basically made from a technical Rumble and Baseline together" (00:00:39.780–00:00:43.910) —, não como um sample isolado. Sobre um kick 4/4 com velocity alta, ele gera um **rumble** a partir do próprio kick num rack (Kickverb V2) que oferece dois caminhos, delay ou reverb; escolhe delay a **3/16, 100% wet, feedback 50%**, filtra a cauda com um low-pass (frequência + ressonância) e a bombeia com sidechain disparado por uma faixa de clap 909. Depois dá um **reverb sutil no kick** (sem pre-delay, decay curto, difusão mínima, dry/wet baixo) e um limiter opcional no kick. No baixo, usa **square wave** no Operator com filtro fechado, ressonância alta e envelope de filtro muito rápido ("to create this punch"), mantendo médio para o baixo ser audível — "you don't want to be too subby… that's what's gonna give the groove" — e só então reduz o volume; o padrão MIDI, com uma nota dupla, é o que dá o groove.
+- **Kick pesado = composto** — o kick é apresentado como rumble técnico + bassline juntos, não como sample isolado; sobre um kick 4/4 com velocity alta.
+- **Rumble a partir do próprio kick** — no rack Kickverb V2 (dois caminhos, delay ou reverb): delay em 3/16 com dry/wet 100% e feedback 50%, low-pass na cauda (frequência + ressonância ajustáveis) e sidechain disparado por uma faixa de clap 909 muda.
+- **Reverb sutil no kick** — sem pre-delay, decay curto, difusão mínima, dry/wet baixo; limiter no kick opcional.
+- **Bass com punch por envelope de filtro** — square wave no Operator, filtro fechado, ressonância alta e envelope de filtro muito rápido criam o punch; manter médio para o baixo ser audível (não subby demais — o médio é o que dá o groove) e só então reduzir o volume; o padrão MIDI com nota dupla fecha o groove.
+- **Tradução nativa** — o rack é substituível por Echo/Hybrid Reverb 100% wet + Auto Filter + Compressor sidechain em retorno; 3/16 a 128 BPM = 351,6 ms — em groove com posições deslocadas, a repetição do delay encavala a articulação, então o branch reverb (ou delay com feedback baixo) é o caminho seguro.
 
-## Ferramenta usada no vídeo (plugin/stock)
+## Notas de aplicação
 
-**Ableton Live + devices stock**, com um rack customizado do canal. A descrição afirma "just by using Ableton stock plugins"; os dois itens externos são o **sample de kick** (a descrição anuncia o Solid Techno Kick Pack) e o **Kickverb V2 rack** (o link da descrição leva ao vídeo do rack). É um rack, não um plugin de terceiro. **Nenhum plugin pago (ANA 2, VELA, SideKick, Kick 3, Bitwig) aparece na legenda ou na descrição.**
-
-| Etapa | Device / rack | Trecho literal da legenda | Timestamp |
-|---|---|---|---|
-| Criar pista MIDI | atalho do Live | "Ctrl shift T to create a midi track" | 00:00:45.780–00:00:48.239 |
-| Carregar o kick | Drum Rack + Trim | "I'm just going to add the trim rack where I'm gonna load my kick drum" | 00:00:48.239–00:00:51.420 |
-| Sample de kick | banco "Sony techno kick 2", kick nº 52 | "I use my Sony techno kick 2 bank and I use the kick drum number 52" | 00:00:51.899–00:01:00.229 |
-| Rumble | **Kickverb V2 rack** (custom; link na descrição) | "for that I use my kick verb to Ableton Rock" | 00:01:06.540–00:01:14.810 |
-| Tipo de rumble | delay **ou** reverb | "you have two type of Rumble either delay or Reverb it's really up to you" | 00:01:16.380–00:01:22.190 |
-| Delay | 3/16, dry/wet 100, feedback 50 | "the delay we choose is in 316 and with the dry weight obviously a 100 feedback 50" | 00:01:53.100–00:01:55.429 |
-| Filtro da cauda | low-pass com frequência + ressonância/Q | "adjust the frequency and the Resonance of your low pass filter" | 00:02:31.620–00:02:46.070 |
-| Sidechain | gatilho = faixa de clap 909; **device não nomeado** | "here it's my sidechain track here which is just a 909 club that I use to trigger the sidechain" | 00:02:05.040–00:02:11.879 |
-| Reverb no kick | Reverb default do Ableton | "I'm just gonna use every turn default Reverb" | 00:03:14.519–00:03:17.099 |
-| Sem pre-delay | — | "no pre-delay" | 00:03:25.260–00:03:27.290 |
-| Decay curto | — | "K is too long" | 00:03:29.040–00:03:32.449 |
-| Difusão mínima | — | "if you bring the diffuse to the minimum you will hear" | 00:03:34.130–00:03:47.210 |
-| Limiter no kick | opcional | "I add the limiter so this is not necessary sometimes I do sometimes not" | 00:03:51.599–00:04:02.690 |
-| Baixo | **Operator** | "we're gonna use operator basically you can use any scent" | 00:04:11.449–00:04:13.789 |
-| Onda do baixo | square | "I'm gonna use a square waveform which are richer and harmonic than the sine wave" | 00:05:07.259–00:05:12.680 |
-| Filtro/ressonância/envelope | filtro fechado, ressonância alta, envelope rápido | "bring down the filter crank up the resonance and other feature envelope modulation to open the filter very fast" | 00:05:14.639–00:05:22.310 |
-| Reverb + low-pass no baixo | Reverb default + LP | "I just add a bit of Reverb and low pass" | 00:06:06.950–00:06:08.699 |
-
-**Ruídos da legenda automática (não são o que o vídeo diz literalmente):** "Sony techno kick 2" é a audição de **Solid Techno Kick 2** (a descrição nomeia "Solid Techno Kick Pack"); "Ableton Rock"/"rocker" = **rack**; "316" = **3/16**; "dry weight" = **dry/wet**; "queue" = **Q**; "low opacity" = **low-pass**; "909 club" = **909 clap**; "K is too long" = **decay**; "sebby" = **subby**; "any scent" = **any synth**. O device de sidechain **não é nomeado** em nenhum trecho.
-
-## Tradução para ferramentas comuns: Live 12 nativo
-
-A técnica **sobrevive inteira** sem plugins pagos: nada na legenda ou na descrição depende de ANA 2, VELA, SideKick, Kick 3 nem Bitwig. O único **device** fora do stock é o **Kickverb V2 rack** — e ele é substituível por devices do Live 12: um retorno com **Echo** (ou Delay), **Auto Filter**, **Compressor** com sidechain e **Utility**. O baixo do vídeo é **Operator**, que também é stock; a tradução vale para qualquer sintetizador equivalente (Serum 2, Vital, Diva etc.) usado na camada de baixo.
-
-| Gesto no vídeo | Equivalente (Live 12 nativo) | Fidelidade |
-|---|---|---|
-| Drum Rack + Trim | **Drum Rack + Utility** (Trim/Gain) | direta |
-| Kickverb V2 — branch **delay** | **Echo** ou **Delay** 100% wet, feedback 50%, tempo 3/16 ou ms → **Auto Filter** low-pass → **Compressor** com sidechain | direta em função; o rack em si não é stock |
-| Kickverb V2 — branch **reverb** | **Hybrid Reverb** 100% wet num retorno, decay curto, sem pre-delay, difusão baixa → **Auto Filter** low-pass → **Compressor** com sidechain | direta em função |
-| Sidechain com clap 909 | **Compressor** do Live com sidechain de uma pista de gatilho muda (clap curto) ou do próprio kick; o vídeo não nomeia o device nem dá valores | direta; valores são do projeto |
-| Reverb sutil no kick | **Hybrid Reverb** (ou Reverb) com dry/wet baixo, pre-delay 0, decay curto, diffusion baixa, LP no topo | direta em função; valores são proposta |
-| Operator square bass | **Operator** (como no vídeo) ou outro sintetizador com square + filtro fechado + envelope rápido | direta em função |
-| Limiter no kick | **Limiter** do Live, se necessário | direta |
-| Serum 2 **GranularOsc** | **sem papel**: a legenda não menciona granular; a fonte do baixo é síntese clássica | não se aplica |
-| Kontakt 8 / Diva / Vital / Massive X / Surge XT | **sem papel** na técnica do vídeo; servem como alternativa para o baixo square se o Operator não entregar o médio | alternativa |
-
-**Conclusão de traduzibilidade:** sim. O que falta é o rack pronto — não o conceito. A cadeia "kick → cópia 100% wet → filtro → sidechain" é reproduzível com Echo/Hybrid Reverb + Auto Filter + Compressor. O que **não** se copia é o motor 4/4 do vídeo: em um projeto com groove rolling/deslocado e vácuos no kick, o 4-on-the-floor reto não se transplanta — o rumble é que se aproveita.
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-**O cuidado com o delay 3/16 (cálculo geral).** 3/16 a 128 BPM = **0,75 beat = 351,6 ms**. Com feedback 50%, as repetições caem em **.75, .50, .25 e 0** do tempo (cada uma ~6 dB abaixo da anterior) — uma grade de semicolcheias de energia de baixo-médio. Em um groove com posições deslocadas (prática comum em psytech: sub ocupando .27–.95 e baixo entrando em .77 = 360,9 ms), a primeira repetição do delay cai **9,4 ms antes do baixo** e **dentro do sustain do sub** — copiar o 3/16 literal encavala justamente a articulação. Por isso o caminho mais seguro é o **branch reverb** que o próprio vídeo oferece — "either delay or Reverb it's really up to you" (00:01:16.380–00:01:22.190) —, não o delay com feedback 50; se usar delay, feedback baixo e tempo que caia no vazio do groove.
-
-| Função | O que aplicar | Freio / por quê |
-|---|---|---|
-| **kick** | Rumble **em retorno**, não como segundo kick: send do kick → Hybrid Reverb 100% wet (decay 150–300 ms) → **HP 120 Hz 24 dB/oct** → **LP 300–500 Hz, Q ≤1,2** → **Compressor** com sidechain do kick (attack rápido, release 80–150 ms) → retorno **−18 a −24 dB** (ponto de partida). O LP é do vídeo; o HP, o nível e o release são proposta. Se usar o branch delay, feedback baixo (0–15%) e tempo que caia no vazio do groove — nunca 3/16 com 50% sobre um groove deslocado. | O HP é obrigatório para não engordar o sub; o retorno deve ser **mono abaixo de 150 Hz** (Utility Bass Mono). Não fazer 4/4 ininterrupto: o motor do vídeo é 4-on-the-floor e o estilo psytech costuma exigir vácuos e variação no kick. Aplicar só onde o kick já existe, respeitando os respiros. |
-| **sub** | **Intocado.** Nada de square, reverb ou delay no sub. | O HP de 120 Hz no rumble e o LP do reverb do kick são a garantia de que 20–60 Hz não mudam. Não usar o "bit of Reverb" do baixo no sub. |
-| **baixo/rolling** | **Camada média, não mais sub.** Além do sub, adicionar **uma** camada média: onda square/similar, filtro fechado, ressonância moderada (teto prudente ~15), **Env2/Envelope de filtro rápido** (decay na casa de 0,08–0,12 s), amp release curto (~0,06–0,10 s), sem unison, mono. O corte estático é o corpo; é o envelope rápido que abre o filtro no ataque e põe energia em 1,2–4 kHz por alguns milissegundos — é esse o "punch" que o vídeo descreve. | **Duas camadas no total, não três**: empilhar camadas duplica energia de low-mid. Preservar os offsets do groove; a "double note" do vídeo só entra se **substituir** uma nota existente, nunca somando sobre uma posição já ocupada. Reverb do vídeo no baixo: **não no fundamental**; se usar, só na camada média, HP 300 Hz, nível baixo. |
-| **hats/shaker** | **Nada.** O rumble é filtrado ≤500 Hz e o reverb do kick ≤2 kHz; não há motivo para tocar no topo. | Não usar o reverb do kick como "brilho": o estilo minimal psytech rejeita estalo tipo Tech House no kick; o LP do retorno é o que impede o brilho metálico. |
-| **percussão de resposta** | **Nada.** A legenda não descreve percussão de resposta; o clap 909 é **gatilho de sidechain**, não instrumento. Se um clap mudo for usado como gatilho, ele fica mudo e não roteado ao master. | Não confundir gatilho com resposta audível. A resposta percussiva continua sendo o evento; o rumble é fundo. |
-| **madeira** | **Nada.** A legenda não trata de madeira. Não passar o reverb do kick na madeira. | Em solistas acústicos o dry é sagrado; o reverb curto do kick não é cama. |
-| **stab** | **Nada.** Stab seco. | O rumble não deve competir com o ataque do stab. |
-| **subida** | **Nada de rumble na subida.** | O HP 120/LP 500 do rumble não resolve o risco de encorpar o grave da subida. |
-| **atmosfera** | **Nada.** O reverb do kick é curto e low; não é cama. Não transformar o retorno de rumble em atmosfera. | Uma cama, não três; o rumble não entra na função atmosfera. |
-
-### Freios para não engordar o sub nem criar brilho metálico
-
-- **Sub:** HP **120 Hz, 24 dB/oct** na saída do rumble (o vídeo só mostra LP; o HP é adaptação). Retorno mono abaixo de 150 Hz. Medir 20–60 Hz antes/depois: **tem de ficar igual**.
-- **Kick reverb:** decay **≤120 ms** — 0,27 beat a 128 BPM = **126,6 ms**: em um groove em que o sub entra em .27 do tempo, uma cauda mais longa invade o ponto de entrada. Sem pre-delay, difusão baixa, dry/wet baixo, **LP ~2 kHz**. O vídeo manda "decay too long" encurtar e "diffuse to the minimum" (00:03:29.040–00:03:47.210), mas **não dá números**; os valores são proposta.
-- **Baixo:** ressonância com teto (o "crank up the resonance" do vídeo é o gesto, não o valor), LP **1,5–2,5 kHz**, sem FM/RM, sem unison, sem random pitch. O square + ressonância alta + envelope rápido é exatamente a receita que vira serra metálica se passar do teto.
-- **Topo:** medir 5–12 kHz antes/depois; **não pode subir**. Se subir, o LP do rumble ou do reverb está alto demais.
-- **Fase/mono:** o retorno do rumble é mono; não usar AutoPan/Shifter no grave. Correlação <150 Hz deve continuar 1,00.
-
-### Como validar (protocolo de A/B)
-
-1. Render com rumble on/off; medir **20–60 Hz**: deve ficar idêntico (±0,2 dB).
-2. Medir **120–300, 300–1.200 e 1.200–4.000 Hz**: devem subir de forma audível e mensurável; a média de referências é mapa, não meta.
-3. Medir **5–12 kHz**: não pode subir (teste do brilho metálico).
-4. Conferir que os onsets do groove (sub, baixo, shaker) não mudaram de posição.
-5. A/B level-matched do baixo com e sem a camada média; conferir que o kick não ganhou click em 2–5 kHz.
-6. Conferir correlação <150 Hz = 1,00 e que o retorno é mono.
-
-## Prioridade e esforço (alta/média/baixa e baixo/médio/alto, com justificativa curta)
-
-| Dimensão | Valor | Justificativa |
-|---|---|---|
-| **Prioridade** | **alta (P0)** | É a frente groove e ataca o buraco típico de corpo (300–4.000 Hz) pelo mecanismo certo: peso por camada (rumble + médio do baixo), não por volume. O vídeo é curto e o alvo é explícito. |
-| **Esforço** | **médio** | Duas frentes independentes — retorno de rumble (send, filtro, sidechain) e camada média do baixo (síntese + A/B) —, cada uma com medição e risco de encavalamento com o groove. Nada de plugin novo, mas não é um tweak de 10 minutos. |
-
-## Trechos de prova: 3 citações literais da legenda com timestamp
-
-> "the delay we choose is in 316 and with the dry weight obviously a 100 feedback 50" — **00:01:53.100–00:01:55.429**
-> *Prova do rumble: 3/16, dry/wet 100%, feedback 50% — a 128 BPM essa grade cai sobre posições deslocadas do groove (ver cálculo acima).*
-
-> "the idea is to have a bass sound which got a little bit of mid-range you know because you don't want to be too sebby you want to be able to hear it because that's what's gonna give the groove" — **00:05:00.660–00:05:08.930**
-> *Prova do eixo do vídeo: o baixo pesa porque tem médio e é audível; "sebby" é a legenda automática de "subby".*
-
-> "so we're gonna bring down the filter crank up the resonance and other feature envelope modulation to open the filter very fast to create this punch" — **00:05:14.639–00:05:22.310**
-> *Prova do mecanismo do baixo: filtro fechado + ressonância + envelope rápido = punch.*
-
-## Fontes e limites
-
-**Fonte primária:** legenda automática em inglês do vídeo, lida inteira (1.264 linhas, 315 cues); as citações foram conferidas contra ela.
-
-**O que NÃO foi feito / não verificado:**
-- Não assisti ao vídeo nem ouvi o áudio; a leitura é só da legenda automática.
-- O vídeo **não dá números** de decay do reverb, difusão, frequência/Q do filtro do rumble, sidechain, envelope do baixo nem pitch do kick #52. Todos os valores numéricos da aplicação são ponto de partida, marcados como tal.
-- O device de sidechain **não é nomeado** na legenda; só a faixa de gatilho (clap 909) é descrita.
-- A legenda automática nomeia a referência como "a track from Marco called Bill Hazard" (00:00:11.330–00:00:13.549), mas o nome está claramente deturpado e a descrição não nomeia a faixa; **não se usou essa referência como fonte**.
-- A tese "peso do groove sem volume" é o ângulo desta anotação, **não uma frase do vídeo**. O que o vídeo faz é construir o peso em camadas e reduzir o volume do baixo depois de acertar o médio ("you can maybe reduce the volume and now you get something", 00:05:59.699–00:06:05.150).
-
+- Rumble em retorno (não como segundo kick): HP ~120 Hz na saída, LP ≤300–500 Hz, retorno −18 a −24 dB como ponto de partida; retorno mono abaixo de 150 Hz.
+- Sub intocado: nada de square, reverb ou delay no sub; o HP do rumble e o LP do reverb do kick são a garantia.
+- Baixo: o gesto é camada média (não mais sub) — filtro fechado + envelope rápido põe energia no médio por milissegundos; ressonância com teto para não virar serra metálica.
+- O vídeo não dá números de decay, difusão, Q, sidechain ou pitch do kick #52; os valores acima são ponto de partida do estudo.
 
 ---
 
-## tutoriais/fontes/yZ-q1H6KaME.md
+## pesquisas/tutoriais/fontes/yZ-q1H6KaME.md
 
 # Layering Bass Like a Pro!
 
-> **Fonte:** legenda automática em inglês do vídeo (VTT, 86,19 KiB; 2.104 linhas; vídeo ~11:00).
-> Canal: Sonic Academy · Frente: pressao-grave · Prioridade: P1.
-> A legenda automática tem erros de reconhecimento: "Anna" = ANA 2, "webs" = waves, "baseline(s)" = bassline(s), "highp pass" = high-pass, "Qbase" = Cubase. O vídeo **não dá nenhum valor** de frequência, dB, ratio ou decay — a demo é inteiramente por escuta.
+**Canal:** Sonic Academy · **Vídeo:** https://www.youtube.com/watch?v=yZ-q1H6KaME · **Duração:** ~11:00 · **Frente:** pressao-grave · **Prioridade:** P1
+**Fonte:** legenda automática EN (erros conhecidos: Anna = ANA 2, baseline = bassline, Qbase = Cubase). O vídeo não dá nenhum valor de Hz/dB/ratio — a demo é toda por escuta. DAW: Bitwig.
 
-## Técnica ensinada (2-4 frases)
+## Técnicas-chave
 
-O vídeo separa o baixo em **camadas com funções distintas**: uma base estável no fundo — *"I can pick a stable sound which is easy to control in the bottom end"* `[00:00:18.960]` — e, por cima dela, ideias que seriam arriscadas num som único. Ele monta **quatro instâncias de ANA roteadas para um group bus**, com ShaperBox no grupo só para duckar sob o kick `[00:00:47.680–00:01:01.189]`. A camada 1 é **sine + saw** (saw em volume menor, só pelos harmônicos), com **re-trigger** para o ataque ficar estável; essa camada é filtrada para isolar o sub, e as notas que caem no kick são apagadas `[00:01:17.920–00:02:20.470]`. A camada 2 é **dois saws, um deles uma oitava abaixo**, com o saw grave re-triggerado e o agudo **sem** re-trigger — o "bunching" de formas de onda no início da nota rende largura estéreo — para preencher o médio acima do sub `[00:02:38.879–00:03:15.670]`. O fecho é o que ele chama de mais importante: **fazer espaço com EQ**, isolar o sub, monoar com width zero, saturar só o médio e comprimir o grupo `[00:03:56.400–00:09:17.750]`.
+- **Camadas com funções distintas, não um patch só** — 4 instâncias de synth (ANA 2) roteadas para um group bus, cada uma com processamento próprio; ShaperBox no grupo apenas para duckar sob o kick.
+- **Camada 1 — base estável (sub):** sine + saw (saw em volume menor, só pelos harmônicos), re-trigger ligado para o ataque ficar estável; filtrada para isolar o sub; as notas cujo onset cai no kick são apagadas.
+- **Camada 2 — corpo de médio:** dois saws, um deles uma oitava abaixo; o saw grave é re-triggerado e o agudo fica SEM re-trigger — o agrupamento de formas de onda no início da nota rende largura estéreo; filtro com envelope de filtro.
+- **Camadas 3 e 4 — acento e highlight:** um som com ressonância de filtro como acento e outro carregado de reverb como highlight, em poucos pontos da frase (spot sounds).
+- **Fecho (o mais importante, segundo ele):** fazer espaço com EQ, isolar o sub, monoar com width zero, saturar só o médio e comprimir o grupo; step mod em 1/16 no cutoff do filtro dá o movimento.
 
-## Ferramenta usada no vídeo (plugin/stock)
+## Notas de aplicação
 
-- **ANA 2 × 4 instâncias** — a legenda escreve "Anna": *"I've just got four instances of Anna playing here"* `[00:00:47.680–00:00:49.440]`; *"another one that I just quickly put together in Anna"* `[00:02:30.879–00:02:32.710]`.
-- **Group bus** — *"they are all been rooted into a group bus"* `[00:00:51.920–00:00:55.350]`.
-- **ShaperBox** (legenda: "shaper box") no grupo, só para ducking: *"there's an instance of shaper box on this as well just to duck things under the kick here"* `[00:00:55.360–00:01:01.189]`.
-- **DAW = Bitwig** — *"in Bitwig, you can do this"* `[00:05:31.039]`; *"bring in a step mod inside of Bitwig"* `[00:08:07.199]`.
-- **EQ (sem modelo/nome na legenda):** *"grab an EQ here and use the highp pass filter"* `[00:01:53.040–00:01:58.320]`.
-- **Step mod do Bitwig** → *"assign that to our filter master frequency"* `[00:08:13.120–00:08:18.390]`, *"set this up to be 16th notes"* `[00:08:18.720]`.
-- **Saturator (sem modelo):** *"Perhaps something like a little bit of a saturator on the mid-range stuff"* `[00:08:51.040–00:08:57.910]`.
-- **Compressor (sem modelo):** *"So, let's just use the compressor here"* `[00:09:09.279–00:09:17.750]`.
-- **Ferramenta de width / mid-side (não nomeada: "our tool")**: *"bring in our tool... We'll set the width to zero"* `[00:07:18.240–00:07:27.110]`; *"We can also use um midside processing again"* `[00:07:30.000–00:07:33.670]`.
-- **Terceira camada:** *"Just a filter with a filter envelope being triggered"* `[00:02:34.560–00:02:38.869]`.
-- **Quarta camada:** *"another sound in here which has got a lot of reverb on it"* `[00:05:47.840–00:05:52.950]`.
-- O vídeo **não nomeia** EQ, saturator, compressor nem reverb, e **não cita** crossover, HP/LP em Hz, ratio ou decay.
-
-## Tradução para ferramentas comuns: Serum 2, Diva, Vital, Massive X, Surge XT, Kontakt 8, Live 12 nativo
-
-**Arquitetura antes do timbre — 4 pistas separadas, não 4 osciladores num patch só.** O vídeo usa quatro instâncias porque cada camada recebe processamento diferente: uma é filtrada para isolar o sub `[00:01:45.990–00:02:02.389]`, outra é aberta em estéreo `[00:03:03.760–00:03:15.670]`, a de acento leva ressonância `[00:04:44.320–00:04:48.230]` e a de highlight leva reverb `[00:05:47.840]`. O mapeamento: **SUB** = sub isolado mono; **BASE** = camada principal sine+saw; **MÉDIO** = dois saws; **ACENTO/HIGHLIGHT** = spots/highlights. Todas para um grupo, com o compressor de grupo no fim `[00:09:07.519–00:09:17.750]`.
-
-**ANA 2 → Serum 2 (rota principal).**
-- Camada principal: OSC A em sine (ou o Sub do Serum, slot 4) + OSC B em saw com volume menor, exatamente o gesto `"Just a sine oscillator and a saw wave... Just a little bit lower volume for the saw wave. Just providing a little bit of extra harmonics"` `[00:01:18.720–00:01:25.040]`. Ligar **Retrig** do OSC no painel do oscilador — é o equivalente do *"set this to re-trigger just to keep the attacks of the bass really stable"* `[00:01:32.000–00:01:35.439]`.
-- Camada média: OSC A saw + OSC B saw **−12 semitons**. Retrig ligado só no grave — *"The low one, that's one octave down, is re-triggered again"* `[00:02:43.920–00:02:45.280]` — e o agudo **sem** Retrig — *"the top one I've left not re-triggered"* `[00:02:50.319–00:02:52.790]` — para reproduzir o *"slight bunching up of the waveforms at the beginning of the of the note"* que ele associa a largura `[00:02:55.280–00:03:03.750]`. Filtro LP com envelope de filtro: *"Just a filter with a filter envelope being triggered"* `[00:02:34.560–00:02:38.869]`. Largura extra: pan/unison leve no OSC agudo; o "bunching" é comportamento de fase, não um knob chamado width — **INFERÊNCIA de tradução**, validar por escuta.
-- Step mod do Bitwig → **LFO 1 do Serum 2**: Beat Sync em **1/16**, Mode **Retrig**, destino **filter cutoff**, com amount baixo. É o mesmo gesto de *"assign that to our filter master frequency... 16th notes"* `[00:08:13.120–00:08:20.720]`.
-- **GranularOsc não tem papel neste vídeo.** As camadas mostradas são síntese (sine/saw/filtro), não granular; usar granular aqui seria invenção, não tradução.
-
-**Vital / Massive X / Surge XT (alternativas ao ANA).** Vital é a mais direta: dois osciladores (sine + saw), reset/re-trigger por oscilador, largura estéreo e LFO sync. Massive X: dois osciladores com restart por oscilador e unison para a largura. Surge XT: oscilador sub + dois saws, retrigger e LFO sincronizado. Em todos, o alvo é o mesmo: **sine estável embaixo, saws no corpo, ataque re-disparado, agudo livre para a largura** `[00:01:18.720–00:03:03.750]`. *(Mapeamento de parâmetros por plugin = INFERÊNCIA; o vídeo só mostra ANA 2.)*
-
-**Diva.** Entrega o timbre analógico dos dois saws e o corpo da camada média, mas o truque de fase por oscilador não é tão direto quanto no Serum/Vital; o ataque estável se aproxima pelo retrigger de envelope e unison. Usar Diva se o objetivo for calor analógico, não se o objetivo for o "bunching" exato. *(INFERÊNCIA.)*
-
-**Live 12 nativo — o vídeo inteiro sem ANA/Bitwig:**
-- **EQ Eight** por camada: *"you really do want to make space with EQ"* `[00:03:56.400–00:03:59.750]`.
-- **Utility** com **Width = 0** e **Bass Mono** no SUB: *"bring it completely mono... We'll set the width to zero"* `[00:07:18.240–00:07:27.110]`. Prática padrão: low-end rigorosamente mono.
-- **Compressor com sidechain do kick** no lugar do ShaperBox: mesma função de *"duck things under the kick"* `[00:00:57.280–00:01:01.189]`. ShaperBox desenha a curva; o Compressor segue o kick — o resultado musical é o mesmo, o controle é outro.
-- **Saturator** só na pista MÉDIO: *"a little bit of a saturator on the mid-range stuff... And you're still keeping the sub clean of any extra harmonics there"* `[00:08:51.040–00:09:03.646]`.
-- **Glue Compressor** no grupo: *"compress all of this as well"* `[00:09:07.519–00:09:09.269]`.
-- **Hybrid Reverb** só na pista de highlight: *"a lot of reverb on it"* `[00:05:47.840–00:05:52.950]`.
-- **Echo** só na camada de acento, nunca no sub: *"if I'm delaying a sound in a baseline, it's usually in a separate layer isolated in the mids... you're not going to get subs rolling into each other"* `[00:10:24.399–00:10:36.079]`.
-- **Operator** para o sub sine puro (uma única parcial, sem filtro ressonante); **Simpler/Sampler** para tocar as camadas como one-shots se preferir; **Grain** só se a camada de highlight pedir textura — não é o que o vídeo faz. **AutoPan** não é a ferramenta de largura aqui (o vídeo usa mid/side estático, `[00:07:30.000–00:07:38.495]`). **Shifter** desloca pitch/frequência, não largura — não traduz o gesto.
-- **LFO do Live** em 1/16 no cutoff é o equivalente mais próximo do step mod; o Bitwig tem um modulador de passos, o Live não tem 1:1 — alternativa é automação desenhada. *(INFERÊNCIA de mapeamento.)*
-
-**Kontakt 8 (Rubber Bridge Guitar, LOOP GARDEN, Ethereal Earth, Vintage Organs).** Nenhuma dessas bibliotecas é o baixo do vídeo; as camadas 1 e 2 são síntese. Elas só cabem na **camada de highlight/acento** ("spot sounds" `[00:04:18.560–00:04:23.510]`): Rubber Bridge Guitar para plucks curtos, LOOP GARDEN para textura, Ethereal Earth para a cauda, Vintage Organs para corpo — sempre com HP acima do sub e reverb isolada. *(INFERÊNCIA de adaptação, não é fala do vídeo.)*
-
-**Substituições:** ANA 2 → Serum 2/Vital/Massive X/Surge XT; ShaperBox → Compressor com sidechain do kick; Bitwig (step mod, saturator, compressor; a ferramenta de width nem é nomeada) → Live 12 nativo. **VELA, SideKick e Kick 3 não aparecem neste vídeo** — não há nada a traduzir deles aqui.
-
-## Aplicação por função (kick, sub, baixo/rolling, hats/shaker, percussão de resposta, madeira, stab, subida, atmosfera)
-
-**O que a técnica ataca:** as camadas de dois saws preenchem o corpo de médio `[00:03:08.879–00:03:15.670]` e o mid/side empurra as laterais `[00:07:34.080–00:07:38.495]` — exatamente os dois pontos fracos típicos de um mix psytech (falta de corpo no médio e meio estreito), atacados **sem tocar no sub**.
-
-| Função | O que aplicar | Por quê / limite |
-|---|---|---|
-| **Kick** | Não processar. Aplicar a **subtração**: apagar da camada de baixo as notas cujo onset coincide com o kick — *"though we are ducking it, we can probably remove the ones that are on the kick"* `[00:02:15.040–00:02:20.470]`. | Abre o espaço do kick sem EQ nem sidechain mais agressivo. O kick continua a âncora; a regra é tirar nota, não mexer no kick. |
-| **Sub** | Uma camada só de sine, Retrig ligado, **Width 0 / Bass Mono**, **sem saturação**, LP deixando só a fundamental. | *"isolate the sub even more"* `[00:01:46.000–00:01:47.670]`; *"set the width to zero"* `[00:07:24.160–00:07:27.110]`; *"keeping the sub clean of any extra harmonics"* `[00:09:01.200]`. Prática padrão: low-end mono, sem desfasamento estéreo no sub/kick. |
-| **Baixo / rolling** | Sine + saw (saw em volume menor), Retrig no ataque; **HP ~100–120 Hz** para dividir com o SUB; **não quantizar** nem mover onsets do groove. A camada de dois saws entra só no corpo (300–1.200 Hz). **Não** transpor o sub uma oitava para buscar o médio: ele diz que isso deixa o sub instável e pode mudar o groove `[00:03:15.680–00:03:28.710]` — as notas altas vão na segunda camada. | Timbre `[00:01:18.720–00:01:25.040]`, ataque `[00:01:32.000–00:01:40.710]`, corpo `[00:03:08.879–00:03:15.670]`. O vídeo edita **notas**, não timing `[00:02:22.080–00:02:29.430]` — logo o groove sobrevive. *Números de HP = proposta (INFERÊNCIA).* |
-| **Hats / shaker** | **Não é tratado no vídeo.** Único princípio aproveitável: manter a camada de saw com LP (proposta: 2,5–3,5 kHz) para ela não subir no topo. | Evita que o corpo novo vire brilho metálico em 3–4 kHz. *LP = proposta (INFERÊNCIA).* |
-| **Percussão de resposta** | Melhor candidato: criar uma pista **"spot sound"** separada — copiar o padrão, apagar a maioria das notas e deixar poucos acentos com som próprio e reverb dedicada. | É literalmente o processo *"these little spot sounds within these uh layered patterns"* `[00:04:18.560–00:04:23.510]` e *"I'm just looking for sort of places that I like these little highlights in"* `[00:05:06.950–00:05:09.120]`. Função de resposta = poucas notas, não camada contínua. |
-| **Madeira** | Usar a pista de highlight com reverb isolada, HP ≥ 300 Hz, só nos pontos de resposta; nunca como cama contínua. | Camada 4: *"another sound in here which has got a lot of reverb on it"* `[00:05:47.840–00:05:52.950]`. HP = proposta (INFERÊNCIA). |
-| **Stab** | Molde = camada 3: filtro com envelope + **ressonância controlada**, LP para não gerar fizz; acento curto, não sustentado. | *"Just a filter with a filter envelope being triggered"* `[00:02:34.560–00:02:38.869]`; *"quite a bit of resonance in the filter as well"* `[00:04:44.320–00:04:48.230]`. |
-| **Subida** | **Não é tratado no vídeo.** Não usar este esquema para riser: o vídeo é sobre baixo sustentado, não transição. | Sem tradução possível sem inventar. |
-| **Atmosfera** | A única camada com reverb é a de highlight, não uma cama; manter atmosfera fora do sub, com HP e retorno isolado. | *"a lot of reverb on it"* `[00:05:47.840]`; o princípio de delay em camada separada no médio `[00:10:24.399–00:10:36.079]` vale igual para reverb. |
-
-**Nota de fidelidade (direção do filtro do sub):** a legenda diz *"grab an EQ here and use the highp pass filter"* `[00:01:53.040–00:01:58.320]`, mas depois ele fala em *"where the the high cut was for the sub elements"* `[00:04:03.120–00:04:07.519]`. A legenda automática **não permite confirmar** se o filtro é high-pass ou low-pass; o objetivo declarado é *"isolate the sub even more"* `[00:01:46.000–00:01:47.670]`. Na tradução proposta, o SUB leva LP e a camada principal leva HP — a direção exata é decisão por escuta, não está no vídeo.
-
-**Três regras para não engordar o sub nem criar brilho metálico:**
-1. **Sub não se duplica.** O vídeo isola o sub e faz o resto começar acima dele — *"make sure that the sub element is uh by itself"* `[00:07:04.800–00:07:14.070]` — no ponto onde o corte do sub termina: *"We can go down to kind of where the the high cut was for the sub elements"* `[00:04:03.120–00:04:07.519]`, com apenas um leve overlap: *"and we can overlap them slightly"* `[00:04:11.760–00:04:12.879]`. Tradução: HP na camada principal e LP no SUB no mesmo ponto; **não** copiar a sine para a camada média.
-2. **Brilho vem de saturação e ressonância, não de volume de saw.** O saw entra em volume menor `[00:01:22.640–00:01:25.040]`; a saturação é **só no médio** e o sub fica limpo `[00:08:51.040–00:09:03.646]`; a ressonância fica só na camada de acento `[00:04:44.320]`. Para presença em 1.200–4.000 Hz, prefira o acento esparso a abrir o LP dos saws.
-3. **Groove intocado.** As edições do vídeo são subtractivas (`"copying things down and down and down and then subtracting elements from them"` `[00:02:22.080–00:02:27.280]`); nenhuma nota é movida. Se uma nota cair perto do kick, o ducking resolve — só apague a coincidência real de onset. *(INFERÊNCIA.)*
-
-## Prioridade e esforço
-
-- **Prioridade: alta.** É a arquitetura central da frente pressao-grave: separa sub, corpo e acento em canais independentes, o que permite atacar o corpo de médio e a largura do meio sem tocar no sub.
-- **Esforço: médio.** Quatro pistas + grupo, EQ Eight por camada, Utility no sub, Compressor sidechain, Saturator no médio, Glue no grupo e uma reverb na pista de acento. Tudo nativo e reversível; o custo real é a curadoria de notas (copiar/apagar), não a instalação.
-- **Risco: médio.** O risco é a camada de saws comer o topo ou o sub ficar duplicado. Mitigação: LP no saw, saturação só no médio, SUB com Width 0 e checagem de mono antes de fechar.
-
-## Trechos de prova
-
-1. `[00:00:18.320–00:00:30.720]` **"I can pick a stable sound which is easy to control in the bottom end. uh that doesn't move, that has consistent frequencies and provides the weight and grounding for a track."**
-2. `[00:03:54.720–00:03:59.750]` **"when it comes to layering bass like this, you really do want to make space with EQ."**
-3. `[00:07:00.479–00:07:07.520]` **"the EQ is probably the most important when layering bass here. You really want to make sure that the sub element is uh by itself."**
-
+- Tradução: sub = camada sine isolada, mono, sem saturação; corpo = camada de saws com HP; saturação nunca no sub; ducking via Compressor sidechain do kick no lugar do ShaperBox.
+- Não transpor o sub uma oitava para buscar o médio: ele observa que isso deixa o sub instável — as notas altas vão na camada 2.
+- Groove intocado: as edições são subtrativas (apagar notas), nenhuma nota é movida.
+- Sub e corpo se cruzam com leve overlap no mesmo ponto de corte; o vídeo não confirma a direção dos filtros (HP/LP) — decidir por escuta.
 
 ---
 
-## tutoriais/h39gdHGGo-c.md
+## pesquisas/tutoriais/h39gdHGGo-c.md
 
 # Use This Instead Of Rumble - Create Techno Subs With Noises
 
@@ -18628,10 +15771,9 @@ Em vez de fazer o rumble do jeito padrão — kick encharcado de reverb e delay 
 - Não verifiquei se o acervo tem noise loops comparáveis ao pack "Schmutz".
 - O modo Spectral Shift do Serum 2 não foi testado em áudio nesta sessão.
 
-
 ---
 
-## tutoriais/hOdhN46insA.md
+## pesquisas/tutoriais/hOdhN46insA.md
 
 # Ableton Live Beginners Course: Lesson 4 - Rhythm & Samplers
 
@@ -18772,10 +15914,9 @@ Transcrição sem timestamps por frase (só fluxo); aula de curso — valores de
 acima (10% random pan, HP 500 Hz, ~1 kHz, 375 ms, 12 beats de ciclo, threshold "zero a cinco"). BPM e tom da
 demo não citados. Áudio não escutado; variações de resultado dependem do sample.
 
-
 ---
 
-## tutoriais/iWOPUHKbJjI.md
+## pesquisas/tutoriais/iWOPUHKbJjI.md
 
 # Syncopation and Grooves
 
@@ -18849,10 +15990,9 @@ Nota acústica (**proposta**): a síncope **não cria energia de médio por si s
 - O vídeo não mostra a tela na transcrição, então "phase 45°" é o que ele diz, não necessariamente 45° de um ciclo do LFO.
 - A tradução granular em atmosfera é inferência, não conteúdo do vídeo.
 
-
 ---
 
-## tutoriais/iteUJHS5YNE.md
+## pesquisas/tutoriais/iteUJHS5YNE.md
 
 # I Watched 10 Techno Low-End Tutorials So You Don't Have To
 
@@ -18919,8 +16059,8 @@ O vídeo é quase todo subtrativo (EQ que tira o que não precisa), então ele *
 Todas as citações são literais da transcrição ASR do áudio.
 
 1. **[18:25]** — `"So with my processing, I have a bit of like a glue compression on the bus, which was grouping the low end. So you see long attack, short release, just to tame stuff that the kick through."`
-2. **[16:47–17:15]** — `"I really like using sequencers for that, but just be aware of like, avoiding placing the notes on one. It can work in some ways, but really, we want the kick to cut through. So while we're on the kick, kick, short kick, and thumbs up, this will work together if we have long kick with long tail and you want to add subby rumble thing, that's not gonna work that well."`
-3. **[06:59]** — `"And this is what I like about this technique and using sine wave. It has really steady tone, fairly even, more even than all the reverb washes and so on. So it gives you really nice consistent results and allows you to achieve really strong, powerful low end that has weight."`
+2. **[16:47–17:15]** — sequencers são bem-vindos, mas evite notas no tempo 1: com kick curto funciona; kick longo com cauda + rumble sub não funciona bem (Sonic Academy).
+3. **[06:59]** — a onda sine dá tom estável e uniforme (mais que as washes de reverb), resultado consistente e low end com peso (Sonic Academy).
 
 Citações de apoio usadas nas seções (mesma fonte): `"I actually did everything with the plug-ins from Ableton."` **[19:30]**; `"LFO 100% synced to one six"` **[09:21]**; `"here I can go like 5/16, 1/38, 3/16"` **[11:33]**; `"I think people really in those tutorials overdone their processing."` **[17:51]**.
 
@@ -18930,10 +16070,9 @@ Citações de apoio usadas nas seções (mesma fonte): `"I actually did everythi
 - O valor de pico de kick "−8 a −9" é o que ele lê no meter dele, sem unidade declarada (provavelmente dBFS); tratar como referência de ordem de grandeza, não alvo.
 - O BPM do vídeo não é citado; os 150 ms de kick são a leitura dele.
 
-
 ---
 
-## tutoriais/jLrgpWM1qi4.md
+## pesquisas/tutoriais/jLrgpWM1qi4.md
 
 # Ableton Live Beginners Course: Lesson 3.1 - Midi and Melodies
 
@@ -18977,10 +16116,9 @@ Nenhum conflito com práticas usuais do estilo — reforço direto.
 Varredura amostral (~25% lido); a aula integral cobre construção de progressões que não foram extraídas.
 Sem timestamps. Áudio não escutado.
 
-
 ---
 
-## tutoriais/jS8fsWPRYvc.md
+## pesquisas/tutoriais/jS8fsWPRYvc.md
 
 # Sciotech to Scionaugh Sunrise Journey Set @ Boca de Potrerillos, Mexico
 
@@ -19006,10 +16144,9 @@ Referência auditável para estudo de DNA de live-set (jornada sunrise): o mater
 
 Sem escuta nem medição; nada aqui é técnica confirmada. Título/descrição/duração são dados do YouTube.
 
-
 ---
 
-## tutoriais/jjnsu2lnf98.md
+## pesquisas/tutoriais/jjnsu2lnf98.md
 
 # Minimal Psy-tech Elements Serum 2 Sound Design Breakdown
 
@@ -19130,10 +16267,9 @@ alto→seca — *"gives the impression that the sound is coming closer towards y
 Sem timestamps por frase; valores citados: 38 Hz, 0,1 s de delay, 16 unison. Áudio não escutado. Plugins
 pagos dele (Valhalla) são de mercado; disperser/diffuser = dispositivos equivalentes do Serum 2/Live.
 
-
 ---
 
-## tutoriais/jomEtF3s_E0.md
+## pesquisas/tutoriais/jomEtF3s_E0.md
 
 # Full Psytech Breakdown Pt 1: Kick, Bass, Drums
 
@@ -19273,10 +16409,9 @@ Transcrição sem timestamps por frase; valores citados: 128 Hz, ~500 shelf, 8,1
 de reverb, 59% de pan, 1100/3k. Plugins pagos dele (Saturn 2, Newfangled) traduzem para Saturator/clip do
 Live. Áudio não escutado.
 
-
 ---
 
-## tutoriais/jwUNGvz7lqg.md
+## pesquisas/tutoriais/jwUNGvz7lqg.md
 
 # Mathematical Triplet Transition
 
@@ -19323,10 +16458,9 @@ Direta, com os números recalculados para **128 BPM** (regra: recalcular segundo
 
 Sem timestamps por frase (transcrição via web reader). O BPM dele não é citado numericamente (inferível: 217 ms ≈ 138 BPM — mas não declarado; **não verificado**). Áudio não escutado.
 
-
 ---
 
-## tutoriais/kGfIx2d4oEI.md
+## pesquisas/tutoriais/kGfIx2d4oEI.md
 
 # Serum 2 Bass Patch (PsyTech, DarkProg, Zenon, Forest, PsyBass)
 
@@ -19389,7 +16523,7 @@ salta o mix para 100% no primeiro toque do macro** (00:16:41.990–00:17:11.270)
 | **Serum 2 — matriz (velocity)** | Velocity → filter cutoff, com curva | "what I like to do is I like to map velocity to the filter cutoff. Do a shape like so. Which now means the higher the velocity, the more the filter is opening." (00:11:28.079–00:11:40.790) |
 | **Serum 2 — Compressor (FX)** | Controle de faixa dinâmica, makeup, attack rápido, ratio 6:1 | "compressor. And we want to control the dynamic range. Add a little bit of makeup gain. Let's go with a fast attack, a ratio like 6:1 for example." (00:12:56.160–00:13:16.240) |
 | **Serum 2 — Splitter (FX)** | Low/Mid/High; crossovers **210 Hz** e **1k–7k**; só um splitter por vez | "Here we have splitters low high low mid high and midside splitter. Sadly we can only put on one splitter." (00:13:38.000–00:13:48.550); "210 Hz, from lows to mids is okay ... from mids to highs, we go from 1k to 7k, 7,000 htz." (00:14:09.829–00:14:18.550) |
-| **Serum 2 — Hyper Dimension (FX)** | Só na banda de médios, mix via macro 6: mono → estéreo 3D | "we go into the mids and add a hyper dimension. Let's go here, put the mix all the way down, take macro 6, and map it to the mix of the hyper dimension. And now we can create out of a mono baseline a 3D stereo baseline." (00:14:18.560–00:14:40.389); "Super nice only for the mids." (00:14:40.399–00:14:42.710) |
+| **Serum 2 — Hyper Dimension (FX)** | Só na banda de médios, mix via macro 6: mono → estéreo 3D | "we go into the mids and add a hyper dimension… map it to the mix… out of a mono baseline a 3D stereo baseline" (00:14:18.560–00:14:40.389); "Super nice only for the mids." (00:14:40.399–00:14:42.710) |
 | **Serum 2 — Delay (FX)** | "House effect": um lado atrasado 3–15 ms, feedback 0, mix 100% | "What is a house effect? We split the signal into the left and right channel. And one of these channels will add a little bit of delay." (00:14:58.880–00:15:07.910); "Something between 3 to 15 milliseconds ... I go with 10 milliseconds ... feedback all the way down to zero ... a kind of a slapback, a one-time delay ... mix all the way up to 100%." (00:15:22.959–00:15:53.350) |
 | **Ableton Live 12** | Só a DAW (declarada na descrição); nenhum device do Live é demonstrado na fala | Descrição: *"DAW: Ableton Live 12 @Ableton / VST: Serum 2 @XferRecords"* |
 
@@ -19479,10 +16613,9 @@ Tudo nesta seção que não estiver entre aspas é inferência do estudo para um
 - Escopo do vídeo é só o patch: nada de arranjo, mix fora do plugin, nem os outros elementos da faixa.
 - A equivalência dos FX do Serum 2 com devices do Live (splitter via rack + EQ Eight, Hyper Dimension via Chorus-Ensemble, slapback via Delay) é inferência, não testada nesta ficha.
 
-
 ---
 
-## tutoriais/lHGfb5Hlmuc.md
+## pesquisas/tutoriais/lHGfb5Hlmuc.md
 
 # Hypnotic Techno Textures - Adding Depth And Tension To Your Tracks
 
@@ -19597,11 +16730,11 @@ A ordem segue a fala do autor: *"I started with a bit of side chaining"* `[00:03
 - **Risco: médio.** Três riscos concretos: (1) mascarar hats/percussão de resposta; (2) virar "cola cinza" se ficar contínua e igual; (3) reacender 2–4 kHz. Todos mitigáveis com LP, HP, sidechain e entrada/saída por seção.
 - **Reversibilidade: alta.** Um bus, dois volumes — mutar devolve o estado anterior sem tocar no groove.
 
-## Trechos de prova: 3 citações literais da legenda com timestamp
+## Trechos de prova da legenda com timestamp
 
 1. `[00:00:48.000–00:00:56.960]` **"so this module is a noise generator and it has 30 different algorithms you can switch between them with this dial"**
 2. `[00:04:06.400–00:04:15.480]` **"then I used a little bit of EQ to place everything in the area of the mix where it belongs which in our case is the high mid area"**
-3. `[00:04:46.880–00:05:01.400]` **"you can see the same thing going on here just with a slightly different LFO rate and I did this to let them weave in and out of each other so sometimes the noise is more audible than than the Drone and vice versa"**
+3. `[00:04:46.880–00:05:01.400]` **LFOs em taxas levemente diferentes fazem ruído e drone se entrelaçarem — ora um, ora outro mais audível (SINEE Global)**
 
 **Citações de apoio usadas acima (mesma legenda):** sidechain/respiração `[00:03:33.159–00:03:37.920]`; EQ high-mid `[00:04:14.480]`; reverb+delay no fundo `[00:04:16.759–00:04:21.949]`; LFO no Utility `[00:04:30.400]`; desligar o LFO `[00:06:19.800–00:06:24.000]`; tensão por volume `[00:06:36.400–00:06:40.800]` e `[00:07:15.560]`; VCV Rack gratuito `[00:07:42.400]`; Noise Plethora como plugin grátis `[00:07:56.759]`.
 
@@ -19611,10 +16744,9 @@ A ordem segue a fala do autor: *"I started with a bit of side chaining"* `[00:03
 - A legenda **não** registra números de EQ, corte, rate de LFO, threshold de sidechain ou dB de retorno. Nenhum valor numérico desta ficha vem do vídeo; o que aparece na tela e não é falado não foi lido.
 - Sem escuta do áudio; estudo de leitura + proposta.
 
-
 ---
 
-## tutoriais/lhwtChvr-TM.md
+## pesquisas/tutoriais/lhwtChvr-TM.md
 
 # Atmospheric Driving Underground Techno Idea — Start To Finish (Live 10) — mapa integral
 
@@ -19665,10 +16797,9 @@ Ableton Live 10 nativo: Simpler/warp, band-pass, Redux, ping-pong delay, auto-pa
 
 Legenda ASR de qualidade baixa em trechos ("sermonic spec", "zooming earring" = leitura incerta); vídeo curto e sem arranjo/mix; nenhum valor numérico de parâmetro na legenda. Áudio não escutado; título promete atmosfera que a legenda não ensina.
 
-
 ---
 
-## tutoriais/li-Oed1DWck.md
+## pesquisas/tutoriais/li-Oed1DWck.md
 
 # Granular Sound Design: Offset Playheads & Poly-Modulation for Lush Atmospheres
 
@@ -19833,10 +16964,9 @@ O conceito não depende do Bitwig: qualquer motor granular com sample + múltipl
 
 Sem escuta do áudio; leitura integral da legenda. Todos os números da receita são proposta de partida (a legenda não registra valores); os parâmetros citados do Serum 2 seguem a nomenclatura de automação dele — conferir os nomes na GUI.
 
-
 ---
 
-## tutoriais/m5GB92QD0Sw.md
+## pesquisas/tutoriais/m5GB92QD0Sw.md
 
 # How to Make Amazing Shaker Loops for Deep House & Organic House
 
@@ -19871,17 +17001,16 @@ No topo percussivo: 2–3 camadas de shaker com caráter distinto, 16avos, veloc
 ## Trechos de prova (legenda)
 
 1. "the simple trick of adding swing and groove to the Shakers and there's two ways… first way is using the velocity so if I actually follow this pattern low medium high medium" — linhas 246–257
-2. "the second way to do this is actually by using side chain compression from the kick drum… it feels to get glues to the track a bit more by flowing with the kick I like to do a little bit of both" — linhas 301–324
+2. Segundo jeito: sidechain do kick "colando" o shaker no groove — ele usa os dois (velocity + sidechain) — linhas 301–324 (Dowden Production Academy)
 3. "now I have two layers I can actually pan one left and one right just a little bit to give a little bit of width and stereo dimension" — linhas 354–362
 
 ## Limites do estudo
 
 Metade final do vídeo (EQ/saturação/pressão, linhas 430–1486) não lida — `não verificado`. Sem valores numéricos de swing/dB na legenda (velocities são desenhadas de ouvido). Áudio não escutado.
 
-
 ---
 
-## tutoriais/mQ8JN4Iebxw.md
+## pesquisas/tutoriais/mQ8JN4Iebxw.md
 
 # Ableton Live Beginners Course: Lesson 7 - Mixing, Mastering and Marketing
 
@@ -19937,10 +17066,9 @@ Metade final do vídeo (EQ/saturação/pressão, linhas 430–1486) não lida �
 Varredura amostral: ~20% do texto lido; seções de marketing e de mix por canal não dissecadas. Sem
 timestamps. Áudio não escutado.
 
-
 ---
 
-## tutoriais/mYSk9hX2YXk.md
+## pesquisas/tutoriais/mYSk9hX2YXk.md
 
 # How to Produce Organic House like Armen Miran (free project)
 
@@ -19981,10 +17109,9 @@ Camada de micro-percussão orgânica nos micro-espaços entre os eventos do groo
 
 ~80% da legenda não lida (elementos melódicos/atmosfera do projeto). Áudio não escutado.
 
-
 ---
 
-## tutoriais/mby42Ewjk2o.md
+## pesquisas/tutoriais/mby42Ewjk2o.md
 
 # Making A Dark Atmospheric Techno Track Start To Finish In Ableton Live 10
 
@@ -20033,10 +17160,9 @@ Equivalente comum para quem não usa Zebra/LFOTool: texturas dark em Diva/Surge 
 
 Legenda automática ASR, áudio não escutado; 165 blocos [Music] — a maior parte do valor do vídeo é visual/execução e não é capturável por legenda. **Não há construção de bassline/sub no vídeo inteiro** (única menção a "bass" é a frase de workflow do item 1); para estudos de motor de grave, o vídeo entrega só arranjo/cola/disciplina de fundo. Nenhum valor numérico de compressor, EQ ou filtro verbalizado.
 
-
 ---
 
-## tutoriais/n2rdb-8fQ9c.md
+## pesquisas/tutoriais/n2rdb-8fQ9c.md
 
 # Durosai - Psy-Techno Track Breakdown
 
@@ -20122,7 +17248,7 @@ O núcleo do vídeo é **Serum + Live**. Nada depende de ANA 2, VELA, SideKick, 
 > "Kick is also actually straightforward. Um it's just this BT 808 kick sample. Just shortening that decay so it doesn't ring out super long."
 > — 00:02:33.840–00:02:37.830
 
-> "...but what I'm doing is after 50 milliseconds, I'm tailing this off a little bit. So, what that's going to do is going to make the kick a bit more punchy, also save me some headroom in my mix cuz the kick's not going to be as loud for so long."
+> "...after 50 milliseconds, I'm tailing this off a little bit" — encurtar a cauda deixa o kick mais punchy e poupa headroom (Durosai)
 > — 00:03:09.440–00:03:25.830
 
 > "So, I have it at 21 and then it's a pretty short decay, 98 milliseconds. So, that's what's making it sound very plucky."
@@ -20131,7 +17257,7 @@ O núcleo do vídeo é **Serum + Live**. Nada depende de ANA 2, VELA, SideKick, 
 > "This plugin, because it's adding like drive and saturation, it's going to bring in again some of those more lows. So, that's why I have the second high pass right here."
 > — 00:06:44.080–00:06:55.550
 
-> "...this pattern is just one long note. So, I want this to keep looping. So, I have it set to 1/16. So, this envelope's going to repeat um every 16th note, and that's what that arp is playing."
+> "...this pattern is just one long note... I have it set to 1/16" — o envelope repete a cada 16avos e é isso que o arp toca (Durosai)
 > — 00:12:48.240–00:12:59.510
 
 > "And they're playing off each other. This is like a call and response thing. So, this is calling, this is responding."
@@ -20142,10 +17268,9 @@ O núcleo do vídeo é **Serum + Live**. Nada depende de ANA 2, VELA, SideKick, 
 
 **Limite desta leitura:** legenda automática, com erros de reconhecimento (por exemplo "Dudesai" por "Durosai", "side techno" por "psy-techno", "sub great table" por "sub wavetable"). Nenhuma afirmação acima depende de corrigir essas palavras. O que o vídeo **não** diz: BPM, valores de ratio/threshold dos compressores, redução exata de cada EQ, nomes dos samples de pack, e a marca da maioria dos plugins de terceiros (RComp, Hyperdimension, Kickstart, Sound Shifter, Valhalla) — o autor não as nomeia.
 
-
 ---
 
-## tutoriais/nS7CHBL-Bzs.md
+## pesquisas/tutoriais/nS7CHBL-Bzs.md
 
 # Fix Muddy Low-End with Auto Phase Alignment in SideKick
 
@@ -20250,14 +17375,13 @@ Duas grandezas diferentes que o vídeo trata como uma só:
 
 1. `00:16:10.897` — "So now Sonic Academy has added a phase detection and phase alignment tool here."
 2. `00:17:41.565` — "it needs to get the phase information from your drum coming through the sidechain, and then it will use that to equalize your bass."
-3. `00:20:28.449` — "the results are almost perfect for me. It's less of an issue in the tail end of the bass, but it seems to really hit that rich bit at the beginning where you want the bass to be leveled out, or the phases to be leveled out between the drum and that bass sound."
+3. `00:20:28.449` — resultado "almost perfect": o efeito maior está no ataque do baixo, onde as fases de bateria e baixo precisam se alinhar (Sonic Academy).
 
 *Citações literais da legenda automática (blocos rolantes reunidos; o texto aparece palavra por palavra nos blocos a partir do timestamp indicado).*
 
-
 ---
 
-## tutoriais/nU3udPVlJGg.md
+## pesquisas/tutoriais/nU3udPVlJGg.md
 
 # How To Make Dark Room Techno - Drone
 
@@ -20365,10 +17489,9 @@ Rate muito lento, depth baixo, feedback baixo, só na banda 300 Hz–4 kHz: "emp
 - **Sem arranjo**: não há posição na timeline, nem técnica de subida/transição, nem relação com kick/bass além do sidechain.
 - O vídeo tem ~13 min e termina em propaganda; ele constrói **só o drone**, não a faixa inteira.
 
-
 ---
 
-## tutoriais/nco88SuWNuA.md
+## pesquisas/tutoriais/nco88SuWNuA.md
 
 # Music Productivity Hack: Mood Management
 
@@ -20410,10 +17533,9 @@ Nenhuma (conceito).
 
 Vídeo curto de opinião; sem técnica de DAW.
 
-
 ---
 
-## tutoriais/oO2gdXg1-nE.md
+## pesquisas/tutoriais/oO2gdXg1-nE.md
 
 # 3 Ways To Write Hypnotic Techno Hooks
 
@@ -20608,10 +17730,9 @@ honest" (01:19) — o gancho é construído no processamento e na automação, n
 - **Não houve render, escuta, A/B nem medição de áudio na leitura original.** O contexto medido citado (300–1.200 Hz, 1.200–4.000 Hz, mono, .27/.77) veio do projeto de referência, não de medição nova.
 - A ordem de entrada por compasso e as alocações por função são **proposta** (inferência), não arranjo aplicado.
 
-
 ---
 
-## tutoriais/qvJqxGrAtCc.md
+## pesquisas/tutoriais/qvJqxGrAtCc.md
 
 # Transition FX Hack
 
@@ -20664,22 +17785,15 @@ A tradução é direta: o grupo é o contêiner portátil; os sintetizadores sã
 
 ## Trechos de prova: citações literais da legenda com timestamp
 
-> "…to take this whole effects group and I can drag it into my project where it says drag or drop files and devices here and it'll place all of those in. It'll place all the tracks in with all the clips placed exactly where I had them." — **00:01:37.320–00:01:48.350**
->
-> Em português: "…pegar este grupo de efeitos inteiro e arrastá-lo para o meu projeto, onde diz 'arraste ou solte arquivos e devices aqui', e ele colocará tudo isso dentro. Ele coloca todas as pistas com todos os clipes exatamente onde eu os tinha."
+> "…take this whole effects group and I can drag it into my project" — arrastar o grupo de efeitos recria as pistas com os clipes exatamente onde estavam (Sonic Academy) — **00:01:37.320–00:01:48.350**
 
-> "And this had a side chain compressor on it. It's getting side chained from the crash cymbal and it's still remembering that routing, so that's pretty cool, too." — **00:04:47.560–00:04:53.350**
->
-> Em português: "E isto tinha um compressor com sidechain. Ele está sendo sidechainado pelo crash e ainda se lembra desse roteamento, o que é bem legal também."
+> Sidechain vindo do crash cymbal sobrevive à cópia — "it's still remembering that routing" (Sonic Academy) — **00:04:47.560–00:04:53.350**
 
-> "If you've done it once and you like the way it sounded, just grab it from another project and pull it right into your existing one." — **00:06:11.440–00:06:16.470**
->
-> Em português: "Se você já fez uma vez e gostou de como soou, basta pegá-lo de outro projeto e puxá-lo direto para o seu projeto atual."
-
+> "If you've done it once and you like the way it sounded, just grab it from another project" (Sonic Academy) — **00:06:11.440–00:06:16.470**
 
 ---
 
-## tutoriais/rSorLiUr6xI.md
+## pesquisas/tutoriais/rSorLiUr6xI.md
 
 # How to Write Better Melodies by Starting with Rhythm First
 
@@ -20794,10 +17908,9 @@ Compassos 1–8: 2 compassos de **pergunta** (3 notas ascendentes do vocabulári
 - O vídeo **não nomeia** plugin, DAW, BPM, velocity, automação ou processamento — tudo o que este mapa atribui a timbre, EQ, pan ou delay é **tradução**, não conteúdo do vídeo.
 - "Ferramenta usada no vídeo" fica sem marca por ausência de evidência na legenda; não foi possível confirmar o DAW por outra via sem assistir ao vídeo.
 
-
 ---
 
-## tutoriais/receitas-referencias/RECEITA-KICK-CONGELA-20261101.md
+## pesquisas/tutoriais/receitas-referencias/RECEITA-KICK-CONGELA-20261101.md
 
 # Receita: kick "Congela" (01/11/2026)
 
@@ -20840,10 +17953,9 @@ Nota: em teste de escuta, a recriação no Operator ficou abaixo do sample; o re
 - EQ Eight com shelf de high ~5 kHz **−5 dB** para domar o estalo da ponta.
 - Ao substituir o kick anterior por este sample, copiar para os clipes do sample as ausências/vácuos do kick anterior — os respiros de 1–2 tempos ficam preservados.
 
-
 ---
 
-## tutoriais/sTizY7Qln78.md
+## pesquisas/tutoriais/sTizY7Qln78.md
 
 # Create Techno Atmos And FX Sounds With Sends
 
@@ -20980,10 +18092,9 @@ O vídeo só dá qualitativos: LFO "really really slow", reverb "100% wet" e "re
 - O Redux é **INFERÊNCIA** a partir de "8bit and really lows sample frequence" + contexto Ableton; o nome não é dito.
 - A referência de ~6 s de reverb com damping no topo vem de método de mixing psytrance (estudo externo), não do vídeo.
 
-
 ---
 
-## tutoriais/t7Y-m6KdFQk.md
+## pesquisas/tutoriais/t7Y-m6KdFQk.md
 
 # 20+ Progressive House Bass Patterns & Tricks that CHANGED my Life
 
@@ -21027,10 +18138,9 @@ Ableton (MIDI, Groove Pool, audio-to-groove) + presets de Serum/Diva (pagos, do 
 
 Miolo (patterns individuais 3–19, linhas 300–830) lido só pelo índice — cada pattern não foi dissecado; sem valores de BPM/tom citados nas janelas lidas. Áudio não escutado.
 
-
 ---
 
-## tutoriais/tfncDL3iIeI.md
+## pesquisas/tutoriais/tfncDL3iIeI.md
 
 # Ableton Live Beginners Course: Lesson 5 - FM Synthesis
 
@@ -21050,9 +18160,7 @@ Miolo (patterns individuais 3–19, linhas 300–830) lido só pelo índice — 
   sem filtro.
 - **FM no Operator** (configuração default: cada osc modula o anterior): a taxa do modulador = a própria
   nota (D ≈ 38 Hz modulando a 38 Hz) gera harmônicos harmoniosos. **Cuidado nº 1: o sub some** —
-  *"as we increase this frequency modulation, there's a point here where the sub starts to drop away… if
-  we're designing this as a sub, we don't want to lose too much of that sub energy… choose somewhere around
-  here where the sub's still nice and strong, but we've got these higher frequencies"*. EQ aberto o tempo
+  *"as we increase this frequency modulation, there's a point here where the sub starts to drop away"* — parar no ponto em que o sub ainda é forte com os harmônicos em cima*. EQ aberto o tempo
   todo como analyzer. Método: primeiro osc até aparecer "a couple of these", depois engatar o segundo
   (*"add some more frequencies without the sub dropping away"*).
 - **Wobble com pitch estável:** envelope POR OSCILADOR do Operator (no lugar do filtro) — *"deep wobbing
@@ -21157,10 +18265,9 @@ Sem timestamps por frase; valores citados só os do texto (38 Hz, −18/−22, 2
 oitavas). A demo do curso é em D (aula) — todos os alvos traduzem para a tônica do projeto próprio. Áudio não
 escutado; a "sensibilidade" dos knobs FM varia por preset/versão do Live.
 
-
 ---
 
-## tutoriais/ttYFldHqLWk.md
+## pesquisas/tutoriais/ttYFldHqLWk.md
 
 # Raw / Hypnotic Techno - Fill Up Your Mids! (Mix Translation On Every Soundsystem)
 
@@ -21244,19 +18351,18 @@ O conceito sobrevive inteiro: o que ele faz é **densidade espectral por conteú
 ## Trechos de prova
 
 1. `[00:03:30.799–00:03:46.070]` **"and for this I'm going to use an instance of pro Q3 so you can see at 468 and 740 HZ this is where I engaged the dynamic AQ just to tame the spikes a little bit"**
-2. `[00:06:51.919–00:07:05.150]` **"because I don't really want it to shine in the areas where the kick base and the highights are located so everything that is symbols wres hiatts and shakers should live in this area right here and I don't want it to be masked by my sense"** [legenda automática; "sense" = synths]
+2. `[00:06:51.919–00:07:05.150]` **pro-Q3 dinâmico: o elemento não pode mascarar a zona de kick/baixo nem a de pratos/hats/shakers** [legenda automática; "sense" = synths]
 3. `[00:05:00.880–00:05:09.790]` **"but even if you do melodic stuff you can apply the same concept so every move you make that fills the Spectrum more is really helpful"**
 4. `[00:05:09.800–00:05:26.950]` **"least I duplicated my track and added some notes two octaves [Music] higher ... and now we can see that the mid"**
-5. `[00:01:40.840–00:01:53.910]` **"lost in uh what some people call the smiley curve so you have a huge over pronounced low end and chances are very over pronounced highs as well and there's a big dip in the middle looks a little bit like a bathtub"**
+5. `[00:01:40.840–00:01:53.910]` **cuidado com a "smiley curve": low e highs super pronunciados com vale no meio — formato de banheira (SINEE Global)**
 
 **Verificação da fonte (estudo original):** a faixa `en` traduzida falhou com HTTP 429 (rate-limit) e `--write-subs` não encontrou legendas humanas; a faixa `en-orig` baixou inteira via `--sub-langs "en.*"` (62,19 KiB, 1.528 linhas, confirmada por listagem). Contagem de "ANA/VELA/SideKick/Kick 3/Bitwig" no VTT: 0 ocorrências relevantes.
 
 **O que o vídeo NÃO diz (lacunas, para não inventar):** não dá Q, ganho, threshold, ratio, attack/release do EQ dinâmico; não dá as frequências do corte dos synths (só "cut off of the high frequencies"); não fala de sidechain, mono, largura estéreo, BPM ou groove; não decifra "amp" nem "sech"; não mostra a curva-alvo em números; "two spikes" é a demo dele, não uma regra.
 
-
 ---
 
-## tutoriais/uqsXhPBpxAg.md
+## pesquisas/tutoriais/uqsXhPBpxAg.md
 
 # Making A Track From START TO FINISH — Progressive House (Diva) — mapa por janelas
 
@@ -21303,7 +18409,7 @@ Track de progressive house "das antigas" com **beat contínuo e automação lent
 2. "for the base I'm going to be using Diva... making like quite a sustained kind of sounding base" — 00:13:07
 3. "I'm going to add in a square wave and that square wave I'm going to pitch down and octave... that just gives it a little bit of growl" — 00:13:30
 4. "setting this to Mono so the nodes don't overlap" — 00:14:44
-5. "the Bas it kind of just disappears because that envelope is too short and so I think we just need to bring up the sustain... adding one or two base shots to kind of keep the low end feeling nice and full and also might improve the groove" — 01:59:16
+5. "the Bas it kind of just disappears because that envelope is too short" — subir o sustain e somar 1–2 "bass shots" para o low end ficar cheio e o groove melhorar (PML) — 01:59:16
 6. "instead of doing like really short exciting drop with a euphoric breakdown and then another 16 Bar drop I'd rather have kind of a beat that goes all the way through the track" — 00:25:44
 7. "it's just going to be maybe dropping out the kick or taking out just the base from the kick and the tum" — 00:51:14
 8. "yeah here we starting on the four the e I'm going up to the five and then down to the three... and it's actually such a nice sound... relieving" — 00:18:42
@@ -21312,10 +18418,9 @@ Track de progressive house "das antigas" com **beat contínuo e automação lent
 
 Leitura por janelas (declaradas acima) — cerca de 2/3 do meio (mais leads/pads/mix) não lidos; "Basse"/"base" no ASR = bass (correção por contexto); o vídeo é B minor (declarado aos 00:04:5x) — toda a teoria citada é dele, traduzida por grau; sem valores de Hz na legenda. Áudio não escutado.
 
-
 ---
 
-## tutoriais/v-mjY-Vlgv0.md
+## pesquisas/tutoriais/v-mjY-Vlgv0.md
 
 # How to Make Hypnotic Techno Synth
 
@@ -21519,10 +18624,9 @@ O vídeo **não usa granular**; `GranularOsc` não é necessário aqui. Mapeamen
 - O padrão de MIDI do vídeo usa **0 e +6 semitons** (trítono). Em C# frígio, +6 cai em **G natural**, fora da escala; a troca por +7/+1 é decisão de projeto, não do vídeo.
 - O preset do vídeo é oferecido para **Live 11** (link da descrição); ambientes Live 12 podem diferir em nomes/faixas.
 
-
 ---
 
-## tutoriais/vREN7ACIcFc.md
+## pesquisas/tutoriais/vREN7ACIcFc.md
 
 # Tech Tip - Granular Drone
 
@@ -21636,7 +18740,7 @@ Os nomes de parâmetro do Granulator III acima vêm de conhecimento geral e **n�
 
 ## Trechos de prova
 
-> *"but I'm not what I'm not going to do this time is I'm not going to mess around with a pitch too much because we want to keep this at the same same pitch on each note so we don't want it wavering in pitch because we can use this melodically"* — **00:00:59.570**
+> *"I'm not going to mess around with the pitch too much"* — pitch estável por nota, porque a intenção é usar a variação de forma melódica (Sonic Academy, Bluffmunkey) — **00:00:59.570**
 
 > *"probably about 50/50 and then definitely some LFO on the panning so let's bring that down"* — **00:02:38.450**
 
