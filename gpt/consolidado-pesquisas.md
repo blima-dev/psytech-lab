@@ -56,6 +56,7 @@ Os 18 stems são **128 BPM exatos, alinhados** — podem entrar como camadas de 
 3. Stems como material: resample por trecho (o "square" e o "Reaktor 6" são stabs/texturas prontos em Em — Em é relativo de G; para levar a C# frígio, pitch de ±5 semitons e audição para escolher a direção).
 4. Provas: medição por envelope RMS (250 ms) sobre os arquivos do pack.
 
+
 ---
 
 ## pesquisas/AUDITORIA-PACKS-ORGANICOS-20261029.md
@@ -140,6 +141,7 @@ Shakers existem em 3 packs (Organica 6: 40 one-shots + 19 loops · Tulum: 30 + 3
 Qualidade/timbre de qualquer arquivo (sem escuta) · conteúdo real dos áudios vs nome · presets .h2p/Divas e .fxp Serum 2 não abertos · tonalidade real dos MIDIs (nomes sugerem várias; a referência do estilo é tônica frígia) · duração completa por pasta (amostra por família).
 
 **Provas:** `find` por pasta (contagens acima) · `afinfo` amostras: Perc High 0,496 s · ShakerShot 1,000 s · PercTexture 1,563 s · Flute 6,606 s · totais: 1.039/1.095/456 wavs.
+
 
 ---
 
@@ -263,6 +265,7 @@ O curso é **techno melódico / progressive house** de 2020: Lane 8, Ben Böhmer
 - Os presets foram lidos em parâmetro, **não ouvidos**.
 - O mapeamento código→nome de modelo (oscilador/filtro) é inferência do manual.
 - O zip **não traz o projeto Ableton** citado na introdução; se o curso promete um projeto, ele não veio neste pacote.
+
 
 ---
 
@@ -491,6 +494,7 @@ Há também um **erro de escala de tempo** no detector de tensão (`round(22050/
 
 ---
 
+
 ---
 
 ## pesquisas/ESTUDO-ARRANJO-FX-DESENHO-20261025.md
@@ -578,6 +582,7 @@ Miles-CallToTheWild · Yao-Limbo · Yao-Demons.
 - Notas do lead via pyin = subamostra do melódico tonal dominante (serve para campo/registro/conversa; densidade absoluta vem dos onsets).
 - **Acervo amplo (266 do Psy4 + Tech Psy SC) NÃO rodou nesta rodada** (falhas de infra na sessão: bug de path, segfault do beat_track em py3.13 → fallback autocorrelação, pyin lento em GPU e quedas de VM). Playbook pronto para sessão nova.
 - BPM por fallback de autocorrelação tem desvio ~1,2% vs beat_track (127,7 vs 129,2 no Slippery).
+
 
 ---
 
@@ -828,6 +833,7 @@ A pesquisa externa privilegiou **fontes primárias da cena**, documentação/fab
 
 **Internet consultada:** sim. As conclusões externas se apoiam principalmente em **Zenon Records/Zenon Education, AlpaKa MuziK, Beatport, Spotify for Artists, FabFilter, iZotope e pesquisa perceptual de 2025**. Os números específicos do caso e de Slippery/Kaled/Gazolla/ISMAIL foram tratados como **medições fornecidas pelo projeto de origem**, não como dados inventados ou extrapolados da web.
 
+
 ---
 
 ## pesquisas/ESTUDO-BUILDS-NOTEBOOKS-20261012.md
@@ -862,6 +868,7 @@ A aprovação de um build exige escuta com preparação e chegada completas, em 
 Começar pela **conversa de motivos (arco A)**, combinando depois uma **trajetória seletiva de timbre/profundidade (arco B)**. A estrutura torna a direção reconhecível e a transformação pode aumentar tensão sem exigir mais camadas. O **arco C** oferece variação rítmica pontual quando a frase já é reconhecível.
 
 A descrição oficial do curso Zenon apresenta transformação de dois hooks para a transição e depois um riser rítmico de apoio. É evidência curricular, não escuta das aulas. Os tempos exibidos no catálogo são durações de aulas; não usar como timestamps de excertos. O artigo TenseMusic sustenta tensão com múltiplos eixos, mas foi avaliado principalmente em música clássica e não valida uma receita psytech.
+
 
 ---
 
@@ -1030,49 +1037,505 @@ CARIMBOS: MEDIDO = DSP local (ffmpeg ebur128 + scipy) · OUVIDO = escuta assisti
 
 **Limites declarados:** swing dos hats por DSP = NÃO VERIFICADO (escuta qualitativa "leve") · escuta = 8 segmentos, não a faixa contínua (4:40–5:05 e 5:40–6:45 só DSP).
 
----
-
-## pesquisas/Estudo
-
 
 ---
 
-## Synth
+## pesquisas/Estudo Synth e Atmos e FX.md
+
+# Pesquisa aprofundada de SYNTH/GLITCH, FX, vozes e atmosferas
+
+## Sumário executivo
+
+**Veredito:** o caso medido (uma faixa psytech de referência) **já tem vocabulário suficiente e, em vários aspectos, mais recursos do que precisa**. A oportunidade não é adicionar synths, plugins, camadas ou FX. É **transformar os canais existentes em uma hierarquia mais radical**, onde glitch, voz, atmosfera e transições aparecem como informação rara e deliberada. Isso está muito mais próximo do denominador comum Zenon/psytech atual: som profundo e hipnótico, detalhes digitais complexos, contraste orgânico–futurista e textura minuciosa, não preenchimento permanente. A própria Zenon, em material de 2026, associa sua estética a síntese glitch, paisagens imersivas, complexidade de design e à tensão entre orgânico e eletrônico; lançamentos recentes da AlpaKa descrevem bushtech/psytech em termos semelhantes, com "texturas psicodélicas", grooves rolantes e detalhe controlado.
+
+O caso medido mostra uma faixa conceitualmente madura — **128 BPM, C# frígio, vocabulário completo de glitch/FX, voz narrativa, madeiras, granular, FM, formant e atmosfera** — mas com quatro desvios mensuráveis: energia de 8 kHz+ abaixo das referências, presença excessiva, banda média espacialmente estreita e densidade de transientes acima do teto. O render registra **8 kHz+ = −25,6 dB, ar = −20,1 dB, centroide = 217, presença = 0,64, correlação média L/R = 0,80 e 7,57 picos/s**, contra referências do corpus: 8 kHz+ ≈ −22,1 a −20,1 dB, centroide 266–287, presença ≈0,51, correlação 0,32–0,44 e teto interno de 6,99 picos/s.
+
+| Descoberta | Veredito | Consequência |
+|---|---|---|
+| **O problema não é falta de conteúdo** | **Verificado** | Formant, FM, granular, stutter, reverse, tape stop, riser, downer, voz, foley, drones e camas já existem. Adicionar famílias aumenta o problema de densidade. |
+| **A assinatura mais promissora é orgânico → digital → orgânico** | **Fortemente sustentado** | Madeira, voz e foley devem alimentar resampling, granular, spectral e physical modelling; isso diferencia o projeto sem trocar identidade. Zenon Education ensina justamente sampling, FM, granular, resampling, micro-edit e pads a partir de amostras. |
+| **"Abrir" não significa simplesmente subir agudo** | **Verificado** | +3 dB nas fontes entregaram só ~+0,8 dB em 8–16 kHz na janela medida; o master absorveu parte. O caminho é **redistribuir**: menos 2–4 kHz simultâneo, mais informação curta e lateral em 8–16 kHz. |
+| **AutoPan não resolveu a largura** | **Verificado pelo resultado** | Correlação 0,80 significa que a energia dominante continua muito correlacionada. Pan de material mono e Utility Width não substituem criação real de conteúdo Side. Ableton confirma que Utility só manipula a largura do sinal que já existe e que Bass Mono protege os graves na soma mono. |
+| **A próxima melhoria é principalmente subtrativa** | **Recomendação** | Reduzir colisões de FX de transição, abrir espaço lateral e transformar alguns eventos sobreviventes em "objetos" de maior valor. Meta imediata: ≤6,99 picos/s sem perder narrativa. |
+
+Há ainda **uma inconsistência de dados que merece gate antes de decisões finas**: a forma descrita tem 960 beats = **7:30 a 128 BPM**, enquanto um render também foi citado com **12:59**. Antes de perseguir diferenças de 1–2 dB, a janela usada para LUFS, espectro, centroide, presença e densidade deve ser confirmada como exatamente a região musical comparável às referências. Isso não invalida as medições existentes; apenas determina se elas descrevem os mesmos 7:30.
+
+**Premissas.** O tempo é o declarado (128 BPM). As propostas abaixo assumem Live 12 + Max for Live e Serum 2 já presente; nenhum plugin pago é requisito.
+
+## O que o bloco precisa ter
+
+Não existe norma formal dizendo que minimal psytech/zenonesque "precisa" de voz, riser, tape stop ou uma porcentagem específica de reverb. As fontes primárias da cena descrevem **propriedades estéticas**, não especificações de engenharia. Zenon enfatiza minimalismo profundo, musicalidade, design futurista, síntese glitch, atmosferas orgânicas e detalhe; AlpaKa enfatiza grooves rolantes, hipnose, texturas psicodélicas e detalhe controlado. Portanto, "obrigatório" abaixo significa **denominador recorrente da estética**, e não uma regra universal.
+
+| Família | Papel que realmente importa | Faixa operacional de partida | Espaço/FX — ponto de partida | Comportamento temporal | Evidência |
+|---|---|---:|---|---|---|
+| **Synth / stab** | Motivo reconhecível, pergunta/resposta, tensão | HP geralmente **120–180 Hz**; identidade em ~300 Hz–4 kHz; brilho seletivo 6–12 kHz | Seco ou **5–20% serial**; tails em paralelo | Poucos eventos; repetição + microvariação | Wavetable, FM, sampler e resampling aparecem explicitamente na pedagogia Zenon. |
+| **Glitch / micro-edit** | "Fala" digital, quebra de expectativa, detalhe psicodélico | Preferir **>150 Hz**; evitar acumular 2–4 kHz | 0–15% ambiente no evento; tails independentes podem ser 100% wet em retorno | 1/32–1/4 nota para micro-evento; clusters pontuais, não fluxo constante | Beat Repeat trabalha de 1/32 a 4 bars e grids pequenos deliberadamente viram artefato sonoro. |
+| **Voz principal/falada** | Evento semântico e narrativo | Voz humana ocupa aproximadamente 100 Hz–12 kHz; para mix, graves indesejados frequentemente ficam abaixo de 100–250 Hz; inteligibilidade 1,5–5 kHz; sibilância ~5–10 kHz | Centro relativamente seco; delay/reverb em envio | Rara e inteligível antes de ser "bonita" | Shure e iZotope destacam relação sinal/ruído, presença e sibilância; reverberação elevada reduz inteligibilidade. |
+| **Voz processada / chop** | Ponte humano↔máquina | HP **150–250 Hz**; formantes/médios como assinatura; 8–12 kHz só se controlado | 10–40% transformação ou 100% wet em pista derivada | Fragmentos curtos, não cama | Vocoder combina envelope espectral do modulador com portadora harmônica; Serum 2 oferece granular e resíntese espectral. |
+| **Atmosfera / drone** | Profundidade, lugar, memória, tensão | **HP 120–300 Hz conforme fonte**; corpo 300 Hz–4 kHz; ar eventual 8–16 kHz | Reverb/delay podem ser altos porque não são solistas; filtrar retorno | Deve **respirar**: intensidade, espectro ou presença mudam; silêncio faz parte | Zenon 2026 enfatiza atmosferas orgânicas e imersivas; Granulator III é explicitamente indicado para pads/texturas. |
+| **Foley / field recording** | Evidência física do lugar | Cortar apenas o que disputa grave; preservar transiente útil | Espaço paralelo curto ou resíntese | Eventos contextualizadores | Zenon contemporânea valoriza contraste orgânico–eletrônico; seu curso trata samples como matéria-prima para processamento e resampling. |
+| **Transição** | Anunciar, negar ou distorcer fronteira | Tipicamente HP de **150–250 Hz** quando o FX não deve ocupar o motor de grave | Pode ser 100% processado | Micro: <1 beat; pequena: 1–2 bars; grande: 4–8 bars são **faixas propostas**, não norma de gênero | Ableton fornece stutter, spectral freeze/delay, pitch/frequency shifting e convolution como mecanismos adequados. |
+
+### Arquitetura de síntese recomendada
+
+Não se ganha muito ao escolher entre "analógico ou digital". A combinação mais coerente com o corpus Zenon atual é **híbrida**: fonte humana/acústica → transformação digital → retenção de algum vestígio físico. A própria Zenon Education ensina sampler, FM, granular, time-stretch, resampling e micro-edits; a Zenon de 2026 descreve explicitamente artistas em termos de síntese glitch e encontro entre orgânico e mecânico.
+
+| Método | Melhor uso | Prioridade |
+|---|---|---|
+| **Wavetable** | Formant, squelch, "corneta": movimento controlado de espectro e "vogais" | **Alta** |
+| **FM** | Stabs metálicos, sinos curtos, ataques inarmônicos | **Alta** |
+| **Granular** | Chuva digital, voz destruída, atmosferas, tails derivados de foley/madeira | **Alta** |
+| **Spectral** | Congelar um transiente, separar tempo/pitch, ecos metálicos, morph de voz/FX | **Alta e pontual** |
+| **Physical modelling** | Fazer material acústico "ressonar" como madeira, tubo ou metal sem acrescentar outro synth | **Alta como detalhe** |
+| **Virtual-analog** | Corpo, calor e contraste com digital extremo | Média |
+| **Analógico puro** | Cor estética, não requisito | Baixa |
+| **Híbrido amostra+sintetizador** | Converter madeira, voz e campo em material alienígena ainda reconhecível | **Prioridade máxima** |
+
+Serum 2 já cobre wavetable, sample, multisample, granular e spectral; portanto, **não existe lacuna de motor de síntese que justifique comprar outro sintetizador agora**. O fabricante documenta FM, phase distortion, ring modulation, sample slicing, tape-stop, granular e resíntese espectral em um único instrumento.
+
+### Espaço, "ar" e dinâmica
+
+Não há fonte primária da cena que publique algo equivalente a "voz = 17% wet", "glitch = 12% wet" ou "8–16 kHz deve estar ativo em 53% da música". **Esses números não devem ser inventados.** Para o caso, a régua robusta é o próprio corpus de referência.
+
+O objetivo de 8–16 kHz deve ser tratado como **envelope temporal**, não apenas média espectral. Em cada seção, meça o envelope RMS de 8–16 kHz em janelas de 250–500 ms e compare: mediana, percentil 90 e porcentagem de janelas acima de um limiar relativo ao full-band. O alvo útil é aproximar a referência **por seção**, por exemplo dentro de ±1–1,5 dB na mediana, em vez de alcançar uma média global por shelf. Isso testa "quanto tempo existe ar" de fato.
+
+A régua proposta (caso medido → corpus de referência):
+
+| Métrica | Caso medido | Gate intermediário | Referência/limite final |
+|---|---:|---:|---:|
+| 8 kHz+ | −25,6 dB | **−24 a −23 dB** | corpus: −22,1 a −20,1 |
+| "Ar" | −20,1 dB | **−19 a −18 dB** | corpus: −17,2 a −16,1 |
+| Centroide | 217 | **240–260** | corpus: 266–287 |
+| Presença | 0,64 | **≤0,58** | corpus ≈0,51 |
+| Correlação média | 0,80 | **0,55–0,65** | corpus 0,32–0,44 |
+| Densidade | 7,57/s | **≤6,99/s** | ≤6,99/s interno |
+| LRA | 5,6 LU | **manter** | gate interno 4–7 LU |
+
+Esses valores de referência são medições do corpus do projeto de origem, **não standards da indústria**.
+
+## O que não pode ter
+
+Os principais vetos não são "gosto". Alguns são riscos físicos/de distribuição; outros são leis estéticas do estilo.
+
+| Gravidade | Veto | Limiar / teste | Por que é ruim |
+|---|---|---|---|
+| **Crítico** | Conteúdo lateral relevante abaixo de 120 Hz | Régua do estilo: mono ≤120 Hz | Baixas frequências fora de fase podem sofrer mudança de timbre/cancelamento na soma mono. Ableton oferece Bass Mono exatamente para evitar coloração dos graves na reprodução mono. |
+| **Crítico para streaming** | `−0,6 dBTP` em master de `−10,2 LUFS-I` | Para masters acima de −14 LUFS, Spotify recomenda **<−2 dBTP** | Falta ~1,4 dB de margem numa entrega Spotify equivalente. Não exige mudar a master de clube. |
+| **Alto** | Aumentar 8 kHz+ com shelf global | Já testado: +3 dB nas fontes → só ~+0,8 dB em 8–16 kHz na janela | O limiter/master absorve parte e você corre o risco de elevar 4–10 kHz antes de gerar contraste real. |
+| **Alto** | Plateau agressivo de 5–10 kHz | Não há dBFS universal; usar delta contra referência e de-essing | Sibilância vocal costuma residir nessa região; processamento/saturação pode acentuá-la. |
+| **Alto** | "Cola cinza": textura quase invariável | Cama contínua de ruído reprova na estética minimal | Reduz contraste e transforma detalhe psicodélico em piso de ruído perceptual. |
+| **Alto** | Mais transientes para criar brilho | 7,57/s > 6,99/s | Resolver ar adicionando objetos pioraria um problema já medido. |
+| **Alto** | 2–4 kHz como solução para "faixa fechada" | Presença já 0,64 vs ~0,51 | É justamente a região em excesso no índice usado. |
+| **Médio-alto** | Reverb pesado sobre fala antes da inteligibilidade | Preferir dry/early + tail separado | Estudos recentes de fala confirmam que reverberação pode reduzir inteligibilidade; a informação semântica deve sobreviver primeiro. |
+| **Médio** | Abrir estéreo com microdelay indiscriminado | Sempre testar mono/null | Diferenças temporais pequenas criam comb filtering na soma; o side deve vir preferencialmente de modulação/decorrelação acima de 120 Hz. |
+| **Médio** | Transformar todo FX em acontecimento | Teste: fronteira continua legível sem ele? | A estética Zenon atual é detalhada, mas também é profunda, hipnótica e minimal; "detalhe" não implica evento permanente. |
+
+Uma correção importante: **voz não é obrigatória para ler como gênero**, nem riser, tape stop, stutter ou granular individualmente. O que converge é a existência de **design próprio, textura, hipnose, programação detalhada e relação orgânico/futurista**. Tornar cada subtipo obrigatório seria solução procurando problema.
+
+## O que converge na cena
+
+A caracterização de 2026 é excepcionalmente coerente entre Zenon e AlpaKa. Zenon descreve lançamentos recentes como síntese glitch, soundscapes imersivos, atmosfera orgânica, minimalismo, design de alto detalhe e tensão orgânico–mecânico; AlpaKa fala em dark minimal/psytech baseado em textura profunda, grooves rolantes, estruturas hipnóticas, detalhe e "controlled chaos".
+
+| Elemento | Consenso técnico/estético forte | O que varia |
+|---|---|---|
+| **Hierarquia** | Groove profundo + poucos objetos de alta identidade | Quantos objetos e quão agressivos |
+| **Synth** | Timbres próprios, modulados, difíceis de reduzir a "preset" | FM, wavetable, sample, analog/híbrido |
+| **Glitch** | Detalhe digital/microedição faz parte da linguagem | Pode ser protagonista ou apenas pontuação |
+| **Orgânico** | Forte presença de texturas/instrumentos/ambientes físicos | De bush/tribal a cinematográfico |
+| **Atmosfera** | Profundidade e imersão | Swampy, industrial, desértica, etérea |
+| **Melodia** | Pode existir, mas submetida à hipnose | De quase ausente a emotiva |
+| **Voz** | Opcional | Falada, chop, fonema, textura ou nenhuma |
+| **Espaço** | Texturas podem ser amplas enquanto o motor continua focado | Grau de largura e técnicas |
+| **Detalhe** | Alto refinamento de programação | Densidade absoluta não é consenso publicado |
+
+**Minimal psytech / dark minimal:** tende à economia de objetos, transiente definido e silêncio estrutural. **Psytech:** tende a ser mais frontal, preciso e "forward-driving"; a Zenon descreveu seu álbum *Fragmented Frequencies* de 2026 por produção nítida, baixo profundo, groove oscilante e design avançado. **Bushtech/bush prog:** puxa mais para material orgânico, grooves rolantes/chunky e textura psicodélica. **Zenonesque/dark prog:** enfatiza profundidade, atmosfera, complexidade e uma estranheza orgânico-digital mais ampla. Essas fronteiras são **inferências estéticas**, não taxonomia científica; lançamentos atuais cruzam esses rótulos deliberadamente.
+
+Para um projeto psytech, a consequência é clara: **madeira + glitch falante + foley + voz rara + espacialidade lateral** já formam uma identidade muito mais forte do que comprar outra coleção de synths.
+
+Ambisonics, por outro lado, deve ser tratado como uma entrega separada, não como solução de mix estéreo. Pesquisas de 2024–2025 mostram que ordem e decoder alteram a precisão de localização; em Ambisonics de terceira ordem, por exemplo, o decoder influenciou a resolução angular mensurada. Portanto, **não vale introduzir uma cadeia Ambisonics no master estéreo sem requisito explícito de reprodução imersiva**. Para o objetivo club/stereo, é complexidade prematura.
+
+## Por que a banda média continua quase mono mesmo com AutoPan
+
+O resultado de **0,80** diz que o problema não é ausência de automação de pan; é **a natureza da energia dominante**.
+
+Fontes centrais (horn/voz/synth/madeira) geram MID dominante; AutoPan e pan empurram esse MID de lado, mas ele continua correlacionado. Só reverb/granular/spectral com L/R realmente diferentes criam SIDE real. A mix deve somar: mono ≤120 Hz, largura >120 Hz.
+
+Utility pode aumentar ou diminuir a largura **de conteúdo estéreo já presente**, mas não cria informação Side significativa a partir de duas cópias perfeitamente idênticas. Ableton também deixa claro que 100% Mid produz mono e que o modo Side isola os componentes fora de fase.
+
+Portanto, o piloto correto é gerar **diferença L/R real apenas acima de ~150–250 Hz** em camas, atmosferas, drones, tails de voz e de FX: granularização com posições independentes, delays/reverbs estéreo decorrelacionados, modulações distintas por canal e Spectral Time. Não é "Width +150% em tudo".
+
+## Teste de duplicação entre instâncias (risco de fase)
+
+**Só o fato de cadeia e automação serem idênticas não prova problema de fase.** O risco existe quando duas instâncias produzem simultaneamente áudio fortemente correlacionado — especialmente mesmo pitch, mesma fase inicial, mesma envolvente e mesma modulação.
+
+Teste objetivo proposto:
+
+1. Renderizar isoladamente os canais em questão **apenas nos trechos de sobreposição**.
+2. Medir correlação e coerência por banda em `120–500`, `500–2k`, `2–8k`.
+3. Somar cada par e comparar RMS/pico com uma única instância. Duplicatas quase idênticas e em fase tenderão teoricamente a aproximadamente **+6 dB** de amplitude somada.
+4. Inverter a polaridade de uma pista com Utility. Se o null eliminar quase todo o sinal, você tem duplicação efetiva.
+5. Se a correlação for >0,95 nos eventos simultâneos **e** o ganho somado estiver próximo de +6 dB, tratar como dobra de mesmo objeto, não como largura.
+6. Se as pistas nunca coincidirem, **não há problema a resolver**.
+
+Não recomendo "desafinar para criar estéreo" preventivamente; isso poderia destruir um desenho de chamada/resposta que talvez esteja perfeitamente correto.
+
+## As lacunas mais caras (para qualquer projeto nesse estágio)
+
+**Primeira — largura estrutural.** Levar a correlação média para **0,55–0,65 como primeiro gate**, preservando ≤120 Hz mono. Só depois avaliar se aproximar 0,32–0,44 melhora a música ou começa a soar artificial. A ferramenta prioritária é conteúdo Side real em camas/tails, não pan extra.
+
+**Segunda — redistribuição presença → ar.** Buscar inicialmente algo como **+2 dB de 8–16 kHz no mix e −1 a −2 dB de competição em 2–4 kHz nos eventos selecionados**, sem shelf master. Fontes candidatas: shimmers, echorolls, certos reverses, foley metálico e tails granulares. Após cada A/B, medir presença e 5–10 kHz; se "abrir" o ar também elevar muito essa região, rejeitar.
+
+**Terceira — densidade/hierarquia.** Chegar a **≤6,99 picos/s antes de criar um único novo evento**. Os canais de FX de transição mais abundantes são os primeiros candidatos ao mapa de colisão, não porque sejam ruins, mas porque são os mais frequentes. A redução de 7,57 para 6,99 equivale a ~8% na métrica de picos, mas **não** a cortar 8% dos clipes: um clipe pode produzir muitos ou nenhum onset detectado.
+
+**Quarta — contribuição não identificada em 55–75 Hz.** Renderizar os blocos de clima/voz e repetir com atmos/drone/fx individualmente fora. O gate sugerido é simples: em trechos com kick+bass, desligar cada bloco de cor não deveria alterar significativamente o 55–75 Hz se ele não tiver função de low-end. Sem essa medição, qualquer HP adicional seria palpite.
+
+**Quinta — integridade da régua.** Confirmar que a janela de medição é exatamente a região musical comparável às referências antes de fechar decisões por décimos de dB. É o principal risco de evidência: uma janela global diferente pode fabricar uma diferença espectral que parece artística.
+
+## Recomendações práticas de sound design e implementação
+
+### Ferramentas: o que vale usar e o que não vale comprar agora
+
+Preços são preços de lista observados em **17 de outubro de 2026**, normalmente em USD e antes de impostos/descontos locais.
+
+| Ferramenta | Categoria | Plataforma | Faixa de preço | Destaque | Recomendação |
+|---|---|---|---:|---|---|
+| **Ableton Live 12 nativo + Max for Live** | Glitch, spectral, reverb, modelling, granular | macOS / Windows | Já incluído conforme edição | Beat Repeat, Spectral Time, Roar, Shifter, Corpus, Hybrid Reverb, LFO/Shaper | **Primeira escolha. Não comprar substituto antes de esgotar isso.** |
+| **Serum 2** | Synth híbrido | VST3/AU/AAX; macOS/Windows | **US$249** | Wavetable, sample, granular, spectral, FM/PD/RM | **Já resolve quase todo o synth/glitch requerido.** |
+| **Output Portal** | Granular FX | Plugin desktop | **US$149** | Granular em tempo real sobre qualquer entrada | Opcional para velocidade de workflow, não capacidade nova essencial. |
+| **Sugar Bytes Graindad** | Granular FX | Plugin | **US$99** | Granular em tempo real | Alternativa mais barata ao Portal. |
+| **Sugar Bytes Effectrix2** | Sequenciador multi-FX | Plugin | **US$129** | Glitch/loop FX sequenciados | Só vale se edição manual/Beat Repeat estiver lenta. |
+| **iZotope Stutter Edit 2** | Glitch/stutter | Plugin | **US$199** | Gestures, slices, transições complexas | **Não necessário** com Beat Repeat já funcionando. |
+| **iZotope VocalSynth 2** | Voz criativa | Plugin | **US$199** | Vocoder, Compuvox, Polyvox, Talkbox, Biovox | Opcional se o plugin atual de voz não fizer formant/vocoder facilmente. |
+| **Valhalla Delay** | Delay/pitch/frequency shift | macOS / Windows | **US$50** | Tape, BBD, digital, pitch, Ghost frequency shift, diffusion | Excelente custo; avaliar se já há delays suficientes. |
+| **Valhalla Supermassive / Freq Echo** | Atmosfera / frequency shift | macOS / Windows | **Grátis** | Reverbs/echo espaciais e frequency shift | Boa opção gratuita para laboratório, não requisito. |
+| **FabFilter Pro-Q 4 / Pro-MB** | EQ/dinâmica | VST/VST3/AU/CLAP/AAX | **US$199 cada** | EQ e dinâmica multibanda/M/S precisos | Úteis para diagnóstico fino; não mudam a composição. |
+
+**Decisão de compra:** **US$0 adicionais por enquanto.** Serum 2 + Live 12 já cobrem o problema. Comprar Portal/Stutter Edit/VocalSynth antes de provar uma limitação real seria complexidade sem evidência.
+
+### Cadeias sugeridas
+
+Os números abaixo são **pontos de partida para A/B**, não "receita oficial Zenon".
+
+| Uso | Cadeia | Faixa inicial |
+|---|---|---|
+| **Glitch falante** | Serum 2 → HP → Auto Filter/BP → Beat Repeat → EQ → duck → tail paralelo | HP **150–220 Hz**; BP móvel ~700 Hz–3 kHz; Beat Repeat 1/16→1/32, Gate 1–3/16, Chance 10–35%; tail 5–15% |
+| **Metallic digital** | FM/Serum → Shifter/Corpus → HP → Roar paralelo → Hybrid Reverb return | HP 180–300 Hz; frequency shift ~±10–80 Hz; distorção paralela 5–20%; reverb 100% no retorno |
+| **Pad orgânico metálico** | Foley/material orgânico resampled → Granulator III → Corpus → EQ → reverb | grains ~30–120 ms como exploração; HP 180–300; ressonância afinada na tônica do projeto; cauda 2–6 s |
+| **Fala inteligível** | HP → EQ/dinâmica → de-esser → saturação leve → delays/reverb por send | HP 100–200; de-ess 5–10 kHz, ~2–5 dB GR como início; predelay 15–25 ms; core seco |
+| **Vocal alienígena** | Tail de voz → formant/pitch → Vocoder/Spectral → granular → stereo return | deslocamentos pequenos primeiro; grains 30–100 ms; cortar grave <200; Side somente >200 |
+| **Atmosfera viva** | Fonte de campo/forest → Granulator III Cloud → filter → spectral delay → reverb | HP 180–300; modulação lenta 2–8 bars; inserir **silêncios**, não apenas automação |
+| **FX rítmico** | Stutter → Beat Repeat → Spectral Time → filter → reverb/delay | Grid 1/16→1/32; concentrar aceleração no último 1/2–1 beat; Spectral Freeze no onset |
+| **Ar sem harshness** | Fonte sobrevivente → HP/BP → saturação suave → EQ dinâmico 5–10k → side return | retirar 2–4 kHz quando possível; adicionar 8–16 apenas no objeto; rejeitar se sibilância crescer |
+
+Hybrid Reverb combina convolution e algoritmo e pode importar áudio como impulse response; Spectral Time congela e resintetiza material com delays espectrais e frequency shift; Roar oferece até três estágios não lineares; Corpus simula objetos ressonantes via physical modelling. São exatamente as ferramentas necessárias para transformar madeira/foley/voz em híbridos sem adicionar outra família de synth.
+
+### Sons assinatura
+
+**Glitch lead "fala do deserto".** Use uma fonte formant. Primeiro mantenha duas ou três notas frígias e envelope curto. Depois mova um band-pass aproximadamente entre 700 Hz e 3 kHz por LFO/automation para simular mudanças de vogal. Em seguida, Beat Repeat em 1/16 e 1/32, Gate de 1–3 semicolcheias e Chance baixo/moderado; grids menores são documentados pela Ableton como capazes de gerar artefatos sonoros, exatamente o uso desejado. Por fim, envie apenas o final de algumas frases para Spectral Time ou reverb. **Prova:** continua reconhecível em mono, não aumenta presença global e substitui um evento existente em vez de se somar a ele.
+
+**Pad metálico de madeira.** Não começar em um pad genérico. Capture uma batida orgânica, alimente Granulator III e deixe o fragmento original ainda reconhecível. Granulator III é desenhado para repetir/modular pequenos fragmentos e seus modos ampliam a aplicação para pads/texturas. Passe uma cópia paralela por Corpus para criar ressonância física e afine o centro tonal às notas do modo frígio do projeto. HP por volta de 180–300 Hz e envie a cópia, não o solista original, para reverb longo. **Prova:** desligando o processado, a origem orgânica é evidente; ligando, nasce metal/espaço sem alterar 55–75 Hz.
+
+**Textura vocal "humano virando máquina".** Começar em um tail de voz ou cópia processada, **não criar uma fala narrativa nova**. Remover grave abaixo de aproximadamente 150–250 Hz; controlar sibilância 5–10 kHz; deslocar pitch/formant moderadamente; passar por Vocoder ou resíntese espectral e finalmente granularizar o tail. A voz original permanece seca/inteligível e a textura é lateral. O vocoder, por definição, transfere envelopes espectrais de um modulador para uma portadora; Serum 2 também oferece resíntese granular/espectral para outra leitura. **Prova:** as palavras da fala original continuam inteligíveis sem depender da textura; a textura desaparece ao somar abaixo de 120 Hz porque ali não deve existir energia significativa.
+
+**Atmosfera granular "miragem".** Escolher um único fone/foley/campo e criar várias regiões granuladas da mesma fonte em vez de empilhar três beds independentes. Usar posição do grain lentamente modulada e mudar o espectro a cada 2–8 bars; inserir buracos reais. Zenon Education ensina granular + resampling + corte de áudio para criar micro-edits únicos, e Granulator III é explicitamente direcionado a pads e texturas. **Prova:** comparar o duty cycle de 8–16 kHz e o RMS da atmosfera por bloco de 8 bars; nenhum deve formar uma linha quase constante do início ao fim.
+
+**FX rítmico "quebra e recomposição".** Não fazer outro sweep. Capture o último 1/4–1 beat de um evento já relevante, passe por Beat Repeat 1/16 → 1/32, depois Spectral Time Freeze acionado pelo onset, com pequeno frequency shift crescente; finalize abruptamente na fronteira. Spectral Time pode congelar em transientes, espalhar frequências e gerar ecos metálicos. **Prova:** deve permitir remover um reverse ou riser convencional naquele ponto; se precisa dos dois simultaneamente, provavelmente não ganhou hierarquia.
+
+**Bônus — percussão física impossível.** Copiar uma foley de raspagem por retorno e usar Corpus com ressonância curta para transformar raspagem em "metal/madeira afinado"; depois retirar a fonte seca desse retorno. Isso explora physical modelling sem criar novo canal melódico. **Prova:** funciona como percussão e como identidade tímbrica ao mesmo tempo, reduzindo necessidade de outro glitch.
+
+### Ideias novas para a música
+
+| Ideia | Intenção | Como fazer com o que já existe | Evidência de sucesso |
+|---|---|---|---|
+| **Glitch aprende a falar** | A fonte formant começa abstrata e chega perto da voz humana antes do pico da marcha | Formant responde ao chop vocal com envelope/filtro cada vez mais "vocal" | Ouve-se arco A→B mesmo sem olhar a sessão; não aumenta nº de eventos |
+| **Digitalização da madeira** | Cada ato transforma um pouco mais o material orgânico em glitch | Resample o mesmo gesto via granular/resposta/FM, sem nova melodia | Timbres parecem parentes; identidade maior com menos fontes |
+| **Memória da fala no Drop 2** | O evento único de fala deixa consequência sem repetir a fala | Usar apenas tail/processamento derivado depois, nunca o diálogo bruto | Reconhece-se "fantasma" da voz sem segundo evento semântico |
+| **Formant ↔ whisper** | Humano e máquina parecem conversar | Espaços alternados; um ocupa quando o outro para | Número total de onsets cai, sensação narrativa sobe |
+| **FX ↔ kick por ausência** | Transição prepara impacto por retirada, não riser | Nos últimos 1–2 beats, reduzir FX de transição e deixar um micro-stutter único | Drop parece maior com menos energia prévia |
+| **Shimmer substitui presença** | Ar como flash, não shelf | Escolher poucos eventos de shimmer/echoroll e remover 2–4 kHz desses eventos enquanto preserva 8–12 | 8k+ sobe, presença não sobe |
+| **Deletar para abrir estéreo** | Lateralidade ser percebida porque o centro fica vazio | Quando a atmos granular entra, retirar outro synth central | Correlação cai e densidade também |
+| **Anti-obviedade: riser descendente** | Tensão cresce enquanto pitch desce | Downlifter sobe em intensidade/espectro e cai em pitch | Fronteira continua clara sem "uplifter padrão" |
+| **Anti-obviedade: transição silenciosa** | Uma grande porta é marcada por 0,5–1 beat de nada | Cortar FX antes de uma fronteira já forte; não usar sucção fora das portas principais | Impacto subjetivo cresce enquanto densidade cai |
+
+A ideia central dessas propostas é **troca, não soma**. O Zenon Education enfatiza resampling, edição e criação de persona sônica própria, e a estética recente da própria gravadora continua valorizando detalhe, síntese complexa e identidade; isso favorece reaproveitar os próprios objetos em vez de importar "ear candy" genérico.
+
+## Roadmap de validação — gates de aceite
+
+A ordem é deliberada: primeiro provar o diagnóstico, depois sound design. Não vale polir assinatura enquanto as métricas podem estar sendo calculadas sobre uma janela inconsistente.
+
+Os **gates de aceite**:
+
+1. **Evidência válida:** métricas calculadas sobre janela explicitamente igualada às referências.
+2. **Densidade:** ≤6,99 picos/s sem reduzir a legibilidade dos três momentos narrativos principais.
+3. **Imagem:** correlação média cai de 0,80 para ≤0,65 no primeiro piloto, enquanto ≤120 Hz continua mono e a soma mono não perde objetos importantes.
+4. **Espectro:** 8 kHz+ melhora pelo menos ~2 dB no piloto **sem elevar presença acima de 0,64**; idealmente presença começa a cair.
+5. **Grave:** identificar ou excluir contribuição dos blocos de atmos/voz/fx para 55–75 Hz.
+6. **Sound design:** qualquer novo processamento deve **substituir** ou enriquecer uma função existente, não criar uma quinta camada simultânea de informação.
+7. **Master:** clube pode continuar próximo do loudness escolhido; para Spotify, se mantido acima de −14 LUFS-I, criar margem de True Peak compatível com a recomendação oficial de **<−2 dBTP**.
+
+### Fontes, tutoriais, papers e exemplos para ouvir
+
+A pesquisa privilegiou fontes oficiais, fabricantes e trabalhos acadêmicos. Abaixo estão links diretamente úteis, incluindo recursos em português.
+
+| Recurso | Para quê | Trecho curto da fonte |
+|---|---|---|
+| [Zenon Records — site oficial](https://www.zenonrecords.com/) | Referência estética e releases/áudio atuais de 2026 | "**glitched-out synthesis, intricate sound design and dreamy, haunting melodies**" |
+| [Zenon Education — curso em pt-BR](https://www.zenon-education.com/pt-br/zenon-records-music-production-suite) | Tutorial diretamente da escola Zenon: FM, stretch, sampler, granular, edição | "**Time Stretching, síntese Fm e modulação +automação do sampler**" |
+| [AlpaKa — NVU, *Hourglass EP*](https://alpakamuzik.bandcamp.com/album/nvu-hourglass-ep) | Demo de áudio 2026 de bushtech/psytech/glitch | "**twisted psychedelic textures**" |
+| [Ableton — Beat Repeat / efeitos do Live](https://www.ableton.com/en/live-manual/12/live-audio-effect-reference/) | Stutter e buffer manipulation | "**controlled or randomized repetitions of an incoming signal**" |
+| [Ableton — Granulator III](https://www.ableton.com/en/packs/granulator-iii/) | Granular, pads, drones, textura; inclui vídeo/demo | "**looping and modulating short snippets of sound**" |
+| [Ableton — vídeos oficiais Learn Live 12](https://help.ableton.com/hc/en-us/articles/12934450470812-Learn-Live-12-Videos) | Tutoriais oficiais de Roar, Granulator III e workflow | A página lista vídeos específicos para **Roar** e **Granulator III**. |
+| [Xfer — Serum 2](https://xferrecords.com/products/serum-2) | Wavetable, FM, sample, granular e spectral | "**breathing new life into sample material**" |
+| [DAFx — Röbel, transient processing in phase vocoder](https://www.dafx.de/paper-archive/details/svqqbE0vLRFuz4BsmGhoDg) | Base técnica para entender artifacts de stretch/spectral e transientes | "**reduce phase vocoder artifacts during attack transients**" |
+| [Applied Sciences — Ambisonics localization, 2024](https://www.mdpi.com/2076-3417/14/17/7986) | Fundamento de espacialização 3D e localização | O estudo avalia localização com **higher-order Ambisonics**. |
+| [Applied Sciences — Ambisonics 3ª ordem, 2025](https://www.mdpi.com/2076-3417/15/12/6815) | Evidência de que decoder/order importam | "**decoder type influences spatial resolution**" |
+| [Spotify — normalização e masterização, pt-BR](https://support.spotify.com/br-pt/artists/article/loudness-normalization/) | Loudness e True Peak para entrega | "**mantenha o True Peak abaixo de -2 dB**" |
+| [iZotope — EQ vocal](https://www.izotope.com/community/blog/how-to-eq-vocals) | Mapa prático de presença, sibilância e ar | Documenta 1,5–5 kHz para presença e 5–8 kHz para sibilância. |
+| [Speech intelligibility versus congruency, 2024](https://www.mdpi.com/2813-2084/3/1/3) | Por que o núcleo da fala não deve depender de reverb pesado | O estudo testa o trade-off entre reverberação realista e inteligibilidade de fala. |
+
+**Síntese final:** o projeto não precisa de "mais sound design". Precisa fazer o sound design que já existe **ganhar escassez, parentesco e consequência narrativa**. A melhor tese de produção é: **madeira/voz/foley geram a matéria; Serum/granular/FM/spectral a deformam; silêncio e centro seco mostram a transformação; tails e atmosferas ocupam as bordas; abaixo de 120 Hz nada interfere no motor**. Esse desenho é compatível tanto com decisões de estilo minimal orgânico quanto com o eixo orgânico–futurista, glitch e hipnótico explicitamente presente na produção Zenon/AlpaKa de 2026.
+
+**Internet consultada:** sim, em 17 de outubro de 2026. As fontes que mais sustentam o veredito são **Zenon Records e Zenon Education** para a linguagem específica da cena; **AlpaKa MuziK** para bushtech/psytech contemporâneo; **Ableton e Xfer** para implementação DSP; **Spotify** para entrega de loudness/True Peak; e estudos de **DAFx, Applied Sciences e pesquisa de inteligibilidade de fala** para transient processing, Ambisonics e reverberação. Os números específicos do caso e das referências locais vieram do briefing técnico do projeto de origem.
 
 
 ---
 
-## e
+## pesquisas/Estudo de Orquestra.md
 
+# Deep Research — Bloco ORQUESTRA (solistas acústicos/étnicos sobre motor psytech)
 
----
+## Sumário executivo
 
-## Atmos
+**Veredito:** o desenho conceitual do bloco orquestral do caso de referência está mais próximo da cena do que os números hoje conseguem provar. O núcleo correto não é "usar instrumentos étnicos", mas combinar **poucas ideias reconhecíveis, espaço perceptivo, transformação tímbrica e tensão/relaxamento** sobre um motor rítmico profundo. Fontes atuais de Zenon Records, Digital Structures e AlpaKa descrevem justamente síntese complexa, melodias assombradas, organicidade, minimalismo, grooves hipnóticos e tensão/relaxamento como elementos recorrentes.
 
+Há, porém, uma distinção crítica entre **o que a pesquisa externa comprova** e **as leis artísticas do projeto de origem**. Não há fonte primária de 2024–2026 que estabeleça como norma do gênero "2–3 notas por frase", "oitavas 3–4", "wet ≤25%", uma determinada distância em compassos entre chamada e resposta ou um registro fixo para kanun/kamancheh/duduk. Esses números são uma **especificação artística válida do caso**, não um consenso publicado da cena. O corpus medido pelo projeto de origem é hoje a evidência quantitativa mais forte para densidade, espectro e forma.
 
----
+As cinco conclusões de maior impacto são:
 
-## e
+| prioridade | conclusão | decisão |
+|---|---|---|
+| **Crítica** | **Não há prova externa de que a cena exija 2–3 notas ou wet ≤25%.** Há, sim, evidência atual de minimalismo, espaço, hipnose, musicalidade e mistura orgânico-eletrônica. | Manter 2–3 notas e ≤25% wet como **DNA do projeto**, não como "regra Zenon". |
+| **Crítica** | O maior ponto cego do bloco é mensuração: há contagem de clipes e dispositivos, mas faltam **nota-a-nota, duração, repouso, simultaneidade, wet real e latência chamada→resposta** por seção. | Extrair essas seis métricas antes de redesenhar melodias. |
+| **Alta** | O princípio **"dry sagrado"** é tecnicamente sólido: fabricantes recomendam preservar/separar o sinal direto; 100% wet é explicitamente apropriado em **Return**, não como única passagem serial de um solista. Pré-delay e ducking ajudam a evitar mascaramento. | Não alterar a régua ≤25%; usar retornos/caudas paralelas para profundidade maior. |
+| **Alta** | Synth que soa acústico **não desqualifica** o bloco. A estética Zenon atual fala explicitamente em fronteira orgânico/sintético; Serum 2 foi desenhado inclusive para multisamples de instrumentos reais, samples, granular e ressíntese espectral. | Kanuns/kamanchehs/flautas sintéticos são defensáveis; o teste é perceptivo, não a origem do som. |
+| **Alta** | Pelos últimos números efetivamente medidos, o caso ainda está **denso demais nos drops** e **escuro demais no topo/ar**. | Não adicionar notas para "resolver" o bloco; a próxima evolução deve vir principalmente de diálogo, contraste e subtração. |
 
+Há ainda um risco fora do bloco, mas objetivo: com **−10,2 LUFS e −0,6 dBTP**, o master não atende à recomendação oficial do Spotify para material mais alto que −14 LUFS, que é manter True Peak abaixo de −2 dBTP para reduzir risco de distorção na codificação.
 
----
+## Premissas, método e força da evidência
 
-## FX.md
+A auditoria usa o briefing congelado do projeto de origem como verdade sobre o caso: 128 BPM, C# frígio, 74 pistas, 10 canais no bloco orquestral, arquitetura das cadeias, contagem de clipes, render e métricas espectrais/densidade fornecidas. Não se presume audição que não ocorreu e não se usa estado de mute como evidência de intenção.
 
+A pesquisa externa cobriu fontes oficiais de **Zenon Records, AlpaKa MuziK, Digital Structures, Xfer Records, Ableton, Spotify, FabFilter e iZotope**, além de literatura experimental sobre segregação auditiva. O retrato 2024–2026 confirma que a família Zenon/psytech atual continua sendo descrita pelos próprios selos como profunda, hipnótica, minimalista, orgânica/eletrônica, com síntese e design sonoro elaborados. Zenon descreve Molecc em 2026 pela combinação de "glitched-out synthesis", design intrincado e melodias assombradas; Evolve por baixo profundo, swing e sound design; Digital Structures descreve Rainbird pela simplicidade e pelo espaço dado a cada ideia; e AlpaKa descreve Luis M em 2026 em termos de groove, tensão, escuridão e movimento.
 
----
+Três graus de evidência:
 
-## pesquisas/Estudo
+| grau | significa | exemplo |
+|---|---|---|
+| **A — verificado** | medição fornecida do caso, documentação oficial ou evidência experimental direta | 8,4–8,6 onsets/s; Spotify <−2 dBTP; Return 100% wet |
+| **B — inferência forte** | convergência entre fontes atuais e princípios perceptivos, mas sem estatística específica da cena | "um solista precisa de espaço"; timbres diferentes facilitam segregação |
+| **C — alvo operacional** | número útil para o projeto, derivado de suas leis, mas **não comprovado como norma da cena** | 2–3 notas, O3–O4, wet ≤25%, frase ≤2 compassos |
 
+Essa separação é importante porque a literatura perceptiva mostra que diferenças de **pitch e timbre** alteram significativamente a percepção de agrupamento e segregação; diferenças de apenas um semitom em F0 já mudaram substancialmente a faixa de agrupamento no experimento citado. Isso sustenta o princípio de diferenciar os interlocutores, mas não fornece uma receita de "1 compasso de resposta" para psytech.
 
----
+Também há uma validação harmônica do desenho: Phrygian é caracterizado pela segunda abaixada; em C# frígio isso é **D**, exatamente o bII usado como gesto de tensão no caso. Berklee identifica a segunda abaixada como uma das notas que distinguem o caráter do modo frígio.
 
-## de
+## Parte A — O que precisa ter
 
+**Resultado da pesquisa:** não existe uma "ISO do solo Zenon". Portanto a tabela abaixo não falsifica precisão. Onde há norma técnica ou corpus medido, o número aparece como verificado; onde não há levantamento nota-a-nota das referências, aparece como **alvo operacional a validar**.
 
----
+A métrica temporal base a 128 BPM: **1/16 = 117 ms; 1/8 = 234 ms; 1/4 = 469 ms; 1/2 = 938 ms; 1 compasso = 1,875 s**.
 
-## Orquestra.md
+| família / função | métrica | alvo quantitativo de partida | tolerância / leitura | força |
+|---|---|---|---|---|
+| **Braam / chamada** | nº de notas simultâneas | **1** voz principal; sem dobra sistemática | acorde/dobra apenas como evento excepcional, não linha | C — lei do projeto |
+|  | vocabulário | pitches restritos e fixos (no caso: 37/38/44/49/50/61) | nenhum pitch novo | A — projeto |
+|  | tamanho da chamada | **1–4 note-ons** | mais que isso começa a virar frase temática, não sinal | C |
+|  | registro | C#1–D2 como corpo; C#3 como extremo | não transformar em brass "heroico" agudo | A/C |
+| **Kanun / cordas dedilhadas** | pitch classes por frase | **2–3** | 4 somente se uma for passagem ornamental clara | C — lei do projeto |
+|  | duração | **117–469 ms** por ataque principal | holds são exceção; ataque deve continuar legível | C |
+|  | registro | **O3–O4** | separar segundo kanun por função e não só por oitava | C |
+| **Kamancheh / corda friccionada** | simultaneidade | **1 nota por vez** | 0 dobras de oitava na linha solista | A — lei do projeto |
+|  | frase | **2–3 alturas**, arco de 0,5–2 compassos | 0,94–3,75 s por gesto é faixa de trabalho, não norma publicada | C |
+|  | registro | **O3–O4** | arco ascendente preferencial | C |
+| **Flauta / duduk** | pitch classes | **2–3** | prioridade a resposta, não linha contínua | C |
+|  | duração | **234 ms–1,875 s** | frase longa exige silêncio posterior | C |
+| **Voz (throat) / voz** | evento | **1–3 ataques por frase** | frase vocal não deve competir semanticamente com o solista | C |
+|  | wet | sinal direto sempre presente; **≤25% serial** | cauda maior deve ir para retorno/paralelo | A/C |
+| **Lead** | pitch classes | **2–3** | não preencher o que o bloco deixou livre | C |
+|  | duração | **234–938 ms** como ponto de partida | hold longo só como evento estrutural | C |
+| **Todos os solistas** | nº de streams de frente | **1 principal por vez** | resposta pode entrar depois; evitar duas linhas sustentadas no mesmo registro | B — percepção |
+| **Todos os solistas** | wet insert | **0–25%** | 100% só em Return/aux; 100% serial como único caminho é veto | A/C |
+| **Todos os solistas** | pré-delay | **20–60 ms como janela de teste**, 50 ms como ponto explícito de referência técnica | não é "valor típico Zenon"; serve para separar ataque e cauda | B/C |
+| **Todos os solistas** | pausa mínima perceptível | **≥1/8 = 234 ms** entre gestos quando a intenção é diálogo | abaixo disso tende a ser percebido como linha contínua | C |
+| **Drop** | densidade global | **5,3–6,7 onsets/s** no corpus de referência; gate ≤**6,99/s** | atenção: isso é densidade do mix, não só melodia | A — corpus |
+| **Breakdown** | streams independentes | **1: o solista principal** | nenhum interlocutor melódico independente no breakdown | A — lei do projeto |
+| **Outro** | retirada | reduzir progressivamente foreground e/ou topo | sem número de cena verificável; em Slippery Slope o topo é retirado cedo | A no corpus, não universal |
+
+**Sobre wet:** a régua "≤25%" permanece boa, mas pelo motivo correto. Ableton orienta colocar o Dry/Wet em **100% quando o efeito está em uma Return track**; logo 100% wet não é errado em si — é errado quando colocado serialmente no único caminho do instrumento cuja presença direta precisa ser preservada. FabFilter e iZotope documentam que o pré-delay separa o som direto da reverberação e reduz mascaramento; iZotope também descreve ducking da cauda enquanto a fonte seca toca.
+
+**Sobre síntese acústica:** não há obrigação de usar gravação real. O material oficial do Serum 2 inclui um oscilador multisample criado para reproduzir instrumentos reais, biblioteca de instrumentos gravados, sample playback, granular e ressíntese espectral. Paralelamente, a própria Zenon descreve trabalhos recentes como exploração da fronteira entre "organic and synthetic". Portanto, **a origem sintética de kanun/kamancheh/flauta não é uma anomalia técnica nem estética**.
+
+**Sobre o espaço do solista:** a exigência mais defensável é **um único objeto auditivo de frente**. Estudos de segregação auditiva mostram que diferenças de pitch, timbre e timing ajudam o cérebro a separar streams; inversamente, sobreposição de fontes semelhantes torna a identidade individual menos clara. Isso apoia retirar ou afastar elementos concorrentes quando o solista entra.
+
+**Comportamento por seção (mapa do caso):**
+
+| seção | especificação recomendada |
+|---|---|
+| **Intro — comp. 1–56 / 0:00–1:45** | apresentar **vocabulário**, não todas as combinações. Braam pode estabelecer tônica↔bII; apenas 1 família de resposta por vez. |
+| **Drop 1 — comp. 57 / 1:45** | reduzir duração das frases; usar motivo reconhecível e muito silêncio entre respostas. Não transformar o drop em "melodia principal contínua". |
+| **Desenvolvimento — comp. 89–144 / 2:45–4:30** | aumentar tensão por **encurtamento da distância chamada→resposta, troca tímbrica e retirada**, não por multiplicar pitch classes. |
+| **Breakdown — comp. 145–168 / 4:30–5:13** | **o solista sozinho como único agente melódico.** Um segundo timbre só é compatível com a lei se funcionar como halo/cauda, sem linha independente. |
+| **Drop 2 — comp. 169 / 5:15** | resposta curta ao material do breakdown; evitar que todas as famílias respondam ao mesmo tempo. |
+| **Outro — comp. 193 / 6:00 → 7:30** | decompor o vocabulário; chamadas mais isoladas, menos resolução explícita. |
+
+Essa forma é coerente com a linguagem atual dos selos: Zenon destaca estruturas de construção lenta e intensidade paciente em Sumiruna & Ambler, enquanto Digital Structures destaca em Rainbird a "power of simplicity" e espaço para cada ideia respirar.
+
+## Parte B — O que não pode ter
+
+A ordem abaixo separa **falha técnica verificável**, **violação do contrato do projeto** e **risco estético**. Nem tudo que é veto do projeto é veto universal do psytech.
+
+| gravidade | veto | limiar operacional | por quê |
+|---|---|---|---|
+| **CRÍTICO** | solista 100% wet como único caminho serial | **100% wet insert + nenhum dry paralelo = FAIL** | remove a relação direta/cauda; 100% é configuração apropriada para Return, não prova de bom insert. |
+| **CRÍTICO** | quebrar o solo do breakdown | **>1 linha melódica independente** no breakdown | viola assinatura congelada da faixa. |
+| **CRÍTICO** | densidade global acima do gate | **>6,99 onsets/s** nos drops | o caso medido está em 8,4–8,6, enquanto referências ficam em 5,3–6,7. |
+| **CRÍTICO para distribuição** | True Peak excessivo | a −10,2 LUFS, **−0,6 dBTP > −2 dBTP recomendado** | Spotify recomenda <−2 dBTP para masters mais altos que −14 LUFS. |
+| **ALTO** | dobra sistemática em oitava no solista | **qualquer linha 1:1 contínua** quando a intenção declarada é "solo" | é veto do projeto; não há fonte que prove ser regra geral da cena. |
+| **ALTO** | frase "explicando" demais | **>3 pitch classes** por frase | ultrapassa o vocabulário aprovado de 2–3 notas. |
+| **ALTO** | instrumento orgânico virando pad | **duty cycle >75% em 8 compassos** sem pausa significativa = revisar | número operacional, não norma da cena; contradiz a função de interlocutor. |
+| **ALTO** | competidor sustentado no mesmo espaço | **>1 segunda linha sustentada cobrindo >50% da frase** no mesmo registro | aumenta fusão/máscara e reduz identidade do foreground. |
+| **MÉDIO** | frase sem respiro | **>2 compassos = 3,75 s** contínuos sem pausa ≥234 ms | limite de trabalho do projeto; precisa ser validado contra stems das referências. |
+| **MÉDIO** | excesso de reverb sem separação | wet próximo do teto + **pré-delay ~0 ms** + cauda longa durante frase densa | reverb pode mascarar ataque; pré-delay e ducking são mecanismos documentados para recuperar clareza. |
+| **MÉDIO** | vibrato/LFO usado só para "movimentar" | modulação contínua rápida sem papel de frase | não há Hz universal de veto; medir rate, depth e duração antes de condenar. |
+| **MÉDIO** | abrir "ar" por shelf global | qualquer correção global que empurre 4–10 kHz sem necessidade | o caso já definiu "sem chiado"; a correção deve vir de fonte e contraste, não plateau. |
+| **TOLERÁVEL** | evento isolado dobrado/ornamentado | 1 evento estrutural, não frase inteira | pode ser assinatura; não transforma necessariamente toda a voz em coro. |
+
+**Correção importante à hipótese "codec = 4–10 kHz":** a recomendação oficial do Spotify verificável é sobre **True Peak e loudness**, não um limiar de energia em 4–10 kHz. Portanto não é defensável dizer que "passou de X dB em 6 kHz, o codec estoura". O que é defensável é: sibilância/harshness em alta frequência pode exigir controle espectral, enquanto **o risco formal de transcodificação documentado é −2 dBTP para masters altos**.
+
+No caso, o diagnóstico atual não é de 8 kHz excessivo: é o contrário. O render tinha **8k+ = −25,6**, contra **−20…−22** nas referências; ar = **−20,1**, contra **−16…−17**. Portanto, o perigo seria tentar fechar esses 3–5 dB usando uma camada contínua ou shelf e acabar criando aspereza onde hoje há déficit de extensão.
+
+O veto ao registro cheio também tem suporte perceptivo indireto. Em estudo experimental, aumentar diferenças de pitch e timbre tornou streams mais distinguíveis; logo empilhar materiais semelhantes em registro/timbre reduz precisamente a segregação que um solo necessita.
+
+## Parte C — O que a cena tem em comum
+
+O denominador comum encontrado **não é um instrumento, uma escala ou um número fixo de notas**. É um sistema de relações:
+
+**groove profundo + repetição hipnótica + poucos focos perceptivos + sound design muito trabalhado + transformação gradual + contraste entre orgânico e eletrônico.**
+
+A Zenon atual descreve Extrapolated como arquitetura de techno psicodélico profundo com paisagens hipnóticas que se desenvolvem com intensidade paciente; Molecc une síntese glitchada, design complexo e melodias oníricas; Evolve combina baixo profundo, swing e sound design; o próprio site da gravadora fala repetidamente em "organic-meets-mechanical", atmosferas orgânicas e grooves hipnóticos.
+
+Digital Structures converge pelo outro lado: Breger é descrito por beats ásperos e atmosferas surreais; Rainbird por inspiração orgânica, rituais tribais, simplicidade e espaço; Bongani usa explicitamente "haunting cello overtones" misturando orgânico e eletrônico; Dark Design mantém a música minimalista, terrena e imersiva.
+
+AlpaKa, mais orientada ao psytech de pista, enfatiza groove, peso, tensão, release, escuridão e movimento em Luis M, e define seu escopo como o lado underground do techno, indo de progressive/psychedelic a minimal e groove de baixo.
+
+| dimensão | consenso técnico/estético forte | o que varia |
+|---|---|---|
+| **densidade** | espaço e legibilidade continuam importantes | artistas mais dark/glitch podem ter microdetalhe muito alto sem virar "melodia densa" |
+| **melodia** | foreground reconhecível, contraste e transformação | pode ser haunting, orgânica, abstrata, quase ausente ou mais emotiva |
+| **orgânico** | mistura orgânico-eletrônico é plenamente compatível | não é obrigatório haver oud, duduk, kanun etc. |
+| **síntese** | sound design é central | origem pode ser sample, synth, multisample, gravação ou híbrido |
+| **estrutura** | desenvolvimento gradual e tensão/relaxamento | escala de tempo e quantidade de breaks variam por artista |
+| **diálogo** | separação de papéis/timbres favorece legibilidade | não há intervalo em compassos publicado como regra |
+| **low-end** | profundo/central é recorrente nas descrições | fórmula exata de sidechain ou mono cutoff não é publicada pelos selos |
+| **identidade** | som não deve parecer template | assinatura individual é explicitamente valorizada pelos próprios labels |
+
+**Subgêneros.** As fronteiras são porosas, inclusive porque os próprios lançamentos recebem simultaneamente tags `darkprog`, `psytech`, `psytechno`, `techno` e `zenonesque`.
+
+| território | tendência observada |
+|---|---|
+| **minimal psytech / AlpaKa** | mais foco em pressão de pista, groove, grit, minimalismo e construção direta; Luis M 2026 é descrito em termos de groove/tensão/escuridão/movimento. |
+| **dark zenon / darkprog** | mais atmosfera escura, glitch, design de timbre, paisagens longas e melodias "haunting". |
+| **bush tech / bush prog** | maior ênfase declarada em natureza, organicidade, earthy grooves e sensação de espaço aberto/dusty floor. |
+| **zenonesque** | guarda-chuva estético: minimal/electronica profunda, musicalidade e design futurista; não uma receita única de instrumentação. |
+
+**Instrumentos acústicos/étnicos:** a resposta rigorosa é **sample, VST/synth e híbridos são todos compatíveis; não há evidência de predominância mensurada de um método na cena**. O próprio Serum 2 pode usar multisamples gravados, sample único, granular, wavetable e ressíntese espectral; logo "é Serum" não informa por si só se o resultado é acusticamente derivado ou puramente sintetizado.
+
+Isso produz um veredito importante: **não troque synth por sample real só para parecer "mais legítimo".** O ponto de aceite deve ser ataque, dinâmica, articulação, presença do dry e ausência de repetição sintética óbvia.
+
+**Chamada e resposta:** a pesquisa perceptiva favorece interlocutores com diferenças suficientes de timbre/pitch para terem identidades separadas. Isso é exatamente o caminho correto para braam→flauta, lead→voz ou kanun→kamancheh. Porém não há corpus publicado que sustente "responder depois de 1, 2 ou 4 compassos" como norma psytech. Essa distância precisa ser medida nas referências.
+
+**A régua global:** mono até 120 Hz é tecnicamente defensável — Ableton fornece inclusive Bass Mono com cutoff ajustável entre 50–500 Hz —, mas **120 Hz não é uma lei da cena**.
+
+Já **LRA 4–7 LU, centroide 266–287, correlação 0,32–0,55, densidade ≤6,99 e LUFS ~−10** devem ser tratados como **régua empírica do corpus do projeto de origem**, não consenso publicado 2024–2026.
+
+O item que tem validação externa direta é o True Peak: a −10 LUFS, **<−2 dBTP** é coerente com a recomendação Spotify.
+
+## Parte D — As medições que fecham um bloco orquestral
+
+As cinco lacunas de medição mais caras, em ordem:
+
+| prioridade | lacuna | por que custa caro | medição que fecha |
+|---|---|---|---|
+| **1** | fraseado ainda não quantificado | é impossível provar 2–3 notas, "arco longo" ou excesso de discurso | por canal/seção: note-ons, pitch classes, p10/p50/p90 de pitch, duração mediana/p90, intervalo entre eventos, % de silêncio |
+| **2** | wet real desconhecido | não se sabe se o "dry sagrado" está realmente cumprido | Dry/Wet min/med/max, send dB, pré-delay ms, decay e 100% wet em cada Return |
+| **3** | chamadas/respostas não medidas | canais chamados "Resposta" não provam diálogo audível | matriz de pares com `call_onset`, `response_onset`, latência em beats/s, timbre A/B e ocorrência por seção |
+| **4** | automações clonadas | automação de ganho idêntica ponto a ponto em canais distintos é evidência mais compatível com duplicação técnica do que com performances independentes | hash dos pontos + parameter ID + bounce A/B de um trecho com a automação, sem alterar o projeto |
+| **5** | correções de topo/densidade sem render medido | não se sabe se +3 dB nas fontes e notas suavizadas resolveram os desvios | repetir o medidor completo: 8k+, ar, 3–8k, centroide e onsets/s por drop |
+
+O relatório não recomenda acrescentar uma única camada antes dessas medições. O risco de **solução procurando problema** é alto quando já há ~10 canais, ~292 clipes no grupo, múltiplos interlocutores potenciais e uma densidade global acima do teto.
+
+## Parte E — Ideias
+
+As propostas mantêm o modo frígio, não alteram o vocabulário do braam, não quebram o solo do breakdown e priorizam **diálogo em vez de acréscimo de conteúdo**.
+
+| tipo | ideia | como fazer com o que existe | como provar |
+|---|---|---|---|
+| **muda a música** | **bII como pergunta, tônica como resposta:** transformar a segunda grau em pontuação formal, não nota decorativa. | Antes de cada grande mudança, o braam faz bII/tônica ou bII→quinta dentro do seu vocabulário; outra família responde **uma vez**, com 2–3 notas. | contar chamadas; ≥80% das chamadas estruturais devem ser reconhecíveis sem aumentar pitch classes por frase |
+| **muda a música** | **Comprimir a latência do diálogo até o pico:** a tensão vem de as respostas chegarem mais perto, não de mais notas. | No desenvolvimento, testar chamada→resposta em 2 compassos, depois 1, depois 1/2 compasso; parar no breakdown. | curva de latência decrescente, mantendo onsets globais ≤6,99/s |
+| **muda a música** | **Breakdown como arco de uma única respiração:** não "compor mais"; transformar articulação, altura e sala de uma linha única. | No breakdown: o solista 1 nota por vez, 2–3 alturas por frase; aumentar comprimento/expressão enquanto bateria e graves seguem mudos. | simultaneidade melódica = 1; pitch classes por frase ≤3; aumento de tensão sem aumento de note-ons |
+| **canais existentes** | **Kanun pergunta; segundo timbre responde alto e raro.** | O kanun fica com ataques de madeira; o segundo aparece apenas depois de lacunas, sem tocar simultaneamente a mesma função. | overlap temporal entre os dois cair; o segundo continuar com baixa densidade e reconhecimento maior |
+| **canais existentes** | **Uma única resposta fantasma no Drop 2.** | A/B isolado de um único timbre de resposta (nunca dois), logo após o impacto do drop. | versão A sem resposta vs B com uma resposta; B só passa se densidade continuar ≤6,99/s e a chamada ficar mais clara |
+| **diálogo** | **Braam → Flauta sem dueto.** | Braam faz chamada curta; deixa ≥1/2–1 compasso vazio; flauta responde em O3–O4 com 2 notas, sem braam sustentado por baixo. | 0 sobreposição entre partes principais; resposta identificável mesmo em mono |
+| **diálogo** | **Lead → Voz na mesma nota.** | Responder ao lead com a tônica ou nota já em uso, mudando **timbre**, não conteúdo melódico; manter a resposta curta. | pitch-class count não aumenta; ouvintes/teste A/B ainda percebem dois interlocutores — diferença tímbrica favorece segregação. |
+| **topo/ar** | **Gerar extensão por ataque, não shelf.** | Nos kanuns, usar somente o transitório da palheta/ataque ou um send filtrado curto; nada de ruído contínuo ou shelf global. | 8k+ melhora **~1–2 dB por iteração**, enquanto 3–8k não cresce >0,5 dB e TP não piora |
+| **densidade** | **Cada fala compra silêncio.** | Quando lead, flauta ou kamancheh inicia frase, o kanun deixa 1/2–1 compasso vazio; não substituir nota removida. | drops retornarem para 5,3–6,7 onsets/s sem perda do motivo principal |
+| **anti-obviedade** | **A resposta pode ser ausência.** | Depois de um braam forte, em vez de outro instrumento, remover por 1/2 ou 1 compasso a família que o ouvinte esperava ouvir. | tensão percebida aumenta enquanto número de eventos cai |
+| **anti-obviedade** | **Uma nota, três identidades.** | A tônica pode migrar braam→lead→voz em seções distintas, sem nova melodia; nunca dentro do solo do breakdown. | vocabulário de pitch permanece constante, mas classificação tímbrica/forma fica mais clara |
+
+A última ideia tem fundamento perceptivo particularmente adequado ao gênero: diferenças tímbricas podem separar perceptualmente sons mesmo quando o conteúdo de pitch permanece próximo. Logo **"diálogo por timbre" é uma maneira de aumentar narrativa sem aumentar complexidade harmônica**.
+
+A proposta para o topo é deliberadamente conservadora em energia, não em criatividade. FabFilter observa que reverb de conteúdo sibilante pode requerer filtragem bastante baixa para impedir "S" agressivo na cauda; portanto usar caudas brilhantes como solução para o déficit de ar poderia aumentar mascaramento/aspereza sem restaurar ataque.
+
+A proposta de **subtração como resposta** também converge com a estética descrita pela Digital Structures em Rainbird: simplicidade e espaço para cada som/ideia respirar, e com a construção paciente/hipnótica descrita por Zenon em Sumiruna & Ambler.
+
+**Gate proposto para o próximo render, sem transformar hipótese em dogma:**
+
+| métrica | passa | falha |
+|---|---:|---:|
+| drop global | **5,3–6,7 onsets/s** | >6,99/s |
+| simultaneidade no breakdown | **1 linha melódica** | ≥2 linhas independentes |
+| pitch classes por frase solista | **2–3** | >3 recorrente |
+| wet serial do solista | **≤25%** | 100% sem dry paralelo |
+| 8k+ | caminhar em direção a **−22…−20 dB** | resolver via plateau/chiado |
+| ar | caminhar em direção a **−17…−16 dB** | aumento acompanhado de harshness |
+| 3–8k | permanecer próximo da faixa de referência **−22…−17 dB** | aumento indiscriminado |
+| centroide | mover-se em direção a **266–287** apenas se o espectro soar natural | perseguir o número com shelf |
+| TP de distribuição | **<−2 dBTP** no master alto | TP próximo de 0 |
+
+## Fontes, trechos e notas de evidência
+
+A pesquisa consultou a internet em **17 de outubro de 2026**. Os trechos são deliberadamente curtos e literais; descrições de selo/artista são tratadas como **evidência estética**, enquanto documentação técnica e literatura experimental sustentam afirmações técnicas.
+
+| fonte | classe | trecho literal curto | URL |
+|---|---|---|---|
+| **Zenon Records — site oficial** | estética atual 2026 | "organic-meets-mechanical tension that defines the Zenon aesthetic" | `https://www.zenonrecords.com/` |
+| **Molecc — Imperfektionismus, Zenon, 2026** | estética / melodia | "glitched-out synthesis, intricate sound design, and dreamy, haunting melodies" | `https://zenonrecords.bandcamp.com/album/imperfektionismus` |
+| **Sumiruna & Ambler — Extrapolated, 2025** | estrutura / hipnose | "hypnotic soundscapes that unfold with patient intensity" | `https://zenonrecords.bandcamp.com/album/extrapolated` |
+| **Evolve — Fragmented Frequencies, 2026** | psytech atual | "crisp production, deep bass, swinging grooves, and next-level sound design" | `https://zenonrecords.bandcamp.com/album/fragmented-frequencies` |
+| **Digital Structures — Rainbird, 2025** | espaço / organicidade | "explores the power of simplicity, allowing each sound and idea space to breathe" | `https://digitalstructures.bandcamp.com/album/breaking-the-illusion` |
+| **Digital Structures — Bongani, 2024** | orgânico + eletrônico | "haunting cello overtones, blending organic and electronic elements" | `https://digitalstructures.bandcamp.com/album/over-the-horizon` |
+| **Digital Structures — Breger, 2025** | dark/psytech | "gritty beats, surreal atmospheres, and an unapologetically edgy vibe" | `https://digitalstructures.bandcamp.com/album/seduction` |
+| **AlpaKa — Luis M, Aikyam, 2026** | minimal psytech | "unity between groove and grit, tension and release, darkness and forward-driving motion" | `https://alpakamuzik.bandcamp.com/album/luis-m-aikyam-ep` |
+| **Xfer Records — Serum 2** | implementação | "Enables replication of real instruments and sounds found elsewhere." | `https://www.xferrecords.com/products/serum-2` |
+| **FabFilter — reverb** | DSP | "pre-delay… allows you to create some separation between the direct and reverberated sound" | `https://www.fabfilter.com/learn/reverb/basic-reverb-controls` |
+| **iZotope — pre-delay** | DSP | "Pre-delay prevents the reverb from masking the initial attack of the sound" | `https://www.izotope.com/community/blog/reverb-pre-delay` |
+| **Ableton — Echo** | DSP / routing | "Ducking reduces the wet signal while the input is active" | `https://www.ableton.com/fr/packs/echo/` |
+| **Spotify for Artists** | distribuição | "If your master is louder than -14dB… keep True Peak below -2dB" | `https://support.spotify.com/cv-pt/artists/article/loudness-normalization/` |
+| **Oh et al., Frontiers in Neuroscience** | psicoacústica | "increased differences in either F0 or spectral slope allowed listeners to more easily distinguish" | `https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.725093/full` |
+| **Briefing ORQUESTRA do projeto de origem** | dados internos | fonte dos parâmetros, métricas, decisões congeladas e corpus já medido | — |
+
+**Conclusão final:** o bloco não está pedindo "mais orquestra". Está pedindo **prova de fraseado e engenharia de diálogo**. O projeto já tem variedade tímbrica suficiente — braam, dois kanuns, três papéis de kamancheh, flauta, voz de garganta e dois leads/respostas. A questão decisiva é descobrir se esses dez canais estão se comportando como **personagens que se alternam** ou como **camadas que se acumulam**. A primeira opção converge com a evidência estética e perceptiva; a segunda agravaria justamente o maior desvio medido, a densidade.
 
 
 ---
@@ -1214,6 +1677,7 @@ Status: **PESQUISA CONCLUÍDA** (a aplicação no projeto de origem está regist
 
 **NÃO VERIFICADO:** fonte externa nova (web indisponível nesta sessão); separação fina lead/pads no stem `other`; duração real das notas da referência (só onsets).
 
+
 ---
 
 ## pesquisas/MAPEAMENTO-CANAIS-PROG-ORGANIC-20261029.md
@@ -1351,6 +1815,7 @@ Critério: aderência direta ao estilo de referência (motor de grave + ausênci
 - https://www.youtube.com/playlist?list=PL8OP9pfK9QpMmy7JDBXbTyjmk5foaDar6 · PLa9ASr8n5idBBiYy5DEZ5m3IHKr7dqx84 · PL2tZfdG9aSxzup6Idj1sdFCtvtVLZqajz (títulos via metadado)
 - Via busca apenas (não abertas): sonicacademy.com (403), zenon-education.com (403), cosm.co.nz (vazio), canais YouTube de Julien Earle, E-Clip, Sadowick, Tom Cosm, Dowden, Point Blank.
 
+
 ---
 
 ## pesquisas/PESQUISA-CENTRALIZAR-ABLETON-IA-MCP-20261013.md
@@ -1404,6 +1869,7 @@ Critério: aderência direta ao estilo de referência (motor de grave + ausênci
 **Gate recomendado para qualquer mutação:** backup do Set antes da mutação; um escritor por vez; assinatura recente por operação; read-back por identidade/contagem/conteúdo; salvar no Live e comprovar com mtime; auditoria offline no `.als` salvo; captura + medição DSP para prova de áudio. A tabela de provas deve apontar alvo, comando e saída crua. Medições não são julgamento estético — a curadoria final é do ouvido.
 
 **Status desta pesquisa:** fontes oficiais e código local consultados; nenhuma alteração em código, Set ou documentação; nenhum teste ou operação Live executada. As validações ponta a ponta permanecem pendentes de uma sessão com Live disponível.
+
 
 ---
 
@@ -1502,6 +1968,7 @@ São ligações possíveis. Quando a continuidade pede um corte limpo ou um pers
 - Margulis, 2007: [Silences in music are musical not silent](https://doi.org/10.1525/mp.2007.24.5.485).
 - Ableton, 2015: [Perspectives from Loop: Repetition, variation and sampling](https://www.ableton.com/en/blog/repetition-variation-and-sampling/).
 - Zenon Education: [Zenon Records Music Production Suite](https://www.zenon-education.com/pt-br/zenon-records-music-production-suite). Os números entre parênteses na página são durações de aulas, sem timestamps de trechos confirmados.
+
 
 ---
 
@@ -1632,6 +2099,7 @@ O melhor da contribuição é a forma por blocos, a transformação de personage
 - Notas de estudo de 07/09 a partir de material de curso (Dharana; "Workshop: transições criativas") — trechos sem timestamp reproduzível nesta rodada.
 - Um plano interno de 11/10 sobre o manto do Bar 73 e os registros de estado do projeto de referência — usados como história documental, não como estado atual comprovado nem evidência de som.
 
+
 ---
 
 ## pesquisas/PESQUISA-LANES-ARRANJO-20261014.md
@@ -1706,6 +2174,7 @@ provado. O patch offline é o único caminho de escrita; a API nem lê.
   não lineares num lane FloatEvent já existente): interno OK (receita de 26/09 + 51 testes), externo
   N/D. Coberto pelo protocolo: patch → auditoria → abrir no Live → A/B.
 
+
 ---
 
 ## pesquisas/PML-BASS-PATTERNS-APERITIVO-20261031.md
@@ -1771,6 +2240,7 @@ Tônica do projeto de referência é C#, frígio, 128 BPM — transpor e esticar
 ## Fontes consultadas
 
 - Medição própria: 26 MIDIs via `mido` + durações WAV (31/10/2026). Nenhuma outra fonte externa consultada neste recorte; os estudos internos citados na versão de origem pertencem ao acervo do projeto original e não são reproduzidos aqui.
+
 
 ---
 
@@ -1885,6 +2355,7 @@ Tônica do projeto de referência é C#, frígio, 128 BPM — transpor e esticar
 
 **A/B novo sugerido pela onda (fila, não aplicado):** tom/bongo afinado em C# (tônica) na região do kick, mono, testado contra a lei do low-end — e "1–2 bass shots" nos `.27/.77` como enchedor de grave sem camada contínua.
 
+
 ---
 
 ## pesquisas/TPS-ODYSSEY-DIVA-20261031.md
@@ -1910,6 +2381,7 @@ Categorias restantes: ARP, ATMO, LD (leads), PL (plucks), SY — por garimpar. P
 ## Fontes consultadas
 
 - Medição própria: 25 MIDIs `BS` via `mido` (31/10/2026). Nenhuma outra fonte externa consultada neste recorte; os estudos internos citados na versão de origem pertencem ao acervo do projeto original.
+
 
 ---
 
@@ -1964,6 +2436,7 @@ Auditoria completa de um set real de minimal psytech: **73 canais** (70 pistas [
 
 * **Existência física no disco dos 18 samples externos:** apenas o `.als` foi inspecionado — caminhos verificados no XML (`Path`, `RelativePath`, `OriginalFileSize > 0`), sem testar o SSD local.
 * **Parâmetros internos pós-header binário do Serum 2:** os cabeçalhos JSON (`XferJson`) foram 100% decodificados (`presetName`, `presetAuthor`, `presetDescription`, `hash`), mas os knobs de DSP dentro do blob binário só são acessíveis com o engine do plugin carregado no host.
+
 
 ---
 
@@ -2170,6 +2643,7 @@ Um `.wav` por preset, mesmo nome, gravado pelo fabricante. Isso permite duas coi
 - Nenhum preset foi carregado no Diva.
 - A correspondência código→nome de modelo (oscilador e filtro) é `INFERÊNCIA` pela ordem do manual.
 - `Modo` (VCC) foi lido como código bruto; poly/mono/legato não foi confirmado no plugin.
+
 
 ---
 
@@ -2425,6 +2899,7 @@ Comparação com os outros packs (mesma medição):
 - O rack `Ducking` é um device Max for Live: o XML mostra o wrapper, não os parâmetros internos. O que ele faz é `INFERÊNCIA`.
 - Os 527 WAV foram classificados por **nome de arquivo**, não por áudio.
 
+
 ---
 
 ## pesquisas/cursos/DRIFT-TECH-HOUSE-20261025.md
@@ -2513,6 +2988,7 @@ Funções no nome: **BS** = bass, **LD** = lead, **PL** = pluck, **PD** = pad, *
 - Os 152 presets Serum 2 não foram parseados em parâmetro (o formato é CBOR) — a análise é por nome, caminho e função declarada.
 - Os 112 `.fxp` não são carregáveis sem o Serum 1.
 - O gênero é tech house, não psytech: o valor está na **técnica de Serum**, não no groove.
+
 
 ---
 
@@ -2752,6 +3228,7 @@ Nenhum send é reverb puro. **A** tem compressor e filtro; **B** tem plugin de t
 - `Toraverb` (send B) é plugin de terceiro; sem ele instalado, esse send abre sem o efeito.
 - A contagem de devices inclui os que estão desligados.
 
+
 ---
 
 ## pesquisas/cursos/MIXING-A-TRACK-PROJETO-20261026.md
@@ -2832,6 +3309,7 @@ Antes e depois são o **mesmo arranjo** (119 BPM · 128 compassos · 718 → 766
 - Os 4 FLV (`27`, `28`, `42`, `45`) são vídeo antigo; o curso tem 46 aulas somando ~5h23.
 - A reconfirmação é por leitura de XML (gzip) dos dois `.als`.
 
+
 ---
 
 ## pesquisas/cursos/MOOG-SUB37-PML-20261026.md
@@ -2887,6 +3365,7 @@ Pelo título e pela duração, os dois blocos com maior densidade técnica são:
 - **Não há presets** — o zip de presets nunca baixou. Se o material de patch for necessário, é preciso completar o download do torrent `[Production Music Live Yannek Maunz Moog Sub37]`.
 - **Sub37 é hardware**; sem o instrumento (ou um clone), não há destino para os presets mesmo se baixarem.
 - Não existe arquivo leve no pacote além dos próprios vídeos.
+
 
 ---
 
@@ -3169,6 +3648,7 @@ A última linha é o desenho psystyle do motor de grave: **kick no 1, bass nos c
 | Mapa de mixdown | cap. 6 | leitura integral | kick+bass mono/centro; strings 50L/50R mais baixas; hat 10–20 kHz 40–45 |
 | Build 1/4→1/8→8 kicks→1/16 4 compassos | cap. 8 | leitura integral | "goes on for about eight kick drums... then 16. For like four bars" |
 
+
 ---
 
 ## pesquisas/cursos/PRESETS-SERUM-20261025.md
@@ -3286,6 +3766,7 @@ Dos 32 nomes de patch em uso, **7 não existem como `.SerumPreset`** — só com
 - 7 dos 32 nomes não puderam ser lidos (`.fxp`) — as médias do set de referência excluem esses 7. As 39 instâncias VST3 apontam para 32 nomes porque há repetição (o `Cinematic Drone` aparece em 4 pistas, o `GLIDE BASS 03` em 2, o `ARYTMO_ODYSSEY` em 2).
 - Nada foi ouvido. "Densidade de patch" é contagem de estrutura, não julgamento de timbre.
 
+
 ---
 
 ## pesquisas/cursos/TIM-ENGELHARDT-20261025.md
@@ -3389,6 +3870,7 @@ Nomenclatura: `PML_ENGELHARDT_BASS_01` a `_20+`, e equivalentes por função. Ao
 - Nada foi ouvido; nada foi aberto no Live.
 - Os `.als` são de 2020 (era Live 10). Podem abrir com avisos de versão e mídia faltante.
 - A contagem de plugins vem do XML; se um device estiver desativado, ele ainda é contado.
+
 
 ---
 
@@ -3585,6 +4067,7 @@ O que é automatizado, em ordem de frequência:
 - O `GlueCompressor` tem escala de attack/release própria; os valores 2/3/6 estão **crus**, sem conversão para ms.
 - O rack `FINISH` (DRUMS do Project C) é um rack de rack — a leitura para no segundo nível.
 
+
 ---
 
 ## pesquisas/dossies-deep-research/RETORNO-ARGON-BALANCO-MISTICO-E-VOZ-3D-20261017.md
@@ -3746,6 +4229,7 @@ A superação imediata do bloqueio criativo no caso de referência não requer a
 13. AUDITORY PERCEPTION AND COGNITIVE PERFORMANCE, https://usaarl.health.mil/assets/docs/hmds/Section-19-Chapter-11-Auditory-Perception-and-Cognitive-Performance.pdf
 14. Training of Listeners for the Evaluation of Spatial Sound Reproduction, https://openresearch.surrey.ac.uk/view/pdfCoverPage?instCode=44SUR_INST&filePid=13140287030002346&download=true
 
+
 ---
 
 ## pesquisas/dossies-deep-research/RETORNO-DEEP-RESEARCH-BALANCO-MISTICO-20261017.md
@@ -3871,6 +4355,7 @@ O diferencial já é o vazio. Portanto, não copie os **11–18 ghosts/compasso*
 Isso também é coerente com o eixo atual das referências: Luis M aparece hoje explicitamente associado a **bush techno/Psy-Techno**, com material recente na faixa de 128–130 BPM; Yao Ofosu e Greenwolve permanecem no mesmo ecossistema recente da AlpaKa MuziK.
 
 **Internet consultada: sim.** Fontes principais: pesquisas de Danielsen et al. sobre timing + som em gêneros de groove; Senn et al. sobre microtiming e densidade; Sioros/Witek sobre síncope e groove; estudo PLOS sobre movimento espacial; Beatport/AlpaKa para verificar o contexto atual das referências.
+
 
 ---
 
@@ -4170,6 +4655,7 @@ A pesquisa consultou a internet em **17 de outubro de 2026**. As fontes abaixo s
 
 **Conclusão final:** o bloco não está pedindo "mais orquestra". Está pedindo **prova de fraseado e engenharia de diálogo**. O projeto já tem variedade tímbrica suficiente — braam, dois kanuns, três papéis de kamancheh, flauta, voz de garganta e dois leads/respostas. A questão decisiva é descobrir se esses dez canais estão se comportando como **personagens que se alternam** ou como **camadas que se acumulam**. A primeira opção converge com a evidência estética e perceptiva; a segunda agravaria justamente o maior desvio medido do projeto de referência, a densidade.
 
+
 ---
 
 ## pesquisas/dossies-notebooklm/DOSSIE-NOTEBOOKLM-ISMAILM-VS-SET-REF.md
@@ -4356,6 +4842,7 @@ O estudo comparativo com *Ortahisar* de Ismail.M demonstrou que a sofisticação
 4. O silêncio e a ausência nos momentos pré-drop são as armas mais poderosas para gerar impacto dinâmico na pista.
 
 Com as correções aplicadas, a faixa de referência atinge 100% de conformidade com os princípios da escola e abre caminho para uma masterização final cristalina e devastadora.
+
 
 ---
 
@@ -4544,6 +5031,7 @@ Copie e cole estas perguntas no NotebookLM após carregar este dossiê:
 3. *"Qual é a diferença entre o papel do Duduk (Woodwind) e do Kamancheh (Violino Persa) no arranjo e em quais compassos eles dialogam?"*
 4. *"Como foi resolvida a abertura estéreo de 360° da bateria nos drops sem causar cancelamento de fase mono no grave?"*
 5. *"Descreva a arquitetura do 'Falso Break em 2 Atos' (Bars 105 a 120) e por que ele mantém a pista dançando sem quebrar a hipnose."*
+
 
 ---
 
@@ -4755,6 +5243,7 @@ Ao carregar este dossiê no NotebookLM, utilize as diretrizes e prompts de estre
 
 ### Pergunta 5: A Auditoria Numérica do Gate da Escola — Fim da Subjetividade
 > *"Por que a substituição de regras inventadas por uma régua empírica baseada nas 32 faixas de referência do gênero transformou o processo de mixagem e masterização? Qual é a importância de medir a correlação estéreo do midrange (0.456) e a ausência do sub (30.4%) em vez de confiar apenas na escuta subjetiva em monitores de estúdio?"*
+
 
 ---
 
@@ -5261,6 +5750,7 @@ As fontes documentadas no acervo sustentam as técnicas, métodos e comportament
 ---
 
 As diretrizes da **RODADA 2** e da **RODADA 3** são aplicáveis diretamente em uma sessão do Ableton Live 12.
+
 ---
 
 ## pesquisas/dossies-notebooklm/GEMINI_NOTEBOOK_SOUND_DESIGN_FULL.md
@@ -5376,6 +5866,7 @@ Para garantir que toda essa densidade de Sound Design chegue ao master com extre
 
 Com essas técnicas integradas ao Ableton Live 12.4, a faixa de referência ganha um nível de acabamento, textura e psicodelia digno dos maiores lançamentos da AlpaKa MuziK e Zenon Records! 🚀
 
+
 ---
 
 ## pesquisas/dossies-notebooklm/PESQUISA-NOTEBOOKLM-DINAMICA-FX-20260924.md
@@ -5481,6 +5972,7 @@ Com essas técnicas integradas ao Ableton Live 12.4, a faixa de referência ganh
 5. **Dharana:** LFO de cutoff nos atmos (8/16 compassos).
 6. **Sub Deprivation** nas fronteiras + os 3 cortes pré-Drop 2.
 7. **Mastering:** ceiling −0,5 dBTP, HPF 20 Hz, mono <120 Hz, LUFS −8…−9,5.
+
 
 ---
 
@@ -6055,6 +6547,7 @@ Em cumprimento estrito ao protocolo obrigatório para consultas com anexos e tex
 9. **Tabela de Frequências de Notas Musicais (C#4 = 277,18 Hz):** [https://pianotuner.io/piano-note-frequencies](https://pianotuner.io/piano-note-frequencies) e [https://www.tonal.fm/guides/frequency-chart](https://www.tonal.fm/guides/frequency-chart)
 
 Para ouvir na prática como a dupla sul-africana citada nas suas referências constrói sustentação de médio-grave, chamadas metálicas de *peak time* e controle de espaço negativo em pista, confira a apresentação completa [Miles From Mars no Boom Festival 2025](https://www.youtube.com/watch?v=4kVjiF3bYGs), que ilustra exatamente a estética de *psychedelic peak-time techno* buscada para o portador da **faixa de referência**.
+
 ---
 
 ## pesquisas/estudo_master_20261017.md
@@ -6299,6 +6792,7 @@ PY
 * **Medição DSP direta em `.wav` renderizado (LUFS-I, True Peak, LRA, Crest, correlação por banda, espectro FFT):** apenas o arquivo `.als` foi enviado ao ambiente de inspeção (sem os `.wav` locais), então as métricas acústicas não puderam ser medidas diretamente nesta sessão; ficaram propostas com script pronto na Seção 6.
 * **Resposta interna exata dos módulos de FX dentro dos blobs binários do Serum 2 FX:** os cabeçalhos JSON (`XferJson`) de todas as 32 instâncias foram decodificados (preset, autor, descrição, hash), mas os knobs de DSP proprietários do Xfer são serializados em binário opaco após o cabeçalho.
 
+
 ---
 
 ## pesquisas/estudo_mix_20261017.md
@@ -6472,6 +6966,7 @@ PY
 * **Medição acústica em áudio renderizado (`.wav`) de stems e master:** todas as grandezas de faders, ganhos, EQs, compressores, presets de Serum 2, roteamentos de sidechain, envelopes e notas MIDI foram **100% medidas no XML do `.als`**, mas o cálculo direto de LUFS/correlação/espectro sobre ondas de áudio depende da execução do render no Live local.
 * **Alinhamento de fase amostra-a-amostra entre kick e sub/rolling:** como o Serum 2 sintetiza em tempo real, a verificação visual de fase requer osciloscópio ou renderização das pistas em WAV após transpor o sub para MIDI 25.
 
+
 ---
 
 ## pesquisas/pesquisa-ponte-m4l-runtime-serum2.md
@@ -6636,6 +7131,7 @@ Configurar (com Serum fechado) o número do CC 0–127 no lugar de -1 → cada C
 
 Fontes principais: [thread Xfer PC Serum 2](https://xferrecords.com/forums/general/please-consider-bringing-back-program-change-to-serum-2) · [Live 12 release notes](https://www.ableton.com/en/release-notes/live-12/) · [ableton-live-mcp](https://github.com/bschoepke/ableton-live-mcp) · [Serum 2 manual (PDF)](https://www.xferrecords.com/manual/serum-2/docs) · [thread Xfer "CC for serum"](https://xferrecords.com/forums/general/cc-for-serum) · [vst3_public_sdk validator](https://github.com/steinbergmedia/vst3_public_sdk) · [LOM docs](https://docs.cycling74.com/max8/vignettes/live_object_model)
 
+
 ---
 
 ## pesquisas/refs-artistas/ANALISE-130-D-20261016.md
@@ -6701,6 +7197,7 @@ Fontes principais: [thread Xfer PC Serum 2](https://xferrecords.com/forums/gener
   `Riots in My Head`, `Call To The Wild`, `Deep Zenonesque` remix, `Sicka` remix), **AIO**
   (`Illusion`, `Shifting Reality`, `Late Phase` c/ Sabura/Clap Codex) e catálogos techno peak-time.
 - Pendente: análise por STEMS para cravar kick, baixo e camadas de topo além do mix.
+
 
 ---
 
@@ -6792,6 +7289,7 @@ O IBI ~455–470 ms confirma 128–132 BPM. A cauda do kick é a diferença tát
 - Pesquisas web: VERIFICADO nas fontes dos dossiês de pesquisa; INFERÊNCIAS marcadas; BPM/key de várias faixas dos artistas: NÃO ENCONTRADO (Beatport/Spotify bloqueiam).
 - Nenhuma escuta humana automatizada: tudo aguarda validação por escuta.
 
+
 ---
 
 ## pesquisas/refs-artistas/ANALISE-SLIPPERY-SLOPE-LUISM-20261016.md
@@ -6877,6 +7375,7 @@ O IBI ~455–470 ms confirma 128–132 BPM. A cauda do kick é a diferença tát
   "topo é evento".
 - **O vácuo de verdade existe e é curto** (15 s sem nenhum transiente) — coerente com a estética de menos bateria.
 - **O outro apaga o topo primeiro, o sub depois** — ideia de desenho raramente explorada.
+
 
 ---
 
@@ -7022,6 +7521,7 @@ As três referências foram medidas com a mesma régua, número a número. O que
 
 - Régua aplicada identicamente às três referências (ffmpeg/numpy, STFT 1024/256 @22,05 kHz mono).
 - Limitações: janelas de drift e de fase usam 60–300 s; o detector de pausas não captura vácuos >3 s como "pausa"; "kick rate" conta eventos LF (kick + re-trigger de bass na mesma banda); níveis são internos a cada faixa (não comparar absolutos entre masters diferentes).
+
 
 ---
 
@@ -7212,6 +7712,7 @@ Banda / Métrica          |  Alvo das Referências
 ========================================================================================
 ```
 
+
 ---
 
 ## pesquisas/refs-artistas/COMO-OS-ARTISTAS-FAZEM-2026-09-08.md
@@ -7246,6 +7747,7 @@ Leitura do detector: "kick rate" conta eventos LF (kick + re-trigger de bass na 
 ## Limites
 
 Detector LF não separa kick de sub (conta eventos); MP3s das refs (masters diferentes); janela 0–300 s (finais não analisados); pausas detectadas podem incluir seções de construção com kicks esparsos. A comparação de níveis de dB é interna a cada faixa.
+
 
 ---
 
@@ -7290,6 +7792,7 @@ Detector LF não separa kick de sub (conta eventos); MP3s das refs (masters dife
   na posição.
 - Mede a **ausência**, não o gesto que a cerca (filtro, reverse, eco). O "como" do corte (cortar seco vs. fade)
   precisa de escuta.
+
 
 ---
 
@@ -7363,6 +7866,7 @@ Ao analisar segundo a segundo a faixa (timeline forense), esta é a matemática 
 
 3. **Tração contínua de topo nos drops:**
    - Open hats e shakers como esteira ininterrupta em 16avos nos blocos de marcha, sem buracos acidentais no meio do ciclo — o corte só nos últimos 2 tempos de transição (o vácuo sagrado).
+
 
 ---
 
@@ -7463,6 +7967,7 @@ Esta pasta está **cravada em 128 BPM**, o andamento típico do minimal psytech.
    - Utilizar as formas de onda de `basso rolling e psy.wav` e `Miglior Basso dominus.wav` para desenhar wavetables personalizadas no Serum.
 3. **Escuta A/B por Resampling:**
    - Carregar trechos dos stems em pistas de teste temporárias no Live (resampling / input de áudio) para comparar de ouvido o peso do grave, a pressão do sub e o ar de cada stem com o projeto em andamento.
+
 
 ---
 
@@ -7686,6 +8191,7 @@ Fonte: mesmo pacote de remakes (`.als` + presets + cfg + imagens; **sem os WAV/A
 
 **Limite:** mídia faltante e **nada foi ouvido**. O que é `VERIFICADO` é a estrutura do `.als`, não o som.
 
+
 ---
 
 ## pesquisas/refs-artistas/LIB-VINTAGE-ORGANS-20261026.md
@@ -7746,6 +8252,7 @@ e **`.previews/*.ogg` para cada patch** — os 100 timbres são **audíveis sem 
 
 `NÃO VERIFICADO`: comportamento do scan de plugins varia por máquina; som renderizado (nenhum .nki
 foi aberto — a escuta possível é pelos .previews).
+
 
 ---
 
@@ -7813,6 +8320,7 @@ Blueprint ajustado: o baixo de uma faixa no estilo = **intercalado com rajadas o
 - Régua: ffmpeg 22.05k mono + numpy (autocorrelação onset c/ fold de tempo; chroma+Krumhansl; onsets por banda p97; energia 4 s)
 - Blind cross-check do atlas (sessão irmã): rótulos "rolling psy" eram artefato de prompt; fenômeno hipnótico sobreviveu cego → este mapa usa só descritores medidos
 - ISMAIL.M mapeado: Visionary (Cerato Rmx) 121,6 D min · Cyber Attack 121,6 C maj · Sunrise in Odessa 121,6 F maj · Hypnosis 121,6 C# maj · Sacred Lotus 125,3 C maj · Udja 118,8 C maj. Turkish Miracles (álbum): não analisado.
+
 
 ---
 
@@ -7924,6 +8432,7 @@ Blueprint ajustado: o baixo de uma faixa no estilo = **intercalado com rajadas o
 | **A Grande Pausa** | Bars 121–136 (queda de 11 dB) | Breakdown de **16 compassos** (solo acústico sem kick/sub). |
 | **Drop 2 Clímax** | Abertura máxima com saturação | Clímax abrindo em **~750 Hz** com uníssono orquestral. |
 | **Fundo Preto** | Topo representa só 1,7% da energia | **Anti-chiado rígido**: pratos aveludados, hats binaurais e madeiras orgânicas. |
+
 
 ---
 
@@ -8091,6 +8600,7 @@ Princípio geral extraído: **manter o material, multiplicar as versões.** Cada
 - HIPÓTESE: playback de clipes sobrepostos na mesma track (RE201: 16 sobreposições) — o comportamento de mixagem interna é do Live, não dedutível do JSON.
 - NÃO VERIFICADO: disponibilidade exata das operações LOM citadas na versão do Live em uso (`duplicate_clip_to_arrangement`, propriedades de clipe) — checar a doc do LOM instalada antes de implementar.
 - Nenhum arquivo do Set de referência foi modificado.
+
 
 ---
 
@@ -8294,6 +8804,7 @@ Camadas funcionais (resumo):
 - NÃO VERIFICADO: fase/swing dos hats do Star (requer R-scan por stem — fora do escopo de densidade); causa dos 64 'pausas' do SEQ_GRID (provável gate rítmico intencional, dado que o stem volta a 8/s no clímax).
 - Limite: taxa de eventos conta transientes banda-larga (não é contagem de kicks); comparação de dB entre stems usa energia média 0–360 s incluindo trechos mudos — ver matriz de presença para leitura por seção.
 
+
 ---
 
 ## pesquisas/refs-artistas/rolling_music_forensic_comparative_study.md
@@ -8339,6 +8850,7 @@ Camadas funcionais (resumo):
 - Caminho A (encaixe direto): usar grooves/one-shots da Rolling como material de um set psytech (Simpler/Warp).
 - Caminho B (o inverso): construir uma faixa de tech house nova com a linguagem psy importada (motor kick/sub psytech numa faixa do estilo Rolling).
 - Ambos os caminhos documentados; os grooves medidos servem aos dois.
+
 
 ---
 
@@ -8411,6 +8923,7 @@ Os mapas completos por vídeo (um por ID, com timestamps e trechos de prova) nã
 - **`TdNE8oEb2Lk`:** o device "First Look at" (00:13:00) não é identificável na legenda; o fallback do Color Limiter é inferência.
 - **`5XUULOEJ2tI`:** o quinto nível de energia não é nomeado na transcrição e não foi inventado. Onde o reset em 1:45 cabe (fim dos 2 min ou seção posterior) é decisão do produtor.
 - **Decisões estéticas em aberto no projeto de referência** condicionam a camada de hats da escada de energia e a régua do médio (ver seção de conflitos).
+
 
 ---
 
@@ -8516,6 +9029,7 @@ O vídeo **não depende** de plugins específicos — é uma sessão Ableton com
 
 **Fonte:** legenda automática EN do vídeo (ASR), obtida com `yt-dlp --skip-download --write-auto-subs --sub-langs en --convert-subs vtt`; citações com timestamps das cues. Nenhuma informação tirada da descrição do YouTube.
 
+
 ---
 
 ## pesquisas/tutoriais/C6KBqtmfnY8.md
@@ -8540,6 +9054,7 @@ Release de referência para escuta comparativa do estilo.
 ## Limites
 
 Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (verificados no info.json).
+
 
 ---
 
@@ -8603,6 +9118,7 @@ design do vídeo `tfncDL3iIeI`).
 
 Aula de fundação; sem valores numéricos além dos conceituais. Áudio não escutado.
 
+
 ---
 
 ## pesquisas/tutoriais/CURSOS-LOCAIS.md
@@ -8647,6 +9163,7 @@ Aula de fundação; sem valores numéricos além dos conceituais. Áudio não es
 ---
 
 **Regra de uso:** curso é **fonte**, não lei. Antes de aplicar, passar pela seção de conflitos/cautelas do documento da frente correspondente.
+
 
 ---
 
@@ -8820,6 +9337,7 @@ separation. It will have that punch" (05:16.358–05:33.670).
 legenda automática — não fica claro a que ele se refere. **Não usar como especificação.** O que está claro e
 citável é a conclusão logo depois: "because it has that separation. It will have that punch."
 
+
 ---
 
 ## pesquisas/tutoriais/Dcs7r1b6RwI.md
@@ -8930,6 +9448,7 @@ O vídeo só usa reverb/echo no retorno do baixo [11:12–11:20]. Aplicar a ambi
 ---
 
 **Fonte:** legenda automática do vídeo (ASR), lida integralmente; citações com timestamps.
+
 
 ---
 
@@ -9068,6 +9587,7 @@ A descrição anuncia plugins do canal **Chop Suey Kick Drum Designer** e **Kikz
 - O vídeo não mostra os parâmetros internos do rack pack, do Granulator 3, do Voda ou dos filtros; não há valores de sound design a copiar.
 - Os valores −7,6 dB e −4,7 dB são do vídeo e **não** devem ser usados como teto de outro premix; o teto tem de ser medido no próprio set.
 - A legenda automática tem erros de transcrição; as citações preservam o texto literal e os erros estão anotados.
+
 
 ---
 
@@ -9255,6 +9775,7 @@ Citações literais da ASR; erros de reconhecimento preservados. Onde a palavra 
 
 **Fonte:** transcrição ASR do vídeo do curso (fonte primária). **Nenhum áudio foi escutado, medido ou carregado em DAW na elaboração deste estudo.**
 
+
 ---
 
 ## pesquisas/tutoriais/Fx3jM4xdw4M.md
@@ -9432,6 +9953,7 @@ Tudo o que o vídeo faz para abrir espaço é **subtrativo ou dinâmico** — co
 
 **Fonte:** legenda automática EN do vídeo (2.344 linhas, lida inteira; parse de cues com remoção de tags e duplicatas rolantes) + descrição do vídeo (usada só para confirmar o nome da faixa "Estranged", o canal e o corte de 1 h no Patreon). Conferência das 3 citações executada contra o texto contínuo da legenda; onsets falados medidos em 00:05:34.479, 00:09:01.279 e 00:12:24.800.
 
+
 ---
 
 ## pesquisas/tutoriais/Fzv5YGRKK1w.md
@@ -9456,6 +9978,7 @@ Estrutura/mix/referências — tema promissor para o estilo, pendente de extraç
 ## Limites
 
 Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (verificados no info.json).
+
 
 ---
 
@@ -9578,6 +10101,7 @@ Compassos 1–16 kick + rumble + ghost · 17–32 percussão grave e média · 3
 
 > Recurso esquecido do Simpler: LFO interno lento modulando volume e pan (SINEE Global) — [00:08:31–00:08:49]
 
+
 ---
 
 ## pesquisas/tutoriais/GROOVE.md
@@ -9654,6 +10178,7 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **`A6XjjwGUkA8`** — Corpus, Auto Filter, Phaser, Amp e Glue no Live não conferidos nesta sessão; LFO→attack no Sampler não verificado (no Serum o destino `env0.attack` existe no schema).
 - **`aK2tKYe8yCI` e `G4Tsj5or6A8`** — BPM (135), tonalidade (F#/G/C#) e valores de kick/tom são do vídeo e não se traduzem; só a regra vale.
 - **Nível de bolso** — o quanto o 3/16 ou o Amount de swing "cola" no bolso de referência não foi medido; só A/B de ouvido resolve.
+
 
 ---
 
@@ -9781,6 +10306,7 @@ hats, percussão, madeira, stab, subida ou arranjo — essas funções continuam
 - **O mapeamento phase randomization → controle de fase do oscilador do Serum 2 e OTT → preset do Multiband Dynamics é inferência** de conceito, não verificação de UI.
 - **O áudio do vídeo não foi analisado.** O estudo é baseado só na legenda; a balança de bandas da faixa dele não foi medida.
 
+
 ---
 
 ## pesquisas/tutoriais/Hzszjbt_c9I.md
@@ -9900,6 +10426,7 @@ O vídeo é 100% stock Ableton, então a rota principal é **1:1 no Live 12**. P
 - Se os LFOs são tempo-sincronizados ou livres: **não dito**.
 - Se o pad é 100% wet ou tem sinal dry paralelo: **não dito**.
 
+
 ---
 
 ## pesquisas/tutoriais/INDEX-TUTORIAIS.md
@@ -9927,6 +10454,7 @@ O vídeo é 100% stock Ableton, então a rota principal é **1:1 no Live 12**. P
 - [`fontes/3Z41KdsBdDU.md`](fontes/3Z41KdsBdDU.md) — Scionaugh, "Deep Dub Stabs in Serum 2"
 
 Os demais mapas citados nos documentos acima (um por vídeo, com timestamps e trechos de prova) não acompanham o pacote; os IDs citados nos textos identificam cada fonte no YouTube.
+
 
 ---
 
@@ -10128,6 +10656,7 @@ capítulo correspondente:
 - As metas de "não subir 55–75 Hz" e "correlação ≥0,98 abaixo de 120 Hz" são metas de engenharia do contexto
   psytech, não resultados medidos aqui.
 
+
 ---
 
 ## pesquisas/tutoriais/IbeXMrvWAew.md
@@ -10314,6 +10843,7 @@ use distortion saturation a lot without getting crazy" (00:13:43–00:13:51) ·
 (00:20:33–00:20:43) · "then I'm just gonna boost around 3 4 kilo" (00:22:25–00:22:29) ·
 "a good way to do that is phryges the decay" (00:24:36–00:24:37, "phryges" = reduce).
 
+
 ---
 
 ## pesquisas/tutoriais/JNAyJa_Dcx0.md
@@ -10438,6 +10968,7 @@ camada (atmosfera e resposta), não um ajuste de minutos.
 
 **Fonte:** legenda automática EN do vídeo (Sonic Academy), lida integralmente. Nomes de parâmetro do GranularOsc conforme o plugin Serum 2; valores de aplicação são pontos de partida de design, não do vídeo.
 
+
 ---
 
 ## pesquisas/tutoriais/JZFpPYXLDoU.md
@@ -10493,6 +11024,7 @@ Consolidar um pluck/textura do próprio material, gerar 2 variantes de riser (sw
 ## Limites
 
 Legenda automática ASR; áudio não escutado. "go up to -12" (02:16) é provável erro de ASR — para ser riser o destino final deveria subir (ex. +12), mas não é possível confirmar sem assistir; valor final do sweep NÃO VERIFICADO. "An eighth of the course" (03:27) ambíguo — 0.125 provavelmente se refere a 1/8 da fonte/loop, sem certeza do parâmetro exato. Nenhum valor numérico de crossfade, spread, FM amount ou rate do arpeggiator na legenda.
+
 
 ---
 
@@ -10591,6 +11123,7 @@ O OTT não gera largura estéreo, então não quebra o mono por si. O risco é d
 2. **06:43.816–06:50.237** — *"And when you / submit this to an / OTT-type plugin, you're essentially / just undoing what you / did here."* — "submit" é artefato da ASR do YouTube; a transcrição local diz "running that into an OTT style plugin, you're essentially just negating what you've done here".
 3. **12:13.833–12:18.681** — *"Make sure it's / before other / effects, before / the equalizer, so you / can properly / cut out the excess"*.
 
+
 ---
 
 ## pesquisas/tutoriais/Kxhh8ni4GVU.md
@@ -10651,6 +11184,7 @@ Direta (Wavetable/Serum 2 + Live nativo). Encaixes:
 
 Transcrição via web reader sem timestamps por frase — os chapters da descrição (VERIFICADOS) dão o mapa de navegação. Presets citados: Wanderer (M4L), Valhalla RYM, Pigments, Kontakt clavinet — os que não estiverem disponíveis traduzem para Live nativo/Serum 2/Diva. Áudio não escutado.
 
+
 ---
 
 ## pesquisas/tutoriais/LVv74akK58c.md
@@ -10699,6 +11233,7 @@ Direta. Pontos de encaixe:
 
 Leitura por janelas (declarada acima) — o meio do vídeo (mix, sidechain, master, ~linhas 1300–1880) não foi lido; sem valores numéricos de Hz/dB na legenda; timestamps do VTT não acompanharam as janelas (prova por texto limpo, não por tempo exato). Áudio não escutado. Apresentador é o Scionaugh (mesmo canal dos vídeos curtos).
 
+
 ---
 
 ## pesquisas/tutoriais/M7VkTw3IMlA.md
@@ -10739,6 +11274,7 @@ Nenhum.
 
 Varredura amostral (~10% lido); aula de fundação com pouco material técnico avançado. Sem timestamps. Áudio
 não escutado.
+
 
 ---
 
@@ -10827,6 +11363,7 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - Crossovers ~300/4 kHz do OTT e release ≥150 ms são proposta do estudo `(H)`, não fala do vídeo.
 - O algoritmo de reverb do vídeo é Bitwig; só o conceito (return mono, cauda posicionável) transfere — o timbre não.
 
+
 ---
 
 ## pesquisas/tutoriais/MELODIA.md
@@ -10884,6 +11421,7 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **Estado real das camadas melódicas do projeto de destino** (notas atuais, mutes) não foi lido nesta redação — `NÃO VERIFICADO`.
 - **Granulator/M4L** (método 1 do `oO2g`) pode não estar disponível; a rota sem M4L é o GranularOsc, e o playhead/SCAN exige GUI — `NÃO VERIFICADO`.
 - **Régua do médio** pesa nesta frente: a melodia é uma rota para preencher o vale do médio medido, mas a régua do projeto de referência não está conciliada com esse déficit.
+
 
 ---
 
@@ -10958,6 +11496,7 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **OTT não é device nativo do Live** (citado pelo ed5O); Multiband Dynamics reproduz o conceito, não o algoritmo.
 - **Os números de banda citados vêm da medição de referência da data do levantamento**, referentes àquela versão do projeto; não foram re-medidos nesta consulta.
 
+
 ---
 
 ## pesquisas/tutoriais/MgWlvH3n4EU.md
@@ -10998,6 +11537,7 @@ Gerar 2–3 takes do stab/resposta com POS random por nota + FM from B, dispor n
 ## Limites
 
 Vídeo curto; nenhum valor de parâmetro (posição inicial de wavetable, índice FM, mix) na legenda; "discrete note on random" é o nome falado do modo — a grafia exata na UI pode diferir. Áudio não escutado.
+
 
 ---
 
@@ -11214,6 +11754,7 @@ design + uma de A/B; não é um preset de 10 minutos.
 3. **[00:08:02–00:08:05]** "bring down the sustain to zero because we want something very sharp and pluckier" —
    a articulação que dá o caráter do baixo.
 
+
 ---
 
 ## pesquisas/tutoriais/MmsgjvL4SmE.md
@@ -11278,6 +11819,7 @@ design + uma de A/B; não é um preset de 10 minutos.
 ## Limites
 
 Sem timestamps; demo em Fm7 (traduzir voicing para a tônica do próprio material). Áudio não escutado.
+
 
 ---
 
@@ -11376,6 +11918,7 @@ Kick 3 e SideKick seriam ferramentas de desenho de kick e de ducking; o vídeo n
 - Grid aritmético de 128 BPM (1 compasso = 1,875 s), usado só como base de mapeamento — teoria geral, não medida do vídeo.
 - Contraste medido do set de referência citado no levantamento original (meio −4,83 dB, agudo-médio −5,76 dB, low-end mono, subdivisões deslocadas). Não re-medido neste estudo.
 - Nenhum dossiê de artista consultado; esta análise é do vídeo.
+
 
 ---
 
@@ -11552,6 +12095,7 @@ para "sino metálico", que é o oposto da estética orgânica de madeira.
 - **Divergência declarada:** a fila original pediu pressão-grave (P1) por assumir "Operator = sub", mas o conteúdo é
   lead/sino. A prioridade original fica registrada; a aplicação recomendada é no meio (resposta/stab/lead), não no sub.
 
+
 ---
 
 ## pesquisas/tutoriais/OJ3Fxk4E0gU.md
@@ -11697,6 +12241,7 @@ frente/trás nem altura. Serve como a passada de organização espacial que ante
 
 **Referências consultadas (além da legenda):** estudos de mix e synth/atmos do levantamento original (17/10/2026) — correlação da banda média 0,80 no set de referência vs. referência 0,32–0,44, recomendação "Center: Kick, snare, bass…; 30-70% L/R: keys, percussion", ação de redistribuir pans, AutoPan não resolveu a largura, mono ≤120 Hz, microdelay gera comb filtering, gate de correlação 0,55–0,65 e "Side real em camas/tails, não pan extra". O contexto medido de 300–4.000 Hz e o groove deslocado vieram do briefing do levantamento original.
 
+
 ---
 
 ## pesquisas/tutoriais/ORj8Vgu2vNs.md
@@ -11780,6 +12325,7 @@ Justificativa curta: não exige plugin novo, nem sound design, nem sample novo �
 3. **[01:06:21]** — "it's actually a one beat loop." (contexto imediato: "we've obviously got a one bar loop with the kick and bass" [01:06:10–01:06:12])
 
 *Citações adicionais usadas no corpo, todas literais da mesma legenda: [00:04:20] "there should be a kick in there that is designed to go with that"; [00:25:48] "I'm not too worried about specific sounds. It's more about placement."; [00:28:40] "created like a reverse into that just to make it smoother and cooler"; [00:44:43] "just a slower release"; [00:44:47] "and a higher threshold"; [00:44:51] "and a gentler ratio."; [00:54:12] "I'll do an offbeat eye hat. Something more repetitive."*
+
 
 ---
 
@@ -11911,6 +12457,7 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 
 **Decisões em aberto no projeto de referência** (fundamental do kick, alvo de relação sub×kick, régua de medição, registro agudo, cauda em return e corte de 8 compassos) não vêm aqui como critério fechado: meça no projeto de destino e decida com o produtor.
 
+
 ---
 
 ## pesquisas/tutoriais/Q3A8HmCrURc.md
@@ -11950,6 +12497,7 @@ Critério de mix para o topo orgânico: shaker/percussão de fundo no limiar do 
 ## Limites
 
 ~76% da legenda não lida (construção detalhada do baixo/elementos); sem valores técnicos nas janelas lidas. Áudio não escutado.
+
 
 ---
 
@@ -12110,6 +12658,7 @@ Fonte: schema do gerador de presets do Serum 2 (campos `granular_*`, `unison`, `
 - A legenda automática tem ruídos: em 00:03:53.7 aparece "add in a different stack spread jerkily" — não se interpreta "jerkily" e não se afirma o que significa. Em 00:03:25.1 "naught to plus one" — leitura como a forma falada de "nought to plus one" (0 a +1), mas a unidade exata não é dita.
 - O canal não nomeia o apresentador na legenda; nenhum nome foi inventado.
 
+
 ---
 
 ## pesquisas/tutoriais/R6xwYFH5SSY.md
@@ -12194,6 +12743,7 @@ O clipper fixa um teto (ceiling) e corta a forma de onda que passa dele; diferen
 - **O motor do set de referência não foi re-medido.** Os valores −4,83 dB (300–1.200 Hz) e −5,76 dB (1.200–4.000 Hz), o low-end mono e as subdivisões .27/.77 vêm de um diagnóstico prévio do set de referência, não de nova medição.
 - **O vídeo não cobre** baixo rolling minimal, riser, atmosfera, tônica frígia em C#, 128 BPM nem nenhum dos plugins listados. As aplicações nessas funções são `INFERÊNCIA` a partir do princípio (clipper sem envelope; hard clip brilha; limiter quando não se quer distorcer), não receita demonstrada.
 - **Faixas de blend, high-pass e low-pass** sugeridas acima são pontos de partida de engenharia (`INFERÊNCIA`), não números do vídeo. O vídeo só quantifica a comparação de pico: −16.9 dB clipado vs. −13.3 dB bypass (00:00:54–00:01:03).
+
 
 ---
 
@@ -12343,6 +12893,7 @@ Como o vídeo é todo stock, a tradução é quase 1:1. O que falta em um arsena
 3. **[00:23:50.700–00:24:00.350]** "basically you can take any sound and you just need to make it short very sharp with some transient and then it can be a stop more in the low it can be like more in the high"
    *Glossa:* a receita de stab/articulação do vídeo é forma de envelope e transiente, não um preset específico; é o que permite criar stabs a partir de qualquer fonte.
 
+
 ---
 
 ## pesquisas/tutoriais/T4e-UWE1Axo.md
@@ -12381,6 +12932,7 @@ Nenhum direto — o vídeo descreve a premissa do material ("jogo de ausência" 
 ## Limites
 
 Vídeo curto e demonstrativo; nenhum número (dB, compassos) na legenda. O trecho final é divulgação de EP ("Digitaletic", collab com Klipson — dado factual da legenda). Áudio não escutado.
+
 
 ---
 
@@ -12479,6 +13031,7 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **LFOs não travam fase:** dois renders do mesmo estado não saem iguais. Para A/B, congelar em automação de volume ou comparar dentro do mesmo render.
 - **O projeto de destino pode ter mudado** depois da leitura de 27/10. Reconferir antes de criar qualquer canal.
 
+
 ---
 
 ## pesquisas/tutoriais/TRANSICOES.md
@@ -12557,6 +13110,7 @@ Os mapas completos por vídeo (um por ID, com timestamps) não acompanham este p
 - **Diretrizes provisórias** do projeto de referência foram usadas como critério de projeto, não como lei homologada. Se não forem homologadas, a regra anterior (topo percussivo contínuo) prevalece.
 - **`44m_K42KtX8` não dá valores** de Q, ganho, HP, decay nem attack; onde há número de aplicação, é hipótese do mapa, não fala do autor. `VSYCY__WVQ8` não tem legenda oficial (ASR) e as contagens de efeitos são reconstrução (00:00:50–00:01:15) — não usar como número.
 
+
 ---
 
 ## pesquisas/tutoriais/TTIon9_pRHQ.md
@@ -12597,6 +13151,7 @@ Teste no baixo (Serum 2) em A/B de 8–16 compassos: camada de harmônicos do sa
 ## Limites
 
 Fim do vídeo (após linha 600: detalhes do LFO da wavetable, mix final) não lido. Sem dB/threshold numéricos; "amount 25" do uníssono e "10 or 15" do LFO são valores da UI dele. Áudio não escutado.
+
 
 ---
 
@@ -12774,6 +13329,7 @@ citados (30 Hz, 120 Hz, 200–500 Hz, 3 kHz, 16–18 kHz, 30 ms, −10/0 dB) e "
 > Fonte das três citações: legenda automática EN do vídeo (baixada do YouTube com `yt-dlp --skip-download --write-auto-subs --sub-langs en --convert-subs vtt`).
 > Vídeo correlato da mesma fonte para a parte de subida/riser: `44m_K42KtX8` (Sweeps and Risers, Sonic Academy,
 > incluído no acervo) — usado só como rota de síntese; a técnica de arranjo/mix acima é toda deste vídeo.
+
 
 ---
 
@@ -13075,6 +13631,7 @@ Demais citações usadas neste mapa estão ancoradas por timestamp nas seções 
 - **Os números de referência vêm do render da versão de 26/10.** O próprio diagnóstico avisa que não se deve declarar o
   estado atual por captura antiga sem novo render.
 
+
 ---
 
 ## pesquisas/tutoriais/UTWOTQTew7c.md
@@ -13115,6 +13672,7 @@ Quando o lead/resposta aprovado "sentar demais" na repetição: duplicar o MIDI 
 ## Limites
 
 Sem timestamps na rota web reader; nenhum parâmetro numérico (tudo gestual/auditivo); áudio não escutado; Razor não verificado no arsenal listado (não consta — irrelevante, rota Serum 2).
+
 
 ---
 
@@ -13292,6 +13850,7 @@ Antes de escrever, montar o **mapa de 64 compassos** com uma linha por função 
 - Mapa irmão do mesmo canal (`Dcs7r1b6RwI`, incluído no acervo) — usado só como referência de estrutura.
 
 **NÃO VERIFICADO:** som real de qualquer uma das propostas; banda espectral exata de voz/grain; disponibilidade/licença de Ethereal Earth e LOOP GARDEN; se o Drum Rack/Utility/EQ/Compressor/Echo visíveis são a cadeia de Rene Wise ou só a do canal de anotação do autor. Nenhuma mutação foi feita em nenhum set durante o estudo.
+
 
 ---
 
@@ -13495,6 +14054,7 @@ brilhante. Tudo reversível por mute/undo de MIDI.
 - Não há legenda manual; a automática erra "trone" (tritone), "disent" (dissonant) e "qu generator" (chord
   generator). As citações acima preservam o erro literal.
 
+
 ---
 
 ## pesquisas/tutoriais/WbT9tMCDmh8.md
@@ -13535,6 +14095,7 @@ Pista de resposta/stab: Operator com 2 senoides (carrier C#4–C#5, B −1/−2 
 ## Limites
 
 Transcrição via web reader **sem timestamps** (a legenda via yt-dlp seguiu indisponível); nenhum valor numérico de amount/level na fala ("tune these babies" é de ouvido); áudio não escutado; "rhythmizer" não é nome de device stock — provavelmente apelido/ferramenta própria, `NÃO VERIFICADO`.
+
 
 ---
 
@@ -13634,6 +14195,7 @@ O vídeo **não fala de kick, sub, hats nem percussão**. Tudo abaixo é ou trad
 1. **00:04:03.760** — "oscillator B and I'm going to use this as the character layer." (contexto: 00:04:01.440 "instead I am going to activate")
 2. **00:07:46.800** — "these are all sweet spots. It's not like there is a recipe for how to do this."
 3. **00:09:56.280** — "as the filter opens up we're also going to get more sync." (resultado em 00:10:05.600: "we're getting more texture and more grit.")
+
 
 ---
 
@@ -13789,6 +14351,7 @@ Contexto medido do set de referência (**diagnóstico prévio, não re-medido**)
 - *"we'll just loop a portion in the middle of this"* — 00:15:38.160; *"And I might even reverse this"* — 00:15:47.200
 - *"we could also try unlinking the envelope"* — 00:16:31.839; *"now we have a 16-bar long rise-fall"* — 00:16:54.680
 - *"the values we see here are a percentage. You see it says 100%"* — 00:17:06.720
+
 
 ---
 
@@ -14005,6 +14568,7 @@ dez minutos.
    can use whatever you like. Use a compressor, use some gain automation, or use tools like LFO tool to take
    care of that." — o ducking é conceito, não plugin; há rota nativa.
 
+
 ---
 
 ## pesquisas/tutoriais/aK2tKYe8yCI.md
@@ -14172,6 +14736,7 @@ do projeto.
 6. **[00:42:56]** "Groove has to engage the body. That's the basics of dance music. That's the basics of
    techno." — critério final declarado.
 
+
 ---
 
 ## pesquisas/tutoriais/bOEc9c3pGi8.md
@@ -14291,6 +14856,7 @@ O ponto decisivo: **toda modulação deste vídeo é de timbre/tempo-de-ciclo, n
 
 > Erros de ASR preservados nas citações: `"shaper tone"` = Shepard tone · `"shepher tones"` = Shepard tones · `"alfos"` = LFOs · `"flanges"` = flangers · `"Ana 2"/"an 2"` = ANA 2 · `"ATT track"` = the track. Nenhuma citação foi corrigida.
 
+
 ---
 
 ## pesquisas/tutoriais/cAxR-CRSe_c.md
@@ -14393,6 +14959,7 @@ Sem timestamps; demo em D# (comb 38 Hz) — adaptar à tônica do projeto. Plugi
 Hyperdimension) têm equivalentes em Utility/width no Live. Áudio não escutado; CPU crackles no vídeo são do
 ambiente dele, não da técnica.
 
+
 ---
 
 ## pesquisas/tutoriais/cVtnGIFGYss.md
@@ -14489,6 +15056,7 @@ Justificativa curta: é recurso **nativo do Live 12**, já disponível; não exi
 
 Citações de apoio usadas acima: 00:01:55.360 (*"an eighth note swing will be pushing second and fourth eighth note back"*), 00:02:31.760 (*"it will push syncopated notes back"*), 00:03:11.840 (*"pulling the groove on the uh the MIDI clip"*), 00:04:58.400 (*"I also recommend adding a bit of randomness because when you add a bit of randomness, it adds the randomness to the timings"*), 00:05:46.160 (*"I disable uh the 16th note note pattern and try to listen to the groove itself"*), 00:08:15.120 (*"They will all move when I print the groove. So I'm printing the groove."*), 00:09:11.040 (*"I think in Ableton 12 it's called the groove files now"*).
 
+
 ---
 
 ## pesquisas/tutoriais/dSXz_MFS5ks.md
@@ -14567,6 +15135,7 @@ Ressalva geral do device: no **Utility** do Live, o parâmetro Stereo Width não
 3. `[00:05:34.520–00:05:38.880]` **"by doing so, that you can have two mono signals that actually create something that's a lot more uh wide."**
 
 **Limites do estudo:** análise só da legenda automática (ASR); áudio não escutado; o vídeo não cita modelo de reverb nem valores — tudo que tem número aqui é proposta, não receita do autor.
+
 
 ---
 
@@ -14750,6 +15319,7 @@ Não traz um conceito novo de motor, mas traz **exatamente** o tipo de processam
 2. **00:03:59.680 → 00:04:04.720** — *"um reverb on the mid part of the kick to / put it in a room."*
 3. **00:05:16.160 → 00:05:20.080** — *"it's only the low frequency / and more or less a sine wave."*
 
+
 ---
 
 ## pesquisas/tutoriais/ejNHFdtYrw0.md
@@ -14841,6 +15411,7 @@ Contexto de auditoria (set de referência contra a média de 6 referências do e
 
   *(Fragmentos entre aspas são literais da legenda automática; o resto é paráfrase nossa.)*
 
+
 ---
 
 ## pesquisas/tutoriais/etRN4sAiCbI.md
@@ -14913,6 +15484,7 @@ No canal de grave: separar sub (sine puro, mono, pitch-env de punch) da camada a
 ## Limites
 
 Legenda automática ASR; áudio não escutado. Valores exibidos na tela (decay final do filtro, freq de sustain, res, corte do HPF, tempos finais do delay) não são todos verbalizados — só 600 ms (decay inicial), 100% (peak), +36 st, 1 ms/10 ms, Timing 50 e −2 st aparecem falados. BPM do projeto dele: 145 (07:49–07:52 "Tempo back up to 145 BPM") — distante do 128 típico do minimal; nenhum valor de EQ é dado. Título/lógica "full-on" é deliberadamente bouncy/funky, fronteira estética do dark minimal — vale pelos gestos de síntese/arranjo do grave, não pelo idioma rítmico.
+
 
 ---
 
@@ -15116,6 +15688,7 @@ design + uma de A/B; não é preset de 10 minutos.
 3. **[00:10:04.240]** "remember about gaps, about uh having one sound asking another one answering" — o princípio
    de arranjo: os hits granulados vivem nos buracos e se respondem, não empilham.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/2YgKSex63Wg.md
@@ -15139,6 +15712,7 @@ design + uma de A/B; não é preset de 10 minutos.
 - Movimento por um macro só (cutoff → FM + filtro final) = evolução sem automatizar várias lanes.
 - BPM e tonalidade não são citados; valores do vídeo: unison 5, ~5 dB de compressão, filtros em 18.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/3Z41KdsBdDU.md
@@ -15161,6 +15735,7 @@ design + uma de A/B; não é preset de 10 minutos.
 - Random de timbre (sync/posição) vale em stab/resposta/lead; jamais no grave — trava os offsets do bolso rítmico.
 - LFO de 8 compassos em filtro é o gesto de rampa longa: evolução contínua sem macro nova nem automação multiponto.
 - Sem valores numéricos de rate/amount na fala (são ajustes visuais); tonalidade não citada — definir pela tonalidade do projeto.
+
 
 ---
 
@@ -15186,6 +15761,7 @@ design + uma de A/B; não é preset de 10 minutos.
 - HP em todo FX de transição (o vídeo já tira os lows do sweep); ruído branco + Q alto + Shifter alto é a combinação clássica de brilho metálico — em perfil escuro, pink/brown e Q moderado.
 - O vídeo não dá valores de Q, dB, decay, attack ou vozes — só +128 st, 2 → 24 st, 8 compassos e o 2.000 Hz do Shifter.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/4TOQ-5mGpUY.md
@@ -15208,6 +15784,7 @@ design + uma de A/B; não é preset de 10 minutos.
 - Subir +1 oitava ANTES de granularizar move a textura do low-mid para o vale de médios — e um HP 180–250 Hz fecha a porta do grave.
 - Random só de posição/offset; manter pitch estável (±2 st no máximo) para não desafinar a fonte; LFO livre, sem tempo-sync, para a textura não espelhar o groove.
 - Loop curto + grão curto + pitch instável é a receita de brilho metálico: grão longo e fonte escura evitam.
+
 
 ---
 
@@ -15232,6 +15809,7 @@ design + uma de A/B; não é preset de 10 minutos.
 - Flux alto = resultado "pulando" como o Repitch; zero randomização é o que dá cama estável.
 - Alvo natural: atmosfera e madeira esticada — conteúdo sustentado no vale de médios, sem competir com o groove; mudar o ponto de entrada do sample varia a textura sem refazer o patch.
 - O vídeo não trata EQ, sidechain nem tonalidade — a transposição −5/−8 é intervalo de movimento, não afinação.
+
 
 ---
 
@@ -15258,6 +15836,7 @@ Live-set DNA / projeto Sciotech (referência de artista).
 
 Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (verificados no info.json).
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/5XUULOEJ2tI.md
@@ -15282,6 +15861,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Mapear os degraus em cenas de 16 compassos (a 128 BPM) organiza quando cada camada entra e sai sem tocar em kick/sub/baixo.
 - O vídeo não dá compassos, dB, frequências nem nomes de samples; só o 5º nível não é nomeado explicitamente na fala.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/5eYJKwQFc70.md
@@ -15303,6 +15883,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - O low cut de 150 Hz em track nova explica por que os orgânicos do autor não emporcalham o grave — referência para pistas de topo de bateria.
 - Sidechain com EQ no detector serve para auditar o sidechain dos subs: ouvir apenas o que dispara.
 - NUNCA copiar o low cut 150 Hz para kick/sub/baixo/tom grave — cortar o fundamental destrói o motor; o default vale só para não-graves.
+
 
 ---
 
@@ -15328,6 +15909,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - O vídeo não trata kick/sub diretamente; o princípio aplicável ao grave é remover em vez de somar, e HP ~150–200 Hz em qualquer drone/atmo que acompanhe o baixo.
 - Prioridade das ideias para arranjo: contraste de agudo pré-drop e entradas com fade são as mais baratas; os efeitos por frase são os de maior risco de brilho.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/90VpsmIaPuk.md
@@ -15352,6 +15934,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Macro "space" congelado (sem drift de pitch) enquanto um stab toca: desafinação contra a tônica soa errada, não hipnótica.
 - Nenhum plugin de terceiros: 100% Live/Operator + macros; os racks do autor são conveniência, não dependência.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/9jkbBQW11qA.md
@@ -15374,6 +15957,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 
 - Nenhum valor de ms/dB é dado como receita; tudo é demonstração por escuta.
 - Escuta direta do vídeo não foi feita; a leitura é da legenda automática.
+
 
 ---
 
@@ -15398,6 +15982,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Os dois únicos números da fala são 1 kHz e 800 Hz — todo o resto (rate/Q/feedback/wet) não é dito no vídeo.
 - Piso de HP por função: ≥300 Hz em textura, ≥1 kHz em hats/percussão; ruído é estéreo — width só acima de ~300 Hz.
 - Onde a densidade de onsets já está no teto, o ruído entra SUBSTITUINDO eventos, nunca somando; LFO no attack só na resposta, nunca na camada que carrega o microdeslocamento do groove.
+
 
 ---
 
@@ -15424,6 +16009,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Grain freeze de kick+bass sustenta o grave e mata o vácuo — oposto do jogo de ausência; usar só em resposta/textura com HP.
 - Delay em kick+bass só em transição/resposta com HP ≥120 Hz, fora dos vácuos.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/AMBIENT-BLUFFMUNKEY.md
@@ -15446,6 +16032,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 
 - O curso remove kick/baixo como premissa — a facilidade de mix dele não se transfere; o aproveitável é o que vem antes: HP em pads, mono no low-end, um espaço de reverb, evolução por automação lenta.
 - Detune deliberado em material tonal, riser cinematográfico (Rise and Hit) e cama contínua atravessando vácuos: não importar.
+
 
 ---
 
@@ -15472,6 +16059,7 @@ Live-set DNA (referência de artista).
 
 Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descrição são dados do YouTube (verificados no info.json).
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/BjDkkB8ElnY.md
@@ -15496,6 +16084,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Shifter só com desvio pequeno: desvio grande gera sidebands inarmônicos.
 - Teste de aceitação: mutar o bus de textura — a faixa deve continuar de pé, mas perceber-se a falta.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/BuQ-gjYiMU8.md
@@ -15519,6 +16108,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Note-length gate no sub (envelopes abertos, comprimento no MIDI) é o gesto do motor onde a nota curta É o groove.
 - Harmonia do vídeo (G major, graus 6/5, oitavas mais fortes) não se copia — transpôr para a tonalidade do projeto.
 - Estrutura DJ-intro/climax e BPM de organic house (~120) são contexto, não molde; o gesto transferível é a ausência programada do bass na entrada de seção.
+
 
 ---
 
@@ -15546,6 +16136,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 
 - Seção de construção dos sons lida só pelo índice; sem valores de dB (os ajustes de nível são gesto de fader); áudio não escutado.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/w1WsSkRLyrU.md
@@ -15569,6 +16160,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Em projeto de low-end já mono, a técnica é garantia e auditoria, não conserto; o side-cut não corrige déficit de corpo e não soma nível ao Mid.
 - Corte em 200 Hz estreitaria o corpo de madeiras (150–500 Hz) — em psytech, manter o corte em 120–150 Hz.
 - Se o A/B baixar o volume, o material era majoritariamente side/fora de fase: checar fase, não compensar com ganho.
+
 
 ---
 
@@ -15595,6 +16187,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Números do vídeo: ratio 4:1, attack 100 ms, G#/C#; todo o resto é de ouvido.
 - Multibanda transferível ao rolling baixo: low limpo protege o sub, tube no mid preenche o corpo, high contido evita brilho.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/xuHSPaCHjvo.md
@@ -15619,6 +16212,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Baixo: o gesto é camada média (não mais sub) — filtro fechado + envelope rápido põe energia no médio por milissegundos; ressonância com teto para não virar serra metálica.
 - O vídeo não dá números de decay, difusão, Q, sidechain ou pitch do kick #52; os valores acima são ponto de partida do estudo.
 
+
 ---
 
 ## pesquisas/tutoriais/fontes/yZ-q1H6KaME.md
@@ -15642,6 +16236,7 @@ Sem escuta nem medição; nada aqui é técnica confirmada. Título/data/descri�
 - Não transpor o sub uma oitava para buscar o médio: ele observa que isso deixa o sub instável — as notas altas vão na camada 2.
 - Groove intocado: as edições são subtrativas (apagar notas), nenhuma nota é movida.
 - Sub e corpo se cruzam com leve overlap no mesmo ponto de corte; o vídeo não confirma a direção dos filtros (HP/LP) — decidir por escuta.
+
 
 ---
 
@@ -15770,6 +16365,7 @@ Em vez de fazer o rumble do jeito padrão — kick encharcado de reverb e delay 
 - O vídeo **não dá nenhum número** em voz alta; toda banda, corte e nível proposto é proposta.
 - Não verifiquei se o acervo tem noise loops comparáveis ao pack "Schmutz".
 - O modo Spectral Shift do Serum 2 não foi testado em áudio nesta sessão.
+
 
 ---
 
@@ -15914,6 +16510,7 @@ Transcrição sem timestamps por frase (só fluxo); aula de curso — valores de
 acima (10% random pan, HP 500 Hz, ~1 kHz, 375 ms, 12 beats de ciclo, threshold "zero a cinco"). BPM e tom da
 demo não citados. Áudio não escutado; variações de resultado dependem do sample.
 
+
 ---
 
 ## pesquisas/tutoriais/iWOPUHKbJjI.md
@@ -15989,6 +16586,7 @@ Nota acústica (**proposta**): a síncope **não cria energia de médio por si s
 - Os rótulos exatos das divisões pontuadas/tercinas no Auto Filter do Live 12 não foram confirmados — se não existirem como sync, usar Hz equivalentes (a 128 BPM: 1/8D ≈ 2,84 Hz; 1/8T ≈ 6,4 Hz; 1/4T ≈ 3,2 Hz, aritmética).
 - O vídeo não mostra a tela na transcrição, então "phase 45°" é o que ele diz, não necessariamente 45° de um ciclo do LFO.
 - A tradução granular em atmosfera é inferência, não conteúdo do vídeo.
+
 
 ---
 
@@ -16070,6 +16668,7 @@ Citações de apoio usadas nas seções (mesma fonte): `"I actually did everythi
 - O valor de pico de kick "−8 a −9" é o que ele lê no meter dele, sem unidade declarada (provavelmente dBFS); tratar como referência de ordem de grandeza, não alvo.
 - O BPM do vídeo não é citado; os 150 ms de kick são a leitura dele.
 
+
 ---
 
 ## pesquisas/tutoriais/jLrgpWM1qi4.md
@@ -16116,6 +16715,7 @@ Nenhum conflito com práticas usuais do estilo — reforço direto.
 Varredura amostral (~25% lido); a aula integral cobre construção de progressões que não foram extraídas.
 Sem timestamps. Áudio não escutado.
 
+
 ---
 
 ## pesquisas/tutoriais/jS8fsWPRYvc.md
@@ -16143,6 +16743,7 @@ Referência auditável para estudo de DNA de live-set (jornada sunrise): o mater
 ## Limites
 
 Sem escuta nem medição; nada aqui é técnica confirmada. Título/descrição/duração são dados do YouTube.
+
 
 ---
 
@@ -16266,6 +16867,7 @@ alto→seca — *"gives the impression that the sound is coming closer towards y
 
 Sem timestamps por frase; valores citados: 38 Hz, 0,1 s de delay, 16 unison. Áudio não escutado. Plugins
 pagos dele (Valhalla) são de mercado; disperser/diffuser = dispositivos equivalentes do Serum 2/Live.
+
 
 ---
 
@@ -16409,6 +17011,7 @@ Transcrição sem timestamps por frase; valores citados: 128 Hz, ~500 shelf, 8,1
 de reverb, 59% de pan, 1100/3k. Plugins pagos dele (Saturn 2, Newfangled) traduzem para Saturator/clip do
 Live. Áudio não escutado.
 
+
 ---
 
 ## pesquisas/tutoriais/jwUNGvz7lqg.md
@@ -16457,6 +17060,7 @@ Direta, com os números recalculados para **128 BPM** (regra: recalcular segundo
 ## Limites do estudo
 
 Sem timestamps por frase (transcrição via web reader). O BPM dele não é citado numericamente (inferível: 217 ms ≈ 138 BPM — mas não declarado; **não verificado**). Áudio não escutado.
+
 
 ---
 
@@ -16613,6 +17217,7 @@ Tudo nesta seção que não estiver entre aspas é inferência do estudo para um
 - Escopo do vídeo é só o patch: nada de arranjo, mix fora do plugin, nem os outros elementos da faixa.
 - A equivalência dos FX do Serum 2 com devices do Live (splitter via rack + EQ Eight, Hyper Dimension via Chorus-Ensemble, slapback via Delay) é inferência, não testada nesta ficha.
 
+
 ---
 
 ## pesquisas/tutoriais/lHGfb5Hlmuc.md
@@ -16744,6 +17349,7 @@ A ordem segue a fala do autor: *"I started with a bit of side chaining"* `[00:03
 - A legenda **não** registra números de EQ, corte, rate de LFO, threshold de sidechain ou dB de retorno. Nenhum valor numérico desta ficha vem do vídeo; o que aparece na tela e não é falado não foi lido.
 - Sem escuta do áudio; estudo de leitura + proposta.
 
+
 ---
 
 ## pesquisas/tutoriais/lhwtChvr-TM.md
@@ -16796,6 +17402,7 @@ Ableton Live 10 nativo: Simpler/warp, band-pass, Redux, ping-pong delay, auto-pa
 ## Limites do estudo
 
 Legenda ASR de qualidade baixa em trechos ("sermonic spec", "zooming earring" = leitura incerta); vídeo curto e sem arranjo/mix; nenhum valor numérico de parâmetro na legenda. Áudio não escutado; título promete atmosfera que a legenda não ensina.
+
 
 ---
 
@@ -16964,6 +17571,7 @@ O conceito não depende do Bitwig: qualquer motor granular com sample + múltipl
 
 Sem escuta do áudio; leitura integral da legenda. Todos os números da receita são proposta de partida (a legenda não registra valores); os parâmetros citados do Serum 2 seguem a nomenclatura de automação dele — conferir os nomes na GUI.
 
+
 ---
 
 ## pesquisas/tutoriais/m5GB92QD0Sw.md
@@ -17007,6 +17615,7 @@ No topo percussivo: 2–3 camadas de shaker com caráter distinto, 16avos, veloc
 ## Limites do estudo
 
 Metade final do vídeo (EQ/saturação/pressão, linhas 430–1486) não lida — `não verificado`. Sem valores numéricos de swing/dB na legenda (velocities são desenhadas de ouvido). Áudio não escutado.
+
 
 ---
 
@@ -17066,6 +17675,7 @@ Metade final do vídeo (EQ/saturação/pressão, linhas 430–1486) não lida �
 Varredura amostral: ~20% do texto lido; seções de marketing e de mix por canal não dissecadas. Sem
 timestamps. Áudio não escutado.
 
+
 ---
 
 ## pesquisas/tutoriais/mYSk9hX2YXk.md
@@ -17108,6 +17718,7 @@ Camada de micro-percussão orgânica nos micro-espaços entre os eventos do groo
 ## Limites do estudo
 
 ~80% da legenda não lida (elementos melódicos/atmosfera do projeto). Áudio não escutado.
+
 
 ---
 
@@ -17159,6 +17770,7 @@ Equivalente comum para quem não usa Zebra/LFOTool: texturas dark em Diva/Surge 
 ## Limites
 
 Legenda automática ASR, áudio não escutado; 165 blocos [Music] — a maior parte do valor do vídeo é visual/execução e não é capturável por legenda. **Não há construção de bassline/sub no vídeo inteiro** (única menção a "bass" é a frase de workflow do item 1); para estudos de motor de grave, o vídeo entrega só arranjo/cola/disciplina de fundo. Nenhum valor numérico de compressor, EQ ou filtro verbalizado.
+
 
 ---
 
@@ -17267,6 +17879,7 @@ O núcleo do vídeo é **Serum + Live**. Nada depende de ANA 2, VELA, SideKick, 
 > — 00:30:03.520–00:30:07.910
 
 **Limite desta leitura:** legenda automática, com erros de reconhecimento (por exemplo "Dudesai" por "Durosai", "side techno" por "psy-techno", "sub great table" por "sub wavetable"). Nenhuma afirmação acima depende de corrigir essas palavras. O que o vídeo **não** diz: BPM, valores de ratio/threshold dos compressores, redução exata de cada EQ, nomes dos samples de pack, e a marca da maioria dos plugins de terceiros (RComp, Hyperdimension, Kickstart, Sound Shifter, Valhalla) — o autor não as nomeia.
+
 
 ---
 
@@ -17379,6 +17992,7 @@ Duas grandezas diferentes que o vídeo trata como uma só:
 
 *Citações literais da legenda automática (blocos rolantes reunidos; o texto aparece palavra por palavra nos blocos a partir do timestamp indicado).*
 
+
 ---
 
 ## pesquisas/tutoriais/nU3udPVlJGg.md
@@ -17489,6 +18103,7 @@ Rate muito lento, depth baixo, feedback baixo, só na banda 300 Hz–4 kHz: "emp
 - **Sem arranjo**: não há posição na timeline, nem técnica de subida/transição, nem relação com kick/bass além do sidechain.
 - O vídeo tem ~13 min e termina em propaganda; ele constrói **só o drone**, não a faixa inteira.
 
+
 ---
 
 ## pesquisas/tutoriais/nco88SuWNuA.md
@@ -17532,6 +18147,7 @@ Nenhuma (conceito).
 ## Limites
 
 Vídeo curto de opinião; sem técnica de DAW.
+
 
 ---
 
@@ -17730,6 +18346,7 @@ honest" (01:19) — o gancho é construído no processamento e na automação, n
 - **Não houve render, escuta, A/B nem medição de áudio na leitura original.** O contexto medido citado (300–1.200 Hz, 1.200–4.000 Hz, mono, .27/.77) veio do projeto de referência, não de medição nova.
 - A ordem de entrada por compasso e as alocações por função são **proposta** (inferência), não arranjo aplicado.
 
+
 ---
 
 ## pesquisas/tutoriais/qvJqxGrAtCc.md
@@ -17790,6 +18407,7 @@ A tradução é direta: o grupo é o contêiner portátil; os sintetizadores sã
 > Sidechain vindo do crash cymbal sobrevive à cópia — "it's still remembering that routing" (Sonic Academy) — **00:04:47.560–00:04:53.350**
 
 > "If you've done it once and you like the way it sounded, just grab it from another project" (Sonic Academy) — **00:06:11.440–00:06:16.470**
+
 
 ---
 
@@ -17908,6 +18526,7 @@ Compassos 1–8: 2 compassos de **pergunta** (3 notas ascendentes do vocabulári
 - O vídeo **não nomeia** plugin, DAW, BPM, velocity, automação ou processamento — tudo o que este mapa atribui a timbre, EQ, pan ou delay é **tradução**, não conteúdo do vídeo.
 - "Ferramenta usada no vídeo" fica sem marca por ausência de evidência na legenda; não foi possível confirmar o DAW por outra via sem assistir ao vídeo.
 
+
 ---
 
 ## pesquisas/tutoriais/receitas-referencias/RECEITA-KICK-CONGELA-20261101.md
@@ -17952,6 +18571,7 @@ Nota: em teste de escuta, a recriação no Operator ficou abaixo do sample; o re
 - Warp **Re-Pitch** em vez de Beats (Beats estala no loop).
 - EQ Eight com shelf de high ~5 kHz **−5 dB** para domar o estalo da ponta.
 - Ao substituir o kick anterior por este sample, copiar para os clipes do sample as ausências/vácuos do kick anterior — os respiros de 1–2 tempos ficam preservados.
+
 
 ---
 
@@ -18092,6 +18712,7 @@ O vídeo só dá qualitativos: LFO "really really slow", reverb "100% wet" e "re
 - O Redux é **INFERÊNCIA** a partir de "8bit and really lows sample frequence" + contexto Ableton; o nome não é dito.
 - A referência de ~6 s de reverb com damping no topo vem de método de mixing psytrance (estudo externo), não do vídeo.
 
+
 ---
 
 ## pesquisas/tutoriais/t7Y-m6KdFQk.md
@@ -18137,6 +18758,7 @@ Ableton (MIDI, Groove Pool, audio-to-groove) + presets de Serum/Diva (pagos, do 
 ## Limites
 
 Miolo (patterns individuais 3–19, linhas 300–830) lido só pelo índice — cada pattern não foi dissecado; sem valores de BPM/tom citados nas janelas lidas. Áudio não escutado.
+
 
 ---
 
@@ -18265,6 +18887,7 @@ Sem timestamps por frase; valores citados só os do texto (38 Hz, −18/−22, 2
 oitavas). A demo do curso é em D (aula) — todos os alvos traduzem para a tônica do projeto próprio. Áudio não
 escutado; a "sensibilidade" dos knobs FM varia por preset/versão do Live.
 
+
 ---
 
 ## pesquisas/tutoriais/ttYFldHqLWk.md
@@ -18360,6 +18983,7 @@ O conceito sobrevive inteiro: o que ele faz é **densidade espectral por conteú
 
 **O que o vídeo NÃO diz (lacunas, para não inventar):** não dá Q, ganho, threshold, ratio, attack/release do EQ dinâmico; não dá as frequências do corte dos synths (só "cut off of the high frequencies"); não fala de sidechain, mono, largura estéreo, BPM ou groove; não decifra "amp" nem "sech"; não mostra a curva-alvo em números; "two spikes" é a demo dele, não uma regra.
 
+
 ---
 
 ## pesquisas/tutoriais/uqsXhPBpxAg.md
@@ -18417,6 +19041,7 @@ Track de progressive house "das antigas" com **beat contínuo e automação lent
 ## Limites
 
 Leitura por janelas (declaradas acima) — cerca de 2/3 do meio (mais leads/pads/mix) não lidos; "Basse"/"base" no ASR = bass (correção por contexto); o vídeo é B minor (declarado aos 00:04:5x) — toda a teoria citada é dele, traduzida por grau; sem valores de Hz na legenda. Áudio não escutado.
+
 
 ---
 
@@ -18623,6 +19248,7 @@ O vídeo **não usa granular**; `GranularOsc` não é necessário aqui. Mapeamen
 - O mapeamento "Effect 1/Effect 2" do Wavetable para "Warp/warp2" do Serum 2 é conceitual, não idêntico.
 - O padrão de MIDI do vídeo usa **0 e +6 semitons** (trítono). Em C# frígio, +6 cai em **G natural**, fora da escala; a troca por +7/+1 é decisão de projeto, não do vídeo.
 - O preset do vídeo é oferecido para **Live 11** (link da descrição); ambientes Live 12 podem diferir em nomes/faixas.
+
 
 ---
 

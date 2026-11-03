@@ -55,6 +55,7 @@ ROLLING: 630 Hz→8,15 kHz + Sat +5 dB + HPF 90 + bell 700 +3 + shelf +2 + notas
 - **Lei que isso confirma:** o groove de baixo de referência é pocket, não mural — o DNA Yao ("Kick bate solteiro na cabeça (0.0), baixo preenche 0.5, 0.75..."). Qualquer rolling novo: grid x.5/x.75, contraste 82/120, zero nota em x.0/x.25.
 - **Nota de AF:** teto do filtro ~600 Hz viola o teto medido do DNA de referência (~345 Hz); corrigir antes de reutilizar a receita.
 
+
 ---
 
 ## knowledge-base/Ableton_Template_Workflow_BTS.md
@@ -68,6 +69,7 @@ ROLLING: 630 Hz→8,15 kHz + Sat +5 dB + HPF 90 + bell 700 +3 + shelf +2 + notas
 Vídeo em EN (YouTube `TFoyhvIPbOk`): bastidores do workflow de template no Ableton — organização de projeto e recuperação do trabalho após perda do computador.
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
+
 
 ---
 
@@ -83,6 +85,7 @@ Aula em PT (YouTube `6Ivd2wvov6w`): segredos de processamento de baseline no Ser
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
 
+
 ---
 
 ## knowledge-base/Bass_Grooves_Formulas.md
@@ -96,6 +99,7 @@ Aula em PT (YouTube `6Ivd2wvov6w`): segredos de processamento de baseline no Ser
 Eduardo Juliato, aula em PT (YouTube `kobSOZOSzEg`): fórmulas de grooves de baseline — vários ritmos convencionais e não convencionais para melodic techno e prog/psytrance moderno.
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
+
 
 ---
 
@@ -111,6 +115,7 @@ Aula em PT (YouTube `VKHp-YzJzyE`): truque de saturação de baixo para o grave 
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
 
+
 ---
 
 ## knowledge-base/Beatport_Psy_Tech_Genre_Truth.md
@@ -124,6 +129,7 @@ Aula em PT (YouTube `VKHp-YzJzyE`): truque de saturação de baixo para o grave 
 Vídeo de opinião em PT (YouTube `U6gbkqauUX0`): o que significa a nova categoria psy techno do Beatport e impressões do autor e de artistas do gênero.
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
+
 
 ---
 
@@ -139,6 +145,7 @@ Aula em EN (YouTube `lQ_6LXf7LHQ`): criação da camada atmosférica de forest e
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
 
+
 ---
 
 ## knowledge-base/FREAK_VAULT_Max_for_Live_Plugins.md
@@ -153,6 +160,7 @@ Apresentação em PT (YouTube `109ovlVehlc`): tour pelo pacote FREAK Vault de pl
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
 
+
 ---
 
 ## knowledge-base/HOZHO_Segredos_Revelados_MasterClass.md
@@ -166,6 +174,7 @@ Apresentação em PT (YouTube `109ovlVehlc`): tour pelo pacote FREAK Vault de pl
 Masterclass “Hacking Timbres” em EN (YouTube `tuQInt_t7bI`): deconstrução de harmonia e orquestração da intro de “Ros” — acorde menor simples, repetição como motor da construção e tensão por semitom.
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
+
 
 ---
 
@@ -293,6 +302,7 @@ ARRANGEMENT: energy blocks | reduce before re-entry | evolve via transformation
 GATES: no fixed recipes | 1 coherent delta per experiment | a escuta é o gate musical
 ```
 
+
 ---
 
 ## knowledge-base/KUNI-SOUND-GUIAS-COMPLEMENTARES.md
@@ -350,6 +360,7 @@ GATES: no fixed recipes | 1 coherent delta per experiment | a escuta é o gate m
 
 ## Técnicas top (principais do ranking das 50)
 1. Pitch bend no bass seguindo o sub. 2. Vocoder layering em graves. 3. Spectral morph (Vital). 4. V-shape kick. 5. Freeze & flatten de reverb tails. 6. 5ª nota p/ tensão. 7. LFO Tool 1-bar nos hats. 8. Notch 140Hz no bass. 9. Sidechain no reverb send. 10. Mono sub (M/S). 21. Suction (4º kick). 22. Fase 0%. 46. Simmer pós-break. 47. Stolen structure de referência.
+
 
 ---
 
@@ -482,6 +493,7 @@ Mixagem é escultura, não volume.
 
 **So What?** O diagnóstico preciso separa o produtor do engenheiro. Ao ouvir como um "Mecânico de Som", você deixa de adivinhar e passa a esculpir a energia necessária para que o som não apenas toque, mas domine qualquer sistema de som.
 
+
 ---
 
 ## knowledge-base/Leads_from_Forest_Dark_Serum2.md
@@ -495,6 +507,7 @@ Mixagem é escultura, não volume.
 Série foundations em PT (YouTube `OloldsSLuN0`): síntese de leads de psytrance no Serum 2 e escolha do caminho (atmos, efeitos) depois de baixo e bateria.
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
+
 
 ---
 
@@ -510,6 +523,7 @@ Lucas Darkside como convidado, em PT (YouTube `whXF_2BTLtE`): a abordagem técni
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
 
+
 ---
 
 ## knowledge-base/MODO_ALIEN_Dark_Psytrance_Serum2.md
@@ -523,6 +537,7 @@ Lucas Darkside como convidado, em PT (YouTube `whXF_2BTLtE`): a abordagem técni
 Vídeo de lançamento em PT (YouTube `HuTOPL7EII4`): tour do banco Missellium 3 (dark forest high tech) e como o sound designer Lucas Darkside modela o Serum 2 para vertentes ultrapsicodélicas.
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
+
 
 ---
 
@@ -538,6 +553,7 @@ Método de mixagem em EN (YouTube `09L-leqGg1Q`): mixagem psytrance passo a pass
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
 
+
 ---
 
 ## knowledge-base/Nunca_mais_erre_no_KICK_SNARE_BASS.md
@@ -552,6 +568,7 @@ Aula em PT (YouTube `I34rILt20TM`): kick, snare e baixo como fundação da faixa
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
 
+
 ---
 
 ## knowledge-base/O_Erro_que_Todos_Cometem_no_Baixo.md
@@ -565,6 +582,7 @@ Aula em PT (YouTube `I34rILt20TM`): kick, snare e baixo como fundação da faixa
 Eduardo Juliato, em PT (YouTube `xRiBtNuLViA`): seis dicas avançadas de síntese de baseline psytrance — envelope com corpo, filtragem e saturação.
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
+
 
 ---
 
@@ -595,6 +613,7 @@ Seis ideias recuperadas: arranjo em atos e subtração; silêncio antes de retor
 ## Uso
 
 Uma mudança material por rodada, trecho curto, leitura do estado real e escuta. Fontes orientam hipóteses; não comprovam melhoria musical.
+
 
 ---
 
@@ -681,6 +700,7 @@ Presets recomendados do banco de usuário (`User/BLACKBOX/`):
 * `[DIMENSIONS 3] - [BASS] - CLEAN.SerumPreset`: Sub bass puro com fase travada e zero ressonância espúria.
 * `[PSYBASS 4 SERUM] - [BASS] - PURE ROLLING.SerumPreset`: Envelopamento clássico calibrado com rampa.
 
+
 ---
 
 ## knowledge-base/Psytrance_BASS_Shamanic_Tales_Style.md
@@ -694,6 +714,7 @@ Presets recomendados do banco de usuário (`User/BLACKBOX/`):
 Aula em PT (YouTube `rt5P6_IAHGo`): baseline psytrance moderna no estilo de labels como Shamanic Tales e Stereo Society — rolling clássico atualizado para 2025/26.
 
 > A transcrição completa foi removida deste pacote por higiene de copyright antes da publicação; assista ao vídeo original pelo ID acima. O conteúdo técnico absorvido pelo projeto está nos estudos e receitas do acervo.
+
 
 ---
 
@@ -1613,6 +1634,7 @@ densidade final
 
 > **não leia para entender o projeto inteiro; leia para responder a próxima decisão.**
 
+
 ---
 
 ## knowledge-base/VISION-SERPENT-ENERGIA-2026-09-07.md
@@ -1643,6 +1665,7 @@ A primeira resposta (39 fontes) atribuiu técnicas a SLUG/Munkler/Tetra, mas ao 
 Catálogo de fontes externas relacionado inclui SLUG, Verschallt, Wachter & Böhm, MVND, Delgad O, NoNameLeft, Munkler, Yanacone, White Zoo, Perpetual Universe, Tetra Hydro–Goa Dreams, 6FOOT6, B.A.D. Live e Co-Existence. Dois itens Rad.Lez & Shabiki–Time têm o mesmo título; duplicidade de conteúdo não verificada.
 
 Texto VERIFICADO; legendas automáticas podem errar nomes. Nenhuma audição dos dois vídeos nesta rodada. Relação com maior energia percebida é HIPÓTESE para escuta. Comparar sem elevar master; readback MIDI/envelope não prova resultado estético.
+
 
 ---
 
@@ -1815,6 +1838,7 @@ Leitura do gingado (VERIFICADO nos números acima):
 - Limitação registrada: sweeps detectados por ajuste linear de energia de banda em mix completo — um riser pode estar mascarado por bateria; os +4 a +6 dB/s das texturas são piso conservador.
 - NÃO VERIFICADO: tonalidade (a faixa de referência em uso é C#m; nenhuma medição de pitch foi feita nesta análise).
 - BPM da referência (132) testado e refutado para o AIO: R(grid) = 0,021 (Illusion) e 0,063 (Shifting) @132 vs 0,916 e 0,844 @128.
+
 
 ---
 
@@ -1995,6 +2019,7 @@ Regra prática medida: **hats sobem primeiro (8–14 compassos antes), graves s�
 - NÃO VERIFICADO: afinação/tônica do rolling (requer análise de pitch além do escopo), identidade do remix "(Luis M Re…)" (nome truncado no arquivo), e percepção subjetiva de "drop" além dos critérios espectrais adotados.
 - Limite conhecido: energias em dB por banda são relativas (média por bin), válidas para deltas dentro e entre compassos das mesmas faixas; onsets têm resolução limitada pelo refratário (95 ms no bass), o que fatia notas longas em 2 eventos — os histogramas por slot e as contagens por compasso absorvem esse viés de forma consistente entre as duas faixas.
 
+
 ---
 
 ## knowledge-base/akari-system-hitech.md
@@ -2052,6 +2077,7 @@ Regra prática medida: **hats sobem primeiro (8–14 compassos antes), graves s�
 
 SoundCloud Akari · Bandcamp Segments/Ghost Protocol/Luis M Remix · Beatport Slippery Slope/Akari/Luis M · YouTube Boom 2025 · Facebook Luis M · SoundCloud Aikyam · Discogs AlpaKa · Beatportal Psy-Techno · DJane Mag · Wikipedia psytrance · r/psytrance subgenres · r/edmproduction glitch · SampleFocus glitch · YouTube tut hi-tech leads/glitch de samples/guia glitch psytrance · Sage Audio · iZotope · r/mixingmastering · r/AdvancedProduction · Image-Line · SoS LUFS · MasteringBOX.
 
+
 ---
 
 ## knowledge-base/andre-gazolla.md
@@ -2101,6 +2127,7 @@ SoundCloud Akari · Bandcamp Segments/Ghost Protocol/Luis M Remix · Beatport Sl
 ## Fontes
 
 Beatport (artista), Apple Music Ying Yang, SoundCloud Fragmented/Mayemo/DropCast, Soundcharts Niagora/Black Belt, Instagram Black Belt/@andregazolla_, YouTube Bullet Train/Alataj Lab 027, Qobuz Mental Effort, Deezer API, Tunebat Quartzo, Mixgraph Phyton, Bandcamp Labareda Elysium, SoundCloud NeuroSpace/Vandro/Atípic, Facebook Rolling Music, Spotify artista.
+
 
 ---
 
@@ -2156,6 +2183,7 @@ Beatport (artista), Apple Music Ying Yang, SoundCloud Fragmented/Mayemo/DropCast
 ## Fontes
 
 iDMag · Psychedelic Island · Raveyard Sounds · EDMProd (tension) · Studio Brootle · Point Blank · Cymatics · EDMTips · Elektronauts (drum programming, techno structure) · Gearspace (syncopation) · r/TechnoProduction (fakeout, cheap tricks) · r/edmproduction (delayed drop, build length, 2nd drop) · Medium modular composition · Finish More Music rumble · BT (Facebook riser design) · FL Studio producers group.
+
 
 ---
 
@@ -2218,6 +2246,7 @@ Sem plugins: **ducking por automação de gain do Utility** (cai ao silêncio no
 
 Myloops kick+bass · Music StackExchange phase · Armada University · Sokolovskiy (fit kick&bass) · Hainbach phase vs delay · KVR transient psytrance · Reddit r/edmproduction transient · MasteringBOX · FB Ableton Users · Abletunes sidechain · Gearspace multiband ducking/phase · Ableton blog sidechain 2 · Newfangled Audio clip vs limit · Mastering The Mix · Reddit clipping before limiting · Glow Mastering EDM · Ghost Production LUFS · UJAM bass balance.
 
+
 ---
 
 ## knowledge-base/arranjo-anti-estase.md
@@ -2274,6 +2303,7 @@ Em cada fronteira de 16 bars de um trecho estático: UMA mudança audível (HP 1
 
 Psychedelic Island (automation) · Myloops (progressive guide; risers/impacts) · The Ghost Production (Rule of 32) · Elektronauts (techno structure) · EDMProd (8-bar loop trap) · Audioservices (arrangements) · r/psytranceproduction · Gearspace · Alien Chaos (evolution of arrangement) · AlpaKa SoundCloud/Bandcamp.
 
+
 ---
 
 ## knowledge-base/cronocops-workshop-racks.md
@@ -2309,6 +2339,7 @@ Fontes coletadas em 2026-09-08: https://pmeexperts.com.br/cronocops/ · https://
 
 - HIPÓTESE (não medida): um bombo (BM) sem "orelhinha" pode ter o transiente competindo com o kick.
 - A conta +12/−12 dB do Soft Clip Hack assume headroom do canal; conferir antes no fader do canal alvo.
+
 
 ---
 
@@ -2432,6 +2463,7 @@ timeline
 
 - VERIFICADO: BPM, grid, presença/ausência de kick por beat (dupla métrica: onset 30-150 Hz + pico sub 30-80 Hz), energias de banda nos vales, sidechain, ACF do baixo, mapa de compassos das duas faixas (0-300 s + segmentos finais até o fim).
 - NÃO VERIFICADO / limite: kicks "fantasma" com sub entre -8 e -14 dB podem ser classe borderline (kick filtrado vs nota de baixo) — tratados como "kick sem sub". Numeração de compassos pode variar ±1 entre segmentos (grids ajustados independentes); tempos absolutos são a referência confiável.
+
 
 ---
 
@@ -2582,6 +2614,7 @@ Casos-notáveis: cut de 1 compasso INTEIRO no Breakdown @77,1 (1,95 beat) e cut 
 - NÃO VERIFICADO: trechos após 300 s (Mayuri tem 85,5 s e Breakdown 90,3 s não analisados — possíveis seções finais não mapeadas).
 - Limitação registrada: pausas detectadas por baseline adaptativo de 3 s não capturam seções sem kick longas (>3 s) como "pausa" — elas aparecem no mapa via taxa de kick por bloco de 10 s (0,0–0,3/s), que é a evidência usada.
 - BPM da premissa (132) testado e refutado: R(grid) = 0,039 (Mayuri) e 0,024 (Breakdown) @132 vs 0,733 e 0,308 nos BPM medidos.
+
 
 ---
 
@@ -2761,6 +2794,7 @@ Padrão recorrente (VERIFICADO nos quartis do build de 32 beats):
 - INFERÊNCIA: interpretações estruturais (antagonismo kick/perc, layering contínuo do Bush, build rítmico não-tonal) — derivadas dos números, não confirmadas por escuta/stems.
 - NÃO VERIFICADO: últimos ~140 s de cada faixa (fora da janela de 300 s); BPM exato (autocorrelação ±3 BPM; mapa de beats usa 132 fixo e desliza em Karmacobra ~128); instrumentação real (não é possível separar stems neste método).
 
+
 ---
 
 ## knowledge-base/kaled-nasser-bush.md
@@ -2814,6 +2848,7 @@ Padrão recorrente (VERIFICADO nos quartis do build de 32 beats):
 
 SoundCloud Kaled/Atípic/Soliq/Subtrail/AlpaKa · Beatport Hidden/artista · Spotify artista/Eclipsis/Sonar/Alto Paraíso · Apple Music Nebula/Atypical · Discogs The Muhammads · Instagram @kalednasser_ · Melodigging psytech · Sokolovskiy kick+bass · masteringmastering.co.uk psy kick&bass · psynews bassline · Tupã Trance · resumos agregados guias bush tech (APS/Portal do Eletrônico/psy-music.ru), Vice, Forestdelic, Iboga.
 
+
 ---
 
 ## knowledge-base/pme-experts.md
@@ -2859,6 +2894,7 @@ SoundCloud Kaled/Atípic/Soliq/Subtrail/AlpaKa · Beatport Hidden/artista · Spo
 ## NÃO ENCONTRADO / NÃO VERIFICADO
 
 Conteúdo interno minuto a minuto dos vídeos (requer assistir/transcrever); Master-Class Dharana (página offline); BPM 132/"segundo drop" como termos nos títulos.
+
 
 ---
 
@@ -2910,6 +2946,7 @@ Mixes/DJ sets na playlist (as "misturas" provavelmente vieram do related/autopla
 ## Fontes
 
 [Vídeo](https://www.youtube.com/watch?v=ed5ODapIIBc) · [Playlist API](https://inv.nadeko.net/api/v1/playlists/PLceTdJJtnwrA0VWXIeNHvTkfTHtfMY7P3) · [Linktree label](https://linktr.ee/visionserpentrecords) · [RA](https://ra.co/labels/22834) · [Bandcamp](https://visionserpentrecords.bandcamp.com/) · [Tetra Hydro walkthrough](https://www.youtube.com/watch?v=ZGjzwRSyBZ4) · [VISE058](https://www.youtube.com/watch?v=ot-bYLSx6n0)
+
 
 ---
 
@@ -2967,6 +3004,7 @@ Mixes/DJ sets na playlist (as "misturas" provavelmente vieram do related/autopla
 ## Fontes
 
 Faixas Limbo (391 s) e Demons (376 s) de Yao Ofosu; análise ffmpeg+numpy.
+
 
 ---
 
